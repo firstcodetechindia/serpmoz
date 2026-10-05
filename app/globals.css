@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   SERPMOZ design tokens
+   Single source of truth. Components reference these through Tailwind
+   utilities (bg-navy, text-muted, border-line …) – never raw hex values.
+   ------------------------------------------------------------------ */
+@theme {
+  /* Brand */
+  --color-navy: #0b1f3a; /* trust, expertise */
+  --color-navy-soft: #13294b;
+  --color-blue: #1677ff; /* technology, digital growth */
+  --color-blue-ink: #0d5bd3; /* blue that passes AA as text on light */
+  --color-blue-wash: #eaf2ff;
+  --color-cyan: #00b8d9; /* AI, intelligence – graphics only */
+  --color-cyan-wash: #e3f8fc;
+  --color-orange: #ff7a00; /* growth, action – used sparingly */
+  --color-orange-ink: #b85400;
+  --color-orange-wash: #fff3e6;
+
+  /* Surfaces & text */
+  --color-canvas: #f7f9fc;
+  --color-surface: #ffffff;
+  --color-ink: #14213d;
+  --color-muted: #64748b;
+  --color-line: #e2e8f0;
+  --color-line-strong: #cbd5e1;
+  --color-success: #16a34a;
+  --color-success-ink: #15803d;
+  --color-danger: #c62828;
+
+  /* Type */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", monospace;
+
+  --text-display: clamp(2.6rem, 1.35rem + 5.1vw, 5.25rem);
+  --text-display--line-height: 0.98;
+  --text-display--letter-spacing: -0.04em;
+  --text-h2: clamp(2rem, 1.3rem + 2.9vw, 3.5rem);
+  --text-h2--line-height: 1.04;
+  --text-h2--letter-spacing: -0.035em;
+  --text-h3: clamp(1.375rem, 1.2rem + 0.7vw, 1.75rem);
+  --text-h3--line-height: 1.18;
+  --text-h3--letter-spacing: -0.02em;
+  --text-lead: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  --text-lead--line-height: 1.55;
+
+  /* Shape & depth */
+  --radius-panel: 1.25rem;
+  --radius-control: 0.625rem;
+  --shadow-soft: 0 1px 2px rgb(11 31 58 / 0.04), 0 8px 24px -12px rgb(11 31 58 / 0.12);
+  --shadow-float: 0 2px 4px rgb(11 31 58 / 0.04), 0 28px 64px -28px rgb(11 31 58 / 0.28);
+
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-menu-in: menu-in 180ms var(--ease-out-quint);
+  --animate-sheet-in: sheet-in 260ms var(--ease-out-quint);
+  --animate-fade-in: fade-in 200ms ease-out;
+  --animate-accordion-down: accordion-down 220ms var(--ease-out-quint);
+  --animate-accordion-up: accordion-up 180ms ease-in;
+
+  @keyframes menu-in {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes sheet-in {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes accordion-down {
+    from { height: 0; }
+    to { height: var(--radix-accordion-content-height); }
+  }
+  @keyframes accordion-up {
+    from { height: var(--radix-accordion-content-height); }
+    to { height: 0; }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    background: var(--color-navy);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-blue);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------
+   Named patterns
+   ------------------------------------------------------------------ */
+
+/* Page gutter + max width */
+@utility shell {
+  width: 100%;
+  max-width: 82rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (width >= 48rem) { padding-inline: 2.5rem; }
+}
+
+/* Small uppercase mono label – section indices, table heads, data captions */
+@utility label-mono {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1.2;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* Controlled glass. Reserved for product UI, floating nav and metric panels. */
+@utility glass {
+  background: rgb(255 255 255 / 0.78);
+  border: 1px solid rgb(255 255 255 / 0.7);
+  box-shadow: var(--shadow-float), inset 0 0 0 1px rgb(226 232 240 / 0.55);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  @supports not (backdrop-filter: blur(1px)) {
+    background: rgb(255 255 255 / 0.96);
+  }
+}
+
+/* Soft blue/cyan atmosphere that sits behind glass panels */
+@utility atmosphere {
+  background:
+    radial-gradient(42% 52% at 72% 30%, rgb(22 119 255 / 0.16), transparent 70%),
+    radial-gradient(36% 46% at 92% 72%, rgb(0 184 217 / 0.16), transparent 70%),
+    radial-gradient(30% 40% at 48% 88%, rgb(255 122 0 / 0.05), transparent 70%);
+}
+
+/* Fine engineering grid used as a quiet backdrop */
+@utility grid-lines {
+  background-image:
+    linear-gradient(to right, rgb(11 31 58 / 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(11 31 58 / 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+
+/* ------------------------------------------------------------------
+   Scroll reveal (components/layout/reveal.tsx)
+   Hidden state applies only when JavaScript is running and the visitor
+   has not asked for reduced motion.
+   ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: no-preference) {
+  html.js [data-reveal] {
+    opacity: 0;
+    transform: translateY(var(--reveal-y, 16px));
+    transition:
+      opacity 0.7s var(--ease-out-quint) var(--reveal-delay, 0s),
+      transform 0.7s var(--ease-out-quint) var(--reveal-delay, 0s);
+  }
+  html.js [data-reveal][data-revealed] {
+    opacity: 1;
+    transform: none;
+  }
+}
