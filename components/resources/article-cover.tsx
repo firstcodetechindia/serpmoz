@@ -101,7 +101,7 @@ export function ArticleCover({ slug, category, className, tone = "navy" }: { slu
 
   return (
     <div aria-hidden className={cn("relative overflow-hidden", navy ? "bg-navy" : "bg-blue-wash", className)}>
-      {navy ? <div className="absolute -top-1/3 -right-1/4 size-[70%] rounded-full bg-blue/40 blur-3xl" /> : null}
+      {navy ? <div className="absolute -top-1/3 -right-1/4 size-[70%] rounded-full bg-blue/40 glow" /> : null}
       <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice" className="relative size-full">
         {[55, 110, 165].map((y) => <line key={y} x1="0" x2="400" y1={y} y2={y} stroke={soft} strokeWidth="1" strokeDasharray="2 7" />)}
         {body}

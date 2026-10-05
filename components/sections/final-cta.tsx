@@ -28,12 +28,12 @@ export function FinalCta({
       <div className="relative overflow-hidden rounded-[1.75rem] bg-navy-deep text-white">
         <Photo photo={photos.skyline} sizes="100vw" decorative wash="none" className="absolute inset-0 opacity-45" />
         <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/85 to-navy/40" />
-        <div aria-hidden className="absolute -bottom-40 -left-20 size-[34rem] rounded-full bg-blue/30 blur-[120px]" />
-        <div aria-hidden className="absolute -top-32 right-10 size-[26rem] rounded-full bg-orange/20 blur-[110px]" />
+        <div aria-hidden className="absolute -bottom-40 -left-20 size-[34rem] rounded-full bg-blue/30 glow" />
+        <div aria-hidden className="absolute -top-32 right-10 size-[26rem] rounded-full bg-orange/20 glow" />
 
         <div className="shell relative grid grid-cols-1 gap-12 py-12 md:py-14 lg:grid-cols-12 lg:items-center lg:gap-8 lg:py-16">
           <Reveal className="lg:col-span-7">
-            <p className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.06] py-1.5 pr-4 pl-2.5 text-[0.8125rem] font-medium text-white/85 backdrop-blur-sm">
+            <p className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.06] py-1.5 pr-4 pl-2.5 text-[0.8125rem] font-medium text-white/85">
               <span aria-hidden className="size-2 rounded-full bg-orange" />
               Start with a growth audit
             </p>

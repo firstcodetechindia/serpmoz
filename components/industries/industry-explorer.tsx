@@ -19,7 +19,7 @@ export function IndustryCard({ slug, className, sizes = "(min-width: 1024px) 25v
     <Link href={`/industries/${slug}/`} className={cn("group relative block overflow-hidden rounded-2xl bg-navy text-white", className)}>
       <Photo photo={photoFor(slug)} sizes={sizes} wash="strong" className="absolute inset-0" imgClassName="group-hover:scale-105 group-hover:grayscale-0" />
       <div className="relative flex h-full min-h-[18rem] flex-col justify-between p-5">
-        <span className="flex size-10 items-center justify-center rounded-full bg-white/12 backdrop-blur-sm">
+        <span className="flex size-10 items-center justify-center rounded-full bg-white/12">
           <Icon aria-hidden className="size-5" />
         </span>
         <div>
@@ -71,7 +71,7 @@ export function IndustryExplorer() {
             <Photo key={ind.slug} photo={photoFor(ind.slug)} sizes="(min-width: 1024px) 480px, 100vw" wash="strong" className="aspect-[4/5] motion-safe:animate-fade-in" />
             <div className="absolute inset-0 flex flex-col justify-between p-7">
               <div className="flex items-center justify-between">
-                <span className="flex size-11 items-center justify-center rounded-full bg-white/12 backdrop-blur-sm">
+                <span className="flex size-11 items-center justify-center rounded-full bg-white/12">
                   <Icon aria-hidden className="size-5" />
                 </span>
                 <span className="label-mono text-white/60">Industry</span>

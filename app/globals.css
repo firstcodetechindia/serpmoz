@@ -70,6 +70,10 @@
   --animate-ping-soft: ping-soft 2.8s cubic-bezier(0, 0, 0.2, 1) infinite;
   --animate-marquee: marquee 48s linear infinite;
 
+  @keyframes tour {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
   @keyframes float {
     0%, 100% { transform: translate3d(0, 0, 0); }
     50% { transform: translate3d(0, -8px, 0); }
@@ -182,15 +186,11 @@
 }
 
 /* Glass on navy: product chrome and floating cards in dark sections */
+/* No backdrop blur: it forces a repaint of everything behind it on every scroll frame. */
 @utility glass-dark {
-  background: rgb(255 255 255 / 0.06);
+  background: rgb(255 255 255 / 0.07);
   border: 1px solid rgb(255 255 255 / 0.12);
   box-shadow: 0 24px 64px -32px rgb(0 0 0 / 0.6), inset 0 1px 0 rgb(255 255 255 / 0.08);
-  backdrop-filter: blur(18px) saturate(140%);
-  -webkit-backdrop-filter: blur(18px) saturate(140%);
-  @supports not (backdrop-filter: blur(1px)) {
-    background: rgb(19 41 75 / 0.96);
-  }
 }
 
 /* Navy stage: the backdrop for hero and product showcases */
@@ -211,6 +211,13 @@
 }
 
 /* One photographic treatment for every image: cool, desaturated, navy shadows */
+/* A soft pool of colour. A masked gradient, not a blur filter, so it costs nothing to scroll past. */
+@utility glow {
+  -webkit-mask-image: radial-gradient(closest-side, #000 0%, rgb(0 0 0 / 0.5) 45%, transparent 100%);
+  mask-image: radial-gradient(closest-side, #000 0%, rgb(0 0 0 / 0.5) 45%, transparent 100%);
+  pointer-events: none;
+}
+
 @utility photo-tone {
   filter: grayscale(0.4) contrast(1.05) saturate(0.95);
   transition: filter 500ms var(--ease-out-quint), transform 900ms var(--ease-out-quint);
@@ -249,8 +256,8 @@
 @media (prefers-reduced-motion: no-preference) {
   html[data-reveal-ready] [data-reveal] {
     transition:
-      opacity 0.7s var(--ease-out-quint) var(--reveal-delay, 0s),
-      transform 0.7s var(--ease-out-quint) var(--reveal-delay, 0s);
+      opacity 0.5s var(--ease-out-quint) var(--reveal-delay, 0s),
+      transform 0.5s var(--ease-out-quint) var(--reveal-delay, 0s);
   }
   html[data-reveal-ready] [data-reveal]:not([data-revealed]) {
     opacity: 0;
@@ -270,10 +277,22 @@
   background: var(--color-surface);
 }
 @media (min-width: 1024px) and (min-height: 760px) {
+  /* The rounded lower edge is a small cap under the page, not a clip on the
+     whole page: clipping a page this tall makes every scroll frame expensive. */
   .page-sheet {
-    overflow: clip;
+    margin-bottom: 2.25rem;
+  }
+  .page-sheet::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    height: 2.25rem;
+    margin-top: -1px;
+    background: var(--color-surface);
     border-radius: 0 0 2.25rem 2.25rem;
-    box-shadow: 0 30px 60px -20px rgb(0 0 0 / 0.55);
+    box-shadow: 0 24px 40px -18px rgb(0 0 0 / 0.5);
   }
   .footer-reveal {
     position: sticky;

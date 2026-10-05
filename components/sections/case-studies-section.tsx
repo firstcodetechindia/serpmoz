@@ -32,7 +32,7 @@ function Card({ c, large }: { c: CaseStudy; large?: boolean }) {
       <Photo photo={photo} sizes={large ? "(min-width: 1024px) 55vw, 100vw" : "(min-width: 1024px) 40vw, 100vw"} wash="strong" className="absolute inset-0" imgClassName="transition-transform duration-[1200ms] ease-out group-hover:scale-105" />
       <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/60 to-transparent" />
       <div className="absolute top-5 right-5 left-5 flex items-start justify-between gap-3">
-        <Badge variant="dark" dot className="bg-navy-deep/60 backdrop-blur-sm">{label(c)}</Badge>
+        <Badge variant="dark" dot className="bg-navy-deep/60">{label(c)}</Badge>
         <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white text-navy transition-all duration-300 group-hover:rotate-45 group-hover:bg-orange">
           <ArrowUpRight aria-hidden className="size-4.5" />
         </span>
@@ -43,7 +43,7 @@ function Card({ c, large }: { c: CaseStudy; large?: boolean }) {
         {large ? <p className="mt-3 max-w-xl text-[0.9375rem] leading-relaxed text-white/75">{c.summary}</p> : null}
         <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Services involved">
           {tags.map((t) => (
-            <li key={t} className="rounded-full border border-white/20 bg-white/10 px-2.5 py-1 text-xs text-white/90 backdrop-blur-sm">{t}</li>
+            <li key={t} className="rounded-full border border-white/20 bg-white/10 px-2.5 py-1 text-xs text-white/90">{t}</li>
           ))}
         </ul>
       </div>

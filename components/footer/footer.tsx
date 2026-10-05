@@ -17,8 +17,8 @@ export function Footer() {
   return (
     <footer className="footer-reveal relative overflow-hidden bg-navy-deep text-white">
       <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent_50%)]" />
-      <div aria-hidden className="absolute -top-48 left-1/4 size-[36rem] rounded-full bg-blue/20 blur-[130px]" />
-      <div aria-hidden className="absolute right-0 -bottom-40 size-[28rem] rounded-full bg-orange/10 blur-[120px]" />
+      <div aria-hidden className="absolute -top-48 left-1/4 size-[36rem] rounded-full bg-blue/20 glow" />
+      <div aria-hidden className="absolute right-0 -bottom-40 size-[28rem] rounded-full bg-orange/10 glow" />
 
       <div className="shell relative pt-12 md:pt-14">
         {/* Call to action */}

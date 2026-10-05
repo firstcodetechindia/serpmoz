@@ -105,7 +105,7 @@ export function Header() {
         delayDuration={80}
         aria-label="Primary"
         className={cn(
-          "glass relative mx-auto flex h-16 !bg-white/92 max-w-[80rem] items-center justify-between rounded-2xl pr-2.5 pl-5 transition-shadow duration-300",
+          "relative mx-auto flex h-16 max-w-[80rem] border border-line bg-white items-center justify-between rounded-2xl pr-2.5 pl-5 transition-shadow duration-300",
           scrolled ? "shadow-float" : "shadow-soft",
         )}
       >

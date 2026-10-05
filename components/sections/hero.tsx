@@ -20,11 +20,11 @@ export function Hero() {
     <section aria-labelledby="hero-title" className="stage relative overflow-hidden text-white">
       <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:linear-gradient(to_bottom,black_10%,transparent_75%)]" />
       <SignalField className="hidden lg:block" cx={70} cy={46} />
-      <div aria-hidden className="absolute -bottom-40 -left-40 size-[32rem] rounded-full bg-blue/20 blur-[120px]" />
+      <div aria-hidden className="absolute -bottom-40 -left-40 size-[32rem] rounded-full bg-blue/20 glow" />
 
       <div className="shell relative grid gap-x-10 gap-y-14 pt-28 pb-14 md:pt-36 lg:grid-cols-12 lg:items-center lg:pb-16">
         <div className="lg:col-span-6">
-          <p className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.06] py-1.5 pr-4 pl-2.5 text-[0.8125rem] font-medium text-white/85 backdrop-blur-sm">
+          <p className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.06] py-1.5 pr-4 pl-2.5 text-[0.8125rem] font-medium text-white/85">
             <span className="relative flex size-2" aria-hidden>
               <span className="absolute inset-0 rounded-full bg-orange motion-safe:animate-ping-soft" />
               <span className="relative size-2 rounded-full bg-orange" />
@@ -58,7 +58,7 @@ export function Hero() {
 
           <dl className="mt-10 grid max-w-lg grid-cols-3 gap-3">
             {coverage.map((c) => (
-              <div key={c.label} className="flex flex-col-reverse rounded-2xl border border-white/10 bg-white/[0.05] p-4 backdrop-blur-sm transition-colors hover:border-cyan/40 hover:bg-white/[0.08]">
+              <div key={c.label} className="flex flex-col-reverse rounded-2xl border border-white/10 bg-white/[0.05] p-4 transition-colors hover:border-cyan/40 hover:bg-white/[0.08]">
                 <dt className="mt-2 text-xs leading-snug text-white/60">{c.label}</dt>
                 <dd className="tabular text-3xl leading-none font-semibold tracking-[-0.04em] md:text-[2.5rem]">{c.value}</dd>
               </div>

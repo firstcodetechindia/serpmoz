@@ -63,7 +63,7 @@ export function EngagementLadder() {
       {/* Detail */}
       <div role="tabpanel" aria-label={e.name} className="mt-8 grid overflow-hidden rounded-panel bg-surface shadow-float lg:mt-12 lg:grid-cols-12">
         <div className="stage relative overflow-hidden p-7 text-white md:p-10 lg:col-span-5">
-          <div aria-hidden className="absolute -right-24 -bottom-24 size-72 rounded-full bg-orange/25 blur-3xl" />
+          <div aria-hidden className="absolute -right-24 -bottom-24 size-72 rounded-full bg-orange/25 glow" />
           <div key={e.name} className="relative motion-safe:animate-fade-in">
             <p className="label-mono text-cyan">{e.stage} · {e.focus}</p>
             <h3 className="mt-4 text-[clamp(2rem,1.5rem+2vw,3rem)] leading-[1.1] font-semibold tracking-[-0.035em]">{e.name}</h3>

@@ -42,7 +42,7 @@ export function IndustryShowcase({ items }: { items: ShowcaseItem[] }) {
 
                 {/* Collapsed: name runs up the panel */}
                 <div className={cn("absolute inset-0 flex flex-col items-center justify-between py-6 transition-opacity duration-300", on ? "opacity-0" : "opacity-100")} aria-hidden={on}>
-                  <span className="flex size-10 items-center justify-center rounded-full bg-white/12 backdrop-blur-sm"><Icon aria-hidden className="size-5" /></span>
+                  <span className="flex size-10 items-center justify-center rounded-full bg-white/12"><Icon aria-hidden className="size-5" /></span>
                   <span className="text-lg font-semibold tracking-[-0.01em] whitespace-nowrap [writing-mode:vertical-rl] rotate-180">{ind.name}</span>
                   <span className="label-mono text-white/55">{String(i + 1).padStart(2, "0")}</span>
                 </div>
@@ -50,7 +50,7 @@ export function IndustryShowcase({ items }: { items: ShowcaseItem[] }) {
                 {/* Open */}
                 <div className={cn("absolute inset-0 flex flex-col justify-between p-8 transition-opacity duration-500", on ? "opacity-100 delay-200" : "pointer-events-none opacity-0")}>
                   <div className="flex items-center justify-between">
-                    <span className="flex size-12 items-center justify-center rounded-full bg-white/12 backdrop-blur-sm"><Icon aria-hidden className="size-6" /></span>
+                    <span className="flex size-12 items-center justify-center rounded-full bg-white/12"><Icon aria-hidden className="size-6" /></span>
                     <span className="flex size-12 items-center justify-center rounded-full bg-orange text-navy transition-transform duration-300 group-hover:rotate-45"><ArrowUpRight aria-hidden className="size-5" /></span>
                   </div>
                   <div className="w-[26rem] max-w-full">
@@ -59,7 +59,7 @@ export function IndustryShowcase({ items }: { items: ShowcaseItem[] }) {
                     <p className="mt-3 text-[1.0625rem] leading-snug text-white/85">{ind.line}</p>
                     <ul className="mt-5 flex flex-wrap gap-1.5" aria-label="Services typically involved">
                       {ind.services.map((s) => (
-                        <li key={s} className="rounded-full border border-white/20 bg-white/10 px-2.5 py-1 text-xs text-white/90 backdrop-blur-sm">{s}</li>
+                        <li key={s} className="rounded-full border border-white/20 bg-white/10 px-2.5 py-1 text-xs text-white/90">{s}</li>
                       ))}
                     </ul>
                   </div>
@@ -79,7 +79,7 @@ export function IndustryShowcase({ items }: { items: ShowcaseItem[] }) {
               <Link href={`/industries/${ind.slug}/`} className="relative block h-[24rem] overflow-hidden rounded-panel text-white">
                 <Photo photo={photoFor(ind.slug)} sizes="80vw" wash="strong" className="absolute inset-0" />
                 <div className="relative flex h-full flex-col justify-between p-5">
-                  <span className="flex size-10 items-center justify-center rounded-full bg-white/12 backdrop-blur-sm"><Icon aria-hidden className="size-5" /></span>
+                  <span className="flex size-10 items-center justify-center rounded-full bg-white/12"><Icon aria-hidden className="size-5" /></span>
                   <div>
                     <h3 className="text-2xl font-semibold tracking-[-0.03em]">{ind.name}</h3>
                     <p className="mt-2 text-sm leading-snug text-white/85">{ind.line}</p>

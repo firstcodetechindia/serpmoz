@@ -18,7 +18,7 @@ export function IndustriesSection() {
   return (
     <Section inset aria-labelledby="industries-title" className="bg-navy-deep text-white">
       <div aria-hidden className="absolute top-0 left-1/2 h-px w-[80%] -translate-x-1/2 bg-gradient-to-r from-transparent via-cyan/50 to-transparent" />
-      <div aria-hidden className="absolute -top-40 left-1/3 size-[36rem] rounded-full bg-blue/15 blur-[120px]" />
+      <div aria-hidden className="absolute -top-40 left-1/3 size-[36rem] rounded-full bg-blue/15 glow" />
       <div className="shell relative">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
           <SectionHeader

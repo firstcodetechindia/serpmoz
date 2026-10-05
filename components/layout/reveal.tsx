@@ -31,7 +31,7 @@ export function Reveal({ children, className, delay = 0, y = 16, as = "div" }: P
     const show = () => node.setAttribute("data-revealed", "");
     if (!("IntersectionObserver" in window)) return show();
     // Anything already on screen (or above it, e.g. after an anchor jump) shows immediately.
-    if (node.getBoundingClientRect().top < window.innerHeight * 0.92) return show();
+    if (node.getBoundingClientRect().top < window.innerHeight * 1.1) return show();
     const io = new IntersectionObserver(
       (entries) => {
         if (entries.some((e) => e.isIntersecting)) {
@@ -39,7 +39,7 @@ export function Reveal({ children, className, delay = 0, y = 16, as = "div" }: P
           io.disconnect();
         }
       },
-      { rootMargin: "0px 0px -6% 0px" },
+      { rootMargin: "0px 0px 12% 0px" },
     );
     io.observe(node);
     return () => io.disconnect();

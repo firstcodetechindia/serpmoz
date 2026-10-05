@@ -58,8 +58,8 @@ export function HeroVisual({ className }: { className?: string }) {
       {/* Halo and frame: the diagram reads as one object, not loose parts */}
       <div aria-hidden className="absolute top-1/2 left-1/2 hidden size-[115%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/[0.07] sm:block" />
       <div aria-hidden className="absolute top-1/2 left-1/2 hidden size-[84%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-white/10 motion-safe:animate-[spin_90s_linear_infinite] sm:block" />
-      <div aria-hidden className="absolute inset-x-6 top-10 bottom-10 rounded-full bg-blue/25 blur-[90px]" />
-      <div className="relative rounded-[1.75rem] border border-white/10 bg-white/[0.035] p-4 backdrop-blur-[2px] sm:p-6">
+      <div aria-hidden className="absolute inset-x-6 top-10 bottom-10 rounded-full bg-blue/25 glow" />
+      <div className="relative rounded-[1.75rem] border border-white/10 bg-white/[0.035] p-4 backdrop-glow sm:p-6">
         <p aria-hidden className="mb-5 flex items-center justify-between">
           <span className="label-mono text-white/55">How growth connects</span>
         </p>
@@ -69,7 +69,7 @@ export function HeroVisual({ className }: { className?: string }) {
           {sources.map((s, i) => (
             <li
               key={s.name}
-              className="flex items-center gap-2.5 rounded-full border border-white/12 bg-white/[0.06] py-1.5 pr-3.5 pl-1.5 backdrop-blur-sm sm:rounded-2xl sm:py-2 sm:pl-2 motion-safe:animate-float-slow"
+              className="flex items-center gap-2.5 rounded-full border border-white/12 bg-white/[0.06] py-1.5 pr-3.5 pl-1.5 sm:rounded-2xl sm:py-2 sm:pl-2 motion-safe:animate-float-slow"
               style={{ animationDelay: `${i * -1.3}s` }}
             >
               <span className={cn("flex size-7 shrink-0 items-center justify-center rounded-full sm:size-8", s.tone)}>
@@ -119,7 +119,7 @@ export function HeroVisual({ className }: { className?: string }) {
           </div>
 
           {/* What an AI answer looks like when you are in it */}
-          <div className="absolute -top-6 -right-2 hidden w-48 rounded-2xl border border-white/15 bg-navy-soft/95 p-3 shadow-[0_24px_48px_-20px_rgb(0_0_0/0.7)] backdrop-blur-md motion-safe:animate-float md:block xl:-right-8">
+          <div className="absolute -top-6 -right-2 hidden w-48 rounded-2xl border border-white/15 bg-navy-soft/95 p-3 shadow-[0_24px_48px_-20px_rgb(0_0_0/0.7)] motion-safe:animate-float md:block xl:-right-8">
             <Tag className="flex items-center gap-1.5 text-cyan"><Sparkles className="size-3" /> AI answer</Tag>
             <span className="mt-2.5 block h-1.5 w-full rounded-full bg-white/25" />
             <span className="mt-1.5 block h-1.5 w-4/5 rounded-full bg-white/25" />

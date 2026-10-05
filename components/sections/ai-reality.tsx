@@ -34,7 +34,7 @@ export function AiReality() {
   const { execute, decide, connect } = aiReality;
   return (
     <Section inset aria-labelledby="ai-reality-title" className="bg-blue-tint">
-      <div aria-hidden className="absolute -top-40 -right-20 size-[34rem] rounded-full bg-surface/70 blur-[100px]" />
+      <div aria-hidden className="absolute -top-40 -right-20 size-[34rem] rounded-full bg-surface/70 glow" />
       <div className="shell relative">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
           <SectionHeader
@@ -103,7 +103,7 @@ export function AiReality() {
 
           {/* The system both feed */}
           <div className="relative flex flex-col overflow-hidden rounded-panel bg-navy p-7 text-white md:p-8">
-            <div aria-hidden className="absolute -top-24 -right-24 size-64 rounded-full bg-blue/30 blur-3xl" />
+            <div aria-hidden className="absolute -top-24 -right-24 size-64 rounded-full bg-blue/30 glow" />
             <div className="relative flex items-center gap-3">
               <span className="flex size-9 items-center justify-center rounded-full bg-white/10 text-white">
                 <LogoMark className="size-5" />

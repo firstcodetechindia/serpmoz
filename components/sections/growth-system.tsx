@@ -87,12 +87,12 @@ export function GrowthSystem() {
   const next = growthSystem[active + 1];
 
   return (
-    <section id="growth-system" aria-labelledby="growth-system-title" style={themeOf(active)} className="relative bg-[var(--gs-wash)] transition-colors duration-700 ease-out">
+    <section id="growth-system" aria-labelledby="growth-system-title" style={themeOf(active)} className="relative">
       {/* ---------- Large screens: pinned and interactive ---------- */}
       <div ref={track} className="hidden lg:block" style={{ height: `${N * 26 + 60}vh` }}>
-        <div className="sticky top-0 flex h-screen min-h-[44rem] flex-col justify-center overflow-hidden pt-24 pb-8">
-          <div aria-hidden className="absolute -top-40 -right-40 size-[42rem] rounded-full bg-[var(--gs-accent)] opacity-25 blur-[130px] transition-colors duration-700" />
-          <div aria-hidden className="absolute -bottom-52 -left-40 size-[32rem] rounded-full bg-surface opacity-70 blur-[120px]" />
+        <div className="sticky top-0 flex h-screen min-h-[44rem] flex-col justify-center overflow-hidden bg-[var(--gs-wash)] pt-24 pb-8 transition-colors duration-700 ease-out">
+          <div aria-hidden className="absolute -top-40 -right-40 size-[42rem] rounded-full bg-[var(--gs-accent)] opacity-25 glow transition-colors duration-700" />
+          <div aria-hidden className="absolute -bottom-52 -left-40 size-[32rem] rounded-full bg-surface opacity-70 glow" />
 
           <div className="shell relative grid grid-cols-12 items-stretch gap-8">
             {/* Stage list */}
