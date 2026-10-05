@@ -10,14 +10,13 @@ const traditional = ["Google", "Website", "Traffic"];
 
 export function SearchEverywhere() {
   return (
-    <Section aria-labelledby="search-everywhere-title" className="overflow-hidden">
+    <Section aria-labelledby="search-everywhere-title" className="overflow-hidden bg-surface">
       <div aria-hidden className="grid-lines absolute inset-0 [mask-image:radial-gradient(50%_45%_at_70%_38%,black,transparent)]" />
       <div className="shell relative">
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5">
             <SectionHeader
               id="search-everywhere-title"
-              index="03"
               label="Search everywhere"
               title={["Be Discoverable Everywhere", "Your Customers Search."]}
               lead="Search used to be one box and ten links. Now a buying decision passes through assistants, maps, feeds, forums and marketplaces before anyone reaches your site."

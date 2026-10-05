@@ -14,24 +14,17 @@ export const aiReality = {
   execute: {
     label: "AI can execute",
     note: "Fast, tireless and increasingly capable. Also indifferent to whether the task was the right one.",
-    items: ["Research", "Analysis", "Content", "Automation", "Experimentation"],
+    items: ["Research", "Generate", "Analyze", "Automate", "Experiment"],
   },
   decide: {
     label: "Experts decide",
     note: "Judgement built from seeing what works across markets, budgets and business models.",
-    items: [
-      "Strategy",
-      "Prioritization",
-      "Positioning",
-      "Search Intent",
-      "Technical Decisions",
-      "Validation",
-    ],
+    items: ["Strategy", "Positioning", "Prioritization", "Search Intent", "Validation", "Business Context"],
   },
   connect: {
-    label: "SERPMOZ connects",
+    label: "SERPMOZ combines",
     note: "One team and one reporting view, so effort can be traced from first impression to closed revenue.",
-    items: ["Data", "Execution", "Visibility", "Leads", "Conversion", "Revenue"],
+    items: ["AI", "Experts", "Strategy", "Execution"],
   },
 } as const;
 
@@ -56,33 +49,47 @@ export const serpmozPath = [
   { step: "AI + Experts", note: "Machines for speed, people for judgement" },
   { step: "Execution", note: "Shipped work across search, media, content and web" },
   { step: "Optimization", note: "Evidence in, decisions out, every cycle" },
-  { step: "Revenue", note: "The only result that settles the argument" },
+  { step: "Growth", note: "Qualified demand, customers and revenue you can trace" },
 ] as const;
 
 export const searchSurfaces = [
-  { name: "Google", detail: "Classic results, shopping, news, video" },
-  { name: "AI Search", detail: "Google AI experiences, ChatGPT, Gemini, Perplexity" },
-  { name: "Maps", detail: "Local packs, profiles, reviews" },
-  { name: "Social", detail: "LinkedIn, Instagram, YouTube" },
-  { name: "Communities", detail: "Forums, Q&A, niche groups" },
+  { name: "Google", detail: "Results, shopping, news" },
+  { name: "AI Search", detail: "Assistants and AI answers" },
+  { name: "Google Maps", detail: "Local packs and profiles" },
+  { name: "YouTube", detail: "How-to and review video" },
+  { name: "Instagram", detail: "Discovery and proof" },
+  { name: "LinkedIn", detail: "People and companies" },
+  { name: "Communities", detail: "Forums and Q&A" },
   { name: "Marketplaces", detail: "Product and service platforms" },
-  { name: "Websites", detail: "Yours, and the ones that talk about you" },
+  { name: "Industry Websites", detail: "Directories, press, reviews" },
 ] as const;
 
 export const searchServices = [
   { name: "SEO", href: "/seo-services/" },
-  { name: "AI Search", href: "/ai-seo-services/" },
-  { name: "AEO", href: "/ai-seo-services/" },
-  { name: "GEO", href: "/ai-seo-services/" },
+  { name: "AI SEO", href: "/ai-seo-services/" },
+  { name: "AEO", href: "/aeo-services/" },
+  { name: "GEO", href: "/geo-services/" },
   { name: "Local SEO", href: "/local-seo-services/" },
-  { name: "Google Maps", href: "/local-seo-services/" },
-  { name: "International SEO", href: "/international-seo/" },
+  { name: "Google Maps SEO", href: "/google-maps-seo/" },
+  { name: "YouTube", href: "/youtube-marketing/" },
+  { name: "Instagram", href: "/instagram-marketing/" },
+  { name: "LinkedIn", href: "/linkedin-marketing/" },
   { name: "Ecommerce SEO", href: "/ecommerce-seo/" },
-  { name: "Enterprise SEO", href: "/enterprise-seo/" },
-  { name: "Content SEO", href: "/seo-services/" },
-  { name: "Technical SEO", href: "/seo-services/" },
-  { name: "Digital PR", href: "/social-media-marketing/" },
-  { name: "Brand Search Visibility", href: "/seo-services/" },
+  { name: "Digital PR", href: "/digital-pr/" },
+] as const;
+
+/** Named as platforms we work across. Not partnerships or endorsements. */
+export const platforms = ["Google Search", "Google Ads", "Google Business Profile", "Microsoft Advertising", "Meta", "LinkedIn", "YouTube", "Shopify", "WordPress", "Webflow", "HubSpot", "GA4", "WhatsApp Business", "ChatGPT", "Gemini", "Perplexity"] as const;
+
+/** What an AI search programme covers. Capabilities, not promises. */
+export const aiSearchCapabilities = [
+  { name: "AI Search", body: "How assistants and AI results describe your category, and whether you appear." },
+  { name: "Answer Engines", body: "Content structured to answer the questions buyers actually ask." },
+  { name: "Generative Search", body: "Being a source that generated answers draw on and link to." },
+  { name: "Entity Visibility", body: "A consistent, machine-readable account of who you are and what you do." },
+  { name: "Brand Mentions", body: "Presence in the publications and communities that models learn from." },
+  { name: "Citation Opportunities", body: "Pages and data worth citing, placed where they will be found." },
+  { name: "Content Coverage", body: "The gaps between what buyers ask and what your site answers." },
 ] as const;
 
 export const growthSystem = [
@@ -124,42 +131,76 @@ export const growthSystem = [
   },
 ] as const;
 
+/**
+ * The six stages. `body` and `detail` feed the loop diagram and the homepage;
+ * `happens`, `ai`, `experts` and `receive` feed the /methodology/ page.
+ */
 export const methodology = [
   {
     name: "Discover",
     body: "Understand business, market, customer and competition.",
     detail:
       "Stakeholder interviews, commercial model, existing data and a clear statement of what growth needs to look like.",
+    happens:
+      "We learn how the business makes money before we look at a single ranking. That means conversations with the people who own revenue, a read of the commercial model and a review of the data you already hold: analytics, CRM, ad accounts and past reports.",
+    ai: ["Summarising interviews, documents and past reports", "Mapping the competitor set and its public footprint", "Collecting how buyers phrase the problem in search, forums and reviews"],
+    experts: ["What growth has to mean for this business", "Which customers and markets matter most", "Which of your numbers can be trusted"],
+    receive: ["A written growth brief: goals, constraints, audience and competitors", "A list of data and access gaps to close before diagnosis"],
   },
   {
     name: "Diagnose",
     body: "Identify visibility, demand, conversion and revenue gaps.",
     detail:
       "Audits across search, AI visibility, paid media, analytics and conversion paths, benchmarked against named competitors.",
+    happens:
+      "We audit the whole path from search to sale: technical health, organic and local visibility, presence in AI answers, paid media accounts, content, conversion paths and tracking. Each finding is checked against the competitors you actually lose to.",
+    ai: ["Processing crawls, logs and large keyword sets", "Sampling AI assistants for where your brand does and does not appear", "Flagging waste and anomalies in ad accounts and analytics"],
+    experts: ["Which findings are causes and which are symptoms", "How you compare with the competitors that matter", "What is a real constraint and what is noise"],
+    receive: ["A diagnostic report with the evidence behind each finding", "A baseline for the measures we will track"],
   },
   {
     name: "Prioritize",
     body: "Focus resources on high-impact opportunities.",
     detail:
       "Every opportunity scored for impact, confidence and effort. The roadmap is as much about what is left out as what is included.",
+    happens:
+      "Every opportunity is scored for commercial impact, confidence and effort, then put in order. The roadmap says what will be done first and why. It also says what will not be done, which is usually the more useful half.",
+    ai: ["Sizing demand and modelling scenarios for each opportunity", "Grouping related fixes into workstreams", "Checking dependencies between tasks"],
+    experts: ["The order of work and what is left out", "Where budget and effort go", "What will count as success, and by when it should be judged"],
+    receive: ["A prioritised roadmap with the reasoning shown", "Measures and targets set against your own baseline", "A recommended scope and engagement model"],
   },
   {
     name: "Execute",
     body: "Combine experts, AI, technology and automation.",
     detail:
       "Specialists own outcomes. AI handles volume and speed. Work ships in short cycles with review built in.",
+    happens:
+      "Work ships in short cycles: technical changes, content, campaigns, landing pages, automation. A specialist owns each workstream and reviews what goes out. AI carries the volume so that people can spend their time on the decisions.",
+    ai: ["First drafts, briefs, structured data and ad variants", "Bulk technical changes and quality checks", "Routine reporting and monitoring"],
+    experts: ["What is published under your name", "Technical, creative and positioning choices", "When a piece of work is good enough, and when to stop"],
+    receive: ["Shipped work each cycle", "A change log of what went live and why", "Review points before anything significant is published"],
   },
   {
     name: "Measure",
     body: "Track visibility, leads, conversions and revenue.",
     detail:
       "One reporting view agreed at the start, reconciled with your CRM, read the same way by marketing, sales and finance.",
+    happens:
+      "Results are read in one reporting view agreed at the start, so marketing, sales and finance are looking at the same thing. Where you give us access, it is reconciled with your CRM so that leads can be followed to revenue.",
+    ai: ["Joining data across platforms", "Watching for anomalies between reviews", "Tracking presence in AI answers over time"],
+    experts: ["What the numbers mean and what they do not", "How much credit a channel should take", "How to report honestly when a result is unclear"],
+    receive: ["One reporting view across visibility, leads, conversions and revenue", "Written commentary with each review", "Sources shown for every figure"],
   },
   {
     name: "Optimize",
     body: "Continuously improve based on evidence.",
     detail:
       "What worked gets more budget. What did not gets changed or stopped. The plan is revised every quarter.",
+    happens:
+      "Evidence from the last cycle decides the next one. What worked gets more budget, what did not is changed or stopped, and the roadmap is revised. Then the loop starts again with better information than it had before.",
+    ai: ["Surfacing patterns across results", "Proposing tests and variants", "Re-running the diagnostic checks on a schedule"],
+    experts: ["What gets more investment and what stops", "Whether a result is a trend or a blip", "How the plan should change"],
+    receive: ["A revised roadmap each quarter", "A record of what was tested and what was learned", "The brief for the next cycle"],
   },
 ] as const;
 
@@ -190,78 +231,8 @@ export const pillars = [
   },
 ] as const;
 
-export const engagements = [
-  {
-    name: "Growth Starter",
-    stage: "Establishing",
-    forWhom: "Businesses building their first structured growth programme.",
-    focus: "Foundations in one core channel",
-    collaboration: "A strategist and a specialist, monthly reviews",
-    outcome: "A measured baseline and the first compounding channel",
-    includes: [
-      "Growth audit and 90-day roadmap",
-      "25 strategic search opportunities",
-      "Technical and tracking foundations",
-      "Monthly performance review",
-    ],
-  },
-  {
-    name: "Growth",
-    stage: "Compounding",
-    forWhom: "Companies with traction that need consistent, compounding demand.",
-    focus: "Search plus one acquisition channel",
-    collaboration: "A small dedicated team, fortnightly working sessions",
-    outcome: "Predictable qualified demand from two channels",
-    includes: [
-      "Expanded search opportunity portfolio",
-      "Content and authority programme",
-      "Paid media or CRO workstream",
-      "AI search visibility tracking",
-    ],
-  },
-  {
-    name: "Scale",
-    stage: "Integrating",
-    forWhom: "Multi-channel teams that need integration and pace.",
-    focus: "Integrated search, media, content and conversion",
-    collaboration: "Cross-functional pod working alongside your team",
-    outcome: "Channels planned together and reported against revenue",
-    includes: [
-      "Cross-channel strategy and planning",
-      "Experimentation programme",
-      "Marketing automation and CRM alignment",
-      "Revenue attribution reporting",
-    ],
-  },
-  {
-    name: "Growth Partner",
-    stage: "Embedding",
-    forWhom: "Leadership teams that want an embedded growth function.",
-    focus: "Shared targets, embedded team",
-    collaboration: "Senior strategist in your leadership rhythm",
-    outcome: "A growth function accountable to the same targets you are",
-    includes: [
-      "Dedicated senior strategist",
-      "Quarterly planning with leadership",
-      "Unified reporting across every channel",
-      "Multi-market execution",
-    ],
-  },
-  {
-    name: "Enterprise",
-    stage: "Governing",
-    forWhom: "Complex organisations with multiple brands, markets or business units.",
-    focus: "Governance, scale and custom scope",
-    collaboration: "Programme office, service levels and enablement",
-    outcome: "Consistent standards across brands, markets and teams",
-    includes: [
-      "Custom scope and service levels",
-      "Governance and enablement for internal teams",
-      "Security, legal and procurement alignment",
-      "Executive reporting",
-    ],
-  },
-] as const;
+/** Engagement models live in data/engagement.ts. Re-exported for existing imports. */
+export { engagements } from "./engagement";
 
 export const caseStudyStructure = [
   { name: "Challenge", body: "The commercial problem, in the client's terms." },

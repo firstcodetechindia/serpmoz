@@ -17,15 +17,17 @@ export const countries: Country[] = [
       { title: "WhatsApp in the funnel", body: "Many buyers prefer to enquire and follow up on WhatsApp. Lead capture and automation should be designed around it, on the official Business Platform." },
       { title: "City-level competition", body: "Delhi NCR, Mumbai and Bangalore behave like separate markets. Local presence and reviews are decisive for service businesses." },
     ],
+    services: ["seo-services", "local-seo-services", "google-ads", "meta-ads", "whatsapp-automation", "lead-generation"],
+    industries: ["real-estate", "education", "healthcare", "ecommerce", "saas"],
     cities: [
-      { slug: "delhi", name: "Delhi", context: "A dense, price-competitive market where locality names drive search and service businesses compete neighbourhood by neighbourhood.", considerations: ["Locality-level targeting across a very large urban area", "Hindi and English search behaviour side by side", "High advertiser density in services, education and healthcare"] },
-      { slug: "gurgaon", name: "Gurgaon", context: "A corporate and technology hub with a concentration of company headquarters, SaaS firms, real-estate developers and premium healthcare. Buyers are senior, research carefully and expect a professional digital experience.", considerations: ["B2B and enterprise buyers concentrated in a small geography", "Strong real-estate and premium-services competition", "Search under both Gurgaon and Gurugram spellings"] },
-      { slug: "noida", name: "Noida", context: "An IT, manufacturing and education centre with fast residential growth, where sector numbers are part of how people search.", considerations: ["Sector-based local search patterns", "Real-estate and education demand", "Overlap with Delhi and Greater Noida catchments"] },
-      { slug: "mumbai", name: "Mumbai", context: "India's financial capital, with strong demand in finance, media, real estate and consumer brands, and very high local competition.", considerations: ["Suburb-specific intent across a long, linear city", "Finance and professional-services advertisers bidding heavily", "English, Hindi and Marathi queries"] },
-      { slug: "bangalore", name: "Bangalore", context: "The country's technology centre: a high concentration of SaaS companies, startups and digitally sophisticated buyers.", considerations: ["Technically literate audience that checks claims", "SaaS and startup competition for talent and customers", "Search under both Bangalore and Bengaluru"] },
-      { slug: "hyderabad", name: "Hyderabad", context: "A fast-growing technology, pharmaceutical and healthcare market with expanding commercial districts.", considerations: ["Pharma, healthcare and IT services demand", "Telugu and English search behaviour", "Rapidly developing western corridor"] },
-      { slug: "pune", name: "Pune", context: "An education, automotive, manufacturing and IT city with a large student and young-professional population.", considerations: ["Education and automotive sectors", "Manufacturing and B2B supply chains", "Marathi and English queries"] },
-      { slug: "jaipur", name: "Jaipur", context: "A tourism, jewellery, handicraft and growing startup market, with strong export and hospitality demand.", considerations: ["Tourism and hospitality seasonality", "Export-oriented ecommerce", "Hindi-first local search"] },
+      { slug: "delhi", name: "Delhi", context: "A dense, price-competitive market where locality names drive search and service businesses compete neighbourhood by neighbourhood.", considerations: ["Locality-level targeting across a very large urban area", "Hindi and English search behaviour side by side", "High advertiser density in services, education and healthcare"], services: ["local-seo-services", "google-maps-seo", "google-ads", "meta-ads", "whatsapp-automation"], industries: ["education", "healthcare", "local-business", "real-estate"] },
+      { slug: "gurgaon", name: "Gurgaon", context: "A corporate and technology hub with a concentration of company headquarters, SaaS firms, real-estate developers and premium healthcare. Buyers are senior, research carefully and expect a professional digital experience.", considerations: ["B2B and enterprise buyers concentrated in a small geography", "Strong real-estate and premium-services competition", "Search under both Gurgaon and Gurugram spellings"], services: ["seo-services", "ai-seo-services", "linkedin-ads", "lead-generation", "google-ads", "landing-page-optimization"], industries: ["b2b", "saas", "real-estate", "healthcare", "professional-services"] },
+      { slug: "noida", name: "Noida", context: "An IT, manufacturing and education centre with fast residential growth, where sector numbers are part of how people search.", considerations: ["Sector-based local search patterns", "Real-estate and education demand", "Overlap with Delhi and Greater Noida catchments"], services: ["local-seo-services", "google-ads", "lead-generation", "whatsapp-automation", "seo-services"], industries: ["real-estate", "education", "technology", "manufacturing"] },
+      { slug: "mumbai", name: "Mumbai", context: "India's financial capital, with strong demand in finance, media, real estate and consumer brands, and very high local competition.", considerations: ["Suburb-specific intent across a long, linear city", "Finance and professional-services advertisers bidding heavily", "English, Hindi and Marathi queries"], services: ["seo-services", "google-ads", "meta-ads", "digital-pr", "local-seo-services", "cro"], industries: ["finance", "real-estate", "ecommerce", "professional-services", "hospitality"] },
+      { slug: "bangalore", name: "Bangalore", context: "The country's technology centre: a high concentration of SaaS companies, startups and digitally sophisticated buyers.", considerations: ["Technically literate audience that checks claims", "SaaS and startup competition for talent and customers", "Search under both Bangalore and Bengaluru"], services: ["seo-services", "ai-seo-services", "content-seo", "linkedin-ads", "technical-seo", "cro"], industries: ["saas", "technology", "b2b", "education", "ecommerce"] },
+      { slug: "hyderabad", name: "Hyderabad", context: "A fast-growing technology, pharmaceutical and healthcare market with expanding commercial districts.", considerations: ["Pharma, healthcare and IT services demand", "Telugu and English search behaviour", "Rapidly developing western corridor"], services: ["seo-services", "local-seo-services", "google-ads", "linkedin-marketing", "lead-generation"], industries: ["healthcare", "technology", "real-estate", "education"] },
+      { slug: "pune", name: "Pune", context: "An education, automotive, manufacturing and IT city with a large student and young-professional population.", considerations: ["Education and automotive sectors", "Manufacturing and B2B supply chains", "Marathi and English queries"], services: ["seo-services", "google-ads", "lead-generation", "local-seo-services", "linkedin-marketing"], industries: ["education", "automotive", "manufacturing", "technology"] },
+      { slug: "jaipur", name: "Jaipur", context: "A tourism, jewellery, handicraft and growing startup market, with strong export and hospitality demand.", considerations: ["Tourism and hospitality seasonality", "Export-oriented ecommerce", "Hindi-first local search"], services: ["local-seo-services", "ecommerce-seo", "meta-ads", "instagram-marketing", "google-maps-seo", "international-seo"], industries: ["hospitality", "travel", "ecommerce", "local-business"] },
     ],
   },
   {
@@ -39,8 +41,10 @@ export const countries: Country[] = [
       { title: "Cost of paid demand", body: "Click costs in legal, finance and SaaS reward tight targeting and strong conversion rates." },
       { title: "Regional strategy", body: "National visibility is expensive. Metro and state-level plans often produce better economics." },
     ],
+    services: ["seo-services", "ai-seo-services", "google-ads", "cro", "linkedin-ads", "content-marketing"],
+    industries: ["saas", "legal", "finance", "healthcare", "home-services"],
     cities: [
-      { slug: "new-york", name: "New York", context: "Borough- and neighbourhood-level competition across finance, legal, real estate, media and hospitality, with some of the highest paid costs anywhere.", considerations: ["Neighbourhood-specific local intent", "Very high cost per click in professional services", "Dense review ecosystems"] },
+      { slug: "new-york", name: "New York", context: "Borough- and neighbourhood-level competition across finance, legal, real estate, media and hospitality, with some of the highest paid costs anywhere.", considerations: ["Neighbourhood-specific local intent", "Very high cost per click in professional services", "Dense review ecosystems"], services: ["local-seo-services", "google-ads", "landing-page-optimization", "digital-pr", "seo-services", "cro"], industries: ["finance", "legal", "real-estate", "hospitality", "professional-services"] },
     ],
   },
   {
@@ -54,8 +58,10 @@ export const countries: Country[] = [
       { title: "Advertising standards", body: "Claims need substantiation, particularly in finance, health and legal categories." },
       { title: "Localisation", body: "Spelling, terminology and regulation references should be British, not adapted American copy." },
     ],
+    services: ["seo-services", "local-seo-services", "google-ads", "digital-pr", "cro", "content-seo"],
+    industries: ["finance", "legal", "professional-services", "ecommerce", "accounting"],
     cities: [
-      { slug: "london", name: "London", context: "A global hub for finance, technology, legal and professional services, with borough-level local search and international audiences.", considerations: ["Borough and postcode-level intent", "International buyers researching UK providers", "Highly competitive professional-services search"] },
+      { slug: "london", name: "London", context: "A global hub for finance, technology, legal and professional services, with borough-level local search and international audiences.", considerations: ["Borough and postcode-level intent", "International buyers researching UK providers", "Highly competitive professional-services search"], services: ["seo-services", "local-seo-services", "google-ads", "linkedin-ads", "digital-pr", "international-seo"], industries: ["finance", "legal", "professional-services", "technology", "hospitality"] },
     ],
   },
   {
@@ -69,8 +75,10 @@ export const countries: Country[] = [
       { title: "Sector regulation", body: "Healthcare, real estate and finance advertising require approvals from the relevant authorities." },
       { title: "Expat search behaviour", body: "Audiences search with habits formed in their home countries, which widens the keyword landscape." },
     ],
+    services: ["local-seo-services", "google-ads", "meta-ads", "whatsapp-automation", "international-seo", "lead-generation"],
+    industries: ["real-estate", "hospitality", "healthcare", "travel", "professional-services"],
     cities: [
-      { slug: "dubai", name: "Dubai", context: "Intense competition in real estate, hospitality, healthcare and professional services, serving residents, investors and visitors at once.", considerations: ["Community and development names as search terms", "International investor audiences", "Bilingual English and Arabic demand"] },
+      { slug: "dubai", name: "Dubai", context: "Intense competition in real estate, hospitality, healthcare and professional services, serving residents, investors and visitors at once.", considerations: ["Community and development names as search terms", "International investor audiences", "Bilingual English and Arabic demand"], services: ["local-seo-services", "google-ads", "meta-ads", "whatsapp-automation", "lead-generation", "international-seo"], industries: ["real-estate", "hospitality", "healthcare", "travel", "professional-services"] },
     ],
   },
   {
@@ -84,8 +92,10 @@ export const countries: Country[] = [
       { title: "Anti-spam law", body: "Email and messaging programmes must meet express consent requirements." },
       { title: "Competing with US sites", body: "Clear Canadian signals in content, pricing and structure help the right version rank." },
     ],
+    services: ["seo-services", "international-seo", "local-seo-services", "google-ads", "email-marketing"],
+    industries: ["finance", "real-estate", "technology", "professional-services"],
     cities: [
-      { slug: "toronto", name: "Toronto", context: "Canada's largest business centre, strong in finance, technology, real estate and professional services, with a highly multicultural audience.", considerations: ["Greater Toronto Area suburb targeting", "Finance and real-estate competition", "Multilingual communities"] },
+      { slug: "toronto", name: "Toronto", context: "Canada's largest business centre, strong in finance, technology, real estate and professional services, with a highly multicultural audience.", considerations: ["Greater Toronto Area suburb targeting", "Finance and real-estate competition", "Multilingual communities"], services: ["local-seo-services", "seo-services", "google-ads", "linkedin-ads", "cro"], industries: ["finance", "real-estate", "technology", "professional-services"] },
     ],
   },
   {
@@ -99,8 +109,10 @@ export const countries: Country[] = [
       { title: "Consumer law", body: "Testimonials, reviews and performance claims are regulated and must be genuine." },
       { title: "Localisation", body: "Australian spelling, terminology and seasons, which run opposite to the northern hemisphere." },
     ],
+    services: ["local-seo-services", "google-maps-seo", "google-ads", "seo-services", "cro"],
+    industries: ["home-services", "real-estate", "finance", "construction", "hospitality"],
     cities: [
-      { slug: "sydney", name: "Sydney", context: "Australia's largest city and financial centre, with suburb-level search behaviour and strong competition in trades, property and professional services.", considerations: ["Suburb-specific service searches", "Property and finance sectors", "High mobile and maps usage"] },
+      { slug: "sydney", name: "Sydney", context: "Australia's largest city and financial centre, with suburb-level search behaviour and strong competition in trades, property and professional services.", considerations: ["Suburb-specific service searches", "Property and finance sectors", "High mobile and maps usage"], services: ["google-maps-seo", "local-seo-services", "google-ads", "seo-services", "landing-page-optimization"], industries: ["home-services", "real-estate", "finance", "professional-services", "construction"] },
     ],
   },
   {
@@ -114,6 +126,8 @@ export const countries: Country[] = [
       { title: "Data protection", body: "Consent and do-not-call requirements shape lead generation and messaging." },
       { title: "Multilingual audience", body: "English leads, with Mandarin, Malay and Tamil relevant for some consumer categories." },
     ],
+    services: ["seo-services", "international-seo", "linkedin-ads", "google-ads", "ai-seo-services"],
+    industries: ["finance", "b2b", "technology", "logistics", "education"],
     cities: [],
   },
   {
@@ -127,6 +141,8 @@ export const countries: Country[] = [
       { title: "Language by market", body: "Native keyword research and writing for each language; English-only coverage leaves most demand untouched." },
       { title: "Site structure", body: "Domain and hreflang decisions made early prevent expensive rework." },
     ],
+    services: ["international-seo", "technical-seo", "seo-services", "google-ads", "content-marketing", "digital-pr"],
+    industries: ["saas", "ecommerce", "manufacturing", "b2b", "travel"],
     cities: [],
   },
 ];

@@ -19,16 +19,39 @@ export const goalOptions = [
   "Something else",
 ] as const;
 
+/** The five service categories, plus the specifics people ask for by name. */
 export const serviceOptions = [
-  "SEO & Search",
-  "AI Search",
-  "Local & Maps",
-  "Performance Marketing",
-  "Social & Content",
-  "CRO & Conversion",
+  "SEO",
+  "AI Search (AEO/GEO)",
+  "Local SEO",
+  "Paid Media",
+  "Social Media",
+  "Content",
+  "CRO",
   "Marketing Automation",
-  "Web & Digital",
+  "Web Development",
+  "Not sure yet",
 ] as const;
+
+/** Channels a business already runs. Asked on the growth audit form only. */
+export const channelOptions = [
+  "SEO",
+  "Google Ads",
+  "Meta Ads",
+  "LinkedIn",
+  "Social Media",
+  "Content",
+  "Email",
+  "WhatsApp",
+  "Marketplaces",
+  "None yet",
+] as const;
+
+export const NO_CHANNELS = "None yet" satisfies (typeof channelOptions)[number];
+
+/** The two public forms. Sent as `form` in the request body. */
+export const formKinds = ["contact", "audit"] as const;
+export type FormKind = (typeof formKinds)[number];
 
 export const countryOptions = [
   "India",
@@ -93,22 +116,35 @@ const phoneMessage = (country?: string) => {
   return rule ? `Enter a valid phone number for ${country}, for example ${rule.example}.` : "Enter a valid phone number, including country code.";
 };
 
+const websiteMessage = "Enter a valid website address, for example yourcompany.com.";
+
+const isWebUrl = (v: string) => {
+  try {
+    const u = new URL(v);
+    return /^https?:$/.test(u.protocol) && /^[^.\s]+(\.[^.\s]+)+$/.test(u.hostname);
+  } catch {
+    return false;
+  }
+};
+
+const withProtocol = (v: string) => (v && !/^https?:\/\//i.test(v) ? `https://${v}` : v);
+
+/** Optional on the contact form. */
 const website = z
   .string()
   .default("")
-  .transform((v) => sanitize(v))
-  .transform((v) => (v && !/^https?:\/\//i.test(v) ? `https://${v}` : v))
-  .refine((v) => {
-    if (!v) return true;
-    try {
-      const u = new URL(v);
-      return /^https?:$/.test(u.protocol) && /^[^.\s]+(\.[^.\s]+)+$/.test(u.hostname);
-    } catch {
-      return false;
-    }
-  }, "Enter a valid website address, for example yourcompany.com.");
+  .transform((v) => withProtocol(sanitize(v)))
+  .refine((v) => !v || isWebUrl(v), websiteMessage);
 
-export const auditSchema = z.object({
+/** Required on the audit form: the site is what gets reviewed. */
+const websiteRequired = z
+  .string("Enter the website you would like reviewed.")
+  .transform((v) => withProtocol(sanitize(v)))
+  .refine((v) => v.length > 0, "Enter the website you would like reviewed.")
+  .refine((v) => !v || isWebUrl(v), websiteMessage);
+
+/** Fields both forms share, validated and sanitised the same way. */
+const shared = {
   fullName: text(80).pipe(
     z
       .string()
@@ -119,29 +155,77 @@ export const auditSchema = z.object({
   email: z
     .string(required)
     .transform((v) => sanitize(v).toLowerCase())
-    .pipe(z.email("Enter a valid work email address.").max(160)),
+    .pipe(z.email("Enter a valid email address.").max(160)),
   phone: z.string(required).transform(sanitize),
-  website,
   country: z.enum(countryOptions, "Select your country."),
   industry: text(80).pipe(z.string().min(2, "Select your industry.")),
-  budget: z.enum(budgetOptions, "Select a budget range."),
   goal: z.enum(goalOptions, "Select your primary growth goal."),
-  services: z.array(z.enum(serviceOptions)).max(serviceOptions.length).default([]),
   message: text(2000).default(""),
   consent: z.literal(true, "Please confirm so we can reply to you."),
-}).transform((data, ctx) => {
-  // Phone depends on country, so it is checked once both are known.
-  const normalized = normalizePhone(data.phone, data.country);
-  if (!normalized) {
-    ctx.addIssue({ code: "custom", path: ["phone"], message: phoneMessage(data.country) });
-    return z.NEVER;
-  }
-  return { ...data, phone: normalized };
-});
+};
 
-export type AuditInput = z.input<typeof auditSchema>;
-export type AuditSubmission = z.output<typeof auditSchema>;
-export type AuditField = keyof AuditSubmission;
+type IssueSink = { addIssue: (issue: { code: "custom"; path: string[]; message: string }) => void };
+
+/** Phone depends on country, so it is checked once both are known. Returns +E.164 or null. */
+function checkPhone(data: { phone: string; country: string }, ctx: IssueSink) {
+  const normalized = normalizePhone(data.phone, data.country);
+  if (!normalized) ctx.addIssue({ code: "custom", path: ["phone"], message: phoneMessage(data.country) });
+  return normalized;
+}
+
+/** /contact/ : a general enquiry, with budget and services of interest. */
+export const contactSchema = z
+  .object({
+    ...shared,
+    website,
+    budget: z.enum(budgetOptions, "Select a budget range."),
+    services: z.array(z.enum(serviceOptions)).max(serviceOptions.length).default([]),
+  })
+  .transform((data, ctx) => {
+    const phone = checkPhone(data, ctx);
+    return phone ? { ...data, phone } : z.NEVER;
+  });
+
+/** /growth-audit/ : a request for the audit, with the channels already in use. */
+export const growthAuditSchema = z
+  .object({
+    ...shared,
+    website: websiteRequired,
+    channels: z
+      .array(z.enum(channelOptions), "Select the channels you use, or choose None yet.")
+      .min(1, "Select the channels you use, or choose None yet.")
+      .max(channelOptions.length),
+  })
+  .transform((data, ctx) => {
+    const phone = checkPhone(data, ctx);
+    if (!phone) return z.NEVER;
+    // De-duplicate, and "None yet" only stands when nothing else is selected.
+    const unique = [...new Set(data.channels)];
+    const channels = unique.length > 1 ? unique.filter((c) => c !== NO_CHANNELS) : unique;
+    return { ...data, phone, channels };
+  });
+
+/**
+ * Kept under its original name for existing imports. This is the contact form
+ * schema; the audit request form uses `growthAuditSchema`.
+ */
+export const auditSchema = contactSchema;
+
+export const formSchemas = { contact: contactSchema, audit: growthAuditSchema } as const;
+
+export type ContactInput = z.input<typeof contactSchema>;
+export type ContactSubmission = z.output<typeof contactSchema>;
+export type GrowthAuditInput = z.input<typeof growthAuditSchema>;
+export type GrowthAuditSubmission = z.output<typeof growthAuditSchema>;
+
+/** A validated submission, tagged with the form it came from. */
+export type FormSubmission =
+  | ({ form: "contact" } & ContactSubmission)
+  | ({ form: "audit" } & GrowthAuditSubmission);
+
+export type AuditInput = ContactInput;
+export type AuditSubmission = ContactSubmission;
+export type AuditField = keyof ContactSubmission | keyof GrowthAuditSubmission;
 
 export type AuditResponse =
   | { ok: true }
@@ -154,4 +238,27 @@ export function fieldErrorsFrom(error: z.ZodError): Partial<Record<AuditField, s
     if (key && !out[key]) out[key] = issue.message;
   }
   return out;
+}
+
+/** Reads the `form` discriminator from a request body. Absent means the contact form. */
+export function parseFormKind(value: unknown): FormKind | null {
+  if (value === undefined || value === null || value === "") return "contact";
+  return typeof value === "string" && (formKinds as readonly string[]).includes(value) ? (value as FormKind) : null;
+}
+
+/** Validates a body against the schema for its form and tags the result. */
+export function validateSubmission(
+  form: FormKind,
+  data: unknown,
+): { ok: true; submission: FormSubmission } | { ok: false; fieldErrors: Partial<Record<AuditField, string>> } {
+  if (form === "audit") {
+    const parsed = growthAuditSchema.safeParse(data);
+    return parsed.success
+      ? { ok: true, submission: { form, ...parsed.data } }
+      : { ok: false, fieldErrors: fieldErrorsFrom(parsed.error) };
+  }
+  const parsed = contactSchema.safeParse(data);
+  return parsed.success
+    ? { ok: true, submission: { form, ...parsed.data } }
+    : { ok: false, fieldErrors: fieldErrorsFrom(parsed.error) };
 }

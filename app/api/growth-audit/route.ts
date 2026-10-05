@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { auditSchema, fieldErrorsFrom, type AuditResponse } from "@/lib/forms/audit";
-import { deliverAudit } from "@/lib/server/audit-delivery";
+import { parseFormKind, validateSubmission, type AuditResponse } from "@/lib/forms/audit";
+import { deliverSubmission } from "@/lib/server/audit-delivery";
 import { rateLimit } from "@/lib/server/rate-limit";
 
 export const runtime = "nodejs";
@@ -12,6 +12,11 @@ const MIN_FILL_MS = 2500;
 const json = (body: AuditResponse, status = 200) =>
   NextResponse.json(body, { status, headers: { "cache-control": "no-store" } });
 
+/**
+ * One endpoint for both public forms. The body carries `form: "contact" | "audit"`
+ * (absent means "contact") and is validated against that form's schema. Every
+ * guard below applies to both.
+ */
 export async function POST(request: Request) {
   // Same-origin only: the form posts from this site.
   const origin = request.headers.get("origin");
@@ -47,15 +52,15 @@ export async function POST(request: Request) {
     return json({ ok: true });
   }
 
-  const parsed = auditSchema.safeParse(data);
-  if (!parsed.success) {
-    return json(
-      { ok: false, message: "Please check the highlighted fields.", fieldErrors: fieldErrorsFrom(parsed.error) },
-      422,
-    );
+  const form = parseFormKind(data.form);
+  if (!form) return json({ ok: false, message: "The submission could not be read." }, 400);
+
+  const parsed = validateSubmission(form, data);
+  if (!parsed.ok) {
+    return json({ ok: false, message: "Please check the highlighted fields.", fieldErrors: parsed.fieldErrors }, 422);
   }
 
-  const result = await deliverAudit(parsed.data);
+  const result = await deliverSubmission(parsed.submission);
   if (!result.ok) {
     return json(
       {

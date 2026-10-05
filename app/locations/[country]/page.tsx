@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { FinalCta } from "@/components/sections/final-cta";
 import { PageHero } from "@/components/layout/page-hero";
+import { MarketLinks } from "@/components/locations/market-links";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Block, LinkList, RuledRows } from "@/components/services/page-parts";
 import { CtaLink } from "@/components/ui/cta-link";
@@ -34,6 +35,7 @@ export default async function CountryPage({ params }: Props) {
   const c = getCountry((await params).country);
   if (!c) notFound();
   const meta = metaFor(c.name, c.slug, c.context);
+  const place = c.name === "USA" || c.name === "UK" || c.name === "UAE" ? `the ${c.name}` : c.name;
 
   return (
     <>
@@ -59,6 +61,8 @@ export default async function CountryPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      <MarketLinks place={place} services={c.services} industries={c.industries} />
 
       {c.cities.length ? (
         <Block label="Cities" title="City-level notes.">

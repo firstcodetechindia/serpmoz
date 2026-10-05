@@ -7,5 +7,5 @@ export const industryIcons: Record<string, LucideIcon> = {
   saas: Laptop, ecommerce: ShoppingBag, healthcare: HeartPulse, dental: Smile, "real-estate": Building2, finance: Banknote,
   education: GraduationCap, legal: Scale, accounting: Calculator, automotive: Car, hospitality: Hotel, travel: Plane,
   manufacturing: Factory, logistics: Truck, construction: HardHat, "home-services": Hammer, b2b: Handshake,
-  "professional-services": Briefcase, technology: Cpu, "local-businesses": Store,
+  "professional-services": Briefcase, technology: Cpu, "local-business": Store,
 };

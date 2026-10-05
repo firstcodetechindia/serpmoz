@@ -6,33 +6,39 @@ import { Photo } from "@/components/ui/photo";
 import { aiReality } from "@/data/growth";
 import { photos } from "@/data/images";
 
-/** Two curves that leave the input bands and meet at the SERPMOZ panel. */
+/** Two curves that leave the centre of each input card and meet at the SERPMOZ panel. */
 function Merge() {
   const paths = [
-    { d: "M0,17 C55,17 45,50 100,50", color: "var(--color-cyan)", dur: "2.2s" },
-    { d: "M0,69 C55,69 45,50 100,50", color: "var(--color-blue)", dur: "2.8s" },
+    { d: "M0,25 C60,25 40,50 100,50", color: "var(--color-cyan)", dur: "2.2s", y: 25 },
+    { d: "M0,75 C60,75 40,50 100,50", color: "var(--color-blue)", dur: "2.8s", y: 75 },
   ];
   return (
-    <svg aria-hidden viewBox="0 0 100 100" preserveAspectRatio="none" className="hidden h-full w-full lg:block">
+    <div aria-hidden className="relative hidden lg:block">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="absolute inset-0 size-full">
+        {paths.map((p) => (
+          <g key={p.d}>
+            <path d={p.d} fill="none" stroke="var(--color-line-strong)" strokeWidth="1.5" vectorEffect="non-scaling-stroke" />
+            <path d={p.d} fill="none" stroke={p.color} strokeWidth="2.5" strokeLinecap="round" strokeDasharray="5 22" vectorEffect="non-scaling-stroke" className="motion-safe:animate-dash" style={{ animationDuration: p.dur }} />
+          </g>
+        ))}
+      </svg>
       {paths.map((p) => (
-        <g key={p.d}>
-          <path d={p.d} fill="none" stroke="var(--color-line-strong)" strokeWidth="1.5" vectorEffect="non-scaling-stroke" />
-          <path d={p.d} fill="none" stroke={p.color} strokeWidth="2" strokeLinecap="round" strokeDasharray="4 20" vectorEffect="non-scaling-stroke" className="motion-safe:animate-dash" style={{ animationDuration: p.dur }} />
-        </g>
+        <span key={p.y} className="absolute left-0 size-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-surface" style={{ top: `${p.y}%`, background: p.color }} />
       ))}
-    </svg>
+      <span className="absolute top-1/2 right-0 size-3 translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-surface bg-orange" />
+    </div>
   );
 }
 
 export function AiReality() {
   const { execute, decide, connect } = aiReality;
   return (
-    <Section aria-labelledby="ai-reality-title">
-      <div className="shell">
+    <Section aria-labelledby="ai-reality-title" className="overflow-hidden bg-canvas">
+      <div aria-hidden className="grid-lines absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_30%,transparent)]" />
+      <div className="shell relative">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
           <SectionHeader
             id="ai-reality-title"
-            index="01"
             label="The AI marketing reality"
             title={["AI Changed Marketing.", "It Didn’t Eliminate Expertise."]}
             className="lg:col-span-7"
@@ -49,10 +55,10 @@ export function AiReality() {
         </div>
 
         {/* Two inputs, one system. Read left to right; the lines carry the argument. */}
-        <Reveal className="mt-14 grid gap-y-5 lg:mt-24 lg:grid-cols-[minmax(0,1.5fr)_7rem_minmax(0,1fr)]" y={24}>
-          <div className="grid gap-5 lg:gap-8">
+        <Reveal className="mt-14 grid gap-y-5 lg:mt-24 lg:grid-cols-[minmax(0,1.5fr)_6rem_minmax(0,1fr)]" y={24}>
+          <div className="grid gap-5 lg:grid-rows-2 lg:gap-6">
             {/* AI: fast, plentiful, undirected – set in mono, drawn with a dashed edge */}
-            <div className="rounded-panel border border-dashed border-line-strong p-6 md:p-8 lg:mr-16">
+            <div className="flex flex-col justify-center rounded-panel border border-dashed border-line-strong bg-surface/60 p-6 md:p-8">
               <div className="flex items-center gap-3">
                 <span className="flex size-9 items-center justify-center rounded-full bg-cyan-wash text-navy">
                   <Bot aria-hidden className="size-4.5" />
@@ -70,8 +76,8 @@ export function AiReality() {
             </div>
 
             {/* Experts: fewer words, more weight – solid surface, a photograph, a human */}
-            <div className="relative overflow-hidden rounded-panel bg-surface shadow-float lg:ml-16">
-              <div className="grid sm:grid-cols-[1fr_11rem] md:grid-cols-[1fr_15rem]">
+            <div className="relative overflow-hidden rounded-panel bg-surface shadow-float">
+              <div className="grid h-full sm:grid-cols-[1fr_11rem] md:grid-cols-[1fr_15rem]">
                 <div className="p-6 md:p-8">
                   <div className="flex items-center gap-3">
                     <span className="flex size-9 items-center justify-center rounded-full bg-navy text-white">
@@ -111,7 +117,8 @@ export function AiReality() {
                   <li key={item} className="relative flex items-center gap-4 pb-5 last:pb-0">
                     {!last ? <span aria-hidden className="absolute top-5 left-[0.3125rem] h-full w-px bg-white/20" /> : null}
                     <span aria-hidden className={last ? "relative size-[0.6875rem] rounded-full bg-orange ring-4 ring-orange/25" : "relative size-[0.6875rem] rounded-full border-2 border-cyan bg-navy"} />
-                    <span className={last ? "text-2xl font-semibold tracking-[-0.03em]" : "text-lg font-medium tracking-[-0.015em] text-white/85"}>{item}</span>
+                    <span className={last ? "text-2xl font-semibold tracking-[-0.03em]" : "text-xl font-medium tracking-[-0.02em] text-white/85"}>{item}</span>
+                    {!last ? <span aria-hidden className="ml-auto font-mono text-lg text-white/30">+</span> : null}
                   </li>
                 );
               })}

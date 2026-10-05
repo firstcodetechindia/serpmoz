@@ -39,7 +39,7 @@ export const photos = {
   b2b: p("1431540015161-0bf868a2d407", "An empty boardroom with a long conference table"),
   "professional-services": p("1573167507387-6b4b98cb7c13", "Advisers listening to a colleague across a conference table"),
   technology: p("1744868562210-fffb7fa882d9", "Network cables patched neatly into a server rack"),
-  "local-businesses": p("1469631423273-6995642a6a40", "The counter of an independent coffee shop"),
+  "local-business": p("1469631423273-6995642a6a40", "The counter of an independent coffee shop"),
 } satisfies Record<string, PhotoRef>;
 
 export type PhotoKey = keyof typeof photos;

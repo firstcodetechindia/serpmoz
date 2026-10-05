@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { CaseStudyFramework } from "@/components/case-studies/case-study-framework";
+import { SampleBadge } from "@/components/ui/badge";
 import { Photo } from "@/components/ui/photo";
+import { illustrativeScenarios, publishedCaseStudies, type CaseStudy } from "@/data/case-studies";
+import { getIndustry } from "@/data/industries";
 import { photos } from "@/data/images";
 import { FinalCta } from "@/components/sections/final-cta";
 import { PageHero } from "@/components/layout/page-hero";
@@ -25,6 +30,28 @@ const standards = [
   { title: "What did not work", body: "Tests that failed and decisions we reversed are part of the account." },
 ];
 
+function StudyList({ items }: { items: CaseStudy[] }) {
+  return (
+    <ul className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+      {items.map((c) => (
+        <li key={c.slug} className="min-w-0">
+          <Link href={`/case-studies/${c.slug}/`} className="group flex h-full flex-col rounded-panel border border-line bg-surface p-6 transition-colors hover:border-navy md:p-7">
+            <span className="flex flex-wrap items-center justify-between gap-3">
+              {c.illustrative ? <SampleBadge>Illustrative Growth Scenario</SampleBadge> : <span className="label-mono text-blue-ink">Case study</span>}
+              <ArrowUpRight aria-hidden className="size-4 shrink-0 text-line-strong transition-colors group-hover:text-blue-ink" />
+            </span>
+            <h3 className="mt-5 text-xl leading-snug font-semibold tracking-[-0.02em] text-navy">{c.title}</h3>
+            <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted">{c.summary}</p>
+            <span className="label-mono mt-auto pt-6 text-muted">
+              {getIndustry(c.industry)?.name ?? c.industry} · {c.market}
+            </span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export default function CaseStudiesPage() {
   return (
     <>
@@ -46,6 +73,18 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
+      {publishedCaseStudies.length ? (
+        <section className="border-t border-line py-16 md:py-24">
+          <div className="shell">
+            <p className="label-mono text-muted">Published work</p>
+            <h2 className="mt-4 max-w-2xl text-h2 font-semibold text-navy">Client case studies.</h2>
+            <div className="mt-10">
+              <StudyList items={publishedCaseStudies} />
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       <Block label="Publishing standards" title="What has to be true before we publish." className="bg-surface">
         <ul className="grid border-b border-line sm:grid-cols-2 sm:gap-x-10">
           {standards.map((s) => (
@@ -57,7 +96,22 @@ export default function CaseStudiesPage() {
         </ul>
       </Block>
 
-      <Block label="In the meantime" title="Ask us directly.">
+      {illustrativeScenarios.length ? (
+        <section className="border-t border-line py-16 md:py-24">
+          <div className="shell">
+            <p className="label-mono text-muted">Illustrative Growth Scenarios</p>
+            <h2 className="mt-4 max-w-2xl text-h2 font-semibold text-navy">How we would approach three common situations.</h2>
+            <p className="mt-5 max-w-2xl text-[1.0625rem] leading-relaxed text-muted">
+              These are not client results. Each one sets out a realistic starting point, the diagnosis we would expect, the plan and what would be measured. They name no company and contain no result figures.
+            </p>
+            <div className="mt-10">
+              <StudyList items={illustrativeScenarios} />
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      <Block label="In the meantime" title="Ask us directly." className="bg-surface">
         <Prose>
           <p>
             If you are evaluating SERPMOZ now, talk to a strategist. We will walk you through how we would approach your

@@ -1,3 +1,4 @@
+import { publishedCaseStudies } from "@/data/case-studies";
 import { industries } from "@/data/industries";
 import { legalDocs } from "@/data/legal";
 import { countries, locationServices } from "@/data/locations";
@@ -18,11 +19,14 @@ export const sitemapGroups: Record<string, () => SitemapEntry[]> = {
     { path: "/about/", priority: 0.6 },
     { path: "/methodology/", priority: 0.6 },
     { path: "/contact/", priority: 0.7 },
+    { path: "/growth-audit/", priority: 0.9 },
+    { path: "/engagement-models/", priority: 0.7 },
     { path: "/careers/", priority: 0.4 },
     { path: "/case-studies/", priority: 0.6 },
+    ...publishedCaseStudies.map((c) => ({ path: `/case-studies/${c.slug}/`, priority: 0.7 })),
     ...legalDocs.map((d) => ({ path: `/${d.slug}/`, priority: 0.2, changefreq: "yearly" as const })),
   ],
-  services: () => services.map((s) => ({ path: `/${s.slug}/`, priority: 0.9 })),
+  services: () => [{ path: "/services/", priority: 0.9 }, ...services.map((s) => ({ path: `/${s.slug}/`, priority: 0.9 }))],
   resources: () => [
     { path: "/resources/", priority: 0.7, changefreq: "weekly" },
     { path: "/guides/", priority: 0.5, changefreq: "weekly" },

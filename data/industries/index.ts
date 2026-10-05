@@ -1,4 +1,5 @@
 import type { Industry } from "@/types";
+import { industryDetail } from "./detail";
 
 type Seed = [
   slug: string,
@@ -7,7 +8,6 @@ type Seed = [
   buyerBehaviour: string,
   focus: [string, string][],
   measures: string[],
-  services: string[],
 ];
 
 const seeds: Seed[] = [
@@ -22,7 +22,6 @@ const seeds: Seed[] = [
       ["Pipeline attribution", "Search and paid activity connected to opportunities and revenue in the CRM, not to sign-ups alone."],
     ],
     ["Demo and trial requests from target segments", "Sales-qualified pipeline", "CAC payback", "Share of recommendation in AI answers"],
-    ["seo-services", "ai-seo-services", "ppc-management", "cro"],
   ],
   [
     "ecommerce",
@@ -35,7 +34,6 @@ const seeds: Seed[] = [
       ["Checkout and retention", "Conversion testing, abandoned-cart flows and repeat-purchase journeys."],
     ],
     ["Non-brand revenue", "Contribution margin after ad spend", "Conversion rate", "Repeat purchase rate"],
-    ["ecommerce-seo", "ppc-management", "cro", "marketing-automation"],
   ],
   [
     "healthcare",
@@ -48,7 +46,6 @@ const seeds: Seed[] = [
       ["Compliant acquisition", "Paid campaigns and tracking designed within platform policy and applicable privacy rules."],
     ],
     ["Appointment requests", "Calls by location", "Cost per booked appointment", "Review volume and rating"],
-    ["local-seo-services", "seo-services", "ppc-management", "web-development"],
   ],
   [
     "dental",
@@ -61,7 +58,6 @@ const seeds: Seed[] = [
       ["Enquiry handling", "Call tracking, online booking and follow-up so that enquiries become appointments."],
     ],
     ["New patient bookings", "Enquiries by treatment type", "Map pack visibility", "Cost per new patient"],
-    ["local-seo-services", "ppc-management", "marketing-automation", "web-development"],
   ],
   [
     "real-estate",
@@ -74,7 +70,6 @@ const seeds: Seed[] = [
       ["Speed to contact", "Routing and automation that get a relevant response to the enquirer within minutes."],
     ],
     ["Qualified enquiries", "Site visits booked", "Cost per site visit", "Enquiry-to-booking rate"],
-    ["local-seo-services", "ppc-management", "marketing-automation", "seo-services"],
   ],
   [
     "finance",
@@ -87,7 +82,6 @@ const seeds: Seed[] = [
       ["Application funnels", "Multi-step journeys tested to reduce drop-off without weakening checks."],
     ],
     ["Qualified applications", "Cost per funded account", "Application completion rate", "Branded search demand"],
-    ["seo-services", "cro", "ppc-management", "ai-seo-services"],
   ],
   [
     "education",
@@ -100,7 +94,6 @@ const seeds: Seed[] = [
       ["Counsellor enablement", "Lead scoring and context passed to admissions so follow-up is informed."],
     ],
     ["Qualified enquiries by programme", "Application starts and completions", "Cost per enrolment", "Enquiry-to-enrolment rate"],
-    ["seo-services", "ppc-management", "marketing-automation", "social-media-marketing"],
   ],
   [
     "legal",
@@ -113,7 +106,6 @@ const seeds: Seed[] = [
       ["Intake", "Call handling and qualification that filter for matters the firm wants."],
     ],
     ["Qualified matters opened", "Cost per qualified enquiry", "Calls answered", "Visibility by practice area"],
-    ["local-seo-services", "seo-services", "ppc-management", "cro"],
   ],
   [
     "accounting",
@@ -126,7 +118,6 @@ const seeds: Seed[] = [
       ["Lead nurture", "Automated follow-up that turns one-off enquiries into retained relationships."],
     ],
     ["Qualified consultations", "New retained clients", "Seasonal visibility", "Lead-to-client rate"],
-    ["seo-services", "local-seo-services", "marketing-automation", "social-media-marketing"],
   ],
   [
     "automotive",
@@ -139,7 +130,6 @@ const seeds: Seed[] = [
       ["Lead response", "Enquiries routed and followed up before the buyer contacts the next dealer."],
     ],
     ["Test drive bookings", "Service bookings", "Cost per showroom lead", "Lead response time"],
-    ["local-seo-services", "ppc-management", "marketing-automation", "web-development"],
   ],
   [
     "hospitality",
@@ -152,7 +142,6 @@ const seeds: Seed[] = [
       ["Seasonal demand", "Campaigns and content timed to booking windows for each market."],
     ],
     ["Direct booking share", "Cost per direct booking", "Review rating", "Brand search demand"],
-    ["local-seo-services", "ppc-management", "cro", "social-media-marketing"],
   ],
   [
     "travel",
@@ -165,7 +154,6 @@ const seeds: Seed[] = [
       ["Booking funnel", "Search, pricing and checkout steps tested for completion."],
     ],
     ["Bookings and revenue by route or product", "Cost per booking", "Booking funnel completion", "Citations in AI travel answers"],
-    ["seo-services", "ai-seo-services", "ppc-management", "cro"],
   ],
   [
     "manufacturing",
@@ -178,7 +166,6 @@ const seeds: Seed[] = [
       ["RFQ qualification", "Forms and routing that capture the detail sales needs and filter out poor fits."],
     ],
     ["Qualified RFQs", "Enquiries by product line and market", "Visibility for specification searches", "RFQ-to-order rate"],
-    ["seo-services", "international-seo", "web-development", "marketing-automation"],
   ],
   [
     "logistics",
@@ -191,7 +178,6 @@ const seeds: Seed[] = [
       ["B2B authority", "LinkedIn and trade press presence that supports enterprise sales."],
     ],
     ["Qualified quote requests", "Quote-to-contract rate", "Visibility by lane and service", "Response time"],
-    ["seo-services", "ppc-management", "marketing-automation", "social-media-marketing"],
   ],
   [
     "construction",
@@ -204,7 +190,6 @@ const seeds: Seed[] = [
       ["Enquiry qualification", "Forms that capture project type, value and timeline to prioritise follow-up."],
     ],
     ["Qualified project enquiries", "Tender invitations", "Visibility by region and sector", "Enquiry-to-bid rate"],
-    ["local-seo-services", "seo-services", "web-development", "social-media-marketing"],
   ],
   [
     "home-services",
@@ -217,7 +202,6 @@ const seeds: Seed[] = [
       ["Booking and dispatch", "Call handling, online booking and missed-call follow-up."],
     ],
     ["Booked jobs", "Cost per booked job", "Call answer rate", "Review volume and rating"],
-    ["local-seo-services", "ppc-management", "marketing-automation", "cro"],
   ],
   [
     "b2b",
@@ -230,7 +214,6 @@ const seeds: Seed[] = [
       ["Sales alignment", "Lead definitions, handover and feedback agreed with the sales team."],
     ],
     ["Sales-qualified pipeline", "Engaged target accounts", "Opportunity win rate", "Sales cycle length"],
-    ["seo-services", "social-media-marketing", "ppc-management", "marketing-automation"],
   ],
   [
     "professional-services",
@@ -243,7 +226,6 @@ const seeds: Seed[] = [
       ["Relationship nurture", "Useful, low-frequency communication that keeps the firm in mind between projects."],
     ],
     ["Qualified conversations", "Inbound proposals requested", "Branded and expert-name search", "Referral and repeat revenue"],
-    ["social-media-marketing", "seo-services", "ai-seo-services", "web-development"],
   ],
   [
     "technology",
@@ -256,10 +238,9 @@ const seeds: Seed[] = [
       ["Commercial journeys", "Clear paths from technical interest to evaluation and procurement."],
     ],
     ["Qualified evaluations", "Pipeline by product", "Documentation-sourced sign-ups", "Mentions in AI and community answers"],
-    ["seo-services", "ai-seo-services", "social-media-marketing", "web-development"],
   ],
   [
-    "local-businesses",
+    "local-business",
     "Local Businesses",
     "More calls, visits and bookings from your catchment.",
     "For a local business, the customer is usually within a few kilometres and deciding within the hour. The profile, the reviews and the phone being answered matter more than any campaign.",
@@ -269,21 +250,23 @@ const seeds: Seed[] = [
       ["Right-sized advertising", "Small, tightly targeted campaigns that pay for themselves."],
     ],
     ["Calls and direction requests", "Bookings", "Map visibility in the service area", "Cost per customer"],
-    ["local-seo-services", "ppc-management", "web-development", "marketing-automation"],
   ],
 ];
 
-export const industries: Industry[] = seeds.map(
-  ([slug, name, line, buyerBehaviour, focus, measures, services]) => ({
+/** Short fields live in the seeds above; the long-form sections live in ./detail. */
+export const industries: Industry[] = seeds.map(([slug, name, line, buyerBehaviour, focus, measures]) => {
+  const detail = industryDetail[slug];
+  if (!detail) throw new Error(`Industry "${slug}" has no entry in data/industries/detail.ts`);
+  return {
     slug,
     name,
     line,
     buyerBehaviour,
     focus: focus.map(([title, body]) => ({ title, body })),
     measures,
-    services,
-  }),
-);
+    ...detail,
+  };
+});
 
 export function getIndustry(slug: string) {
   return industries.find((i) => i.slug === slug);

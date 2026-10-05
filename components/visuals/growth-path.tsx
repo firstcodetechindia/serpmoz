@@ -35,18 +35,20 @@ export function GrowthPath({ className }: { className?: string }) {
         {/* DIY: solid for three steps, then a tail that goes nowhere */}
         <path d={smoothPath(flat)} fill="none" stroke="var(--color-line-strong)" strokeWidth="2" vectorEffect="non-scaling-stroke" />
         <path d={smoothPath(flatTail)} fill="none" stroke="var(--color-line-strong)" strokeWidth="2" strokeDasharray="3 6" vectorEffect="non-scaling-stroke" />
-        <m.path
-          d={smoothPath(climb)}
-          fill="none"
-          stroke="var(--color-blue)"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          vectorEffect="non-scaling-stroke"
-          initial={{ pathLength: 0 }}
-          whileInView={{ pathLength: 1 }}
-          viewport={{ once: true, margin: "0px 0px -20% 0px" }}
-          transition={{ duration: 2.2, ease: [0.22, 1, 0.36, 1] }}
-        />
+        <defs>
+          <clipPath id="gp-reveal">
+            <m.rect
+              x="0"
+              y="-10"
+              height="120"
+              initial={{ width: 0 }}
+              whileInView={{ width: 100 }}
+              viewport={{ once: true, margin: "0px 0px -20% 0px" }}
+              transition={{ duration: 2.2, ease: [0.22, 1, 0.36, 1] }}
+            />
+          </clipPath>
+        </defs>
+        <path d={smoothPath(climb)} fill="none" stroke="var(--color-blue)" strokeWidth="2.5" strokeLinecap="round" vectorEffect="non-scaling-stroke" clipPath="url(#gp-reveal)" />
       </svg>
 
       <p className="label-mono absolute top-0 left-0 text-navy">SERPMOZ</p>
@@ -75,8 +77,9 @@ export function GrowthPath({ className }: { className?: string }) {
             <span className={cn("block rounded-full", last ? "size-4 bg-orange ring-[6px] ring-orange/20" : "size-3 border-[2.5px] border-blue bg-surface")} />
             <span
               className={cn(
-                "absolute bottom-5 whitespace-nowrap",
-                last ? "right-0 text-right" : "left-1/2 -translate-x-1/2 text-center",
+                "absolute bottom-4 whitespace-nowrap",
+                // Labels sit up and to the left of each point, clear of the rising line.
+                "right-1 text-right",
               )}
             >
               <span className="label-mono block text-[0.5625rem] text-muted">{String(i + 1).padStart(2, "0")}</span>

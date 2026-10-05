@@ -10,12 +10,11 @@ import { cta } from "@/lib/config/site";
 
 export function ExpertsComparison() {
   return (
-    <Section aria-labelledby="experts-title" className="border-y border-line bg-surface">
+    <Section aria-labelledby="experts-title" className="bg-gradient-to-b from-blue-wash via-surface to-surface">
       <div className="shell">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
           <SectionHeader
             id="experts-title"
-            index="02"
             label="Why businesses still need experts"
             title={["Tools Are Everywhere.", "Expertise Is Not."]}
             className="lg:col-span-7"
@@ -31,7 +30,7 @@ export function ExpertsComparison() {
         <div className="mt-14 grid gap-10 lg:mt-20 lg:grid-cols-12 lg:gap-8">
           {/* The journey, drawn to scale */}
           <Reveal className="lg:col-span-8" y={24}>
-            <div className="hidden rounded-panel border border-line bg-canvas p-8 pt-16 pb-12 md:block lg:p-10 lg:pt-20 lg:pb-14">
+            <div className="hidden rounded-panel border border-line bg-surface p-8 pt-16 pb-12 shadow-soft md:block lg:p-10 lg:pt-20 lg:pb-14">
               <GrowthPath />
             </div>
 

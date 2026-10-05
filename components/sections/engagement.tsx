@@ -6,19 +6,19 @@ import { cta } from "@/lib/config/site";
 
 export function Engagement() {
   return (
-    <Section aria-labelledby="engagement-title">
-      <div className="shell">
+    <Section aria-labelledby="engagement-title" className="overflow-hidden bg-orange-wash">
+      <div aria-hidden className="absolute -top-32 right-0 size-[34rem] rounded-full bg-orange/15 blur-[110px]" />
+      <div className="shell relative">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeader
             id="engagement-title"
-            index="14"
             label="Engagement"
             title={["Scoped to Your Stage,", "Not Sold as a Package."]}
             lead="Five ways to work with us, ordered by business maturity. Each is scoped after a diagnostic, around outcomes and strategic opportunities instead of deliverable counts."
           />
           <Reveal delay={0.1} className="shrink-0">
-            <CtaLink href={cta.strategist.href} variant="solid" size="lg" data-cta="engagement-strategist">
-              {cta.strategist.label}
+            <CtaLink href={cta.audit.href} variant="solid" size="lg" data-cta="engagement-audit">
+              {cta.audit.label}
             </CtaLink>
           </Reveal>
         </div>

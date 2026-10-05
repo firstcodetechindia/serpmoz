@@ -7,12 +7,11 @@ import { countries, featuredCities } from "@/data/locations";
 
 export function LocationsSection() {
   return (
-    <Section aria-labelledby="locations-title" className="overflow-hidden">
+    <Section aria-labelledby="locations-title" className="overflow-hidden bg-surface">
       <div className="shell">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
           <SectionHeader
             id="locations-title"
-            index="10"
             label="Global + local growth"
             title={["Local Expertise.", "Global Ambition."]}
             className="lg:col-span-6"

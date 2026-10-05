@@ -6,7 +6,9 @@ import { ArticleCover } from "@/components/resources/article-cover";
 import { ArticleMeta } from "@/components/resources/article-list";
 import { FinalCta } from "@/components/sections/final-cta";
 import { JsonLd } from "@/components/seo/json-ld";
+import { LinkList } from "@/components/services/page-parts";
 import { articles, getArticle, readingTime } from "@/data/resources";
+import { getService } from "@/data/services";
 import { categoryName, formatDate } from "@/lib/resources";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { articleSchema } from "@/lib/seo/schema";
@@ -31,7 +33,10 @@ export default async function ArticlePage({ params }: Props) {
   const a = getArticle((await params).slug);
   if (!a) notFound();
   const path = `/resources/${a.slug}/`;
-  const more = articles.filter((x) => x.slug !== a.slug).slice(0, 3);
+  const others = articles.filter((x) => x.slug !== a.slug);
+  // Same category first, then the rest in publication order.
+  const more = [...others.filter((x) => x.category === a.category), ...others.filter((x) => x.category !== a.category)].slice(0, 3);
+  const relatedServices = a.relatedServices.map(getService).filter((s) => s !== undefined);
 
   return (
     <>
@@ -103,12 +108,26 @@ export default async function ArticlePage({ params }: Props) {
         </div>
       </article>
 
+      {relatedServices.length ? (
+        <section className="border-t border-line py-14 md:py-20">
+          <div className="shell grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-8">
+            <div className="min-w-0 lg:col-span-4">
+              <h2 className="label-mono text-muted">Related services</h2>
+              <p className="mt-4 max-w-sm text-h3 font-semibold text-navy">Where this thinking is put to work.</p>
+            </div>
+            <div className="min-w-0 lg:col-span-8">
+              <LinkList links={relatedServices.map((s) => ({ label: s.name, href: `/${s.slug}/`, note: s.summary }))} />
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       <section className="border-t border-line bg-surface py-14 md:py-20">
         <div className="shell">
-          <p className="label-mono text-muted">Keep reading</p>
-          <ul className="mt-6 grid gap-6 md:grid-cols-3">
+          <h2 className="label-mono text-muted">Related articles</h2>
+          <ul className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
             {more.map((m) => (
-              <li key={m.slug}>
+              <li key={m.slug} className="min-w-0">
                 <Link href={`/resources/${m.slug}/`} className="group block">
                   <ArticleCover slug={m.slug} category={m.category} tone="light" className="aspect-[16/9] rounded-2xl" />
                   <p className="label-mono mt-4 text-blue-ink">{categoryName(m.category)} <span className="text-muted">· {m.format}</span></p>

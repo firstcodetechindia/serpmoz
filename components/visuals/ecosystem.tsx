@@ -1,4 +1,4 @@
-import { Globe, MapPin, MessagesSquare, Search, Share2, Sparkles, Store, type LucideIcon } from "lucide-react";
+import { Camera, Globe, MapPin, MessagesSquare, Newspaper, Play, Search, Sparkles, Store, UsersRound, type LucideIcon } from "lucide-react";
 import { LogoMark } from "@/components/navigation/logo";
 import { searchSurfaces } from "@/data/growth";
 import { cn } from "@/lib/utils";
@@ -6,28 +6,30 @@ import { cn } from "@/lib/utils";
 const icons: Record<string, LucideIcon> = {
   Google: Search,
   "AI Search": Sparkles,
-  Maps: MapPin,
-  Social: Share2,
+  "Google Maps": MapPin,
+  YouTube: Play,
+  Instagram: Camera,
+  LinkedIn: UsersRound,
   Communities: MessagesSquare,
   Marketplaces: Store,
-  Websites: Globe,
+  "Industry Websites": Newspaper,
 };
 
-const R = 40; // node orbit radius, % of the stage
+const R = 41; // node orbit radius, % of the stage
 const nodes = searchSurfaces.map((s, i) => {
   const a = ((-90 + (i * 360) / searchSurfaces.length) * Math.PI) / 180;
   return { ...s, x: 50 + R * Math.cos(a), y: 50 + R * Math.sin(a) };
 });
 
 /**
- * The discovery ecosystem: seven places a buyer can find a brand, wired to one
+ * The discovery ecosystem: nine places a buyer can find a brand, wired to one
  * centre. A square stage on tablet and up; a connected list on phones.
  */
 export function Ecosystem({ className }: { className?: string }) {
   return (
     <div className={className}>
       {/* Orbit */}
-      <div className="relative mx-auto hidden aspect-square w-full max-w-[40rem] sm:block">
+      <div className="relative mx-auto hidden aspect-square w-full max-w-[42rem] sm:block">
         <svg aria-hidden viewBox="0 0 100 100" className="absolute inset-0 size-full">
           <defs>
             <radialGradient id="eco-glow">
@@ -70,16 +72,16 @@ export function Ecosystem({ className }: { className?: string }) {
             return (
               <li
                 key={n.name}
-                className="group absolute w-[9.5rem] -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-line bg-surface p-3 shadow-soft transition-shadow duration-300 hover:shadow-float md:w-44"
+                className="group absolute w-[8.25rem] -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-line bg-surface p-2.5 shadow-soft transition-all duration-300 hover:z-10 hover:scale-105 hover:shadow-float md:w-[9.25rem] md:p-3"
                 style={{ left: `${n.x}%`, top: `${n.y}%` }}
               >
-                <div className="flex items-center gap-2.5">
-                  <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-blue-wash text-blue-ink transition-colors group-hover:bg-navy group-hover:text-white">
+                <div className="flex items-center gap-2">
+                  <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-blue-wash text-blue-ink transition-colors group-hover:bg-navy group-hover:text-white">
                     <Icon aria-hidden className="size-4" />
                   </span>
-                  <span className="text-[0.9375rem] font-semibold tracking-[-0.015em] text-navy">{n.name}</span>
+                  <span className="text-[0.8125rem] leading-tight font-semibold tracking-[-0.01em] text-navy">{n.name}</span>
                 </div>
-                <p className="mt-2 text-xs leading-snug text-muted">{n.detail}</p>
+                <p className="mt-1.5 text-[0.6875rem] leading-snug text-muted">{n.detail}</p>
               </li>
             );
           })}

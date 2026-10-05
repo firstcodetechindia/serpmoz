@@ -14,7 +14,48 @@ import type { NavGroup } from "@/types";
 const triggerClass =
   "group flex h-10 items-center gap-1 rounded-control px-2.5 text-[0.9375rem] font-medium text-ink/80 transition-colors hover:text-navy data-[state=open]:text-navy";
 
+const itemClass = "group/item block rounded-control px-3 py-2 transition-colors hover:bg-canvas";
+
+function Columns({ group }: { group: NavGroup }) {
+  return (
+    <div className="p-7">
+      <div className="grid grid-cols-5 gap-6">
+        {group.columns!.map((col) => (
+          <div key={col.title}>
+            <NavigationMenu.Link asChild>
+              <Link href={col.href} className="label-mono block border-b border-line px-3 pb-3 text-navy hover:text-blue-ink">
+                {col.title}
+              </Link>
+            </NavigationMenu.Link>
+            <ul className="mt-2">
+              {col.links.map((l) => (
+                <li key={l.href}>
+                  <NavigationMenu.Link asChild>
+                    <Link href={l.href} className={cn(itemClass, "text-[0.9375rem] text-ink/85 hover:text-navy")}>
+                      {l.label}
+                    </Link>
+                  </NavigationMenu.Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <div className="mt-5 flex items-center justify-between border-t border-line px-3 pt-5">
+        <p className="text-sm text-muted">{group.summary}</p>
+        <NavigationMenu.Link asChild>
+          <Link href={group.href} className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-ink hover:underline hover:underline-offset-4">
+            {group.all}
+            <ArrowUpRight aria-hidden className="size-4" />
+          </Link>
+        </NavigationMenu.Link>
+      </div>
+    </div>
+  );
+}
+
 function Panel({ group }: { group: NavGroup }) {
+  if (group.columns) return <Columns group={group} />;
   const links = group.links ?? [];
   const dense = links.length > 9;
   return (
@@ -26,16 +67,16 @@ function Panel({ group }: { group: NavGroup }) {
         </div>
         <NavigationMenu.Link asChild>
           <Link href={group.href} className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-blue-ink hover:underline hover:underline-offset-4">
-            {group.label === "Solutions" ? "Start with SEO & Search" : `All ${group.label.toLowerCase()}`}
+            {group.all ?? group.label}
             <ArrowUpRight aria-hidden className="size-4" />
           </Link>
         </NavigationMenu.Link>
       </div>
-      <ul className={cn("col-span-8 grid gap-x-6", dense ? "grid-cols-3 gap-y-0.5" : "grid-cols-2 gap-y-1")}>
+      <ul className={cn("col-span-8 grid content-start gap-x-6", dense ? "grid-cols-3 gap-y-0.5" : "grid-cols-2 gap-y-1")}>
         {links.map((l) => (
           <li key={l.href + l.label}>
             <NavigationMenu.Link asChild>
-              <Link href={l.href} className="group/item block rounded-control px-3 py-2.5 transition-colors hover:bg-canvas">
+              <Link href={l.href} className={itemClass}>
                 <span className="flex items-center justify-between text-[0.9375rem] font-medium text-ink">
                   {l.label}
                   <ArrowUpRight aria-hidden className="size-3.5 -translate-x-1 text-muted opacity-0 transition-all duration-200 group-hover/item:translate-x-0 group-hover/item:opacity-100" />

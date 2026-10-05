@@ -3,13 +3,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FinalCta } from "@/components/sections/final-cta";
 import { PageHero } from "@/components/layout/page-hero";
+import { MarketLinks } from "@/components/locations/market-links";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Block, LinkList } from "@/components/services/page-parts";
 import { CtaLink } from "@/components/ui/cta-link";
 import { Photo } from "@/components/ui/photo";
 import { photos } from "@/data/images";
 import { countries, getCity, getCountry, locationServices } from "@/data/locations";
-import { primaryServices } from "@/data/services";
 import { cta } from "@/lib/config/site";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { webPageSchema } from "@/lib/seo/schema";
@@ -80,9 +80,7 @@ export default async function CityPage({ params }: Props) {
         </Block>
       ) : null}
 
-      <Block label="Services" title="What we do.">
-        <LinkList links={primaryServices.slice(0, 8).map((s) => ({ label: s.name, href: `/${s.slug}/`, note: s.summary }))} />
-      </Block>
+      <MarketLinks place={city.name} services={city.services} industries={city.industries} />
 
       <FinalCta />
       <JsonLd data={webPageSchema(meta)} />

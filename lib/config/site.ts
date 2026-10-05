@@ -1,6 +1,7 @@
 import type { NavGroup, NavLink } from "@/types";
 import { industries } from "@/data/industries";
 import { countries } from "@/data/locations";
+import { serviceCategories } from "@/data/services/catalog";
 
 const trim = (v?: string) => (v ?? "").trim().replace(/\/+$/, "");
 
@@ -29,8 +30,8 @@ export const site = {
 } as const;
 
 export const cta = {
-  audit: { label: "Get Your Growth Audit", href: "/contact/#growth-audit" },
-  services: { label: "Our Services", href: "/#what-we-do-title" },
+  audit: { label: "Get Your Growth Audit", href: "/growth-audit/" },
+  services: { label: "Explore Our Services", href: "/services/" },
   strategist: { label: "Talk to a Growth Strategist", href: "/contact/" },
 } as const;
 
@@ -38,36 +39,49 @@ const navIndustries = [
   "saas",
   "ecommerce",
   "healthcare",
-  "dental",
   "real-estate",
   "finance",
   "education",
   "legal",
+  "manufacturing",
+  "hospitality",
+  "home-services",
   "b2b",
-  "professional-services",
-  "local-businesses",
+  "local-business",
 ];
+
+/** Services shown per column in the Solutions menu; the rest sit behind "All services". */
+const menuServices: Record<string, string[]> = {
+  "search-ai": ["/seo-services/", "/ai-seo-services/", "/aeo-services/", "/geo-services/", "/local-seo-services/", "/technical-seo/"],
+  performance: ["/ppc-management/", "/google-ads/", "/meta-ads/", "/linkedin-ads/", "/retargeting/", "/lead-generation/"],
+  "content-social": ["/social-media-marketing/", "/content-marketing/", "/linkedin-marketing/", "/instagram-marketing/", "/youtube-marketing/", "/video-marketing/"],
+  "conversion-automation": ["/cro/", "/landing-page-optimization/", "/marketing-automation/", "/whatsapp-automation/", "/email-marketing/", "/ai-agents/"],
+  "web-digital": ["/web-development/", "/nextjs-development/", "/wordpress-development/", "/shopify-development/", "/webflow-development/", "/ui-ux-design/"],
+};
+
+const solutionColumns = serviceCategories.map((c) => ({
+  title: c.label,
+  href: c.href,
+  links: menuServices[c.id].map((href) => {
+    const item = c.items.find((i) => i.href === href)!;
+    return { label: item.name, href };
+  }),
+}));
 
 export const navigation: NavGroup[] = [
   {
     label: "Solutions",
-    href: "/seo-services/",
-    summary: "Eight capabilities, one growth system.",
-    links: [
-      { label: "SEO & Search", href: "/seo-services/", description: "Technical, content and authority, prioritised by value" },
-      { label: "AI Search", href: "/ai-seo-services/", description: "Visibility in AI-generated answers: AEO and GEO" },
-      { label: "Local & Maps", href: "/local-seo-services/", description: "Profiles, reviews and location visibility" },
-      { label: "Performance Marketing", href: "/ppc-management/", description: "Paid media managed against return" },
-      { label: "Social & Content", href: "/social-media-marketing/", description: "Editorial, social and digital PR" },
-      { label: "CRO & Conversion", href: "/cro/", description: "Research, landing pages and experimentation" },
-      { label: "Marketing Automation", href: "/marketing-automation/", description: "CRM, journeys and AI agents" },
-      { label: "Web & Digital", href: "/web-development/", description: "Sites built for search, speed and conversion" },
-    ],
+    href: "/services/",
+    summary: "Five disciplines, planned together.",
+    all: "All services",
+    columns: solutionColumns,
+    links: solutionColumns.flatMap((c) => c.links),
   },
   {
     label: "Industries",
     href: "/industries/",
     summary: "Strategy shaped by how your buyers search and decide.",
+    all: "All industries",
     links: navIndustries.map((slug) => {
       const i = industries.find((x) => x.slug === slug)!;
       return { label: i.name, href: `/industries/${i.slug}/` };
@@ -77,15 +91,17 @@ export const navigation: NavGroup[] = [
     label: "Locations",
     href: "/locations/",
     summary: "Local expertise. Global ambition.",
+    all: "All locations",
     links: countries.map((c) => ({ label: c.name, href: `/locations/${c.slug}/`, description: c.cities.length ? c.cities.slice(0, 4).map((x) => x.name).join(", ") : "Market overview" })),
   },
+  { label: "Case Studies", href: "/case-studies/" },
   {
     label: "Resources",
     href: "/resources/",
     summary: "Research and practice from the people doing the work.",
+    all: "All resources",
     links: [
       { label: "Insights", href: "/resources/", description: "Argued positions on single questions" },
-      { label: "Case Studies", href: "/case-studies/", description: "How we document results" },
       { label: "Guides", href: "/guides/", description: "Practical references for teams" },
       { label: "Reports", href: "/reports/", description: "Original analysis, method shown" },
       { label: "AI Search Resources", href: "/resources/#ai-search", description: "Understanding AI discovery" },
@@ -95,25 +111,35 @@ export const navigation: NavGroup[] = [
     label: "Company",
     href: "/about/",
     summary: "Who we are and how we work.",
+    all: "About SERPMOZ",
     links: [
       { label: "About", href: "/about/", description: "What SERPMOZ is, and is not" },
-      { label: "Methodology", href: "/methodology/", description: "Strategy first, AI accelerated, expert approved" },
+      { label: "Methodology", href: "/methodology/", description: "Discover, diagnose, prioritize, execute, measure, optimize" },
+      { label: "Engagement Models", href: "/engagement-models/", description: "Five ways to work with us" },
       { label: "Careers", href: "/careers/", description: "Work with us" },
       { label: "Contact", href: "/contact/", description: "Start a conversation" },
+      { label: "GrowthOS", href: "/growthos/", description: "Our planned platform. Coming soon" },
     ],
   },
 ];
 
+const group = (label: string) => navigation.find((g) => g.label === label)!;
+
 export const footerNav: { title: string; links: NavLink[] }[] = [
-  { title: "Solutions", links: navigation[0].links! },
-  { title: "Industries", links: [...navigation[1].links!.slice(0, 7), { label: "All industries", href: "/industries/" }] },
-  { title: "Resources", links: navigation[3].links! },
-  { title: "Locations", links: countries.map((c) => ({ label: c.name, href: `/locations/${c.slug}/` })) },
+  { title: "Solutions", links: [...serviceCategories.map((c) => ({ label: c.label, href: c.href })), { label: "All services", href: "/services/" }] },
+  { title: "Industries", links: [...group("Industries").links!.slice(0, 7), { label: "All industries", href: "/industries/" }] },
+  { title: "Locations", links: [...countries.map((c) => ({ label: c.name, href: `/locations/${c.slug}/` })), { label: "All locations", href: "/locations/" }] },
+  { title: "Resources", links: [{ label: "Case Studies", href: "/case-studies/" }, ...group("Resources").links!.map(({ label, href }) => ({ label, href }))] },
   {
     title: "Company",
     links: [
-      ...navigation[4].links!.map(({ label, href }) => ({ label, href })),
-        ],
+      { label: "About", href: "/about/" },
+      { label: "Methodology", href: "/methodology/" },
+      { label: "Engagement Models", href: "/engagement-models/" },
+      { label: "Careers", href: "/careers/" },
+      { label: "Contact", href: "/contact/" },
+      { label: "Growth Audit", href: "/growth-audit/" },
+    ],
   },
 ];
 

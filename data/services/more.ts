@@ -1,7 +1,9 @@
 import type { Service } from "@/types";
 
+type Base = Omit<Service, "why" | "process" | "deliverables" | "tools" | "audience" | "cta">;
+
 /** Specialist service pages that sit under the eight core capabilities. */
-export const moreServices: Service[] = [
+export const moreServices: Base[] = [
   {
     slug: "google-ads",
     name: "Google Ads",
@@ -145,7 +147,7 @@ export const moreServices: Service[] = [
     metaTitle: "Digital PR & Authority Building",
     metaDescription:
       "Digital PR from SERPMOZ: data-led stories, expert commentary and relationships with relevant publications that earn coverage, links and AI citations.",
-    category: "content-social",
+    category: "search-ai",
     summary: "Data-led stories and expert commentary that earn coverage, links and citations.",
     intro:
       "Search engines and AI assistants both lean on what credible third parties say about you. Digital PR is how that evidence is earned: by giving journalists and editors something worth publishing, not by buying placements.",

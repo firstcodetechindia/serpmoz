@@ -1,15 +1,20 @@
 import type { Service } from "@/types";
+import { channelSpecialisms } from "./channel-specialisms";
+import { serviceExtras } from "./extras";
 import { moreServices } from "./more";
+import { searchSpecialisms } from "./search-specialisms";
 
 /**
  * Core service pages. Each entry renders at /{slug}/.
  * Copy rules: no invented figures, no client names, no guarantees.
  * "measures" lists what we track – not results we claim.
  */
-const coreServices: Service[] = [
+type Base = Omit<Service, "why" | "process" | "deliverables" | "tools" | "audience" | "cta">;
+
+const coreServices: Base[] = [
   {
     slug: "seo-services",
-    name: "SEO & Search",
+    name: "SEO",
     title: "SEO that is planned around revenue, not rankings",
     metaTitle: "SEO Services",
     metaDescription:
@@ -82,82 +87,8 @@ const coreServices: Service[] = [
     related: ["ai-seo-services", "local-seo-services", "cro"],
   },
   {
-    slug: "ai-seo-services",
-    name: "AI Search",
-    title: "Be the answer when customers ask AI",
-    metaTitle: "AI SEO Services: AEO & GEO",
-    metaDescription:
-      "AI search optimisation from SERPMOZ: see how your brand appears in AI-generated answers, close the gaps and build the authority these systems draw on.",
-    category: "search-ai",
-    summary:
-      "Visibility in AI-generated answers: how your brand is described, cited and recommended, and what to do about the gaps.",
-    intro:
-      "Buyers increasingly ask an assistant before they open a search results page. The answer they get names a few companies and leaves the rest out. We audit how your brand shows up across AI discovery environments, identify why competitors are being mentioned instead, and build the content, structure and third-party evidence that improves your odds of being included.",
-    problems: [
-      "You do not know whether AI assistants mention your brand, or what they say when they do.",
-      "Competitors are recommended in answers for categories you lead.",
-      "Organic clicks are falling on queries where an AI summary now appears.",
-      "Your content answers questions, but not in a form that is easy to extract or cite.",
-    ],
-    scope: [
-      {
-        title: "AI visibility audit",
-        body: "We test a defined set of buying-journey prompts across major AI discovery environments and record mentions, citations, sentiment and which sources are being drawn on.",
-      },
-      {
-        title: "Answer engine optimisation (AEO)",
-        body: "Restructuring key pages so questions are answered directly, facts are unambiguous and structured data describes your entities accurately.",
-      },
-      {
-        title: "Generative engine optimisation (GEO)",
-        body: "Closing topic gaps, publishing original data and expert perspectives, and strengthening the evidence trail that generative systems rely on.",
-      },
-      {
-        title: "Source and citation strategy",
-        body: "Identifying the publications, directories, communities and review platforms that shape answers in your category, and earning a credible presence there.",
-      },
-      {
-        title: "Ongoing tracking",
-        body: "Repeatable prompt panels monitored over time, so changes in mention share and citation sources are visible alongside classic search metrics.",
-      },
-    ],
-    ai: [
-      "Running and scoring large prompt panels consistently",
-      "Extracting cited sources and competitor mentions",
-      "Detecting topic and entity gaps in existing content",
-      "Drafting structured answer formats and schema",
-    ],
-    experts: [
-      "Choosing prompts that reflect real buying behaviour",
-      "Interpreting noisy, non-deterministic outputs responsibly",
-      "Deciding which gaps are worth closing first",
-      "Ensuring every claim on your site is accurate and defensible",
-    ],
-    measures: [
-      "Brand mention rate across tracked prompts",
-      "Share of recommendation versus named competitors",
-      "Citation sources referencing your domain",
-      "Referral sessions and leads from AI platforms",
-    ],
-    faqs: [
-      {
-        q: "Can you guarantee my brand appears in ChatGPT or Google AI answers?",
-        a: "No, and no one can. AI systems are non-deterministic and their providers do not offer placement. What we can do is measure your current presence, improve the signals these systems rely on and track the change over time.",
-      },
-      {
-        q: "Is AI SEO different from traditional SEO?",
-        a: "It builds on the same foundations (crawlable pages, clear content, real authority) and adds new work: entity clarity, extractable answers, citation sources and prompt-based measurement.",
-      },
-      {
-        q: "How do you measure AI visibility?",
-        a: "With a fixed panel of prompts run on a schedule across platforms. Results vary between runs, so we report trends and ranges rather than single snapshots.",
-      },
-    ],
-    related: ["seo-services", "enterprise-seo", "social-media-marketing"],
-  },
-  {
     slug: "local-seo-services",
-    name: "Local & Maps",
+    name: "Local SEO",
     title: "Win the searches that happen near your locations",
     metaTitle: "Local SEO & Google Maps Services",
     metaDescription:
@@ -453,7 +384,7 @@ const coreServices: Service[] = [
   },
   {
     slug: "ppc-management",
-    name: "Performance Marketing",
+    name: "PPC Management",
     title: "Paid media managed against profit, not platform metrics",
     metaTitle: "PPC Management & Performance Marketing",
     metaDescription:
@@ -527,7 +458,7 @@ const coreServices: Service[] = [
   },
   {
     slug: "social-media-marketing",
-    name: "Social & Content",
+    name: "Social Media Marketing",
     title: "Content and social that build demand you can trace",
     metaTitle: "Social Media Marketing & Content Strategy",
     metaDescription:
@@ -601,7 +532,7 @@ const coreServices: Service[] = [
   },
   {
     slug: "cro",
-    name: "CRO & Conversion",
+    name: "Conversion Rate Optimization",
     title: "Turn the traffic you already have into customers",
     metaTitle: "Conversion Rate Optimisation (CRO) Services",
     metaDescription:
@@ -749,7 +680,7 @@ const coreServices: Service[] = [
   },
   {
     slug: "web-development",
-    name: "Web & Digital",
+    name: "Web Development",
     title: "Websites engineered to be found, to be fast and to convert",
     metaTitle: "Web Design & Development",
     metaDescription:
@@ -823,13 +754,39 @@ const coreServices: Service[] = [
   },
 ];
 
-/** The eight capabilities in the main navigation plus three SEO specialisms. */
-export const primaryServices = coreServices;
+/** Joins an established entry with its second half from extras.ts. */
+function complete(base: Base): Service {
+  const extra = serviceExtras[base.slug];
+  if (!extra) throw new Error(`Missing service extras for "${base.slug}"`);
+  return { ...base, ...extra };
+}
 
-export const services: Service[] = [...coreServices, ...moreServices];
+/** The capabilities named in the main navigation. */
+export const primaryServices: Service[] = coreServices.map(complete);
+
+/** Display order within each category follows this list. */
+const order = [
+  "seo-services", "ai-seo-services", "aeo-services", "geo-services", "local-seo-services", "google-maps-seo", "ecommerce-seo", "international-seo", "enterprise-seo", "technical-seo", "content-seo", "digital-pr",
+  "ppc-management", "google-ads", "microsoft-ads", "meta-ads", "linkedin-ads", "retargeting", "lead-generation",
+  "social-media-marketing", "linkedin-marketing", "instagram-marketing", "youtube-marketing", "content-marketing", "video-marketing",
+  "cro", "landing-page-optimization", "marketing-automation", "whatsapp-automation", "email-marketing", "ai-agents",
+  "web-development", "nextjs-development", "wordpress-development", "shopify-development", "webflow-development", "ecommerce-development", "ui-ux-design",
+];
+
+const all: Service[] = [...primaryServices, ...moreServices.map(complete), ...searchSpecialisms, ...channelSpecialisms];
+
+export const services: Service[] = order.map((slug) => {
+  const service = all.find((s) => s.slug === slug);
+  if (!service) throw new Error(`Service "${slug}" is listed but not defined`);
+  return service;
+});
 
 export const serviceSlugs = services.map((s) => s.slug);
 
 export function getService(slug: string) {
   return services.find((s) => s.slug === slug);
+}
+
+export function servicesIn(category: Service["category"]) {
+  return services.filter((s) => s.category === category);
 }

@@ -1,53 +1,59 @@
-import { AiSearchPanel } from "@/components/growthos/ai-search-panel";
 import { Reveal } from "@/components/layout/reveal";
 import { Section, SectionHeader } from "@/components/layout/section";
 import { CtaLink } from "@/components/ui/cta-link";
+import { AiAnswer } from "@/components/visuals/ai-answer";
 import { SignalField } from "@/components/visuals/signal-field";
-import { aiVisibility as d } from "@/data/dashboard";
+import { aiSearchCapabilities } from "@/data/growth";
 
 export function AiVisibility() {
   return (
     <Section aria-labelledby="ai-visibility-title" tone="dark">
       <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent_70%)]" />
-      <SignalField cx={30} cy={62} className="opacity-40" />
+      <SignalField cx={24} cy={66} className="opacity-40" />
       <div className="shell relative">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
           <SectionHeader
             id="ai-visibility-title"
-            index="04"
-            label="AI search visibility"
-            title={["Your Next Customer", "May Not Click Google."]}
+            label="AI search"
+            title={["Your Next Customer May Not", "Search the Way They Used To."]}
             tone="dark"
             className="lg:col-span-7"
           />
           <Reveal className="lg:col-span-5 lg:pt-12" delay={0.1}>
             <p className="text-lead text-white/75">
-              They may ask an assistant for a shortlist and never see a results page. If the answer names three companies,
-              the question is whether you are one of them, and what was said.
+              More buyers now ask an assistant for a shortlist and read the answer instead of a results page. If that
+              answer names three companies, the question is whether you are one of them, and what was said.
             </p>
-            <CtaLink href="/ai-seo-services/" variant="primary" size="lg" className="mt-8" data-cta="ai-visibility-check">
-              Check Your AI Visibility
-            </CtaLink>
           </Reveal>
         </div>
 
-        <Reveal className="mt-14 lg:mt-20" y={24}>
-          <AiSearchPanel />
-        </Reveal>
+        <div className="mt-14 grid grid-cols-1 items-start gap-10 lg:mt-20 lg:grid-cols-12 lg:gap-8">
+          <Reveal className="lg:sticky lg:top-28 lg:col-span-6" y={24}>
+            <AiAnswer />
+          </Reveal>
 
-        <div className="mt-8 grid gap-6 md:grid-cols-12">
-          <ul className="flex flex-wrap items-center gap-x-5 gap-y-2 md:col-span-7" aria-label="AI discovery environments we track">
-            {d.platforms.map((p) => (
-              <li key={p} className="flex items-center gap-2 text-sm text-white/80">
-                <span aria-hidden className="size-1.5 rounded-full bg-cyan" />
-                {p}
-              </li>
-            ))}
-          </ul>
-          <p className="text-xs leading-relaxed text-white/55 md:col-span-5">
-            Illustrative interface with sample data. AI answers vary between runs and no platform offers guaranteed
-            placement; we measure trends across repeated prompts and report them as ranges.
-          </p>
+          <div className="lg:col-span-5 lg:col-start-8">
+            <p className="label-mono text-white/55">What the work covers</p>
+            <ol className="mt-4 border-b border-white/12">
+              {aiSearchCapabilities.map((c, i) => (
+                <Reveal as="li" key={c.name} delay={i * 0.04} className="group grid grid-cols-[2.5rem_1fr] gap-x-3 border-t border-white/12 py-4 transition-colors hover:bg-white/[0.03]">
+                  <span className="label-mono pt-1 text-cyan">{String(i + 1).padStart(2, "0")}</span>
+                  <div>
+                    <h3 className="text-lg font-semibold tracking-[-0.02em] text-white">{c.name}</h3>
+                    <p className="mt-1 text-[0.9375rem] leading-relaxed text-white/65">{c.body}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </ol>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <CtaLink href="/ai-seo-services/" variant="primary" size="lg" data-cta="ai-search-services">AI Search Services</CtaLink>
+              <CtaLink href="/geo-services/" variant="onDark" size="lg" arrow={false}>How GEO Works</CtaLink>
+            </div>
+            <p className="mt-6 text-xs leading-relaxed text-white/50">
+              No one can guarantee a place in an AI answer, and we do not claim to. Results vary by assistant, question and
+              market; we measure presence across repeated prompts and report it as a range.
+            </p>
+          </div>
         </div>
       </div>
     </Section>

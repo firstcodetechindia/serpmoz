@@ -50,15 +50,25 @@ export function MobileNav() {
                       </Accordion.Trigger>
                     </Accordion.Header>
                     <Accordion.Content className="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
-                      <ul className="grid grid-cols-2 gap-x-4 pb-5 pl-9">
-                        {group.links.map((l) => (
-                          <li key={l.href + l.label}>
-                            <Link href={l.href} onClick={() => setOpen(false)} className="block py-2.5 text-[0.9375rem] text-ink/85">
-                              {l.label}
-                            </Link>
-                          </li>
+                      <div className="pb-5 pl-9">
+                        {(group.columns ?? [{ title: "", href: group.href, links: group.links }]).map((col) => (
+                          <div key={col.title} className="mb-3 last:mb-0">
+                            {col.title ? <p className="label-mono pt-2 pb-1 text-muted">{col.title}</p> : null}
+                            <ul className="grid grid-cols-2 gap-x-4">
+                              {col.links.map((l) => (
+                                <li key={l.href + l.label}>
+                                  <Link href={l.href} onClick={() => setOpen(false)} className="block py-2.5 text-[0.9375rem] text-ink/85">
+                                    {l.label}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
                         ))}
-                      </ul>
+                        <Link href={group.href} onClick={() => setOpen(false)} className="mt-2 inline-block py-2 text-[0.9375rem] font-medium text-blue-ink">
+                          {group.all ?? group.label}
+                        </Link>
+                      </div>
                     </Accordion.Content>
                   </Accordion.Item>
                 ) : (

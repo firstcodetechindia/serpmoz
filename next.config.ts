@@ -34,6 +34,9 @@ const nextConfig: NextConfig = {
     // Photography is served straight from the Unsplash CDN (see components/ui/photo.tsx).
     remotePatterns: [{ protocol: "https", hostname: "images.unsplash.com" }],
   },
+  async redirects() {
+    return [{ source: "/industries/local-businesses/", destination: "/industries/local-business/", permanent: true }];
+  },
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];
   },

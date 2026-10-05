@@ -16,6 +16,8 @@ export type Article = {
   authorRole: string;
   publishedAt: string;
   takeaways: string[];
+  /** Slugs in data/services, most relevant first */
+  relatedServices: string[];
   sections: ArticleSection[];
 };
 
@@ -36,6 +38,7 @@ export const articles: Article[] = [
       "Run each prompt several times and report a range.",
       "Record what was cited, because sources are what you can influence.",
     ],
+    relatedServices: ["ai-seo-services", "geo-services", "aeo-services"],
     sections: [
       {
         heading: "Why rank tracking does not transfer",
@@ -92,6 +95,7 @@ export const articles: Article[] = [
       "Score on intent, fit, value and effort, not volume alone.",
       "Decide what you will not pursue and write it down.",
     ],
+    relatedServices: ["seo-services", "content-seo", "technical-seo"],
     sections: [
       {
         heading: "The problem with a keyword list",
@@ -146,6 +150,7 @@ export const articles: Article[] = [
       "Volume without prioritisation creates measurement debt.",
       "Organise around decisions, with AI inside each role.",
     ],
+    relatedServices: ["content-marketing", "marketing-automation", "ai-agents"],
     sections: [
       {
         heading: "What actually changed",
@@ -202,6 +207,7 @@ export const articles: Article[] = [
       "Feed platforms qualified outcomes, not raw form fills.",
       "Set guardrails before handing over control.",
     ],
+    relatedServices: ["google-ads", "ppc-management", "lead-generation"],
     sections: [
       {
         heading: "The algorithm is doing what it was asked",
@@ -257,6 +263,7 @@ export const articles: Article[] = [
       "Fix what is evidently broken without testing it.",
       "Measure before and after over full business cycles.",
     ],
+    relatedServices: ["cro", "landing-page-optimization", "ui-ux-design"],
     sections: [
       {
         heading: "Why testing often does not apply",
@@ -311,6 +318,7 @@ export const articles: Article[] = [
       "Three views together are better than one model.",
       "Agree definitions with sales and finance before building reports.",
     ],
+    relatedServices: ["marketing-automation", "ppc-management", "lead-generation"],
     sections: [
       {
         heading: "What attribution cannot do",
