@@ -16,7 +16,7 @@ export function IndustriesSection() {
   const rest = industries.filter((i) => !featured.includes(i.slug));
 
   return (
-    <Section aria-labelledby="industries-title" className="overflow-hidden bg-navy-deep text-white">
+    <Section inset aria-labelledby="industries-title" className="bg-navy-deep text-white">
       <div aria-hidden className="absolute top-0 left-1/2 h-px w-[80%] -translate-x-1/2 bg-gradient-to-r from-transparent via-cyan/50 to-transparent" />
       <div aria-hidden className="absolute -top-40 left-1/3 size-[36rem] rounded-full bg-blue/15 blur-[120px]" />
       <div className="shell relative">

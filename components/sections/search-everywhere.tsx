@@ -10,7 +10,7 @@ const traditional = ["Google", "Website", "Traffic"];
 
 export function SearchEverywhere() {
   return (
-    <Section aria-labelledby="search-everywhere-title" className="overflow-hidden bg-surface">
+    <Section inset aria-labelledby="search-everywhere-title" className="bg-mist">
       <div aria-hidden className="grid-lines absolute inset-0 [mask-image:radial-gradient(50%_45%_at_70%_38%,black,transparent)]" />
       <div className="shell relative">
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-8">

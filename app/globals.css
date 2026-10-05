@@ -15,6 +15,11 @@
   --color-blue-wash: #eaf2ff;
   --color-cyan: #00b8d9; /* AI, intelligence – graphics only */
   --color-cyan-wash: #e3f8fc;
+  /* Stronger tints for whole-section grounds, so neighbouring sections read as different places */
+  --color-blue-tint: #dce9ff;
+  --color-cyan-tint: #d5f2f8;
+  --color-orange-tint: #ffe9d2;
+  --color-mist: #e9eef6;
   --color-orange: #ff7a00; /* growth, action – used sparingly */
   --color-orange-ink: #b85400;
   --color-orange-wash: #fff3e6;
@@ -35,16 +40,16 @@
   --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", monospace;
 
   --text-display: clamp(2.6rem, 1.35rem + 5.1vw, 5.25rem);
-  --text-display--line-height: 0.98;
+  --text-display--line-height: 1.06;
   --text-display--letter-spacing: -0.04em;
   --text-h2: clamp(2rem, 1.3rem + 2.9vw, 3.5rem);
-  --text-h2--line-height: 1.04;
-  --text-h2--letter-spacing: -0.035em;
+  --text-h2--line-height: 1.12;
+  --text-h2--letter-spacing: -0.03em;
   --text-h3: clamp(1.375rem, 1.2rem + 0.7vw, 1.75rem);
-  --text-h3--line-height: 1.18;
+  --text-h3--line-height: 1.25;
   --text-h3--letter-spacing: -0.02em;
   --text-lead: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
-  --text-lead--line-height: 1.55;
+  --text-lead--line-height: 1.65;
 
   /* Shape & depth */
   --radius-panel: 1.25rem;

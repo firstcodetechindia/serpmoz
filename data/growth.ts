@@ -24,7 +24,13 @@ export const aiReality = {
   connect: {
     label: "SERPMOZ combines",
     note: "One team and one reporting view, so effort can be traced from first impression to closed revenue.",
-    items: ["AI", "Experts", "Strategy", "Execution"],
+    items: [
+      { name: "AI", gives: "Speed and scale", body: "Research, drafts and analysis in hours, not weeks." },
+      { name: "Experts", gives: "Judgement", body: "What is worth doing, and whether it is right." },
+      { name: "Strategy", gives: "Direction", body: "Where to compete, in what order, and what to leave." },
+      { name: "Execution", gives: "Shipped work", body: "Search, media, content and web that actually go live." },
+    ],
+    result: { name: "Growth you can trace", body: "Qualified demand, customers and revenue, each tied back to the work behind it." },
   },
 } as const;
 

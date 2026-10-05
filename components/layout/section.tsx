@@ -8,9 +8,32 @@ type SectionProps = React.ComponentProps<"section"> & {
   ruled?: boolean;
   /** "dark" renders the navy stage used for product showcases */
   tone?: "light" | "dark";
+  /**
+   * Draw the section as a rounded panel set in from the page edge, with white
+   * around it. Alternating inset panels with full-width sections is what makes
+   * each part of a long page read as its own place.
+   */
+  inset?: boolean;
 };
 
-export function Section({ className, space = "default", ruled, tone = "light", children, ...props }: SectionProps) {
+export function Section({ className, space = "default", ruled, tone = "light", inset, children, ...props }: SectionProps) {
+  if (inset) {
+    return (
+      <section className="bg-surface px-3 py-3 md:px-5 md:py-5" {...props}>
+        <div
+          className={cn(
+            "relative overflow-clip rounded-[1.75rem] md:rounded-[2.25rem]",
+            space === "default" && "py-20 md:py-28 lg:py-32",
+            space === "tight" && "py-14 md:py-20",
+            tone === "dark" && "stage text-white",
+            className,
+          )}
+        >
+          {children}
+        </div>
+      </section>
+    );
+  }
   return (
     <section
       className={cn(
@@ -52,7 +75,7 @@ export function SectionHeader({ index, label, title, lead, id, className, as: Ta
         {index ? <span aria-hidden className={cn("h-px w-8", dark ? "bg-white/30" : "bg-line-strong")} /> : null}
         {label}
       </p>
-      <Tag id={id} className={cn("mt-5 font-semibold", Tag === "h1" ? "text-display" : "text-h2", dark ? "text-white" : "text-navy")}>
+      <Tag id={id} className={cn("mt-6 font-semibold", Tag === "h1" ? "text-display" : "text-h2", dark ? "text-white" : "text-navy")}>
         {title.map((line, i) => (
           <span
             key={line}
@@ -62,7 +85,7 @@ export function SectionHeader({ index, label, title, lead, id, className, as: Ta
           </span>
         ))}
       </Tag>
-      {lead ? <div className={cn("mt-6 max-w-2xl text-lead", dark ? "text-white/75" : "text-muted")}>{lead}</div> : null}
+      {lead ? <div className={cn("mt-7 max-w-2xl text-lead", dark ? "text-white/75" : "text-muted")}>{lead}</div> : null}
       {children}
     </Reveal>
   );

@@ -83,10 +83,10 @@ export default function MethodologyPage() {
             {methodology.map((s, i) => (
               <article key={s.name} id={slug(s.name)} aria-labelledby={`${slug(s.name)}-title`} className="grid scroll-mt-28 gap-x-8 gap-y-8 border-t border-line py-12 md:py-16 lg:grid-cols-12">
                 <div className="lg:col-span-4">
-                  <span className="tabular block text-5xl leading-none font-semibold tracking-[-0.05em] text-ink/15 md:text-6xl">
+                  <span className="tabular block text-5xl leading-[1.12] font-semibold tracking-[-0.05em] text-ink/15 md:text-6xl">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 id={`${slug(s.name)}-title`} className="mt-4 text-[clamp(1.75rem,1.4rem+1.4vw,2.5rem)] leading-none font-semibold tracking-[-0.03em] text-navy">
+                  <h3 id={`${slug(s.name)}-title`} className="mt-4 text-[clamp(1.75rem,1.4rem+1.4vw,2.5rem)] leading-[1.12] font-semibold tracking-[-0.03em] text-navy">
                     {s.name}
                   </h3>
                   <p className="mt-3 max-w-xs text-[1.0625rem] font-medium text-ink">{s.body}</p>

@@ -39,7 +39,7 @@ function Card({ c, large }: { c: CaseStudy; large?: boolean }) {
       </div>
       <div className={cn("relative", large ? "p-7 md:p-9" : "p-6")}>
         <p className="label-mono text-cyan">{industry?.name} · {c.market}</p>
-        <h3 className={cn("mt-2 font-semibold tracking-[-0.025em]", large ? "max-w-xl text-[clamp(1.5rem,1.2rem+1.2vw,2.25rem)] leading-[1.1]" : "text-xl leading-tight")}>{c.title}</h3>
+        <h3 className={cn("mt-2 font-semibold tracking-[-0.025em]", large ? "max-w-xl text-[clamp(1.5rem,1.2rem+1.2vw,2.25rem)] leading-[1.18]" : "text-xl leading-snug")}>{c.title}</h3>
         {large ? <p className="mt-3 max-w-xl text-[0.9375rem] leading-relaxed text-white/75">{c.summary}</p> : null}
         <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Services involved">
           {tags.map((t) => (
@@ -62,7 +62,7 @@ export function CaseStudiesSection() {
   const [first, ...others] = shown;
 
   return (
-    <Section aria-labelledby="case-studies-title" className="bg-canvas">
+    <Section inset aria-labelledby="case-studies-title" className="bg-cyan-tint">
       <div className="shell">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
           <SectionHeader id="case-studies-title" label="Our work" title={["Growth You", "Can Measure."]} className="lg:col-span-6" />
@@ -85,7 +85,7 @@ export function CaseStudiesSection() {
           </div>
         </div>
 
-        <Reveal className="mt-6 rounded-panel border border-line bg-surface p-6 md:p-8 lg:mt-8">
+        <Reveal className="mt-6 rounded-panel bg-surface p-6 md:p-8 lg:mt-8">
           <p className="label-mono text-muted">How a real result is documented</p>
           <ul className="mt-6 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
             {principles.map((p) => (

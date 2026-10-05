@@ -33,8 +33,8 @@ function Merge() {
 export function AiReality() {
   const { execute, decide, connect } = aiReality;
   return (
-    <Section aria-labelledby="ai-reality-title" className="overflow-hidden bg-canvas">
-      <div aria-hidden className="grid-lines absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_30%,transparent)]" />
+    <Section inset aria-labelledby="ai-reality-title" className="bg-blue-tint">
+      <div aria-hidden className="absolute -top-40 -right-20 size-[34rem] rounded-full bg-surface/70 blur-[100px]" />
       <div className="shell relative">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-8">
           <SectionHeader
@@ -110,20 +110,29 @@ export function AiReality() {
               </span>
               <h3 className="label-mono text-cyan">{connect.label}</h3>
             </div>
-            <ol className="relative mt-7 flex flex-1 flex-col justify-between">
-              {connect.items.map((item, i) => {
-                const last = i === connect.items.length - 1;
-                return (
-                  <li key={item} className="relative flex items-center gap-4 pb-5 last:pb-0">
-                    {!last ? <span aria-hidden className="absolute top-5 left-[0.3125rem] h-full w-px bg-white/20" /> : null}
-                    <span aria-hidden className={last ? "relative size-[0.6875rem] rounded-full bg-orange ring-4 ring-orange/25" : "relative size-[0.6875rem] rounded-full border-2 border-cyan bg-navy"} />
-                    <span className={last ? "text-2xl font-semibold tracking-[-0.03em]" : "text-xl font-medium tracking-[-0.02em] text-white/85"}>{item}</span>
-                    {!last ? <span aria-hidden className="ml-auto font-mono text-lg text-white/30">+</span> : null}
-                  </li>
-                );
-              })}
+            {/* An equation: four inputs, one result */}
+            <ol className="relative mt-7 flex flex-1 flex-col justify-between gap-2">
+              {connect.items.map((item, i) => (
+                <li key={item.name}>
+                  <div className="grid grid-cols-[2.25rem_1fr] items-center gap-x-4 rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3.5">
+                    <span className="tabular flex size-9 items-center justify-center rounded-full border border-cyan/50 text-sm font-semibold text-cyan">{i + 1}</span>
+                    <div>
+                      <p className="flex flex-wrap items-baseline gap-x-2.5">
+                        <span className="text-xl font-semibold tracking-[-0.02em]">{item.name}</span>
+                        <span className="label-mono text-[0.625rem] text-cyan">{item.gives}</span>
+                      </p>
+                      <p className="mt-1 text-sm leading-relaxed text-white/65">{item.body}</p>
+                    </div>
+                  </div>
+                  <p aria-hidden className="py-1 pl-[1.625rem] font-mono text-lg leading-none text-white/35">{i < connect.items.length - 1 ? "+" : "="}</p>
+                </li>
+              ))}
             </ol>
-            <p className="relative mt-7 border-t border-white/15 pt-5 text-sm leading-relaxed text-white/70">{connect.note}</p>
+            <div className="relative rounded-2xl bg-orange p-5 text-navy">
+              <p className="text-2xl font-semibold tracking-[-0.03em]">{connect.result.name}</p>
+              <p className="mt-1.5 text-sm leading-relaxed text-navy/80">{connect.result.body}</p>
+            </div>
+            <p className="relative mt-5 text-sm leading-relaxed text-white/60">{connect.note}</p>
           </div>
         </Reveal>
       </div>

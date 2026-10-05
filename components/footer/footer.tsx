@@ -19,7 +19,7 @@ export function Footer() {
         <div className="flex flex-col gap-8 border-b border-white/12 pb-12 lg:flex-row lg:items-end lg:justify-between lg:pb-16">
           <div>
             <Link href="/" aria-label="SERPMOZ home" className="inline-block rounded-md"><Logo tone="dark" /></Link>
-            <p className="mt-6 max-w-2xl text-[clamp(1.75rem,1.2rem+2.4vw,3rem)] leading-[1.05] font-semibold tracking-[-0.035em]">
+            <p className="mt-6 max-w-2xl text-[clamp(1.75rem,1.2rem+2.4vw,3rem)] leading-[1.15] font-semibold tracking-[-0.035em]">
               AI can do the work. <span className="text-white/45">Experts know what work matters.</span>
             </p>
             <p className="mt-4 text-[0.9375rem] text-white/60">{site.category}</p>

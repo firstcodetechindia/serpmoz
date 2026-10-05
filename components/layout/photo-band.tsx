@@ -9,7 +9,7 @@ export function PhotoBand({ photo, label, statement, children }: { photo: PhotoR
         <Photo photo={photo} sizes="100vw" wash="strong" className="absolute inset-0" />
         <div className="shell relative flex min-h-[26rem] flex-col justify-end py-12 md:min-h-[32rem] md:py-16">
           <p className="label-mono text-cyan">{label}</p>
-          <p className="mt-4 max-w-3xl text-[clamp(1.75rem,1.3rem+2vw,3rem)] leading-[1.08] font-semibold tracking-[-0.03em]">{statement}</p>
+          <p className="mt-4 max-w-3xl text-[clamp(1.75rem,1.3rem+2vw,3rem)] leading-[1.15] font-semibold tracking-[-0.03em]">{statement}</p>
           {children ? <div className="mt-6 max-w-xl text-[1.0625rem] leading-relaxed text-white/75">{children}</div> : null}
         </div>
       </div>

@@ -7,7 +7,7 @@ import { aiSearchCapabilities } from "@/data/growth";
 
 export function AiVisibility() {
   return (
-    <Section aria-labelledby="ai-visibility-title" tone="dark">
+    <Section inset aria-labelledby="ai-visibility-title" tone="dark">
       <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent_70%)]" />
       <SignalField cx={24} cy={66} className="opacity-40" />
       <div className="shell relative">

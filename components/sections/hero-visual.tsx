@@ -55,6 +55,14 @@ export function HeroVisual({ className }: { className?: string }) {
       aria-label="How growth connects: search, AI search, content, paid media and social bring buyers to your website, where they convert and become revenue."
       className={cn("relative", className)}
     >
+      {/* Halo and frame: the diagram reads as one object, not loose parts */}
+      <div aria-hidden className="absolute top-1/2 left-1/2 hidden size-[115%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/[0.07] sm:block" />
+      <div aria-hidden className="absolute top-1/2 left-1/2 hidden size-[84%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-white/10 motion-safe:animate-[spin_90s_linear_infinite] sm:block" />
+      <div aria-hidden className="absolute inset-x-6 top-10 bottom-10 rounded-full bg-blue/25 blur-[90px]" />
+      <div className="relative rounded-[1.75rem] border border-white/10 bg-white/[0.035] p-4 backdrop-blur-[2px] sm:p-6">
+        <p aria-hidden className="mb-5 flex items-center justify-between">
+          <span className="label-mono text-white/55">How growth connects</span>
+        </p>
       <div aria-hidden className="grid grid-cols-1 gap-y-4 sm:grid-cols-[minmax(0,10.5rem)_2.75rem_minmax(0,1fr)]">
         {/* Channels */}
         <ul className="flex flex-wrap gap-2 sm:grid sm:grid-rows-5 sm:gap-2.5">
@@ -123,7 +131,7 @@ export function HeroVisual({ className }: { className?: string }) {
       </div>
 
       {/* Conversion and revenue */}
-      <div aria-hidden className="relative z-10 mt-4 grid grid-cols-2 gap-3 sm:-mt-10 sm:ml-auto sm:w-[calc(100%-14.5rem)] sm:gap-4">
+      <div aria-hidden className="relative z-10 mt-4 grid grid-cols-2 gap-3 sm:-mt-10 sm:ml-auto sm:w-[calc(100%-13.25rem)] sm:gap-4">
         <div className="rounded-2xl border border-line bg-white p-3.5 text-ink shadow-[0_30px_60px_-28px_rgb(0_0_0/0.6)] sm:p-4">
           <Tag className="flex items-center gap-1.5 text-blue-ink"><MousePointerClick className="size-3" /> Conversion</Tag>
           <p className="mt-2.5 text-sm leading-tight font-semibold text-navy">New enquiry received</p>
@@ -151,6 +159,7 @@ export function HeroVisual({ className }: { className?: string }) {
           </svg>
           <p className="font-mono text-[0.5625rem] text-white/45">Illustration, not client data</p>
         </div>
+      </div>
       </div>
     </div>
   );

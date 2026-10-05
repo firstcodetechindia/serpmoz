@@ -44,7 +44,7 @@ export function EngagementLadder() {
               >
                 <span
                   className={cn(
-                    "tabular flex size-7 shrink-0 items-center justify-center rounded-full text-xs font-semibold transition-all duration-300 md:size-12 md:border-4 md:border-orange-wash md:text-sm",
+                    "tabular flex size-7 shrink-0 items-center justify-center rounded-full text-xs font-semibold transition-all duration-300 md:size-12 md:border-4 md:border-orange-tint md:text-sm",
                     on ? "bg-orange text-navy md:scale-110 md:shadow-float" : done ? "bg-navy text-white" : "bg-white text-muted md:ring-1 md:ring-navy/15 group-hover:text-navy",
                   )}
                 >
@@ -66,7 +66,7 @@ export function EngagementLadder() {
           <div aria-hidden className="absolute -right-24 -bottom-24 size-72 rounded-full bg-orange/25 blur-3xl" />
           <div key={e.name} className="relative motion-safe:animate-fade-in">
             <p className="label-mono text-cyan">{e.stage} · {e.focus}</p>
-            <h3 className="mt-4 text-[clamp(2rem,1.5rem+2vw,3rem)] leading-none font-semibold tracking-[-0.04em]">{e.name}</h3>
+            <h3 className="mt-4 text-[clamp(2rem,1.5rem+2vw,3rem)] leading-[1.1] font-semibold tracking-[-0.035em]">{e.name}</h3>
             <p className="mt-5 text-[1.0625rem] leading-relaxed text-white/80">{e.forWhom}</p>
             <Link href="/engagement-models/" className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-white underline decoration-white/30 underline-offset-[6px] hover:decoration-orange">
               Compare all five models <ArrowRight aria-hidden className="size-4" />

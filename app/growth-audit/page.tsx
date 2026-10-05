@@ -129,7 +129,7 @@ export default function GrowthAuditPage() {
           <div className="min-w-0 lg:col-span-6 lg:pt-2">
             <Breadcrumbs crumbs={[{ name: "Growth Audit", href: meta.path }]} tone="dark" />
             <p className="label-mono mt-10 text-cyan">Growth Audit</p>
-            <h1 id="growth-audit-title" className="mt-4 text-[clamp(2rem,1.35rem+2.6vw,3.25rem)] leading-[1.05] font-semibold tracking-[-0.035em] text-balance">
+            <h1 id="growth-audit-title" className="mt-4 text-[clamp(2rem,1.35rem+2.6vw,3.25rem)] leading-[1.12] font-semibold tracking-[-0.035em] text-balance">
               Find the Highest-Impact Opportunities in Your Digital Growth.
             </h1>
             <p className="mt-6 max-w-xl text-lead text-white/75">

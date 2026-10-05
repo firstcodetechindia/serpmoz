@@ -6,8 +6,8 @@ import { cta } from "@/lib/config/site";
 
 export function Engagement() {
   return (
-    <Section aria-labelledby="engagement-title" className="overflow-hidden bg-orange-wash">
-      <div aria-hidden className="absolute -top-32 right-0 size-[34rem] rounded-full bg-orange/15 blur-[110px]" />
+    <Section inset aria-labelledby="engagement-title" className="bg-orange-tint">
+      <div aria-hidden className="absolute -top-32 right-0 size-[34rem] rounded-full bg-surface/70 blur-[110px]" />
       <div className="shell relative">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeader

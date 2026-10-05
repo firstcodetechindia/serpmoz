@@ -37,7 +37,7 @@ export function PageHero({ crumbs, label, title, lead, children, aside, tone = "
         <div className={aside ? "lg:col-span-7" : "lg:col-span-9"}>
           <Breadcrumbs crumbs={crumbs} tone={tone} />
           <p className={cn("label-mono mt-10", dark ? "text-cyan" : "text-blue-ink")}>{label}</p>
-          <h1 className={cn("mt-4 text-[clamp(2.25rem,1.4rem+3.4vw,4rem)] leading-[1.02] font-semibold tracking-[-0.035em]", dark ? "text-white" : "text-navy")}>{title}</h1>
+          <h1 className={cn("mt-4 text-[clamp(2.25rem,1.4rem+3.4vw,4rem)] leading-[1.1] font-semibold tracking-[-0.035em]", dark ? "text-white" : "text-navy")}>{title}</h1>
           {lead ? <div className={cn("mt-6 max-w-2xl text-lead", dark ? "text-white/75" : "text-muted")}>{lead}</div> : null}
           {children ? <div className="mt-9 flex flex-wrap items-center gap-3">{children}</div> : null}
         </div>

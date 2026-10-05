@@ -34,7 +34,7 @@ export function ResourcesSection() {
                 <span className="label-mono absolute top-5 left-5 rounded-full bg-white px-3 py-1.5 text-[0.625rem] text-navy">Featured · {lead.categoryName}</span>
               </div>
               <div className="flex flex-1 flex-col p-7 md:p-9">
-                <h3 className="text-[clamp(1.5rem,1.2rem+1.3vw,2.25rem)] leading-[1.1] font-semibold tracking-[-0.03em]">{lead.title}</h3>
+                <h3 className="text-[clamp(1.5rem,1.2rem+1.3vw,2.25rem)] leading-[1.18] font-semibold tracking-[-0.03em]">{lead.title}</h3>
                 <p className="mt-4 max-w-xl text-[1.0625rem] leading-relaxed text-white/70">{lead.summary}</p>
                 <p className="mt-auto flex items-center justify-between gap-4 pt-8 text-sm text-white/55">
                   <span>{lead.author} · {lead.date} · {lead.minutes} min read</span>

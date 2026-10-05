@@ -10,7 +10,7 @@ const icons: LucideIcon[] = [UserCheck, Gauge, Crosshair, Radar, Database, Layer
 
 export function WhySerpmoz() {
   return (
-    <Section aria-labelledby="why-title" className="bg-gradient-to-br from-cyan-wash via-surface to-blue-wash">
+    <Section aria-labelledby="why-title" className="bg-surface">
       <div className="shell grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
         {/* The argument, with the people behind it */}
         <Reveal className="lg:sticky lg:top-28 lg:col-span-5 lg:self-start" y={24}>
@@ -19,7 +19,7 @@ export function WhySerpmoz() {
             <div className="relative p-7 md:p-9">
               <span aria-hidden className="absolute -top-7 left-7 flex size-14 items-center justify-center rounded-full bg-orange font-serif text-4xl leading-none text-navy">“</span>
               <p className="label-mono text-cyan">Why SERPMOZ</p>
-              <h2 id="why-title" className="mt-4 text-[clamp(1.625rem,1.3rem+1.3vw,2.25rem)] leading-[1.12] font-semibold tracking-[-0.03em]">
+              <h2 id="why-title" className="mt-4 text-[clamp(1.625rem,1.3rem+1.3vw,2.25rem)] leading-[1.2] font-semibold tracking-[-0.03em]">
                 We don’t replace expertise with AI.
                 <span className="block text-white/55">We use AI to make expertise faster, deeper and more scalable.</span>
               </h2>

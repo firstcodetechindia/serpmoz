@@ -26,7 +26,7 @@ export function MethodologySteps({ detailed = true }: { detailed?: boolean }) {
 
 export function Methodology() {
   return (
-    <Section aria-labelledby="methodology-title" className="overflow-hidden bg-canvas">
+    <Section aria-labelledby="methodology-title" className="overflow-hidden bg-surface">
       <div className="shell grid items-center gap-14 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-5">
           <SectionHeader

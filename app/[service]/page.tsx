@@ -63,7 +63,7 @@ function Problem({ s, tone }: { s: Service; tone: "surface" | "canvas" }) {
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-4">
           <p className={eyebrow}>The problem</p>
-          <h2 className="mt-4 text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)] leading-[1.08] font-semibold tracking-[-0.03em] text-navy">Signs this is the right conversation.</h2>
+          <h2 className="mt-4 text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)] leading-[1.15] font-semibold tracking-[-0.03em] text-navy">Signs this is the right conversation.</h2>
         </div>
         <ul className="grid gap-4 sm:grid-cols-2 lg:col-span-8">
           {s.problems.map((p, i) => (
@@ -208,7 +208,7 @@ function Audience({ s, tone }: { s: Service; tone: "surface" | "canvas" }) {
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-4">
           <p className={eyebrow}>Who it is for</p>
-          <h2 className="mt-4 text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)] leading-[1.08] font-semibold tracking-[-0.03em] text-navy">A good fit if you are one of these.</h2>
+          <h2 className="mt-4 text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)] leading-[1.15] font-semibold tracking-[-0.03em] text-navy">A good fit if you are one of these.</h2>
         </div>
         <ul className="lg:col-span-8">
           {s.audience.map((a) => (
@@ -274,7 +274,7 @@ export default async function ServicePage({ params }: Props) {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-4">
             <p className={eyebrow}>Questions</p>
-            <h2 className="mt-4 text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)] leading-[1.08] font-semibold tracking-[-0.03em] text-navy">Asked before most {service.name} engagements.</h2>
+            <h2 className="mt-4 text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)] leading-[1.15] font-semibold tracking-[-0.03em] text-navy">Asked before most {service.name} engagements.</h2>
           </div>
           <div className="lg:col-span-8"><Faqs faqs={service.faqs} /></div>
         </div>
