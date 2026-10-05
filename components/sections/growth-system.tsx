@@ -89,7 +89,7 @@ export function GrowthSystem() {
   return (
     <section id="growth-system" aria-labelledby="growth-system-title" style={themeOf(active)} className="relative bg-[var(--gs-wash)] transition-colors duration-700 ease-out">
       {/* ---------- Large screens: pinned and interactive ---------- */}
-      <div ref={track} className="hidden lg:block" style={{ height: `${N * 32 + 80}vh` }}>
+      <div ref={track} className="hidden lg:block" style={{ height: `${N * 26 + 60}vh` }}>
         <div className="sticky top-0 flex h-screen min-h-[44rem] flex-col justify-center overflow-hidden pt-24 pb-8">
           <div aria-hidden className="absolute -top-40 -right-40 size-[42rem] rounded-full bg-[var(--gs-accent)] opacity-25 blur-[130px] transition-colors duration-700" />
           <div aria-hidden className="absolute -bottom-52 -left-40 size-[32rem] rounded-full bg-surface opacity-70 blur-[120px]" />
@@ -184,7 +184,7 @@ export function GrowthSystem() {
       </div>
 
       {/* ---------- Small screens: swipeable rail ---------- */}
-      <div className="bg-surface py-20 md:py-28 lg:hidden">
+      <div className="bg-surface py-14 md:py-20 lg:hidden">
         <div className="shell" style={themeOf(0)}>
           <Heading />
           <p className="mt-6 text-lead text-muted">We don’t optimize marketing channels in isolation. We connect them to the customer’s journey and the business outcome.</p>

@@ -27,7 +27,7 @@ export function ExpertsComparison() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-10 lg:mt-20 lg:grid-cols-12 lg:gap-8">
+        <div className="mt-10 grid gap-10 lg:mt-12 lg:grid-cols-12 lg:gap-8">
           {/* The journey, drawn to scale */}
           <Reveal className="lg:col-span-8" y={24}>
             <div className="hidden rounded-panel border border-line bg-canvas p-8 pt-16 pb-12 md:block lg:p-10 lg:pt-20 lg:pb-14">

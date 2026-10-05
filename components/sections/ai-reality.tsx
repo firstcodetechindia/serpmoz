@@ -55,7 +55,7 @@ export function AiReality() {
         </div>
 
         {/* Two inputs, one system. Read left to right; the lines carry the argument. */}
-        <Reveal className="mt-14 grid gap-y-5 lg:mt-24 lg:grid-cols-[minmax(0,1.5fr)_6rem_minmax(0,1fr)]" y={24}>
+        <Reveal className="mt-10 grid gap-y-5 lg:mt-12 lg:grid-cols-[minmax(0,1.5fr)_6rem_minmax(0,1fr)]" y={24}>
           <div className="grid gap-5 lg:grid-rows-2 lg:gap-6">
             {/* AI: fast, plentiful, undirected – set in mono, drawn with a dashed edge */}
             <div className="flex flex-col justify-center rounded-panel border border-dashed border-line-strong bg-surface/60 p-6 md:p-8">

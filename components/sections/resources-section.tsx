@@ -25,7 +25,7 @@ export function ResourcesSection() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-6 lg:mt-20 lg:grid-cols-12 lg:gap-8">
+        <div className="mt-10 grid grid-cols-1 gap-6 lg:mt-12 lg:grid-cols-12 lg:gap-8">
           {/* Lead piece */}
           <Reveal className="lg:col-span-7" y={24}>
             <Link href={`/resources/${lead.slug}/`} className="group flex h-full flex-col overflow-hidden rounded-panel bg-navy text-white shadow-soft transition-shadow duration-500 hover:shadow-float">

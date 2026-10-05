@@ -74,7 +74,7 @@ export function ServicesSection() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-4 lg:mt-20 lg:grid-cols-12 lg:gap-5">
+        <div className="mt-10 grid grid-cols-1 gap-4 lg:mt-12 lg:grid-cols-12 lg:gap-5">
           {/* Search & AI: the largest discipline, on the navy stage */}
           <Reveal className="stage relative overflow-hidden rounded-panel p-7 text-white md:p-10 lg:col-span-7 lg:row-span-2">
             <div aria-hidden className="absolute -top-32 -right-32 size-96 rounded-full bg-blue/30 blur-3xl" />

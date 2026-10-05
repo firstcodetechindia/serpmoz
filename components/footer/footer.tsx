@@ -14,9 +14,9 @@ export function Footer() {
       <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent_45%)]" />
       <div aria-hidden className="absolute -top-48 left-1/4 size-[36rem] rounded-full bg-blue/15 blur-[130px]" />
 
-      <div className="shell relative pt-16 md:pt-24">
+      <div className="shell relative pt-14 md:pt-20">
         {/* Opening line */}
-        <div className="flex flex-col gap-8 border-b border-white/12 pb-12 lg:flex-row lg:items-end lg:justify-between lg:pb-16">
+        <div className="flex flex-col gap-8 border-b border-white/12 pb-10 lg:flex-row lg:items-end lg:justify-between lg:pb-12">
           <div>
             <Link href="/" aria-label="SERPMOZ home" className="inline-block rounded-md"><Logo tone="dark" /></Link>
             <p className="mt-6 max-w-2xl text-[clamp(1.75rem,1.2rem+2.4vw,3rem)] leading-[1.15] font-semibold tracking-[-0.035em]">
@@ -31,7 +31,7 @@ export function Footer() {
         </div>
 
         {/* Link columns: the column you are in stays bright, the rest step back */}
-        <nav aria-label="Footer" className="group/nav grid grid-cols-2 gap-x-6 gap-y-12 py-12 sm:grid-cols-3 lg:grid-cols-5 lg:py-16">
+        <nav aria-label="Footer" className="group/nav grid grid-cols-2 gap-x-6 gap-y-10 py-10 sm:grid-cols-3 lg:grid-cols-5 lg:py-12">
           {footerNav.map((col) => (
             <div key={col.title} className="group/col transition-opacity duration-300 lg:group-hover/nav:opacity-50 lg:hover:!opacity-100">
               <h2 className="label-mono flex items-center gap-2 text-white/50 transition-colors group-hover/col:text-cyan">

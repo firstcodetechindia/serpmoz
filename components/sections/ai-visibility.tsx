@@ -27,7 +27,7 @@ export function AiVisibility() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 items-start gap-10 lg:mt-20 lg:grid-cols-12 lg:gap-8">
+        <div className="mt-10 grid grid-cols-1 items-start gap-10 lg:mt-12 lg:grid-cols-12 lg:gap-8">
           <Reveal className="lg:sticky lg:top-28 lg:col-span-6" y={24}>
             <AiAnswer />
           </Reveal>

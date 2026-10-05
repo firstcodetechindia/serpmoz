@@ -23,7 +23,7 @@ export function Engagement() {
           </Reveal>
         </div>
 
-        <Reveal className="mt-14 lg:mt-20" y={24}>
+        <Reveal className="mt-10 lg:mt-14" y={24}>
           <EngagementLadder />
         </Reveal>
         <p className="mt-6 max-w-2xl text-sm text-muted">

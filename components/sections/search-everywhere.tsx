@@ -41,7 +41,7 @@ export function SearchEverywhere() {
         </div>
 
         {/* The promise: each stage is a little more filled than the last */}
-        <Reveal className="mt-20 lg:mt-28">
+        <Reveal className="mt-10 lg:mt-12">
           <p className="label-mono text-muted">What discovery is for</p>
           <ol className="mt-6 grid gap-y-6 md:grid-cols-5 md:gap-x-0">
             {promiseSteps.map((s, i) => {
@@ -63,7 +63,7 @@ export function SearchEverywhere() {
           </ol>
         </Reveal>
 
-        <Reveal className="mt-16 border-t border-line pt-10 lg:mt-20">
+        <Reveal className="mt-12 border-t border-line pt-8 lg:mt-14">
           <p className="label-mono text-muted">How we cover it</p>
           <ul className="mt-5 flex flex-wrap gap-x-3 gap-y-4 text-[clamp(1.125rem,0.95rem+0.9vw,1.75rem)] leading-[1.5] font-medium tracking-[-0.025em]">
             {searchServices.map((s, i) => (

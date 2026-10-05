@@ -36,7 +36,7 @@ export function IndustriesSection() {
           </Reveal>
         </div>
 
-        <Reveal className="mt-12 lg:mt-16" y={24}>
+        <Reveal className="mt-10 lg:mt-12" y={24}>
           <IndustryShowcase items={items} />
         </Reveal>
 

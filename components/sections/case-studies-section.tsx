@@ -76,7 +76,7 @@ export function CaseStudiesSection() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-4 lg:mt-20 lg:grid-cols-12 lg:gap-5">
+        <div className="mt-10 grid grid-cols-1 gap-4 lg:mt-12 lg:grid-cols-12 lg:gap-5">
           <Reveal className="lg:col-span-7" y={24}><Card c={first} large /></Reveal>
           <div className="grid gap-4 lg:col-span-5 lg:gap-5">
             {others.map((c, i) => (
