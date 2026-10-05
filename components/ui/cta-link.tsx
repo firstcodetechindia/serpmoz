@@ -9,6 +9,8 @@ type Props = VariantProps<typeof buttonVariants> & {
   children: React.ReactNode;
   className?: string;
   arrow?: "right" | "up-right" | false;
+  /** Analytics label. Clicks are reported as `cta_click` (see components/seo/analytics-events.tsx). */
+  "data-cta"?: string;
 };
 
 /** A link that looks like a button, with the arrow nudge used across the site. */

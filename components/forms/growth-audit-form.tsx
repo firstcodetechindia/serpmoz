@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { industries } from "@/data/industries";
 import { track } from "@/lib/analytics";
 import {
-  auditSchema, budgetOptions, countryOptions, fieldErrorsFrom, goalOptions, serviceOptions,
+  auditSchema, budgetOptions, countryOptions, fieldErrorsFrom, goalOptions, phoneRules, serviceOptions,
   type AuditField, type AuditResponse,
 } from "@/lib/forms/audit";
 import { cn } from "@/lib/utils";
@@ -22,6 +22,8 @@ export function GrowthAuditForm({ className }: { className?: string }) {
   const [errors, setErrors] = useState<Errors>({});
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
+  const [country, setCountry] = useState("");
+  const phoneRule = phoneRules[country as keyof typeof phoneRules];
   const startedAt = useRef<number>(0);
   const formRef = useRef<HTMLFormElement>(null);
   const statusRef = useRef<HTMLDivElement>(null);
@@ -118,9 +120,19 @@ export function GrowthAuditForm({ className }: { className?: string }) {
         <TextField label="Full name" name="fullName" autoComplete="name" maxLength={80} error={errors.fullName} />
         <TextField label="Business name" name="businessName" autoComplete="organization" maxLength={120} error={errors.businessName} />
         <TextField label="Work email" name="email" type="email" inputMode="email" autoComplete="email" maxLength={160} error={errors.email} />
-        <TextField label="Phone" name="phone" type="tel" inputMode="tel" autoComplete="tel" maxLength={22} placeholder="+91 98765 43210" hint="Include your country code." error={errors.phone} />
+        <SelectField label="Country" name="country" options={countryOptions} autoComplete="country-name" error={errors.country} onChange={(e) => setCountry(e.target.value)} />
+        <TextField
+          label="Phone"
+          name="phone"
+          type="tel"
+          inputMode="tel"
+          autoComplete="tel"
+          maxLength={24}
+          placeholder={phoneRule?.example ?? "+91 98765 43210"}
+          hint={phoneRule ? phoneRule.hint : "Include your country code."}
+          error={errors.phone}
+        />
         <TextField label="Website" name="website" inputMode="url" autoComplete="url" maxLength={200} placeholder="yourcompany.com" optional error={errors.website} />
-        <SelectField label="Country" name="country" options={countryOptions} autoComplete="country-name" error={errors.country} />
         <SelectField label="Industry" name="industry" options={industryOptions} error={errors.industry} />
         <SelectField label="Monthly marketing budget" name="budget" options={budgetOptions} error={errors.budget} />
         <SelectField label="Primary growth goal" name="goal" options={goalOptions} className="sm:col-span-2" error={errors.goal} />

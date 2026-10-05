@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { FinalCta } from "@/components/growth/final-cta";
+import { FinalCta } from "@/components/sections/final-cta";
 import { PageHero } from "@/components/layout/page-hero";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Block, LinkList, MeasuresPanel, Prose, RuledRows } from "@/components/services/page-parts";
 import { CtaLink } from "@/components/ui/cta-link";
+import { Photo } from "@/components/ui/photo";
+import { photos, type PhotoKey } from "@/data/images";
 import { getIndustry, industries } from "@/data/industries";
 import { getService } from "@/data/services";
 import { cta } from "@/lib/config/site";
@@ -45,15 +47,18 @@ export default async function IndustryPage({ params }: Props) {
         ]}
         label={`Industry · ${ind.name}`}
         title={ind.line}
-        aside={<MeasuresPanel measures={ind.measures} title="Outcomes we plan around" />}
+        aside={<Photo photo={photos[ind.slug as PhotoKey] ?? photos.teamOffice} sizes="(min-width: 1024px) 480px, 100vw" priority className="aspect-[4/3] rounded-panel shadow-[0_40px_90px_-30px_rgb(0_0_0/0.65)] lg:aspect-[5/4]" />}
       >
         <CtaLink href={cta.audit.href} variant="primary" size="lg">{cta.audit.label}</CtaLink>
       </PageHero>
 
       <Block label="How buyers decide" title={`Search and buying behaviour in ${ind.name === "B2B" || ind.name === "SaaS" ? ind.name : ind.name.toLowerCase()}.`} className="border-t-0">
-        <Prose className="text-[clamp(1.125rem,1rem+0.5vw,1.375rem)] leading-normal text-ink">
-          <p>{ind.buyerBehaviour}</p>
-        </Prose>
+        <div className="grid gap-10 xl:grid-cols-[1.4fr_1fr]">
+          <Prose className="text-[clamp(1.125rem,1rem+0.5vw,1.375rem)] leading-normal text-ink">
+            <p>{ind.buyerBehaviour}</p>
+          </Prose>
+          <MeasuresPanel measures={ind.measures} title="Outcomes we plan around" />
+        </div>
       </Block>
 
       <section className="border-t border-line bg-surface py-16 md:py-24">

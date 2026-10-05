@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { FinalCta } from "@/components/growth/final-cta";
+import { FinalCta } from "@/components/sections/final-cta";
 import { PageHero } from "@/components/layout/page-hero";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Block, LinkList } from "@/components/services/page-parts";
 import { CtaLink } from "@/components/ui/cta-link";
+import { Photo } from "@/components/ui/photo";
+import { photos } from "@/data/images";
 import { countries, getCity, getCountry, locationServices } from "@/data/locations";
-import { services } from "@/data/services";
+import { primaryServices } from "@/data/services";
 import { cta } from "@/lib/config/site";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { webPageSchema } from "@/lib/seo/schema";
@@ -52,6 +54,7 @@ export default async function CityPage({ params }: Props) {
         label={`${country.name} · ${city.name}`}
         title={`Growth strategy for businesses in ${city.name}.`}
         lead={city.context}
+        aside={<Photo photo={photos.skyline} sizes="(min-width: 1024px) 480px, 100vw" decorative className="hidden aspect-[5/4] rounded-panel lg:block" />}
       >
         <CtaLink href={cta.audit.href} variant="primary" size="lg">{cta.audit.label}</CtaLink>
       </PageHero>
@@ -78,7 +81,7 @@ export default async function CityPage({ params }: Props) {
       ) : null}
 
       <Block label="Services" title="What we do.">
-        <LinkList links={services.slice(0, 8).map((s) => ({ label: s.name, href: `/${s.slug}/`, note: s.summary }))} />
+        <LinkList links={primaryServices.slice(0, 8).map((s) => ({ label: s.name, href: `/${s.slug}/`, note: s.summary }))} />
       </Block>
 
       <FinalCta />

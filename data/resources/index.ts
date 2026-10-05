@@ -1,8 +1,7 @@
 import type { ResourceCategory } from "@/types";
 
 /**
- * Editorial categories. Articles are intentionally absent until real ones
- * are written – add them to `articles` and the listing renders automatically.
+ * Editorial categories. Published pieces live in ./articles.ts.
  */
 export const resourceCategories: ResourceCategory[] = [
   {
@@ -79,18 +78,7 @@ export const resourceCategories: ResourceCategory[] = [
   },
 ];
 
-export type Article = {
-  slug: string;
-  title: string;
-  category: string;
-  summary: string;
-  author: string;
-  publishedAt: string;
-  format: "Insight" | "Guide" | "Report";
-};
-
-/** Real, published pieces only. */
-export const articles: Article[] = [];
+export { articles, getArticle, readingTime, type Article } from "./articles";
 
 export const resourceFormats = [
   {

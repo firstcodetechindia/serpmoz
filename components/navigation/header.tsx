@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 import type { NavGroup } from "@/types";
 
 const triggerClass =
-  "group flex h-10 items-center gap-1 rounded-control px-3 text-[0.9375rem] font-medium text-ink/80 transition-colors hover:text-navy data-[state=open]:text-navy";
+  "group flex h-10 items-center gap-1 rounded-control px-2.5 text-[0.9375rem] font-medium text-ink/80 transition-colors hover:text-navy data-[state=open]:text-navy";
 
 function Panel({ group }: { group: NavGroup }) {
   const links = group.links ?? [];
@@ -64,7 +64,7 @@ export function Header() {
         delayDuration={80}
         aria-label="Primary"
         className={cn(
-          "glass relative mx-auto flex h-16 max-w-[80rem] items-center justify-between rounded-2xl pr-2.5 pl-5 transition-shadow duration-300",
+          "glass relative mx-auto flex h-16 !bg-white/92 max-w-[80rem] items-center justify-between rounded-2xl pr-2.5 pl-5 transition-shadow duration-300",
           scrolled ? "shadow-float" : "shadow-soft",
         )}
       >
@@ -72,7 +72,7 @@ export function Header() {
           <Logo />
         </Link>
 
-        <NavigationMenu.List className="hidden items-center lg:flex">
+        <NavigationMenu.List className="hidden items-center xl:flex">
           {navigation.map((group) =>
             group.links ? (
               <NavigationMenu.Item key={group.label}>
@@ -98,7 +98,7 @@ export function Header() {
         </NavigationMenu.List>
 
         <div className="flex items-center gap-1.5">
-          <CtaLink href={cta.growthos.href} variant="ghost" size="sm" arrow={false} className="hidden h-10 xl:inline-flex">
+          <CtaLink href={cta.growthos.href} variant="ghost" size="sm" arrow={false} className="hidden h-10 min-[1400px]:inline-flex">
             {cta.growthos.label}
           </CtaLink>
           <CtaLink href={cta.audit.href} variant="primary" size="sm" className="hidden h-10 px-4 sm:inline-flex">

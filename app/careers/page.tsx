@@ -3,6 +3,8 @@ import { PageHero } from "@/components/layout/page-hero";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Block, Prose } from "@/components/services/page-parts";
 import { CtaLink } from "@/components/ui/cta-link";
+import { Photo } from "@/components/ui/photo";
+import { photos } from "@/data/images";
 import { site } from "@/lib/config/site";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { webPageSchema } from "@/lib/seo/schema";
@@ -31,6 +33,7 @@ export default function CareersPage() {
         label="Careers"
         title="For people who would rather be right than busy."
         lead="We are building a team of specialists who use AI to work faster and their own judgement to decide what the work should be."
+        aside={<Photo photo={photos.teamMeeting} sizes="(min-width: 1024px) 480px, 100vw" priority className="aspect-[4/3] rounded-panel shadow-[0_40px_90px_-30px_rgb(0_0_0/0.65)] lg:aspect-[5/4]" />}
       />
 
       <Block label="Who does well here" title="Four things we look for." className="border-t-0">

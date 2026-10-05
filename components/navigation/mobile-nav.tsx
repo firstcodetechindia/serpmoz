@@ -15,7 +15,7 @@ export function MobileNav() {
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger
-        className="inline-flex size-10 items-center justify-center rounded-control text-navy transition-colors hover:bg-navy/5 lg:hidden"
+        className="inline-flex size-10 items-center justify-center rounded-control text-navy transition-colors hover:bg-navy/5 xl:hidden"
         aria-label="Open menu"
       >
         <Menu aria-hidden className="size-5" />
@@ -23,7 +23,7 @@ export function MobileNav() {
       <Dialog.Portal>
         <Dialog.Content
           aria-describedby={undefined}
-          className="fixed inset-0 z-[70] flex flex-col bg-canvas motion-safe:animate-sheet-in lg:hidden"
+          className="fixed inset-0 z-[70] flex flex-col bg-canvas motion-safe:animate-sheet-in xl:hidden"
         >
           <div className="flex h-[4.75rem] shrink-0 items-center justify-between px-5 pt-3">
             <Dialog.Title className="sr-only">Menu</Dialog.Title>

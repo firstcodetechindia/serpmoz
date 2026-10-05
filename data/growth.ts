@@ -2,6 +2,14 @@
 
 export const promise = ["Search", "Discovery", "Trust", "Conversion", "Revenue"] as const;
 
+export const promiseSteps = [
+  { name: "Search", body: "A buyer asks a question, in a search box, a map or an assistant." },
+  { name: "Discovery", body: "Your brand is among the answers they are given." },
+  { name: "Trust", body: "What they find next confirms you are credible." },
+  { name: "Conversion", body: "The next step is obvious and easy to take." },
+  { name: "Revenue", body: "The enquiry becomes a customer, and you can trace why." },
+] as const;
+
 export const aiReality = {
   execute: {
     label: "AI can execute",
@@ -185,8 +193,11 @@ export const pillars = [
 export const engagements = [
   {
     name: "Growth Starter",
+    stage: "Establishing",
     forWhom: "Businesses building their first structured growth programme.",
     focus: "Foundations in one core channel",
+    collaboration: "A strategist and a specialist, monthly reviews",
+    outcome: "A measured baseline and the first compounding channel",
     includes: [
       "Growth audit and 90-day roadmap",
       "25 strategic search opportunities",
@@ -196,8 +207,11 @@ export const engagements = [
   },
   {
     name: "Growth",
+    stage: "Compounding",
     forWhom: "Companies with traction that need consistent, compounding demand.",
     focus: "Search plus one acquisition channel",
+    collaboration: "A small dedicated team, fortnightly working sessions",
+    outcome: "Predictable qualified demand from two channels",
     includes: [
       "Expanded search opportunity portfolio",
       "Content and authority programme",
@@ -207,8 +221,11 @@ export const engagements = [
   },
   {
     name: "Scale",
+    stage: "Integrating",
     forWhom: "Multi-channel teams that need integration and pace.",
     focus: "Integrated search, media, content and conversion",
+    collaboration: "Cross-functional pod working alongside your team",
+    outcome: "Channels planned together and reported against revenue",
     includes: [
       "Cross-channel strategy and planning",
       "Experimentation programme",
@@ -218,8 +235,11 @@ export const engagements = [
   },
   {
     name: "Growth Partner",
+    stage: "Embedding",
     forWhom: "Leadership teams that want an embedded growth function.",
     focus: "Shared targets, embedded team",
+    collaboration: "Senior strategist in your leadership rhythm",
+    outcome: "A growth function accountable to the same targets you are",
     includes: [
       "Dedicated senior strategist",
       "Quarterly planning with leadership",
@@ -229,8 +249,11 @@ export const engagements = [
   },
   {
     name: "Enterprise",
+    stage: "Governing",
     forWhom: "Complex organisations with multiple brands, markets or business units.",
     focus: "Governance, scale and custom scope",
+    collaboration: "Programme office, service levels and enablement",
+    outcome: "Consistent standards across brands, markets and teams",
     includes: [
       "Custom scope and service levels",
       "Governance and enablement for internal teams",
@@ -246,13 +269,4 @@ export const caseStudyStructure = [
   { name: "Execution", body: "The work that shipped, and who did it." },
   { name: "Result", body: "Measured change, with dates and sources." },
   { name: "Business Impact", body: "What it meant for pipeline and revenue." },
-] as const;
-
-export const trustSlots = [
-  { name: "Client Logos", note: "Shown with written permission only." },
-  { name: "Certifications", note: "Listed once held and verifiable." },
-  { name: "Technology Partners", note: "Formal partnerships, not tools we happen to use." },
-  { name: "Case Studies", note: "Published with client approval." },
-  { name: "Testimonials", note: "Attributed to a named person and role." },
-  { name: "Platform Expertise", note: "Evidenced by work, not badges." },
 ] as const;

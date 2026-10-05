@@ -15,7 +15,7 @@ export function LegalPage({ slug }: { slug: string }) {
   const updated = new Date(`${doc.updated}T00:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
   return (
     <>
-      <PageHero crumbs={[{ name: doc.title, href: path }]} label={`Last updated ${updated}`} title={doc.title} lead={doc.intro} />
+      <PageHero tone="light" crumbs={[{ name: doc.title, href: path }]} label={`Last updated ${updated}`} title={doc.title} lead={doc.intro} />
       <article className="shell py-16 md:py-24">
         <div className="max-w-2xl">
           {doc.sections.map((s) => (

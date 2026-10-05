@@ -10,7 +10,11 @@ export type AnalyticsEvent =
   | { event: "audit_form_start" }
   | { event: "audit_form_submit"; services: number }
   | { event: "audit_form_error"; reason: "validation" | "server" }
-  | { event: "growthos_module_view"; module: string };
+  | { event: "growthos_module_view"; module: string }
+  | { event: "nav_click"; label: string; location: string }
+  | { event: "scroll_depth"; percent: number; location: string }
+  | { event: "service_explore"; category: string }
+  | { event: "interaction"; component: string; value: string };
 
 declare global {
   interface Window {

@@ -1,11 +1,12 @@
 import type { Service } from "@/types";
+import { moreServices } from "./more";
 
 /**
  * Core service pages. Each entry renders at /{slug}/.
  * Copy rules: no invented figures, no client names, no guarantees.
  * "measures" lists what we track – not results we claim.
  */
-export const services: Service[] = [
+const coreServices: Service[] = [
   {
     slug: "seo-services",
     name: "SEO & Search",
@@ -821,6 +822,11 @@ export const services: Service[] = [
     related: ["seo-services", "cro", "marketing-automation"],
   },
 ];
+
+/** The eight capabilities in the main navigation plus three SEO specialisms. */
+export const primaryServices = coreServices;
+
+export const services: Service[] = [...coreServices, ...moreServices];
 
 export const serviceSlugs = services.map((s) => s.slug);
 

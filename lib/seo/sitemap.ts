@@ -1,6 +1,8 @@
 import { industries } from "@/data/industries";
 import { legalDocs } from "@/data/legal";
 import { countries, locationServices } from "@/data/locations";
+import { articles } from "@/data/resources";
+import { growthosPages } from "@/data/growthos";
 import { services } from "@/data/services";
 import { absoluteUrl } from "@/lib/seo/metadata";
 
@@ -20,10 +22,16 @@ export const sitemapGroups: Record<string, () => SitemapEntry[]> = {
     { path: "/contact/", priority: 0.7 },
     { path: "/careers/", priority: 0.4 },
     { path: "/case-studies/", priority: 0.6 },
-    { path: "/resources/", priority: 0.6, changefreq: "weekly" },
+    ...growthosPages.map((p) => ({ path: `/growthos/${p.slug}/`, priority: 0.6 })),
     ...legalDocs.map((d) => ({ path: `/${d.slug}/`, priority: 0.2, changefreq: "yearly" as const })),
   ],
   services: () => services.map((s) => ({ path: `/${s.slug}/`, priority: 0.9 })),
+  resources: () => [
+    { path: "/resources/", priority: 0.7, changefreq: "weekly" },
+    { path: "/guides/", priority: 0.5, changefreq: "weekly" },
+    { path: "/reports/", priority: 0.4 },
+    ...articles.map((a) => ({ path: `/resources/${a.slug}/`, priority: 0.7 })),
+  ],
   industries: () => [
     { path: "/industries/", priority: 0.7 },
     ...industries.map((i) => ({ path: `/industries/${i.slug}/`, priority: 0.7 })),

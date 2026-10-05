@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { FinalCta } from "@/components/growth/final-cta";
+import { FinalCta } from "@/components/sections/final-cta";
 import { PageHero } from "@/components/layout/page-hero";
 import { JsonLd } from "@/components/seo/json-ld";
+import { WorldMap } from "@/components/visuals/world-map";
 import { countries } from "@/data/locations";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { webPageSchema } from "@/lib/seo/schema";
@@ -25,6 +26,11 @@ export default function LocationsPage() {
         title="Local expertise. Global ambition."
         lead="A strategy that works in Mumbai will not transfer unchanged to London or Dubai. These pages describe what is different about each market, and what we do about it."
       />
+      <section className="stage -mt-px overflow-hidden pb-16 md:pb-24">
+        <div className="shell no-scrollbar overflow-x-auto py-4 sm:overflow-visible">
+          <WorldMap tone="dark" />
+        </div>
+      </section>
       <section className="py-16 md:py-24">
         <div className="shell">
           <ul className="border-b border-line">

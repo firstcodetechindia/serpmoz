@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { FinalCta } from "@/components/growth/final-cta";
+import { FinalCta } from "@/components/sections/final-cta";
 import { PageHero } from "@/components/layout/page-hero";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Block, MeasuresPanel, RuledRows } from "@/components/services/page-parts";
 import { ArrowLink, CtaLink } from "@/components/ui/cta-link";
+import { CapabilityVisual } from "@/components/visuals/capability-visual";
 import { getCity, getCountry, getLocationService, locationServices } from "@/data/locations";
 import { getService } from "@/data/services";
 import { cta } from "@/lib/config/site";
@@ -56,7 +57,7 @@ export default async function LocationServicePage({ params }: Props) {
         label={`${service.name} · ${city.name}`}
         title={entry.title}
         lead={entry.intro}
-        aside={<MeasuresPanel measures={service.measures} />}
+        aside={<CapabilityVisual category={service.category} />}
       >
         <CtaLink href={cta.audit.href} variant="primary" size="lg">{cta.audit.label}</CtaLink>
       </PageHero>
@@ -72,7 +73,10 @@ export default async function LocationServicePage({ params }: Props) {
       </section>
 
       <Block label="The service" title={service.name}>
-        <p className="max-w-2xl text-[1.0625rem] leading-relaxed text-muted">{service.summary}</p>
+        <div className="grid gap-10 xl:grid-cols-[1.4fr_1fr]">
+          <p className="max-w-2xl text-[1.0625rem] leading-relaxed text-muted">{service.summary}</p>
+          <MeasuresPanel measures={service.measures} />
+        </div>
         <ArrowLink href={`/${service.slug}/`} className="mt-6">
           Full scope of {service.name}
         </ArrowLink>

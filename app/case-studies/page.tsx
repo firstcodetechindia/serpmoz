@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { CaseStudyFramework } from "@/components/case-studies/case-study-framework";
-import { FinalCta } from "@/components/growth/final-cta";
+import { Photo } from "@/components/ui/photo";
+import { photos } from "@/data/images";
+import { FinalCta } from "@/components/sections/final-cta";
 import { PageHero } from "@/components/layout/page-hero";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Block, Prose } from "@/components/services/page-parts";
@@ -31,6 +33,7 @@ export default function CaseStudiesPage() {
         label="Case studies"
         title="Growth you can measure."
         lead="We are preparing our first case studies for publication. This page explains the standard they are being written to, so you know how to read them when they arrive."
+        aside={<Photo photo={photos.teamWorkshop} sizes="(min-width: 1024px) 480px, 100vw" priority className="aspect-[4/3] rounded-panel shadow-[0_40px_90px_-30px_rgb(0_0_0/0.65)] lg:aspect-[5/4]" />}
       />
 
       <section className="py-16 md:py-24">

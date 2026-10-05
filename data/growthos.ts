@@ -167,3 +167,109 @@ export const growthosModules: GrowthosModule[] = [
     ],
   },
 ];
+
+export const growthosNav = [
+  { group: "Insight", ids: ["overview", "revenue", "copilot"] },
+  { group: "Visibility", ids: ["seo", "ai-search", "local", "competitors"] },
+  { group: "Demand", ids: ["content", "ppc"] },
+  { group: "Conversion", ids: ["leads", "cro"] },
+] as const;
+
+export const growthosOpportunities = [
+  { topic: "Comparison & alternatives pages", intent: "Commercial", value: "High", effort: "Medium", status: "In progress" },
+  { topic: "Pricing & ROI questions", intent: "Transactional", value: "High", effort: "Low", status: "Briefed" },
+  { topic: "Category round-up citations", intent: "AI answers", value: "High", effort: "High", status: "Outreach" },
+  { topic: "Integration how-tos", intent: "Informational", value: "Medium", effort: "Low", status: "Queued" },
+  { topic: "Location pages: 3 service areas", intent: "Local", value: "Medium", effort: "Medium", status: "Queued" },
+] as const;
+
+export const growthosAttribution = [
+  { channel: "Organic search", revenue: "₹17.5L", share: 41 },
+  { channel: "Paid media", revenue: "₹14.1L", share: 33 },
+  { channel: "AI & referral", revenue: "₹6.0L", share: 14 },
+  { channel: "Direct & other", revenue: "₹5.2L", share: 12 },
+] as const;
+
+export const growthosCompetitors = [
+  { name: "Your brand", sov: 28, change: "+3", self: true },
+  { name: "Competitor A", sov: 34, change: "−1" },
+  { name: "Competitor B", sov: 22, change: "+1" },
+  { name: "Competitor C", sov: 16, change: "−3" },
+] as const;
+
+export const growthosInsights = [
+  {
+    title: "Two thirds of qualified leads come from one topic cluster",
+    body: "Comparison content is carrying the quarter. Building out the remaining alternatives pages is likely to return more than additional paid spend.",
+    action: "Prioritise 4 comparison pages",
+    status: "Approved by strategist",
+  },
+  {
+    title: "Competitor A gained citations on pricing topics",
+    body: "Six new AI answers cite their pricing guide. Your brand has no equivalent source for assistants to draw on.",
+    action: "Brief a pricing explainer",
+    status: "Awaiting review",
+  },
+] as const;
+
+export const growthosPlatforms = [
+  { name: "Google AI experiences", value: 64 },
+  { name: "ChatGPT", value: 58 },
+  { name: "Gemini", value: 55 },
+  { name: "Perplexity", value: 69 },
+] as const;
+
+/** Module pages at /growthos/{slug}/. Each opens the product preview on that module. */
+export const growthosPages = [
+  {
+    slug: "ai-search",
+    module: "ai-search",
+    name: "AI Search",
+    title: "See how AI assistants describe and recommend your brand.",
+    metaDescription:
+      "The GrowthOS AI Search module tracks brand mentions, share of recommendation, citation sources and missing topics across AI discovery environments.",
+    lead: "The AI Search module runs a fixed panel of buying-journey prompts across AI discovery environments and turns the answers into trends you can act on.",
+    points: [
+      { title: "Prompt panels", body: "A stable set of prompts covering category, comparison, problem and evaluation questions, run on a schedule." },
+      { title: "Share of recommendation", body: "How often your brand is named beside each competitor, reported as a range over a period." },
+      { title: "Citation sources", body: "The publications, platforms and pages that answers draw on, and where you are absent." },
+      { title: "Missing topics and opportunities", body: "Subjects where competitors are cited and you have no source, turned into a prioritised content list." },
+    ],
+    service: "/ai-seo-services/",
+    caveat: "AI answers vary between runs and no platform offers guaranteed placement. The module reports trends, not promises.",
+  },
+  {
+    slug: "seo",
+    module: "seo",
+    name: "SEO",
+    title: "Search opportunities ranked by what they are worth.",
+    metaDescription:
+      "The GrowthOS SEO module tracks search opportunities by commercial value, non-brand visibility, technical health and the organic leads they produce.",
+    lead: "The SEO module replaces the keyword report with a portfolio of opportunities, each with an owner, a status and a line to the leads it produces.",
+    points: [
+      { title: "Opportunity portfolio", body: "Queries grouped into buyer needs and scored for intent, fit, value and effort." },
+      { title: "Non-brand visibility", body: "Presence on the searches that find new customers, separated from people already looking for you." },
+      { title: "Technical health", body: "Open issues ranked by impact, with the ticket status from your own backlog." },
+      { title: "Organic pipeline", body: "Leads and revenue traced to the pages and opportunities that preceded them." },
+    ],
+    service: "/seo-services/",
+    caveat: "Visibility metrics are indicators. The module always shows them beside leads and revenue.",
+  },
+  {
+    slug: "revenue",
+    module: "revenue",
+    name: "Revenue",
+    title: "Closed revenue, traced back to what influenced it.",
+    metaDescription:
+      "The GrowthOS Revenue module connects CRM outcomes to channels, campaigns and content, with acquisition cost and attribution coverage shown.",
+    lead: "The Revenue module reads outcomes from your CRM and connects them to the channels, campaigns and content that came before, with the method and its limits stated.",
+    points: [
+      { title: "Revenue influenced", body: "Closed revenue by first and last touch, side by side, so that neither view is mistaken for the truth." },
+      { title: "Acquisition cost by route", body: "What a customer costs to win through each channel, using finance-agreed definitions." },
+      { title: "Attribution coverage", body: "The share of revenue the data can explain, shown openly instead of hidden." },
+      { title: "Budget reallocation", body: "Where evidence supports moving spend, and what was changed last cycle as a result." },
+    ],
+    service: "/cro/",
+    caveat: "Attribution is an estimate. The module shows how much revenue it can account for and how.",
+  },
+] as const;

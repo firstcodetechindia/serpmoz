@@ -6,9 +6,11 @@ type SectionProps = React.ComponentProps<"section"> & {
   space?: "default" | "tight" | "none";
   /** Draw a hairline along the top edge */
   ruled?: boolean;
+  /** "dark" renders the navy stage used for product showcases */
+  tone?: "light" | "dark";
 };
 
-export function Section({ className, space = "default", ruled, children, ...props }: SectionProps) {
+export function Section({ className, space = "default", ruled, tone = "light", children, ...props }: SectionProps) {
   return (
     <section
       className={cn(
@@ -16,6 +18,7 @@ export function Section({ className, space = "default", ruled, children, ...prop
         space === "default" && "py-20 md:py-28 lg:py-36",
         space === "tight" && "py-14 md:py-20",
         ruled && "border-t border-line",
+        tone === "dark" && "stage overflow-hidden text-white",
         className,
       )}
       {...props}

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
-import { FinalCta } from "@/components/growth/final-cta";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { GrowthosPreview } from "@/components/growthos/growthos-preview";
 import { PageHero } from "@/components/layout/page-hero";
 import { Reveal } from "@/components/layout/reveal";
+import { FinalCta } from "@/components/sections/final-cta";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Block, Prose } from "@/components/services/page-parts";
 import { CtaLink } from "@/components/ui/cta-link";
-import { growthosMetrics, growthosModules } from "@/data/growthos";
+import { growthosMetrics, growthosModules, growthosPages } from "@/data/growthos";
 import { cta, site } from "@/lib/config/site";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { webPageSchema } from "@/lib/seo/schema";
@@ -28,27 +30,27 @@ export default function GrowthosPage() {
         label="GrowthOS · Product preview"
         title="Your growth intelligence layer."
         lead="GrowthOS brings your search visibility, AI visibility, competitors, campaigns, conversions and revenue into one intelligence layer, so every decision starts from the same evidence."
+        className="pb-10 md:pb-14"
       >
-        <CtaLink href={site.appUrl || cta.strategist.href} variant="primary" size="lg">
+        <CtaLink href={site.appUrl || cta.strategist.href} variant="primary" size="lg" data-cta="growthos-walkthrough">
           {site.appUrl ? "Open GrowthOS" : "Request a walkthrough"}
         </CtaLink>
-        <CtaLink href="#modules" variant="outline" size="lg" arrow={false}>See the modules</CtaLink>
+        <CtaLink href="#modules" variant="onDark" size="lg" arrow={false}>See the modules</CtaLink>
       </PageHero>
 
-      <section className="relative overflow-hidden py-14 md:py-20">
-        <div aria-hidden className="atmosphere absolute inset-0" />
-        <div className="shell relative">
+      <section className="stage -mt-px overflow-hidden pb-16 text-white md:pb-24">
+        <div className="shell">
           <Reveal y={24}>
             <GrowthosPreview />
           </Reveal>
-          <p className="mt-5 text-xs text-muted">
-            Product preview with illustrative figures. GrowthOS is being built alongside client engagements; the interface and
-            modules shown here may change.
+          <p className="mt-5 text-xs text-white/55">
+            Interactive product preview with illustrative figures. GrowthOS is being built alongside client engagements; the
+            interface and modules shown here may change.
           </p>
         </div>
       </section>
 
-      <Block label="Why it exists" title="Dashboards report channels. Businesses need answers.">
+      <Block label="Why it exists" title="Dashboards report channels. Businesses need answers." className="border-t-0">
         <Prose>
           <p>
             Most marketing teams already have more dashboards than they can read. Each one describes a channel in that
@@ -71,13 +73,23 @@ export default function GrowthosPage() {
           <p className="label-mono text-muted">Modules</p>
           <h2 className="mt-4 max-w-2xl text-h2 font-semibold text-navy">Eleven modules. One question each.</h2>
           <ol className="mt-12 border-b border-line">
-            {growthosModules.map((m, i) => (
-              <li key={m.id} className="grid gap-x-6 gap-y-1 border-t border-line py-6 md:grid-cols-[4rem_14rem_1fr]">
-                <span className="label-mono self-center text-muted">{String(i + 1).padStart(2, "0")}</span>
-                <h3 className="text-xl font-semibold tracking-[-0.02em] text-navy">{m.name}</h3>
-                <p className="text-[1.0625rem] text-muted">{m.question}</p>
-              </li>
-            ))}
+            {growthosModules.map((m, i) => {
+              const page = growthosPages.find((p) => p.module === m.id);
+              return (
+                <li key={m.id} className="grid gap-x-6 gap-y-1 border-t border-line py-6 md:grid-cols-[4rem_14rem_1fr_auto] md:items-baseline">
+                  <span className="label-mono text-muted">{String(i + 1).padStart(2, "0")}</span>
+                  <h3 className="text-xl font-semibold tracking-[-0.02em] text-navy">{m.name}</h3>
+                  <p className="text-[1.0625rem] text-muted">{m.question}</p>
+                  {page ? (
+                    <Link href={`/growthos/${page.slug}/`} className="inline-flex items-center gap-1 text-sm font-medium text-blue-ink hover:underline hover:underline-offset-4">
+                      Module detail <ArrowUpRight aria-hidden className="size-3.5" />
+                    </Link>
+                  ) : (
+                    <span aria-hidden />
+                  )}
+                </li>
+              );
+            })}
           </ol>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import type { NavGroup, NavLink } from "@/types";
 import { industries } from "@/data/industries";
+import { countries } from "@/data/locations";
 
 const trim = (v?: string) => (v ?? "").trim().replace(/\/+$/, "");
 
@@ -73,14 +74,20 @@ export const navigation: NavGroup[] = [
     }),
   },
   {
+    label: "Locations",
+    href: "/locations/",
+    summary: "Local expertise. Global ambition.",
+    links: countries.map((c) => ({ label: c.name, href: `/locations/${c.slug}/`, description: c.cities.length ? c.cities.slice(0, 4).map((x) => x.name).join(", ") : "Market overview" })),
+  },
+  {
     label: "Resources",
     href: "/resources/",
     summary: "Research and practice from the people doing the work.",
     links: [
-      { label: "Insights", href: "/resources/#insights", description: "Argued positions on single questions" },
+      { label: "Insights", href: "/resources/", description: "Argued positions on single questions" },
       { label: "Case Studies", href: "/case-studies/", description: "How we document results" },
-      { label: "Guides", href: "/resources/#guides", description: "Practical references for teams" },
-      { label: "Reports", href: "/resources/#reports", description: "Original analysis, method shown" },
+      { label: "Guides", href: "/guides/", description: "Practical references for teams" },
+      { label: "Reports", href: "/reports/", description: "Original analysis, method shown" },
       { label: "AI Search Resources", href: "/resources/#ai-search", description: "Understanding AI discovery" },
     ],
   },
@@ -101,13 +108,13 @@ export const navigation: NavGroup[] = [
 export const footerNav: { title: string; links: NavLink[] }[] = [
   { title: "Solutions", links: navigation[0].links! },
   { title: "Industries", links: [...navigation[1].links!.slice(0, 7), { label: "All industries", href: "/industries/" }] },
-  { title: "Resources", links: navigation[2].links! },
+  { title: "Resources", links: navigation[3].links! },
+  { title: "Locations", links: countries.map((c) => ({ label: c.name, href: `/locations/${c.slug}/` })) },
   {
     title: "Company",
     links: [
-      ...navigation[4].links!.map(({ label, href }) => ({ label, href })),
+      ...navigation[5].links!.map(({ label, href }) => ({ label, href })),
       { label: "GrowthOS", href: "/growthos/" },
-      { label: "Locations", href: "/locations/" },
     ],
   },
 ];

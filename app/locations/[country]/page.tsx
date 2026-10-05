@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { FinalCta } from "@/components/growth/final-cta";
+import { FinalCta } from "@/components/sections/final-cta";
 import { PageHero } from "@/components/layout/page-hero";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Block, LinkList, RuledRows } from "@/components/services/page-parts";
 import { CtaLink } from "@/components/ui/cta-link";
+import { WorldMap } from "@/components/visuals/world-map";
 import { countries, getCountry } from "@/data/locations";
 import { cta } from "@/lib/config/site";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -44,6 +45,7 @@ export default async function CountryPage({ params }: Props) {
         label={`Market · ${c.short}`}
         title={meta.title}
         lead={c.context}
+        aside={<WorldMap tone="dark" className="hidden lg:block" />}
       >
         <CtaLink href={cta.audit.href} variant="primary" size="lg">{cta.audit.label}</CtaLink>
       </PageHero>

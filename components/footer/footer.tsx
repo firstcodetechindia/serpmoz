@@ -27,7 +27,7 @@ export function Footer() {
             </ol>
           </div>
 
-          <nav aria-label="Footer" className="grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-4 lg:col-span-8">
+          <nav aria-label="Footer" className="grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 lg:col-span-8 xl:grid-cols-5">
             {footerNav.map((col) => (
               <div key={col.title}>
                 <h2 className="label-mono text-ink">{col.title}</h2>

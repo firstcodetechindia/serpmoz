@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { FinalCta } from "@/components/growth/final-cta";
-import { MethodologySteps } from "@/components/growth/methodology";
+import { FinalCta } from "@/components/sections/final-cta";
+import { MethodologySteps } from "@/components/sections/methodology";
 import { PageHero } from "@/components/layout/page-hero";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Block, Prose } from "@/components/services/page-parts";
+import { MethodLoop } from "@/components/visuals/method-loop";
 import { growthSystem } from "@/data/growth";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { webPageSchema } from "@/lib/seo/schema";
@@ -27,9 +28,14 @@ export default function MethodologyPage() {
         lead="Every engagement follows the same six stages. The order matters: nothing is executed before it has been prioritised, and nothing is reported that cannot be traced to its source."
       />
 
-      <section className="py-16 md:py-24">
-        <div className="shell max-w-5xl">
-          <MethodologySteps />
+      <section className="overflow-hidden py-16 md:py-24">
+        <div className="shell grid items-start gap-14 lg:grid-cols-12 lg:gap-8">
+          <div className="lg:sticky lg:top-28 lg:col-span-5">
+            <MethodLoop />
+          </div>
+          <div className="lg:col-span-7">
+            <MethodologySteps />
+          </div>
         </div>
       </section>
 

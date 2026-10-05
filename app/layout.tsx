@@ -4,6 +4,7 @@ import { GeistMono } from "geist/font/mono";
 import { Footer } from "@/components/footer/footer";
 import { MotionProvider } from "@/components/layout/motion-provider";
 import { Header } from "@/components/navigation/header";
+import { AnalyticsEvents } from "@/components/seo/analytics-events";
 import { TagManager } from "@/components/seo/tag-manager";
 import { JsonLd } from "@/components/seo/json-ld";
 import { site } from "@/lib/config/site";
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
         </MotionProvider>
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
+        <AnalyticsEvents />
         <TagManager />
       </body>
     </html>

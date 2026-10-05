@@ -14,7 +14,11 @@ const nextConfig: NextConfig = {
   // Canonical URLs across the site end in a slash (see lib/seo).
   trailingSlash: true,
   poweredByHeader: false,
-  images: { formats: ["image/avif", "image/webp"] },
+  images: {
+    formats: ["image/avif", "image/webp"],
+    // Photography is served straight from the Unsplash CDN (see components/ui/photo.tsx).
+    remotePatterns: [{ protocol: "https", hostname: "images.unsplash.com" }],
+  },
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];
   },

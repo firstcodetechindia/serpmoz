@@ -56,14 +56,43 @@ const required = "This field is required.";
 
 const text = (max: number) => z.string(required).transform(sanitize).pipe(z.string().max(max, `Keep this under ${max} characters.`));
 
-const phone = z
-  .string(required)
-  .transform((v) => sanitize(v))
-  .refine((v) => /^\+?[0-9\s().-]{7,22}$/.test(v), "Enter a valid phone number, including country code.")
-  .refine((v) => {
-    const digits = v.replace(/\D/g, "").length;
-    return digits >= 7 && digits <= 15;
-  }, "Enter a valid phone number, including country code.");
+/**
+ * Country-aware phone rules. `pattern` is tested against the national number
+ * (country code and trunk zero removed). Markets without a rule fall back to
+ * the E.164 length check.
+ */
+export const phoneRules: Partial<Record<(typeof countryOptions)[number], { code: string; pattern: RegExp; example: string; hint: string }>> = {
+  India: { code: "91", pattern: /^[6-9]\d{9}$/, example: "+91 98765 43210", hint: "10-digit mobile number." },
+  "United States": { code: "1", pattern: /^[2-9]\d{2}[2-9]\d{6}$/, example: "+1 415 555 0132", hint: "10-digit number including area code." },
+  Canada: { code: "1", pattern: /^[2-9]\d{2}[2-9]\d{6}$/, example: "+1 416 555 0132", hint: "10-digit number including area code." },
+  "United Kingdom": { code: "44", pattern: /^[1237]\d{8,9}$/, example: "+44 7700 900123", hint: "Mobile or landline, without the leading 0." },
+  "United Arab Emirates": { code: "971", pattern: /^(5\d{8}|[2-4679]\d{7})$/, example: "+971 50 123 4567", hint: "Mobile or landline, without the leading 0." },
+  Australia: { code: "61", pattern: /^[2-478]\d{8}$/, example: "+61 412 345 678", hint: "9 digits after the country code." },
+  Singapore: { code: "65", pattern: /^[3689]\d{7}$/, example: "+65 8123 4567", hint: "8-digit number." },
+};
+
+/** Validates a phone number for a country and returns it in +E.164 form, or null. */
+export function normalizePhone(raw: string, country?: string): string | null {
+  const value = sanitize(raw);
+  if (!/^\+?[0-9\s().-]{7,24}$/.test(value)) return null;
+  const international = value.startsWith("+") || value.startsWith("00");
+  let digits = value.replace(/\D/g, "").replace(/^00/, "");
+  const rule = phoneRules[country as keyof typeof phoneRules];
+
+  if (!rule) return digits.length >= 7 && digits.length <= 15 ? `+${digits}` : null;
+
+  if (international || (digits.startsWith(rule.code) && digits.length > 10)) {
+    if (!digits.startsWith(rule.code)) return null; // an international prefix for a different country
+    digits = digits.slice(rule.code.length);
+  }
+  digits = digits.replace(/^0/, "");
+  return rule.pattern.test(digits) ? `+${rule.code}${digits}` : null;
+}
+
+const phoneMessage = (country?: string) => {
+  const rule = phoneRules[country as keyof typeof phoneRules];
+  return rule ? `Enter a valid phone number for ${country}, for example ${rule.example}.` : "Enter a valid phone number, including country code.";
+};
 
 const website = z
   .string()
@@ -81,13 +110,18 @@ const website = z
   }, "Enter a valid website address, for example yourcompany.com.");
 
 export const auditSchema = z.object({
-  fullName: text(80).pipe(z.string().min(2, "Enter your full name.")),
+  fullName: text(80).pipe(
+    z
+      .string()
+      .min(2, "Enter your full name.")
+      .regex(/^[\p{L}\p{M}][\p{L}\p{M}\s.'’-]*$/u, "Use letters, spaces, hyphens and apostrophes only."),
+  ),
   businessName: text(120).pipe(z.string().min(2, "Enter your business name.")),
   email: z
     .string(required)
     .transform((v) => sanitize(v).toLowerCase())
     .pipe(z.email("Enter a valid work email address.").max(160)),
-  phone,
+  phone: z.string(required).transform(sanitize),
   website,
   country: z.enum(countryOptions, "Select your country."),
   industry: text(80).pipe(z.string().min(2, "Select your industry.")),
@@ -96,6 +130,14 @@ export const auditSchema = z.object({
   services: z.array(z.enum(serviceOptions)).max(serviceOptions.length).default([]),
   message: text(2000).default(""),
   consent: z.literal(true, "Please confirm so we can reply to you."),
+}).transform((data, ctx) => {
+  // Phone depends on country, so it is checked once both are known.
+  const normalized = normalizePhone(data.phone, data.country);
+  if (!normalized) {
+    ctx.addIssue({ code: "custom", path: ["phone"], message: phoneMessage(data.country) });
+    return z.NEVER;
+  }
+  return { ...data, phone: normalized };
 });
 
 export type AuditInput = z.input<typeof auditSchema>;

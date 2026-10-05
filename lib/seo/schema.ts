@@ -113,7 +113,8 @@ export function articleSchema(a: {
     headline: a.title,
     description: a.description,
     mainEntityOfPage: absoluteUrl(a.path),
-    author: { "@type": "Person", name: a.author },
+    // Pieces are bylined to the editorial team; switch to Person when named authors are added.
+    author: { "@type": "Organization", name: a.author, url: `${site.url}/` },
     publisher: { "@id": ORG_ID },
     datePublished: a.publishedAt,
     dateModified: a.modifiedAt ?? a.publishedAt,

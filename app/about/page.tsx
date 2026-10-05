@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { FinalCta } from "@/components/growth/final-cta";
+import { FinalCta } from "@/components/sections/final-cta";
 import { PageHero } from "@/components/layout/page-hero";
+import { PhotoBand } from "@/components/layout/photo-band";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Block, Prose } from "@/components/services/page-parts";
 import { ArrowLink } from "@/components/ui/cta-link";
+import { Photo } from "@/components/ui/photo";
+import { photos } from "@/data/images";
 import { pillars } from "@/data/growth";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { webPageSchema } from "@/lib/seo/schema";
@@ -30,6 +33,7 @@ export default function AboutPage() {
         label="About SERPMOZ"
         title="AI-powered. Expert-led. Revenue-focused."
         lead="SERPMOZ is an AI-powered digital growth company. We help businesses become discoverable wherever modern customers search, and we connect that visibility to leads and revenue."
+        aside={<Photo photo={photos.teamOffice} sizes="(min-width: 1024px) 480px, 100vw" priority className="aspect-[4/3] rounded-panel shadow-[0_40px_90px_-30px_rgb(0_0_0/0.65)] lg:aspect-[5/4]" />}
       />
 
       <Block label="What we believe" title="AI can do the work. Experts know what work matters." className="border-t-0">
@@ -65,7 +69,13 @@ export default function AboutPage() {
         </ul>
       </Block>
 
-      <Block label="Principles" title="How we choose to operate.">
+      <div className="bg-surface pb-16 md:pb-24">
+        <PhotoBand photo={photos.teamWorkshop} label="How we think" statement="The scarce skill is no longer making things. It is knowing which things to make.">
+          <p>That is the work we hire for, organise around and expect to be judged on.</p>
+        </PhotoBand>
+      </div>
+
+      <Block label="Principles" title="How we choose to operate." className="border-t-0">
         <ul className="grid border-b border-line sm:grid-cols-2 sm:gap-x-10">
           {pillars.map((p) => (
             <li key={p.name} className="border-t border-line py-6">
