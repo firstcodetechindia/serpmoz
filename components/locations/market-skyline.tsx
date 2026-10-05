@@ -177,7 +177,7 @@ export function MarketSkyline({ markets }: { markets: Market[] }) {
               >
                 {/* Spotlight behind the chosen landmark */}
                 <span aria-hidden className={cn("absolute inset-x-1 top-6 bottom-0 rounded-t-full transition-opacity duration-700", on ? "opacity-100" : "opacity-0")} style={{ background: night ? "linear-gradient(180deg,transparent,rgb(255 255 255 / 0.14))" : "linear-gradient(180deg,transparent,rgb(255 255 255 / 0.75))" }} />
-                <span className={cn("label-mono relative mb-2 rounded-full px-2 py-0.5 text-[0.5625rem] whitespace-nowrap transition-all duration-300", on ? "translate-y-0 bg-orange text-navy opacity-100" : "translate-y-1 opacity-0")}>{landmarkLabel(x.slug)}</span>
+                <span className={cn("label-mono relative mb-6 rounded-full sm:mb-7 lg:mb-9 px-2 py-0.5 text-[0.5625rem] whitespace-nowrap transition-all duration-300", on ? "translate-y-0 bg-orange text-navy opacity-100" : "translate-y-1 opacity-0")}>{landmarkLabel(x.slug)}</span>
                 <Landmark
                   slug={x.slug}
                   active={on}
