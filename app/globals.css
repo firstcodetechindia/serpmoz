@@ -300,3 +300,19 @@
     z-index: 0;
   }
 }
+
+/* ------------------------------------------------------------------
+   Header colours. Dark text by default; white while the header is still
+   transparent over a dark hero. Decided in CSS so it is right on the
+   first paint, before any script runs.
+   ------------------------------------------------------------------ */
+.site-header {
+  --hd-fg: var(--color-navy);
+  --hd-soft: rgb(20 33 61 / 0.78);
+  --hd-line: rgb(11 31 58 / 0.08);
+}
+html:has(main [data-hero="dark"]) .site-header:not([data-scrolled]) {
+  --hd-fg: #fff;
+  --hd-soft: rgb(255 255 255 / 0.86);
+  --hd-line: rgb(255 255 255 / 0.14);
+}

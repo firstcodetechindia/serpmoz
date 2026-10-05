@@ -122,7 +122,7 @@ const faqs = [
 export default function GrowthAuditPage() {
   return (
     <>
-      <header className="stage relative overflow-hidden pt-32 pb-14 text-white md:pt-36 md:pb-20">
+      <header data-hero="dark" className="stage relative overflow-hidden pt-32 pb-14 text-white md:pt-36 md:pb-20">
         <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent_80%)]" />
         <SignalField cx={30} cy={40} className="hidden opacity-50 lg:block" />
         <div className="shell relative grid items-start gap-10 lg:grid-cols-12 lg:gap-10">

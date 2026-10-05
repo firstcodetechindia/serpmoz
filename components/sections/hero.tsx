@@ -108,7 +108,7 @@ const slides: HeroSlide[] = [
 
 export function Hero() {
   return (
-    <section aria-labelledby="hero-title" className="stage relative overflow-hidden text-white">
+    <section data-hero="dark" aria-labelledby="hero-title" className="stage relative overflow-hidden text-white">
       <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:linear-gradient(to_bottom,black_10%,transparent_75%)]" />
       <SignalField className="hidden lg:block" cx={70} cy={42} />
       <div aria-hidden className="glow absolute -bottom-40 -left-40 size-[32rem] rounded-full bg-blue/20" />

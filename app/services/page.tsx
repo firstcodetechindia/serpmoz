@@ -33,7 +33,7 @@ export default function ServicesPage() {
         <CtaLink href={cta.audit.href} variant="primary" size="lg">{cta.audit.label}</CtaLink>
       </PageHero>
 
-      <nav aria-label="Disciplines" className="sticky top-[5.25rem] z-30 hidden border-b border-line bg-surface/90 lg:block">
+      <nav aria-label="Disciplines" className="sticky top-16 z-30 hidden border-b border-line bg-surface/90 lg:block">
         <ul className="shell flex gap-8">
           {serviceCategories.map((c) => (
             <li key={c.id}><a href={`#${c.id}`} className="block py-4 text-sm font-medium text-muted transition-colors hover:text-navy">{c.label}</a></li>
