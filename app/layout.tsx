@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Footer } from "@/components/footer/footer";
 import { MotionProvider } from "@/components/layout/motion-provider";
+import { RevealGate } from "@/components/layout/reveal";
 import { Header } from "@/components/navigation/header";
 import { AnalyticsEvents } from "@/components/seo/analytics-events";
 import { TagManager } from "@/components/seo/tag-manager";
@@ -26,11 +27,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning>
-      <head>
-        {/* Enables scroll-reveal styles only when scripts run; see globals.css */}
-        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
-      </head>
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="min-h-dvh antialiased">
         <MotionProvider>
           <Header />
@@ -38,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
         </MotionProvider>
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
+        <RevealGate />
         <AnalyticsEvents />
         <TagManager />
       </body>

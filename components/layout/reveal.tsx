@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 
 type Props = {
   children: React.ReactNode;
@@ -12,24 +12,26 @@ type Props = {
   as?: "div" | "li" | "section";
 };
 
+const useIsoLayoutEffect = typeof window === "undefined" ? useEffect : useLayoutEffect;
+
 /**
  * Scroll reveal for section-level blocks.
  *
- * Content is server-rendered visible. It is only hidden once the `js` class is
- * on <html> (set by an inline script in the root layout), so crawlers, no-JS
- * visitors and reduced-motion users always get the content. The transition is
- * plain CSS (see globals.css) – no animation library on the critical path.
+ * Fail-safe by design: content is server-rendered visible and is only hidden
+ * once React has actually hydrated (RevealGate below sets a flag on <html>).
+ * If scripts are blocked, fail to load or never hydrate, nothing is hidden –
+ * the page simply shows everything without the entrance animation.
  */
 export function Reveal({ children, className, delay = 0, y = 16, as = "div" }: Props) {
   const ref = useRef<HTMLElement>(null);
 
-  useEffect(() => {
+  useIsoLayoutEffect(() => {
     const node = ref.current;
     if (!node) return;
     const show = () => node.setAttribute("data-revealed", "");
     if (!("IntersectionObserver" in window)) return show();
     // Anything already on screen (or above it, e.g. after an anchor jump) shows immediately.
-    if (node.getBoundingClientRect().top < window.innerHeight * 0.9) return show();
+    if (node.getBoundingClientRect().top < window.innerHeight * 0.92) return show();
     const io = new IntersectionObserver(
       (entries) => {
         if (entries.some((e) => e.isIntersecting)) {
@@ -37,7 +39,7 @@ export function Reveal({ children, className, delay = 0, y = 16, as = "div" }: P
           io.disconnect();
         }
       },
-      { rootMargin: "0px 0px -8% 0px" },
+      { rootMargin: "0px 0px -6% 0px" },
     );
     io.observe(node);
     return () => io.disconnect();
@@ -53,4 +55,15 @@ export function Reveal({ children, className, delay = 0, y = 16, as = "div" }: P
   if (as === "li") return <li ref={ref as React.RefObject<HTMLLIElement>} {...props}>{children}</li>;
   if (as === "section") return <section ref={ref} {...props}>{children}</section>;
   return <div ref={ref as React.RefObject<HTMLDivElement>} {...props}>{children}</div>;
+}
+
+/**
+ * Mounted once in the root layout. Its only job is to tell the stylesheet that
+ * hydration succeeded, which is what arms the hidden state for Reveal blocks.
+ */
+export function RevealGate() {
+  useIsoLayoutEffect(() => {
+    document.documentElement.setAttribute("data-reveal-ready", "");
+  }, []);
+  return null;
 }
