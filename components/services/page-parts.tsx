@@ -103,7 +103,7 @@ export function LinkList({ links }: { links: { label: string; href: string; note
 /** Label on the left, content on the right. The basic rhythm of inner pages. */
 export function Block({ label, title, children, className }: { label: string; title?: string; children: React.ReactNode; className?: string }) {
   return (
-    <section className={cn("border-t border-line py-12 md:py-20", className)}>
+    <section className={cn("border-t border-line py-10 md:py-14", className)}>
       <div className="shell grid gap-8 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-4">
           <p className="label-mono text-muted">{label}</p>

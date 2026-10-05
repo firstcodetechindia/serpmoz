@@ -127,8 +127,8 @@ const group = (label: string) => navigation.find((g) => g.label === label)!;
 
 export const footerNav: { title: string; links: NavLink[] }[] = [
   { title: "Solutions", links: [...serviceCategories.map((c) => ({ label: c.label, href: c.href })), { label: "All services", href: "/services/" }] },
-  { title: "Industries", links: [...group("Industries").links!.slice(0, 7), { label: "All industries", href: "/industries/" }] },
-  { title: "Locations", links: [...countries.map((c) => ({ label: c.name, href: `/locations/${c.slug}/` })), { label: "All locations", href: "/locations/" }] },
+  { title: "Industries", links: [...group("Industries").links!.slice(0, 5), { label: "All industries", href: "/industries/" }] },
+  { title: "Locations", links: [...countries.slice(0, 5).map((c) => ({ label: c.name, href: `/locations/${c.slug}/` })), { label: "All locations", href: "/locations/" }] },
   { title: "Resources", links: [{ label: "Case Studies", href: "/case-studies/" }, ...group("Resources").links!.map(({ label, href }) => ({ label, href }))] },
   {
     title: "Company",

@@ -4,6 +4,7 @@ import { GeistMono } from "geist/font/mono";
 import { Footer } from "@/components/footer/footer";
 import { MotionProvider } from "@/components/layout/motion-provider";
 import { RevealGate } from "@/components/layout/reveal";
+import { BackToTop } from "@/components/navigation/back-to-top";
 import { Header } from "@/components/navigation/header";
 import { AnalyticsEvents } from "@/components/seo/analytics-events";
 import { TagManager } from "@/components/seo/tag-manager";
@@ -32,10 +33,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-dvh antialiased" suppressHydrationWarning>
         <MotionProvider>
           <Header />
-          <main id="main">{children}</main>
+          <main id="main" className="page-sheet">{children}</main>
           <Footer />
         </MotionProvider>
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
+        <BackToTop />
         <RevealGate />
         <AnalyticsEvents />
         <TagManager />

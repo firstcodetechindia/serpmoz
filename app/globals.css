@@ -258,3 +258,26 @@
     transition: none;
   }
 }
+
+/* ------------------------------------------------------------------
+   Footer reveal. The page is a sheet that rides over the footer; as its
+   last section scrolls away the footer is uncovered from the bottom.
+   Only where the whole footer fits on screen, so nothing is ever cut off.
+   ------------------------------------------------------------------ */
+.page-sheet {
+  position: relative;
+  z-index: 10;
+  background: var(--color-surface);
+}
+@media (min-width: 1024px) and (min-height: 760px) {
+  .page-sheet {
+    overflow: clip;
+    border-radius: 0 0 2.25rem 2.25rem;
+    box-shadow: 0 30px 60px -20px rgb(0 0 0 / 0.55);
+  }
+  .footer-reveal {
+    position: sticky;
+    bottom: 0;
+    z-index: 0;
+  }
+}

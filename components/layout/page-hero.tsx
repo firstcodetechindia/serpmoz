@@ -21,7 +21,7 @@ type Props = {
 export function PageHero({ crumbs, label, title, lead, children, aside, tone = "dark", className }: Props) {
   const dark = tone === "dark";
   return (
-    <header className={cn("relative overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24", dark ? "stage text-white" : "border-b border-line", className)}>
+    <header className={cn("relative overflow-hidden pt-28 pb-12 md:pt-36 md:pb-16", dark ? "stage text-white" : "border-b border-line", className)}>
       {dark ? (
         <>
           <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent_80%)]" />

@@ -51,7 +51,7 @@ const eyebrow = "label-mono text-muted";
 
 function Band({ id, tone, children }: { id: string; tone: "surface" | "canvas"; children: React.ReactNode }) {
   return (
-    <section id={id} className={cn("scroll-mt-24 py-12 md:py-20", tone === "surface" ? "bg-surface" : "bg-canvas")}>
+    <section id={id} className={cn("scroll-mt-24 py-10 md:py-14", tone === "surface" ? "bg-surface" : "bg-canvas")}>
       <div className="shell">{children}</div>
     </section>
   );
@@ -80,7 +80,7 @@ function Problem({ s, tone }: { s: Service; tone: "surface" | "canvas" }) {
 
 function Why({ s, wash }: { s: Service; wash: string }) {
   return (
-    <section id="why" className={cn("scroll-mt-24 py-12 md:py-20", wash)}>
+    <section id="why" className={cn("scroll-mt-24 py-10 md:py-14", wash)}>
       <div className="shell grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-8">
         <p className={cn(eyebrow, "lg:col-span-3 lg:pt-3")}>Why {s.name} matters</p>
         <div className="lg:col-span-9">
@@ -145,7 +145,7 @@ function Deliverables({ s, photo }: { s: Service; photo: keyof typeof photos }) 
     <section id="deliverables" className="scroll-mt-24 bg-surface px-3 py-3 md:px-5 md:py-5">
       <div className="stage relative overflow-hidden rounded-[1.75rem] text-white">
         <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:radial-gradient(60%_70%_at_20%_10%,black,transparent)]" />
-        <div className="shell relative grid grid-cols-1 gap-12 py-14 md:py-20 lg:grid-cols-12 lg:gap-8">
+        <div className="shell relative grid grid-cols-1 gap-12 py-12 md:py-14 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-7">
             <p className="label-mono text-cyan">Deliverables</p>
             <h2 className="mt-4 text-h2 font-semibold">What you receive.</h2>

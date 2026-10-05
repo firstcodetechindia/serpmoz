@@ -19,11 +19,11 @@ type SectionProps = React.ComponentProps<"section"> & {
 export function Section({ className, space = "default", ruled, tone = "light", inset, children, ...props }: SectionProps) {
   if (inset) {
     return (
-      <section className="bg-surface px-3 py-2 md:px-5 md:py-2.5" {...props}>
+      <section className="bg-surface px-3 py-1.5 md:px-5 md:py-2" {...props}>
         <div
           className={cn(
             "relative overflow-clip rounded-[1.75rem] md:rounded-[2.25rem]",
-            space === "default" && "py-12 md:py-16 lg:py-20",
+            space === "default" && "py-10 md:py-12 lg:py-14",
             space === "tight" && "py-10 md:py-14",
             tone === "dark" && "stage text-white",
             className,
@@ -38,7 +38,7 @@ export function Section({ className, space = "default", ruled, tone = "light", i
     <section
       className={cn(
         "relative",
-        space === "default" && "py-14 md:py-20 lg:py-24",
+        space === "default" && "py-10 md:py-14 lg:py-16",
         space === "tight" && "py-10 md:py-14",
         ruled && "border-t border-line",
         tone === "dark" && "stage overflow-hidden text-white",
