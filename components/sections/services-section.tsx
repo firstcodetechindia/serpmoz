@@ -20,13 +20,28 @@ function Links({ c, dark, cols = 2 }: { c: ServiceCategory; dark?: boolean; cols
   return (
     <ul className={cn("grid gap-x-6", cols === 2 && "sm:grid-cols-2", cols === 3 && "sm:grid-cols-2 xl:grid-cols-3")}>
       {c.items.map((item) => (
-        <li key={item.href} className={cn("border-t", dark ? "border-white/12" : "border-line")}>
+        <li key={item.href} className={cn("border-t", dark ? "border-white/12" : "border-navy/10")}>
           <Link
             href={item.href}
-            className={cn("group/s flex items-center justify-between gap-3 py-2.5 text-[0.9375rem] font-medium transition-colors", dark ? "text-white/85 hover:text-white" : "text-ink hover:text-blue-ink")}
+            title={item.summary}
+            className={cn(
+              "group/s relative -mx-2.5 flex items-center justify-between gap-3 rounded-xl px-2.5 py-2 text-[0.9375rem] font-medium transition-colors duration-200",
+              dark ? "text-white/85 hover:bg-white/10 hover:text-white" : "text-ink hover:bg-navy hover:text-white",
+            )}
           >
-            {item.name}
-            <ArrowUpRight aria-hidden className={cn("size-4 shrink-0 transition-all duration-200 group-hover/s:translate-x-0.5 group-hover/s:-translate-y-0.5", dark ? "text-white/30 group-hover/s:text-orange" : "text-line-strong group-hover/s:text-blue-ink")} />
+            <span className="relative transition-transform duration-300 ease-out-quint group-hover/s:translate-x-1">
+              {item.name}
+              <span aria-hidden className="absolute -bottom-0.5 left-0 h-px w-full origin-left scale-x-0 bg-orange transition-transform duration-300 ease-out-quint group-hover/s:scale-x-100" />
+            </span>
+            {/* The arrow sits in a ring at rest, so the row reads as a link before it is touched */}
+            <span
+              className={cn(
+                "flex size-7 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ease-out-quint group-hover/s:rotate-45 group-hover/s:border-orange group-hover/s:bg-orange group-hover/s:text-navy",
+                dark ? "border-white/25 text-white/70" : "border-navy/15 text-navy/60",
+              )}
+            >
+              <ArrowUpRight aria-hidden className="size-3.5" />
+            </span>
           </Link>
         </li>
       ))}
