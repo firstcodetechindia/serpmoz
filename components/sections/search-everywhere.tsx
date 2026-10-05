@@ -65,9 +65,9 @@ export function SearchEverywhere() {
 
         <Reveal className="mt-16 border-t border-line pt-10 lg:mt-20">
           <p className="label-mono text-muted">How we cover it</p>
-          <ul className="mt-5 flex flex-wrap gap-x-2 gap-y-1 text-[clamp(1.125rem,0.95rem+0.9vw,1.75rem)] leading-snug font-medium tracking-[-0.025em]">
+          <ul className="mt-5 flex flex-wrap gap-x-3 gap-y-4 text-[clamp(1.125rem,0.95rem+0.9vw,1.75rem)] leading-[1.5] font-medium tracking-[-0.025em]">
             {searchServices.map((s, i) => (
-              <li key={s.name} className="flex items-center gap-2">
+              <li key={s.name} className="flex items-center gap-3">
                 <Link href={s.href} className="text-navy underline decoration-transparent decoration-2 underline-offset-[6px] transition-colors hover:decoration-orange">
                   {s.name}
                 </Link>
