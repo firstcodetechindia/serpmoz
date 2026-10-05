@@ -30,7 +30,7 @@ export const site = {
 
 export const cta = {
   audit: { label: "Get Your Growth Audit", href: "/contact/#growth-audit" },
-  growthos: { label: "Explore GrowthOS", href: "/growthos/" },
+  services: { label: "Our Services", href: "/#what-we-do-title" },
   strategist: { label: "Talk to a Growth Strategist", href: "/contact/" },
 } as const;
 
@@ -91,7 +91,6 @@ export const navigation: NavGroup[] = [
       { label: "AI Search Resources", href: "/resources/#ai-search", description: "Understanding AI discovery" },
     ],
   },
-  { label: "GrowthOS", href: "/growthos/" },
   {
     label: "Company",
     href: "/about/",
@@ -113,9 +112,8 @@ export const footerNav: { title: string; links: NavLink[] }[] = [
   {
     title: "Company",
     links: [
-      ...navigation[5].links!.map(({ label, href }) => ({ label, href })),
-      { label: "GrowthOS", href: "/growthos/" },
-    ],
+      ...navigation[4].links!.map(({ label, href }) => ({ label, href })),
+        ],
   },
 ];
 

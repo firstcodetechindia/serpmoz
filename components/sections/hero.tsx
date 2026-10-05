@@ -1,4 +1,4 @@
-import { HeroDashboard } from "@/components/sections/hero-dashboard";
+import { HeroVisual } from "@/components/sections/hero-visual";
 import { CtaLink } from "@/components/ui/cta-link";
 import { SignalField } from "@/components/visuals/signal-field";
 import { platforms } from "@/data/dashboard";
@@ -31,8 +31,8 @@ export function Hero() {
             <CtaLink href={cta.audit.href} variant="primary" size="lg" data-cta="hero-audit">
               {cta.audit.label}
             </CtaLink>
-            <CtaLink href={cta.growthos.href} variant="onDark" size="lg" arrow={false} data-cta="hero-growthos">
-              {cta.growthos.label}
+            <CtaLink href="#what-we-do-title" variant="onDark" size="lg" arrow={false} data-cta="hero-services">
+              Explore Our Services
             </CtaLink>
           </div>
 
@@ -41,8 +41,8 @@ export function Hero() {
           </p>
         </div>
 
-        <div className="lg:col-span-6 lg:py-20">
-          <HeroDashboard />
+        <div className="lg:col-span-6 lg:py-6">
+          <HeroVisual />
         </div>
       </div>
 

@@ -2,7 +2,6 @@ import { industries } from "@/data/industries";
 import { legalDocs } from "@/data/legal";
 import { countries, locationServices } from "@/data/locations";
 import { articles } from "@/data/resources";
-import { growthosPages } from "@/data/growthos";
 import { services } from "@/data/services";
 import { absoluteUrl } from "@/lib/seo/metadata";
 
@@ -16,13 +15,11 @@ export type SitemapEntry = { path: string; priority?: number; changefreq?: "dail
 export const sitemapGroups: Record<string, () => SitemapEntry[]> = {
   pages: () => [
     { path: "/", priority: 1, changefreq: "weekly" },
-    { path: "/growthos/", priority: 0.8 },
     { path: "/about/", priority: 0.6 },
     { path: "/methodology/", priority: 0.6 },
     { path: "/contact/", priority: 0.7 },
     { path: "/careers/", priority: 0.4 },
     { path: "/case-studies/", priority: 0.6 },
-    ...growthosPages.map((p) => ({ path: `/growthos/${p.slug}/`, priority: 0.6 })),
     ...legalDocs.map((d) => ({ path: `/${d.slug}/`, priority: 0.2, changefreq: "yearly" as const })),
   ],
   services: () => services.map((s) => ({ path: `/${s.slug}/`, priority: 0.9 })),

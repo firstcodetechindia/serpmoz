@@ -29,8 +29,8 @@ export const aiReality = {
     ],
   },
   connect: {
-    label: "GrowthOS connects",
-    note: "One intelligence layer so that effort can be traced from first impression to closed revenue.",
+    label: "SERPMOZ connects",
+    note: "One team and one reporting view, so effort can be traced from first impression to closed revenue.",
     items: ["Data", "Execution", "Visibility", "Leads", "Conversion", "Revenue"],
   },
 } as const;
@@ -243,7 +243,7 @@ export const engagements = [
     includes: [
       "Dedicated senior strategist",
       "Quarterly planning with leadership",
-      "Full GrowthOS reporting layer",
+      "Unified reporting across every channel",
       "Multi-market execution",
     ],
   },

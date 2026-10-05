@@ -80,7 +80,7 @@ export function AiSearchPanel() {
         <div className="flex h-11 items-center justify-between gap-3 border-b border-line/80 px-4">
           <p className="flex items-center gap-2 text-[0.8125rem] font-medium">
             <FileSearch aria-hidden className="size-4 text-muted" />
-            GrowthOS<span className="font-normal text-muted"> / AI Search</span>
+            AI visibility report<span className="font-normal text-muted"> · example</span>
           </p>
           <SampleBadge>Sample data</SampleBadge>
         </div>

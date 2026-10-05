@@ -28,7 +28,6 @@ export const serviceOptions = [
   "CRO & Conversion",
   "Marketing Automation",
   "Web & Digital",
-  "GrowthOS",
 ] as const;
 
 export const countryOptions = [

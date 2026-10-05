@@ -20,7 +20,7 @@ const meta = {
   path: "/growthos/",
 };
 
-export const metadata: Metadata = buildMetadata(meta);
+export const metadata: Metadata = buildMetadata({ ...meta, noindex: true });
 
 export default function GrowthosPage() {
   return (

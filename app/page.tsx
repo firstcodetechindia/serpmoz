@@ -9,8 +9,8 @@ import { GrowthSystem } from "@/components/sections/growth-system";
 import { Methodology } from "@/components/sections/methodology";
 import { SearchEverywhere } from "@/components/sections/search-everywhere";
 import { Trust } from "@/components/sections/trust";
+import { WhatWeDo } from "@/components/sections/what-we-do";
 import { WhySerpmoz } from "@/components/sections/why-serpmoz";
-import { GrowthosSection } from "@/components/sections/growthos-section";
 import { Hero } from "@/components/sections/hero";
 import { IndustriesSection } from "@/components/sections/industries-section";
 import { LocationsSection } from "@/components/sections/locations-section";
@@ -32,13 +32,13 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <WhatWeDo />
       <AiReality />
       <ExpertsComparison />
       <SearchEverywhere />
       <AiVisibility />
       <GrowthSystem />
       <ServicesSection />
-      <GrowthosSection />
       <Methodology />
       <IndustriesSection />
       <LocationsSection />

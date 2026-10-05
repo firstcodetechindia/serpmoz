@@ -89,7 +89,6 @@ export function Header() {
                 <NavigationMenu.Link asChild>
                   <Link href={group.href} className={triggerClass}>
                     {group.label}
-                    <span className="label-mono ml-1 rounded-full bg-cyan-wash px-1.5 py-0.5 text-[0.5625rem] text-navy">Preview</span>
                   </Link>
                 </NavigationMenu.Link>
               </NavigationMenu.Item>
@@ -98,8 +97,8 @@ export function Header() {
         </NavigationMenu.List>
 
         <div className="flex items-center gap-1.5">
-          <CtaLink href={cta.growthos.href} variant="ghost" size="sm" arrow={false} className="hidden h-10 min-[1400px]:inline-flex">
-            {cta.growthos.label}
+          <CtaLink href={cta.strategist.href} variant="ghost" size="sm" arrow={false} className="hidden h-10 min-[1400px]:inline-flex">
+            Talk to a Strategist
           </CtaLink>
           <CtaLink href={cta.audit.href} variant="primary" size="sm" className="hidden h-10 px-4 sm:inline-flex">
             {cta.audit.label}

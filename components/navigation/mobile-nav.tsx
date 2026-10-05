@@ -78,8 +78,8 @@ export function MobileNav() {
             <CtaLink href={cta.audit.href} variant="primary" size="lg" className="w-full">
               {cta.audit.label}
             </CtaLink>
-            <CtaLink href={cta.growthos.href} variant="outline" size="lg" className="w-full" arrow={false}>
-              {cta.growthos.label}
+            <CtaLink href={cta.strategist.href} variant="outline" size="lg" className="w-full" arrow={false}>
+              {cta.strategist.label}
             </CtaLink>
           </div>
         </Dialog.Content>

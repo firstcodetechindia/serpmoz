@@ -25,7 +25,7 @@ const find = (slug: string) => growthosPages.find((p) => p.slug === slug);
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const page = find((await params).module);
   if (!page) return {};
-  return buildMetadata({ title: `GrowthOS ${page.name} Module`, description: page.metaDescription, path: `/growthos/${page.slug}/` });
+  return buildMetadata({ title: `GrowthOS ${page.name} Module`, description: page.metaDescription, path: `/growthos/${page.slug}/`, noindex: true });
 }
 
 export default async function GrowthosModulePage({ params }: Props) {

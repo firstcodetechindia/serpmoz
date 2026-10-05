@@ -6,7 +6,7 @@ import { Photo } from "@/components/ui/photo";
 import { aiReality } from "@/data/growth";
 import { photos } from "@/data/images";
 
-/** Two curves that leave the input bands and meet at the GrowthOS panel. */
+/** Two curves that leave the input bands and meet at the SERPMOZ panel. */
 function Merge() {
   const paths = [
     { d: "M0,17 C55,17 45,50 100,50", color: "var(--color-cyan)", dur: "2.2s" },
