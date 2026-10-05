@@ -58,7 +58,7 @@ export function HeroSlider({ slides, children }: { slides: HeroSlide[]; children
   const hold = { onMouseEnter: () => (held.current = true), onMouseLeave: () => (held.current = false), onFocusCapture: () => (held.current = true), onBlurCapture: () => (held.current = false) };
 
   return (
-    <div className="shell relative pt-28 pb-12 md:pt-36 lg:pb-14" aria-roledescription="carousel" aria-label="What SERPMOZ does">
+    <div className="shell relative pt-28 pb-10 md:pt-36 lg:pb-12" aria-roledescription="carousel" aria-label="What SERPMOZ does">
       <div className="grid grid-cols-1 gap-x-10 gap-y-9 lg:grid-cols-12 lg:items-center lg:gap-y-12" {...hold}>
         {/* ---------- Words ---------- */}
         <div className="order-1 grid lg:col-span-6">

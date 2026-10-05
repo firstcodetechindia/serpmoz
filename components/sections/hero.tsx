@@ -1,4 +1,4 @@
-import { BadgeCheck, Bot, Check, FileSearch, Gauge, MapPin, MousePointerClick, ShieldCheck, Sparkles, Target, UserRoundCheck, Workflow } from "lucide-react";
+import { BadgeCheck, Bot, Check, FileSearch, Gauge, MapPin, MousePointerClick, Sparkles, Target, UserRoundCheck, Workflow } from "lucide-react";
 import { HeroScene } from "@/components/sections/hero-scene";
 import { HeroSlider, type HeroSlide } from "@/components/sections/hero-slider";
 import { HeroVisual } from "@/components/sections/hero-visual";
@@ -6,17 +6,7 @@ import { CapabilityVisual } from "@/components/visuals/capability-visual";
 import { SignalField } from "@/components/visuals/signal-field";
 import { platforms } from "@/data/growth";
 import { photos } from "@/data/images";
-import { industries } from "@/data/industries";
-import { countries } from "@/data/locations";
-import { services } from "@/data/services";
 import { cta } from "@/lib/config/site";
-
-/* Counts of what is on this site. They describe coverage, not results. */
-const coverage = [
-  { value: services.length, label: "specialist services" },
-  { value: industries.length, label: "industries understood" },
-  { value: countries.length, label: "markets covered" },
-];
 
 const difference = [
   { icon: Target, title: "Strategy first", body: "Nothing is produced before it has been prioritised." },
@@ -113,22 +103,7 @@ export function Hero() {
       <SignalField className="hidden lg:block" cx={70} cy={42} />
       <div aria-hidden className="glow absolute -bottom-40 -left-40 size-[32rem] rounded-full bg-blue/20" />
 
-      <HeroSlider slides={slides}>
-        <div className="mt-10 flex flex-col gap-6 border-t border-white/10 pt-8 lg:flex-row lg:items-center lg:justify-between">
-          <p className="flex max-w-md items-start gap-2.5 text-sm leading-relaxed text-white/65">
-            <ShieldCheck aria-hidden className="mt-0.5 size-4 shrink-0 text-cyan" />
-            Built for businesses that want measurable growth, not just marketing activity.
-          </p>
-          <dl className="grid grid-cols-3 gap-3 lg:w-[30rem]">
-            {coverage.map((c) => (
-              <div key={c.label} className="flex flex-col-reverse rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 transition-colors hover:border-cyan/40 hover:bg-white/[0.08]">
-                <dt className="mt-1.5 text-xs leading-snug text-white/60">{c.label}</dt>
-                <dd className="tabular text-2xl leading-none font-semibold tracking-[-0.04em] md:text-3xl">{c.value}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </HeroSlider>
+      <HeroSlider slides={slides} />
 
       {/* Platform strip: names only, with an explicit label so nothing reads as an endorsement */}
       <div className="relative border-t border-white/10 bg-navy-deep/40">
