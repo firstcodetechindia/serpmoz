@@ -1,8 +1,11 @@
-import { ShieldCheck } from "lucide-react";
+import { BadgeCheck, Bot, Check, FileSearch, Gauge, MapPin, MousePointerClick, ShieldCheck, Sparkles, Target, UserRoundCheck, Workflow } from "lucide-react";
+import { HeroScene } from "@/components/sections/hero-scene";
+import { HeroSlider, type HeroSlide } from "@/components/sections/hero-slider";
 import { HeroVisual } from "@/components/sections/hero-visual";
-import { CtaLink } from "@/components/ui/cta-link";
+import { CapabilityVisual } from "@/components/visuals/capability-visual";
 import { SignalField } from "@/components/visuals/signal-field";
 import { platforms } from "@/data/growth";
+import { photos } from "@/data/images";
 import { industries } from "@/data/industries";
 import { countries } from "@/data/locations";
 import { services } from "@/data/services";
@@ -15,65 +18,121 @@ const coverage = [
   { value: countries.length, label: "markets covered" },
 ];
 
+const difference = [
+  { icon: Target, title: "Strategy first", body: "Nothing is produced before it has been prioritised." },
+  { icon: Bot, title: "AI accelerated", body: "Research and production in hours, not weeks." },
+  { icon: UserRoundCheck, title: "Expert approved", body: "A specialist signs off everything that ships." },
+];
+
+const slides: HeroSlide[] = [
+  {
+    key: "who",
+    label: "Who we are",
+    eyebrow: "AI-Powered Digital Growth Company",
+    title: ["AI Can Do the Work.", "Experts Know What Work Matters."],
+    body: "SERPMOZ combines AI-powered execution, human expertise and growth strategy to turn digital visibility into qualified demand, customers and measurable revenue.",
+    cta: { label: cta.audit.label, href: cta.audit.href },
+    more: { label: "Explore Our Services", href: "#services" },
+    visual: <HeroVisual />,
+  },
+  {
+    key: "search",
+    label: "Search & AI",
+    eyebrow: "SEO · AI Search · Local",
+    title: ["Be the Answer,", "Wherever Customers Search."],
+    body: "Google, AI assistants, maps and marketplaces now share the buying journey. We make sure your brand is found, named and trusted in each of them.",
+    cta: { label: "Explore Search & AI", href: "/seo-services/" },
+    more: { label: "How AI Search Works", href: "/ai-seo-services/" },
+    visual: (
+      <HeroScene photo={photos.analystScreens} chips={[{ icon: Sparkles, text: "Cited in AI answers" }, { icon: MapPin, text: "Visible on the map" }]}>
+        <CapabilityVisual category="search-ai" />
+      </HeroScene>
+    ),
+  },
+  {
+    key: "performance",
+    label: "Paid media",
+    eyebrow: "Google Ads · Meta · LinkedIn",
+    title: ["Pay for Customers,", "Not for Clicks."],
+    body: "Paid campaigns managed against qualified leads, acquisition cost and return, with the wasted spend found and removed first.",
+    cta: { label: "Explore Performance Marketing", href: "/ppc-management/" },
+    more: { label: "Lead Generation", href: "/lead-generation/" },
+    visual: (
+      <HeroScene flip photo={photos.analystDesk} chips={[{ icon: MousePointerClick, text: "Qualified leads tracked" }, { icon: Gauge, text: "Spend tied to return" }]}>
+        <CapabilityVisual category="performance" />
+      </HeroScene>
+    ),
+  },
+  {
+    key: "different",
+    label: "Why we differ",
+    eyebrow: "What makes SERPMOZ different",
+    title: ["Others Sell Activity.", "We Are Accountable for Growth."],
+    body: "Most agencies report on what they did. We start from what the business needs, decide what is worth doing, and show how the work connects to revenue.",
+    cta: { label: "See Our Methodology", href: "/methodology/" },
+    more: { label: "About SERPMOZ", href: "/about/" },
+    visual: (
+      <HeroScene photo={photos.teamMeeting} chips={[{ icon: BadgeCheck, text: "One accountable team" }, { icon: FileSearch, text: "Every figure sourced" }]}>
+        <div className="rounded-2xl border border-line bg-white p-5 text-ink shadow-[0_30px_60px_-28px_rgb(0_0_0/0.6)]">
+          <p className="label-mono text-[0.625rem] text-blue-ink">How we work</p>
+          <ul className="mt-3 space-y-3.5">
+            {difference.map((d) => (
+              <li key={d.title} className="flex gap-3">
+                <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-blue-wash text-blue-ink"><d.icon className="size-4" /></span>
+                <span>
+                  <span className="flex items-center gap-1.5 text-sm font-semibold text-navy">{d.title} <Check className="size-3.5 text-success" strokeWidth={3} /></span>
+                  <span className="mt-0.5 block text-xs leading-snug text-muted">{d.body}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </HeroScene>
+    ),
+  },
+  {
+    key: "web",
+    label: "Web & conversion",
+    eyebrow: "Web · CRO · Automation",
+    title: ["Turn Visits", "Into Revenue."],
+    body: "Fast websites, tested landing pages and follow-up that answers in minutes, so the demand you earn does not leak away after the click.",
+    cta: { label: "Explore Web & Digital", href: "/web-development/" },
+    more: { label: "Conversion & Automation", href: "/cro/" },
+    visual: (
+      <HeroScene flip photo={photos.strategyWhiteboard} chips={[{ icon: Gauge, text: "Built for speed" }, { icon: Workflow, text: "Follow-up automated" }]}>
+        <CapabilityVisual category="conversion-automation" />
+      </HeroScene>
+    ),
+  },
+];
+
 export function Hero() {
   return (
     <section aria-labelledby="hero-title" className="stage relative overflow-hidden text-white">
       <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:linear-gradient(to_bottom,black_10%,transparent_75%)]" />
-      <SignalField className="hidden lg:block" cx={70} cy={46} />
-      <div aria-hidden className="absolute -bottom-40 -left-40 size-[32rem] rounded-full bg-blue/20 glow" />
+      <SignalField className="hidden lg:block" cx={70} cy={42} />
+      <div aria-hidden className="glow absolute -bottom-40 -left-40 size-[32rem] rounded-full bg-blue/20" />
 
-      <div className="shell relative grid gap-x-10 gap-y-14 pt-28 pb-14 md:pt-36 lg:grid-cols-12 lg:items-center lg:pb-16">
-        <div className="lg:col-span-6">
-          <p className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.06] py-1.5 pr-4 pl-2.5 text-[0.8125rem] font-medium text-white/85">
-            <span className="relative flex size-2" aria-hidden>
-              <span className="absolute inset-0 rounded-full bg-orange motion-safe:animate-ping-soft" />
-              <span className="relative size-2 rounded-full bg-orange" />
-            </span>
-            AI-Powered Digital Growth Company
-          </p>
-
-          <h1 id="hero-title" className="mt-8 text-[clamp(2.375rem,1.2rem+3.6vw,4rem)] leading-[1.08] font-semibold tracking-[-0.035em]">
-            <span className="block">AI Can Do the Work.</span>
-            <span className="mt-1 block bg-gradient-to-r from-cyan via-[#7cc4ff] to-white bg-clip-text pb-2 text-transparent">Experts Know What Work Matters.</span>
-          </h1>
-
-          <p className="mt-6 max-w-xl text-lead text-white/75">
-            SERPMOZ combines AI-powered execution, human expertise and growth strategy to turn digital visibility into
-            qualified demand, customers and measurable revenue.
-          </p>
-
-          <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-            <CtaLink href={cta.audit.href} variant="primary" size="lg" data-cta="hero-audit">
-              {cta.audit.label}
-            </CtaLink>
-            <CtaLink href="#services" variant="onDark" size="lg" arrow={false} data-cta="hero-services">
-              Explore Our Services
-            </CtaLink>
-          </div>
-
-          <p className="mt-6 flex max-w-md items-start gap-2.5 text-sm leading-relaxed text-white/60">
+      <HeroSlider slides={slides}>
+        <div className="mt-10 flex flex-col gap-6 border-t border-white/10 pt-8 lg:flex-row lg:items-center lg:justify-between">
+          <p className="flex max-w-md items-start gap-2.5 text-sm leading-relaxed text-white/65">
             <ShieldCheck aria-hidden className="mt-0.5 size-4 shrink-0 text-cyan" />
             Built for businesses that want measurable growth, not just marketing activity.
           </p>
-
-          <dl className="mt-10 grid max-w-lg grid-cols-3 gap-3">
+          <dl className="grid grid-cols-3 gap-3 lg:w-[30rem]">
             {coverage.map((c) => (
-              <div key={c.label} className="flex flex-col-reverse rounded-2xl border border-white/10 bg-white/[0.05] p-4 transition-colors hover:border-cyan/40 hover:bg-white/[0.08]">
-                <dt className="mt-2 text-xs leading-snug text-white/60">{c.label}</dt>
-                <dd className="tabular text-3xl leading-none font-semibold tracking-[-0.04em] md:text-[2.5rem]">{c.value}</dd>
+              <div key={c.label} className="flex flex-col-reverse rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 transition-colors hover:border-cyan/40 hover:bg-white/[0.08]">
+                <dt className="mt-1.5 text-xs leading-snug text-white/60">{c.label}</dt>
+                <dd className="tabular text-2xl leading-none font-semibold tracking-[-0.04em] md:text-3xl">{c.value}</dd>
               </div>
             ))}
           </dl>
         </div>
-
-        <div className="lg:col-span-6 lg:pl-4">
-          <HeroVisual />
-        </div>
-      </div>
+      </HeroSlider>
 
       {/* Platform strip: names only, with an explicit label so nothing reads as an endorsement */}
       <div className="relative border-t border-white/10 bg-navy-deep/40">
-        <div className="shell flex flex-col gap-4 py-6 md:flex-row md:items-center md:gap-10">
+        <div className="shell flex flex-col gap-4 py-5 md:flex-row md:items-center md:gap-10">
           <p className="label-mono shrink-0 text-white/50">Platforms we work across</p>
           <div className="relative min-w-0 flex-1 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
             <ul className="flex w-max gap-10 motion-safe:animate-marquee" aria-label="Platforms we work across">
