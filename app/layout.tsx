@@ -27,8 +27,9 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <body className="min-h-dvh antialiased">
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning>
+      {/* Browser extensions add attributes to <html> and <body> before React loads; ignore those two elements only. */}
+      <body className="min-h-dvh antialiased" suppressHydrationWarning>
         <MotionProvider>
           <Header />
           <main id="main">{children}</main>
