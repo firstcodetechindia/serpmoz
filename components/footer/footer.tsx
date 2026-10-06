@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight, ChevronDown } from "lucide-react";
 import { FooterReveal } from "@/components/footer/footer-reveal";
+import { HomeLink } from "@/components/navigation/home-link";
 import { Logo } from "@/components/navigation/logo";
 import { CtaLink } from "@/components/ui/cta-link";
 import { promise } from "@/data/growth";
@@ -39,7 +40,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-5 pb-5 md:gap-8 md:py-8 lg:grid-cols-12 lg:gap-8">
           {/* Who we are */}
           <div className="lg:col-span-4">
-            <Link href="/" aria-label="SERPMOZ home" className="inline-block rounded-md"><Logo tone="dark" tagline /></Link>
+            <HomeLink aria-label="SERPMOZ home" className="inline-block rounded-md"><Logo tone="dark" tagline /></HomeLink>
             <p className="mt-4 max-w-xs text-lg leading-snug font-semibold tracking-[-0.02em] md:mt-5 md:text-xl">
               AI can do the work. <span className="text-white/50">Experts know what work matters.</span>
             </p>

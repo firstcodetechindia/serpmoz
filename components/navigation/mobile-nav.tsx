@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Dialog } from "radix-ui";
 import { ArrowLeft, ArrowRight, ArrowUpRight, ChevronRight, Menu, X } from "lucide-react";
+import { HomeLink } from "@/components/navigation/home-link";
 import { Logo } from "@/components/navigation/logo";
 import { NavIcon, NavTile } from "@/components/navigation/nav-icons";
 import { CtaLink } from "@/components/ui/cta-link";
@@ -239,9 +240,9 @@ export function MobileNav() {
                 {backLabel}
               </button>
             ) : (
-              <Link href="/" aria-label="SERPMOZ home" onClick={close} className="pl-1">
+              <HomeLink aria-label="SERPMOZ home" onClick={close} className="pl-1">
                 <Logo tone="dark" tagline />
-              </Link>
+              </HomeLink>
             )}
             <Dialog.Close className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full bg-white/10 active:bg-white/20" aria-label="Close menu">
               <X aria-hidden className="size-5" />

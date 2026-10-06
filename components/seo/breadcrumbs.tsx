@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { HomeLink } from "@/components/navigation/home-link";
 import { JsonLd } from "@/components/seo/json-ld";
 import { breadcrumbSchema } from "@/lib/seo/schema";
 import { cn } from "@/lib/utils";
@@ -18,7 +19,10 @@ export function Breadcrumbs({ crumbs, tone = "light" }: { crumbs: Crumb[]; tone?
               {last ? (
                 <span aria-current="page" className={dark ? "text-white" : "text-ink"}>{c.name}</span>
               ) : (
-                <Link href={c.href} className={cn("transition-colors", dark ? "hover:text-white" : "hover:text-ink")}>{c.name}</Link>
+                (() => {
+                  const cls = cn("transition-colors", dark ? "hover:text-white" : "hover:text-ink");
+                  return c.href === "/" ? <HomeLink className={cls}>{c.name}</HomeLink> : <Link href={c.href} className={cls}>{c.name}</Link>;
+                })()
               )}
               {!last ? <span aria-hidden className={dark ? "text-white/30" : "text-line-strong"}>/</span> : null}
             </li>

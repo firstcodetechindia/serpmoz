@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Footer } from "@/components/footer/footer";
 import { MotionProvider } from "@/components/layout/motion-provider";
+import { Preloader } from "@/components/layout/preloader";
 import { RevealGate } from "@/components/layout/reveal";
 import { BackToTop } from "@/components/navigation/back-to-top";
 import { Header } from "@/components/navigation/header";
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning>
       {/* Browser extensions add attributes to <html> and <body> before React loads; ignore those two elements only. */}
       <body className="min-h-dvh antialiased" suppressHydrationWarning>
+        <Preloader />
         <MotionProvider>
           <Header />
           <main id="main" className="page-sheet">{children}</main>

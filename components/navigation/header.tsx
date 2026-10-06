@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { NavigationMenu, Tabs } from "radix-ui";
 import { ArrowRight, ChevronDown, ChevronRight } from "lucide-react";
 import { NavTile, navIcon } from "@/components/navigation/nav-icons";
+import { HomeLink } from "@/components/navigation/home-link";
 import { Logo } from "@/components/navigation/logo";
 import { MobileNav } from "@/components/navigation/mobile-nav";
 import { CtaLink } from "@/components/ui/cta-link";
@@ -187,9 +188,9 @@ export function Header() {
         className={cn("shell relative flex items-center justify-between gap-4 transition-[height] duration-300 ease-out-quint lg:grid lg:grid-cols-[1fr_auto_1fr] lg:gap-6", scrolled ? "h-[4.5rem]" : "h-[5.25rem]")}
       >
         {/* Logo on the left with room around it, the menu centred in the bar, the actions on the right */}
-        <Link href="/" aria-label="SERPMOZ home" className="justify-self-start rounded-md py-1">
+        <HomeLink aria-label="SERPMOZ home" className="justify-self-start rounded-md py-1">
           <Logo tagline className="text-[var(--hd-fg)] transition-colors duration-300" />
-        </Link>
+        </HomeLink>
 
         <NavigationMenu.List className="hidden items-center gap-1 lg:flex">
           {navigation.map((group) =>
