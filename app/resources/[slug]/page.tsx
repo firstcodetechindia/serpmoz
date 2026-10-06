@@ -1,3 +1,4 @@
+import { SpyNav } from "@/components/navigation/spy-nav";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -70,18 +71,18 @@ export default async function ArticlePage({ params }: Props) {
                   ))}
                 </ul>
               </div>
-              <nav aria-label="In this piece" className="mt-6 hidden lg:block">
+              <SpyNav aria-label="In this piece" className="mt-6 hidden lg:block">
                 <p className="label-mono text-muted">In this piece</p>
                 <ol className="mt-3 border-l border-line">
                   {a.sections.map((s) => (
                     <li key={s.heading}>
-                      <a href={`#${anchor(s.heading)}`} className="-ml-px block border-l border-transparent py-1.5 pl-4 text-sm text-muted transition-colors hover:border-navy hover:text-navy">
+                      <a href={`#${anchor(s.heading)}`} className="-ml-px block border-l border-transparent py-1.5 pl-4 text-sm text-muted transition-colors hover:border-navy hover:text-navy aria-[current=location]:border-orange aria-[current=location]:font-medium aria-[current=location]:text-navy">
                         {s.heading}
                       </a>
                     </li>
                   ))}
                 </ol>
-              </nav>
+              </SpyNav>
             </div>
           </aside>
 

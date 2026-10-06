@@ -1,3 +1,4 @@
+import { SpyNav } from "@/components/navigation/spy-nav";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
@@ -33,13 +34,13 @@ export default function ServicesPage() {
         <CtaLink href={cta.audit.href} variant="primary" size="lg">{cta.audit.label}</CtaLink>
       </PageHero>
 
-      <nav aria-label="Disciplines" className="sticky top-16 z-30 hidden border-b border-line bg-surface/90 lg:block">
+      <SpyNav aria-label="Disciplines" className="sticky top-16 z-30 hidden border-b border-line bg-surface lg:block">
         <ul className="shell flex gap-8">
           {serviceCategories.map((c) => (
-            <li key={c.id}><a href={`#${c.id}`} className="block py-4 text-sm font-medium text-muted transition-colors hover:text-navy">{c.label}</a></li>
+            <li key={c.id}><a href={`#${c.id}`} className="relative block py-4 text-sm font-medium text-muted transition-colors after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:origin-left after:scale-x-0 after:rounded-full after:bg-orange after:transition-transform after:duration-300 hover:text-navy aria-[current=location]:text-navy aria-[current=location]:after:scale-x-100">{c.label}</a></li>
           ))}
         </ul>
-      </nav>
+      </SpyNav>
 
       {serviceCategories.map((c, i) => (
         <section key={c.id} id={c.id} aria-labelledby={`${c.id}-title`} className={cn("scroll-mt-36 py-16 md:py-24", i % 2 ? "bg-canvas" : "bg-surface")}>

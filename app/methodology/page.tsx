@@ -1,3 +1,4 @@
+import { SpyNav } from "@/components/navigation/spy-nav";
 import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import { AuditCta } from "@/components/layout/audit-cta";
@@ -50,13 +51,13 @@ export default function MethodologyPage() {
                 makes the decisions and answers for them.
               </p>
             </Prose>
-            <nav aria-label="Stages" className="mt-8">
+            <SpyNav aria-label="Stages" className="mt-8">
               <ol className="flex flex-wrap gap-2">
                 {methodology.map((s, i) => (
                   <li key={s.name}>
                     <a
                       href={`#${slug(s.name)}`}
-                      className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface px-3.5 py-2 text-sm font-medium text-ink transition-colors hover:border-navy/40"
+                      className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface px-3.5 py-2 text-sm font-medium text-ink transition-colors hover:border-navy/40 aria-[current=location]:border-navy aria-[current=location]:bg-navy aria-[current=location]:text-white aria-[current=location]:[&>span]:text-white/60"
                     >
                       <span className="label-mono text-[0.625rem] text-muted">{String(i + 1).padStart(2, "0")}</span>
                       {s.name}
@@ -64,7 +65,7 @@ export default function MethodologyPage() {
                   </li>
                 ))}
               </ol>
-            </nav>
+            </SpyNav>
           </div>
           <div className="lg:col-span-7">
             <MethodLoop />

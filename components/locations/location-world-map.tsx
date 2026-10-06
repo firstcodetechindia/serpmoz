@@ -156,7 +156,7 @@ function CloseUp({ location }: { location: LocationRecord }) {
   });
 
   return (
-    <svg viewBox={`0 0 ${lens.w + pad * 2} ${lens.h + pad * 2}`} role="img" aria-label={`Map of ${market.name}${isCity ? ` with ${location.name} marked` : children.length ? ` with ${children.map((c) => c.name).join(", ")} marked` : ""}.`} className="mx-auto h-auto max-h-[17rem] w-full overflow-visible">
+    <svg viewBox={`0 0 ${lens.w + pad * 2} ${lens.h + pad * 2}`} role="img" aria-label={`Map of ${market.name}${isCity ? ` with ${location.name} marked` : children.length ? ` with ${children.map((c) => c.name).join(", ")} marked` : ""}.`} className="mx-auto h-auto max-h-[17rem] w-full overflow-visible md:max-h-[14.5rem]">
       <g transform={`translate(${pad} ${pad})`} className="motion-safe:animate-[fade-in_0.7s_ease-out_both]" style={{ animationDelay: "0.3s" }}>
         <path d={lens.d} fill="none" stroke="var(--color-cyan)" strokeOpacity="0.3" strokeWidth="10" strokeLinejoin="round" className="motion-safe:animate-[location-glow_3.2s_ease-in-out_infinite]" />
         <path data-map-selected={market.slug} d={lens.d} fill="var(--color-blue)" fillOpacity="0.45" stroke="var(--color-cyan)" strokeWidth="1.6" strokeLinejoin="round" />
@@ -215,9 +215,10 @@ export function LocationWorldMap({ location, className }: { location: LocationRe
         <WorldView location={location} />
       </div>
 
-      <div className="grid grid-cols-1 items-center gap-5 md:mt-4 md:grid-cols-[minmax(0,17rem)_1fr] md:gap-6 lg:grid-cols-[minmax(0,19rem)_1fr]">
+      {/* The close-up sits over the quiet lower-left of the world view (open ocean on this projection). */}
+      <div className="relative grid grid-cols-1 items-end gap-5 md:-mt-24 md:grid-cols-[minmax(0,16rem)_1fr] md:gap-6 lg:-mt-28 lg:grid-cols-[minmax(0,17.5rem)_1fr] xl:-mt-32">
         {/* Close-up: beside the notes on larger screens, the whole map on phones */}
-        <div className="glass-dark rounded-[1.5rem] p-4">
+        <div className="rounded-[1.5rem] border border-white/15 bg-[#0d2547] p-4 shadow-[0_24px_60px_-30px_rgb(0_0_0/0.8)]">
           <p className="label-mono flex items-center justify-between gap-3 text-[0.625rem] text-white/60">
             <span className="text-cyan">{market.code === market.name ? market.name : `${market.code} · ${market.name}`}</span>
             <span className="truncate">{isCity ? (location.cluster ?? location.name) : market.continent}</span>
@@ -226,7 +227,7 @@ export function LocationWorldMap({ location, className }: { location: LocationRe
         </div>
 
       {/* The same information as text */}
-      <figcaption>
+      <figcaption className="md:pb-3">
         <p className="text-sm leading-relaxed text-white/65">
           {isCity ? (
             <>
