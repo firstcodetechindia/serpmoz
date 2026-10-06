@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ChevronDown } from "lucide-react";
+import { FooterReveal } from "@/components/footer/footer-reveal";
 import { Logo } from "@/components/navigation/logo";
 import { CtaLink } from "@/components/ui/cta-link";
 import { promise } from "@/data/growth";
@@ -7,8 +8,9 @@ import { cta, footerNav, legalNav, site } from "@/lib/config/site";
 
 /**
  * The footer sits fixed behind the page. As the last section scrolls away it
- * is uncovered from the bottom, like a shutter lifting (see .footer-reveal in
- * globals.css; on short or small screens it scrolls normally).
+ * is uncovered from the bottom, like a shutter lifting. That works on any
+ * screen the whole footer fits on, which FooterReveal checks; on phones the
+ * link columns fold into rows so it does. See .footer-reveal in globals.css.
  */
 export function Footer() {
   // Only profiles that exist are shown.
@@ -16,13 +18,14 @@ export function Footer() {
 
   return (
     <footer className="footer-reveal relative overflow-hidden bg-navy-deep text-white">
+      <FooterReveal />
       <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent_50%)]" />
       <div aria-hidden className="absolute -top-48 left-1/4 size-[36rem] rounded-full bg-blue/20 glow" />
       <div aria-hidden className="absolute right-0 -bottom-40 size-[28rem] rounded-full bg-orange/10 glow" />
 
-      <div className="shell relative pt-12 md:pt-14">
+      <div className="shell relative pt-7 md:pt-14">
         {/* Call to action */}
-        <div className="glass-dark flex flex-col gap-5 rounded-[1.5rem] p-6 md:flex-row md:items-center md:justify-between md:p-7">
+        <div className="glass-dark hidden flex-col gap-5 rounded-[1.5rem] p-6 md:flex md:flex-row md:items-center md:justify-between md:p-7">
           <div>
             <p className="label-mono text-cyan">Start here</p>
             <p className="mt-2 text-[clamp(1.25rem,1.05rem+0.9vw,1.75rem)] leading-snug font-semibold tracking-[-0.025em]">Find the highest-impact opportunities in your growth.</p>
@@ -33,15 +36,15 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-10 py-10 lg:grid-cols-12 lg:gap-8">
+        <div className="grid grid-cols-1 gap-5 pb-5 md:gap-10 md:py-10 lg:grid-cols-12 lg:gap-8">
           {/* Who we are */}
           <div className="lg:col-span-4">
             <Link href="/" aria-label="SERPMOZ home" className="inline-block rounded-md"><Logo tone="dark" /></Link>
-            <p className="mt-5 max-w-xs text-xl leading-snug font-semibold tracking-[-0.02em]">
+            <p className="mt-4 max-w-xs text-lg leading-snug font-semibold tracking-[-0.02em] md:mt-5 md:text-xl">
               AI can do the work. <span className="text-white/50">Experts know what work matters.</span>
             </p>
-            <p className="mt-3 text-sm text-white/55">{site.category}</p>
-            <ol className="label-mono mt-6 flex flex-wrap items-center gap-x-2 gap-y-1.5 text-[0.625rem] text-white/50" aria-label="The SERPMOZ promise">
+            <p className="mt-3 hidden text-sm text-white/55 md:block">{site.category}</p>
+            <ol className="label-mono mt-6 hidden flex-wrap items-center md:flex gap-x-2 gap-y-1.5 text-[0.625rem] text-white/50" aria-label="The SERPMOZ promise">
               {promise.map((p, i) => (
                 <li key={p} className="flex items-center gap-2">
                   <span className={i === promise.length - 1 ? "rounded-full bg-orange px-2 py-0.5 text-navy" : "rounded-full border border-white/15 px-2 py-0.5"}>{p}</span>
@@ -58,8 +61,25 @@ export function Footer() {
             ) : null}
           </div>
 
+          {/* Phones: each column is a row that opens, so the whole footer fits one screen */}
+          <nav aria-label="Footer" className="border-t border-white/12 md:hidden">
+            {footerNav.map((col) => (
+              <details key={col.title} className="group/d border-b border-white/12">
+                <summary className="flex cursor-pointer list-none items-center justify-between py-3 text-[0.9375rem] font-medium text-white/85 [&::-webkit-details-marker]:hidden">
+                  {col.title}
+                  <ChevronDown aria-hidden className="size-4 text-white/50 transition-transform duration-300 group-open/d:rotate-180" />
+                </summary>
+                <ul className="grid grid-cols-2 gap-x-4 pb-3">
+                  {col.links.map((l) => (
+                    <li key={l.href + l.label}><Link href={l.href} className="block py-1.5 text-sm text-white/70">{l.label}</Link></li>
+                  ))}
+                </ul>
+              </details>
+            ))}
+          </nav>
+
           {/* Link columns: the column you are in stays bright, the rest step back */}
-          <nav aria-label="Footer" className="group/nav grid grid-cols-2 gap-x-6 gap-y-9 sm:grid-cols-3 lg:col-span-8 lg:grid-cols-5">
+          <nav aria-label="Footer" className="group/nav hidden grid-cols-3 gap-x-6 gap-y-9 md:grid lg:col-span-8 lg:grid-cols-5">
             {footerNav.map((col) => (
               <div key={col.title} className="group/col transition-opacity duration-300 lg:group-hover/nav:opacity-45 lg:hover:!opacity-100">
                 <h2 className="label-mono flex items-center gap-2 text-white/50 transition-colors group-hover/col:text-cyan">
@@ -82,20 +102,19 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Wordmark: outlined at rest, lit as the pointer passes */}
-      <div aria-hidden className="group/word relative flex justify-center overflow-hidden border-t border-white/10 px-3 pt-4 select-none">
-        <span className="bg-gradient-to-r from-blue via-cyan to-orange bg-clip-text text-[clamp(3.5rem,15.5vw,15rem)] leading-[0.8] font-semibold tracking-[-0.04em] text-transparent opacity-0 transition-opacity duration-700 group-hover/word:opacity-100">
-          SERPMOZ
-        </span>
-        <span className="absolute inset-0 flex justify-center px-3 pt-4 text-[clamp(3.5rem,15.5vw,15rem)] leading-[0.8] font-semibold tracking-[-0.04em] text-transparent transition-opacity duration-700 [-webkit-text-stroke:1px_rgb(255_255_255/0.18)] group-hover/word:opacity-0">
-          SERPMOZ
+      {/* Wordmark: an outline until the visitor reaches the bottom, then it rises in 3D and its colours keep moving */}
+      <div aria-hidden className="footer-word relative flex justify-center overflow-hidden border-t border-white/10 px-3 pt-4 select-none">
+        <span className="footer-word-outline">SERPMOZ</span>
+        <span className="footer-word-solid">
+          <span className="footer-word-depth">SERPMOZ</span>
+          <span className="footer-word-face">SERPMOZ</span>
         </span>
       </div>
 
       <div className="relative border-t border-white/12 bg-navy-deep">
-        <div className="shell flex flex-col gap-3 py-4 md:flex-row md:items-center md:justify-between">
+        <div className="shell flex flex-col gap-2 py-3 md:flex-row md:items-center md:justify-between md:gap-3 md:py-4">
           <p className="text-sm text-white/50">© {new Date().getFullYear()} SERPMOZ. All rights reserved.</p>
-          <ul className="flex flex-wrap gap-x-6 gap-y-2 pr-14 md:pr-16" aria-label="Legal">
+          <ul className="flex flex-wrap gap-x-5 gap-y-1 pr-14 md:gap-x-6 md:gap-y-2 md:pr-16" aria-label="Legal">
             {legalNav.map((l) => (
               <li key={l.href}><Link href={l.href} className="text-sm text-white/50 transition-colors hover:text-white">{l.label}</Link></li>
             ))}

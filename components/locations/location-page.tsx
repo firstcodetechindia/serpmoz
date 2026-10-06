@@ -1,3 +1,4 @@
+import { HeadingAside } from "@/components/layout/heading-aside";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Bot, Check, Compass, MapPin, MessageCircle, Play, Search, ShoppingBag, Star, Users, type LucideIcon } from "lucide-react";
 import { LocationWorldMap } from "@/components/locations/location-world-map";
@@ -159,10 +160,10 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
       {/* ---------- Search and AI ---------- */}
       <section id="search" aria-labelledby="search-title" className={cn(band, "bg-surface")}>
         <div className="shell grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
-          <div className="lg:col-span-4">
+          <HeadingAside art="search" className="lg:col-span-4">
             <p className={eyebrow}>Search and AI</p>
             <h2 id="search-title" className={h2}>{l.searchAi.heading}</h2>
-          </div>
+          </HeadingAside>
           <div className="space-y-5 text-[1.0625rem] leading-relaxed text-ink/85 lg:col-span-7 lg:col-start-6">
             {l.searchAi.paragraphs.map((p) => <p key={p.slice(0, 40)}><RichText text={p} /></p>)}
           </div>
@@ -278,12 +279,10 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
       {/* ---------- What a plan has to account for; cities ---------- */}
       <section id="considerations" aria-labelledby="considerations-title" className={cn(band, "bg-surface")}>
         <div className="shell grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
-          <div className="lg:col-span-4">
-            <div className="lg:sticky lg:top-24">
-              <p className={eyebrow}>{isCity ? "Local considerations" : "Regional considerations"}</p>
-              <h2 id="considerations-title" className={h2}>What a plan for {l.inSentence} has to account for.</h2>
-            </div>
-          </div>
+          <HeadingAside art="network" className="lg:col-span-4">
+            <p className={eyebrow}>{isCity ? "Local considerations" : "Regional considerations"}</p>
+            <h2 id="considerations-title" className={h2}>What a plan for {l.inSentence} has to account for.</h2>
+          </HeadingAside>
           <ol className="lg:col-span-7 lg:col-start-6">
             {l.considerations.map((c, i) => (
               <li key={c.title} className="grid grid-cols-[2.75rem_1fr] gap-x-4 border-t border-line py-6 last:border-b">
@@ -384,11 +383,11 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
       <section id="faqs" aria-labelledby="faqs-title" className="bg-surface px-3 py-1.5 md:px-5 md:py-2">
         <div className={cn(inset, "scroll-mt-20 bg-mist")}>
           <div className="shell grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-8">
-            <div className="lg:col-span-4">
+            <HeadingAside art="talk" className="lg:col-span-4">
               <p className={eyebrow}>Questions</p>
               <h2 id="faqs-title" className={h2}>Digital growth in {l.inSentence}: common questions.</h2>
               <CtaLink href={cta.strategist.href} variant="outline" size="md" className="mt-6">{cta.strategist.label}</CtaLink>
-            </div>
+            </HeadingAside>
             <div className="lg:col-span-8"><Faqs faqs={l.faqs} /></div>
           </div>
         </div>

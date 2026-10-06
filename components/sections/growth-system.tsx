@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { AnimatePresence, useMotionValueEvent, useReducedMotion, useScroll } from "framer-motion";
+import { AnimatePresence, useReducedMotion } from "framer-motion";
 import * as m from "framer-motion/m";
 import { ArrowLeft, ArrowRight, MousePointerClick } from "lucide-react";
 import { StageVisual } from "@/components/visuals/stage-visual";
@@ -29,58 +29,112 @@ function Heading({ compact }: { compact?: boolean }) {
   return (
     <div>
       <p className="label-mono text-[var(--gs-ink)] transition-colors duration-700">The SERPMOZ growth system</p>
-      <h2 id="growth-system-title" className={cn("mt-4 font-semibold text-navy", compact ? "text-[clamp(1.75rem,1.2rem+1.8vw,2.5rem)] leading-[1.12] tracking-[-0.03em]" : "text-h2")}>
+      <p aria-hidden className={cn("mt-4 font-semibold text-navy", compact ? "text-[clamp(1.75rem,1.2rem+1.8vw,2.5rem)] leading-[1.12] tracking-[-0.03em]" : "text-h2")}>
         From Visibility <span className="text-ink/55">to Revenue.</span>
-      </h2>
+      </p>
     </div>
   );
 }
 
 /**
- * Nine connected stages. On large screens the section pins: scrolling, clicking
- * a stage, the arrow buttons or the arrow keys all move through them, and the
- * colour of the whole section follows. Small screens get a swipeable rail.
+ * Nine connected stages, pinned while the visitor moves through them. One
+ * scroll gesture moves exactly one stage on every screen: a wheel or trackpad
+ * gesture is stepped in script, and touch screens use scroll snapping with a
+ * mandatory stop at each stage (see `.gs-stop` in globals.css). Clicking a
+ * stage, the arrow buttons and the arrow keys work too.
  */
 export function GrowthSystem() {
   const track = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
   const reduce = useReducedMotion();
-  const { scrollYProgress } = useScroll({ target: track, offset: ["start start", "end end"] });
 
-  useMotionValueEvent(scrollYProgress, "change", (v) => {
-    const next = Math.min(N - 1, Math.max(0, Math.floor(v * N)));
-    setActive((cur) => (cur === next ? cur : next));
-  });
-
-  const jump = (i: number) => {
+  /** Scroll position of each stage, measured from the stops laid out in CSS. */
+  const stops = () => {
     const el = track.current;
-    if (!el) return;
-    const target = Math.min(N - 1, Math.max(0, i));
+    if (!el) return null;
     const top = el.getBoundingClientRect().top + window.scrollY;
-    const span = el.offsetHeight - window.innerHeight;
-    window.scrollTo({ top: top + (span * (target + 0.5)) / N, behavior: reduce ? "auto" : "smooth" });
+    return [...el.querySelectorAll<HTMLElement>(".gs-stop")].map((m) => top + m.offsetTop);
   };
 
-  // Arrow keys step through the stages while the pinned panel is on screen.
+  const jump = (i: number) => {
+    const at = stops();
+    if (!at) return;
+    const target = Math.min(N - 1, Math.max(0, i));
+    window.scrollTo({ top: at[target], behavior: reduce ? "auto" : "smooth" });
+  };
+
   const jumpRef = useRef(jump);
+  const stopsRef = useRef(stops);
   const activeRef = useRef(active);
   useEffect(() => {
     jumpRef.current = jump;
+    stopsRef.current = stops;
     activeRef.current = active;
   });
+
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
+    const pinned = () => {
       const el = track.current;
-      if (!el || (e.key !== "ArrowRight" && e.key !== "ArrowLeft")) return;
-      const tag = (e.target as HTMLElement | null)?.tagName;
-      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+      if (!el) return false;
       const r = el.getBoundingClientRect();
-      if (r.top > 0 || r.bottom < window.innerHeight) return;
+      return r.top <= 1 && r.bottom >= window.innerHeight - 1;
+    };
+
+    // The active stage is the stop nearest the current scroll position.
+    let frame = 0;
+    const sync = () => {
+      frame = 0;
+      const at = stopsRef.current();
+      if (!at) return;
+      let best = 0;
+      for (let i = 1; i < at.length; i++) if (Math.abs(at[i] - window.scrollY) < Math.abs(at[best] - window.scrollY)) best = i;
+      setActive((cur) => (cur === best ? cur : best));
+    };
+    const onScroll = () => { if (!frame) frame = requestAnimationFrame(sync); };
+
+    // Wheel and trackpad: one gesture, one stage. A gesture is new when the
+    // wheel has been quiet for a moment or its speed picks up again; the long
+    // tail of trackpad inertia is neither, so it cannot skip a stage.
+    let lockedUntil = 0;
+    let lastAt = 0;
+    let lastSize = 0;
+    const onWheel = (e: WheelEvent) => {
+      if (e.ctrlKey || Math.abs(e.deltaY) < Math.abs(e.deltaX) || !pinned()) return;
+      const now = performance.now();
+      const size = Math.abs(e.deltaY);
+      const fresh = now - lastAt > 160 || size > lastSize + 6;
+      lastAt = now;
+      lastSize = size;
+      const target = activeRef.current + (e.deltaY > 0 ? 1 : -1);
+      if (target < 0 || target > N - 1) return; // past either end: let the page scroll on
+      e.preventDefault();
+      if (now < lockedUntil || !fresh) return;
+      lockedUntil = now + 520;
+      activeRef.current = target;
+      jumpRef.current(target);
+    };
+
+    // Arrow keys step through the stages while the panel is pinned.
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+      const tag = (e.target as HTMLElement | null)?.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || !pinned()) return;
       e.preventDefault();
       jumpRef.current(activeRef.current + (e.key === "ArrowRight" ? 1 : -1));
     };
+
+    sync();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    window.addEventListener("wheel", onWheel, { passive: false });
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      window.removeEventListener("wheel", onWheel);
+      window.removeEventListener("keydown", onKey);
+      if (frame) cancelAnimationFrame(frame);
+    };
   }, []);
 
   const stage = growthSystem[active];
@@ -88,13 +142,20 @@ export function GrowthSystem() {
 
   return (
     <section id="growth-system" aria-labelledby="growth-system-title" style={themeOf(active)} className="relative">
-      {/* ---------- Large screens: pinned and interactive ---------- */}
-      <div ref={track} className="hidden lg:block" style={{ height: `${N * 26 + 60}vh` }}>
-        <div className="sticky top-0 flex h-screen min-h-[44rem] flex-col justify-center overflow-hidden bg-[var(--gs-wash)] pt-24 pb-8 transition-colors duration-700 ease-out">
+      {/* One real heading for both layouts; each layout shows its own styled copy */}
+      <h2 id="growth-system-title" className="sr-only">The SERPMOZ growth system: from visibility to revenue</h2>
+      <div ref={track} className="gs-track relative">
+        {/* One stop per stage. They are only scroll positions; nothing is drawn. */}
+        {growthSystem.map((s, i) => (
+          <div key={s.name} aria-hidden className="gs-stop" style={{ "--gs-i": i } as React.CSSProperties} />
+        ))}
+
+        <div className="sticky top-0 flex h-[100svh] flex-col overflow-hidden bg-[var(--gs-wash)] transition-colors duration-700 ease-out lg:min-h-[44rem] lg:justify-center lg:pt-24 lg:pb-8">
           <div aria-hidden className="absolute -top-40 -right-40 size-[42rem] rounded-full bg-[var(--gs-accent)] opacity-25 glow transition-colors duration-700" />
           <div aria-hidden className="absolute -bottom-52 -left-40 size-[32rem] rounded-full bg-surface opacity-70 glow" />
 
-          <div className="shell relative grid grid-cols-12 items-stretch gap-8">
+          {/* ---------- Large screens ---------- */}
+          <div className="shell relative hidden grid-cols-12 items-stretch gap-8 lg:grid">
             {/* Stage list */}
             <div className="col-span-4 flex flex-col">
               <Heading compact />
@@ -180,36 +241,62 @@ export function GrowthSystem() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* ---------- Small screens: swipeable rail ---------- */}
-      <div className="bg-surface py-14 md:py-20 lg:hidden">
-        <div className="shell" style={themeOf(0)}>
-          <Heading />
-          <p className="mt-6 text-lead text-muted">We don’t optimize marketing channels in isolation. We connect them to the customer’s journey and the business outcome.</p>
-        </div>
-        <ol
-          tabIndex={0}
-          aria-label="Nine stages of the SERPMOZ growth system. Swipe horizontally."
-          className="no-scrollbar mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-5 px-5 pb-2 md:scroll-px-10 md:px-10"
-        >
-          {growthSystem.map((s, i) => (
-            <li key={s.name} style={themeOf(i)} className="w-[85vw] max-w-[24rem] shrink-0 snap-start rounded-panel bg-[var(--gs-wash)] p-5">
-              <div className="flex items-center gap-3">
-                <span aria-hidden className="size-2.5 rounded-full bg-[var(--gs-accent)]" />
-                <span aria-hidden className="h-px flex-1 bg-navy/15" />
-                <span className="label-mono text-[var(--gs-ink)]">{pad(i + 1)} / {pad(N)}</span>
+          {/* ---------- Small screens: the same stages, one per scroll ---------- */}
+          <div className="relative flex min-h-0 flex-1 flex-col px-5 pt-[4.75rem] pb-4 md:px-10 lg:hidden">
+            <p className="label-mono text-[0.6875rem] text-[var(--gs-ink)] transition-colors duration-700">The SERPMOZ growth system</p>
+            <p aria-hidden className="mt-1.5 text-[1.625rem] leading-[1.12] font-semibold tracking-[-0.03em] text-navy">
+              From Visibility <span className="text-ink/55">to Revenue.</span>
+            </p>
+
+            {/* Where you are: nine segments, each a button */}
+            <ol className="mt-4 flex gap-1.5" aria-label="Stages">
+              {growthSystem.map((s, i) => (
+                <li key={s.name} className="flex-1">
+                  <button type="button" onClick={() => jump(i)} aria-label={`${pad(i + 1)} ${s.name}`} aria-current={i === active ? "step" : undefined} className="block w-full cursor-pointer py-2">
+                    <span className={cn("block h-1.5 rounded-full transition-colors duration-500", i === active ? "bg-[var(--gs-accent)]" : i < active ? "bg-navy/45" : "bg-navy/12")} />
+                  </button>
+                </li>
+              ))}
+            </ol>
+
+            <div className="mt-2 flex min-h-0 flex-1 flex-col overflow-hidden rounded-[1.5rem] bg-surface p-5 shadow-float">
+              <AnimatePresence mode="wait" initial={false}>
+                <m.div
+                  key={active}
+                  className="flex min-h-0 flex-1 flex-col"
+                  initial={{ opacity: 0, y: reduce ? 0 : 18 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: reduce ? 0 : -12 }}
+                  transition={{ duration: 0.26, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  <p className="flex items-baseline gap-2">
+                    <span className="tabular text-[2.75rem] leading-none font-semibold tracking-[-0.05em] text-[var(--gs-accent)]">{pad(active + 1)}</span>
+                    <span className="tabular text-sm font-medium text-navy/35">/ {pad(N)}</span>
+                  </p>
+                  <h3 className="mt-3 text-[1.375rem] leading-tight font-semibold tracking-[-0.025em] text-navy">{stage.name}</h3>
+                  <p className="mt-2 text-[0.9375rem] leading-relaxed text-muted">{stage.body}</p>
+                  <div className="mt-4 flex min-h-0 flex-1 flex-col justify-center overflow-hidden rounded-2xl bg-[var(--gs-wash)] p-3 transition-colors duration-700">
+                    <StageVisual index={active} />
+                  </div>
+                </m.div>
+              </AnimatePresence>
+            </div>
+
+            {/* Kept clear of the back-to-top button in the corner */}
+            <div className="mt-3 flex items-center justify-between gap-3 pr-14">
+              <p className="text-xs text-navy/60">{next ? <>Scroll for <span className="font-semibold text-navy">{next.name}</span></> : "Last stage. Keep scrolling."}</p>
+              <div className="flex items-center gap-2">
+                <button type="button" onClick={() => jump(active - 1)} disabled={active === 0} aria-label="Previous stage" className="flex size-9 cursor-pointer items-center justify-center rounded-full border border-navy/20 bg-surface text-navy disabled:opacity-35">
+                  <ArrowLeft aria-hidden className="size-4" />
+                </button>
+                <button type="button" onClick={() => jump(active + 1)} disabled={active === N - 1} aria-label="Next stage" className="flex size-9 cursor-pointer items-center justify-center rounded-full bg-navy text-white disabled:opacity-35">
+                  <ArrowRight aria-hidden className="size-4" />
+                </button>
               </div>
-              <h3 className="mt-5 text-2xl font-semibold tracking-[-0.03em] text-navy">{s.name}</h3>
-              <p className="mt-2 min-h-[4.5rem] text-[0.9375rem] leading-relaxed text-muted">{s.body}</p>
-              <StageVisual index={i} className="mt-4" />
-            </li>
-          ))}
-        </ol>
-        <p className="shell label-mono mt-6 flex items-center gap-3 text-muted" aria-hidden>
-          Swipe <span className="h-px w-10 bg-line-strong" /> 09 stages
-        </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

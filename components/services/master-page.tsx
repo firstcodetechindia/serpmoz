@@ -1,3 +1,4 @@
+import { HeadingAside } from "@/components/layout/heading-aside";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Bot, CalendarCheck, Check, ChevronRight, Quote, UserRoundCheck } from "lucide-react";
 import { FinalCta } from "@/components/sections/final-cta";
@@ -117,10 +118,10 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
         </div>
 
         <div className="shell mt-14 grid grid-cols-1 gap-10 lg:mt-20 lg:grid-cols-12 lg:gap-8">
-          <div className="lg:col-span-4">
+          <HeadingAside art="search" className="lg:col-span-4">
             <p className={eyebrow}>The problem</p>
             <h2 className="mt-4 text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)] leading-[1.15] font-semibold tracking-[-0.03em] text-navy">Signs it is time to rethink {service.name}.</h2>
-          </div>
+          </HeadingAside>
           <ul className="grid gap-3 sm:grid-cols-2 lg:col-span-8">
             {service.problems.map((p, i) => (
               <li key={p} className="rounded-2xl border border-line bg-canvas p-5">
@@ -345,11 +346,11 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
       <section id="compare" aria-labelledby="compare-title" className="bg-surface px-3 py-1.5 md:px-5 md:py-2">
         <div className="scroll-mt-20 rounded-[1.75rem] bg-blue-tint py-12 md:rounded-[2.25rem] md:py-16 lg:py-20">
           <div className="shell grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
-            <div className="lg:col-span-4">
+            <HeadingAside art="growth" className="lg:col-span-4">
               <p className={eyebrow}>Compare</p>
               <h2 id="compare-title" className={h2}>{master.comparison.heading}</h2>
               <p className="mt-5 text-[1.0625rem] leading-relaxed text-ink/80">{master.comparison.intro}</p>
-            </div>
+            </HeadingAside>
             <div className="lg:col-span-8">
               <div className="overflow-x-auto rounded-panel bg-surface shadow-soft">
                 <table className="w-full table-fixed text-left">
@@ -433,12 +434,12 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
       <section id="faqs" aria-labelledby="faqs-title" className="bg-surface px-3 py-1.5 md:px-5 md:py-2">
         <div className="scroll-mt-20 rounded-[1.75rem] bg-canvas py-12 md:rounded-[2.25rem] md:py-16 lg:py-20">
           <div className="shell grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-8">
-            <div className="lg:col-span-4">
+            <HeadingAside art="talk" className="lg:col-span-4">
               <p className={eyebrow}>Questions</p>
               <h2 id="faqs-title" className={h2}>{service.name} services: frequently asked questions.</h2>
               <p className="mt-5 text-[1.0625rem] leading-relaxed text-muted">Something we have not covered?</p>
               <CtaLink href={cta.strategist.href} variant="outline" size="md" className="mt-4">{cta.strategist.label}</CtaLink>
-            </div>
+            </HeadingAside>
             <div className="lg:col-span-8"><Faqs faqs={master.faqs} /></div>
           </div>
         </div>

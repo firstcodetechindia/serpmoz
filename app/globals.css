@@ -308,29 +308,114 @@
   z-index: 10;
   background: var(--color-surface);
 }
-@media (min-width: 1024px) and (min-height: 760px) {
-  /* The rounded lower edge is a small cap under the page, not a clip on the
-     whole page: clipping a page this tall makes every scroll frame expensive. */
-  .page-sheet {
+/* Set by FooterReveal when the whole footer fits on screen, at any width. */
+/* The rounded lower edge is a small cap under the page, not a clip on the
+   whole page: clipping a page this tall makes every scroll frame expensive. */
+html[data-footer-reveal] .page-sheet {
+  margin-bottom: 1.5rem;
+}
+html[data-footer-reveal] .page-sheet::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  height: 1.5rem;
+  margin-top: -1px;
+  background: var(--color-surface);
+  border-radius: 0 0 1.5rem 1.5rem;
+  box-shadow: 0 24px 40px -18px rgb(0 0 0 / 0.5);
+}
+html[data-footer-reveal] .footer-reveal {
+  position: sticky;
+  bottom: 0;
+  z-index: 0;
+}
+@media (min-width: 1024px) {
+  html[data-footer-reveal] .page-sheet {
     margin-bottom: 2.25rem;
   }
-  .page-sheet::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
+  html[data-footer-reveal] .page-sheet::after {
     height: 2.25rem;
-    margin-top: -1px;
-    background: var(--color-surface);
     border-radius: 0 0 2.25rem 2.25rem;
-    box-shadow: 0 24px 40px -18px rgb(0 0 0 / 0.5);
   }
-  .footer-reveal {
-    position: sticky;
-    bottom: 0;
-    z-index: 0;
+}
+
+/* ------------------------------------------------------------------
+   Footer wordmark. An outline at rest. When the visitor reaches the
+   bottom (html[data-footer-live]) it tilts up into a solid, extruded
+   word and its colours travel across it for as long as it is in view.
+   ------------------------------------------------------------------ */
+.footer-word {
+  perspective: 900px;
+}
+.footer-word-outline,
+.footer-word-depth,
+.footer-word-face {
+  font-size: clamp(3.5rem, 15.5vw, 15rem);
+  font-weight: 600;
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+}
+.footer-word-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255 255 255 / 0.18);
+  transition: opacity 0.7s ease;
+}
+.footer-word-solid {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0.75rem 0;
+  opacity: 0;
+  transform: rotateX(38deg) translateY(18%);
+  transform-origin: 50% 100%;
+  transition: opacity 0.7s ease, transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.footer-word-depth,
+.footer-word-face {
+  position: absolute;
+}
+/* The sides of the letters: stacked shadows stepping down and away. */
+.footer-word-depth {
+  color: #0a2f6b;
+  text-shadow:
+    0 0.008em 0 #0a2c64, 0 0.016em 0 #09295d, 0 0.024em 0 #082656, 0 0.032em 0 #07234f,
+    0 0.04em 0 #062048, 0 0.048em 0 #051d41, 0 0.056em 0 #041a3a, 0 0.064em 0 #031733,
+    0 0.12em 0.16em rgb(0 0 0 / 0.55), 0 0 0.4em rgb(22 119 255 / 0.35);
+}
+/* The front of the letters: brand colours travelling left to right. */
+.footer-word-face {
+  color: transparent;
+  background: linear-gradient(100deg, #1677ff 0%, #00b8d9 22%, #ffffff 36%, #ff7a00 52%, #00b8d9 72%, #1677ff 100%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+html[data-footer-live] .footer-word-outline {
+  opacity: 0;
+}
+html[data-footer-live] .footer-word-solid {
+  opacity: 1;
+  transform: rotateX(0deg) translateY(0);
+}
+@media (prefers-reduced-motion: no-preference) {
+  html[data-footer-live] .footer-word-face {
+    animation: word-colours 7s linear infinite;
   }
+  html[data-footer-live] .footer-word-solid {
+    animation: word-tilt 6s ease-in-out 1.1s infinite;
+  }
+}
+@keyframes word-colours {
+  from { background-position: 0% 50%; }
+  to { background-position: -220% 50%; }
+}
+@keyframes word-tilt {
+  0%, 100% { transform: rotateX(0deg) rotateY(0deg); }
+  25% { transform: rotateX(7deg) rotateY(-2.5deg); }
+  75% { transform: rotateX(4deg) rotateY(2.5deg); }
 }
 
 /* ------------------------------------------------------------------
@@ -376,5 +461,39 @@ html:has(main [data-hero="dark"]) .site-header:not([data-scrolled]) {
 @media (max-width: 1023px) {
   body:has([data-sticky-cta]) .back-to-top {
     bottom: 5.25rem;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Growth system: a pinned panel with one scroll stop per stage.
+   --gs-step is how far the page scrolls between stages. On touch screens
+   the page snaps to each stop and may not skip one, so a single swipe
+   moves a single stage. Wheels and trackpads are stepped in script.
+   ------------------------------------------------------------------ */
+.gs-track {
+  --gs-step: 70svh;
+  height: calc(8 * var(--gs-step) + 100svh);
+}
+.gs-stop {
+  position: absolute;
+  top: calc(var(--gs-i) * var(--gs-step));
+  left: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+@media (min-width: 1024px) {
+  .gs-track {
+    --gs-step: 32vh;
+    height: calc(8 * var(--gs-step) + max(100vh, 44rem));
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+  .gs-stop {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
   }
 }
