@@ -132,7 +132,10 @@ Every new page and every change to an existing page must pass these. They sit al
 - [ ] At least three contextual internal links in the copy, not only in grids: one up (parent), one across (sibling), one to a conversion page.
 - [ ] One primary call to action (Growth Audit) above the fold and again at the end.
 - [ ] Images have dimensions, descriptive alt text, and are lazy below the fold.
-- [ ] No horizontal scroll from 320px. No console errors. Works with reduced motion.
+- [ ] No horizontal scroll from 320px to 1920px. No console errors. Works with reduced motion.
+- [ ] No wasted space: in two-column sections the shorter column is pinned while the longer one scrolls (`ColumnBalance`); use `overflow-clip`, not `overflow-hidden`, on section panels so pinning works. Text links get a touch-sized hit area on phones.
+- [ ] Pages with nothing to show yet (for example Reports before the first report) are `noindex` and out of the sitemap.
+- [ ] A long article headline gets a shorter `seoTitle` (about 55 characters) for search results.
 - [ ] `npm run lint`, `npm test` and `npm run build` pass.
 
 ### Keyword mapping

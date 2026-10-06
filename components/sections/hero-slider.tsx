@@ -137,7 +137,7 @@ export function HeroSlider({ slides, children }: { slides: HeroSlide[]; children
             {slides.map((s, i) => {
               const on = i === active;
               return (
-                <button key={s.key} role="tab" type="button" aria-selected={on} tabIndex={on ? 0 : -1} onClick={() => go(i)} className="group text-left outline-none">
+                <button key={s.key} role="tab" type="button" aria-selected={on} tabIndex={on ? 0 : -1} onClick={() => go(i)} className="group -my-3 py-3 text-left outline-none sm:my-0 sm:py-0">
                   <span className="block h-1 overflow-hidden rounded-full bg-white/15">
                     {on ? (
                       <span key={`${active}-${playing}`} className={cn("block h-full origin-left rounded-full bg-orange", playing && "motion-safe:animate-[tour_7s_linear_forwards]")} />

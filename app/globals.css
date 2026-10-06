@@ -667,3 +667,18 @@ html:has(main [data-hero="dark"]) .site-header:not([data-scrolled]) {
 }
 @keyframes pl-fade { to { opacity: 0; visibility: hidden; } }
 @media print { .preloader { display: none; } }
+
+/* A column that ColumnBalance found shorter than its neighbour stays in view while the longer one scrolls. */
+@media (min-width: 1024px) {
+  [data-pin] {
+    position: sticky;
+    top: 7rem;
+    align-self: start;
+  }
+}
+/* Text links that are only one line tall get a touch-sized hit area on phones and tablets. */
+@media (pointer: coarse) {
+  main a.inline-flex:not([class*="rounded-"]) {
+    min-height: 2.75rem;
+  }
+}

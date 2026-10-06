@@ -267,7 +267,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
 
       {/* ---------- Deliverables and tools ---------- */}
       <section id="deliverables" aria-labelledby="deliverables-title" className="bg-surface px-3 py-1.5 md:px-5 md:py-2">
-        <div className="stage relative scroll-mt-20 overflow-hidden rounded-[1.75rem] text-white md:rounded-[2.25rem]">
+        <div className="stage relative scroll-mt-20 overflow-clip rounded-[1.75rem] text-white md:rounded-[2.25rem]">
           <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:radial-gradient(60%_70%_at_20%_10%,black,transparent)]" />
           <div className="shell relative grid grid-cols-1 gap-10 py-12 md:py-16 lg:grid-cols-12 lg:gap-8 lg:py-20">
             <div className="lg:col-span-7">

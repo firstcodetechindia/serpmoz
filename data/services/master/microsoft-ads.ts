@@ -93,7 +93,7 @@ export const master: ServiceMaster = {
       { label: "Speed of learning", a: "Slower, with less data", b: "Faster, with more data" },
       { label: "Role", a: "Efficient addition", b: "Core of most search budgets" },
     ],
-    verdict: "Google comes first for nearly every advertiser because that is where most searches happen. Once it is profitable, Microsoft is often the most straightforward next step, provided it is tracked and managed in its own right.",
+    verdict: "Google comes first for nearly every advertiser because that is where most searches happen. Once it is profitable, Microsoft is often the simplest next step, provided it is tracked and managed in its own right.",
     link: { label: "See our Google Ads service", href: "/google-ads/" },
   },
 

@@ -30,7 +30,7 @@ export function IndustriesSection() {
           />
           <Reveal className="lg:col-span-4 lg:pt-12" delay={0.1}>
             <p className="text-lead text-white/70">
-              A dental practice and a SaaS company do not share a buyer, a sales cycle or a search landscape. The plan should
+              A dental practice and a SaaS company do not share a buyer, a sales cycle or a search environment. The plan should
               not look the same either.
             </p>
           </Reveal>

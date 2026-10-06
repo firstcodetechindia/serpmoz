@@ -194,7 +194,7 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
 
       {/* ---------- Opportunities ---------- */}
       <section id="opportunities" aria-labelledby="opportunities-title" className="bg-surface px-3 py-1.5 md:px-5 md:py-2">
-        <div className={cn(inset, "stage relative overflow-hidden text-white")}>
+        <div className={cn(inset, "stage relative overflow-clip text-white")}>
           <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:radial-gradient(60%_70%_at_80%_10%,black,transparent)]" />
           <div className="shell relative">
             <p className="label-mono text-cyan">Opportunities</p>

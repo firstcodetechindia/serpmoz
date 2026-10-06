@@ -32,7 +32,6 @@ export const sitemapGroups: Record<string, () => SitemapEntry[]> = {
   resources: () => [
     { path: "/resources/", priority: 0.7, changefreq: "weekly" },
     { path: "/guides/", priority: 0.5, changefreq: "weekly" },
-    { path: "/reports/", priority: 0.4 },
     ...articles.map((a) => ({ path: `/resources/${a.slug}/`, priority: 0.7 })),
   ],
   industries: () => [

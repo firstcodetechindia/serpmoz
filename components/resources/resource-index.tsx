@@ -31,7 +31,10 @@ export function ResourceIndex({ meta, label, heading, lead, format, emptyNote, s
       <section className="py-14 md:py-20">
         <div className="shell">
           {items.length ? (
-            <ArticleList items={items} categories={categoryOptions} />
+            <>
+              <h2 className="sr-only">{heading.replace(/\.$/, "")}: all pieces</h2>
+              <ArticleList items={items} categories={categoryOptions} />
+            </>
           ) : (
             <div className="rounded-panel border border-dashed border-line-strong p-8 md:p-12">
               <p className="label-mono text-muted">Nothing published yet</p>

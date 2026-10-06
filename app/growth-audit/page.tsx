@@ -16,7 +16,7 @@ import { faqSchema, webPageSchema } from "@/lib/seo/schema";
 const meta = {
   title: "Growth Audit: Find Your Highest-Impact Opportunities",
   description:
-    "Request a SERPMOZ growth audit. A strategist reviews your search visibility, AI search presence, paid media, content, conversion and tracking, and shows you what to fix first.",
+    "Request a SERPMOZ growth audit. A strategist reviews your search visibility, AI search presence, paid media, conversion and tracking, and shows what to fix first.",
   path: "/growth-audit/",
 };
 
@@ -111,7 +111,7 @@ const faqs = [
   },
   {
     q: "Will you tell us how much growth to expect?",
-    a: "No. An audit can show where the gaps are and which are likely to matter most. It cannot honestly predict rankings, traffic or revenue, because those depend on competitors, platforms and execution. Targets are set later, against your own baseline, if we work together.",
+    a: "No. An audit can show where the gaps are and which are likely to matter most. It cannot reliably predict rankings, traffic or revenue, because those depend on competitors, platforms and execution. Targets are set later, against your own baseline, if we work together.",
   },
   {
     q: "What happens after the audit?",

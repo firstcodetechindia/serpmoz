@@ -140,7 +140,7 @@ export function IndustryServicePage({ record: r }: { record: IndustryServiceReco
 
       {/* ---------- Searches worth winning ---------- */}
       <section id="searches" aria-labelledby="searches-title" className="bg-surface px-3 py-1.5 md:px-5 md:py-2">
-        <div className={cn(inset, "relative scroll-mt-20 overflow-hidden bg-navy-deep text-white")}>
+        <div className={cn(inset, "relative scroll-mt-20 overflow-clip bg-navy-deep text-white")}>
           <div aria-hidden className="glow absolute -top-32 -left-24 size-[30rem] bg-blue/25" />
           <div className="shell relative">
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-8">

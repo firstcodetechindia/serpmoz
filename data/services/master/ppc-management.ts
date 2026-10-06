@@ -33,7 +33,7 @@ export const master: ServiceMaster = {
     },
     {
       title: "Account structure and governance",
-      body: "Structure decides how much data each campaign has to learn from and how much control you keep. We consolidate where volume is thin and separate where intent, margin or geography genuinely differ.",
+      body: "Structure decides how much data each campaign has to learn from and how much control you keep. We consolidate where volume is thin and separate where intent, margin or geography really differ.",
       items: ["Campaigns split by intent, not by habit", "Brand and non-brand kept apart", "Shared negative keyword and exclusion lists", "Naming conventions that make reporting possible", "A change log for every edit"],
     },
     {

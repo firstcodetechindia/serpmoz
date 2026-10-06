@@ -4,8 +4,8 @@ import { z } from "zod";
 export const budgetOptions = [
   "Not sure yet",
   "Under ₹1L / $1.5k per month",
-  "₹1L–₹5L / $1.5k–$6k per month",
-  "₹5L–₹15L / $6k–$18k per month",
+  "₹1L to ₹5L / $1.5k to $6k per month",
+  "₹5L to ₹15L / $6k to $18k per month",
   "₹15L+ / $18k+ per month",
 ] as const;
 

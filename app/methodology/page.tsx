@@ -14,7 +14,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { webPageSchema } from "@/lib/seo/schema";
 
 const meta = {
-  title: "Methodology: Six Stages From Discovery to Optimization",
+  title: "Methodology: Six Stages From Discovery to Growth",
   description:
     "The six-stage SERPMOZ methodology. What happens at each stage, what AI accelerates, what experts decide and what you receive.",
   path: "/methodology/",

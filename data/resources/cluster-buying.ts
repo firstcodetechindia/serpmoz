@@ -173,6 +173,7 @@ export const articles: Article[] = [
   },
   {
     slug: "how-to-choose-a-digital-marketing-agency",
+    seoTitle: "How to Choose a Digital Marketing Agency: 12 Questions",
     title: "How to choose a digital marketing agency: twelve questions to ask",
     format: "Guide",
     summary:

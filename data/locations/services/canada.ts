@@ -717,7 +717,7 @@ export const pages: LocalServicePage[] = [
       },
       {
         q: "Can you guarantee a cost per lead or a return on ad spend?",
-        a: "No. Prices are set in an auction that changes with demand and with competitors' bids, and conversion depends partly on your offer, your site and how quickly leads are followed up. We can set targets, show progress against them honestly, and explain what is limiting performance. If the numbers show the channel is not viable for a product, we will say that too.",
+        a: "No. Prices are set in an auction that changes with demand and with competitors' bids, and conversion depends partly on your offer, your site and how quickly leads are followed up. We can set targets, show progress against them plainly, and explain what is limiting performance. If the numbers show the channel is not viable for a product, we will say that too.",
       },
       {
         q: "How long does Google Ads take to show results?",

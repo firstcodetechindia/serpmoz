@@ -12,6 +12,8 @@ export type ArticleSection = { heading: string; paragraphs: string[]; points?: s
 export type Article = {
   slug: string;
   title: string;
+  /** Shorter title for search results and sharing, when the headline is longer than about 55 characters */
+  seoTitle?: string;
   /** Slug of a category in data/resources */
   category: string;
   format: "Insight" | "Guide" | "Report";
@@ -32,6 +34,7 @@ const author = { author: "SERPMOZ Research", authorRole: "Editorial team" };
 const foundation: Article[] = [
   {
     slug: "measuring-ai-search-visibility",
+    seoTitle: "How to Measure AI Search Visibility",
     title: "How to measure AI search visibility when the answer changes every time",
     category: "ai-search",
     format: "Guide",
@@ -144,6 +147,7 @@ const foundation: Article[] = [
   },
   {
     slug: "ai-moved-the-bottleneck",
+    seoTitle: "AI Made Execution Cheap. The Bottleneck Moved.",
     title: "AI made execution cheap. That moved the bottleneck, it did not remove it.",
     category: "digital-growth",
     format: "Insight",
@@ -296,7 +300,7 @@ const foundation: Article[] = [
         ],
       },
       {
-        heading: "Measure honestly",
+        heading: "Measure accurately",
         paragraphs: [
           "Compare a full period before the change with a full period after it, long enough to cover your normal weekly and monthly patterns. Note anything else that changed at the same time, such as a campaign, a season or a price.",
           "Be modest about the conclusion. Before-and-after comparison shows direction, not a precise uplift. Look for changes large enough to be obvious, and follow them through to lead quality so that a higher conversion rate is not simply a lower bar.",
@@ -312,6 +316,7 @@ const foundation: Article[] = [
   },
   {
     slug: "attribution-questions-worth-answering",
+    seoTitle: "Marketing Attribution Questions Worth Answering",
     title: "The attribution questions worth answering, and the ones that are not",
     category: "analytics",
     format: "Insight",

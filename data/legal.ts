@@ -18,7 +18,7 @@ export const legalDocs: LegalDoc[] = [
   {
     slug: "privacy-policy",
     title: "Privacy Policy",
-    description: "How SERPMOZ collects, uses and protects personal information submitted through serpmoz.com.",
+    description: "How SERPMOZ collects, uses and protects the personal information you submit through serpmoz.com, who it is shared with, how long it is kept and how to contact us.",
     updated,
     intro:
       "This policy explains what personal information we collect through serpmoz.com, why we collect it and the choices you have.",
@@ -70,7 +70,7 @@ export const legalDocs: LegalDoc[] = [
   {
     slug: "terms",
     title: "Terms of Use",
-    description: "The terms that apply to your use of the SERPMOZ website, including content, intellectual property and liability.",
+    description: "The terms that apply to your use of the SERPMOZ website, including how content may be used, intellectual property, third-party links, liability and changes to these terms.",
     updated,
     intro: "These terms apply to your use of serpmoz.com. By using the site you agree to them.",
     sections: [
@@ -114,7 +114,7 @@ export const legalDocs: LegalDoc[] = [
   {
     slug: "cookie-policy",
     title: "Cookie Policy",
-    description: "How serpmoz.com uses cookies and similar technologies, which ones may be set and how you can manage them.",
+    description: "How serpmoz.com uses cookies and similar technologies, which categories may be set, why they are used and how you can manage or withdraw your consent.",
     updated,
     intro: "This policy explains how serpmoz.com uses cookies and similar technologies.",
     sections: [
@@ -138,7 +138,7 @@ export const legalDocs: LegalDoc[] = [
   {
     slug: "disclaimer",
     title: "Disclaimer",
-    description: "Important information about the content, illustrations and claims on serpmoz.com.",
+    description: "Important information about the content, illustrations, samples and claims on serpmoz.com, including what is illustrative and what is not professional advice.",
     updated,
     intro: "Please read this alongside our Terms of Use.",
     sections: [
@@ -169,7 +169,7 @@ export const legalDocs: LegalDoc[] = [
   {
     slug: "accessibility",
     title: "Accessibility",
-    description: "Our commitment to making serpmoz.com usable by everyone, and how to report a problem.",
+    description: "Our commitment to making serpmoz.com usable by everyone, the standard we aim to meet, known limitations and how to report an accessibility problem.",
     updated,
     intro: "We want everyone to be able to use this site, whatever their device or ability.",
     sections: [

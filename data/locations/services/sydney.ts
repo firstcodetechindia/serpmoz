@@ -501,7 +501,7 @@ export const pages: LocalServicePage[] = [
       },
       {
         q: "How long does SEO take to show results for a Sydney firm?",
-        a: "Technical fixes may help within weeks. For content and authority, expect six months or more before the direction is dependable, and longer in fields where large institutions dominate broad searches. Firms with an established domain and existing content usually progress faster than new sites. Internal approval speed, especially compliance review, often determines the pace more than anything we do.",
+        a: "Technical fixes may help within weeks. For content and authority, expect six months or more before the direction is dependable, and longer in fields where large institutions hold broad searches. Firms with an established domain and existing content usually progress faster than new sites. Internal approval speed, especially compliance review, often determines the pace more than anything we do.",
       },
       {
         q: "What does SEO cost in Sydney?",

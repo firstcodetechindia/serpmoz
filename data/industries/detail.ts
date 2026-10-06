@@ -172,7 +172,7 @@ const seeds: Record<string, Seed> = {
   finance: {
     challenges: [
       "Every public claim needs compliance sign-off, which lengthens production and discourages testing.",
-      "Comparison sites and aggregators dominate product searches and take a margin on each customer they refer.",
+      "Comparison sites and aggregators lead product searches and take a margin on each customer they refer.",
       "Search systems hold financial content to a higher standard, so anonymous or outdated pages struggle to rank.",
       "Fraud checks and identity verification are necessary and are also where many genuine applicants give up.",
     ],

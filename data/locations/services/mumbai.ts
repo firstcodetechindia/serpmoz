@@ -543,7 +543,7 @@ export const pages: LocalServicePage[] = [
       },
       {
         title: "Proximity limits how far a profile reaches",
-        body: "A profile tends to appear for searches made near its premises and fades with distance. No technique makes one address visible across a large city. Reaching another area honestly means having premises or real service coverage there.",
+        body: "A profile tends to appear for searches made near its premises and fades with distance. No technique makes one address visible across a large city. Reaching another area properly means having premises or real service coverage there.",
       },
     ],
     approach: [

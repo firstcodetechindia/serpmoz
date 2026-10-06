@@ -194,7 +194,7 @@ export const methodology = [
     happens:
       "Results are read in one reporting view agreed at the start, so marketing, sales and finance are looking at the same thing. Where you give us access, it is reconciled with your CRM so that leads can be followed to revenue.",
     ai: ["Joining data across platforms", "Watching for anomalies between reviews", "Tracking presence in AI answers over time"],
-    experts: ["What the numbers mean and what they do not", "How much credit a channel should take", "How to report honestly when a result is unclear"],
+    experts: ["What the numbers mean and what they do not", "How much credit a channel should take", "How to report plainly when a result is unclear"],
     receive: ["One reporting view across visibility, leads, conversions and revenue", "Written commentary with each review", "Sources shown for every figure"],
   },
   {
@@ -225,7 +225,7 @@ export const pillars = [
   },
   {
     name: "Search Everywhere",
-    body: "Search engines, AI answers, maps, social and marketplaces treated as one discovery landscape.",
+    body: "Search engines, AI answers, maps, social and marketplaces treated as one discovery system.",
   },
   {
     name: "Data Driven",

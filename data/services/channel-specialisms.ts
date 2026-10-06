@@ -68,7 +68,7 @@ export const channelSpecialisms: Service[] = [
       "Retargeting reports strong results that disappear in the wider numbers.",
       "Privacy changes have shrunk the audiences.",
     ],
-    why: "A returning visitor converts far more readily than a new one, so a well-built retargeting programme is among the most efficient uses of paid budget, provided it is measured honestly.",
+    why: "A returning visitor converts far more readily than a new one, so a well-built retargeting programme is among the most efficient uses of paid budget, provided it is measured accurately.",
     scope: rows(
       ["Audience design", "Segments by behaviour and intent: product viewers, pricing visitors, form abandoners, engaged readers."],
       ["Sequencing", "Messages that progress, from proof to offer, instead of repeating."],
@@ -86,7 +86,7 @@ export const channelSpecialisms: Service[] = [
     deliverables: ["Retargeting audit", "Audience segmentation plan", "Creative sequence by segment", "Frequency and exclusion rules", "First-party audience setup", "Incrementality report"],
     tools: ["Google Ads", "Meta Ads", "LinkedIn Matched Audiences", "Google Tag Manager", "Server-side tagging", "CRM audience sync"],
     ai: ["Predictive audience scoring", "Dynamic creative assembly", "Frequency anomaly alerts"],
-    experts: ["Deciding who should not be targeted", "Message sequencing", "Reading incrementality honestly"],
+    experts: ["Deciding who should not be targeted", "Message sequencing", "Reading incrementality accurately"],
     measures: ["Incremental conversions", "Return visitor conversion rate", "Frequency per user", "Cost per recovered lead or sale"],
     audience: ["Ecommerce stores with cart abandonment", "B2B companies with long consideration", "High-traffic sites with low conversion", "Advertisers doubting retargeting’s reported return"],
     faqs: faqs(

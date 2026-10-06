@@ -26,7 +26,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const a = getArticle((await params).slug);
   if (!a) return {};
-  return buildMetadata({ title: a.title, description: a.summary.length > 158 ? `${a.summary.slice(0, a.summary.lastIndexOf(" ", 155))}…` : a.summary, path: `/resources/${a.slug}/`, type: "article", absoluteTitle: a.title.length > 50 });
+  return buildMetadata({ title: a.seoTitle ?? a.title, description: a.summary.length > 158 ? `${a.summary.slice(0, a.summary.lastIndexOf(" ", 155))}…` : a.summary, path: `/resources/${a.slug}/`, type: "article", absoluteTitle: !!a.seoTitle || a.title.length > 50 });
 }
 
 const anchor = (h: string) => h.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

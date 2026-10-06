@@ -13,7 +13,7 @@ import { faqSchema, webPageSchema } from "@/lib/seo/schema";
 const meta = {
   title: "Engagement Models: Five Ways to Work With Us",
   description:
-    "Growth Starter, Growth, Scale, Growth Partner and Enterprise. How each SERPMOZ engagement model is scoped, staffed and run. Pricing follows the diagnostic and the scope.",
+    "Growth Starter, Growth, Scale, Growth Partner and Enterprise: how each SERPMOZ engagement model is scoped, staffed and run. Pricing follows the scope.",
   path: "/engagement-models/",
 };
 

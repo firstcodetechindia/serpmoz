@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Footer } from "@/components/footer/footer";
+import { ColumnBalance } from "@/components/layout/column-balance";
 import { MotionProvider } from "@/components/layout/motion-provider";
 import { Preloader } from "@/components/layout/preloader";
 import { RevealGate } from "@/components/layout/reveal";
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
         <BackToTop />
         <RevealGate />
+        <ColumnBalance />
         <AnalyticsEvents />
         <TagManager />
       </body>

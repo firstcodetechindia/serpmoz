@@ -71,7 +71,7 @@ export default function AboutPage() {
             and compare options on a marketplace or a social feed, often in a single afternoon.
           </p>
           <p>
-            SERPMOZ exists to make a business visible across that whole landscape, and then to make the visibility count.
+            SERPMOZ exists to make a business visible across that whole journey, and then to make the visibility count.
             We bring the disciplines growth depends on into one plan and manage them against one outcome.
           </p>
         </Prose>

@@ -256,6 +256,7 @@ export const articles: Article[] = [
   },
   {
     slug: "does-seo-still-matter-when-buyers-ask-ai-assistants",
+    seoTitle: "Does SEO Still Matter When Buyers Ask AI?",
     title: "Does traditional SEO still matter when buyers ask AI assistants?",
     format: "Insight",
     summary:

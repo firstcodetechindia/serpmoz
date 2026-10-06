@@ -164,7 +164,7 @@ None.
 | `/cro-toronto/` | Service + City | 97 | 1321 | 14 | 7 |  |
 | `/local-seo-services-australia/` | Service + Country | 100 | 1400 | 16 | 10 |  |
 | `/google-maps-seo-australia/` | Service + Country | 100 | 1348 | 16 | 10 |  |
-| `/seo-services-australia/` | Service + Country | 100 | 1325 | 16 | 10 |  |
+| `/seo-services-australia/` | Service + Country | 100 | 1329 | 16 | 10 |  |
 | `/google-ads-australia/` | Service + Country | 100 | 1312 | 14 | 10 |  |
 | `/cro-australia/` | Service + Country | 100 | 1309 | 15 | 9 |  |
 | `/ecommerce-seo-australia/` | Service + Country | 100 | 1317 | 12 | 9 |  |

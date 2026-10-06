@@ -168,7 +168,7 @@ export const moreServices: Base[] = [
     experts: ["What is actually newsworthy", "Relationships with journalists", "Accuracy of every claim made", "Reputation risk"],
     measures: ["Relevant coverage earned", "Referring domains from target publications", "Branded search demand", "Citation presence in AI answers"],
     faqs: [
-      { q: "Do you guarantee a number of links?", a: "No. Guaranteed link counts are a sign the links are being bought. We commit to the campaigns and report honestly on what they earn." },
+      { q: "Do you guarantee a number of links?", a: "No. Guaranteed link counts are a sign the links are being bought. We commit to the campaigns and report plainly on what they earn." },
       { q: "How is this different from traditional PR?", a: "The craft is similar. The difference is that campaigns are designed and measured for search and AI visibility as well as awareness." },
       { q: "Do we need to have data?", a: "It helps, and most businesses have more than they realise. Where there is none, we can commission research." },
     ],
