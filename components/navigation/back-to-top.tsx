@@ -51,7 +51,7 @@ export function BackToTop() {
       aria-label="Back to top"
       tabIndex={show ? 0 : -1}
       className={cn(
-        "group fixed right-4 bottom-4 z-40 flex size-12 items-center justify-center rounded-full bg-navy text-white shadow-float transition-all duration-300 ease-out-quint hover:bg-orange hover:text-navy md:right-6 md:bottom-6",
+        "back-to-top group fixed right-4 bottom-4 z-40 flex size-12 items-center justify-center rounded-full bg-navy text-white shadow-float transition-all duration-300 ease-out-quint hover:bg-orange hover:text-navy md:right-6 md:bottom-6",
         show ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-4 opacity-0",
       )}
     >

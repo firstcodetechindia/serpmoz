@@ -4,10 +4,12 @@ import { Check, UserRoundCheck } from "lucide-react";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { JsonLd } from "@/components/seo/json-ld";
+import { MasterServicePage } from "@/components/services/master-page";
 import { AiExpertSplit, Faqs, LinkList, RuledRows } from "@/components/services/page-parts";
 import { CtaLink } from "@/components/ui/cta-link";
 import { Photo } from "@/components/ui/photo";
 import { CapabilityVisual } from "@/components/visuals/capability-visual";
+import { SeoHeroVisual } from "@/components/visuals/seo-visuals";
 import { photos } from "@/data/images";
 import { getService, services } from "@/data/services";
 import { serviceCategories } from "@/data/services/catalog";
@@ -223,9 +225,18 @@ function Audience({ s, tone }: { s: Service; tone: "surface" | "canvas" }) {
   );
 }
 
+/** Each master page has its own hero picture; the visual language is not shared between services. */
+const masterVisuals: Record<string, React.ReactNode> = {
+  "seo-services": <SeoHeroVisual />,
+};
+
 export default async function ServicePage({ params }: Props) {
   const service = getService((await params).service);
   if (!service) notFound();
+
+  if (service.master) {
+    return <MasterServicePage service={service} master={service.master} visual={masterVisuals[service.slug] ?? <CapabilityVisual category={service.category} />} />;
+  }
 
   const path = `/${service.slug}/`;
   const category = serviceCategories.find((c) => c.id === service.category)!;

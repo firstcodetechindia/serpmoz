@@ -1,6 +1,7 @@
 import type { Service } from "@/types";
 import { channelSpecialisms } from "./channel-specialisms";
 import { serviceExtras } from "./extras";
+import { masters } from "./master";
 import { moreServices } from "./more";
 import { searchSpecialisms } from "./search-specialisms";
 
@@ -16,9 +17,9 @@ const coreServices: Base[] = [
     slug: "seo-services",
     name: "SEO",
     title: "SEO that is planned around revenue, not rankings",
-    metaTitle: "SEO Services",
+    metaTitle: "SEO Services: Technical, Content & Authority",
     metaDescription:
-      "Expert-led SEO from SERPMOZ: technical foundations, search intent, content and authority, prioritised by commercial value and measured against leads and revenue.",
+      "SEO services from SERPMOZ: technical SEO, content and authority, prioritised by commercial value and measured in leads and revenue, not rankings alone.",
     category: "search-ai",
     summary:
       "Technical, content and authority work prioritised by commercial value and measured against pipeline.",
@@ -778,7 +779,8 @@ const all: Service[] = [...primaryServices, ...moreServices.map(complete), ...se
 export const services: Service[] = order.map((slug) => {
   const service = all.find((s) => s.slug === slug);
   if (!service) throw new Error(`Service "${slug}" is listed but not defined`);
-  return service;
+  const master = masters[slug];
+  return master ? { ...service, ...master.overrides, master: master.content } : service;
 });
 
 export const serviceSlugs = services.map((s) => s.slug);

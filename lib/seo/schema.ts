@@ -41,6 +41,10 @@ export function webPageSchema(p: {
   title: string;
   description: string;
   type?: "WebPage" | "AboutPage" | "ContactPage" | "CollectionPage";
+  /** ISO date of the last specialist review */
+  reviewed?: string;
+  /** CSS selectors of the passages that answer the page's question directly */
+  speakable?: string[];
 }): Json {
   const url = absoluteUrl(p.path);
   return {
@@ -53,6 +57,8 @@ export function webPageSchema(p: {
     inLanguage: "en",
     isPartOf: { "@id": WEBSITE_ID },
     about: { "@id": ORG_ID },
+    ...(p.reviewed ? { dateModified: p.reviewed, lastReviewed: p.reviewed, reviewedBy: { "@id": ORG_ID } } : {}),
+    ...(p.speakable?.length ? { speakable: { "@type": "SpeakableSpecification", cssSelector: p.speakable } } : {}),
   };
 }
 
@@ -70,7 +76,14 @@ export function breadcrumbSchema(crumbs: Crumb[]): Json {
 }
 
 export function serviceSchema(
-  s: Pick<Service, "name" | "summary"> & { path: string; areaServed?: string },
+  s: Pick<Service, "name" | "summary"> & {
+    path: string;
+    areaServed?: string | string[];
+    /** Parts of the service that have their own pages */
+    includes?: { name: string; path?: string }[];
+    audience?: string[];
+    category?: string;
+  },
 ): Json {
   return {
     "@context": "https://schema.org",
@@ -81,7 +94,21 @@ export function serviceSchema(
     description: s.summary,
     url: absoluteUrl(s.path),
     provider: { "@id": ORG_ID },
+    ...(s.category ? { category: s.category } : {}),
     ...(s.areaServed ? { areaServed: s.areaServed } : {}),
+    ...(s.audience?.length ? { audience: { "@type": "BusinessAudience", audienceType: s.audience.join("; ") } } : {}),
+    ...(s.includes?.length
+      ? {
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: `${s.name}: what is included`,
+            itemListElement: s.includes.map((i) => ({
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name: i.name, ...(i.path ? { url: absoluteUrl(i.path) } : {}) },
+            })),
+          },
+        }
+      : {}),
   };
 }
 

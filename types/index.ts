@@ -52,6 +52,43 @@ export type Service = {
   cta?: string;
   faqs: { q: string; a: string }[];
   related: string[];
+  /** Long-form content for pages built to the master standard. Absent on pages not yet upgraded. */
+  master?: ServiceMaster;
+};
+
+/**
+ * Everything a master-standard service page carries beyond the base record.
+ * Each service writes its own: nothing here is shared copy.
+ */
+export type ServiceMaster = {
+  /** ISO date the page was last reviewed by a specialist; shown on the page and in schema */
+  reviewed: string;
+  /** The direct answer to the question the page is searched for */
+  answer: { question: string; text: string; takeaways: string[] };
+  /** Three or four facts shown beside the hero */
+  facts: { label: string; value: string }[];
+  /** What the service is made of. Each part can link to its specialist page. */
+  pillars: { title: string; body: string; items: string[]; href?: string }[];
+  /** How the channel works, stage by stage, and what we do at each */
+  mechanics: { heading: string; intro: string; stages: { name: string; happens: string; we: string }[] };
+  /** The engagement over time */
+  timeline: { when: string; title: string; body: string; outputs: string[] }[];
+  /** An honest comparison with the nearest alternative */
+  comparison: {
+    heading: string;
+    intro: string;
+    columns: [string, string];
+    rows: { label: string; a: string; b: string }[];
+    verdict: string;
+    link: { label: string; href: string };
+  };
+  /** Slugs in data/industries and data/locations where this service matters most */
+  industries: string[];
+  markets: string[];
+  /** Slug in data/case-studies, if one involves this service */
+  scenario?: string;
+  /** Question-led FAQs; these replace the base FAQs on the page and in schema */
+  faqs: { q: string; a: string }[];
 };
 
 export type ServiceCategoryId =
