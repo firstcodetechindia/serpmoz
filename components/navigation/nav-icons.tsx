@@ -32,3 +32,9 @@ export function NavTile({ link, className }: { link: Pick<NavLink, "label" | "hr
     </span>
   );
 }
+
+/** The icon for a menu entry, by label, link or discipline id. */
+export function NavIcon({ name, className, strokeWidth = 1.75 }: { name: string; className?: string; strokeWidth?: number }) {
+  const Icon = icons[name] ?? Sparkles;
+  return <Icon aria-hidden className={className} strokeWidth={strokeWidth} />;
+}
