@@ -1,153 +1,67 @@
-import type { Country, LocationService } from "@/types";
+import type { City, Country, LocationRecord, LocationService } from "@/types";
+import { validateLocations } from "./validate";
+import { location as india } from "./records/india";
+import { location as usa } from "./records/usa";
+import { location as uk } from "./records/uk";
+import { location as uae } from "./records/uae";
+import { location as canada } from "./records/canada";
+import { location as australia } from "./records/australia";
+import { location as singapore } from "./records/singapore";
+import { location as europe } from "./records/europe";
+import { location as indiaDelhi } from "./records/india-delhi";
+import { location as indiaGurgaon } from "./records/india-gurgaon";
+import { location as indiaNoida } from "./records/india-noida";
+import { location as indiaMumbai } from "./records/india-mumbai";
+import { location as indiaBangalore } from "./records/india-bangalore";
+import { location as indiaHyderabad } from "./records/india-hyderabad";
+import { location as indiaPune } from "./records/india-pune";
+import { location as indiaJaipur } from "./records/india-jaipur";
+import { location as uaeDubai } from "./records/uae-dubai";
+import { location as ukLondon } from "./records/uk-london";
+import { location as usaNewYork } from "./records/usa-new-york";
+import { location as canadaToronto } from "./records/canada-toronto";
+import { location as australiaSydney } from "./records/australia-sydney";
 
 /**
- * Location content. A page exists only where there is something specific to
- * say about competing in that market. Do not add entries that differ only by
- * place name – they will be thin, and they will be treated as such.
+ * The location engine's registry. To add a location, write a record in
+ * ./records/, import it here and add it to the list. The route, map
+ * highlight, breadcrumbs, metadata, schema, related links and sitemap entry
+ * all follow from the record. See docs/LOCATION_ARCHITECTURE.md.
+ *
+ * A page exists only where there is something specific to say about competing
+ * in that market. Do not add records that differ only by place name.
  */
-export const countries: Country[] = [
-  {
-    slug: "india",
-    name: "India",
-    short: "IN",
-    context:
-      "India is a mobile-first, multilingual market where search behaviour changes sharply between metros and smaller cities. WhatsApp is a primary business channel, price sensitivity is high and competition for commercial keywords in the major cities is intense.",
-    considerations: [
-      { title: "Language and script", body: "English, Hindi and regional-language queries often show different intent and different competitors. Coverage should follow where your customers actually search." },
-      { title: "WhatsApp in the funnel", body: "Many buyers prefer to enquire and follow up on WhatsApp. Lead capture and automation should be designed around it, on the official Business Platform." },
-      { title: "City-level competition", body: "Delhi NCR, Mumbai and Bangalore behave like separate markets. Local presence and reviews are decisive for service businesses." },
-    ],
-    services: ["seo-services", "local-seo-services", "google-ads", "meta-ads", "whatsapp-automation", "lead-generation"],
-    industries: ["real-estate", "education", "healthcare", "ecommerce", "saas"],
-    cities: [
-      { slug: "delhi", name: "Delhi", context: "A dense, price-competitive market where locality names drive search and service businesses compete neighbourhood by neighbourhood.", considerations: ["Locality-level targeting across a very large urban area", "Hindi and English search behaviour side by side", "High advertiser density in services, education and healthcare"], services: ["local-seo-services", "google-maps-seo", "google-ads", "meta-ads", "whatsapp-automation"], industries: ["education", "healthcare", "local-business", "real-estate"] },
-      { slug: "gurgaon", name: "Gurgaon", context: "A corporate and technology hub with a concentration of company headquarters, SaaS firms, real-estate developers and premium healthcare. Buyers are senior, research carefully and expect a professional digital experience.", considerations: ["B2B and enterprise buyers concentrated in a small geography", "Strong real-estate and premium-services competition", "Search under both Gurgaon and Gurugram spellings"], services: ["seo-services", "ai-seo-services", "linkedin-ads", "lead-generation", "google-ads", "landing-page-optimization"], industries: ["b2b", "saas", "real-estate", "healthcare", "professional-services"] },
-      { slug: "noida", name: "Noida", context: "An IT, manufacturing and education centre with fast residential growth, where sector numbers are part of how people search.", considerations: ["Sector-based local search patterns", "Real-estate and education demand", "Overlap with Delhi and Greater Noida catchments"], services: ["local-seo-services", "google-ads", "lead-generation", "whatsapp-automation", "seo-services"], industries: ["real-estate", "education", "technology", "manufacturing"] },
-      { slug: "mumbai", name: "Mumbai", context: "India's financial capital, with strong demand in finance, media, real estate and consumer brands, and very high local competition.", considerations: ["Suburb-specific intent across a long, linear city", "Finance and professional-services advertisers bidding heavily", "English, Hindi and Marathi queries"], services: ["seo-services", "google-ads", "meta-ads", "digital-pr", "local-seo-services", "cro"], industries: ["finance", "real-estate", "ecommerce", "professional-services", "hospitality"] },
-      { slug: "bangalore", name: "Bangalore", context: "The country's technology centre: a high concentration of SaaS companies, startups and digitally sophisticated buyers.", considerations: ["Technically literate audience that checks claims", "SaaS and startup competition for talent and customers", "Search under both Bangalore and Bengaluru"], services: ["seo-services", "ai-seo-services", "content-seo", "linkedin-ads", "technical-seo", "cro"], industries: ["saas", "technology", "b2b", "education", "ecommerce"] },
-      { slug: "hyderabad", name: "Hyderabad", context: "A fast-growing technology, pharmaceutical and healthcare market with expanding commercial districts.", considerations: ["Pharma, healthcare and IT services demand", "Telugu and English search behaviour", "Rapidly developing western corridor"], services: ["seo-services", "local-seo-services", "google-ads", "linkedin-marketing", "lead-generation"], industries: ["healthcare", "technology", "real-estate", "education"] },
-      { slug: "pune", name: "Pune", context: "An education, automotive, manufacturing and IT city with a large student and young-professional population.", considerations: ["Education and automotive sectors", "Manufacturing and B2B supply chains", "Marathi and English queries"], services: ["seo-services", "google-ads", "lead-generation", "local-seo-services", "linkedin-marketing"], industries: ["education", "automotive", "manufacturing", "technology"] },
-      { slug: "jaipur", name: "Jaipur", context: "A tourism, jewellery, handicraft and growing startup market, with strong export and hospitality demand.", considerations: ["Tourism and hospitality seasonality", "Export-oriented ecommerce", "Hindi-first local search"], services: ["local-seo-services", "ecommerce-seo", "meta-ads", "instagram-marketing", "google-maps-seo", "international-seo"], industries: ["hospitality", "travel", "ecommerce", "local-business"] },
-    ],
-  },
-  {
-    slug: "usa",
-    name: "USA",
-    short: "US",
-    context:
-      "The largest and most competitive digital market. Paid costs are high, privacy rules differ by state and buyers expect polished, fast experiences. Most strategies need to be regional or vertical to be affordable.",
-    considerations: [
-      { title: "State-level privacy", body: "Consent and data handling requirements vary by state and affect tracking and remarketing design." },
-      { title: "Cost of paid demand", body: "Click costs in legal, finance and SaaS reward tight targeting and strong conversion rates." },
-      { title: "Regional strategy", body: "National visibility is expensive. Metro and state-level plans often produce better economics." },
-    ],
-    services: ["seo-services", "ai-seo-services", "google-ads", "cro", "linkedin-ads", "content-marketing"],
-    industries: ["saas", "legal", "finance", "healthcare", "home-services"],
-    cities: [
-      { slug: "new-york", name: "New York", context: "Borough- and neighbourhood-level competition across finance, legal, real estate, media and hospitality, with some of the highest paid costs anywhere.", considerations: ["Neighbourhood-specific local intent", "Very high cost per click in professional services", "Dense review ecosystems"], services: ["local-seo-services", "google-ads", "landing-page-optimization", "digital-pr", "seo-services", "cro"], industries: ["finance", "legal", "real-estate", "hospitality", "professional-services"] },
-    ],
-  },
-  {
-    slug: "uk",
-    name: "UK",
-    short: "UK",
-    context:
-      "A mature search market with strict advertising standards and data protection rules. British spelling, pricing and proof points are expected; content written for another market is recognised quickly.",
-    considerations: [
-      { title: "UK GDPR and consent", body: "Tracking and marketing communications must be designed for explicit, recorded consent." },
-      { title: "Advertising standards", body: "Claims need substantiation, particularly in finance, health and legal categories." },
-      { title: "Localisation", body: "Spelling, terminology and regulation references should be British, not adapted American copy." },
-    ],
-    services: ["seo-services", "local-seo-services", "google-ads", "digital-pr", "cro", "content-seo"],
-    industries: ["finance", "legal", "professional-services", "ecommerce", "accounting"],
-    cities: [
-      { slug: "london", name: "London", context: "A global hub for finance, technology, legal and professional services, with borough-level local search and international audiences.", considerations: ["Borough and postcode-level intent", "International buyers researching UK providers", "Highly competitive professional-services search"], services: ["seo-services", "local-seo-services", "google-ads", "linkedin-ads", "digital-pr", "international-seo"], industries: ["finance", "legal", "professional-services", "technology", "hospitality"] },
-    ],
-  },
-  {
-    slug: "uae",
-    name: "UAE",
-    short: "AE",
-    context:
-      "A bilingual, high-income market with a large expatriate population. English and Arabic search coexist, WhatsApp is widely used for business and sectors such as real estate, healthcare and hospitality are heavily advertised.",
-    considerations: [
-      { title: "English and Arabic", body: "Both languages matter, and Arabic content needs native writing and right-to-left design, not translation alone." },
-      { title: "Sector regulation", body: "Healthcare, real estate and finance advertising require approvals from the relevant authorities." },
-      { title: "Expat search behaviour", body: "Audiences search with habits formed in their home countries, which widens the keyword landscape." },
-    ],
-    services: ["local-seo-services", "google-ads", "meta-ads", "whatsapp-automation", "international-seo", "lead-generation"],
-    industries: ["real-estate", "hospitality", "healthcare", "travel", "professional-services"],
-    cities: [
-      { slug: "dubai", name: "Dubai", context: "Intense competition in real estate, hospitality, healthcare and professional services, serving residents, investors and visitors at once.", considerations: ["Community and development names as search terms", "International investor audiences", "Bilingual English and Arabic demand"], services: ["local-seo-services", "google-ads", "meta-ads", "whatsapp-automation", "lead-generation", "international-seo"], industries: ["real-estate", "hospitality", "healthcare", "travel", "professional-services"] },
-    ],
-  },
-  {
-    slug: "canada",
-    name: "Canada",
-    short: "CA",
-    context:
-      "A bilingual market with strict anti-spam and privacy legislation. Search demand is concentrated in a few large metros, and US competitors often rank for Canadian queries.",
-    considerations: [
-      { title: "English and French", body: "Quebec requires French-language content; hreflang and localisation need care." },
-      { title: "Anti-spam law", body: "Email and messaging programmes must meet express consent requirements." },
-      { title: "Competing with US sites", body: "Clear Canadian signals in content, pricing and structure help the right version rank." },
-    ],
-    services: ["seo-services", "international-seo", "local-seo-services", "google-ads", "email-marketing"],
-    industries: ["finance", "real-estate", "technology", "professional-services"],
-    cities: [
-      { slug: "toronto", name: "Toronto", context: "Canada's largest business centre, strong in finance, technology, real estate and professional services, with a highly multicultural audience.", considerations: ["Greater Toronto Area suburb targeting", "Finance and real-estate competition", "Multilingual communities"], services: ["local-seo-services", "seo-services", "google-ads", "linkedin-ads", "cro"], industries: ["finance", "real-estate", "technology", "professional-services"] },
-    ],
-  },
-  {
-    slug: "australia",
-    name: "Australia",
-    short: "AU",
-    context:
-      "A concentrated market of a few large cities separated by distance. Local search matters greatly for services, and Australian consumer law sets firm rules on claims and reviews.",
-    considerations: [
-      { title: "City concentration", body: "Most demand sits in five metros, each best treated as its own market." },
-      { title: "Consumer law", body: "Testimonials, reviews and performance claims are regulated and must be genuine." },
-      { title: "Localisation", body: "Australian spelling, terminology and seasons, which run opposite to the northern hemisphere." },
-    ],
-    services: ["local-seo-services", "google-maps-seo", "google-ads", "seo-services", "cro"],
-    industries: ["home-services", "real-estate", "finance", "construction", "hospitality"],
-    cities: [
-      { slug: "sydney", name: "Sydney", context: "Australia's largest city and financial centre, with suburb-level search behaviour and strong competition in trades, property and professional services.", considerations: ["Suburb-specific service searches", "Property and finance sectors", "High mobile and maps usage"], services: ["google-maps-seo", "local-seo-services", "google-ads", "seo-services", "landing-page-optimization"], industries: ["home-services", "real-estate", "finance", "professional-services", "construction"] },
-    ],
-  },
-  {
-    slug: "singapore",
-    name: "Singapore",
-    short: "SG",
-    context:
-      "A compact, high-trust, English-first market that also serves as a regional headquarters for Southeast Asia. Competition is dense and buyers are sophisticated.",
-    considerations: [
-      { title: "Regional gateway", body: "Many strategies need to serve Singapore and the wider region with clear market targeting." },
-      { title: "Data protection", body: "Consent and do-not-call requirements shape lead generation and messaging." },
-      { title: "Multilingual audience", body: "English leads, with Mandarin, Malay and Tamil relevant for some consumer categories." },
-    ],
-    services: ["seo-services", "international-seo", "linkedin-ads", "google-ads", "ai-seo-services"],
-    industries: ["finance", "b2b", "technology", "logistics", "education"],
-    cities: [],
-  },
-  {
-    slug: "europe",
-    name: "Europe",
-    short: "EU",
-    context:
-      "Not one market but many: different languages, search habits, competitors and legal details under a shared privacy framework. Sequencing markets well matters more than entering them all.",
-    considerations: [
-      { title: "GDPR and consent", body: "Analytics and advertising must work with consent rates that vary by country." },
-      { title: "Language by market", body: "Native keyword research and writing for each language; English-only coverage leaves most demand untouched." },
-      { title: "Site structure", body: "Domain and hreflang decisions made early prevent expensive rework." },
-    ],
-    services: ["international-seo", "technical-seo", "seo-services", "google-ads", "content-marketing", "digital-pr"],
-    industries: ["saas", "ecommerce", "manufacturing", "b2b", "travel"],
-    cities: [],
-  },
+export const locations: LocationRecord[] = [
+  india, usa, uk, uae, canada, australia, singapore, europe, indiaDelhi, indiaGurgaon, indiaNoida, indiaMumbai, indiaBangalore, indiaHyderabad, indiaPune, indiaJaipur, uaeDubai, ukLondon, usaNewYork, canadaToronto, australiaSydney,
 ];
 
-/** Service × location pages. Add only with genuinely local content. */
+validateLocations(locations);
+
+/** Countries and multi-country regions, in display order. */
+export const markets = locations.filter((l) => l.kind !== "city");
+
+export const citiesOf = (market: string) => locations.filter((l) => l.kind === "city" && l.parent === market);
+
+export function getMarket(slug: string) {
+  return markets.find((l) => l.slug === slug);
+}
+
+export function getCityRecord(market: string, city: string) {
+  return locations.find((l) => l.kind === "city" && l.parent === market && l.slug === city);
+}
+
+export function locationPath(l: Pick<LocationRecord, "kind" | "slug" | "parent">) {
+  return l.kind === "city" ? `/locations/${l.parent}/${l.slug}/` : `/locations/${l.slug}/`;
+}
+
+export function getLocationByPath(path: string) {
+  return locations.find((l) => locationPath(l) === path);
+}
+
+/* ------------------------------------------------------------------
+   Service + location pages. Each one must earn its place with content
+   that is about that service in that city. Never generate these in bulk.
+   ------------------------------------------------------------------ */
 export const locationServices: LocationService[] = [
   {
     country: "india",
@@ -164,6 +78,12 @@ export const locationServices: LocationService[] = [
       { title: "NCR overlap", body: "Many Gurgaon businesses serve Delhi, Noida and Faridabad. Site structure needs to reflect real service areas instead of a page per place." },
       { title: "B2B density", body: "A large share of demand is company-to-company. Content has to satisfy procurement and leadership readers, not only rank." },
       { title: "Sector and locality terms", body: "Real estate and local services are searched by sector number, road and development name. Those patterns shape the opportunity model." },
+    ],
+    faqs: [
+      { q: "Should our pages target Gurgaon or Gurugram?", a: "Both names are searched, and search engines treat them as the same place. We use one page per topic, name both naturally in the content and profiles, and track the two spellings together. Creating a separate page for each name splits authority and risks duplication." },
+      { q: "We serve all of Delhi NCR. Do we need a page for every city?", a: "Only where you have something different to say or a real presence. A clear service-area structure with a few strong pages usually outperforms a page per place. Thin pages that differ only by city name tend not to rank and can weaken the rest of the site." },
+      { q: "How is SEO for a B2B company in Gurgaon different?", a: "Search volumes are smaller and each enquiry is worth more, so the plan is built around buyer questions, comparison and evaluation content, and proof. Success is measured in qualified pipeline from organic search, not in traffic." },
+      { q: "Do you need to be based in Gurgaon to do this work?", a: "No. SERPMOZ works with Gurgaon businesses remotely. What matters is understanding how local buyers search, which we build into the research, and having access to your analytics, Search Console and sales data." },
     ],
   },
   {
@@ -182,8 +102,44 @@ export const locationServices: LocationService[] = [
       { title: "Entity clarity", body: "Consistent company details, addresses and leadership information across the web help AI systems describe a local business accurately." },
       { title: "Verification on your site", body: "Careful buyers check an AI answer against the source. The page they land on has to confirm what the assistant said." },
     ],
+    faqs: [
+      { q: "Can you make an AI assistant recommend our company?", a: "No one can guarantee that. AI answers change between runs and platforms. What we can do is measure how often and how accurately you appear for the questions your buyers ask, find out which sources those answers draw on, and strengthen your presence there." },
+      { q: "Do AI answers change when the question mentions Gurgaon or Delhi NCR?", a: "Often, yes. Adding a place tends to change which companies are named and which sources are cited. That is why we test prompts with and without Gurgaon, Gurugram, Delhi NCR and India, and report them separately." },
+      { q: "Is this separate from SEO?", a: "It builds on it. Assistants rely heavily on content that search engines can already crawl and trust. We plan AI visibility alongside SEO so the same pages, facts and citations serve both." },
+      { q: "How do you measure progress?", a: "By running a fixed set of buyer questions across the main assistants at regular intervals and recording whether you are named, how you are described and which sources are cited. Results are reported as ranges, because individual answers vary." },
+    ],
   },
 ];
+
+
+export function getLocationService(country: string, city: string, slug: string) {
+  return locationServices.find((l) => l.country === country && l.city === city && l.slug === slug);
+}
+
+export const locationServicesIn = (country: string, city: string) => locationServices.filter((l) => l.country === country && l.city === city);
+
+/* ------------------------------------------------------------------
+   Compact views for the homepage, menus and service pages.
+   ------------------------------------------------------------------ */
+const asCity = (l: LocationRecord): City => ({
+  slug: l.slug,
+  name: l.name,
+  context: l.hero.description,
+  considerations: l.considerations.map((c) => c.title),
+  services: l.services.map((s) => s.slug),
+  industries: l.industries.map((i) => i.slug),
+});
+
+export const countries: Country[] = markets.map((l) => ({
+  slug: l.slug,
+  name: l.name,
+  short: l.code,
+  context: l.hero.description,
+  considerations: l.considerations,
+  services: l.services.map((s) => s.slug),
+  industries: l.industries.map((i) => i.slug),
+  cities: citiesOf(l.slug).map(asCity),
+}));
 
 export function getCountry(slug: string) {
   return countries.find((c) => c.slug === slug);
@@ -193,12 +149,4 @@ export function getCity(country: string, city: string) {
   return getCountry(country)?.cities.find((c) => c.slug === city);
 }
 
-export function getLocationService(country: string, city: string, slug: string) {
-  return locationServices.find(
-    (l) => l.country === country && l.city === city && l.slug === slug,
-  );
-}
-
-export const featuredCities = countries.flatMap((c) =>
-  c.cities.map((city) => ({ ...city, country: c.slug, countryName: c.name })),
-);
+export const featuredCities = countries.flatMap((c) => c.cities.map((city) => ({ ...city, country: c.slug, countryName: c.name })));

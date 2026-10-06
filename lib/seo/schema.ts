@@ -1,6 +1,6 @@
 import { site } from "@/lib/config/site";
 import { absoluteUrl } from "@/lib/seo/metadata";
-import type { Crumb, Service } from "@/types";
+import type { Crumb, LocationRecord, Service } from "@/types";
 
 const ORG_ID = `${site.url}/#organization`;
 const WEBSITE_ID = `${site.url}/#website`;
@@ -109,6 +109,46 @@ export function serviceSchema(
           },
         }
       : {}),
+  };
+}
+
+/** The place a location page is about, as schema.org understands it. */
+function placeSchema(l: LocationRecord, market: LocationRecord): Json {
+  const geo = { "@type": "GeoCoordinates", latitude: l.latitude, longitude: l.longitude };
+  if (l.kind === "city") {
+    return {
+      "@type": "City",
+      name: l.name,
+      ...(l.aka?.length ? { alternateName: l.aka } : {}),
+      geo,
+      containedInPlace: { "@type": "Country", name: market.name, ...(market.countryCode ? { identifier: market.countryCode } : {}) },
+    };
+  }
+  if (l.kind === "region") return { "@type": "Place", name: l.name, geo };
+  return { "@type": "Country", name: l.name, ...(l.countryCode ? { identifier: l.countryCode } : {}), geo };
+}
+
+/**
+ * What SERPMOZ offers in a place. Deliberately a Service with areaServed and
+ * NOT a LocalBusiness: we work in these markets remotely and must not imply
+ * an office, address or opening hours there.
+ */
+export function locationServiceSchema(p: { location: LocationRecord; market: LocationRecord; path: string; services: { name: string; path: string }[] }): Json {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${absoluteUrl(p.path)}#service`,
+    name: p.location.hero.title,
+    serviceType: "Digital marketing",
+    description: p.location.seo.metaDescription,
+    url: absoluteUrl(p.path),
+    provider: { "@id": ORG_ID },
+    areaServed: placeSchema(p.location, p.market),
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `SERPMOZ services in ${p.location.inSentence}`,
+      itemListElement: p.services.map((s) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: s.name, url: absoluteUrl(s.path) } })),
+    },
   };
 }
 

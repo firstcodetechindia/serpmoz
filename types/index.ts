@@ -132,15 +132,13 @@ export type Industry = {
   related: string[];
 };
 
+/** Old, compact shapes. Still used by the homepage and menus; derived from LocationRecord in data/locations. */
 export type City = {
   slug: string;
   name: string;
-  /** What is specific about competing for demand in this city */
   context: string;
   considerations: string[];
-  /** Slugs in data/services: the work most often needed in this city */
   services: string[];
-  /** Slugs in data/industries: sectors with real weight in this city */
   industries: string[];
 };
 
@@ -148,14 +146,81 @@ export type Country = {
   slug: string;
   name: string;
   short: string;
-  /** What is specific about this market */
   context: string;
   considerations: { title: string; body: string }[];
-  /** Slugs in data/services: the work most often needed in this market */
   services: string[];
-  /** Slugs in data/industries: sectors with real weight in this market */
   industries: string[];
   cities: City[];
+};
+
+export type LocationKind = "country" | "region" | "city";
+
+/**
+ * One location page. Everything the page shows comes from this record:
+ * add a record and the route, map highlight, breadcrumbs, metadata, schema,
+ * related links and sitemap entry follow from it.
+ *
+ * Text fields marked "rich" may contain links written as [label](/path/).
+ */
+export type LocationRecord = {
+  slug: string;
+  kind: LocationKind;
+  name: string;
+  /** How the name reads mid-sentence: "the UAE", "India", "Gurgaon" */
+  inSentence: string;
+  /** Short code for the hero label: IN, UK, EU, or the country code for a city */
+  code: string;
+  /** ISO 3166-1 alpha-2 of the country; omitted for multi-country regions */
+  countryCode?: string;
+  continent: string;
+  /** Slug of the country a city belongs to */
+  parent?: string;
+  /** Key in data/locations/geo.generated.ts: which outline the map highlights */
+  market: string;
+  latitude: number;
+  longitude: number;
+  /** Other names people search by, e.g. Gurugram */
+  aka?: string[];
+  /** The wider area a city is searched within, e.g. "Delhi NCR" */
+  cluster?: string;
+  /** City slugs (same country) that are close enough to mention together */
+  nearby?: string[];
+  /** Key in data/images.ts */
+  photo: string;
+  seo: {
+    /** Without the brand; the site appends " | SERPMOZ". 46 characters at most. */
+    title: string;
+    metaDescription: string;
+    primaryKeyword: string;
+    secondaryKeywords: string[];
+    searchIntent: string;
+  };
+  hero: { title: string; description: string };
+  /** Three or four plain facts about the market, as text beside the map */
+  facts: { label: string; value: string }[];
+  /** The direct answer to the question the page is searched for */
+  answer: { question: string; text: string };
+  /** rich */
+  overview: { heading: string; paragraphs: string[] };
+  discovery: { heading: string; intro: string; channels: { name: string; body: string }[] };
+  /** rich */
+  searchAi: { heading: string; paragraphs: string[] };
+  /** Cities: why local search and maps matter here. rich */
+  local?: { heading: string; paragraphs: string[]; points: string[] };
+  opportunities: { title: string; body: string }[];
+  /** Services relevant here, each with its own local reasoning */
+  services: { slug: string; title: string; body: string; why: string }[];
+  industries: { slug: string; note: string }[];
+  /** Regional or local things a plan has to account for */
+  considerations: { title: string; body: string }[];
+  /** Why businesses here work with us. Capabilities only: no local offices, client counts or rankings. */
+  whyUs: { title: string; body: string }[];
+  /** Paths of related location pages beyond a country's own cities */
+  related: string[];
+  caseStudies: string[];
+  resources: string[];
+  faqs: { q: string; a: string }[];
+  cta: { title: string; body: string };
 };
 
 export type LocationService = {
@@ -169,6 +234,8 @@ export type LocationService = {
   metaDescription: string;
   intro: string;
   localFactors: { title: string; body: string }[];
+  /** Questions specific to this service in this city */
+  faqs: { q: string; a: string }[];
 };
 
 export type ResourceCategory = {

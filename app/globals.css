@@ -70,6 +70,10 @@
   --animate-ping-soft: ping-soft 2.8s cubic-bezier(0, 0, 0.2, 1) infinite;
   --animate-marquee: marquee 48s linear infinite;
 
+  @keyframes location-glow {
+    0%, 100% { stroke-opacity: 0.18; }
+    50% { stroke-opacity: 0.5; }
+  }
   @keyframes tour {
     from { transform: scaleX(0); }
     to { transform: scaleX(1); }

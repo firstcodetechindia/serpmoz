@@ -1,7 +1,7 @@
 import { publishedCaseStudies } from "@/data/case-studies";
 import { industries } from "@/data/industries";
 import { legalDocs } from "@/data/legal";
-import { countries, locationServices } from "@/data/locations";
+import { locationPath, locations, locationServices } from "@/data/locations";
 import { articles } from "@/data/resources";
 import { services } from "@/data/services";
 import { absoluteUrl } from "@/lib/seo/metadata";
@@ -37,12 +37,10 @@ export const sitemapGroups: Record<string, () => SitemapEntry[]> = {
     { path: "/industries/", priority: 0.7 },
     ...industries.map((i) => ({ path: `/industries/${i.slug}/`, priority: 0.7 })),
   ],
+  // Every record in data/locations is included automatically.
   locations: () => [
-    { path: "/locations/", priority: 0.6 },
-    ...countries.flatMap((c) => [
-      { path: `/locations/${c.slug}/`, priority: 0.6 },
-      ...c.cities.map((city) => ({ path: `/locations/${c.slug}/${city.slug}/`, priority: 0.5 })),
-    ]),
+    { path: "/locations/", priority: 0.7 },
+    ...locations.map((l) => ({ path: locationPath(l), priority: l.kind === "city" ? 0.6 : 0.7 })),
     ...locationServices.map((l) => ({ path: `/locations/${l.country}/${l.city}/${l.slug}/`, priority: 0.6 })),
   ],
 };
