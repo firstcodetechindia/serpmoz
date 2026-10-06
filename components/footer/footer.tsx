@@ -102,13 +102,10 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Wordmark: an outline until the visitor reaches the bottom, then it rises in 3D and its colours keep moving */}
-      <div aria-hidden className="footer-word relative flex justify-center overflow-hidden border-t border-white/10 px-3 pt-4 select-none">
+      {/* Wordmark: an outline until the visitor reaches the bottom, then it fills with colours that keep moving */}
+      <div aria-hidden className="relative flex justify-center overflow-hidden border-t border-white/10 px-3 pt-4 select-none">
         <span className="footer-word-outline">SERPMOZ</span>
-        <span className="footer-word-solid">
-          <span className="footer-word-depth">SERPMOZ</span>
-          <span className="footer-word-face">SERPMOZ</span>
-        </span>
+        <span className="footer-word-face">SERPMOZ</span>
       </div>
 
       <div className="relative border-t border-white/12 bg-navy-deep">
