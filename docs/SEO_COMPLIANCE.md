@@ -164,11 +164,13 @@ URL rules:
 - [ ] Links to at least two related services, one industry and one location.
 
 ### Location pages
-- [ ] Passes `validateLocations` (coordinates, hero, four facts, services, industries, related locations, FAQs).
-- [ ] Says things that are only true of that place. If the name could be swapped, do not publish.
-- [ ] Uses the local words people search: locality names, "in [city]", "near me" in an FAQ.
-- [ ] States plainly how the market is served (remote, or from which office).
-- [ ] Service-in-a-city pages are written by hand, one at a time. No templates.
+- [ ] Passes `validateLocations`, `npm test` and `npm run seo:check` with no errors; score 85 or more.
+- [ ] Says only what is true without local experience: common-knowledge facts, how the service works, what SERPMOZ does. No claims about how people in the place search, choose or behave, no market size, growth, competition or adoption statements.
+- [ ] No lists of localities written for keywords, no "near me" sections. A locality may appear only where it helps set up a listing or page correctly.
+- [ ] States plainly, once, that the market is served remotely. No "our office", "our team in", "local team".
+- [ ] One plain H1 ("AI SEO Services in Gurgaon"), a 40 to 80 word answer first, five to eight real FAQs, an honest "what nobody can promise" block.
+- [ ] Related links are relevant: parent market, nearby cities of the same market, other services in the place. No cross-links to unrelated cities.
+- [ ] Written by hand, one at a time. No templates; the swap test (place names removed) must not show near-duplicates.
 
 ### Articles
 - [ ] Named author with a bio page, publish date, last-updated date.

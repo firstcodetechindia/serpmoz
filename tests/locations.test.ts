@@ -81,19 +81,27 @@ test("every service listed on a place has its own page for that place", () => {
   }
 });
 
-test("local service pages are flat, unique and say something of their own", () => {
-  const sentences = new Map<string, string>();
-  let repeats = 0;
+test("local service pages are flat, plain text and promise nothing", () => {
   for (const p of localServices) {
     const at = localServicePath(p);
     assert.match(at, /^\/[a-z0-9-]+\/$/, at);
     assert.doesNotMatch(JSON.stringify(p), /\]\(\/|https?:|[\u2013\u2014]/, `${at}: links or dashes in plain text`);
-    assert.doesNotMatch(p.faqs[3].a, /[₹$£€%]/, `${at}: figures in the cost answer`);
-    for (const s of [p.intro, p.answer.text, ...p.localFactors.map((f) => f.body), ...p.searches.map((x) => x.body)].flatMap((t) => t.split(". "))) {
+    const cost = p.faqs.find((f) => /cost|price|pricing|fee/i.test(f.q));
+    if (cost) assert.doesNotMatch(cost.a, /[₹$£€%]|\d/, `${at}: figures in the cost answer`);
+  }
+});
+
+test("no sentence is reused between local service pages", () => {
+  const seen = new Map<string, string>();
+  const repeats: string[] = [];
+  for (const p of localServices) {
+    const at = localServicePath(p);
+    const blocks = [p.intro, p.answer.text, ...p.context.paragraphs, ...p.audiences.map((x) => x.body), ...p.challenges.map((x) => x.body), ...p.approach.map((x) => x.body), ...p.expectations.paragraphs];
+    for (const s of blocks.flatMap((t) => t.split(/[.?] /))) {
       if (s.split(" ").length < 10) continue;
-      if (sentences.has(s) && sentences.get(s) !== at) repeats++;
-      sentences.set(s, at);
+      if (seen.has(s) && seen.get(s) !== at) repeats.push(`${seen.get(s)} and ${at}: "${s.slice(0, 70)}"`);
+      seen.set(s, at);
     }
   }
-  assert.equal(repeats, 0, "sentences repeated between local service pages");
+  assert.deepEqual(repeats, [], "sentences repeated between local service pages");
 });

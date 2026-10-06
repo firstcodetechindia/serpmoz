@@ -32,15 +32,15 @@ export const location: LocationRecord = {
   },
 
   hero: {
-    title: "Digital Marketing Agency and SEO Company for Europe",
+    title: "Digital Marketing Agency for Europe",
     description:
-      "Europe is not one market. It is a collection of countries with their own languages, search results, competitors, payment habits and regulators, joined by a shared approach to privacy. SERPMOZ helps companies choose which countries to enter, structure a multilingual site correctly and localise for each audience instead of translating one message many times.",
+      "Europe is not one market. It is a collection of countries with their own languages, search results, competitors, payment systems and regulators, and the European Union's members share a common privacy law. SERPMOZ helps companies choose which countries to enter, structure a multilingual site correctly and localise for each audience instead of translating one message many times.",
   },
 
   facts: [
     { label: "Languages we plan for", value: "Each target market's own language, researched and written natively" },
-    { label: "Where discovery happens", value: "Country-specific Google results, national marketplaces, comparison and review sites" },
-    { label: "Sectors with weight", value: "Software, ecommerce, manufacturing, B2B services, travel" },
+    { label: "Platforms we assess", value: "Country-specific Google results, national marketplaces, comparison and review sites" },
+    { label: "Sectors we plan for", value: "Software, ecommerce, manufacturing, B2B services, travel" },
     { label: "How we approach it", value: "Market by market, in a deliberate sequence" },
   ],
 
@@ -52,41 +52,41 @@ export const location: LocationRecord = {
   overview: {
     heading: "About digital growth in Europe",
     paragraphs: [
-      "A company that performs well in one European country has proved very little about the next. Germany, France, Spain, Italy, the Netherlands, Poland and the Nordic countries each have their own language, their own established competitors and their own search results. Even where a language crosses a border, as German does into Austria and Switzerland or French into Belgium, vocabulary, pricing and expectations shift. The central discipline for a digital marketing agency here is [international SEO](/international-seo/): deciding where to compete, and making sure each country sees the version meant for it.",
+      "A company that performs well in one European country has proved very little about the next. Germany, France, Spain, Poland and the Nordic countries, like the rest of the continent, each have their own language, their own established competitors and their own search results. Even where a language crosses a border, as German does into Austria and Switzerland or French into Belgium, vocabulary, currency or tax treatment can change with it. The central discipline for a digital marketing agency here is [international SEO](/international-seo/): deciding where to compete, and making sure each country sees the version meant for it.",
       "Market selection deserves more attention than it usually gets. The instinct is to translate the site into five languages and launch everywhere. The result is usually five thin presences that none of the local competitors need to worry about. We prefer to size demand country by country, look at who already holds the results, weigh the cost of proper localisation and support, and then enter in sequence. One market done properly teaches more than several done lightly.",
-      "Localisation is a different task from translation. A translated page carries the original keywords, examples, units, proof and tone into a language where people may search with other words and trust other signals. German buyers often expect thorough detail and a formal legal notice. Dutch and Nordic audiences are comfortable in English for some software purchases but not for consumer goods. We combine native research with [content marketing](/content-marketing/) written for each market by people who live in the language.",
-      "Privacy rules are a shared feature of the region. GDPR and the related cookie consent requirements apply across the European Union, and national regulators interpret them with differing strictness. For marketers this affects what analytics can see and how advertising platforms optimise. The United Kingdom now sits outside the EU with its own closely related regime and a distinct search market, so it has a separate page on [digital growth in the UK](/digital-marketing-agency-uk/).",
+      "Localisation is a different task from translation. A translated page carries the original keywords, examples, units, proof and tone into a language where the words in use and the legal furniture of a website can both differ. A German commercial site, for example, is expected to carry a formal legal notice. Whether English alone is enough for your product in a given country is something we test with native keyword research and a small paid campaign, not something we assume. We combine that research with [content marketing](/content-marketing/) written for each market by people who live in the language.",
+      "Privacy rules are a shared feature of the region. GDPR and the related cookie consent requirements apply across the European Union, and each member state has its own regulator to enforce them. For marketers this affects what analytics can see and how advertising platforms optimise. The United Kingdom now sits outside the EU with its own closely related regime and a distinct search market, so it has a separate page on [digital growth in the UK](/digital-marketing-agency-uk/).",
     ],
   },
 
   discovery: {
     heading: "How customers discover businesses in Europe",
     intro:
-      "Discovery differs from country to country, which is the main reason a single European plan rarely works. The channels below exist in most markets, but the specific platforms and their weight change at each border.",
+      "We do not generalise about how Europeans find a business, because the platforms change at each border and we have no survey to quote. For every country on your list we check the channels below afresh, starting from your own sales and analytics data for that country.",
     channels: [
       {
         name: "Google, one country at a time",
-        body: "Google is the dominant search engine across most of Europe, but each country version returns different results, competitors and features. A few markets also have a local search engine with a real following, which is worth checking before a launch.",
+        body: "Google is the main search engine to plan around across most of Europe, and it runs a separate set of results for each country and language. A few countries also have a home-grown search engine, which we check for before a launch there.",
       },
       {
         name: "National and regional marketplaces",
-        body: "Amazon is strong in several large European countries, while others are led by home-grown marketplaces with loyal shoppers. Fashion, electronics and home goods each have their own influential platforms, so marketplace strategy must be set per country.",
+        body: "Amazon operates dedicated sites for some European countries and not others, and several countries have home-grown marketplaces of their own. For each target country we list the marketplaces that carry your category, so marketplace strategy is set per country.",
       },
       {
         name: "Price comparison and review platforms",
-        body: "Price comparison sites are an established habit in several markets, notably in German-speaking countries. Independent review and trust-seal services influence purchase decisions, and the one that matters differs between countries.",
+        body: "Price comparison sites and independent review or trust-seal services are national businesses, so the names differ from one country to the next. We identify which ones list your competitors in each market and whether a listing there is worth the terms.",
       },
       {
         name: "LinkedIn and trade channels for B2B",
-        body: "LinkedIn is used across Europe for business research, with engagement and language preferences varying by country. Industrial and manufacturing buyers also rely on trade fairs, supplier directories and specialist publications that are specific to each market.",
+        body: "LinkedIn operates across Europe and lets campaigns be set by country and language. Industrial and manufacturing sectors also have trade fairs, supplier directories and specialist publications that are specific to each market, and we map those for your sector before planning B2B activity.",
       },
       {
         name: "Social platforms and messaging",
-        body: "Instagram, YouTube, TikTok and Facebook are used everywhere, though creators, formats and humour are local. WhatsApp is the usual messaging app in much of the continent and is used to contact smaller businesses in several countries.",
+        body: "Instagram, YouTube, TikTok and Facebook operate in every European country, but an advert or post has to be made in the local language by someone who writes it natively. If you take enquiries by WhatsApp or another messaging app, we check that the number, hours and language are right for each country.",
       },
       {
         name: "AI assistants in the local language",
-        body: "People increasingly ask AI assistants for recommendations in their own language, and the answers draw on sources written in that language. A brand documented only in English may be absent from a German or Italian answer even when it sells there.",
+        body: "An AI assistant asked a question in German or Italian has German or Italian sources to draw on first. During the audit we put the same questions about your category to assistants in each target language and record whether your brand appears and how it is described.",
       },
     ],
   },
@@ -94,32 +94,32 @@ export const location: LocationRecord = {
   searchAi: {
     heading: "Search and AI discovery in Europe",
     paragraphs: [
-      "Each European country is a separate search market with its own index of competitors. Keyword demand cannot be translated: the German term with the most searches is often not the dictionary equivalent of the English one, and compound words, formal and informal address and regional variants all change results. Spanish for Spain differs from Latin American usage, and Portuguese for Portugal from Brazilian. Native research per market is the foundation of [SEO across Europe](/seo-services/), and it frequently changes which products a company chooses to promote first.",
-      "Site structure decides whether that research pays off. Country domains, subdirectories and subdomains each have advantages, and the right choice depends on resources, brand and how many markets are planned. Hreflang annotations tell search engines which language and country version to show, and errors here are among the most common faults we find: the wrong country page ranking, or versions competing with one another. Getting this right is detailed [technical SEO](/technical-seo/) work, and it needs to be kept up as pages are added.",
-      "AI assistants and AI summaries in search are appearing across European languages at different speeds, and their availability can vary by country. They tend to rely on sources in the language of the question, so local-language pages, press coverage earned through [digital PR](/digital-pr/) and consistent company information all contribute. AI answers vary by tool, language and moment, and nobody can guarantee placement in them. We measure how a brand is described in each market and report it without embellishment.",
+      "Each European country is a separate search market with its own index of competitors. Keyword demand cannot be translated: the German term worth targeting need not be the dictionary equivalent of the English one, and compound words, formal and informal address and regional variants all change results. Spanish for Spain differs from Latin American usage, and Portuguese for Portugal from Brazilian. Native research per market is the foundation of [SEO across Europe](/seo-services/), and it can change which products a company chooses to promote first.",
+      "Site structure decides whether that research pays off. Country domains, subdirectories and subdomains each have advantages, and the right choice depends on resources, brand and how many markets are planned. Hreflang annotations tell search engines which language and country version to show, and errors here are a common fault on multilingual sites: the wrong country page ranking, or versions competing with one another. Getting this right is detailed [technical SEO](/technical-seo/) work, and it needs to be kept up as pages are added.",
+      "AI assistants and AI summaries in search do not reach every European language at the same time, and their availability can vary by country. They tend to rely on sources in the language of the question, so local-language pages, press coverage earned through [digital PR](/digital-pr/) and consistent company information all contribute. AI answers vary by tool, language and moment, and nobody can guarantee placement in them. We measure how a brand is described in each market and report it without embellishment.",
     ],
   },
 
   opportunities: [
     {
       title: "Entering fewer markets, properly",
-      body: "Competitors that launched in many countries at once often have weak, translated pages in each. A business that commits fully to one or two markets can overtake them there.",
+      body: "A site launched in many countries at once has to spread one budget across all of them. If you commit fully to one or two markets first, each gets native research, proper pages and enough data to judge.",
     },
     {
       title: "Native keyword research",
-      body: "Translated keyword lists miss the terms local buyers really use. Research done in the language regularly uncovers demand that international competitors have overlooked.",
+      body: "A translated keyword list contains the words a translator chose. Research done in the language starts from what is typed into search there, and it can change which products you lead with.",
     },
     {
       title: "Fixing hreflang and duplication",
-      body: "Many multilingual sites send mixed signals about which page belongs to which country. Correcting this can recover visibility from pages that already exist.",
+      body: "A multilingual site can send mixed signals about which page belongs to which country. Correcting this can recover visibility from pages that already exist.",
     },
     {
       title: "Local payment and delivery expectations",
-      body: "Preferred payment methods differ sharply between countries, from bank-based payments and invoices to cards and wallets. Offering the familiar option, and stating delivery and returns clearly, removes a common reason for abandoned baskets.",
+      body: "Several European countries have their own bank-based payment schemes alongside cards and wallets. For each market we check that checkout offers the national option where one exists, and that delivery and returns terms are stated in the local language.",
     },
     {
       title: "Measurement that survives consent",
-      body: "Where many visitors decline tracking, businesses that configure consent correctly and model what is missing make better budget decisions than those reading incomplete figures at face value.",
+      body: "Visitors who decline tracking are missing from the figures. We configure consent correctly, use the modelling the platforms provide and label what is modelled, so budget decisions are not made from incomplete numbers read at face value.",
     },
   ],
 
@@ -140,19 +140,19 @@ export const location: LocationRecord = {
       slug: "content-seo",
       title: "Content SEO in Europe",
       body: "Produces pages built on native keyword research and written for each country's readers.",
-      why: "Translated content targets words that local searchers may not use and reads as foreign.",
+      why: "A translated page inherits its keywords from the source language, so each country's pages start from research done in that country's language.",
     },
     {
       slug: "digital-pr",
       title: "Digital PR in Europe",
       body: "Earns coverage and links from publications in each target country and language.",
-      why: "Authority is judged locally, and links from one country's press do little for standing in another.",
+      why: "Each country has its own press in its own language, so coverage has to be earned market by market.",
     },
     {
       slug: "ecommerce-seo",
       title: "Ecommerce SEO in Europe",
       body: "Improves category and product visibility for stores selling across borders, with correct currency and availability signals.",
-      why: "Marketplaces and national retailers dominate differently in each country, and product search terms rarely translate directly.",
+      why: "Marketplaces and national retailers differ from country to country, and product search terms rarely translate directly.",
     },
     {
       slug: "google-ads",
@@ -164,7 +164,7 @@ export const location: LocationRecord = {
       slug: "cro",
       title: "Conversion Rate Optimisation in Europe",
       body: "Adapts checkout, forms, trust signals and proof to what each country's buyers expect.",
-      why: "Payment preferences, legal notices and attitudes to detail differ enough that one page design underperforms somewhere.",
+      why: "Payment schemes, required legal notices and currencies differ by country, so one checkout design cannot be correct everywhere.",
     },
     {
       slug: "ai-seo-services",
@@ -175,19 +175,19 @@ export const location: LocationRecord = {
   ],
 
   industries: [
-    { slug: "saas", note: "Software firms expand across borders early, and find that English-only marketing reaches some countries far better than others." },
-    { slug: "ecommerce", note: "Cross-border retail is common, with success depending on local payment methods, delivery promises, returns and marketplace presence." },
-    { slug: "manufacturing", note: "Industrial and engineering companies, many of them specialised mid-sized firms, sell internationally through technical search and trade channels." },
-    { slug: "b2b", note: "Business buyers research in their own language and expect documentation, support and contracts suited to their country." },
-    { slug: "travel", note: "Tourism flows between European countries are heavy and seasonal, so destinations and operators market to several source countries in several languages." },
-    { slug: "technology", note: "Technology companies face buyers attentive to data residency, privacy and compliance, which belong in the marketing message." },
+    { slug: "saas", note: "For software firms we test, country by country, whether English-only marketing is enough or local-language pages are needed." },
+    { slug: "ecommerce", note: "For cross-border retail we check payment methods, delivery promises, returns terms and marketplace presence in each country." },
+    { slug: "manufacturing", note: "Industrial and engineering companies, including specialised mid-sized firms, sell internationally through technical search and trade channels." },
+    { slug: "b2b", note: "For business buyers we plan documentation, support information and contract terms in the language of each country served." },
+    { slug: "travel", note: "Destinations and operators that draw visitors from several European countries need pages and campaigns in each source country's language." },
+    { slug: "technology", note: "Where data residency, privacy and compliance are part of what you sell, they belong in the marketing message for each market." },
     { slug: "finance", note: "Financial services and fintech firms operate under national supervision even with shared European rules, which shapes how products may be promoted in each country." },
   ],
 
   considerations: [
     {
       title: "GDPR and cookie consent",
-      body: "Processing personal data requires a lawful basis, and non-essential cookies generally need prior consent. Consent rates and regulator expectations vary by country, so analytics and advertising setups should be designed for incomplete data from the start.",
+      body: "Processing personal data requires a lawful basis, and non-essential cookies generally need prior consent. Each country has its own regulator, and some visitors will decline, so analytics and advertising setups should be designed for incomplete data from the start.",
     },
     {
       title: "Market selection and sequence",
@@ -203,7 +203,7 @@ export const location: LocationRecord = {
     },
     {
       title: "Ecommerce, payments and consumer rights",
-      body: "Preferred payment methods, delivery norms and return habits differ between countries, and consumer protection rules give buyers firm rights on distance sales. Countries outside the EU, including Switzerland, Norway and the United Kingdom, add their own customs, tax and privacy arrangements.",
+      body: "Payment schemes and carriers differ between countries, and consumer protection rules give buyers firm rights on distance sales. Countries outside the EU, including Switzerland, Norway and the United Kingdom, add their own customs, tax and privacy arrangements.",
     },
   ],
 
@@ -218,7 +218,7 @@ export const location: LocationRecord = {
     },
     {
       title: "Native writers and reviewers",
-      body: "Keyword research and copy for each market are produced or reviewed by native speakers. AI assists with drafts and consistency, and is not used as a substitute for local judgement.",
+      body: "Keyword research and copy for each market are produced or reviewed by native speakers, coordinated remotely. AI assists with drafts and consistency, and is not used as a substitute for local judgement.",
     },
     {
       title: "Consent-aware measurement",
@@ -249,7 +249,7 @@ export const location: LocationRecord = {
     },
     {
       q: "Which languages do we need for Europe?",
-      a: "That depends on the countries you choose. Each target market should have content in its own language, based on native keyword research. English alone reaches part of the audience in some countries and very little in others, particularly for consumer products.",
+      a: "That depends on the countries you choose. Each target market should have content in its own language, based on native keyword research. Whether English alone is enough for your product in a particular country is tested with search data and a small campaign there before any translation budget is committed.",
     },
     {
       q: "Should we use country domains or one domain with language folders?",

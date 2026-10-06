@@ -5,91 +5,127 @@ export const pages: LocalServicePage[] = [
     place: "europe",
     service: "international-seo",
     seo: {
-      title: "International SEO Agency in Europe",
+      title: "International SEO Services in Europe",
       metaDescription:
-        "International SEO agency for Europe: market sequence, domain structure, hreflang and native keyword research for Germany, France, Spain and beyond.",
-      primaryKeyword: "international seo agency in europe",
+        "International SEO services for businesses in Europe: market selection, domain structure, hreflang and localisation researched in each language.",
+      primaryKeyword: "international seo services in europe",
       secondaryKeywords: [
-        "international seo services in europe",
+        "international seo agency in europe",
         "international seo company in europe",
-        "multilingual seo agency europe",
-        "hreflang services europe",
-        "international seo germany",
-        "international seo france and spain",
+        "multilingual seo services europe",
+        "hreflang implementation services",
+        "european seo agency",
       ],
     },
-    h1: "International SEO Agency in Europe for Entering One Country at a Time",
+    h1: "International SEO Services in Europe",
     intro:
-      "A company that ranks well in one European country has learned little about the next one. Germany, France, Spain, Italy, the Netherlands and Poland each return different results in a different language, with established national competitors already in place. International SEO is the work of deciding where to compete and making each country see the version meant for it. SERPMOZ does this work remotely for businesses expanding in Europe.",
+      "SERPMOZ provides international SEO for companies selling in more than one country in Europe, or preparing to. The work covers which markets to enter and in what order, how the site is structured across countries and languages, the hreflang annotations that connect equivalent pages, and localisation built on research in each language. It solves a common problem: the wrong country's page appearing in search, or no page appearing at all.",
     answer: {
-      question: "What does an international SEO company do for businesses in Europe?",
-      text: "It chooses which countries to enter and in what order, then builds the structure that lets each one find the right pages. That means sizing demand per country, picking between country domains and language folders, implementing hreflang across every version, and researching keywords natively in each language. SERPMOZ carries this out remotely, with native speakers producing or reviewing the research and copy for every market.",
+      question: "What do international SEO services include, and how do they help a business in Europe?",
+      text: "International SEO structures and localises a website so that search engines show the right country and language version to each searcher. For a business selling across borders it means choosing markets on evidence, deciding between country domains and folders on one domain, connecting equivalent pages with hreflang, and researching keywords in each language instead of translating a list. Success is read country by country, in qualified enquiries and revenue.",
     },
-    searches: [
+    context: {
+      heading: "Why international SEO matters for a business selling across Europe",
+      paragraphs: [
+        "The continent is made up of many countries, and a search engine treats each one as its own set of results. A page that performs well for searchers in one country has no automatic standing in the next, even where the two share a border and a currency. A company therefore has to decide, for every market, which version of its site should appear and whether that version deserves to. International SEO is the discipline that makes those decisions deliberate and keeps them consistent as the site grows.",
+        "Language adds a second layer. Several languages are spoken in more than one country: German in Germany, Austria and part of Switzerland, French in France, Belgium and Switzerland, Dutch in the Netherlands and Belgium. Pages in the same language for different countries look like duplicates to a search engine unless the site states clearly which is meant for whom. Vocabulary, prices, delivery terms and legal pages can also differ between those countries, so one shared page may serve neither audience well.",
+        "The commercial question comes before the technical one. Each added country brings localisation, customer support, legal review and maintenance, and those costs continue after launch. A business that translates its site into several languages at once can end up with thin versions that are hard to keep current. Sizing demand in each language, looking at who already holds the results and entering in a planned order usually spends the same budget to better effect. Rules on privacy and consumer rights vary too, and should be confirmed with your own adviser.",
+      ],
+    },
+    audiences: [
       {
-        title: "Buyers search in their own language",
-        body: "A procurement manager in Munich types a German compound word, and a shopper in Lyon uses a French phrase that no dictionary would give as the equivalent of your English term. Demand has to be researched inside each language, because it cannot be translated across.",
+        title: "Companies established at home and entering a second country",
+        body: "A business with a working site in one market that now wants customers in another. The first decisions, domain structure and which pages to localise, are the hardest to reverse later, so they are worth making on evidence before anything is built.",
       },
       {
-        title: "Country versions of Google differ",
-        body: "The same query returns different competitors and features in Madrid, Milan and Warsaw. A firm usually discovers it needs this service when its English or wrong-country page appears in a market where a local version already exists.",
+        title: "Multilingual sites where the wrong version keeps ranking",
+        body: "Firms that already publish in several languages and find the English page shown to French searchers, or two country versions competing. This is usually a fault in hreflang, canonicals or redirects, and it can be diagnosed and corrected on the existing site.",
       },
       {
-        title: "English reaches only some markets",
-        body: "Software buyers in Amsterdam, Stockholm and Copenhagen will often research in English. Consumers buying household goods in the same cities mostly search in Dutch, Swedish or Danish, so the language decision depends on the product as well as the country.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Market sequence comes before translation",
-        body: "Launching five translated sites at once tends to produce five thin presences that national competitors can ignore. We size search demand and competitive difficulty country by country, weigh the cost of support and localisation, and recommend an order of entry so that each market gets enough attention to work.",
-      },
-      {
-        title: "Shared languages split at borders",
-        body: "German crosses into Austria and Switzerland, French into Belgium and Switzerland, and Dutch into Flanders. Vocabulary, pricing, currency and delivery terms change at each border, so one language often needs more than one country version, each with its own hreflang code and its own proof.",
-      },
-      {
-        title: "Domain structure is hard to undo",
-        body: "Country domains send a clear national signal and split authority across many sites. Language folders on one domain pool authority and are cheaper to run. Which suits you depends on how many markets are planned and who maintains them. Changing course after launch is possible and expensive.",
-      },
-      {
-        title: "Non-EU countries need separate planning",
-        body: "Switzerland and Norway sit outside the European Union, and the United Kingdom is handled as its own market on this site. Customs, tax and privacy arrangements differ there, which affects what a country page may promise. Confirm the legal and tax detail with your own adviser before publishing.",
+        title: "Software and B2B firms selling to several countries at once",
+        body: "Companies whose product is the same everywhere but whose buyers research in their own language. They need to know where English is enough, where it is a barrier, and which pages justify full localisation first.",
       },
     ],
-    areas: [
-      { name: "Germany", note: "The largest German-language market, where thorough detail and native compound keywords decide visibility." },
-      { name: "France", note: "French research done from Paris outward, with separate thought for Belgian and Swiss French readers." },
-      { name: "Spain", note: "Spanish for Spain differs from Latin American usage, so pages need their own country targeting." },
-      { name: "Netherlands", note: "English works for some software searches here, while consumer queries stay firmly in Dutch." },
-      { name: "Poland", note: "A large single-language market where translated pages rarely outrank established Polish competitors." },
-      { name: "Nordic countries", note: "Sweden, Denmark, Norway and Finland are four languages and four search markets, never one block." },
+    challenges: [
+      {
+        title: "Shared languages create near-duplicate pages",
+        body: "A German page for Germany and one for Austria may differ only in price and contact details. Without correct, reciprocal hreflang and self-referencing canonicals, a search engine can fold them together and show one in both countries. The annotations are specified once and tested across the whole site.",
+      },
+      {
+        title: "Translated keywords miss how buyers search",
+        body: "The dictionary equivalent of an English term is often not the phrase used in another language, and compound words, formality and regional variants change the results. Research is carried out in each language by native specialists, and it can change which products are promoted first.",
+      },
+      {
+        title: "A structure chosen early is costly to change",
+        body: "Country domains send a clear location signal and each must earn its own authority. Folders on one domain share authority and cost less to run. Moving between the two later means a migration, so the options are modelled against your brand, platform and resources first.",
+      },
+      {
+        title: "Regional teams alter the site without a shared standard",
+        body: "Once several country teams or agencies can publish, templates drift and annotations break quietly. Written standards for regional publishing, a launch checklist for each new locale and monitoring of which page ranks in each country keep the structure intact.",
+      },
     ],
+    approach: [
+      {
+        stage: "Audit",
+        body: "We test the current structure, hreflang, canonicals and redirects, and split search visibility by country. The result shows where the wrong version appears, where versions compete with each other and where nothing appears at all.",
+      },
+      {
+        stage: "Decide",
+        body: "Demand and competitor strength are sized for each candidate market in its own language, then weighed against whether you can sell, deliver and support there. You receive a recommended entry order, a structure recommendation and the markets we would postpone, with reasons.",
+      },
+      {
+        stage: "Specify",
+        body: "Hreflang, canonical and URL rules are written as a specification your developers can follow, including an x-default for unmatched searchers and locale selectors in place of forced redirects. The build is validated on staging before release.",
+      },
+      {
+        stage: "Localise",
+        body: "Priority pages are adapted market by market from keyword research in that language, with terminology, units, currency and proof reviewed by native specialists. Machine drafts may speed the work, and a native reviewer signs off what is published.",
+      },
+      {
+        stage: "Review",
+        body: "Every market is read on the same measures each month: whether the correct version ranks, non-brand visibility, qualified traffic, and leads or revenue for that country. A strong home market is never allowed to hide a weak new one.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The first weeks go on the audit and the baseline by country, followed by the market and structure decisions. Targeting errors on an established site are usually corrected first, and their effect can show within weeks of search engines recrawling the pages. Localisation then proceeds in waves. Visibility in a country where the brand is unknown typically takes many months to build, depending on competition and on whether a new domain or an existing one is used.",
+        "Reports are segmented by country and language, state which figures are observed and which are estimated, and end with the next market and page priorities.",
+      ],
+      notGuaranteed: [
+        "A given position in any country's search results",
+        "That a search engine will always show the intended country version",
+        "The time a new market takes to produce enquiries or revenue",
+      ],
+    },
     sectors: [
-      { slug: "saas", note: "Software firms expand across borders early and find English-only pages reach Amsterdam far better than Milan or Madrid." },
-      { slug: "manufacturing", note: "Specialised industrial firms sell abroad through technical search, where the German or Italian term often differs from the English." },
-      { slug: "travel", note: "Destinations and operators market to several source countries at once, each searching in its own language and season." },
+      { slug: "saas", note: "The product is the same in every country, while buyers compare vendors in their own language before asking for a demonstration." },
+      { slug: "ecommerce", note: "Each country store needs its own currency, delivery and returns information, and product search terms rarely translate word for word." },
+      { slug: "manufacturing", note: "Specialised suppliers sell to engineers and buyers abroad, who search for technical terms and specifications in the language they work in." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ an international SEO company in Europe?",
-        a: "SERPMOZ is an AI-powered digital growth company that does international SEO for businesses entering or expanding across European countries. We work remotely and have no office in any European country. Collaboration happens by video call and shared tools, and native-language specialists are involved for research and copy in each market. If a physical presence in Berlin or Paris matters to you, we are the wrong choice, and it is better to know that now.",
+        q: "What is the difference between international SEO and translating a website?",
+        a: "Translation carries the meaning of your existing pages into another language. International SEO starts earlier and goes further: it decides which countries are worth entering, how the site is structured so each country sees its own version, and which words buyers there use when they search. A translated site with no structure behind it often ranks the wrong page, or none.",
       },
       {
-        q: "How do I choose an international SEO company in Europe?",
-        a: "Be wary of anyone who offers Europe as one market. A useful firm asks which countries, in what order, and on what evidence of demand. It researches keywords natively instead of translating an English list, explains the trade-off between country domains and language folders for your case, and audits hreflang across every version. Ask who will write the German, the French and the Polish, and how their work is reviewed.",
+        q: "Does SERPMOZ have an office in Europe?",
+        a: "No. SERPMOZ works with businesses in Europe through a remote consulting and delivery model. International SEO is done in your site's code, your search data and each market's language, so it depends on access to your developers and regional staff, and on native-language specialists for research and review. Meetings take place by video call and decisions are recorded in shared documents.",
       },
       {
-        q: "Which European countries do you cover for international SEO?",
-        a: "We plan and deliver work for Germany, France, Spain, Italy, the Netherlands, Belgium, Poland, Austria, Switzerland, Ireland, Portugal and the Nordic countries, always remotely. Coverage of a country depends on having a native speaker for research and review, which we arrange per project before work starts. The United Kingdom is treated as a separate market with its own page. We would sooner take on two countries properly than list twenty.",
+        q: "Can you guarantee rankings in every country we target?",
+        a: "No. Search engines decide what to show, competitors differ in each country, and a brand known at home may be unknown elsewhere. What can be done is to remove the errors that cause the wrong version to appear, build pages from research in the local language, earn references from publications in that country, and report plainly on each market so weak ones are visible.",
+      },
+      {
+        q: "How long does international SEO take to show results?",
+        a: "It depends on what is being fixed. Correcting hreflang or canonical errors on a site that already has authority can change which page appears within weeks. Earning visibility in a new country usually takes many months, because relevance and local references have to be built there. A new country domain generally starts further back than a new folder on an established domain.",
       },
       {
         q: "What does international SEO cost in Europe?",
-        a: "Cost follows the number of countries and languages, since each one adds native research, localisation and upkeep. The state of the existing site matters too: repairing a tangled hreflang setup or moving between domain structures takes more effort than a clean start. Competition differs by country, and markets with entrenched national players need more content and local authority. We scope after reviewing your structure and target markets, and quote per phase.",
+        a: "Cost follows the number of countries and languages, the state of the current site structure, how much content needs proper localisation and whether your developers or ours implement the changes. Repairing annotations on one domain is a small project. Entering several markets with native content is a larger, continuing one. The scope and its reasoning are set out after a growth audit.",
       },
       {
-        q: "Should we use country domains or one domain with language folders for Europe?",
-        a: "Either can work. Country domains such as a German or French national domain signal local commitment, and each has to earn its own authority and be maintained separately. Folders on a single domain share authority and are simpler for a small team. We look at how many markets you plan, your brand, your developers' capacity and what already exists, then recommend one structure and document the rules so it stays consistent as pages are added.",
+        q: "Is the United Kingdom covered by the same programme?",
+        a: "It can be planned alongside, and it is treated as its own market. The country has its own search results, its own currency and its own regulatory arrangements, and its English pages need to be distinguished from English pages meant for Ireland or for international visitors. The same structure and hreflang rules apply, with separate research and reporting.",
       },
     ],
   },
@@ -99,90 +135,125 @@ export const pages: LocalServicePage[] = [
     seo: {
       title: "Technical SEO Services in Europe",
       metaDescription:
-        "Technical SEO services in Europe for multilingual sites: hreflang audits, duplication control, speed and consent-aware tagging across country versions.",
+        "Technical SEO services for multi-country sites in Europe: crawling, indexing, hreflang, speed and migrations, delivered as tickets and verified.",
       primaryKeyword: "technical seo services in europe",
       secondaryKeywords: [
         "technical seo agency in europe",
         "technical seo company in europe",
-        "hreflang audit europe",
-        "multilingual technical seo",
-        "technical seo germany",
-        "technical seo netherlands",
-        "seo site migration europe",
+        "technical seo audit europe",
+        "multilingual site seo audit",
+        "site migration seo europe",
       ],
     },
-    h1: "Technical SEO Services in Europe for Multilingual, Multi-Country Sites",
+    h1: "Technical SEO Services in Europe",
     intro:
-      "Every language added to a European site multiplies its URLs and the room for error. A store with German, French and Dutch versions has three sets of pages that must point at one another correctly, load quickly from Hamburg to Lisbon, and avoid competing in the same results. Technical SEO keeps that structure sound as it grows. SERPMOZ works with businesses in Europe remotely, alongside their own developers.",
+      "SERPMOZ provides technical SEO for companies whose websites serve several countries or languages in Europe. The work finds what stops search engines reaching, rendering and indexing the pages that matter, turns each finding into a ticket developers can act on, and checks the fix after release. It suits large, multilingual, JavaScript-heavy or recently rebuilt sites, and any site about to migrate.",
     answer: {
-      question: "What does a technical SEO company do for businesses in Europe?",
-      text: "It makes a multi-country site crawlable, indexable and consistent. In practice that means auditing hreflang and canonical tags across every language version, removing duplication between near-identical pages for Germany and Austria or France and Belgium, checking rendering and speed for each market, and planning migrations so rankings in one country are not lost while another launches. SERPMOZ does this remotely and hands developers clear, testable rules.",
+      question: "What do technical SEO services cover, and why do they matter for a site serving Europe?",
+      text: "Technical SEO makes sure search engines can discover, crawl, render and index a website, and that pages load quickly and are marked up correctly. A site serving several countries multiplies its templates and URLs with every language added, which multiplies the room for duplication and misdirected crawlers. The service produces a ranked list of faults, developer-ready tickets, verified fixes and monitoring that catches new problems after each release.",
     },
-    searches: [
+    context: {
+      heading: "Why multi-country sites need technical SEO more than most",
+      paragraphs: [
+        "Every language or country version a site adds creates another copy of its templates: another set of category pages, product pages, filters and sitemaps. A fault that affected a few hundred URLs on a single-language site can affect several times as many once it is repeated across versions. Search engines have limited attention for any one site, and crawl time spent on duplicate or low-value URLs is time not spent on the pages a business wants found.",
+        "Sites built for several countries often try to help visitors by redirecting them according to IP address or browser language. Search engine crawlers tend to arrive from a small number of locations and may state no language preference, so a forced redirect can keep them from ever seeing the other versions. Giving each version its own crawlable address, and offering visitors a suggestion they can dismiss, avoids the problem. It is a typical example of a design decision with a search consequence nobody intended.",
+        "Consent is the other recurring theme. Websites serving visitors in this region generally show a consent banner and load analytics and advertising scripts only after a choice is made. How that banner and those scripts are implemented affects loading and layout stability, and it affects how much of the audience the analytics can see. The legal requirements are a matter for your own adviser. The technical work is to make whatever has been decided load cleanly and to read the resulting data with its gaps in mind.",
+      ],
+    },
+    audiences: [
       {
-        title: "The wrong country page ranks",
-        body: "The usual trigger is a search in Vienna that shows the German page with German prices and delivery terms, or a Brussels result pointing at the French site. Teams look for technical help once sales staff start reporting it.",
+        title: "Multilingual sites with many templates and country versions",
+        body: "Retailers, marketplaces and publishers whose page count grows with each language. Indexing problems on these sites are usually structural, so one template fix can correct a large share of the affected pages in every version.",
       },
       {
-        title: "Search Console shows duplicate warnings",
-        body: "Marketing leads in Amsterdam or Dublin often arrive after seeing reports that pages were excluded as duplicates, or that Google chose a different canonical. On multilingual sites this normally traces back to conflicting language and country signals.",
+        title: "Companies about to migrate, replatform or merge country sites",
+        body: "Moving several country domains onto one, or changing platform, puts existing visibility at risk in every market at once. Redirect mapping, staging checks and post-launch crawls reduce that risk and show quickly if something was missed.",
       },
       {
-        title: "A replatform or domain change",
-        body: "Many enquiries start with a planned move: merging country domains into one, changing ecommerce platform, or adding Spanish and Italian folders. People search for a technical SEO agency before the launch date, which is the right moment.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Hreflang must be reciprocal everywhere",
-        body: "Each page must reference every alternate version and be referenced back, with correct language and country codes. On a site covering a dozen European markets that is a large matrix, and one template error breaks it for all. We audit it by crawl and document the rule for developers.",
-      },
-      {
-        title: "Near-duplicates across shared languages",
-        body: "German for Germany, Austria and Switzerland may differ only in currency, delivery and a few words. Search engines can fold such pages together and show the wrong one. The fix combines hreflang, distinct local content and sensible canonical choices, decided market by market.",
-      },
-      {
-        title: "Consent banners change what loads",
-        body: "European privacy and consent rules mean many scripts wait for a visitor's choice. That affects tag firing, page speed measurements and what analytics records. We test pages in both consented and declined states. What your banner must do is a legal question for your own adviser.",
-      },
-      {
-        title: "Delivery speed and forced redirects",
-        body: "A site hosted for one country can respond slowly for visitors elsewhere on the continent, and redirects based on location or browser language often block crawlers from seeing other versions. We check delivery from several countries and suggest replacing forced redirects with a visible prompt.",
+        title: "Sites built on JavaScript frameworks by an in-house team",
+        body: "Engineering teams that ship often and want search requirements written the way they work: tickets with reproduction steps, expected behaviour and acceptance criteria, followed by verification and regression checks after each release.",
       },
     ],
-    areas: [
-      { name: "Germany", note: "Often the base version from which Austrian and Swiss pages are cloned, creating duplication to control." },
-      { name: "Switzerland", note: "One country with German, French and Italian pages, a demanding test of language and country codes." },
-      { name: "Belgium", note: "Dutch and French versions for one market, frequently confused with Netherlands and France pages." },
-      { name: "Netherlands", note: "Dutch stores often sell into Belgium and Germany early, so their templates need multi-country logic." },
-      { name: "Spain", note: "Spanish folders must be targeted at Spain so Latin American pages do not appear instead." },
-      { name: "Ireland", note: "English pages for Dublin buyers need separating from United Kingdom and United States versions." },
+    challenges: [
+      {
+        title: "Each language multiplies crawlable URLs",
+        body: "Filters, sort orders and tracking parameters already create many addresses on one site. Repeated across language folders or country domains, they can outnumber the real pages many times over. Crawl rules, canonicals and clean sitemaps are set per template so that the intended pages are the ones indexed.",
+      },
+      {
+        title: "Hreflang and canonical tags that contradict each other",
+        body: "A canonical pointing at another locale tells a search engine to ignore the page that hreflang says to show. Errors like this fail silently. We test annotations across the whole site, generate them from one source and add alerts for when a release breaks them.",
+      },
+      {
+        title: "Speed for visitors far from the server",
+        body: "A site hosted in one country can load slowly for visitors on the other side of the continent. Hosting, content delivery, image handling and script weight are reviewed against Core Web Vitals for each country version, since a single average can hide a slow market.",
+      },
+      {
+        title: "Fixes that are found and never released",
+        body: "An audit changes nothing until developers ship it. Findings are grouped by template and cause, ranked by likely impact and engineering effort, and walked through with your developers so the work fits their sprint planning. Items that would not affect search are left out.",
+      },
     ],
+    approach: [
+      {
+        stage: "Crawl",
+        body: "We crawl every country and language version in raw and rendered modes, pull Search Console data for each property and, where you can supply them, analyse server logs to see what crawlers request in practice.",
+      },
+      {
+        stage: "Diagnose",
+        body: "Issues are grouped by template and cause. For each, we record which versions are affected, how many pages are involved and what the fix is likely to change, so that priorities rest on consequence and not on a tool's score.",
+      },
+      {
+        stage: "Ticket",
+        body: "Each fix becomes a ticket with reproduction steps, the expected behaviour and acceptance criteria. Hreflang, canonical, redirect and structured data rules are written as specifications, so the same logic applies to every locale and to any added later.",
+      },
+      {
+        stage: "Verify",
+        body: "Fixes are checked on staging, then confirmed in production with a fresh crawl of the affected templates. Before a migration, redirect maps are tested in full. Search engines must recrawl pages before a change shows, which takes longer on large sites.",
+      },
+      {
+        stage: "Monitor",
+        body: "Scheduled crawls and alerts watch for regressions that new releases introduce, such as a stray noindex tag, a changed canonical or a missing return link. A specialist reviews the alerts and you receive a monthly summary of technical health.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "Crawling and data collection come first, then a diagnosis ranked by impact and effort, usually within the first month for a site of moderate size. Larger or more complex sites take longer to assess. Tickets follow, and the pace after that is set by your release schedule. The effect of a fix begins once it is live and the affected pages have been recrawled, which can be days on a small site and considerably longer on a large one.",
+        "Reporting shows indexed pages against intended pages, Core Web Vitals and organic visits to the templates that were fixed, for each country version separately.",
+      ],
+      notGuaranteed: [
+        "That every submitted page will be indexed by a search engine",
+        "A specific Core Web Vitals result on every device and connection",
+        "How soon search engines recrawl pages after a fix is released",
+      ],
+    },
     sectors: [
-      { slug: "ecommerce", note: "Cross-border stores multiply product URLs by language and currency, and faceted filters multiply them again." },
-      { slug: "saas", note: "Software sites built on JavaScript frameworks need every language version rendered and linked for crawlers." },
-      { slug: "technology", note: "Documentation and support portals in several languages create large URL sets that need clear index rules." },
+      { slug: "ecommerce", note: "Catalogues with filters and variants generate the largest numbers of duplicate addresses, and each country store repeats them." },
+      { slug: "travel", note: "Destination, date and availability pages are produced from templates in several languages, so indexing control decides which of them are found." },
+      { slug: "technology", note: "Product and documentation sites are often built on JavaScript frameworks, where rendering has to be confirmed before content can be indexed." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a technical SEO company in Europe?",
-        a: "SERPMOZ is an AI-powered digital growth company, and technical SEO for multilingual sites is part of what we do for businesses operating across European countries. The work is delivered remotely. We do not have an office or on-site engineers in Europe. Audits, tickets and reviews are shared through your own project tools, and we join developer calls in your working hours where the time difference allows.",
+        q: "How is technical SEO different from international SEO?",
+        a: "International SEO decides which countries to target, how the site is structured for them and how pages are localised. Technical SEO is about whether search engines can reach, render and index the pages at all, in any version. The two overlap at hreflang, canonicals and redirects. A multi-country site usually needs the technical foundation checked before the international plan can work.",
       },
       {
-        q: "How do I choose a technical SEO company in Europe?",
-        a: "Ask to see how they audit hreflang at scale, since a spot check of five pages proves nothing on a site with ten country versions. They should understand your platform, write tickets a developer can act on, and test with consent declined as well as accepted. Look for experience with shared-language duplication, such as German pages for Germany, Austria and Switzerland. Avoid anyone who delivers a long automated export and calls it an audit.",
+        q: "Does SERPMOZ have an office in Europe?",
+        a: "No, and for this service none is needed. SERPMOZ supports companies in Europe through a remote consulting and delivery model: crawls, log analysis and testing are carried out online, and findings reach your developers as tickets in the system they already use. What matters is access to the site, a staging environment and a named contact in engineering.",
       },
       {
-        q: "Which European countries does your technical SEO work cover?",
-        a: "Technical work is less tied to language than content is, so we can audit sites targeting Germany, France, Spain, Italy, the Netherlands, Belgium, Poland, Portugal, Ireland, Austria, Switzerland and the Nordic countries. All of it is done remotely by crawl, log analysis and access to your tools. Where a finding depends on reading local-language pages, such as judging whether two versions are true duplicates, a native reviewer is brought in.",
+        q: "Can you guarantee that technical fixes will raise our rankings?",
+        a: "No. Technical work removes obstacles; it does not decide where a page ranks once it can be read. If the pages are thin or the site has little authority, clean code will not change that. We can show before and after evidence for each fix, such as pages indexed and loading measures, and say plainly where the remaining limits are content or authority.",
+      },
+      {
+        q: "How long does technical SEO take to show results?",
+        a: "The clock starts when a fix is released, not when it is recommended. After that, search engines need to recrawl the affected pages. Indexing corrections on a small site may show within days or a few weeks. On a site with many country versions, recrawling is gradual and changes arrive in stages. Gains that depend on speed or rankings tend to follow more slowly.",
       },
       {
         q: "What does technical SEO cost in Europe?",
-        a: "The main drivers are the size of the site and the number of country and language versions, because every version has to be crawled and cross-checked. Platform matters: some systems make hreflang and canonical changes simple, others need custom development. A migration or domain consolidation is a larger project than a routine audit. Cost also depends on whether your developers implement the fixes or need detailed support from us throughout.",
+        a: "The main drivers are the size of the site, the number of templates and country versions, the technology it is built on and whether we advise your developers or implement changes ourselves. A one-off audit costs less than continuing verification and monitoring, and suits a stable site. A proposal follows a growth audit and explains what each part covers.",
       },
       {
-        q: "Should our site redirect European visitors by location or browser language?",
-        a: "Usually not automatically. A forced redirect can stop search engine crawlers from reaching your other country versions, and it frustrates a French speaker travelling in Germany or an English-speaking resident of Madrid. A common approach is to serve the requested page and show a small prompt suggesting the version that seems to fit, remembering the choice afterwards. We test how crawlers and real visitors from several countries experience your current setup before recommending a change.",
+        q: "Will a consent banner or cookie tool harm our search performance?",
+        a: "It need not. A banner that loads late, shifts the page or blocks content can affect loading measures and how a crawler sees the page, and those are implementation faults that can be fixed. What you must ask visitors, and when, is a legal question for your own adviser. Our part is to make the chosen setup load cleanly and remain crawlable.",
       },
     ],
   },
@@ -192,89 +263,125 @@ export const pages: LocalServicePage[] = [
     seo: {
       title: "Content SEO Services in Europe",
       metaDescription:
-        "Content SEO services in Europe built on native keyword research, with pages written for German, French, Spanish, Italian and Dutch readers, not translated.",
+        "Content SEO services for companies in Europe: keyword research in each language, topic clusters, briefs and pages reviewed by native speakers.",
       primaryKeyword: "content seo services in europe",
       secondaryKeywords: [
         "content seo agency in europe",
-        "content seo company in europe",
-        "multilingual content seo",
+        "seo content company in europe",
+        "multilingual seo content services",
         "seo content localisation europe",
-        "german seo content",
-        "seo content france and italy",
+        "seo copywriting services europe",
       ],
     },
-    h1: "Content SEO Services in Europe Written Natively for Each Market",
+    h1: "Content SEO Services in Europe",
     intro:
-      "A translated page carries English keywords, examples and proof into a language where people may search with other words and trust other signals. That is why so many European sites have pages in German, French and Italian that nobody finds. Content SEO here starts with research done inside each language, then writing by people who live in it. SERPMOZ provides this remotely for businesses publishing across European markets.",
+      "SERPMOZ provides content SEO for companies that need to be found by buyers in more than one language in Europe. We research what is searched for in each market, plan topics in clusters, write briefs, and produce or refresh pages with review by native speakers and subject experts. It is for businesses whose customers read and compare before they enquire, and whose translated pages earn little.",
     answer: {
-      question: "What does a content SEO agency do for businesses in Europe?",
-      text: "It finds what people in each target country search for, in their own words, and produces pages that answer those searches properly. The work covers native keyword and intent research, topic planning per market, briefs, writing or review by native speakers, and regular refreshing of existing pages. SERPMOZ does this remotely. AI assists with drafts and consistency, and local judgement on wording stays with a native editor.",
+      question: "What does content SEO involve, and how does it help a business reach buyers in Europe?",
+      text: "Content SEO plans, writes and maintains pages so they match what is being searched for and answer it well. Across several countries that means keyword research carried out in each language, pages adapted to the market instead of translated word for word, and review by someone who knows both the subject and the language. Results are measured by topic and by country: non-brand visits, enquiries and pipeline from content.",
     },
-    searches: [
+    context: {
+      heading: "Why translated content rarely does the work of local content",
+      paragraphs: [
+        "A translated page keeps the keywords, examples and structure of the original. Searchers in another language may describe the same need with a different phrase, ask different questions first, or expect a comparison where the original offered a guide. Search engines match pages to the wording and intent of the query, so a faithful translation can be accurate and still be aimed at words few searchers type. Research in the language itself is what shows the difference before money is spent on writing.",
+        "Europe has many languages, and several are shared between neighbouring countries with differences in vocabulary, spelling and formal address. A page written for readers in one country can read as slightly foreign in another that uses the same language, and details such as units, prices, product names and legal references may be wrong for the second audience. Deciding whether two countries can share a page, or need their own, is an editorial judgement made topic by topic.",
+        "Trust is assessed by readers and by search engines, and both look for signs that a page was written by someone who knows the subject. In another language those signs include natural phrasing, correct terminology and sources a reader there recognises. Machine translation and AI drafting are useful for speed, and they do not replace a native reviewer who would notice a wrong term. Where a topic touches health, money or legal matters, claims should also be checked by your own qualified adviser for that country.",
+      ],
+    },
+    audiences: [
       {
-        title: "The dictionary term is rarely searched",
-        body: "German searchers build compound nouns, and the one with real demand is often not the literal equivalent of the English phrase. The same holds in Polish and Dutch. Firms come to us after a translated page fails to appear for anything.",
+        title: "Companies with a strong home-language site and thin translations",
+        body: "The original site has depth and the other language versions are short copies of it. A content inventory per language shows which pages to rewrite from local research, which to merge and which markets have gaps worth filling first.",
       },
       {
-        title: "Formal or informal address matters",
-        body: "A reader in Paris or Berlin notices at once whether a page uses the formal or the familiar form of you. The choice depends on sector and audience, and it changes how queries are phrased in headings and questions.",
+        title: "B2B and software firms with long, research-led sales",
+        body: "Buyers read guides, comparisons and documentation before they speak to sales, often in their own language. Clusters built around their questions, and reviewed by your product experts, give each market pages that answer what is asked.",
       },
       {
-        title: "Questions differ in every country",
-        body: "People in Madrid, Milan and Warsaw type full questions in their own language, and the related questions shown in results differ between them. Each market needs its own list of questions to answer, drawn from its own results.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Expectations of detail differ",
-        body: "German buyers often expect thorough specifications, full terms and evidence before they enquire. Readers in the Netherlands and the Nordic countries tend to prefer shorter, direct copy. The same brief written to one length for every country will be too thin somewhere and too heavy elsewhere.",
-      },
-      {
-        title: "Proof has to be local",
-        body: "A case example from an American customer, prices in another currency, or imperial units weaken a page in France or Italy. We adapt examples, units, currencies and references for each country, and say plainly where you have no local proof yet instead of implying it.",
-      },
-      {
-        title: "One language, several countries",
-        body: "Spanish written for Spain differs from Latin American usage, and Portuguese for Portugal from Brazilian. German for Vienna or Zurich uses words that read oddly in Hamburg. A shared base text can be reused only after a native editor from the target country has revised it.",
-      },
-      {
-        title: "Regulated claims need local checking",
-        body: "Health, finance and comparative advertising claims are treated differently from country to country, and consumer law affects how prices and offers may be described. We write cautiously and flag anything that looks like a legal claim. Final approval of such wording should come from your own adviser.",
+        title: "Retailers and travel brands publishing guides in several languages",
+        body: "Buying guides and destination pages lose value as facts change. A refresh cycle for each language keeps them current, and consolidation removes overlapping articles that compete with each other for the same search.",
       },
     ],
-    areas: [
-      { name: "Germany", note: "Compound keywords and a preference for depth make native research essential before any brief is written." },
-      { name: "Austria", note: "Shares German with its neighbour, yet vocabulary and examples need an Austrian editor's revision." },
-      { name: "France", note: "Readers expect well-written French; anglicisms and literal translation are noticed and cost credibility." },
-      { name: "Italy", note: "Italian search terms and trusted references differ from Spanish ones, despite the languages looking close." },
-      { name: "Poland", note: "Polish grammar changes word endings, so keyword research must group the forms people really type." },
-      { name: "Sweden", note: "Swedish consumers read English well, but consumer queries and buying guides belong in Swedish." },
+    challenges: [
+      {
+        title: "Keyword demand has to be researched natively",
+        body: "A translated keyword list assumes other markets search the way your home market does. Native specialists research each language directly, read the live results for each topic and choose the page type that fits. The outcome sometimes reorders which products or services get attention first.",
+      },
+      {
+        title: "One language, more than one country",
+        body: "Where a language crosses a border, a single page may or may not serve both audiences. We compare search terms, results and commercial details for each country, then decide whether to share a page, adapt it or write separately, and record the reasoning.",
+      },
+      {
+        title: "Expert review is the bottleneck in every language",
+        body: "Your subject experts may not read every language you publish in. The workflow names who drafts, who edits, who checks facts and who approves for each market, so that nothing goes live on the strength of a translation alone.",
+      },
+      {
+        title: "More pages are not more visibility",
+        body: "Publishing the same thin article in several languages multiplies maintenance without adding value. A smaller set of well-briefed pages that completes a topic in one market usually earns more than partial coverage spread thinly across many of them.",
+      },
     ],
+    approach: [
+      {
+        stage: "Inventory",
+        body: "Every indexable page in each language is scored for visits, rankings, overlap and decay. Each address gets an action: keep, improve, merge or remove. The baseline records content-driven visits and enquiries by market, so later change can be measured against it.",
+      },
+      {
+        stage: "Research",
+        body: "Demand is researched in each target language, grouped into clusters and ranked by commercial value. Existing pages are given a role in the cluster and gaps become planned pages, with a note on which countries can share a page.",
+      },
+      {
+        stage: "Brief",
+        body: "Each page gets a brief: the main question to answer first, the follow-up questions, the sources to cite and the internal links to add. The production workflow is agreed for each language, including the native editor and the subject reviewer.",
+      },
+      {
+        stage: "Publish",
+        body: "New pages and refreshes ship together in cycles, with internal links added as part of the same work. Drafts may begin with AI assistance. An editor and a native reviewer check them, and unsupported claims are removed before publication.",
+      },
+      {
+        stage: "Review",
+        body: "Pages are read by cluster and by country: what ranks, what earns visits and what produces enquiries. Pages that earn nothing after a fair period are improved, merged or retired, and the plan for the next cycle is adjusted.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The inventory and topic map take the first weeks, followed by the first briefs and an agreed workflow. Publishing then runs in cycles. Refreshed pages that already rank can improve within weeks of being recrawled, while new clusters commonly need several months, and longer in closely contested subjects or in a market where the site is little known. The speed of review and approval on your side affects the pace as much as the writing does.",
+        "Each month you receive a report by cluster and country, with the pages published, what they earned, and an updated plan and refresh list.",
+      ],
+      notGuaranteed: [
+        "That a given page will rank for a given search term",
+        "A number of visits or enquiries from content in any market",
+        "That refreshed pages will regain the visibility they once had",
+      ],
+    },
     sectors: [
-      { slug: "b2b", note: "Business buyers research in their own language and expect documentation and terms suited to their country." },
-      { slug: "saas", note: "Feature and comparison pages need rewriting per market, since rival products differ in Germany, France and Spain." },
-      { slug: "finance", note: "Financial products are supervised nationally, so explanatory content must be written and approved for each country." },
+      { slug: "b2b", note: "Purchases are researched by several readers over time, and each takes in supporting material more readily in the language they work in." },
+      { slug: "saas", note: "Comparison, integration and pricing questions are asked before a trial, and thorough answers in the buyer's language can reduce doubt." },
+      { slug: "education", note: "Prospective students and their families research courses, entry requirements and costs in detail, often from another country and in another language." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a content SEO company in Europe?",
-        a: "We are an AI-powered digital growth company that plans and produces search content for businesses targeting European countries. Delivery is remote: there is no SERPMOZ office in Europe and we do not pretend otherwise. Research and writing for each language are done or reviewed by native speakers engaged for the project. AI helps with drafting and checking consistency, and a human editor approves every page before it reaches you.",
+        q: "What is the difference between content SEO and content marketing?",
+        a: "Content SEO starts from what is already being searched for and builds pages to meet that demand: guides, comparisons and service pages found through search and AI answers. Content marketing starts from what an audience should hear and distributes it through social, email, events and press as well. The first captures existing demand. The second can create new demand. Many firms need some of both.",
       },
       {
-        q: "How do I choose a content SEO company in Europe?",
-        a: "Start by asking who writes each language and where they live. Request a sample of native keyword research for one market and compare it with a translation of your English list; the differences show whether real research happened. Check that briefs are created per country, that someone adapts examples, units and proof, and that legal or regulated wording is flagged for your review. A single price per word for every language is a warning sign.",
+        q: "Does SERPMOZ have an office in Europe?",
+        a: "No. SERPMOZ delivers content work for clients in Europe through a remote consulting and delivery model. Research, briefs, drafts and reviews move through shared documents, and interviews with your experts happen by video call. The quality of content depends on native-language writers and reviewers and on time with the staff who know your product, which location does not change.",
       },
       {
-        q: "Which European countries do you write SEO content for?",
-        a: "We arrange native research and writing for German, French, Spanish, Italian, Dutch, Polish, Portuguese and the Nordic languages, which covers Germany, Austria, Switzerland, France, Belgium, Spain, Italy, the Netherlands, Poland, Portugal, Sweden, Denmark, Norway and Finland. Everything is coordinated remotely. For each new language we confirm a suitable native writer and reviewer before agreeing a schedule, and we will tell you if we cannot staff a market well.",
+        q: "Can you guarantee that our content will rank in each language?",
+        a: "No. Rankings depend on competitors, the authority of the site in that country and decisions made by search engines. What we can commit to is the method: research in the language, one clear target page per search, expert and native review, internal links, and a refresh cycle. We also report which pages earn nothing, so effort moves to what works.",
+      },
+      {
+        q: "How long does content SEO take to show results?",
+        a: "Improvements to pages that already have some visibility can register within weeks. New pages on contested topics often take several months, and a cluster tends to strengthen as more of it is published. In a country where the site is new, expect the slower end. We agree expectations per cluster and market at the start, and revise them as evidence arrives.",
       },
       {
         q: "What does content SEO cost in Europe?",
-        a: "Price depends on how many languages you publish in, since each needs its own research, writing and native review. Technical or regulated subjects cost more because they need a writer who knows the field and extra checking. Volume matters, as does whether existing pages can be revised or must be replaced. Markets with strong national publishers and competitors demand deeper pages. We scope by market and phase after reviewing what you already have.",
+        a: "Cost depends on how many pages and languages are involved, how specialist the subject is, how much native writing and review each market needs, and how much your own experts can contribute. Regulated or technical topics take more checking. The content inventory from the growth audit shows how much can be reused, and the proposal is scoped from that.",
       },
       {
-        q: "Can we translate our English content into other European languages with AI?",
-        a: "Machine translation gives a readable draft quickly, and it keeps the English keyword choices, structure and examples. That is the problem: the page may read correctly and still target words nobody in that country types. A workable process is native keyword research first, then a draft, which AI can assist, then revision by a native editor who changes terms, tone, examples and proof. Pages that carry legal or safety information need closer human review still.",
+        q: "Can we publish in English only and still reach buyers in other countries?",
+        a: "In some cases, partly. Whether English is enough depends on the product, the buyer and the country, and it is better tested than assumed. Research in the local language shows whether demand exists there that English pages cannot reach. Where it does, localising the pages closest to a purchase decision first is usually the sensible starting point.",
       },
     ],
   },
@@ -282,92 +389,127 @@ export const pages: LocalServicePage[] = [
     place: "europe",
     service: "digital-pr",
     seo: {
-      title: "Digital PR Agency in Europe",
+      title: "Digital PR Services in Europe",
       metaDescription:
-        "Digital PR agency for Europe: stories pitched to national press in Germany, France, Spain, Italy and the Nordics, in each country's own language.",
-      primaryKeyword: "digital pr agency in europe",
+        "Digital PR services for businesses in Europe: data-led stories and expert comment pitched to publications in each target country and language.",
+      primaryKeyword: "digital pr services in europe",
       secondaryKeywords: [
-        "digital pr services in europe",
+        "digital pr agency in europe",
         "digital pr company in europe",
-        "link building agency europe",
-        "digital pr germany",
-        "digital pr france",
+        "european digital pr agency",
         "multilingual digital pr",
-        "european media outreach",
+        "link building services europe",
       ],
     },
-    h1: "Digital PR Agency in Europe for Coverage in Each Country's Own Press",
+    h1: "Digital PR Services in Europe",
     intro:
-      "Authority is judged country by country. Coverage in a London or New York publication does little for a brand's standing in German or Italian search results, where journalists, trade titles and readers are different. Digital PR in Europe means earning mentions and links from each target country's own press, in its language. SERPMOZ plans and runs this work remotely for businesses building visibility across European markets.",
+      "SERPMOZ provides digital PR for companies that want credible coverage and links from publications in the countries they sell to in Europe. We develop stories from your data and expertise, pitch them to relevant journalists and host the supporting material on your site. It is for businesses with something worth reporting and a site whose authority is weaker abroad than at home.",
     answer: {
-      question: "What does a digital PR agency do for businesses in Europe?",
-      text: "It creates stories worth covering and pitches them to journalists in each country you are targeting. That includes data-led pieces with national or regional angles, expert comment, outreach written in the journalist's language, and review of the links you already have. SERPMOZ delivers this remotely with native-language outreach. Coverage depends on editors' decisions, so we report what was earned and never promise placements.",
+      question: "What does digital PR involve, and how does it help a business build authority in Europe?",
+      text: "Digital PR earns editorial coverage and links by giving journalists something worth publishing: original data, expert comment or a useful resource. For a company working across several countries, the aim is coverage in publications read in each target market, in that market's language. Search engines and AI systems treat such references as evidence of credibility over time. Coverage is earned, never bought, and its volume cannot be promised.",
     },
-    searches: [
+    context: {
+      heading: "Why authority has to be earned country by country",
+      paragraphs: [
+        "A company can be well referenced in its home press and unknown everywhere else. Journalists write for their own readers, in their own language, about what is relevant where those readers live. A story that earned attention in one country is not automatically news in the next. For search, links and mentions from publications in a given country are part of how a site comes to be seen as relevant there, so a programme has to plan coverage for each market it cares about.",
+        "This shapes the kind of story that works. A piece of research with a breakdown by country gives each national outlet its own angle, where a single headline figure would give them none. Expert comment needs a spokesperson who can be quoted credibly on conditions in that country, and ideally in the language. Press materials translated literally tend to read as foreign, so pitches are written for the publication and not converted from an English original.",
+        "Media customs and rules also vary. Publications differ in whether they link to sources, in how they label sponsored material and in what they will accept from a company. Where a campaign uses customer or survey data, privacy obligations apply, and claims about products may be subject to advertising and consumer rules in each country. These are general cautions and your own adviser should confirm what applies. Our practice is to publish the method behind any data and to keep paid placements separate from earned coverage.",
+      ],
+    },
+    audiences: [
       {
-        title: "Links from the right country",
-        body: "Marketing heads usually come looking after noticing that competitors in Germany or France are cited by national newspapers and trade titles while their own links come from English-language sites. They search for digital PR or link building by country name.",
+        title: "Companies with data that can be split by country",
+        body: "Marketplaces, software platforms and service firms that hold anonymised data across several markets. A single analysis can produce a separate, relevant story for each country's press, which makes one piece of research work in several markets.",
       },
       {
-        title: "Launch coverage in a new market",
-        body: "A company opening in Spain or the Netherlands wants local press to mention it. Searches are often in the local language, for a press or PR agency in Madrid or Amsterdam, before the buyer realises search authority is the aim.",
+        title: "Specialist firms with experts willing to be quoted",
+        body: "Engineering, finance, legal and technology businesses whose experts can explain a development clearly. Reactive comment in trade titles and business press builds recognition among the readers who matter to a specialist seller.",
       },
       {
-        title: "Being named in AI answers",
-        body: "People increasingly ask AI assistants for recommendations in Italian, Polish or Swedish, and the answers lean on sources in that language. Brands absent from local-language coverage start asking how to be mentioned where those tools look.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Each country has its own media",
-        body: "Germany has strong regional newspapers and a deep trade press. France concentrates much of its national media in Paris. Italy, Spain and Poland each have their own business dailies and sector titles. A media list has to be built per country by someone who reads it.",
-      },
-      {
-        title: "Pitching customs differ",
-        body: "Tone, formality and what counts as news vary. A pitch that suits a British journalist may read as too informal in Germany or too promotional in the Nordic countries. We write outreach natively and adapt the angle, since a translated press release is rarely picked up.",
-      },
-      {
-        title: "Data needs a national cut",
-        body: "A study about Europe as a whole interests few editors. The same data broken out for Germany, or comparing Madrid with Barcelona, gives a national or regional paper a reason to run it. We design research so that every target country has its own findings.",
-      },
-      {
-        title: "Journalist contacts and privacy rules",
-        body: "Outreach involves holding journalists' contact details, and European data protection rules apply to how such data is collected and used. We keep lists minimal and relevant. How those rules apply to your own outreach and survey data is something to confirm with your adviser.",
+        title: "Brands entering a country where nobody knows them",
+        body: "A new market version of a site begins with few local references. Coverage in that country's trade and regional publications gives buyers and search engines some independent evidence that the company is active and relevant there.",
       },
     ],
-    areas: [
-      { name: "Germany", note: "Regional dailies and specialist trade titles give many routes to coverage beyond national papers." },
-      { name: "France", note: "National media cluster in Paris, and stories with a clear French angle travel furthest." },
-      { name: "Spain", note: "Madrid and Barcelona each have their own press, and regional comparisons are readily covered." },
-      { name: "Italy", note: "Business and trade titles around Milan matter for industrial and fashion-related stories." },
-      { name: "Poland", note: "Polish business and technology sites respond to pitches written in Polish, seldom to English ones." },
-      { name: "Nordic countries", note: "Editors in Stockholm, Copenhagen and Oslo favour restrained, factual pitches over promotional language." },
+    challenges: [
+      {
+        title: "Every country has its own press",
+        body: "There is no single media list for the region. Outlets, beats and journalists are researched for each country, and a pitch that suits a national business title may be wrong for a trade publication next door. Media research is done per market before any outreach.",
+      },
+      {
+        title: "Pitching in the journalist's language",
+        body: "A pitch in English to a journalist who writes in another language starts at a disadvantage. Pitches and summaries are written in the language of the publication by native speakers, with the full data and method available on a page the writer can cite.",
+      },
+      {
+        title: "Coverage does not always carry a link",
+        body: "Linking is an editorial choice, and some publications rarely link out or mark external links as nofollow. That coverage still supports awareness and branded search. We report followed links, nofollow links and unlinked mentions separately, so the picture is accurate.",
+      },
+      {
+        title: "Some campaigns earn very little",
+        body: "A sound story can be crowded out by the news of the week. Campaigns are planned as a series, with follow-up angles and regional cuts prepared in advance, and the next idea is shaped by what journalists responded to.",
+      },
     ],
+    approach: [
+      {
+        stage: "Audit",
+        body: "We review your backlink profile and past coverage by country, interview your experts and look through the data you hold for stories. You also tell us the topics, competitors or claims you would not want associated with the brand.",
+      },
+      {
+        stage: "Develop",
+        body: "The strongest idea is researched, analysed and written up, with its method stated. A landing page on your site hosts the full findings so writers have something to cite, and a media list is built for each target country.",
+      },
+      {
+        stage: "Pitch",
+        body: "Outreach runs in waves to different beats and countries, each pitch short and specific with the finding in its first line. Follow-up angles go to further publications while the story is live, and every contact is recorded in an outreach log.",
+      },
+      {
+        stage: "React",
+        body: "Alongside planned campaigns, your experts respond to news and journalist requests as they arise. This needs one or two named spokespeople with authority to approve a comment quickly, since such requests are often open only briefly.",
+      },
+      {
+        stage: "Assess",
+        body: "Coverage is judged for relevance and quality, and counted second. We track referring domains by country, branded search and how AI answers describe the company, and connect these to the organic performance of the pages each campaign supports.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "Work begins with the audit and story mining, then the first campaign is built and launched. A reactive comment can be published within days of being offered, and a planned campaign typically takes several weeks from idea to first coverage. The effect on search visibility is slower and indirect, building as credible references accumulate over months. Results vary between campaigns and between countries, which is why the plan covers a series and not one launch.",
+        "You receive a coverage report as pieces appear and a monthly review of referring domains, mentions and the next campaign plan.",
+      ],
+      notGuaranteed: [
+        "A number of links or pieces of coverage from any campaign",
+        "Coverage in a named publication or country",
+        "That published coverage will include a followed link",
+      ],
+    },
     sectors: [
-      { slug: "saas", note: "Software firms entering a country need local citations so buyers and AI assistants see them as present there." },
-      { slug: "travel", note: "Tourism flows between European countries give travel brands seasonal stories for each source market's press." },
-      { slug: "ecommerce", note: "Online retailers earn coverage with shopping and price data broken out by country or city." },
+      { slug: "saas", note: "Platforms often hold usage data across countries, which can be anonymised and analysed into findings journalists have a reason to report." },
+      { slug: "finance", note: "Money topics are widely covered by the press, and commentary must be accurate and compliant, so expert spokespeople and careful review matter." },
+      { slug: "travel", note: "Travel is covered by consumer and trade titles in each country, and seasonal data gives a story a natural moment." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a digital PR company in Europe?",
-        a: "SERPMOZ is an AI-powered digital growth company, and digital PR for European markets is one of the services we deliver. We do it remotely, with no office or press team based in any European country. Outreach in each language is written by native speakers engaged for the campaign. No media relationship makes coverage certain, since editors decide what runs, and we would be suspicious of any firm that says otherwise.",
+        q: "Is digital PR the same as link building?",
+        a: "Digital PR is one method of building links, and the only one SERPMOZ uses. Link building as a wider term also covers paid placements, link exchanges and private networks, which breach search engine policies. With digital PR a journalist chooses to cover a story and decides whether to link. That makes the result less predictable, and less exposed to being ignored or penalised.",
       },
       {
-        q: "How do I choose a digital PR company in Europe?",
-        a: "Ask which countries they have pitched in and who writes the outreach for each language. A credible firm builds separate media lists per country, shapes data so each market has its own angle, and reports the actual articles earned. Be careful with fixed link counts, paid placements presented as editorial, and one press release translated into six languages. Ask how they handle journalists' contact data under European privacy rules.",
+        q: "Does SERPMOZ have an office in Europe?",
+        a: "No. SERPMOZ runs digital PR for companies in Europe through a remote consulting and delivery model. Journalists are approached by email and phone wherever an agency sits, and what persuades them is the story and its relevance to their readers. Native-language specialists handle research and pitching for each country, and your spokespeople are briefed by video call.",
       },
       {
-        q: "Which European countries do you run digital PR in?",
-        a: "We plan campaigns for Germany, France, Spain, Italy, the Netherlands, Belgium, Poland, Austria, Switzerland and the Nordic countries, managed remotely. Each country needs a native speaker to research the media and write the pitches, so we confirm that resource before committing to a market. It is normally wiser to run one or two countries well than to spread a single story thinly across the continent. The United Kingdom is planned separately.",
+        q: "Can you guarantee a number of links each month?",
+        a: "No. Anyone who promises a fixed number is either buying placements or counting links of no value. Editorial coverage depends on journalists' decisions and on the news at the time. We can commit to a number of campaigns, a defined amount of reactive comment and a clear report of what each earned, including the campaigns that underperformed.",
+      },
+      {
+        q: "How long does digital PR take to show results?",
+        a: "First coverage can arrive within weeks of a launch, and sooner for reactive comment. The benefit to rankings comes later and indirectly, as references from credible publications build up, commonly over six months to a year. In a country where the brand is new, early coverage tends to be in trade and regional titles before national ones. Nothing about the timing is certain.",
       },
       {
         q: "What does digital PR cost in Europe?",
-        a: "The number of countries is the largest factor, because each needs its own media research, native outreach and often its own cut of the data. Original research, such as a survey with samples in several countries, costs more than expert comment or analysis of public data. Competitive sectors need stronger stories to be noticed. Coverage cannot be bought at a set rate per link if it is editorial, so we scope by campaign.",
+        a: "The cost depends on how many campaigns run in a period, how many countries and languages are pitched, whether research must be commissioned and how much reactive comment is included. We do not price by the link, because links cannot fairly be sold by the unit. After a growth audit, the proposal is scoped around campaigns and markets.",
       },
       {
-        q: "Will coverage in English-language media help us rank in Germany or France?",
-        a: "It helps your overall authority a little and does much less for your standing in a specific country. Search engines and AI assistants weigh sources that are relevant to the market and written in its language. A German trade title citing your German pages tells them far more about your relevance to German buyers than an international English site does. For a company targeting Berlin or Lyon, local-language coverage should carry most of the effort.",
+        q: "Do we need a separate campaign for each country?",
+        a: "Not always. One piece of research can often serve several markets if the data can be broken down by country and the pitch is rewritten for each press. Reactive comment, by contrast, is usually specific to one country's news. We plan which ideas travel and which need to be local, and concentrate effort on the markets that matter most to you.",
       },
     ],
   },
@@ -375,92 +517,127 @@ export const pages: LocalServicePage[] = [
     place: "europe",
     service: "ecommerce-seo",
     seo: {
-      title: "Ecommerce SEO Agency in Europe",
+      title: "Ecommerce SEO Services in Europe",
       metaDescription:
-        "Ecommerce SEO agency for Europe: category structure, product data, currency and availability signals for stores selling into Germany, France and Poland.",
-      primaryKeyword: "ecommerce seo agency in europe",
+        "Ecommerce SEO services for stores selling across Europe: category structure, filter control, product data and feeds correct for every country.",
+      primaryKeyword: "ecommerce seo services in europe",
       secondaryKeywords: [
-        "ecommerce seo services in europe",
+        "ecommerce seo agency in europe",
         "ecommerce seo company in europe",
+        "online store seo europe",
         "cross-border ecommerce seo",
-        "online shop seo germany",
-        "ecommerce seo netherlands",
-        "multilingual ecommerce seo",
-        "shopify seo europe",
+        "multilingual ecommerce seo services",
       ],
     },
-    h1: "Ecommerce SEO Agency in Europe for Stores Selling Across Borders",
+    h1: "Ecommerce SEO Services in Europe",
     intro:
-      "Selling online across Europe means meeting a different retail order in each country. Amazon is strong in Germany, home-grown marketplaces have loyal shoppers in the Netherlands and Poland, and national retailers hold many category results in France and Italy. Ecommerce SEO decides which categories and products can win organic visibility in each market, and structures the store for it. SERPMOZ does this remotely for retailers and brands selling across European borders.",
+      "SERPMOZ provides ecommerce SEO for online stores selling to shoppers in several countries in Europe. The work covers category structure, control of filter pages, product pages and structured data, product feeds and category copy, for each country store. It suits retailers whose buyers search by category, product or need, and whose country versions duplicate each other or show the wrong price and availability in search.",
     answer: {
-      question: "What does an ecommerce SEO company do for online stores in Europe?",
-      text: "It improves how category and product pages are found in each country a store sells to. The work covers native product keyword research, category structure, control of filter and variant URLs, product structured data with the right currency and availability per country, and merchant feeds. SERPMOZ handles this remotely, working with your platform team, and plans one market at a time.",
+      question: "What do ecommerce SEO services include for a store selling across Europe?",
+      text: "Ecommerce SEO makes a store's categories and products easier for search engines to find, understand and list. For a retailer with several country stores, it adds the work of keeping each version distinct: the right currency, availability and delivery details in structured data and feeds, category names researched in each language, and rules that stop near-identical pages competing. It is measured in non-brand organic revenue and margin by category and country.",
     },
-    searches: [
+    context: {
+      heading: "What changes when a store sells in several countries",
+      paragraphs: [
+        "A store that sells across borders usually runs a version per country or language, each with the same catalogue. To a search engine these are large sets of near-identical pages. If the site does not make clear which version belongs to which country, the search engine chooses for itself, and a shopper may be shown a page priced in the wrong currency or listing delivery terms that do not apply to them. Getting that match right is the first job, before any new content is written.",
+        "Product search terms rarely carry over from one language to another. The word a retailer uses for a category at home may have several equivalents elsewhere, and only research in the language shows which one shoppers type. The same applies to sizes, units and product attributes used in filters. Since category pages tend to carry more commercial search demand than any single product, naming and structuring them correctly for each market has a wide effect.",
+        "Europe is not one trading area for an online shop. Many countries use the euro and others keep their own currency, and countries outside the customs union have their own arrangements for duties and tax. Delivery times, returns terms and consumer rights on distance sales can differ as well. Search listings may display price, availability, shipping and returns details, so these must be accurate for each country. What the law requires you to state is a question for your own adviser.",
+      ],
+    },
+    audiences: [
       {
-        title: "Product terms do not translate",
-        body: "Shoppers in Germany, France and Poland name the same product differently, and brand, size and colour conventions differ too. A category called by its translated English name can miss the term local shoppers type. Retailers notice when traffic lags behind stock.",
+        title: "Retailers running one catalogue across several country stores",
+        body: "The products are the same and the stores differ by language, currency and delivery. These sites gain most from clear rules for hreflang, canonicals and feeds, because a single template correction applies to every product in every store.",
       },
       {
-        title: "Marketplaces sit above stores",
-        body: "In many product searches from Berlin, Amsterdam or Warsaw, a marketplace or price comparison site holds the first results. Store owners search for ecommerce SEO help when deciding which categories to fight for directly and which to concede.",
+        title: "Brands that sell direct and through marketplaces",
+        body: "A manufacturer or brand whose own store competes for the same searches as resellers and marketplaces. Thorough product information, accurate structured data and useful buying guides give the brand's own pages a reason to be chosen.",
       },
       {
-        title: "Wrong currency in search results",
-        body: "A frequent trigger is a shopper in Zurich or Stockholm seeing a euro price in a listing for a store that sells in francs or kronor there. That points to product data and country targeting that need correcting.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Currency and availability per country",
-        body: "Much of the continent uses the euro, while Switzerland, Poland, Sweden, Denmark, Norway and others keep their own currencies. Product structured data and feeds must show the correct price, currency, stock and delivery for each country version, or listings mislead shoppers and may be rejected by merchant programmes.",
-      },
-      {
-        title: "Price comparison is a habit",
-        body: "Comparison sites are an established part of shopping in German-speaking countries, and review and trust-seal services influence decisions, with a different one mattering in each market. We check where your products appear on them and make sure store pages carry the trust signals local buyers look for.",
-      },
-      {
-        title: "Delivery, returns and consumer rights",
-        body: "Shoppers expect clear delivery and returns information before buying, and consumer protection rules give distance buyers firm rights. These pages rank and convert, so we structure them per country. The exact wording your store must show is for your own legal adviser to confirm.",
-      },
-      {
-        title: "Variants multiply across languages",
-        body: "A catalogue with colour, size and filter combinations already creates many URLs. Add six languages and several currencies and the total grows fast. We decide which filtered pages deserve indexing in each country, based on local demand, and keep the remainder out of the index.",
+        title: "Stores with large catalogues and heavy filtering",
+        body: "Fashion, electronics, home and parts retailers whose filters generate vast numbers of addresses. Deciding which filtered pages deserve to be indexed, in each language, is often where lost visibility can be recovered.",
       },
     ],
-    areas: [
-      { name: "Germany", note: "A large retail market where Amazon and comparison sites shape which categories are winnable." },
-      { name: "Netherlands", note: "A home-grown marketplace is the first stop for many shoppers, so store categories need a clear niche." },
-      { name: "Poland", note: "Shoppers favour a domestic marketplace, and prices must appear in zloty, never euros." },
-      { name: "France", note: "National retailers and their marketplaces hold many category results, so niche depth pays." },
-      { name: "Switzerland", note: "Outside the EU with its own currency and customs, requiring separate prices and delivery terms." },
-      { name: "Italy", note: "Fashion and home categories are crowded, and product naming follows Italian conventions." },
+    challenges: [
+      {
+        title: "Wrong currency or availability shown in search",
+        body: "When country versions are not clearly separated, a listing can show another country's price or a product that cannot be delivered. Structured data and feed entries are checked for each store so that price, currency, stock and shipping match what the page shows.",
+      },
+      {
+        title: "Filter pages multiplied by every language",
+        body: "Most filter combinations have no search demand and should stay out of the index. Repeated across country stores, they can consume much of a search engine's crawling. We map which filtered pages have demand in each language and set index rules for the rest.",
+      },
+      {
+        title: "Category names that do not translate",
+        body: "A literal translation of a category name can miss the term shoppers use. Native research assigns each valuable search to one target page per market, and merchandising reviews the result so naming stays consistent with how the range is organised.",
+      },
+      {
+        title: "Stock and range differ between countries",
+        body: "A product may be available in one country and not another. Lifecycle rules decide what happens to unavailable and discontinued items in each store: stay live with alternatives, redirect to a replacement, or be removed, so shoppers and crawlers do not meet dead ends.",
+      },
     ],
+    approach: [
+      {
+        stage: "Baseline",
+        body: "A full crawl of each country store is compared with what is indexed and what you intend to be indexed. Organic revenue is recorded by category and country, and product feeds are reviewed for errors and disapprovals.",
+      },
+      {
+        stage: "Map",
+        body: "Search demand in each language is grouped and assigned to categories, filter pages, products and guides. With your merchandising team we weight the list by margin and stock depth, so effort goes to categories worth selling more of.",
+      },
+      {
+        stage: "Fix",
+        body: "Structural changes with the widest effect ship first: filter rules, canonicals, hreflang between stores, template titles, structured data and rules for unavailable products. Each is written as a developer ticket with acceptance criteria for your platform.",
+      },
+      {
+        stage: "Build",
+        body: "Priority categories are rewritten and relinked in each language, new landing pages are created where demand justifies them, and buying guides are published in cycles. Copy is kept from pushing products down the page on mobile screens.",
+      },
+      {
+        stage: "Trade",
+        body: "Each month organic revenue is read by category and country alongside stock, seasonality and paid activity. Priorities are reset ahead of peak periods, which can fall at different times in different markets, and findings are shared with whoever runs conversion work.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The first weeks establish the crawl, index and revenue baseline for each store, then the demand and category map. Index clean-up and template fixes follow, and their effect can show within weeks of pages being recrawled. Growth on contested category searches usually takes several months and depends on the site's authority in that country, on competitors and on how quickly changes are released. Newer country stores generally move more slowly than the established one.",
+        "Reporting is by category, margin band and country, with rankings shown as a diagnostic and organic revenue as the measure that counts.",
+      ],
+      notGuaranteed: [
+        "Rich results such as price, rating or delivery details in listings",
+        "A level of organic revenue or orders in any country",
+        "Positions for category or product searches against marketplaces and larger retailers",
+      ],
+    },
     sectors: [
-      { slug: "ecommerce", note: "Cross-border retailers depend on correct local payment, delivery and returns signals as much as on rankings." },
-      { slug: "manufacturing", note: "Makers selling parts and equipment online need catalogue pages found under each country's technical terms." },
-      { slug: "automotive", note: "Parts and accessories are searched by local part names and vehicle models that vary between countries." },
+      { slug: "ecommerce", note: "Stores selling the same range in several countries repeat every structural fault in each version, so shared fixes go a long way." },
+      { slug: "automotive", note: "Parts and accessories are searched by precise model and part terms, which makes product data and filter pages decisive." },
+      { slug: "manufacturing", note: "Makers that sell direct to trade or consumers need product pages that stand up beside distributors listing the same items." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ an ecommerce SEO company in Europe?",
-        a: "SERPMOZ is an AI-powered digital growth company that carries out ecommerce SEO for stores selling into European countries. Our team works remotely, and we have no European office, warehouse contacts or local staff. We collaborate with your platform developers and merchandisers through shared tools and calls. Native speakers research product terms for each language. If you need someone on site at your premises in Rotterdam or Milan, we cannot offer that.",
+        q: "How is ecommerce SEO different from general SEO?",
+        a: "The principles are shared, and the problems are specific to stores. Ecommerce SEO deals with category architecture, filters that create huge numbers of addresses, product variants, stock changes, structured data for price and availability, and product feeds. It is measured in revenue and margin by category. A general programme for a services site meets few of these issues.",
       },
       {
-        q: "How do I choose an ecommerce SEO company in Europe?",
-        a: "Check that they know your platform and have dealt with multi-currency, multi-language catalogues. They should research product terms natively, have a clear method for filter and variant URLs, and understand how marketplaces and comparison sites differ between, say, Germany and the Netherlands. Ask how they handle product data for countries with their own currency. A firm that talks only about blog posts has not understood where store revenue comes from.",
+        q: "Does SERPMOZ have an office in Europe?",
+        a: "No. SERPMOZ works with online retailers in Europe through a remote consulting and delivery model. An online store is examined through its platform, feeds, analytics and search data, all of which are reached by login. Work is agreed with your merchandising and development contacts on calls, and tickets are delivered into your own workflow. Native speakers carry out the research for each language.",
       },
       {
-        q: "Which European countries does your ecommerce SEO cover?",
-        a: "We work on stores selling into Germany, Austria, Switzerland, France, Belgium, the Netherlands, Spain, Italy, Poland, Portugal, Ireland and the Nordic countries. Delivery is remote in every case. Each country needs native product keyword research, which we arrange before starting. We usually suggest ranking markets by demand and by how well your delivery, payment and returns already work there, then improving them in that order.",
+        q: "Can you guarantee more organic sales from each country store?",
+        a: "No. Sales depend on demand, price, stock, delivery terms and competitors as well as on search visibility, and search engines decide which pages to show. What we can do is make sure the right store appears in the right country, that priority categories have a clear target page, and that reporting shows revenue by category so decisions rest on trading results.",
+      },
+      {
+        q: "How long does ecommerce SEO take to show results?",
+        a: "Structural corrections tend to register first, often within weeks of the affected pages being crawled again. Building visibility for contested category terms is a matter of months, and the timing differs by country because authority and competition differ. Seasonal trade complicates the reading, so we compare like periods and say when a change is too recent to judge.",
       },
       {
         q: "What does ecommerce SEO cost in Europe?",
-        a: "Catalogue size and the number of country versions drive most of the cost, since categories, product data and feeds are handled per market. Your platform affects it: some make multi-currency structured data and index rules easy, others require development. Native keyword research for each language is a further element. Stores facing strong marketplaces in a category need more work to compete there. We scope after reviewing the catalogue and target countries.",
+        a: "It depends on the size of the catalogue, the number of country stores and languages, the platform, how much development the fixes require and how much category copy needs native writing. A store on one platform with shared templates costs less to correct than several separate builds. The scope is set after a growth audit and tied to the categories it covers.",
       },
       {
-        q: "Should we sell through European marketplaces or build up our own store's rankings?",
-        a: "Most retailers end up doing both, in proportions that differ by country. Where a marketplace dominates product search, as in Poland or the Netherlands, listing there reaches buyers who may never see your store. Your own site earns better margin and the customer relationship, and it can rank for specific, advice-led and brand searches. We map which categories are realistic for the store in each country so the split rests on evidence.",
+        q: "Should each country have its own domain or a folder on one store?",
+        a: "Either can work. Separate country domains give a clear local signal, and each has to build authority and be maintained separately. Folders on one domain share authority and are simpler to run, which suits a retailer with limited resources or many markets. Platform constraints often narrow the choice. We model the options for your store before recommending one.",
       },
     ],
   },
@@ -468,92 +645,127 @@ export const pages: LocalServicePage[] = [
     place: "europe",
     service: "google-ads",
     seo: {
-      title: "Google Ads Agency in Europe",
+      title: "Google Ads Management in Europe",
       metaDescription:
-        "Google Ads agency for Europe: campaigns split by country and language, native ad copy and consent-aware conversion tracking to test and grow each market.",
-      primaryKeyword: "google ads agency in europe",
+        "Google Ads management for businesses in Europe: campaigns structured by country and language, consent-aware tracking and qualified-lead reporting.",
+      primaryKeyword: "google ads management in europe",
       secondaryKeywords: [
-        "google ads services in europe",
+        "google ads agency in europe",
         "google ads company in europe",
-        "google ads management europe",
+        "google ads services europe",
         "ppc agency europe",
-        "google ads germany",
-        "google ads france and spain",
-        "multilingual google ads",
+        "multilingual google ads management",
       ],
     },
-    h1: "Google Ads Agency in Europe for Campaigns Built Country by Country",
+    h1: "Google Ads Management in Europe",
     intro:
-      "Paid search is often the quickest way to learn whether a European country wants what you sell. A short, well-structured test in Germany or Spain shows real demand, real costs and real objections before you commit to full localisation. The catch is that each market needs its own keywords, ads and tracking. SERPMOZ manages Google Ads remotely for businesses advertising across European countries, one market at a time.",
+      "SERPMOZ manages Google Ads for companies advertising in one or more countries in Europe. We set up conversion tracking that reflects qualified outcomes, structure campaigns by country and language, write ads for each market and review search terms on a fixed rhythm. It suits businesses that want to test demand in a new country before committing to full localisation, or that spend across several markets without a clear view of which pays.",
     answer: {
-      question: "What does a Google Ads agency do for businesses in Europe?",
-      text: "It builds and manages campaigns separated by country and language, so budgets, bids and messages fit each market. That includes native keyword research and ad copy, product feeds with local prices, conversion tracking configured to respect consent choices, and landing pages matched to each country. SERPMOZ runs this remotely and reports by market, stating which figures are observed and which are modelled.",
+      question: "What does Google Ads management include, and how does it help a business advertising in Europe?",
+      text: "Google Ads management covers conversion tracking, campaign structure, keywords and negatives, ads, product feeds, bidding and landing pages. For an advertiser active in several countries, campaigns are separated by market and language so that budgets, bids and messages can differ, and results are compared on cost per qualified lead or margin return in each. Ads can start quickly, and steady performance needs a period of conversion data first.",
     },
-    searches: [
+    context: {
+      heading: "Why paid search needs a plan for each country",
+      paragraphs: [
+        "Google Ads lets an advertiser choose the locations and languages a campaign reaches. A single campaign covering several countries is simple to build and hard to learn from, because click prices, competitors and the words searchers use differ between markets and the totals hide those differences. Separate campaigns by country and language cost more effort to maintain and give each market its own budget, its own search term report and its own verdict. That separation is the basis of everything else in the account.",
+        "Paid search is also a practical way to test a country before investing in it fully. A modest campaign with a properly localised landing page can show whether the product is searched for, what buyers call it and whether they enquire or buy, within weeks instead of the months organic work needs. The test is only fair if the ad and page are written in the language by someone fluent, since a translated advert sent to an English page mostly measures the mismatch.",
+        "Measurement works under a constraint in this region. Websites generally ask visitors for consent before advertising and analytics tags run, and visitors who decline are not recorded in the usual way. Automated bidding learns from recorded conversions, so the quality of the consent setup affects how well campaigns optimise. Platforms offer modelling to estimate what is missing. Which consent approach is lawful for your business is a matter for your own adviser. Our role is to configure tracking to respect it and to state what the figures can show.",
+      ],
+    },
+    audiences: [
       {
-        title: "Testing a country before entering",
-        body: "Founders and marketing heads ask how to check demand in France or Italy without rebuilding the whole site. They search for a Google Ads or PPC agency that can run a contained test in one language with a small set of localised pages.",
+        title: "Companies testing demand in a new country",
+        body: "A business deciding whether a market deserves a localised site, a sales hire or stock. A controlled search campaign gives early evidence of interest and of the terms buyers use, which also informs the organic plan.",
       },
       {
-        title: "One account mixing every market",
-        body: "Many arrive with a single campaign targeting all of Europe in English. Spend drifts to wherever clicks are cheapest, often not the countries they can serve. The request is to split the account by country and language.",
+        title: "Advertisers running one account across several markets",
+        body: "Spend is spread over many countries and the reported return is a blend. Splitting brand from non-brand and one country from another often shows that a few markets carry the account while others absorb budget.",
       },
       {
-        title: "Conversions dropped after consent changes",
-        body: "Advertisers in Munich, Paris and Amsterdam notice reported conversions falling once a consent banner is installed. They look for someone who can explain the gap and set up measurement that copes with visitors who decline tracking.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Consent shapes what bidding sees",
-        body: "Under European privacy and consent rules, visitors who decline tracking are not measured in the usual way, so automated bidding works with less data. We configure consent signals and the modelling options the platform provides, and explain their limits. Your consent setup itself should be confirmed with your own adviser.",
-      },
-      {
-        title: "Click costs and rivals vary",
-        body: "The advertisers bidding against you in Germany are different from those in Portugal or Poland, and so are costs and conversion behaviour. Separate campaigns and budgets per country stop a cheaper market from absorbing spend meant for a more valuable one.",
-      },
-      {
-        title: "Ad copy needs native writing",
-        body: "Character limits are tight, and German words are long. A translated headline often will not fit, or reads awkwardly once shortened. Native writers produce ads in each language, choose formal or informal address, and match the terms the landing page uses.",
-      },
-      {
-        title: "Language and location targeting interact",
-        body: "Brussels has Dutch and French speakers, Switzerland has three main languages, and expatriates in Amsterdam or Lisbon browse in English. Targeting has to combine place and language deliberately, with a landing page in the language of the search.",
+        title: "Lead generation firms that need qualified enquiries",
+        body: "Software, professional and industrial sellers for whom a form fill is not yet a customer. Importing qualified outcomes from the CRM lets bidding learn from sales results in each country, not from raw enquiry counts.",
       },
     ],
-    areas: [
-      { name: "Germany", note: "Many categories are contested, so tight keyword control and native copy matter from the first day." },
-      { name: "France", note: "French-language campaigns should reach Paris and the regions, with Belgian French handled separately." },
-      { name: "Spain", note: "Campaigns for Madrid and Barcelona must be kept apart from Latin American Spanish targeting." },
-      { name: "Netherlands", note: "English and Dutch searches coexist, so both need testing against the same offer." },
-      { name: "Switzerland", note: "Three languages and a separate currency call for campaigns and feeds of their own." },
-      { name: "Poland", note: "Polish-language ads and zloty pricing are needed for shoppers used to domestic sellers." },
+    challenges: [
+      {
+        title: "Consent reduces what bidding can see",
+        body: "Where many visitors decline tracking, fewer conversions are recorded and automated bidding has less to learn from. Consent settings and conversion tags are checked first, modelled conversions are labelled as such, and bid targets move only when there is enough data to justify it.",
+      },
+      {
+        title: "Small budgets split across many countries",
+        body: "Each campaign needs enough conversions to steer its bidding. Dividing a fixed budget among many markets can leave every one of them short of data. We recommend concentrating on fewer countries, or on simpler bid strategies, until volume supports more.",
+      },
+      {
+        title: "Ads and pages in the right language",
+        body: "An advert in one language that sends the click to a page in another wastes it. Ad copy is written per language by native speakers, matched to a landing page in the same language, with currency and offer details correct for the country.",
+      },
+      {
+        title: "Automation that spends without explanation",
+        body: "Broad matching and Performance Max can extend reach into searches and placements nobody chose. Search terms are reviewed regularly, negatives and exclusions are maintained per market, and platform recommendations are assessed individually instead of being applied automatically.",
+      },
     ],
+    approach: [
+      {
+        stage: "Audit",
+        body: "We review conversion actions, campaign structure, location and language settings, search terms and Performance Max reporting. Spend and conversions are split by country and by brand and non-brand searches, which shows where the reported return comes from.",
+      },
+      {
+        stage: "Track",
+        body: "Conversion actions are redefined with your sales team so they reflect qualified outcomes. Consent settings and enhanced conversions are checked, and offline imports from the CRM are connected so bidding can see which enquiries became real opportunities.",
+      },
+      {
+        stage: "Structure",
+        body: "Search campaigns are rebuilt by intent, country and language. Product feeds are cleaned for each market, and Performance Max is given exclusions and a defined job. We stage changes so that the bid strategies are never all reset together.",
+      },
+      {
+        stage: "Optimise",
+        body: "Search terms, ads, assets, feeds and landing pages each come up for review at a set interval. Ad and page tests run one clear question at a time, and budget moves between countries only on evidence from qualified results.",
+      },
+      {
+        stage: "Reconcile",
+        body: "Each month the conversions Google reports are compared with CRM or order data by campaign and country. Budget shifts towards the campaigns producing qualified leads or margin, and you see the reasoning for every change in targets.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The account audit and conversion work come first, usually over the opening weeks, followed by the rebuild and launch. Ads can appear within hours of approval. Reliable performance takes longer, because a new bid strategy needs conversion data before it settles and search term reports need time to show what to exclude. Many accounts need four to eight weeks before results are a fair guide, and low-volume markets need more.",
+        "Reports show qualified outcomes by campaign and country, separate brand from non-brand, and mark which conversions are observed and which are modelled.",
+      ],
+      notGuaranteed: [
+        "A cost per click, which is set by the auction",
+        "A number of leads or a return on advertising spend",
+        "How quickly Google approves ads or how its automation behaves",
+      ],
+    },
     sectors: [
-      { slug: "ecommerce", note: "Shopping campaigns need a feed per country with local prices, currency, delivery terms and availability." },
-      { slug: "saas", note: "Search campaigns reveal which countries respond to English trials and which need a localised product first." },
-      { slug: "travel", note: "Operators advertise to several source countries, each with its own holiday calendar and booking season." },
+      { slug: "saas", note: "Trials and demonstrations can be tracked through to paying customers, which gives bidding a meaningful outcome to learn from in each country." },
+      { slug: "ecommerce", note: "Shopping campaigns run from product feeds, so price, currency and availability must be correct for every country the store serves." },
+      { slug: "b2b", note: "Enquiries vary widely in value, and importing qualified outcomes stops campaigns from chasing cheap forms that sales cannot use." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a Google Ads agency in Europe?",
-        a: "SERPMOZ is an AI-powered digital growth company that manages Google Ads for businesses advertising in European countries. Accounts are run remotely. We hold no office in Europe and make no claim to a local team. You keep ownership of the ad account and its data. Native speakers write the ads for each language, and reporting calls are scheduled in your time zone where possible.",
+        q: "What is the difference between Google Ads and SEO?",
+        a: "Google Ads buys visibility: an advert can appear soon after approval and stops when the budget does. SEO earns visibility in the unpaid results, which takes months to build and continues while the site is maintained. Ads suit testing, launches and proven sellers. Organic work suits steady, lasting demand. They share keyword and landing page evidence, so each improves the other.",
       },
       {
-        q: "How do I choose a Google Ads company in Europe?",
-        a: "Look at how they propose to structure the account. Campaigns should be separated by country and language, with budgets you control per market. Ask who writes the German or French ads, how conversions are tracked when visitors decline consent, and whether you will own the account. Reports should show results by country and distinguish observed from modelled conversions. Be cautious of anyone promising a fixed return before seeing your data.",
+        q: "Does SERPMOZ have an office in Europe?",
+        a: "No. SERPMOZ manages advertising for businesses in Europe through a remote consulting and delivery model. A Google Ads account is run entirely online, and it stays in your name so you keep the history and the data. What the work needs is admin access, a view of CRM or order data, and regular calls with whoever owns sales targets.",
       },
       {
-        q: "Which European countries do you manage Google Ads campaigns in?",
-        a: "We manage campaigns aimed at Germany, Austria, Switzerland, France, Belgium, the Netherlands, Spain, Italy, Portugal, Poland, Ireland, Sweden, Denmark, Norway and Finland, all remotely. Before launching in a country we confirm a native writer for the ads and check that landing pages, pricing and delivery terms exist for it. Sending paid traffic to a page in the wrong language or currency wastes the budget, so we say so if a market is not ready.",
+        q: "Can you guarantee a cost per lead from Google Ads?",
+        a: "No. Click prices come from an auction that changes with competitors, season and Google's own systems, and conversion depends on your offer and page. We can set a target, show the range the account has achieved, explain what moves it and stop spending where the cost cannot be justified. A promised figure would be a guess presented as a commitment.",
+      },
+      {
+        q: "How long does Google Ads take to show results?",
+        a: "Clicks arrive almost at once. A dependable reading takes longer: commonly four to eight weeks of data for bidding to steady and for search term reviews to remove waste. In a country with little search volume, or where few visitors accept tracking, the learning period is longer. We say when the data is too thin to draw a conclusion.",
       },
       {
         q: "What does Google Ads management cost in Europe?",
-        a: "There are two parts: what you pay the platform for clicks and what you pay for management. Click costs depend on the country, the sector and how many advertisers compete for the same searches, and they differ widely between markets. Management effort grows with the number of countries and languages, the size of any product feed, and the tracking work needed. We scope after seeing the account and the markets you want.",
+        a: "There are two separate costs. The first is what you pay Google for clicks, set by the auction for your category in each country. The second is the management fee, which depends on the size of the account, the number of countries and languages, and whether feeds and landing pages are in scope. A growth audit comes before any figure.",
       },
       {
-        q: "Can Google Ads tell us which European country to expand into first?",
-        a: "It can give useful evidence. A controlled test with native ads and a localised landing page shows whether people in a country search for your product, what a click and an enquiry cost there, and how they respond to your offer. It cannot tell you about support, delivery or legal costs, and a short test reflects one season. We treat the results as one input beside organic demand and competitor research.",
+        q: "Should we run one campaign for all countries or one per country?",
+        a: "One per country and language in most cases. Combined campaigns blend markets with different click prices and search terms, so neither you nor the bidding system can tell which is working. Separate campaigns allow separate budgets, ad copy, negatives and reports. Where volume is too low to support that, we group similar markets deliberately and review the grouping as data accumulates.",
       },
     ],
   },
@@ -561,92 +773,127 @@ export const pages: LocalServicePage[] = [
     place: "europe",
     service: "cro",
     seo: {
-      title: "Conversion Rate Optimisation Agency in Europe",
+      title: "CRO Services in Europe",
       metaDescription:
-        "CRO agency for Europe: checkout, forms, payment options and trust signals adapted to what buyers in Germany, the Netherlands, France and Sweden expect.",
-      primaryKeyword: "cro agency in europe",
+        "CRO services for websites serving Europe: measurement checks, research by country, clear fixes and controlled tests where traffic allows them.",
+      primaryKeyword: "cro services in europe",
       secondaryKeywords: [
-        "cro services in europe",
-        "conversion rate optimisation agency in europe",
+        "cro agency in europe",
+        "conversion rate optimisation services europe",
+        "conversion rate optimization agency europe",
         "cro company in europe",
-        "conversion optimisation germany",
-        "checkout optimisation europe",
-        "cro netherlands",
-        "landing page optimisation europe",
+        "a/b testing agency europe",
       ],
     },
-    h1: "CRO Agency in Europe: Conversion Optimisation for Each Country's Buyers",
+    h1: "CRO Services in Europe",
     intro:
-      "A page that converts well in one European country can underperform in the next for reasons that have nothing to do with design quality. Dutch shoppers look for bank-based payment, many German buyers want to pay on invoice and read full terms first, and expectations of delivery and returns shift at every border. Conversion rate optimisation finds and fixes those mismatches. SERPMOZ does this work remotely for businesses selling across Europe.",
+      "SERPMOZ provides conversion rate optimisation for companies whose websites serve visitors in several countries in Europe. We check that measurement can be relied on, research where and why visitors leave, fix clear faults and run controlled tests where traffic allows. It is for businesses with steady traffic and a conversion problem nobody can explain, including sites that convert well in one country and poorly in another.",
     answer: {
-      question: "What does a CRO agency do for businesses in Europe?",
-      text: "It works out why visitors from each country leave without buying or enquiring, and tests changes that address the cause. That covers analytics review per market, research with local users, checkout and form improvements, payment and delivery presentation, and trust signals suited to each audience. SERPMOZ carries this out remotely and is open about where consent choices or low traffic limit what an experiment can show.",
+      question: "What do CRO services include, and how do they help a business selling in Europe?",
+      text: "Conversion rate optimisation raises the share of visitors who buy or enquire, by finding what stops them and removing it. The work combines measurement checks, research with real users, expert review, prioritised hypotheses and experiments. For a site with several country versions, each version is studied separately, because payment options, proof, wording and legal information that suit one audience may not suit another. Outcomes are measured in revenue or qualified leads per visitor.",
     },
-    searches: [
+    context: {
+      heading: "Why one page design seldom suits every country",
+      paragraphs: [
+        "A page that works in one market is carried into the next by translation, and its assumptions travel with it: which payment methods are offered, what proof is shown, how much detail is given before a price, how formal the tone is. Some of those assumptions will hold and some will not, and analytics alone rarely says which. Research with visitors from the country in question, through surveys, recordings and interviews, is how the difference is found without guessing.",
+        "Language changes the page physically as well. The same sentence can run much longer or shorter in another language, which breaks buttons, headings and form labels designed around the original. Address formats, postcode rules, phone number patterns and name fields differ between countries, and a form validated for one can reject a correct entry from another. These are ordinary faults, easy to miss if nobody on the team reads the language, and inexpensive to correct once seen.",
+        "Testing has a particular limit on multi-country sites. A split test needs enough visitors and conversions to give a reliable answer, and dividing traffic among country versions leaves each with a fraction of the total. Consent choices reduce the observed data further. For many versions, a controlled experiment would take too long to be useful, and the sound method is research, a clear fix and a before and after comparison with its limits stated. Consent itself is a legal matter to confirm with your own adviser.",
+      ],
+    },
+    audiences: [
       {
-        title: "One country converts far worse",
-        body: "The typical trigger is a report showing visitors from Germany or France buying much less often than those from the home market, despite similar traffic quality. Teams search for conversion optimisation help to find out what local buyers are missing.",
+        title: "Sites that convert well at home and poorly abroad",
+        body: "The traffic arrives in the new country and does not buy or enquire. Comparing the funnel by country shows where the paths diverge, and research with those visitors explains the reason, which may go well beyond the translation.",
       },
       {
-        title: "Baskets abandoned at payment",
-        body: "Store owners see shoppers from the Netherlands, Poland or Belgium reach checkout and leave. Often their usual way to pay is absent. Searches tend to mention checkout optimisation or payment methods together with the country name.",
+        title: "Online stores with a checkout shared across countries",
+        body: "One checkout serving several markets has to handle different currencies, address formats, delivery choices and payment options. Small faults at this step cost completed orders, and they can be found by walking each country's path on a phone.",
       },
       {
-        title: "Enquiry forms that underperform",
-        body: "B2B firms targeting buyers in Stuttgart, Milan or Lyon find that an English form with unfamiliar address fields and no local phone format gets few submissions. They look for landing page or form optimisation for that market.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Payment preferences change by country",
-        body: "Cards and wallets suit some markets, while others favour bank-based payments or purchase on invoice. Showing the familiar option early, with its logo near the basket, removes a common reason for leaving. We review checkout data per country to see where the method on offer is the obstacle.",
-      },
-      {
-        title: "Consent limits what tests see",
-        body: "Where many visitors decline tracking, analytics and testing tools record only part of the audience, and that part may behave differently. We plan experiments with this in mind and state the uncertainty. Whether your testing tool needs consent in a given country is a question for your adviser.",
-      },
-      {
-        title: "Trust signals are national",
-        body: "The review platform, trust seal or industry mark that reassures a buyer differs between Germany, France and the Nordic countries. German visitors also tend to look for a formal legal notice and full company details. We identify which signals each audience expects and place them where doubts arise.",
-      },
-      {
-        title: "Traffic per country may be thin",
-        body: "Splitting a site by country often leaves each version with too few conversions for a quick A/B test. In smaller markets such as Denmark or Portugal we rely more on user research, session review and careful before-and-after comparison, and say clearly that the evidence is weaker.",
+        title: "Lead generation firms paying for traffic in several markets",
+        body: "When paid campaigns send visitors to pages that do not convert, the media cost is wasted in every country at once. Improving the landing pages first makes each later increase in budget work harder.",
       },
     ],
-    areas: [
-      { name: "Germany", note: "Buyers often read specifications, terms and company details fully before committing to an order." },
-      { name: "Netherlands", note: "Checkout without the familiar bank-based payment option loses shoppers at the final step." },
-      { name: "France", note: "French-language support details and clear returns information reduce hesitation on higher-value orders." },
-      { name: "Sweden", note: "Invoice and pay-later options are familiar here, and long checkouts are abandoned quickly." },
-      { name: "Poland", note: "Prices in zloty and locally familiar payment and parcel collection options are expected." },
-      { name: "Spain", note: "Shoppers often want to ask a question first, and WhatsApp contact is widely expected." },
+    challenges: [
+      {
+        title: "Too little traffic per country to test",
+        body: "Split tests on a low-traffic country version can need many months to reach a reliable result. We assess sample sizes page by page, say plainly where testing is viable, and use research and measured fixes for the rest.",
+      },
+      {
+        title: "Payment and delivery expectations differ",
+        body: "Preferred ways to pay and expectations about delivery and returns are not the same everywhere. We do not assume which apply. Checkout data, surveys and support enquiries for each country show whether a missing option or unclear term is costing orders.",
+      },
+      {
+        title: "Consent leaves gaps in the data",
+        body: "Visitors who decline tracking do not appear in analytics in the usual way, so funnels undercount. Figures are checked against orders or CRM records, and conclusions are drawn from totals that can be verified instead of from analytics alone.",
+      },
+      {
+        title: "A winning test can hide a worse outcome",
+        body: "A variant may raise form submissions while lowering lead quality, or lift orders while increasing returns. Each experiment has guardrail measures, and leads and orders are followed into your sales data before a result is called.",
+      },
     ],
+    approach: [
+      {
+        stage: "Measure",
+        body: "We check what is tracked on each country version, what is missing and whether the figures agree with your CRM or order system. Conversion definitions are agreed with you. Nothing is tested on numbers nobody trusts.",
+      },
+      {
+        stage: "Research",
+        body: "Funnel analysis by country and device, session recordings, on-site surveys, interviews and a heuristic review are brought together. Native speakers review the localised pages, and the output is a short list of where and why visitors are lost.",
+      },
+      {
+        stage: "Prioritise",
+        body: "Findings become written hypotheses, scored by likely effect and effort and ordered into a backlog. For each country version we state whether traffic supports split testing and how long a test would need to run.",
+      },
+      {
+        stage: "Test",
+        body: "Obvious faults are fixed and measured before and after. Uncertain ideas run as controlled experiments for their planned duration, one question at a time, with sample size fixed in advance so that an early good reading is not mistaken for a result.",
+      },
+      {
+        stage: "Learn",
+        body: "A learning log holds every result, win, loss or inconclusive, and each is read against lead quality and revenue. What is learned in one country is treated as a hypothesis for the others, not as a proven rule.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The measurement audit comes first, then several weeks of research ending in a ranked list of problem areas and a test plan. Research findings and obvious fixes usually arrive within the first weeks. Experiment results take longer, since a test must run until it reaches its planned sample, and that depends on the traffic and conversion volume of the page in question. You are given an estimated duration for each test before it starts.",
+        "A monthly review covers shipped fixes, experiments with a written result, the learning log and the reordered backlog, by country version.",
+      ],
+      notGuaranteed: [
+        "A particular increase in conversion rate, revenue or leads",
+        "That any single experiment will produce a winning variant",
+        "How long a test needs, which depends on your traffic",
+      ],
+    },
     sectors: [
-      { slug: "ecommerce", note: "Payment methods, delivery promises and returns terms per country decide whether a basket becomes an order." },
-      { slug: "saas", note: "Trial and demo forms need local language, data residency reassurance and pricing in the buyer's currency." },
-      { slug: "b2b", note: "Business buyers expect documentation, contact routes and contract terms that suit their own country." },
+      { slug: "ecommerce", note: "Checkout, delivery and returns information decide whether a basket becomes an order, and they need to be right for each country." },
+      { slug: "saas", note: "Trial and demonstration forms are short journeys with measurable outcomes, and can be followed through to paying accounts." },
+      { slug: "travel", note: "Booking paths are long, involve dates and prices, and are often completed on a phone, where small frictions cost bookings." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a CRO agency in Europe?",
-        a: "SERPMOZ is an AI-powered digital growth company, and conversion rate optimisation for sites selling into European countries is part of our work. It is done remotely. We have no office in Europe and no local research lab. User research with people in a given country is arranged online with native-language participants and moderators. Analysis, test design and reporting are handled by our team and shared through your tools.",
+        q: "What is the difference between CRO and A/B testing?",
+        a: "A/B testing is one tool within CRO. Conversion rate optimisation also includes checking measurement, researching why visitors leave, prioritising ideas and fixing faults that need no test at all. A programme that only runs tests, with no research behind its ideas, tends to produce small or random results. On low-traffic pages, CRO may involve no split testing whatsoever.",
       },
       {
-        q: "How do I choose a CRO company in Europe?",
-        a: "Ask how they research buyers in each country, since opinions formed in one market do not carry to another. They should segment data by country, know the common payment and delivery expectations, and be frank about tests that lack enough traffic to be conclusive. Check how they deal with consent in testing and analytics. Avoid firms that quote an uplift before seeing your data, or that apply one winning design to every country.",
+        q: "Does SERPMOZ have an office in Europe?",
+        a: "No. SERPMOZ carries out conversion work for companies in Europe through a remote consulting and delivery model. Analytics, recordings, surveys and testing tools are all used online, and user interviews are held by video call in the participant's language where needed. The essentials are access to your data and tools, and time with the sales or support staff who hear customers' objections.",
       },
       {
-        q: "Which European countries does your CRO work cover?",
-        a: "We run conversion work for sites selling into Germany, Austria, Switzerland, France, Belgium, the Netherlands, Spain, Italy, Poland, Portugal and the Nordic countries, remotely throughout. Analytics review can cover any market at once. Research with real users and copy changes need a native speaker, so those are scheduled country by country. We normally begin with the market where traffic is healthy and conversion lags furthest behind.",
+        q: "Can you guarantee a higher conversion rate?",
+        a: "No. A test is run because the outcome is uncertain, and some well-reasoned ideas lose. What a sound programme delivers is a steady flow of fixes for clear faults, experiments with trustworthy results where traffic permits, and a record of what was learned. Over time that tends to improve results, though no specific uplift can be promised.",
       },
       {
-        q: "What does conversion rate optimisation cost in Europe?",
-        a: "Cost depends on how many country versions are studied, how much user research is needed in each language, and whether your team or ours builds the test variations. Sites with enough traffic for experiments need testing tools and analysis time. Sites with thin traffic need more qualitative work instead. Checkout changes that involve new payment providers add development effort on your side. We scope after reviewing analytics for each market.",
+        q: "How long does CRO take to show results?",
+        a: "Clear faults, such as a broken form field or a missing payment option, can be corrected and measured within weeks. Tests take as long as the traffic dictates: a busy page may give an answer in a few weeks, a quiet country version may never reach a reliable sample. We give the estimate before starting and recommend another method where testing is impractical.",
       },
       {
-        q: "Can we run A/B tests on European visitors who decline cookies?",
-        a: "That depends on how the testing tool works and on legal interpretation, which differs between countries and is for your own adviser to settle. In practical terms, expect that some visitors will not be included in experiments or measured afterwards. We design tests to be valid for the consenting audience, avoid overstating results, and use other measurement approaches only where your adviser confirms they are acceptable. Where testing is impractical, research and staged rollouts still guide decisions.",
+        q: "What does CRO cost in Europe?",
+        a: "The cost reflects how much measurement needs repairing, how many journeys and country versions are in scope, how much research is done in each language and whether we build the changes or your developers do. Studying several markets costs more than studying one. The proposal after a growth audit sets out the scope and the reasoning behind it.",
+      },
+      {
+        q: "Should every country version of our site have a different design?",
+        a: "Rarely a different design, often different details. A shared layout keeps maintenance manageable. What usually needs adapting is the content inside it: payment and delivery options, proof and reviews, form fields, legal information and wording. Research for each market shows which of these matter. We change what the evidence supports and leave the rest alone.",
       },
     ],
   },
@@ -656,90 +903,125 @@ export const pages: LocalServicePage[] = [
     seo: {
       title: "AI SEO Services in Europe",
       metaDescription:
-        "AI SEO services in Europe: search data analysis per country, native review of AI-assisted content and visibility in AI answers across European languages.",
+        "AI SEO services for companies in Europe: AI-assisted research and content in several languages with native review, plus AI search visibility.",
       primaryKeyword: "ai seo services in europe",
       secondaryKeywords: [
         "ai seo agency in europe",
         "ai seo company in europe",
         "ai search optimisation europe",
-        "ai seo germany",
-        "ai seo france",
-        "multilingual ai seo",
-        "ai visibility europe",
+        "multilingual ai seo services",
+        "ai seo consultants europe",
       ],
     },
-    h1: "AI SEO Services in Europe for Visibility in Every Target Language",
+    h1: "AI SEO Services in Europe",
     intro:
-      "AI assistants answer in the language of the question and draw mostly on sources written in that language. A brand documented only in English can be missing from a German or Italian answer even when it sells in Munich and Milan. AI SEO in Europe combines AI-assisted analysis and drafting with native human review, market by market. SERPMOZ provides it remotely for businesses active in several European countries.",
+      "SERPMOZ provides AI SEO for companies that publish in several languages for customers in Europe. AI handles search research, briefing, drafting and monitoring across more data than a small team can read, and a specialist decides what to target and checks what is published. It suits teams with more search opportunity than hours, and brands that want to be described accurately by AI search in each language they sell in.",
     answer: {
-      question: "What does an AI SEO company do for businesses in Europe?",
-      text: "It uses AI to analyse search data, plan content and speed up production for each country, and it improves how AI assistants and AI summaries describe the brand in each language. Every output is checked by a native speaker before publication. SERPMOZ does this remotely. AI answers vary by tool, language and moment, so we measure and report them and do not promise placement.",
+      question: "What are AI SEO services, and how do they help a business working across Europe?",
+      text: "AI SEO uses AI models to carry out search work faster and across more data, and prepares a website to be read and cited by AI search features. For a company active in several countries, it makes research and upkeep in each language affordable, with native reviewers checking the output. It also tracks how AI systems describe the brand in each language. Citations in AI answers cannot be guaranteed.",
     },
-    searches: [
+    context: {
+      heading: "Why AI SEO suits companies publishing in several languages",
+      paragraphs: [
+        "Every language a company publishes in multiplies the search work: more queries to analyse, more pages to brief, more content to keep current. Few marketing teams have a specialist for each market, so the versions beyond the home language tend to fall behind. AI models are well suited to the repetitive part of this, such as grouping queries, comparing pages with competitors and flagging decay. That frees specialist time for the decisions and the checking, which is where the judgement lies.",
+        "The risk grows with the number of languages too. A model can produce a fluent paragraph in a language nobody on the team reads, and a wrong term or an invented claim will go unnoticed until a customer sees it. Fluency is not accuracy. For that reason each language needs a named reviewer who is native in it, and facts about products, prices and terms need to come from the company and not from the model's guess. Where claims are regulated, your own adviser should review them.",
+        "AI search features tend to answer in the language of the question and may draw on sources written in that language. A brand documented thoroughly in one language can therefore be thinly described in another. Companies trading in several countries also often appear under different legal entity names, addresses and product names from one country to the next. Making those descriptions consistent, and giving each language version clear, well-structured pages, gives search engines and AI systems firmer information to work from. Availability of AI features can vary by country and changes over time.",
+      ],
+    },
+    audiences: [
       {
-        title: "Asking assistants in local languages",
-        body: "A buyer in Hamburg asks an AI assistant in German which suppliers to consider, and one in Rome asks in Italian. Companies start looking for AI SEO when they test these questions themselves and find competitors named and their own brand absent.",
+        title: "Marketing teams covering many languages with few specialists",
+        body: "A central team responsible for several country sites and unable to research each properly. Assisted analysis and briefing bring every market up to a consistent standard, while native reviewers keep the output accurate.",
       },
       {
-        title: "Scaling content across many languages",
-        body: "Marketing teams responsible for six or eight country sites search for a way to keep them all current. They want AI to carry the volume, and they have usually learned that unreviewed machine output reads as foreign.",
+        title: "Companies with large sites translated years ago",
+        body: "Many pages in several languages, some outdated, some duplicated, some never revised since launch. Automated monitoring finds what has decayed in each version, and a specialist decides what to refresh, merge or remove.",
       },
       {
-        title: "AI summaries appearing unevenly",
-        body: "AI features in search results arrive in European languages and countries at different times. A team may see summaries for English queries in Dublin and none yet for the same topic in Polish, and asks how to prepare.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Sources are language-specific",
-        body: "An assistant answering in French leans on French pages, press and reference sites. Building visibility therefore means local-language pages with clear facts, coverage in that country's publications and consistent company details, repeated for each market. English authority transfers only partly.",
-      },
-      {
-        title: "Native review is the control",
-        body: "AI drafts in German, Dutch or Polish can be fluent and still choose the wrong term, the wrong level of formality or an example that does not fit the country. A native editor approves every page, and nothing is published on machine output alone.",
-      },
-      {
-        title: "Availability differs between countries",
-        body: "AI products and search features are released across Europe on different schedules, and some arrive later than elsewhere or in a changed form. We check what is live in each target country at the time of the work and avoid planning around a feature that may not be there.",
-      },
-      {
-        title: "Data handling needs care",
-        body: "Using AI tools with customer or analytics data raises data protection questions under European rules, and rules on AI itself are developing. We work with aggregated search data and keep personal data out of prompts. What your organisation may process, and where, should be confirmed with your own adviser.",
+        title: "Brands described inconsistently from country to country",
+        body: "Businesses with different entity names, product names or company details across markets. An audit of how the company is described in each language, on its own site and elsewhere, is followed by corrections to an agreed form.",
       },
     ],
-    areas: [
-      { name: "Germany", note: "German-language sources are plentiful, so a brand missing from them stands out in assistants' answers." },
-      { name: "France", note: "French answers rely on French sources; English documentation alone seldom gets a brand named." },
-      { name: "Italy", note: "International brands often lack detailed Italian pages, which leaves assistants little to cite." },
-      { name: "Netherlands", note: "Users switch between Dutch and English prompts, so both languages need monitoring." },
-      { name: "Spain", note: "Assistants may mix sources from Spain and Latin America unless pages state the country clearly." },
-      { name: "Poland", note: "Polish-language coverage and reference pages determine whether assistants know a foreign brand at all." },
+    challenges: [
+      {
+        title: "Fluent drafts in a language nobody checks",
+        body: "A model writes convincingly in many languages, including ones your team cannot read. Every draft is reviewed by a native specialist against sources, and anything that cannot be supported is removed. Tasks judged unsuitable for a model are listed as manual-only.",
+      },
+      {
+        title: "The same company under several names",
+        body: "Country subsidiaries, translated product names and old addresses make it harder for search and AI systems to connect mentions to one business. We list every profile and listing by country, agree a single form for each market and correct what differs.",
+      },
+      {
+        title: "AI answers differ by language and by run",
+        body: "An assistant can describe a company one way in English and another way in French, and the same prompt can return a different answer the next day. Tracking uses a fixed prompt set in each language, run repeatedly and reported as a range.",
+      },
+      {
+        title: "Scale tempts teams to publish too much",
+        body: "With drafting made cheap, it is easy to fill every language with similar pages. Search engines discourage content produced mainly to rank, and each page must be maintained. Output is limited to topics buyers in that market need answered.",
+      },
     ],
+    approach: [
+      {
+        stage: "Assess",
+        body: "We review organic performance by country, how your team already uses AI tools and where hours are lost. Existing AI-written and machine-translated pages are sampled for accuracy and duplication, and the ways the company is described online are listed.",
+      },
+      {
+        stage: "Analyse",
+        body: "Query and competitor data for each language is clustered and scored by models. A strategist reviews the groupings, corrects mislabelled intent and turns the output into a ranked list of what to build, refresh, merge or leave.",
+      },
+      {
+        stage: "Design",
+        body: "For the tasks where models are dependable, we build workflows around your CMS. Review points, the native reviewer for each language and the tasks kept manual are written down and agreed with you before any page is produced.",
+      },
+      {
+        stage: "Produce",
+        body: "Approved evidence is the source for briefs, pages and refreshes, which ship in batches. You supply the product facts and constraints a model cannot know. A specialist edits each batch, and technical monitoring with triaged alerts runs in the background.",
+      },
+      {
+        stage: "Review",
+        body: "Assisted pages are tagged and tracked as a group in each market: how many are indexed, how many earn visits and how many contribute to leads. Workflows that produce pages nobody reads are changed or switched off.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The assessment and market analysis occupy the first weeks, and workflows are designed before production begins. Production usually speeds up within the first couple of months once those workflows are in place. Search results follow the usual pattern: refreshed pages can respond within weeks, and new pages in contested areas typically take several months. Publishing faster does not make search engines respond faster, and newer language versions tend to take longer than the established one.",
+        "Monthly reporting sets output quality beside business results, by language, and includes how AI systems describe the company across the tracked prompts.",
+      ],
+      notGuaranteed: [
+        "Being named or cited by any AI assistant or AI search feature",
+        "That AI features are available in every country or language",
+        "A search position, or a volume of visits or leads",
+      ],
+    },
     sectors: [
-      { slug: "saas", note: "Software buyers ask assistants to compare tools in their own language, where local rivals are better documented." },
-      { slug: "technology", note: "Buyers attentive to privacy and data residency ask detailed questions that need clear, local-language answers on your site." },
-      { slug: "b2b", note: "Supplier shortlists are increasingly drafted with AI help, using sources from the buyer's own country." },
+      { slug: "saas", note: "Product documentation and comparison pages exist in several languages and change with each release, so assisted upkeep saves real effort." },
+      { slug: "manufacturing", note: "Technical catalogues are large and precise, and terminology has to be right in every language an engineer might search in." },
+      { slug: "professional-services", note: "Advice is the product, so pages must be accurate and attributable to named experts in whichever language a client reads." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ an AI SEO company in Europe?",
-        a: "SERPMOZ is an AI-powered digital growth company. For businesses in European markets we use AI to analyse search data and assist production, and we work on how AI assistants present the brand in each language. All of this is remote; we have no European office. Native speakers review output for every market. We cannot control what an AI tool says, and we report what we observe as it is.",
+        q: "How is AI SEO different from traditional SEO?",
+        a: "The goal is unchanged: to be found by the right buyers and earn their enquiry. What differs is the method and the reach. Models handle analysis, drafting and monitoring across far more data than a team can, which matters most where several languages are involved. The programme also considers how AI search features read your site. Strategy and verification remain with specialists.",
       },
       {
-        q: "How do I choose an AI SEO company in Europe?",
-        a: "Ask what the AI does and what people do. A sound answer names the tasks that are automated, such as data analysis and first drafts, and names the native reviewers who approve each language. Ask how they measure AI answers per country, how often, and how they report variation. Find out what data goes into their tools. Treat any promise of being recommended by an assistant in Germany or France as a reason to walk away.",
+        q: "Does SERPMOZ have an office in Europe?",
+        a: "No. SERPMOZ provides this service to businesses in Europe through a remote consulting and delivery model. The work runs on your search data, your CMS and shared review documents, so distance does not affect it. It does depend on native reviewers for each language, and on time with someone at your company who knows the product well enough to correct a draft.",
       },
       {
-        q: "Which European countries does your AI SEO work cover?",
-        a: "We cover Germany, Austria, Switzerland, France, Belgium, the Netherlands, Spain, Italy, Poland, Portugal and the Nordic countries, working remotely. Monitoring how assistants describe a brand can be set up in any of those languages. Content work goes only where we have a native reviewer confirmed. Because AI features differ in availability from country to country, we check each market's current situation before proposing what to do there.",
+        q: "Can you guarantee our brand will appear in AI answers in every language?",
+        a: "No, and no provider can. AI systems are run by their own operators, change without notice and answer the same question differently from one run to the next. The practical work is to publish clear, accurate pages in each language, keep company details consistent, earn credible independent coverage in each market and track how the brand is described so changes are noticed.",
+      },
+      {
+        q: "How long does AI SEO take to show results?",
+        a: "Faster production is visible first, generally within weeks of workflows going live. Corrections to company details can also take effect fairly soon. Gains in search visibility follow the ordinary timetable of months, and longer for language versions with little existing authority. How AI systems describe a brand shifts unpredictably, so that is reported as a trend over repeated checks.",
       },
       {
         q: "What does AI SEO cost in Europe?",
-        a: "The number of languages is the main driver, because each needs native review and its own monitoring of AI answers. The amount of content to create or refresh matters, as does the condition of the existing site and data. AI reduces drafting and analysis time, and the saving is partly offset by the human checking that multilingual work requires. We scope by market and phase after an initial review of visibility in each country.",
+        a: "Cost depends on the size of the site, the number of languages, how much content needs producing or refreshing and how much specialist review your sector requires. Regulated subjects and additional languages both add review time. AI lowers the cost of research and first drafts, not the cost of judgement. A growth audit comes first and the proposal explains the scope.",
       },
       {
-        q: "Do AI assistants give the same answer about our brand in every European language?",
-        a: "No. The same question asked in English, German and Spanish can produce different brands, different descriptions and different sources, and answers change from one day and one tool to the next. The assistant draws on what exists in each language, so gaps in local-language coverage show up as gaps in answers. We run a fixed set of questions per country at intervals, record what is said and cited, and use the pattern to decide where to add pages or coverage.",
+        q: "Is machine-translated or AI-written content safe to publish across our country sites?",
+        a: "It can be, with review. Search engines judge whether content is helpful and reliable, whatever produced it. The danger is unreviewed text at volume: wrong terminology, invented details and pages that repeat each other across languages. In our workflow a native specialist stands between every draft and publication, and output is limited to topics that serve buyers in that market.",
       },
     ],
   },

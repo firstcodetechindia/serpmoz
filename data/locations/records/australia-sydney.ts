@@ -34,56 +34,56 @@ export const location: LocationRecord = {
   },
 
   hero: {
-    title: "Digital Marketing Agency and SEO Company in Sydney",
+    title: "Digital Marketing Agency in Sydney",
     description:
-      "Sydneysiders search by suburb. A plumber in Bondi, a conveyancer in Parramatta and a physio in Chatswood are found through searches that name those places, and rarely through searches for Sydney alone. Competition is fiercest in the CBD and inner suburbs and eases further out. We plan local search, paid media and conversion work around that pattern, working with Sydney businesses remotely.",
+      "Sydney is a city of several hundred suburbs, and an address there names the suburb, not just the city. A plumber in Bondi and a conveyancer in Parramatta are on opposite sides of it, and each needs to be visible in its own area before Sydney as a whole. We check the competing results suburb by suburb, and plan local search, paid media and conversion work around what that shows.",
   },
 
   facts: [
     { label: "Part of", value: "New South Wales, as the state capital" },
-    { label: "Sectors with weight", value: "Finance and professional services, property, home services and trades, hospitality" },
-    { label: "Local search shaped by", value: "Suburb names, regional labels such as Inner West or Northern Beaches, and map results on mobile" },
-    { label: "Where discovery happens", value: "Google Search and Maps, property portals, trade marketplaces, reviews, word of mouth" },
+    { label: "Known for", value: "Finance and professional services, property, home services and trades, hospitality" },
+    { label: "Address details to get right", value: "The suburb name, and regional labels such as Inner West or Northern Beaches" },
+    { label: "Platforms we assess", value: "Google Search and Maps, property portals, trade marketplaces, reviews, word of mouth" },
   ],
 
   answer: {
     question: "What does a digital marketing agency do for businesses in Sydney?",
-    text: "A digital marketing agency for businesses in Sydney makes them visible in the suburbs they serve, through local SEO, Google Maps, paid search and better landing pages. Local SEO in Sydney is organised by suburb: customers search for a service plus a suburb or region name, and Google shows map results based on where they are. SERPMOZ plans and runs this work remotely, alongside paid search and conversion improvements, and tracks results by area so that effort goes to the suburbs worth winning.",
+    text: "A digital marketing agency for businesses in Sydney makes them visible in the suburbs they serve, through local SEO, Google Maps, paid search and better landing pages. Local SEO in Sydney is organised by suburb: addresses and profiles name the suburb, and Google shows map results based on where the searcher is. SERPMOZ plans and runs this work remotely, alongside paid search and conversion improvements, and tracks results by area so that effort goes to the suburbs worth winning.",
   },
 
   overview: {
     heading: "About digital growth in Sydney",
     paragraphs: [
-      "Sydney's commercial centres are spread out. Banks, fund managers, insurers and the large law and accounting firms are in the CBD, around Martin Place and Barangaroo, with further offices in North Sydney. Parramatta serves as a second centre for the west, and Macquarie Park hosts technology and pharmaceutical companies. Agencies and start-ups favour Surry Hills and Pyrmont. Around them lie hundreds of suburbs where trades, clinics, agents and cafes compete for nearby households, and where an SEO company does most of its local work.",
-      "That suburban layer is where most Sydney businesses win or lose. The harbour, the rivers and the traffic divide the city into regions that residents treat as separate: the Eastern Suburbs, the Inner West, the North Shore, the Northern Beaches, the Hills, the Shire and Western Sydney. A tradesperson based in one seldom works in another. Unlike the picture across [Australia](/digital-marketing-agency-australia/), where metros are far apart, Sydney's markets are close together and still distinct.",
-      "Competition follows a gradient. CBD and inner-suburb terms in finance, legal, property and hospitality are contested by well-funded firms, and paid clicks are priced accordingly. Further out, many capable businesses have incomplete profiles and thin websites. For those willing to do [local SEO](/local-seo-services/) properly, the middle and outer suburbs often offer better returns than fighting for the centre, at least to begin with.",
+      "Sydney's commercial centres are spread out. Banks, fund managers, insurers and the large law and accounting firms are associated with the CBD, with further offices across the harbour in North Sydney. Parramatta serves as a second centre for the west, and other business districts sit to the north and around the inner city. Around them lie the many suburbs where trades, clinics, agents and cafes operate, and where an SEO company does much of its local work.",
+      "That suburban layer is where local work is done. The harbour and the rivers divide the city into regions with established names, such as the Inner West, the Northern Beaches and Western Sydney, and we research those labels as keywords alongside suburb names. If you are based in one region, we ask how far you travel for a job before any service area is set. Unlike the picture across [Australia](/digital-marketing-agency-australia/), where metros are far apart, Sydney's markets are close together and still distinct.",
+      "We do not assume how contested any suburb is. For each area you serve, we look at who appears in the map pack and organic results for your terms, how complete their profiles are and what the ad auction is charging. Sydney is known for finance, legal and property firms concentrated in the CBD, so a term naming the centre is compared with the same term for suburbs further out. For those willing to do [local SEO](/local-seo-services/) properly, that comparison shows where to begin, which may be somewhere other than the centre.",
     ],
   },
 
   discovery: {
     heading: "How customers discover businesses in Sydney",
     intro:
-      "Most local discovery in Sydney happens on a phone, with a suburb in the query or location switched on. Recommendations still matter, but they are checked against reviews before anyone calls.",
+      "Each channel below is one a Sydney business can set up, maintain and measure. We carry no research on how the city's residents choose suppliers, so priorities follow the calls and bookings your own tracking records.",
     channels: [
       {
         name: "Google Search and Maps",
-        body: "Google is the dominant route to local businesses, and the map pack takes most of the attention for service searches. People add a suburb or tap near me, then compare ratings, photos and opening hours.",
+        body: "Google is the main route to plan around for local businesses. A query with a suburb name or the words near me returns a map pack, where ratings, photos and opening hours sit side by side, so those are the details we audit first.",
       },
       {
         name: "Trade and task marketplaces",
-        body: "Homeowners post jobs on Australian trade marketplaces and receive quotes from several tradespeople. These platforms rank well in search, so a trade business competes with them and may also choose to list on them.",
+        body: "Homeowners can post jobs on Australian trade marketplaces and receive quotes from several tradespeople. These platforms can appear prominently in search, so a trade business competes with them and may also choose to list on them.",
       },
       {
         name: "Property portals",
-        body: "Buying, selling and renting start on the two major national property portals, where agents' profiles and sold results are compared. Agencies need their own sites and suburb pages to be found by vendors choosing who to list with.",
+        body: "The major national property portals carry listings, agents' profiles and sold results. An agency's own site and suburb pages are where it can say more than a portal profile allows, for a vendor deciding who to list with.",
       },
       {
         name: "Reviews and booking platforms",
-        body: "Google reviews carry the most weight, supported by Australian product and service review sites, health booking platforms for clinics, and reservation apps and city food guides for venues.",
+        body: "Google reviews attach to the Business Profile, and there are also Australian product and service review sites, health booking platforms for clinics, and reservation apps and city food guides for venues. We check that your details match across whichever of these apply.",
       },
       {
         name: "Local Facebook groups and word of mouth",
-        body: "Suburb community groups are where residents ask for a reliable electrician, dentist or mechanic. A recommendation there usually leads to a search for the business name, so the profile and reviews must hold up.",
+        body: "Suburb community groups on Facebook are run by their members, and no agency can arrange a recommendation in one. Our work starts at the next step: when someone looks up your business name, the profile, reviews and site they find must hold up.",
       },
     ],
   },
@@ -91,20 +91,20 @@ export const location: LocationRecord = {
   searchAi: {
     heading: "Search and AI discovery in Sydney",
     paragraphs: [
-      "Google dominates search in Sydney, and commercial queries are overwhelmingly in English, though some suburbs have large communities served in other languages. Intent is strongly local for trades, health and hospitality, and city-wide or national for finance and professional services based in the CBD. Searchers use Australian terms and expect Australian prices and licences, which overseas content rarely provides. A good [SEO programme](/seo-services/) separates suburb-level pages from city and national ones so that each answers the right search.",
-      "AI assistants are starting to appear in research, for questions such as which suburbs suit a first home buyer, what a renovation involves, or which advisers specialise in a field. Their answers draw on reviews, directories, news and clearly structured business pages. Stating services, licences, suburbs covered and credentials plainly and consistently helps a business be represented accurately. AI answers vary between tools and over time, and nobody can guarantee placement in them. We track what is observed and report it honestly.",
+      "Google is the main search engine to plan around in Sydney, and English is the main language, though the city has sizeable communities speaking other languages. We treat trades, health and hospitality as local work, and finance and professional services based in the CBD as city-wide or national work. Pages use Australian terms and show Australian prices and New South Wales licence details, which content written overseas does not carry. A good [SEO programme](/seo-services/) separates suburb-level pages from city and national ones so that each answers the right search.",
+      "AI assistants will answer questions such as which suburbs suit a first home buyer, what a renovation involves, or which advisers specialise in a field. Their answers draw on reviews, directories, news and clearly structured business pages. Stating services, licences, suburbs covered and credentials plainly and consistently helps a business be represented accurately. AI answers vary between tools and over time, and nobody can guarantee placement in them. We track what is observed and report it as it is.",
     ],
   },
 
   local: {
     heading: "Why local search matters in Sydney",
     paragraphs: [
-      "For trades and local services, the map pack is the shop front. Someone with a burst pipe or a broken air conditioner picks from the first few profiles they see, usually the nearest ones with solid recent reviews. Careful [Google Maps SEO](/google-maps-seo/) decides whether a business appears in that set for the suburbs around its base, and no profile will rank everywhere across a city this large.",
-      "Service-area businesses face a particular choice. A mobile trade without a shopfront hides its address and lists the areas it covers, which makes relevance harder to earn in suburbs far from base. Publishing a near-identical page for every suburb is tempting and rarely works. Fewer, better pages for the areas a business truly serves, backed by reviews that mention those suburbs, do more. Calls from paid search then deserve [well-built landing pages](/landing-page-optimization/).",
+      "For trades and local services, the map pack can be the shop front. It shows a short list of profiles for a search about a burst pipe or a broken air conditioner, with distance from the searcher and review history among the things Google weighs. Careful [Google Maps SEO](/google-maps-seo/) decides whether a business appears in that set for the suburbs around its base, and no profile will rank everywhere across a city this large.",
+      "Service-area businesses face a particular choice. A mobile trade without a shopfront hides its address and lists the areas it covers, which makes relevance harder to earn in suburbs far from base. Publishing a near-identical page for every suburb is tempting and tends not to work. Fewer, better pages for the areas a business truly serves, backed by reviews that mention those suburbs, do more. Calls from paid search then deserve [well-built landing pages](/landing-page-optimization/).",
     ],
     points: [
-      "Searches pair a service with a suburb, such as Bondi, Parramatta or Manly, or with a region such as Inner West or North Shore.",
-      "Near me and open now searches on mobile are common for urgent trades, health and food.",
+      "Use the suburb from your registered address, such as Bondi or Parramatta, in the profile, and mention a region such as Inner West or North Shore only if you work across it.",
+      "Keep opening hours, holiday hours and the primary category accurate, because open now and near me results are filtered on them.",
       "Reviews that describe the job and name the suburb help both prospects and local relevance, and must be genuine.",
       "Mobile trades should set service areas they can reach reliably, given bridge, tunnel and motorway traffic and tolls.",
       "Businesses with several branches need a separate profile, page and phone number for each, with no duplicate listings.",
@@ -114,19 +114,19 @@ export const location: LocationRecord = {
   opportunities: [
     {
       title: "Middle and outer suburbs",
-      body: "Competition thins quickly outside the CBD and inner ring. Businesses that invest in profiles, reviews and useful pages for growth areas in the west and south-west can establish themselves before rivals do.",
+      body: "A suburb is worth targeting when demand exists and the profiles currently shown can be bettered, and that is checked, not guessed. If the outer suburbs you serve pass that test, profiles, reviews and useful pages for them are a sensible place to start.",
     },
     {
       title: "Direct demand for trades",
-      body: "Many tradespeople depend on marketplaces that charge for each lead and send the same job to several competitors. Building direct visibility in search and maps reduces that dependence over time.",
+      body: "A trade that depends on marketplaces pays for its leads and may see the same job sent to several competitors. Building direct visibility in search and maps reduces that dependence over time.",
     },
     {
       title: "Suburb expertise for property professionals",
-      body: "Vendors choose agents, brokers and conveyancers who clearly know their area. Detailed, current suburb content demonstrates that knowledge to people who are still deciding whom to call.",
+      body: "An agent, broker or conveyancer who works one area closely has knowledge worth publishing. Detailed, current suburb content puts that knowledge in front of people who are still deciding whom to call.",
     },
     {
       title: "Paid search that reflects real service areas",
-      body: "Sydney campaigns often target the whole metropolitan area and pay for clicks the business cannot serve. Tight geographic structure and call tracking usually recover budget quickly.",
+      body: "A campaign that targets the whole metropolitan area can pay for clicks the business cannot serve. Tight geographic structure and call tracking help to recover that budget.",
     },
   ],
 
@@ -135,53 +135,53 @@ export const location: LocationRecord = {
       slug: "google-maps-seo",
       title: "Google Maps SEO in Sydney",
       body: "Optimises and maintains each Business Profile so it appears and is chosen in map results nearby.",
-      why: "For trades, clinics and venues in Sydney, the map pack is where most local choices are made.",
+      why: "For trades, clinics and venues, the map pack is the first thing a local search result displays.",
     },
     {
       slug: "local-seo-services",
       title: "Local SEO in Sydney",
       body: "Builds local visibility through listings, reviews, suburb pages and structured data for every area served.",
-      why: "Sydney is searched suburb by suburb, and each region behaves as its own market.",
+      why: "Sydney is addressed suburb by suburb, and results for the same service change from one region to the next.",
     },
     {
       slug: "google-ads",
       title: "Google Ads in Sydney",
       body: "Runs search and call-focused campaigns matched to the suburbs and services that are profitable.",
-      why: "Urgent trade and professional searches convert quickly here, but untargeted metro-wide campaigns waste spend.",
+      why: "A metro-wide campaign buys clicks from suburbs the business does not travel to, and suburb-level targeting stops that.",
     },
     {
       slug: "seo-services",
       title: "SEO Services in Sydney",
       body: "Grows organic visibility for city-wide and national searches alongside local ones.",
-      why: "CBD-based finance, legal and professional firms compete beyond their postcode and need broader authority.",
+      why: "A CBD-based finance, legal or professional firm usually sells beyond its postcode and needs authority on its subject, not only on its location.",
     },
     {
       slug: "landing-page-optimization",
       title: "Landing Page Optimisation in Sydney",
       body: "Builds focused pages that turn paid and local visitors into calls, quote requests and bookings.",
-      why: "Mobile searchers comparing several providers decide in seconds, so clarity and proof on the page matter.",
+      why: "A landing page viewed on a phone has little space, so the service, the area covered, proof and a call button have to come first.",
     },
     {
       slug: "web-development",
       title: "Web Development in Sydney",
       body: "Delivers fast, mobile-first sites with clear service, suburb and contact structures.",
-      why: "Many established local businesses in Sydney are held back by dated sites that load slowly on phones.",
+      why: "An established local business can be held back by a dated site that loads slowly on phones.",
     },
   ],
 
   industries: [
-    { slug: "home-services", note: "Plumbers, electricians, air conditioning, cleaning and pest control firms compete suburb by suburb for urgent, mobile searches." },
-    { slug: "real-estate", note: "Property is a constant preoccupation, with agencies, buyers' agents and brokers marketing at suburb level." },
+    { slug: "home-services", note: "For plumbers, electricians, air conditioning, cleaning and pest control firms we set service areas by suburb and measure calls from mobile searches." },
+    { slug: "real-estate", note: "Sydney is known for its property market, and agencies, buyers' agents and brokers need suburb pages that reflect the areas they work." },
     { slug: "finance", note: "Banks, fund managers, insurers and fintechs cluster in the CBD and market under financial services regulation." },
     { slug: "professional-services", note: "Law, accounting and advisory firms serve corporate clients in the centre and households and small businesses in the suburbs." },
-    { slug: "construction", note: "Builders and renovators work in a busy residential market where licensing, reviews and portfolios drive selection." },
-    { slug: "hospitality", note: "Cafes, restaurants, pubs and hotels rely on maps, reviews, reservation apps and food media to fill tables." },
+    { slug: "construction", note: "Builders and renovators in New South Wales work under state licensing, so sites and profiles should show the licence, a portfolio and genuine reviews." },
+    { slug: "hospitality", note: "For cafes, restaurants, pubs and hotels we keep map profiles, menus, hours and reservation links accurate and reply to reviews." },
   ],
 
   considerations: [
     {
       title: "Reviews and testimonials under consumer law",
-      body: "Australian consumer law treats fake, incentivised or selectively presented reviews as misleading conduct. Review routines must ask customers fairly and present feedback honestly.",
+      body: "Australian consumer law treats fake, incentivised or selectively presented reviews as misleading conduct. Review routines must ask customers fairly and present feedback as it was given.",
     },
     {
       title: "Licensing in trades and property",
@@ -212,7 +212,7 @@ export const location: LocationRecord = {
     },
     {
       title: "AI for the workload, experts for the choices",
-      body: "AI helps us audit listings, analyse reviews and research suburbs at scale. Experienced practitioners decide what matters and check every output.",
+      body: "AI helps us audit listings, analyse reviews and research suburbs at scale. Specialists decide what matters and check every output, working remotely.",
     },
   ],
 
@@ -223,11 +223,11 @@ export const location: LocationRecord = {
   faqs: [
     {
       q: "Is SERPMOZ a digital marketing agency in Sydney?",
-      a: "SERPMOZ calls itself an AI-powered digital growth company. The work is what Sydney businesses expect from a digital marketing agency or SEO company, delivered remotely and without a Sydney office. For trades, clinics and agents that is Google Maps and local SEO for the suburbs around your base, review routines that meet consumer law, Google Ads and landing pages that turn calls into booked jobs. For CBD firms in finance and professional services it is city-wide and national organic search, with compliance checks on claims. We also build and repair websites. Calls are arranged to suit Australian Eastern hours.",
+      a: "SERPMOZ calls itself an AI-powered digital growth company. The work is what Sydney businesses expect from a digital marketing agency or SEO company, delivered remotely and without a Sydney office. For trades, clinics and agents that is Google Maps and local SEO for the suburbs around your base, review routines that meet consumer law, Google Ads and landing pages that turn calls into booked jobs. For CBD firms in finance and professional services it is city-wide and national organic search, with compliance checks on claims. We also build and repair websites.",
     },
     {
       q: "What digital marketing services are available for Sydney businesses?",
-      a: "We offer local and Google Maps SEO, organic search, Google Ads, landing page and conversion work, content and website development. For most Sydney businesses the starting point is local visibility and paid efficiency in the suburbs they serve, confirmed through an audit before any work is scoped.",
+      a: "We offer local and Google Maps SEO, organic search, Google Ads, landing page and conversion work, content and website development. For a Sydney business the usual starting point is local visibility and paid efficiency in the suburbs they serve, confirmed through an audit before any work is scoped.",
     },
     {
       q: "Does SERPMOZ have an office in Sydney?",
@@ -251,7 +251,7 @@ export const location: LocationRecord = {
     },
     {
       q: "How does the growth audit work?",
-      a: "You provide read access to analytics, Search Console, advertising accounts and Business Profiles. We review visibility by suburb, reviews, paid performance and conversion paths against local competitors, then deliver a prioritised list of actions. It is yours to act on however you choose.",
+      a: "The starting point is view-only access to analytics, Search Console, the ad accounts and any Business Profiles. We review visibility by suburb, reviews, paid performance and conversion paths against local competitors, then deliver a prioritised list of actions. It is yours to act on however you choose.",
     },
   ],
 

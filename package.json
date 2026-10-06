@@ -10,7 +10,9 @@
     "typecheck": "tsc --noEmit",
     "test": "node --import ./scripts/alias.mjs --test tests/*.test.ts",
     "geo": "node scripts/build-location-geo.mjs",
-    "docs:links": "node --import ./scripts/alias.mjs scripts/build-linking-map.ts"
+    "docs:links": "node --import ./scripts/alias.mjs scripts/build-linking-map.ts",
+    "seo:check": "node --import ./scripts/alias.mjs scripts/seo-check.ts",
+    "seo:crawl": "node --import ./scripts/alias.mjs scripts/seo-check.ts --crawl"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

@@ -32,15 +32,15 @@ export const location: LocationRecord = {
   },
 
   hero: {
-    title: "Digital Marketing Agency and SEO Company in Canada",
+    title: "Digital Marketing Agency in Canada",
     description:
-      "Canada is often planned as an extension of the United States, and that is usually the first mistake. Customers here search in two official languages, live in a few large metros separated by long distances, and want to know that a business prices in Canadian dollars and ships from within the country. SERPMOZ builds search, paid and email programmes for Canada on those terms.",
+      "Canada is sometimes planned as an extension of the United States, and that is a mistake. The country has two official languages, most of its people live in a few large metros separated by long distances, and it has its own currency, sales taxes and consumer rules. SERPMOZ builds search, paid and email programmes for Canada on those terms.",
   },
 
   facts: [
     { label: "Languages we plan for", value: "English and French, with Canadian French written for Quebec" },
-    { label: "Where discovery happens", value: "Google Search and Maps, review and listing sites, community groups, email" },
-    { label: "Sectors with weight", value: "Finance, real estate, technology, professional services, ecommerce" },
+    { label: "Platforms we assess", value: "Google Search and Maps, review and listing sites, community groups, email" },
+    { label: "Known for", value: "Finance, real estate, technology, professional services, ecommerce" },
     { label: "Cities covered", value: "Toronto, with plans for other Canadian metros" },
   ],
 
@@ -52,41 +52,41 @@ export const location: LocationRecord = {
   overview: {
     heading: "About digital growth in Canada",
     paragraphs: [
-      "Canada has a small population spread across a very large country, and most of it lives in a few metropolitan areas. Toronto, Montreal, Vancouver, Calgary, Edmonton and Ottawa are separated by hours of flying, different time zones and, in Montreal's case, a different working language. Each behaves as its own market with its own competitors, media and costs. A national plan from any digital marketing agency in Canada is therefore usually a set of metro plans with shared foundations. Our [Toronto page](/digital-marketing-agency-toronto/) shows how that looks for one city, and [local SEO](/local-seo-services/) carries much of the load elsewhere.",
-      "Language is a legal matter as well as a commercial one. English and French are both official languages, and Quebec has its own requirements that commerce, including websites and advertising aimed at customers in the province, be available in French. Meeting that properly means writing in Canadian French, which differs from the French of France in vocabulary and idiom, and structuring the site so each language version is indexed and shown to the right audience. Translation alone, particularly machine translation left unreviewed, tends to read as an afterthought to francophone customers.",
-      "The proximity of the United States shapes everything. Canadians see American advertising, shop on American sites and are served American pages in search results when no clear Canadian alternative exists. Yet the differences are practical and important: currency, duties and shipping, provincial sales taxes, spelling, banking and insurance products, and public healthcare. Businesses that make their Canadian identity obvious, with a .ca domain, Canadian dollar pricing and a Canadian address, convert buyers who are wary of surprise costs at the border. Getting the technical signals right is a job for [international SEO](/international-seo/).",
-      "Canadian rules on consent are stricter than many newcomers expect. The national anti-spam law requires consent before commercial email or text messages are sent, along with sender identification and an unsubscribe mechanism, and privacy law operates at federal level with separate, in some cases more demanding, provincial regimes. This rules out purchased lists and casual lead sharing. It also rewards businesses that build permission properly, because a consented list in a market of this size becomes one of the more dependable channels a company owns. We plan [email marketing](/email-marketing/) on that basis.",
+      "Canada has a small population spread across a very large country, and most of it lives in a few metropolitan areas. Toronto, Montreal, Vancouver and Calgary are separated by long distances and, in Montreal's case, a different working language. A provider in one cannot serve walk-in customers in another, so each is planned as its own market with its own pages, profiles and budget. A national plan from any digital marketing agency in Canada is therefore usually a set of metro plans with shared foundations. Our [Toronto page](/digital-marketing-agency-toronto/) shows how that looks for one city, and [local SEO](/local-seo-services/) carries much of the load elsewhere.",
+      "Language is a legal matter as well as a commercial one. English and French are both official languages, and Quebec has its own French-language requirements for commerce aimed at customers in the province, which can extend to websites and advertising. Meeting that properly means writing in Canadian French, which differs from the French of France in vocabulary and idiom, and structuring the site so each language version is indexed and shown to the right audience. Translation alone, particularly machine translation left unreviewed, carries over European vocabulary and English sentence structure, and we do not publish it.",
+      "The proximity of the United States shapes much of this. The two countries share a language and a long border, and a search engine can show an American page to a Canadian searcher when no clearly Canadian version exists. Yet the differences are practical and important: currency, duties and shipping, provincial sales taxes, spelling, banking and insurance products, and public healthcare. A business can make its Canadian identity obvious with a .ca domain, Canadian dollar pricing and a Canadian address, and a page that states duties and shipping terms answers the cost question before checkout. Getting the technical signals right is a job for [international SEO](/international-seo/).",
+      "Canadian rules on consent deserve attention before any campaign is planned. The national anti-spam law requires consent before commercial email or text messages are sent, along with sender identification and an unsubscribe mechanism, and privacy law operates at federal level with separate, in some cases more demanding, provincial regimes. This rules out purchased lists and casual lead sharing. It also rewards businesses that build permission properly, because a consented list in a market of this size can become one of the more dependable channels a company owns. We plan [email marketing](/email-marketing/) on that basis.",
     ],
   },
 
   discovery: {
     heading: "How customers discover businesses in Canada",
     intro:
-      "Canadians search much as other English-speaking markets do, but they filter what they find for one thing first: whether the business is really Canadian. The channels below reflect that habit.",
+      "The channels below are the ones we plan for a business selling in Canada. Each is set up so that a searcher can tell from the result itself that the business operates in Canada and prices in Canadian dollars, and the effort given to each is decided from your own data.",
     channels: [
       {
         name: "Google Search and Maps",
-        body: "Google is the dominant search engine in Canada, and local searches name the city, the suburb or the neighbourhood. In sprawling metros people check driving distance and opening hours on the map before choosing, so profile accuracy has direct commercial effect.",
+        body: "Google is the main search engine to plan around in Canada. Map results show distance, opening hours and reviews beside each business, so we check that the pin, the hours and the city, suburb or neighbourhood named on your location pages are correct for every branch.",
       },
       {
         name: "Canadian signals in the results",
-        body: "Searchers often add 'Canada' or a province to a query, or scan results for a .ca address, to avoid American sites. Pages that state Canadian pricing, shipping and service areas in titles and descriptions win clicks that generic pages lose.",
+        body: "The .ca domain is reserved for registrants with a Canadian connection, which makes it a plain signal of where a business operates. We also write Canadian pricing, shipping and service areas into titles and descriptions, so the result states them before anyone clicks.",
       },
       {
         name: "Review and listing sites",
-        body: "Google reviews are the common reference, with sector platforms beside them. HomeStars is used to choose contractors and trades, Realtor.ca is the central property listing site, and Kijiji remains a familiar classifieds marketplace for local goods and services.",
+        body: "Google reviews sit on the Business Profile, with sector platforms beside them. HomeStars is a Canadian directory for contractors and trades, Realtor.ca is a national property listing site, and Kijiji is a Canadian classifieds marketplace for local goods and services. Where your sector has a platform of this kind, we check that your details on it match your profile.",
       },
       {
         name: "Community groups and social platforms",
-        body: "Neighbourhood and city groups on Facebook, along with city communities on Reddit, are where residents ask for recommendations. Instagram supports restaurants, retail and personal services, and LinkedIn is the working network for B2B in the major business centres.",
+        body: "A recommendation made in a neighbourhood group on Facebook or a city community on Reddit is outside a marketer's control, so our part is making sure a search for your name afterwards finds accurate details. Instagram suits restaurants, retail and personal services with something to show, and LinkedIn is the professional network we use for B2B campaigns.",
       },
       {
         name: "French-language search and media in Quebec",
-        body: "Quebec customers search in French, follow French-language news and broadcasters, and respond to brands that address them in their own idiom. English pages can rank there, but they convert poorly against a competent French alternative.",
+        body: "French is the official language of Quebec and the first language of most of its residents, and the province has its own French-language news and broadcasters. If you sell there, we research French keywords separately and have pages written in Canadian French, not adapted from the English ones.",
       },
       {
         name: "AI assistants",
-        body: "ChatGPT, Google's AI features and Copilot are used to compare providers and explain products. Because much of the material these systems learn from is American, their answers can default to American companies and rules unless Canadian sources clearly state otherwise.",
+        body: "ChatGPT, Google's AI features and Copilot will compare providers and explain products on request. Because a great deal of English-language material online is American, their answers can default to American companies and rules unless Canadian sources clearly state otherwise.",
       },
     ],
   },
@@ -94,32 +94,32 @@ export const location: LocationRecord = {
   searchAi: {
     heading: "Search and AI discovery in Canada",
     paragraphs: [
-      "Google carries most Canadian search, with Bing a modest second. The more distinctive issue is which country's pages appear. Where a company runs American and Canadian versions of a site, the American one frequently ranks in Canada unless the Canadian version is clearly marked with language and region annotations, local content and Canadian links. Spelling follows Canadian convention, which mixes British forms such as colour and centre with some American ones, and a bilingual site needs each French page paired correctly with its English counterpart.",
-      "Local intent is strong because metros are so far apart. Someone in Calgary has no use for a provider in Halifax, so service searches resolve to the city, and within large metros to suburbs and neighbourhoods. National intent applies to ecommerce, software and financial products, where Canadian firms compete with large American brands. In those categories the Canadian angle is the advantage: pricing in local currency, domestic shipping, compliance with Canadian rules and support in both languages are things an American competitor often cannot claim.",
-      "AI summaries and assistants are entering Canadian research journeys in the same way as elsewhere, with one local complication: answers about tax, insurance, mortgages, health or law may describe the American position by default. Canadian businesses can help by publishing clear, well-structured explanations that name the province and the Canadian context. AI answers vary between users and over time, and nobody can guarantee placement in them. We measure current mentions during the [growth audit](/growth-audit/) and report changes without overstating them.",
+      "Google is the main search engine to plan around in Canada, with Bing relevant mainly through desktop defaults and some AI assistants. The more distinctive issue is which country's pages appear. Where a company runs American and Canadian versions of a site, the American one can rank in Canada unless the Canadian version is clearly marked with language and region annotations, local content and Canadian links. Spelling follows Canadian convention, which mixes British forms such as colour and centre with some American ones, and a bilingual site needs each French page paired correctly with its English counterpart.",
+      "Local work matters because the metros are so far apart. Calgary and Halifax are several time zones from each other, so a service business is planned city by city, and within a large metro by the suburbs and neighbourhoods it can reach. Ecommerce, software and financial products are sold nationally, where a Canadian firm can appear beside large American brands. In those categories the Canadian angle is the thing to state plainly: pricing in local currency, domestic shipping, compliance with Canadian rules and support in both languages, wherever your business can truthfully claim them.",
+      "AI summaries and assistants raise one complication for Canadian businesses: answers about tax, insurance, mortgages, health or law may describe the American position by default. Canadian businesses can help by publishing clear, well-structured explanations that name the province and the Canadian context. AI answers vary between users and over time, and nobody can guarantee placement in them. We measure current mentions during the [growth audit](/growth-audit/) and report changes without overstating them.",
     ],
   },
 
   opportunities: [
     {
       title: "Being the clearly Canadian option",
-      body: "Many categories are served in Canada by American sites with a currency switcher. A business that shows Canadian pricing, taxes, shipping and support from the first screen removes the doubts that stop those visitors buying.",
+      body: "An American site with a currency switcher is not the same thing as a Canadian one. A business that shows Canadian pricing, taxes, shipping and support from the first screen has answered the cost questions a cross-border seller leaves open.",
     },
     {
       title: "French content written for Quebec",
-      body: "A good deal of French content aimed at Quebec is thin or machine translated. Properly written Canadian French pages, with their own keyword research, meet less competition and serve a large, loyal audience.",
+      body: "Quebec is a large, mainly French-speaking province. If it is part of your market, properly written Canadian French pages with their own keyword research serve it directly, and we read the existing French results for your terms before estimating the work.",
     },
     {
       title: "Metro-by-metro local search",
-      body: "Outside the largest cities, local results are often held by businesses with incomplete profiles and few recent reviews. Careful profile, review and location page work can earn visibility there faster than in more contested markets.",
+      body: "We do not assume any city is easy. For each metro you serve we look at the profiles currently shown for your terms, including how complete they are and how recent their reviews, and that comparison decides where profile, review and location page work is likely to pay back first.",
     },
     {
       title: "A consented email list",
-      body: "Because the anti-spam law removes shortcuts, competitors' lists are often small or poorly maintained. Building permission through useful content and clear sign-up produces a channel that keeps working when ad costs rise.",
+      body: "The anti-spam law removes the shortcut of buying a list, so the only route is to earn one. Building permission through useful content and clear sign-up produces a channel that keeps working when ad costs rise.",
     },
     {
       title: "Canadian answers to regulated questions",
-      body: "Searchers asking about mortgages, tax, insurance or immigration often land on American explanations that do not apply to them. Accurate, province-aware content from a Canadian firm fills a real gap in both search results and AI answers.",
+      body: "Mortgages, tax, insurance and immigration work differently in Canada from the United States, and some of them differ between provinces as well. Accurate, province-aware content from a Canadian firm gives search engines and AI assistants a source that states the Canadian position.",
     },
   ],
 
@@ -128,13 +128,13 @@ export const location: LocationRecord = {
       slug: "seo-services",
       title: "SEO Services in Canada",
       body: "Builds organic visibility in the metros and categories where your business can serve customers well.",
-      why: "Search demand is concentrated in a few cities, so effort has to be placed deliberately, not spread nationally.",
+      why: "Most of the population lives in a few metropolitan areas, so effort has to be placed deliberately, not spread nationally.",
     },
     {
       slug: "international-seo",
       title: "International SEO in Canada",
       body: "Makes sure Canadian and French-language pages are indexed and shown to the audiences they were written for.",
-      why: "Without clear regional signals, American versions of the same pages take the Canadian rankings.",
+      why: "Without clear regional signals, American versions of the same pages can take the Canadian rankings.",
     },
     {
       slug: "technical-seo",
@@ -152,7 +152,7 @@ export const location: LocationRecord = {
       slug: "google-maps-seo",
       title: "Google Maps SEO in Canada",
       body: "Improves how each branch appears in the map pack for nearby searches.",
-      why: "In car-dependent suburbs, customers pick from the map by distance, hours and reviews.",
+      why: "The map pack shows distance, hours and reviews for each branch, so those details have to be right before anything else.",
     },
     {
       slug: "google-ads",
@@ -170,17 +170,17 @@ export const location: LocationRecord = {
       slug: "content-marketing",
       title: "Content Marketing in Canada",
       body: "Publishes guides and explanations grounded in Canadian rules, prices and examples, in either language.",
-      why: "Canadians searching for advice are too often served American answers that do not apply.",
+      why: "Advice written for American rules, prices and products does not apply in Canada, and a Canadian page should say so in its own terms.",
     },
   ],
 
   industries: [
     { slug: "finance", note: "A concentrated banking sector sits alongside credit unions, insurers, mortgage brokers and fintech firms, all advertising under Canadian rules." },
-    { slug: "real-estate", note: "Housing is a constant topic in the major metros, and agents, brokers and developers compete hard for local search visibility." },
-    { slug: "technology", note: "Software and technology firms cluster around Toronto, the Waterloo region, Vancouver, Montreal and Ottawa, and many sell into the USA from the start." },
-    { slug: "professional-services", note: "Law, accounting, consulting and immigration advice are regulated by province and bought on reputation and referral." },
-    { slug: "ecommerce", note: "Online retailers compete with cross-border sellers and win on domestic shipping, Canadian pricing and no surprise duties." },
-    { slug: "home-services", note: "A harsh climate keeps heating, roofing, insulation and renovation in steady demand, with trades chosen through reviews and local listings." },
+    { slug: "real-estate", note: "For agents, brokers and developers we plan pages by city and neighbourhood, to sit beside their entries on the national listing site." },
+    { slug: "technology", note: "Toronto, Vancouver, Montreal and the Waterloo region are known for software and technology firms, and for those that also sell into the USA we keep the two countries' pages distinct." },
+    { slug: "professional-services", note: "Law and accounting are regulated by provincial bodies, so we check claims and titles against the rules of the province where the firm practises." },
+    { slug: "ecommerce", note: "For online retailers we put domestic shipping, Canadian dollar pricing and the absence of import duties where a shopper sees them on the product page." },
+    { slug: "home-services", note: "Canada is known for cold winters, so heating, roofing, insulation and renovation firms should plan content and budgets by season and keep reviews and local listings current." },
     { slug: "education", note: "Universities, colleges and training providers recruit across provinces and from overseas." },
   ],
 
@@ -222,7 +222,7 @@ export const location: LocationRecord = {
     },
     {
       title: "AI does the work, experts choose it",
-      body: "AI speeds up keyword research, drafting and monitoring across cities and languages. Specialists decide priorities, check every output and report on leads and revenue.",
+      body: "AI speeds up keyword research, drafting and monitoring across cities and languages. Specialists decide priorities, check every output and report on leads and revenue, working remotely.",
     },
   ],
 
@@ -237,7 +237,7 @@ export const location: LocationRecord = {
   faqs: [
     {
       q: "How do I choose a digital marketing agency in Canada?",
-      a: "The quickest test is how an agency treats the border. One that reuses American keywords, spelling and landing pages will leave your Canadian pages outranked by American ones. Look for a plan split by metro, since Toronto, Vancouver, Calgary and Montreal do not share customers or time zones. If Quebec is in scope, French should be written by a native Canadian French writer with its own keyword research. Ask how sign-up forms record consent under the anti-spam law, and expect a refusal to use purchased lists. Finally, check that privacy and tracking are designed for the most demanding province you serve.",
+      a: "The quickest test is how an agency treats the border. One that reuses American keywords, spelling and landing pages will leave your Canadian pages outranked by American ones. Look for a plan split by metro, since Toronto, Calgary and Vancouver do not share customers or time zones. If Quebec is in scope, French should be written by a native Canadian French writer with its own keyword research. Ask how sign-up forms record consent under the anti-spam law, and expect a refusal to use purchased lists. Finally, check that privacy and tracking are designed for the most demanding province you serve.",
     },
     {
       q: "What services does SERPMOZ offer for businesses in Canada?",

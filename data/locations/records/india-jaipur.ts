@@ -33,72 +33,72 @@ export const location: LocationRecord = {
       "Hoteliers, jewellers, textile and handicraft sellers, and local business owners in Jaipur who want to hire a digital marketing agency or SEO company for more direct bookings, online orders or nearby customers, with seasonal and export demand understood.",
   },
   hero: {
-    title: "Digital Marketing Agency and SEO Company in Jaipur",
+    title: "Digital Marketing Agency in Jaipur",
     description:
-      "A Jaipur business may be selling to three audiences at once: residents who search in Hindi, visitors planning a trip from another city or country, and overseas buyers of jewellery, textiles and craft. SERPMOZ plans local search, maps, ecommerce and social programmes that keep those audiences separate and account for the tourist season. We work with Jaipur businesses remotely.",
+      "A Jaipur business may be selling to three audiences at once: residents of the city, visitors planning a trip from another city or country, and overseas buyers of jewellery, textiles and craft. SERPMOZ plans local search, maps, ecommerce and social programmes that keep those audiences separate and follow your own busy and quiet months, so each message is written for the reader it is meant for.",
   },
   facts: [
-    { label: "Also searched as", value: "The Pink City, a name visitors use for the old walled city" },
-    { label: "Part of", value: "Rajasthan, on the Delhi, Agra and Jaipur travel circuit" },
-    { label: "Sectors with weight", value: "Tourism and hospitality, jewellery and gemstones, textiles and handicrafts" },
-    { label: "Local search shaped by", value: "Hindi-first queries, bazaar and landmark names, and the tourist season" },
+    { label: "Also known as", value: "The Pink City, after the colour of the old walled city" },
+    { label: "Part of", value: "Rajasthan, of which it is the capital, on the Delhi, Agra and Jaipur travel circuit" },
+    { label: "Known for", value: "Tourism and hospitality, jewellery and gemstones, textiles and handicrafts" },
+    { label: "Languages", value: "Hindi is the state's official language, used alongside English" },
   ],
   answer: {
     question: "What does a digital marketing agency do for businesses in Jaipur?",
-    text: "A digital marketing agency in Jaipur has to serve two kinds of searcher, and local SEO is where that shows most. Residents look for services in Hindi and English by neighbourhood, such as Vaishali Nagar or Malviya Nagar. Visitors search in English and other languages by landmark, bazaar or type of experience, often before they arrive. The work covers accurate business profiles, photographs, reviews in several languages, location pages and Hindi content. SERPMOZ plans this remotely for Jaipur businesses and adjusts activity to the tourist season.",
+    text: "A digital marketing agency in Jaipur first has to establish who the business sells to, and local SEO is where that choice shows most. A firm serving residents is listed by its residential area, such as Vaishali Nagar, and may need Hindi content. A firm serving visitors is described by landmark, bazaar or type of experience, in English and possibly other languages. The work covers accurate business profiles, photographs, review requests, location pages and Hindi content where your customers call for it. SERPMOZ plans this remotely for Jaipur businesses and schedules activity around the months you tell us are busiest.",
   },
   overview: {
     heading: "About digital growth in Jaipur",
     paragraphs: [
-      "Tourism sets the rhythm of much of Jaipur's trade, and of the work a digital marketing agency does here. Hotels, heritage properties, restaurants, guides, wedding venues and shops are busiest in the cooler months and during the wedding season, and quiet in the summer heat. Visitors decide where to stay and what to see before they travel, using maps, travel platforms and reviews. A [hospitality business](/industries/hospitality/) therefore competes online for a guest who has never seen the property and may be choosing from another continent.",
-      "The city is equally a place where things are made. Gemstone cutting and jewellery, block-printed textiles from Sanganer and Bagru, quilts, blue pottery and other handicrafts are produced in workshops across the city and its industrial areas, and sold through the old bazaars and to buyers abroad. Many of these firms now sell directly online, which makes [ecommerce SEO](/ecommerce-seo/) and [international SEO](/international-seo/) as relevant as a showroom in Johari Bazaar.",
-      "Alongside these long-established trades, a newer group of startups, software firms and consumer brands has taken root, and residential areas have spread well beyond the walled city. Everyday local commerce, from clinics and coaching classes to furniture and vehicle dealers, is conducted largely in Hindi. Businesses serving residents need a different voice, different keywords and often different channels from those serving visitors.",
+      "Jaipur is known as a tourist destination, and for a hotel or venue that sets the terms of the work a digital marketing agency does. Rajasthan's summers are hot, and the cooler months and the wedding season are widely regarded as the busy part of the year. If that describes your trade, we plan against it, using your own booking records to mark the months. A guest who has never seen the property can only judge it from what is published, so for a [hospitality business](/industries/hospitality/) we check the map profile, the travel platform listings and the hotel's own site against each other.",
+      "The city is equally a place where things are made. It is known for gemstone cutting and jewellery, block-printed textiles from Sanganer and Bagru, quilts, blue pottery and other handicrafts, sold through the old bazaars and to buyers abroad. If your firm sells these directly online as well, [ecommerce SEO](/ecommerce-seo/) and [international SEO](/international-seo/) deserve the same attention as a showroom in Johari Bazaar.",
+      "Jaipur is also the capital of Rajasthan, with residential areas well beyond the walled city and the usual run of clinics, coaching classes, showrooms and service firms. Hindi is the state's official language. If your customers are residents, the plan needs its own voice, keywords and channels, separate from anything written for visitors. We ask which language your customers use when they call or message you before we recommend Hindi pages.",
     ],
   },
   discovery: {
     heading: "How customers discover businesses in Jaipur",
     intro:
-      "Discovery in Jaipur depends on whether the customer lives in the city, is visiting it, or is buying from it at a distance. Most businesses rely on two of these three, and each uses different channels.",
+      "Which channels matter depends on whether your customer lives in the city, is visiting it, or is buying from it at a distance. We have no survey of Jaipur customers, so we begin with your own enquiry and booking sources and assess the channels below against them.",
     channels: [
       {
         name: "Google Search and Maps in Hindi and English",
-        body: "Residents search for local services in Hindi, in Devanagari or typed in English letters, and by voice as well as text. Visitors use Maps on the move to find restaurants, shops and sights near where they are standing, and rely heavily on photographs and ratings.",
+        body: "Hindi can be typed in Devanagari or in English letters, and Google accepts spoken queries as well as typed ones. If residents are your market, we check whether your pages and profile cover the Hindi forms of your services. If visitors are, we check the pin, photographs and opening hours that a person using Maps on foot would rely on.",
       },
       {
         name: "Travel platforms and review sites",
-        body: "Hotels, tours and restaurants are compared on online travel agencies and traveller review sites long before arrival. A property's ranking and reviews there shape demand directly, and they also influence whether a guest goes on to book through the hotel's own site.",
+        body: "Online travel agencies and traveller review sites list hotels, tours and restaurants side by side. For a property we compare rates, room names, photographs and policies across those listings and its own website, because a mismatch between them is a reason for a guest to hesitate over a direct booking.",
       },
       {
         name: "Instagram",
-        body: "Jewellery, textiles, wedding venues, cafes and heritage stays are visual products, and Instagram is where many buyers first see them. Designers and boutiques take enquiries from the platform and continue the conversation in direct messages.",
+        body: "Jewellery, textiles, wedding venues, cafes and heritage stays are visual products, which is the case for considering Instagram. If you take enquiries there, we look at how a direct message becomes an order or booking, and whether that conversation is recorded anywhere your team can follow up.",
       },
       {
         name: "Marketplaces and export platforms",
-        body: "Artisans and exporters reach overseas retail customers through international craft and general marketplaces, and trade buyers through B2B platforms and exhibitions. Sellers who also run their own store use marketplaces for reach and the store for margin and repeat custom.",
+        body: "International craft marketplaces, general marketplaces and B2B platforms give artisans and exporters a route to buyers they could not reach alone. If you also run your own store, we set out which products belong on which channel, so the store is not left competing with your own marketplace listings.",
       },
       {
         name: "WhatsApp for custom and wholesale orders",
-        body: "Jewellery and textile orders are often customised, so buyers and sellers exchange photographs, videos, measurements and quotations over WhatsApp. For many workshops it is the working sales desk for both domestic wholesalers and overseas clients.",
+        body: "Custom jewellery and textile orders need photographs, videos, measurements and quotations to pass back and forth, and WhatsApp is built for that. If it is your working sales desk, we link the website and adverts to it properly and agree how enquiries from each source will be labelled.",
       },
     ],
   },
   searchAi: {
     heading: "Search and AI discovery in Jaipur",
     paragraphs: [
-      "Google is the dominant search engine for both residents and visitors. Local service queries lean towards Hindi, so a clinic or institute with only English content misses part of its market. Tourist and export queries arrive in English and in visitors' own languages, with intent that is national or international. Planning has to separate these, and to recognise that a hotel's organic listing sits beside travel platforms that advertise on its name.",
-      "Travellers increasingly ask AI assistants to draft an itinerary, suggest where to stay or explain how to judge a gemstone, and shoppers ask where to buy authentic block-printed fabric. The answers draw on reviews, travel writing, listings and a business's own published details. AI answers vary with wording and over time, and nobody can guarantee placement in them. Clear facts about location, offer, provenance and policies make accurate mention more likely.",
+      "Google is the main search engine to plan around for both residents and visitors. If you run a clinic or institute for residents and your site is only in English, we check your search data for Hindi queries before deciding whether that is a gap. Queries about visiting or buying from Jaipur can come from anywhere in India or abroad, so their targeting is national or international. Planning has to separate these. For a hotel we also check what appears when its own name is searched, since travel platforms are free to advertise there.",
+      "An AI assistant can be asked to draft an itinerary, suggest where to stay, explain how to judge a gemstone or say where to buy block-printed fabric. The answers can draw on reviews, travel writing, listings and a business's own published details. AI answers vary with wording and over time, and nobody can guarantee placement in them. Clear facts about location, offer, provenance and policies make accurate mention more likely.",
     ],
   },
   local: {
     heading: "Why local search matters in Jaipur",
     paragraphs: [
-      "The old city's bazaars are organised by trade, and visitors search for them by name: Johari Bazaar for jewellery, Bapu Bazaar for textiles and footwear. Many shops in the same lane sell similar goods, so the profile, photographs and reviews are what distinguish one from the next. Good [Google Maps optimisation](/google-maps-seo/) helps a shop to be found by someone standing a short walk away.",
-      "Residents search differently. They look in newer areas such as Vaishali Nagar, Mansarovar, Malviya Nagar and Jagatpura, usually in Hindi, for everyday services. A [local SEO programme](/local-seo-services/) for these customers focuses on neighbourhood pages, Hindi content and regular reviews. Jaipur also draws weekend and wedding traffic from [Delhi](/digital-marketing-agency-delhi/), so some businesses need to be visible to searches made there.",
+      "The old city's bazaars are known by trade: Johari Bazaar for jewellery, Bapu Bazaar for textiles and footwear. If your shop stands in a lane of similar shops, the things that tell yours apart online are the profile, the photographs and the reviews. Good [Google Maps optimisation](/google-maps-seo/) starts with a pin on the right doorway and a name that matches the signboard.",
+      "A business serving residents is set up differently. Its listing and pages name the residential area in its address, such as Vaishali Nagar or Mansarovar, and may need Hindi text. A [local SEO programme](/local-seo-services/) for these customers focuses on neighbourhood pages, Hindi content and regular reviews. Jaipur is on the same travel circuit as [Delhi](/digital-marketing-agency-delhi/), so if your guests or wedding clients come from there, campaigns can be targeted at that city directly.",
     ],
     points: [
-      "Visitors search by landmark and bazaar, such as near Hawa Mahal or in Johari Bazaar, while residents search by residential colony.",
-      "Hindi queries appear in Devanagari and in English letters, and business names are often written both ways across listings.",
-      "Reviews arrive in many languages from travellers, and photographs uploaded by guests carry as much weight as the owner's own.",
+      "Use the bazaar or landmark in your address notes if you are in the old city, for example Johari Bazaar or near Hawa Mahal, and the colony name if you are in a residential area.",
+      "Hindi business names can be written in Devanagari and in English letters, so decide on one spelling of each and use it on every listing.",
+      "Photographs uploaded by guests appear on a profile beside the owner's own, so keep your own set current and correctly labelled.",
       "Firms with a showroom in the old city and a workshop in an industrial area such as Sitapura must decide which address customers should find.",
       "Opening hours, seasonal closures and festival timings change through the year and need to be kept current on every profile.",
     ],
@@ -106,19 +106,19 @@ export const location: LocationRecord = {
   opportunities: [
     {
       title: "More direct bookings",
-      body: "Hotels and heritage stays that present rooms, location and policies clearly on their own site, and appear well in maps, can win a larger share of bookings directly. That reduces dependence on travel platforms without abandoning them.",
+      body: "If most of your rooms are sold through travel platforms, the hotel's own site is the place to start. We check that rooms, location and policies are presented clearly there and that the map profile links to it. The aim is a better direct share without abandoning the platforms.",
     },
     {
       title: "Selling craft with provenance",
-      body: "Overseas buyers want to know who made a piece, how, and from what. Stores that document materials, techniques and care in detail stand apart from anonymous marketplace listings.",
+      body: "A product page can say who made a piece, how, and from what. If you hold that knowledge, we help you document materials, techniques and care in detail, which an anonymous marketplace listing cannot do.",
     },
     {
       title: "Using the quiet season",
-      body: "The slower months are the time to rebuild pages, photography, review routines and product data. Businesses that prepare then are ready when travel planning and festive buying begin.",
+      body: "If your trade has slower months, they are the time to rebuild pages, photography, review routines and product data. We schedule that work so it is finished before your busy period begins.",
     },
     {
       title: "Hindi content for local services",
-      body: "Clinics, institutes and service firms that publish helpful Hindi pages meet residents in the language they search in. Competitors with English-only sites leave that demand open.",
+      body: "If you run a clinic, institute or service firm for residents, helpful Hindi pages are worth testing. We look at the Hindi queries already reaching your site and write for those first.",
     },
   ],
   services: [
@@ -126,58 +126,58 @@ export const location: LocationRecord = {
       slug: "local-seo-services",
       title: "Local SEO in Jaipur",
       body: "Makes shops, hotels and service businesses visible to nearby residents and visitors, with accurate details and current reviews.",
-      why: "Jaipur has both a Hindi-speaking resident market and a visitor market that searches by landmark, and each needs its own treatment.",
+      why: "A listing written for residents and one written for visitors use different place names and languages, so each needs its own treatment.",
     },
     {
       slug: "google-maps-seo",
       title: "Google Maps SEO in Jaipur",
       body: "Improves how a business appears and is chosen on the map, through categories, photographs, reviews and correct pins.",
-      why: "Visitors navigate the bazaars and sights by map, and neighbouring shops selling similar goods are compared in seconds.",
+      why: "In a bazaar lane where neighbouring shops sell similar goods, an exact pin and clear photographs are what identify yours.",
     },
     {
       slug: "ecommerce-seo",
       title: "Ecommerce SEO in Jaipur",
       body: "Structures product and category pages so jewellery, textile and craft stores are found for specific product searches.",
-      why: "Local makers are moving from wholesale and marketplaces to their own stores, where organic visibility protects margin.",
+      why: "For makers who add their own store to wholesale and marketplaces, organic visibility can help to protect margin.",
     },
     {
       slug: "international-seo",
       title: "International SEO in Jaipur",
       body: "Sets up country, language and currency targeting so stores and exporters reach buyers in their intended markets.",
-      why: "A large part of the demand for Jaipur's jewellery and handicrafts comes from outside India.",
+      why: "Jaipur is known for jewellery and handicrafts that are exported, and a store selling abroad has to be told which countries it serves.",
     },
     {
       slug: "instagram-marketing",
       title: "Instagram Marketing in Jaipur",
       body: "Presents visual products and places to the audiences most likely to buy, book or enquire.",
-      why: "Jewellery, textiles, venues and heritage stays are chosen by eye, and buyers expect to see them in use.",
+      why: "Jewellery, textiles, venues and heritage stays are products that photographs and video can show in use.",
     },
     {
       slug: "meta-ads",
       title: "Meta Ads in Jaipur",
       body: "Runs paid campaigns on Instagram and Facebook for product sales, bookings and seasonal offers.",
-      why: "Demand peaks around travel, festivals and weddings, and paid social lets spending follow those periods closely.",
+      why: "If your sales follow travel dates, festivals or weddings, paid social budgets can be raised and lowered to match.",
     },
   ],
   industries: [
-    { slug: "hospitality", note: "Hotels, heritage properties, restaurants and wedding venues depend on seasonal visitors who choose from reviews and photographs." },
+    { slug: "hospitality", note: "For hotels, heritage properties, restaurants and wedding venues we work on the map profile, photographs, review replies and the direct booking path." },
     { slug: "travel", note: "Tour operators, guides and transport providers serve travellers on the circuit that links Jaipur with Delhi and Agra." },
-    { slug: "ecommerce", note: "Jewellery, textile and handicraft brands sell directly to customers across India and abroad, alongside their marketplace listings." },
+    { slug: "ecommerce", note: "Jewellery, textile and handicraft brands can sell directly to customers across India and abroad, alongside their marketplace listings." },
     { slug: "manufacturing", note: "Gemstone, jewellery, garment and craft workshops supply wholesalers and export buyers who order to specification." },
-    { slug: "local-business", note: "Clinics, institutes, showrooms and service firms in the residential areas serve a resident market that searches mainly in Hindi." },
+    { slug: "local-business", note: "For clinics, institutes, showrooms and service firms in the residential areas, we check whether Hindi pages and profile text are needed." },
   ],
   considerations: [
     {
       title: "Seasonality",
-      body: "Visitor demand concentrates in the cooler months and around weddings and festivals, and drops in summer. Budgets, staffing for enquiries and content schedules should follow that pattern.",
+      body: "If your bookings concentrate in the cooler months and around weddings and festivals, and fall in summer, the plan should have the same shape. Budgets, staffing for enquiries and content schedules are set against your own records.",
     },
     {
       title: "Hindi first for residents",
-      body: "Local service searches are made largely in Hindi, in two scripts and with regional vocabulary. Content should be written in natural Hindi by a fluent writer, not converted mechanically from English.",
+      body: "Hindi can be typed in two scripts, and Rajasthan has its own regional vocabulary. Content should be written in natural Hindi by a fluent writer, not converted mechanically from English.",
     },
     {
       title: "Selling abroad",
-      body: "Export orders involve customs duties, shipping times, returns and payment methods that differ by destination. These need to be stated clearly on the site, because uncertainty about them stops overseas buyers at checkout.",
+      body: "Export orders involve customs duties, shipping times, returns and payment methods that differ by destination. These need to be stated clearly on the site, so an overseas buyer is not left to guess them at checkout.",
     },
     {
       title: "Exact claims for jewellery and gems",
@@ -195,7 +195,7 @@ export const location: LocationRecord = {
     },
     {
       title: "Planning around the season",
-      body: "We schedule preparation for quieter months and concentrate campaign effort where demand is expected, with budgets adjusted as the season develops.",
+      body: "Working remotely, we schedule preparation for quieter months and concentrate campaign effort where demand is expected, with budgets adjusted as the season develops.",
     },
     {
       title: "AI does the volume, experts set direction",
@@ -208,11 +208,11 @@ export const location: LocationRecord = {
   faqs: [
     {
       q: "Is SERPMOZ a digital marketing agency in Jaipur?",
-      a: "SERPMOZ is an AI-powered digital growth company working with Jaipur businesses remotely, so there is no local office or staff to visit. What we do is the work a hotelier, jeweller or shop owner would expect from a digital marketing agency or SEO company. That means map visibility and reviews for hospitality and retail, store structure and product content for jewellery, textile and craft sellers, country targeting for those selling abroad, and Instagram and Meta campaigns. Hindi content is written for residents, and spending follows the tourist season.",
+      a: "SERPMOZ is an AI-powered digital growth company working with Jaipur businesses remotely, so there is no local office or staff to visit. What we do is the work a hotelier, jeweller or shop owner would expect from a digital marketing agency or SEO company. That means map visibility and reviews for hospitality and retail, store structure and product content for jewellery, textile and craft sellers, country targeting for those selling abroad, and Instagram and Meta campaigns. Hindi content is written where your customers need it, and spending follows your own season.",
     },
     {
       q: "What digital marketing services are available for Jaipur businesses?",
-      a: "SERPMOZ provides local SEO, Google Maps optimisation, ecommerce and international SEO, Instagram marketing and Meta advertising, with web development, content and conversion work where needed. For Jaipur the usual starting points are map visibility for hospitality and retail, and store performance for jewellery, textile and craft sellers.",
+      a: "SERPMOZ provides local SEO, Google Maps optimisation, ecommerce and international SEO, Instagram marketing and Meta advertising, with web development, content and conversion work where needed. For a Jaipur hotel or shop we would start with map visibility, and for a jewellery, textile or craft seller with how the store performs.",
     },
     {
       q: "Does SERPMOZ have an office in Jaipur?",
@@ -224,11 +224,11 @@ export const location: LocationRecord = {
     },
     {
       q: "How do you handle the tourist season?",
-      a: "We plan the year in phases. Foundational work such as site improvements, photography briefs, profiles and review processes is done in the quieter months. Campaign spending and content are then concentrated ahead of and during the busy period, when travellers are researching and booking.",
+      a: "We plan the year in phases, using the busy and quiet months your own records show. Foundational work such as site improvements, photography briefs, profiles and review processes is done in the quieter months. Campaign spending and content are then concentrated ahead of and during your busy period.",
     },
     {
       q: "Do we need Hindi content?",
-      a: "If you serve residents, usually yes. Local searches for healthcare, education and household services are often made in Hindi. If you serve visitors or overseas buyers, English and possibly other languages matter more. Many Jaipur businesses need both, on separate pages aimed at each audience.",
+      a: "It depends on who you serve, and your own enquiries are the best evidence. If residents call and message you in Hindi, Hindi pages for healthcare, education or household services are worth producing. If you serve visitors or overseas buyers, English and possibly other languages matter more. Some Jaipur businesses need both, on separate pages aimed at each audience.",
     },
     {
       q: "How does the growth audit work?",
@@ -236,7 +236,7 @@ export const location: LocationRecord = {
     },
     {
       q: "How do I choose an SEO company near me in Jaipur?",
-      a: "Jaipur has its own tests. See whether the company plans the year around the tourist season, with foundations laid in the quieter months and spending moved to the busy period. See whether Hindi is written by a fluent writer, for searches in Devanagari and in English letters. If you sell jewellery or gems, see whether it is careful with purity, hallmarking and certification wording. If you export, see whether it raises duties, shipping and returns. A nearby firm is handy for photographing a heritage property or showroom. Your guests and buyers are often in another city or country, though, so being close to you matters less than understanding them.",
+      a: "Jaipur has its own tests. See whether the company plans the year around your season, with foundations laid in the quieter months and spending moved to the busy period. See whether Hindi is written by a fluent writer, for searches in Devanagari and in English letters. If you sell jewellery or gems, see whether it is careful with purity, hallmarking and certification wording. If you export, see whether it raises duties, shipping and returns. A nearby firm is handy for photographing a heritage property or showroom. If your guests and buyers are in another city or country, though, being close to you matters less than understanding them.",
     },
   ],
   cta: {

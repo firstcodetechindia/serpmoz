@@ -5,92 +5,121 @@ export const pages: LocalServicePage[] = [
     place: "new-york",
     service: "local-seo-services",
     seo: {
-      title: "Local SEO Company in New York",
+      title: "Local SEO Services in New York",
       metaDescription:
-        "Local SEO company work for New York businesses: neighbourhood pages, Google and Yelp listings and review routines from Tribeca to Astoria, block by block.",
-      primaryKeyword: "local seo company in new york",
-      secondaryKeywords: [
-        "local seo services in new york",
-        "local seo agency in new york",
-        "local seo company near me",
-        "local seo nyc",
-        "local seo brooklyn",
-        "local seo company queens",
-        "local seo services manhattan",
+        "Local SEO services in New York: accurate business profiles, consistent listings, review routines and location pages for the neighbourhoods you actually serve.",
+      primaryKeyword: "local seo services in new york",
+      secondaryKeywords: ["local seo company in new york", "local seo agency nyc", "local seo for small business", "multi location local seo", "local seo services near me"],
+    },
+    h1: "Local SEO Services in New York",
+    intro:
+      "SERPMOZ provides local SEO for businesses in New York that depend on customers close by: profiles on Google, Bing and Apple, listings that agree with each other, a dependable review routine and a real page for every location. It is meant for storefronts, practices, restaurants, service firms and groups with several branches. In a dense city a customer usually has alternatives a short walk away, so being found and being chosen are separate problems.",
+    answer: {
+      question: "What do local SEO services include, and how do they help a business in New York?",
+      text: "Local SEO services manage the things that decide whether a nearby searcher finds and picks you: business profiles, consistent name, address and phone details across directories, reviews, location pages and local structured data. For a business in the five boroughs, the work is planned around the neighbourhoods it serves and the way its address is written. Nobody can promise a position in local or map results.",
+    },
+    context: {
+      heading: "Why local SEO matters for a New York business",
+      paragraphs: [
+        "When a search implies a nearby need, search engines consider relevance, distance and how prominent a business appears. In a compact, walkable city the distance element is unforgiving: a searcher a few blocks away may be shown a different set of businesses from one a subway stop further on. That makes a citywide ambition unrealistic for many storefronts and practices. A sound plan identifies the area where the business can be among the options shown, and concentrates on being the obvious choice there.",
+        "Addresses here have a quirk that affects listings. Postal convention gives Manhattan addresses the city name, while Brooklyn, the Bronx and Staten Island use the borough, and many Queens addresses use a neighbourhood name instead. Add floors, suites and buildings with several entrances, and one business can easily be recorded several ways across directories. Search engines read those records to confirm a business is what it says it is, so agreeing a single form and applying it everywhere is basic and valuable work.",
+        "The city is widely known for the number of languages spoken in it, and its metropolitan area runs into New Jersey, Long Island and Connecticut. Both facts raise practical questions without settling them. A business that serves customers in Spanish, Chinese or another language can reasonably say so on its profile and pages, provided staff can deliver it. A firm that travels to customers across state lines needs its service area declared accurately. Neither should be claimed simply to attract more searches.",
       ],
     },
-    h1: "Local SEO Company in New York for Businesses Found Block by Block",
-    intro:
-      "A New Yorker looking for a dentist, a locksmith or a tax preparer rarely types the city's name. They type Tribeca, Astoria or Park Slope, or simply 'near me', and choose from whatever is within a short walk or a few subway stops. Every neighbourhood is its own contest with its own incumbents. SERPMOZ works with New York businesses remotely on the local SEO programme that wins those contests.",
-    answer: {
-      question: "What does a local SEO company do for businesses in New York?",
-      text: "A local SEO company in New York makes a business visible to people searching nearby, one neighbourhood at a time. The work covers consistent listings on Google, Apple Maps, Bing and Yelp, a page written for each area served, a routine for earning reviews from every customer, and tracking across a grid of points. SERPMOZ does this remotely and reports calls, bookings and direction requests per location.",
+    audiences: [
+      {
+        title: "Storefronts, restaurants and venues relying on passing trade",
+        body: "Businesses chosen on a phone, often minutes before a visit. They need correct hours, current photographs, menus or service lists, and recent reviews, because a searcher comparing three nearby options decides on exactly those details.",
+      },
+      {
+        title: "Medical, dental and professional practices with local clients",
+        body: "Practices where the customer is choosing someone to trust. Complete profiles, a page for each practitioner or office and a consistent stream of honest reviews give a cautious person enough to make an appointment.",
+      },
+      {
+        title: "Multi-location groups operating across several boroughs",
+        body: "Chains and groups whose branches each compete in their own surroundings. They need one profile and one specific page per branch, shared standards for hours and replies, and reporting that compares locations fairly.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Borough and neighbourhood names in addresses",
+        body: "A listing that says one thing and a website that says another weakens both. We record how each directory shows your address, choose the form that matches postal convention and your signage, and bring profiles, pages and citations into line with it.",
+      },
+      {
+        title: "Many alternatives within a few blocks",
+        body: "Appearing among nearby results is only half of it when the searcher can see several similar businesses. Photographs of the real premises, clear service descriptions, accurate hours and thoughtful review replies are what give someone a reason to pick one.",
+      },
+      {
+        title: "Several businesses sharing one building",
+        body: "Upper-floor offices and shared suites make it easy for profiles to be confused, duplicated or pinned in the wrong spot. We check the map pin, the suite details and any duplicates, and correct them through the platform's own processes.",
+      },
+      {
+        title: "Review requests that depend on memory",
+        body: "If asking for a review relies on a busy member of staff remembering, it happens rarely. We fit the request into the point of sale, booking system or follow-up message, ask every customer alike, and agree who answers criticism and how.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Audit",
+        body: "Every profile and citation for each location is found and recorded, with the name, address format, phone number, categories and map pin it shows. We note who controls each profile, which listings are duplicates and how visible each branch is nearby.",
+      },
+      {
+        stage: "Standardise",
+        body: "A single written form of the business details is agreed, including borough or neighbourhood naming and suite numbers. It is applied to the main profiles, the directories that matter in the USA and any sector or licensing registers relevant to your trade.",
+      },
+      {
+        stage: "Enrich",
+        body: "Profiles are filled in properly: categories chosen per branch, services described plainly, regular and holiday hours, and real photographs. Each location receives its own page with staff, access, areas served and local business markup, linked from its profile.",
+      },
+      {
+        stage: "Reviews",
+        body: "We design the request process around how you already deal with customers, write reply guidelines and set an escalation path for complaints. Reviews on Google and on sector sites are monitored, and repeated themes are passed to whoever manages the branches.",
+      },
+      {
+        stage: "Track",
+        body: "Each location is reported separately: calls, direction requests, profile clicks, review activity and visibility measured across the surrounding area. Tagged profile links and call tracking that keeps your listed number intact connect those figures to enquiries.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "Expect the audit and the corrections to profiles and citations to take up the opening weeks. These are changes you control, and their effect is often visible within weeks. Location pages and the review process follow. In neighbourhoods where established competitors already appear, gaining visibility typically takes three to six months or more, and varies with category, distance and the strength of nearby profiles. Platforms handle verification and edits at their own pace.",
+        "Monthly reports are broken down by branch and state what was completed, what is waiting on a platform and what we advise next, including where expectations should be lowered.",
+      ],
+      notGuaranteed: [
+        "Appearing in local results for a given search, block or neighbourhood",
+        "How many reviews customers leave, or what they say",
+        "The time a platform takes to verify, reinstate or update a listing",
+      ],
     },
-    searches: [
-      {
-        title: "Neighbourhood before city",
-        body: "Queries read 'physical therapist Upper West Side', 'notary Jackson Heights' or 'bike repair Williamsburg'. Borough names come next, and 'New York' or 'NYC' last. A page or listing that only says New York misses the way residents actually describe where they are.",
-      },
-      {
-        title: "Cross streets and subway stops",
-        body: "People also search by the nearest landmark: 'pharmacy near Union Square', 'coffee by Grand Central', 'gym near the L train'. Mentioning cross streets and the closest stations on location pages matches these searches and helps customers arrive.",
-      },
-      {
-        title: "Searches in other languages",
-        body: "In Washington Heights, Sunset Park, Flushing and Brighton Beach, customers search in Spanish, Chinese or Russian for doctors, lawyers and accountants. Properly written pages and listing descriptions for the communities a business serves reach people English pages do not.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Everyone is nearby",
-        body: "In a suburban town, being closest wins many searches. In Midtown, dozens of similar businesses sit within a few blocks, so proximity stops being an advantage. Rating, recent reviews, photographs and complete information decide who gets chosen from the list.",
-      },
-      {
-        title: "Yelp ranks alongside Google",
-        body: "Yelp is still well used in New York for restaurants, salons and trades, and its pages appear in ordinary results for a business name. An unclaimed or neglected Yelp page is often read before the website, so it is managed with the same care.",
-      },
-      {
-        title: "Upper floors and shared buildings",
-        body: "Much of the city's commerce happens above street level. Listings and pages need the floor, suite number and cross streets written the same way everywhere, or directories split one business into several records and customers fail to find the door.",
-      },
-      {
-        title: "Travel limits real service areas",
-        body: "A plumber based in Bay Ridge can list all five boroughs, but bridges, tolls, traffic and parking limit where jobs are worth taking. Service areas and location pages should cover the places the business will reliably reach.",
-      },
-    ],
-    areas: [
-      { name: "Midtown Manhattan", note: "Office-hours demand from workers, with the densest competition for medical, legal and lunchtime services." },
-      { name: "Williamsburg and Greenpoint", note: "Residents search by neighbourhood name for fitness, food and wellness, and expect current photographs." },
-      { name: "Astoria and Long Island City", note: "Queens neighbourhoods with fewer established competitors online than comparable Manhattan streets." },
-      { name: "Upper East Side", note: "A long corridor of private medical and dental practices where review depth separates similar listings." },
-      { name: "Jersey City and Hoboken", note: "Across the Hudson, in a different state, needing their own listings, pages and licence details." },
-      { name: "The Bronx", note: "Spanish-language search is common, and many service categories have thin local page coverage." },
-    ],
     sectors: [
-      { slug: "healthcare", note: "Private practices cluster by neighbourhood, and patients compare reviews, insurance accepted and booking availability before calling." },
-      { slug: "legal", note: "Immigration, tenant and injury lawyers are searched by borough and language, under state attorney advertising rules." },
-      { slug: "hospitality", note: "Restaurants and bars depend on neighbourhood searches, Yelp pages and listings with accurate hours and menus." },
+      { slug: "hospitality", note: "Guests and diners compare nearby options on a phone and decide from photographs, hours, menus and recent reviews." },
+      { slug: "healthcare", note: "Patients look for a nearby provider they can trust, so accurate practitioner details and honest reviews carry real weight." },
+      { slug: "local-business", note: "Independent shops and services live on nearby custom, and a complete, accurate profile is their main shop window online." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a local SEO company in New York?",
-        a: "SERPMOZ does local SEO for New York businesses, and it does so remotely. We are an AI-powered digital growth company with no office in New York and no staff walking the neighbourhoods. Local visibility comes from your address, listings, reviews and pages, all of which can be managed through platform access you grant. Calls are held in Eastern business hours. Photographs and on-site details come from your own team.",
+        q: "What is the difference between local SEO and Google Maps SEO?",
+        a: "Google Maps SEO concentrates on one thing: the Google Business Profile and how it appears in map results. Local SEO is broader. It includes that profile and also listings on other platforms and directories, location pages on your website, local structured data, links from local organisations and reporting by branch. A single-location business may start with the profile; groups usually need the wider programme.",
       },
       {
-        q: "How do I find a local SEO company near me in New York?",
-        a: "Searching 'local SEO company near me' in NYC returns providers close to your phone, which tells you about their address and nothing about their method. Judge them on three things. Do they track visibility across a grid for each neighbourhood? Do they manage Yelp and Apple Maps as well as Google? Can they explain how they would handle a second-floor address or a multi-borough service area?",
+        q: "Does SERPMOZ have an office in New York?",
+        a: "No. We serve businesses in New York through a remote consulting and delivery model, without premises in the city. In local search the location that matters is the client's own premises, since that is what a profile represents and what customers review. We work from your profile access, accurate branch information and photographs your staff supply, with regular calls to agree changes.",
       },
       {
-        q: "Do you also work with businesses in Brooklyn, Queens and Jersey City?",
-        a: "Yes. Brooklyn and Queens are part of the city and are planned neighbourhood by neighbourhood, from Park Slope and Bushwick to Flushing and Forest Hills. Jersey City sits in New Jersey, so listings, licence references and any regulated wording follow that state. In each case the work is remote. A business with premises on both sides of the Hudson gets separate pages and reporting for each.",
+        q: "Can you guarantee we will appear for searches in our neighbourhood?",
+        a: "No. Local results change with where the searcher stands, what they typed and what other businesses nearby have done, and the platforms adjust their systems without announcement. We can make your profile eligible, complete and accurate, align every listing, strengthen your location pages and reviews, and show you with measurements where visibility is improving.",
+      },
+      {
+        q: "How long does it take for local SEO to show results?",
+        a: "Fixing wrong details, duplicate profiles or a misplaced map pin can make a difference within weeks. Improving visibility where strong competitors are already established is slower, typically three to six months or longer. The review side moves at the speed of your footfall, because requests can only go to customers you have actually served.",
       },
       {
         q: "What does local SEO cost in New York?",
-        a: "The number of locations and neighbourhoods you want to be found in matters most. After that come the condition of your existing listings, how many languages are needed, and how entrenched nearby competitors are. A single practice in an outer-borough neighbourhood needs less effort than a group with sites across Manhattan. Regulated professions add copy review. We propose a scope once we have audited your current visibility.",
+        a: "The main drivers are how many locations you have, how inconsistent the current listings are, how much writing and photography the location pages need, and how far the review process has to be built into your existing systems. Extra languages add work where pages are offered in them. We scope the engagement after an audit and explain each part.",
       },
       {
-        q: "Can a business rank in a New York neighbourhood where it has no premises?",
-        a: "In map results, only weakly. Those results favour businesses physically near the searcher, and a listing must reflect a real location or service area. In the ordinary results below the map, a well-made page about serving that neighbourhood can rank, particularly for trades and mobile services. We will not create listings at addresses you do not occupy, since that breaks platform rules and risks suspension.",
+        q: "Should our pages and profile be in more than one language?",
+        a: "Only where you can serve customers in that language from first contact to finished job. If you can, stating the languages spoken and providing properly translated key pages helps those customers find and trust you. Machine-translated pages with nobody behind them disappoint people and add little. We advise based on who your customers are and what staff can support.",
       },
     ],
   },
@@ -100,88 +129,119 @@ export const pages: LocalServicePage[] = [
     seo: {
       title: "Google Maps SEO Services in New York",
       metaDescription:
-        "Google Maps SEO services in New York: Business Profile repair, categories, photos and reviews, tracked on a grid from the West Village to Murray Hill.",
+        "Google Maps SEO in New York: verified, accurate Google Business Profiles, sound categories, real photos and review handling, measured block by block.",
       primaryKeyword: "google maps seo services in new york",
-      secondaryKeywords: [
-        "google maps seo company in new york",
-        "google maps seo agency in new york",
-        "google business profile services near me",
-        "google maps seo nyc",
-        "google maps ranking manhattan",
-        "google business profile optimization brooklyn",
+      secondaryKeywords: ["google maps seo company in new york", "google business profile optimization nyc", "google maps ranking service", "google business profile management", "google maps seo near me"],
+    },
+    h1: "Google Maps SEO Services in New York",
+    intro:
+      "SERPMOZ provides Google Maps SEO for businesses in New York: getting the Google Business Profile verified and accurate, choosing categories and services carefully, adding real photographs, managing reviews and tracking calls and bookings. It suits any business with premises customers visit, or a defined area it travels within. Where a street can hold several similar businesses, the profile is often the first and only thing a customer reads before choosing.",
+    answer: {
+      question: "What does Google Maps SEO involve, and how does it help a business in New York?",
+      text: "Google Maps SEO is the work of making a Google Business Profile complete, accurate and eligible, and supporting it with reviews and a matching website page, so the business can appear when people nearby search in Maps or see map results in Search. In a city this dense, that visibility is measured across small distances. Google decides the results, and no position on the map can be promised.",
+    },
+    context: {
+      heading: "Why Google Maps visibility matters for a New York business",
+      paragraphs: [
+        "Map results are often where a local decision is made. Someone looking for a pharmacy, a barber or an urgent repair opens a map, sees a handful of options with ratings, hours and photographs, and picks one without visiting a website. For businesses that trade on nearby custom, the profile therefore does the job a shopfront and a brochure used to do. If the hours are wrong or the photographs are years old, the customer has little reason to choose that listing over the next.",
+        "Density changes what a sensible target looks like. Because distance from the searcher is part of how map results are ordered, a profile tends to be most visible close to its pin and to fade with distance. In a tightly built city that fade can happen within a short walk. Measuring visibility at many points on a grid around the premises shows the true picture, which is usually a patch of the map and not a borough. Planning starts from that patch.",
+        "Profile rules deserve respect here. Google expects the business name to match real-world signage, the address to be somewhere customers are served or else hidden with a service area declared, and each profile to represent a distinct, real business. Offices on upper floors, shared suites and businesses that visit customers at home all need care to stay within those rules. Profiles that break them risk suspension, and reinstatement is at Google's discretion, so we keep everything accurate and evidenced.",
       ],
     },
-    h1: "Google Maps SEO Services in New York, Tracked Street by Street",
-    intro:
-      "The map pack in New York reshuffles every few blocks. A search made in the West Village shows different businesses from the same search made in Murray Hill, and the person searching usually picks one of the first few and walks there. The Business Profile does most of the persuading before any website is opened. SERPMOZ works with New York businesses remotely to repair, complete and maintain those profiles.",
-    answer: {
-      question: "What does a Google Maps SEO company do for businesses in New York?",
-      text: "A Google Maps SEO company works on the Google Business Profile, which is where map results come from. For a New York business SERPMOZ verifies the profile, removes duplicates, sets accurate categories, hours and attributes, adds real photographs, and builds a review and reply routine. We then scan a grid of points around the address to see where the profile appears and where it drops away.",
+    audiences: [
+      {
+        title: "Businesses with a street-level shopfront or venue",
+        body: "Shops, cafes, salons, gyms and bars that people walk into. Their profile needs accurate hours, exterior photographs that help someone find the door, and reviews recent enough to reflect the business as it is today.",
+      },
+      {
+        title: "Practices and offices located above street level",
+        body: "Clinics, law offices and studios reached by a lift and a suite number. Clear access details, a correctly placed pin and interior photographs matter more when a passer-by cannot see the business from the pavement.",
+      },
+      {
+        title: "Service businesses that go to the customer",
+        body: "Locksmiths, cleaners, contractors and repair firms without a public address. They need the address hidden where the rules require it, a truthful service area, and review requests timed for the end of each completed job.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Visibility falls away within a short distance",
+        body: "A profile can appear prominently on its own block and hardly at all a few avenues over. Grid scans across your service area show where you are seen now, which nearby gaps are worth pursuing and which are beyond reach from your address.",
+      },
+      {
+        title: "Duplicate and outdated profiles",
+        body: "Previous tenants, former practitioners and listings created automatically can leave several profiles tied to one address. We find them, then request merging or removal through Google's process, so reviews and searches are not split across competing entries.",
+      },
+      {
+        title: "Suspension after an edit or a report",
+        body: "A change of name, address or category can trigger a review, and a competitor's report can do the same. We make edits carefully, keep evidence such as signage photographs and licences ready, and prepare an appeal if a profile is suspended.",
+      },
+      {
+        title: "Temptation to stuff the business name",
+        body: "Adding keywords or a neighbourhood to the profile name may seem to help and breaks the guidelines. We keep the name as it appears on your signage and put the descriptive work into categories, services and the linked page.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Verify",
+        body: "We confirm who owns the profile, complete or repair verification, and look for duplicates at the same address or under old names. The business name, address or service area and map pin are checked against signage and how customers actually reach you.",
+      },
+      {
+        stage: "Configure",
+        body: "The primary category is chosen by comparing what you do with how similar businesses nearby are categorised. Secondary categories are added only where true. Services, attributes such as accessibility and payment options, and regular and special hours are completed.",
+      },
+      {
+        stage: "Show",
+        body: "Exterior, interior, team and real-work photographs are added in place of stock images. Posts cover offers, events and updates, product or service listings are filled in where the category supports them, and customer-uploaded content is monitored.",
+      },
+      {
+        stage: "Reviews",
+        body: "Staff receive a direct review link and a QR code, with guidance on asking after a completed visit or job. Every review gets a considered reply. Reviews that break Google's policies are reported, and no incentives or filtering are used.",
+      },
+      {
+        stage: "Connect",
+        body: "The profile is linked to a location page that mirrors its name, address, phone and services and carries local business structured data. Tagged website and booking links, plus profile data on calls and directions, show what the listing produces.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The first task is ownership and verification, since nothing else can be edited reliably without it. Corrections to categories, hours, address details and duplicates come next, and their effect is often visible within weeks. Photographs, services and the review routine are then built up. Extending visibility further from your premises typically takes several months and may not be achievable where many similar businesses sit between you and the searcher. Verification and appeals move at Google's pace.",
+        "Reporting shows grid visibility, calls, direction requests and bookings from the profile each month, alongside review activity and anything awaiting a decision from Google.",
+      ],
+      notGuaranteed: [
+        "A position in the map results for any search or location",
+        "Removal of a review, even one that appears to break policy",
+        "Verification or reinstatement of a profile, or the time either takes",
+      ],
     },
-    searches: [
-      {
-        title: "Open now, on foot",
-        body: "'Pizza open now', 'pharmacy near me', 'nail salon walk in': these are typed on the sidewalk by someone ready to go. They filter by rating and opening hours, so wrong hours on a holiday can cost a day's trade.",
-      },
-      {
-        title: "Inside the Maps app",
-        body: "Many New Yorkers skip the search page and open Google Maps directly, often while planning a subway route. They browse by category around a destination such as Bryant Park or Barclays Center and compare photographs before anything else.",
-      },
-      {
-        title: "Name checks before visiting",
-        body: "After a recommendation, people search the business name to see the profile panel: rating, latest reviews, photographs and how busy it is. A sparse panel with old pictures undermines the referral that sent them.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Distance works over blocks",
-        body: "Google has said it weighs relevance, distance and prominence. In a city this dense the distance factor operates over very short ranges, so a profile can be visible on its own avenue and absent three avenues over. Only grid tracking shows that.",
-      },
-      {
-        title: "Addresses above the ground floor",
-        body: "A practice on the ninth floor of a Flatiron building shares its street address with many tenants. The suite number, the floor and a clear description of the entrance keep the pin correct and stop customers giving up in the lobby.",
-      },
-      {
-        title: "Shared and coworking addresses",
-        body: "New York has many businesses registered at coworking spaces and virtual offices. Profiles at addresses without staffed premises and signage are at risk of suspension under Google's guidelines. We check eligibility first and advise a service-area profile where that is the accurate option.",
-      },
-      {
-        title: "Photographs carry more weight",
-        body: "With a dozen similar listings on screen, pictures of the real storefront, interior and staff help a customer recognise the place from the street. Scaffolding, new signage and renovations are common here, so images are refreshed on a schedule.",
-      },
-    ],
-    areas: [
-      { name: "West Village", note: "Irregular streets and small storefronts make accurate pins and entrance photographs unusually important." },
-      { name: "Flatiron and Chelsea", note: "Upper-floor studios, clinics and showrooms rely on suite details to be found at all." },
-      { name: "Financial District", note: "Weekday searches from office workers dominate, so hours and lunchtime attributes need precision." },
-      { name: "Downtown Brooklyn and DUMBO", note: "Fast-changing retail and dining streets where new profiles appear often and categories shift." },
-      { name: "Flushing", note: "A busy Queens centre where bilingual business names and descriptions must stay within naming guidelines." },
-    ],
     sectors: [
-      { slug: "dental", note: "Practices share buildings and blocks with rivals, so categories, insurance attributes and review recency decide the map pack." },
-      { slug: "hospitality", note: "Diners choose from the Maps app by photograph, rating and hours, often minutes before arriving." },
-      { slug: "local-business", note: "Salons, repair shops and studios in the boroughs earn most walk-in custom from their profile panel." },
+      { slug: "dental", note: "People choose a dentist near home or work, and ratings, photographs and hours on the profile shape that choice." },
+      { slug: "home-services", note: "An urgent repair is booked from the map, so a truthful service area and recent job reviews decide who is called." },
+      { slug: "hospitality", note: "A table or a drink is chosen on the street, from a map, by distance, photographs and recent ratings." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a Google Maps SEO company in New York?",
-        a: "We provide Google Maps SEO to businesses in New York as a remote service. SERPMOZ is an AI-powered digital growth company and has no office in New York. You add us as a manager on your Business Profile, and ownership never leaves you. Verification steps that need someone at the premises, such as a video of the storefront, are done by your staff with our guidance.",
+        q: "What is a Google Business Profile, and why does it matter?",
+        a: "It is the free listing Google shows for a business in Maps and beside search results, with the name, address, hours, photographs, reviews and links for calling or booking. For local searches it is frequently seen before your website. Google draws on it, along with distance and reputation signals, when deciding which businesses to show for a nearby search.",
       },
       {
-        q: "How do I find a Google Maps SEO service near me in New York?",
-        a: "Proximity of the provider does not affect your ranking. Your own address does. So look past the 'near me' results and ask each provider to show a grid scan of your profile across your neighbourhood, explain their view of your primary category, and describe how they request reviews without filtering. Be cautious of anyone suggesting keywords in the business name or extra listings at addresses you do not use.",
+        q: "Does SERPMOZ have an office in New York?",
+        a: "No. Advertisers in New York are served through a remote consulting and delivery model. Map visibility is tied to your premises and your profile, never to where an agency is located, so an agency address would add nothing. We need manager access to the profile, current photographs from your staff and a contact who can confirm details.",
       },
       {
-        q: "Do you also work with businesses in Hoboken, Long Island City and the Bronx?",
-        a: "Yes, all remotely. Long Island City and the Bronx are within the five boroughs, each with its own competitors on the map. Hoboken is in New Jersey, a short train ride from Manhattan, and its searchers see New Jersey businesses first. A profile ranks around its own location, so a company with premises in more than one of these places needs a separate verified profile for each.",
+        q: "Can you guarantee a spot among the first map results?",
+        a: "No. Google orders map results using the searcher's position among other factors, so the same search gives different results a few streets apart. Nobody outside Google controls that. We can ensure the profile is eligible and fully accurate, backed by a matching page and a healthy flow of reviews, and measure visibility point by point.",
+      },
+      {
+        q: "How long does Google Maps SEO take to show results?",
+        a: "Corrections to a profile, such as the right category, proper hours or the removal of a duplicate, often show within weeks. Widening the area in which you appear is a slower matter of reviews, photographs and supporting website signals, typically over several months. Some distance limits will remain however good the profile becomes.",
       },
       {
         q: "What does Google Maps SEO cost in New York?",
-        a: "It depends on how many profiles you have and what state they are in. Suspensions, duplicates and wrong pins take the most time to resolve. Ongoing effort covers photographs, posts, review replies and grid reporting, and rises with the number of locations. Dense categories in Manhattan generally need more sustained review and content activity than quieter ones in the outer boroughs.",
+        a: "The profile itself is free; the cost is the work. That depends on the number of profiles, whether verification or suspension problems must be resolved, how much photography and service detail has to be gathered, and whether location pages on your site need building. One well-kept profile is a modest job. Many neglected ones are not.",
       },
       {
-        q: "Why does our profile show in one part of Manhattan and vanish a few blocks away?",
-        a: "Because distance from the searcher is one of the factors Google uses, and Manhattan packs many eligible businesses into each block. As the searcher moves, closer competitors replace you. You cannot move your address, but you can strengthen relevance and prominence through precise categories, complete services, steady reviews and a matching website page. That tends to widen the area where you appear, without any certainty of how far.",
+        q: "We work from home and visit customers. Can we still appear on the map?",
+        a: "Yes, as a service-area business. Google's guidelines allow a business that travels to its customers to hide its address and declare the areas it serves. You will not appear as a pin people walk to, and visibility still relates to your base location. The profile must describe a real business, with accurate categories and reviews from customers you have served.",
       },
     ],
   },
@@ -189,92 +249,121 @@ export const pages: LocalServicePage[] = [
     place: "new-york",
     service: "google-ads",
     seo: {
-      title: "Google Ads Agency in New York",
+      title: "Google Ads Management in New York",
       metaDescription:
-        "Google Ads agency work for New York firms: campaigns split by borough and intent, lead-quality tracking and pages built for some of the costliest clicks.",
-      primaryKeyword: "google ads agency in new york",
-      secondaryKeywords: [
-        "google ads management services new york",
-        "google ads company in new york",
-        "google ads agency near me",
-        "google ads agency nyc",
-        "ppc agency manhattan",
-        "google ads management brooklyn",
-        "ppc company long island",
+        "Google Ads management for New York businesses: precise location targeting, tracked calls and forms, tight search term control and reporting on real customers.",
+      primaryKeyword: "google ads management in new york",
+      secondaryKeywords: ["google ads agency in new york", "ppc management nyc", "google ads management company", "paid search agency usa", "google ads management near me"],
+    },
+    h1: "Google Ads Management in New York",
+    intro:
+      "SERPMOZ manages Google Ads for businesses in New York, from conversion and call tracking through Search, Shopping, Performance Max and video campaigns to the pages those ads lead to. It is for owners and marketing heads who want paying customers from search and a clear account of what they cost. A neighbourhood business and a firm selling nationwide need very different accounts, and the first job is deciding which one you are.",
+    answer: {
+      question: "What does Google Ads management include, and how does it help a business in New York?",
+      text: "Google Ads management means building and maintaining an account so that budget goes to searches likely to become customers. It includes tracking forms and calls, organising campaigns by intent, writing ads, setting locations and schedules, and pruning wasteful search terms. For a business serving part of the five boroughs, precise geographic control matters as much as keywords. Click prices and lead numbers are set by the auction and cannot be promised.",
+    },
+    context: {
+      heading: "Why Google Ads needs careful handling in New York",
+      paragraphs: [
+        "Paid search is an auction, and the price of a click rises with the number of advertisers who value it. Law, finance, real estate and private healthcare are fields the city is known for, and in each a single customer can be worth a lot to the firm that wins them. It follows that advertisers in those fields are generally prepared to pay more per click. An account in that position cannot afford vague keywords, and every search term report deserves reading.",
+        "Geography needs more thought than choosing the city from a list. Targeting can be drawn by radius, by postal code or by borough, and can either require a person to be in the area or merely to show interest in it. A restaurant wants people nearby now. A moving company may want people elsewhere who plan to arrive. A firm with clients commuting in from New Jersey, Long Island or Connecticut may need those areas included. The setting should follow the customer, deliberately.",
+        "Phone calls remain a large part of how local and professional services are bought, so an account that counts only form submissions sees part of the picture. Call tracking, call conversions and, where possible, outcomes imported from the CRM tell the bidding system which enquiries became business. Some professions also have their own rules on advertising, and platforms restrict certain categories. Wording in those fields should be approved by your own legal or compliance adviser before ads run.",
       ],
     },
-    h1: "Google Ads Agency in New York for Borough-by-Borough Campaigns",
-    intro:
-      "Paid search in New York punishes loose targeting quickly. Clicks for legal, financial, medical and real estate terms here are among the most expensive anywhere, and a campaign aimed at 'New York' mixes Manhattan with the outer boroughs and sometimes the whole state. SERPMOZ manages Google Ads for New York businesses remotely, with campaigns divided by borough, neighbourhood and intent so each dollar of budget can be judged.",
-    answer: {
-      question: "What does a Google Ads agency do for businesses in New York?",
-      text: "A Google Ads agency plans, builds and manages paid search campaigns and decides what the bidding system should chase. In New York, SERPMOZ separates Manhattan, the outer boroughs and the suburbs into their own campaigns, excludes locations the business cannot serve, feeds qualified-lead data back from the CRM and sends each ad group to a specific page. Auction prices are set by competitors, so we promise no figure.",
+    audiences: [
+      {
+        title: "Neighbourhood businesses that need customers from nearby",
+        body: "Clinics, restaurants, salons and repair services whose customers come from a limited area. Campaigns are drawn tightly around that area, scheduled for opening hours and measured on calls, bookings and direction requests.",
+      },
+      {
+        title: "Professional firms competing for valuable individual clients",
+        body: "Law, accounting, financial and real estate firms where enquiry quality varies enormously. Search themes are kept narrow, intake outcomes are fed back into the account, and reporting separates qualified matters from casual questions.",
+      },
+      {
+        title: "Brands based in the city selling across the USA",
+        body: "Ecommerce and service companies whose market is national. Their accounts are organised by product and margin, with location used to adjust bids and messages by region instead of to limit reach.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Drawing the right boundary around customers",
+        body: "Set targeting too wide and budget goes to people who will never travel to you; too narrow and you miss commuters and neighbouring areas. We start from where existing customers come from and refine using the account's own location reports.",
+      },
+      {
+        title: "Visitors and researchers mixed in with buyers",
+        body: "A heavily visited city generates searches from tourists and people planning from afar. For some businesses they are the customer; for others they are cost. Presence settings, exclusions and ad wording are used to attract the group you serve.",
+      },
+      {
+        title: "Calls that are never connected to campaigns",
+        body: "If phone enquiries are not tracked, the campaigns producing them look weak and may be cut. We set up call conversions and call tracking, then check a sample against your records so the numbers can be trusted.",
+      },
+      {
+        title: "Broad matching without supervision",
+        body: "Broad match and automated campaign types can find useful searches and irrelevant ones alike. They are used with negative keyword lists, brand exclusions and scheduled reviews, so the reach they add is examined instead of assumed.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Audit",
+        body: "We examine what the account currently counts as a conversion, test whether forms and calls are recorded, and trace recent spend by search term, location, device and hour. Landing pages are checked on a phone. You get the findings ranked by wasted cost.",
+      },
+      {
+        stage: "Track",
+        body: "Primary and secondary conversion actions are set, with enhanced conversions and consent handling configured for your site. Call tracking is installed, and where a CRM exists, lead stages or sale values are imported so bidding can learn from outcomes.",
+      },
+      {
+        stage: "Structure",
+        body: "Campaigns are arranged by intent and service, each with its own area, schedule and budget. A match type policy and shared negative lists are written down. Shopping feeds are cleaned where products are sold, and Performance Max is given clear limits.",
+      },
+      {
+        stage: "Launch",
+        body: "Responsive search ads and assets are written to echo the search and the landing page. Campaigns go live at budgets large enough to learn from, with search terms and placements checked frequently in the early weeks, when mistakes cost the most.",
+      },
+      {
+        stage: "Report",
+        body: "Monthly reporting sets spend against tracked calls, forms and, where available, confirmed customers, by campaign and area. It records each change made and why, and closes with recommendations, including any campaign we think should be paused.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "Tracking comes first, because an account optimised on unreliable data gets worse with effort. Once conversions and calls are recorded properly, campaigns are rebuilt or launched and traffic begins immediately. The opening four to eight weeks are typically a learning period in which automated bidding gathers data and performance can be uneven. After that, improvement depends on budget, conversion volume, how competitive the auction is and how well enquiries are handled once they reach you.",
+        "The account, its history and its data stay in your name. We report monthly and are available between reports when something needs a decision.",
+      ],
+      notGuaranteed: [
+        "The price of a click or the cost of acquiring a customer",
+        "How many calls, forms or sales a campaign will produce",
+        "That an ad or account will pass a platform policy review",
+      ],
     },
-    searches: [
-      {
-        title: "Service plus borough",
-        body: "'Divorce lawyer Brooklyn', 'pediatric dentist Queens' and 'commercial movers Manhattan' are typical. The borough signals where the customer expects the provider to be, and ads that repeat it in the headline tend to match the search more closely.",
-      },
-      {
-        title: "Building and property terms",
-        body: "Real estate searches name the product precisely: 'no fee apartments Astoria', 'co-op attorney', 'condo for sale Hudson Yards'. Renters, buyers and sellers each use their own vocabulary, and one keyword list cannot serve all three.",
-      },
-      {
-        title: "Urgent trades and repairs",
-        body: "A leak in a prewar building or a broken boiler in January brings 'emergency plumber NYC' at any hour. Calls matter more than clicks here, so call tracking, ad schedules and answering arrangements are part of the campaign.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Location settings leak budget",
-        body: "Targeting 'New York' can mean the city or the state, and default settings can include people merely interested in the place. Campaigns are restricted to people physically in the chosen boroughs or postal codes, with exclusions for areas outside your reach.",
-      },
-      {
-        title: "Separate auctions across the rivers",
-        body: "Manhattan, Brooklyn, Queens, northern New Jersey and Long Island each price differently for the same keyword. Splitting them lets bids and budgets reflect what a customer from each area is worth, and often reveals cheaper demand outside Manhattan.",
-      },
-      {
-        title: "Commuters distort targeting",
-        body: "Someone searching from a Midtown office at lunch may live in Westchester or Hoboken. For services delivered at home, that click may be wasted or valuable depending on your coverage. Ad copy and landing pages state the areas served to filter early.",
-      },
-      {
-        title: "Rules for regulated advertisers",
-        body: "Attorney advertising follows the state's professional conduct rules, housing ads fall under fair housing obligations that restrict targeting, and financial and health offers carry their own limits. Ad copy for these sectors should be approved by your compliance adviser.",
-      },
-    ],
-    areas: [
-      { name: "Manhattan", note: "The most contested auctions, where tight keyword scope and exact geography keep spend under control." },
-      { name: "Brooklyn", note: "Large enough to split further, since Bay Ridge and Bushwick customers differ in need and value." },
-      { name: "Queens", note: "Multilingual neighbourhoods such as Jackson Heights and Flushing can justify Spanish or Chinese ad groups." },
-      { name: "Long Island", note: "Nassau and Suffolk homeowners search for trades and professional services with suburban, car-based habits." },
-      { name: "Northern New Jersey", note: "Newark, Jersey City and Bergen County fall under another state's licensing and need separate campaigns." },
-      { name: "Westchester", note: "White Plains and Yonkers households often look to city firms for legal, medical and financial services." },
-    ],
     sectors: [
-      { slug: "legal", note: "Injury, immigration and real estate law keywords in New York are costly, so lead quality tracking is essential." },
-      { slug: "real-estate", note: "Brokerages advertise by building and neighbourhood, within fair housing limits on how audiences may be targeted." },
-      { slug: "finance", note: "Advisers and lenders bid for affluent Manhattan searchers and must keep claims within disclosure requirements." },
+      { slug: "legal", note: "A person with a legal problem searches at the moment of need, and intake data shows which searches bring real matters." },
+      { slug: "healthcare", note: "Patients search by treatment and location, then phone, which makes tight targeting and call tracking central to the account." },
+      { slug: "home-services", note: "Urgent jobs are booked by phone from the first credible result, so schedules, areas and call handling decide the return." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a Google Ads agency in New York?",
-        a: "SERPMOZ manages Google Ads accounts for New York advertisers, doing the job a Google Ads agency does. It is an AI-powered digital growth company working remotely, with no office in New York. The ad account stays in your name and you can see every change. Review calls take place in Eastern business hours, and reports show spend, qualified leads and cost per lead for each borough or area.",
+        q: "What is the difference between Google Ads and Local Services Ads?",
+        a: "Google Ads are the standard paid listings, charged per click and controlled through keywords, bids and ad copy. Local Services Ads are a separate format for eligible trades and professions, shown with a business's verification status and reviews and generally charged per lead. Eligibility and features vary by category and change over time. Where both are available, many businesses test each and compare cost per customer.",
       },
       {
-        q: "How do I find a Google Ads agency near me in New York?",
-        a: "An agency's distance from you has no effect on an ad auction, so weigh method over address. Ask each one how they would split Manhattan from Brooklyn, Queens and New Jersey, which location settings they use to keep out irrelevant clicks, and what they count as a conversion. If you are in law, finance, health or housing, ask who checks ads against the rules for your profession.",
+        q: "Does SERPMOZ have an office in New York?",
+        a: "No. SERPMOZ supports clients in New York through a remote model of consulting and delivery. Advertising accounts are run entirely through online platforms, so location has no bearing on the quality of management. The work depends on account and analytics access, honest feedback about which enquiries became customers, and scheduled calls at times suited to your working day.",
       },
       {
-        q: "Do you also work with businesses in Long Island, Westchester and northern New Jersey?",
-        a: "Yes. We manage campaigns remotely for advertisers in Nassau and Suffolk counties, in Westchester towns such as White Plains and New Rochelle, and across the Hudson in Jersey City, Newark and Bergen County. Each is run as its own campaign with its own budget. New Jersey and Connecticut are different states, so licensing statements and any regulated wording are checked for the state concerned.",
+        q: "Can you guarantee a cost per lead?",
+        a: "No. Cost per lead is the product of click prices, which competitors influence, and conversion rate, which depends on your offer, page and follow-up. We cannot fix any of these in advance. We can set a target with you, manage towards it openly, and tell you early if the evidence says the target is unrealistic at your budget.",
       },
       {
-        q: "What does Google Ads cost in New York?",
-        a: "Media cost depends on your category and on which parts of the metro you bid in. Professional services in Manhattan sit at the expensive end, and outer-borough or suburban targeting is frequently cheaper for the same terms. Management cost follows the number of campaigns, areas, languages and landing pages, plus any tracking work needed to tie leads to revenue. We estimate both after reviewing your account or market.",
+        q: "How long does it take for Google Ads to show results?",
+        a: "Traffic starts the day campaigns are approved, and early leads may follow quickly. Dependable performance takes longer, because automated bidding typically needs four to eight weeks of conversions before it stabilises. Smaller budgets gather that data more slowly. The first two months are for establishing what works; steadier cost per customer usually comes after.",
       },
       {
-        q: "Should Manhattan and the outer boroughs be in separate campaigns?",
-        a: "Almost always. Prices, competitors and customer value differ enough that a shared budget drifts toward wherever clicks are easiest to buy, which may not be where your profitable customers are. Separate campaigns let you set distinct bids, write ads that name the borough and see results clearly. Smaller advertisers can begin with two campaigns, Manhattan and everything else, then divide further as data accumulates.",
+        q: "What does Google Ads management cost in New York?",
+        a: "You pay Google for clicks and pay separately for management. Click spend is governed by auction prices in your field and the area you target; a tight neighbourhood campaign needs less than a citywide or national one. Management fees reflect how many campaigns and formats are involved and how much tracking and page work is needed.",
+      },
+      {
+        q: "Can ads be limited to certain neighbourhoods or boroughs?",
+        a: "Yes. Campaigns can target a radius around an address, selected postal codes or whole boroughs, and exclude areas you do not serve. Bids can also be raised or lowered by area. We normally begin with the places your current customers come from, then widen or narrow the boundary according to what the location reports show.",
       },
     ],
   },
@@ -282,90 +371,121 @@ export const pages: LocalServicePage[] = [
     place: "new-york",
     service: "landing-page-optimization",
     seo: {
-      title: "Landing Page Optimization Agency in New York",
+      title: "Landing Page Optimization in New York",
       metaDescription:
-        "Landing page optimization agency work for New York advertisers: pages matched to each ad, with local proof, clear forms and fast mobile loading.",
-      primaryKeyword: "landing page optimization agency in new york",
-      secondaryKeywords: [
-        "landing page optimization services new york",
-        "landing page design company new york",
-        "landing page agency near me",
-        "landing page optimization nyc",
-        "landing page design manhattan",
-        "ppc landing pages brooklyn",
+        "Landing page optimization for New York businesses: pages matched to each ad, fast on a phone, with clear proof and simple forms, measured on real enquiries.",
+      primaryKeyword: "landing page optimization in new york",
+      secondaryKeywords: ["landing page optimization services in new york", "landing page agency nyc", "ppc landing page design", "landing page conversion optimization", "landing page optimization services near me"],
+    },
+    h1: "Landing Page Optimization in New York",
+    intro:
+      "SERPMOZ designs, builds and improves landing pages for businesses in New York that pay for traffic: pages matched to each ad and audience, quick to load on a phone, with clear proof and a form or call button that is easy to use. It is for advertisers whose clicks cost real money and whose pages are not converting enough of them. When the visitor has other options close at hand, a slow or vague page loses them.",
+    answer: {
+      question: "What is landing page optimization, and how does it help a business in New York?",
+      text: "Landing page optimization improves the page a person reaches after clicking an ad, so more of those visitors enquire, call or buy. It covers matching the page to the ad's promise, a clear structure with one main action, proof and reassurance, simpler forms, loading speed and accurate tracking. For an advertiser paying high click prices, it is often the quickest way to lower the cost of each enquiry. Results vary and cannot be promised.",
+    },
+    context: {
+      heading: "Why landing pages matter for a New York advertiser",
+      paragraphs: [
+        "An advertiser controls three things in paid search: what to bid on, what the ad says and what the visitor finds after clicking. The third is frequently neglected. Sending every campaign to a homepage asks the visitor to work out where to go, and many will not bother. A page that repeats the promise of the ad, answers the obvious questions and offers one clear next step makes better use of a click that has already been paid for.",
+        "Much local searching happens on a phone, often while the person is out and deciding where to go or whom to call. That visitor reads little, has a patchy connection at times and may prefer to ring than to type. A landing page for that person should show the essential facts on the first screen, load quickly on mobile data and place a tap-to-call button within thumb reach. The quality of the page is also one of the inputs to how ad platforms assess an ad.",
+        "In fields the city is known for, such as legal, financial, medical and property services, the visitor is making a cautious choice. Reassurance has to be real: reviews used with permission, accreditations the firm holds, and a plain statement of what happens after the form is sent. Privacy and accessibility expectations apply as well, and the rules differ between states and professions, so wording about data use or regulated claims should be confirmed with your own legal adviser.",
       ],
     },
-    h1: "Landing Page Optimization Agency in New York for Costly Paid Clicks",
-    intro:
-      "A paid click in New York costs enough that the page it lands on becomes the most important variable in the campaign. Visitors arrive on a phone, often between subway stops, with several competitors open in other tabs. A general homepage loses them. SERPMOZ works with New York advertisers remotely to build and test campaign pages that match the ad and make one clear request.",
-    answer: {
-      question: "What does a landing page optimization agency do for New York advertisers?",
-      text: "A landing page optimization agency improves the pages that paid visitors reach, so more of them enquire or book. For New York campaigns SERPMOZ writes a page per ad group or neighbourhood, repeats the promise of the ad in the headline, places local proof and credentials near the form, trims fields that cost leads and checks loading speed on mobile data. Results are measured in qualified leads per click.",
+    audiences: [
+      {
+        title: "Advertisers sending paid traffic to a general homepage",
+        body: "Businesses running search or social campaigns with no dedicated pages. Building one page per distinct service or audience is usually the first improvement, because it lets the page speak directly to what the visitor just searched for.",
+      },
+      {
+        title: "Local service firms that convert mainly by phone",
+        body: "Practices, contractors and repair services whose customers call. Pages are built around tap-to-call, visible hours and service area, with call tracking in place so the calls a page produces are counted alongside forms.",
+      },
+      {
+        title: "Firms offering considered services to cautious buyers",
+        body: "Legal, financial and medical providers whose visitors need reassurance before they share details. Pages lead with clarity about the service, evidence the reader can check, and a short form that explains what will happen next.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Pages that do not match the ad",
+        body: "If the ad promises one thing and the page opens with another, the visitor assumes they are in the wrong place. Each page's headline and offer are written to echo the keyword theme and ad, and imagery is kept consistent between them.",
+      },
+      {
+        title: "Visitors comparing several providers at once",
+        body: "A customer with nearby alternatives will open more than one result. The page that states price guidance, availability, location and evidence plainly tends to keep them. We decide with you which specifics you can truthfully offer and put them first.",
+      },
+      {
+        title: "Forms that ask more than the visitor will give",
+        body: "Every extra field costs some completions. Each field has to justify itself to sales or intake, longer forms are split into steps where that reduces effort, and error messages are written so a mistake is easy to correct.",
+      },
+      {
+        title: "Too few clicks to split test",
+        body: "Many local campaigns do not generate enough conversions for a trustworthy experiment. Where that is so, we make well-reasoned changes, measure the period before against the period after with care, and avoid claiming more certainty than the numbers support.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Review",
+        body: "We read the ads, keywords and audiences behind each campaign, then go through the current pages on a phone and a desktop. Tracking for forms, calls and chat is tested, and CRM records are used to see which enquiries were worth having.",
+      },
+      {
+        stage: "Plan",
+        body: "A page is specified for each distinct intent or audience: headline, offer, sequence of benefits and objections, proof to include and the single main action. Claims and testimonials are checked for permission and accuracy before they are written in.",
+      },
+      {
+        stage: "Build",
+        body: "Pages are built on your platform as reusable templates, with pared-back menus, compressed images and third-party scripts audited for speed. Forms get inline validation and spam filtering that does not obstruct real people. Layouts are checked across devices and browsers.",
+      },
+      {
+        stage: "Launch",
+        body: "Campaigns are pointed at the new pages with source and campaign parameters captured on every lead. Form, call and chat conversions are verified with test submissions, and Core Web Vitals on mobile are confirmed once real visitors arrive.",
+      },
+      {
+        stage: "Improve",
+        body: "With enough volume, split tests compare one meaningful change at a time. Without it, changes are sequenced and judged before and after. Lead quality from the CRM is reviewed alongside conversion rate, so a page is not rewarded for attracting poor enquiries.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "Work opens with a review of campaigns, current pages and tracking, followed by a plan for the pages that carry the most spend. First pages are typically live within weeks, depending on your platform, how quickly copy and proof can be approved and whether development access is available. After launch, how fast we can learn depends on click volume: busy campaigns allow split tests, while quieter ones need longer before-and-after comparisons and more cautious conclusions.",
+        "Reports show conversion rate and cost per enquiry for each page, the quality of leads where your CRM records it, and what will be changed next.",
+      ],
+      notGuaranteed: [
+        "A specific conversion rate or cost per enquiry from any page",
+        "That a new page will outperform the one it replaces",
+        "An improvement in ad platform quality assessments or click prices",
+      ],
     },
-    searches: [
-      {
-        title: "Spend rising, leads flat",
-        body: "The search starts in a spreadsheet. A practice manager in Midtown sees cost per lead climbing and looks for 'landing page agency NYC' or 'improve Google Ads conversion rate'. The ads may be sound and the destination weak.",
-      },
-      {
-        title: "Requests from the media buyer",
-        body: "Often the person running the ads asks for pages. In-house marketers and freelancers search 'PPC landing page designer New York' when the main website cannot be edited quickly or its templates do not suit campaign traffic.",
-      },
-      {
-        title: "Launches and openings",
-        body: "A new clinic in Long Island City, a development in Hudson Yards or a restaurant in the East Village needs a page before the site is finished. Queries mention the deadline: 'landing page for launch', 'pre-opening sign-up page'.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Pages read in transit",
-        body: "Many visits happen on a phone with patchy signal underground or on a crowded sidewalk. Pages are built light, with the headline, proof and action visible without scrolling, and a tap-to-call option for services people book by phone.",
-      },
-      {
-        title: "Neighbourhood named on the page",
-        body: "An ad that mentions the Upper West Side should land on a page that says so, shows the cross streets and nearest stations, and uses photographs of the actual premises. A generic city page breaks the match the ad created.",
-      },
-      {
-        title: "Proof New Yorkers recognise",
-        body: "Visitors here compare many options and are quick to doubt. Ratings from Google or Yelp, professional licences, hospital or bar affiliations and named building or neighbourhood experience persuade more than adjectives. Claims that cannot be verified are left out.",
-      },
-      {
-        title: "Required wording in regulated fields",
-        body: "Attorney advertising may need specific labels, housing pages must respect fair housing rules, and financial and health pages carry disclosure and privacy duties. These elements are placed where they belong in the design from the first draft, then approved by your adviser.",
-      },
-    ],
-    areas: [
-      { name: "Midtown", note: "Professional firms paying heavily per click, where form length and credentials shape lead quality." },
-      { name: "Upper East Side", note: "Medical and dental pages need insurance, booking and practitioner details visible on a small screen." },
-      { name: "SoHo and Tribeca", note: "Retail, studio and showroom campaigns that depend on imagery, appointments and precise directions." },
-      { name: "Brooklyn", note: "Separate pages for neighbourhoods such as Park Slope and Williamsburg keep ads and destinations aligned." },
-      { name: "Jersey City", note: "Pages for New Jersey visitors need that state's licence details and their own contact routing." },
-    ],
     sectors: [
-      { slug: "legal", note: "Law firms pay some of the city's highest click prices, so intake forms and required advertising labels matter." },
-      { slug: "healthcare", note: "Clinics convert on insurance clarity and online booking, within privacy rules that limit tracking on health pages." },
-      { slug: "real-estate", note: "Listing and development campaigns need pages per building or neighbourhood, compliant with fair housing requirements." },
+      { slug: "legal", note: "A prospective client wants to know quickly whether the firm handles their problem and what contacting it involves." },
+      { slug: "healthcare", note: "Patients look for the treatment, the practitioner and how to book, and often prefer to call than complete a form." },
+      { slug: "real-estate", note: "Enquiries about a listing or valuation are specific, so a page for each offer converts better than a general one." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a landing page optimization agency in New York?",
-        a: "We build and optimise landing pages for New York campaigns, remotely. SERPMOZ is an AI-powered digital growth company, and it has no office in New York. Pages are designed from your ad data, call recordings and customer questions, then built on your CMS or a landing page platform you own. Wireframes and drafts are reviewed over video with whoever handles your enquiries, since they know which leads turn out well.",
+        q: "How is landing page optimization different from CRO?",
+        a: "Conversion rate optimisation looks at the whole site and every step a visitor takes, across all sources of traffic. Landing page optimization is narrower: it deals with the pages that paid and campaign traffic arrives on, and with how well each one matches its ad. It is often the starting point for advertisers, since the visitors are already being paid for.",
       },
       {
-        q: "How do I find a landing page agency near me in New York?",
-        a: "Location matters little for this work, so compare process. Ask to see how an agency maps each campaign to a page, how it decides what proof goes near the form, and how it would test when click volume is low, which is common in expensive New York auctions. Ask who owns the finished pages and whether they can be edited by your own team afterwards.",
+        q: "Does SERPMOZ have an office in New York?",
+        a: "No. Our work for companies in New York is carried out through a remote consulting and delivery model. Landing pages are designed, built and measured online, on your own platform, so the work calls for access and prompt approvals more than meetings. Copy and proof are agreed in shared documents, and designs are reviewed together on screen before anything is published.",
       },
       {
-        q: "Do you also work with businesses in Brooklyn, Jersey City and Westchester?",
-        a: "Yes, remotely in each case. Campaigns for Brooklyn usually need neighbourhood versions of a page. Jersey City belongs to New Jersey, so pages aimed there carry that state's licensing details and any wording its regulators require. Westchester visitors, from White Plains or Scarsdale, respond to different proof and travel details than Manhattan ones. One template is adapted for each area so that build effort is not repeated.",
+        q: "Can you guarantee a higher conversion rate from new pages?",
+        a: "No. A page built on good evidence usually does better than a generic one, but visitors decide, and sometimes a change makes no difference or performs worse. We reduce that risk by basing pages on the ads, the search terms and what customers say, measuring properly, and keeping the previous version available until the new one has proved itself.",
+      },
+      {
+        q: "How long does landing page optimization take to show results?",
+        a: "New pages can typically go live within weeks, and any effect on conversion appears as soon as traffic reaches them. Knowing whether the effect is real takes longer and depends on click volume. A high-spend campaign may give a clear answer in a few weeks; a small local campaign may need a couple of months of data.",
       },
       {
         q: "What does landing page optimization cost in New York?",
-        a: "The main drivers are the number of pages, whether a reusable template exists, how much original photography and copy are needed, and the platform they are built on. Regulated sectors add review rounds. Ongoing testing costs depend on click volume, since low-traffic campaigns are improved through research and periodic redesign more than through continuous experiments. We scope after seeing where your current clicks land.",
+        a: "The cost depends on how many distinct pages are needed, whether they are built on an existing platform or require new templates, how much copy, design and proof must be created, and whether continuing testing is included after launch. A handful of pages on a familiar platform is a contained project. We quote once the campaigns have been reviewed.",
       },
       {
-        q: "Do we need a separate landing page for each neighbourhood we advertise in?",
-        a: "Only where the offer, proof or logistics differ. If your Astoria and Chelsea locations have different addresses, hours and staff, each deserves a page. If you are a service-area business covering both from one base, a single page with the areas named may be enough, with the headline adjusted to match the ad. We start with the highest-spend campaigns and add pages where data shows a mismatch.",
+        q: "Do we need a separate page for every neighbourhood we serve?",
+        a: "Usually not. Separate pages are justified by different services, audiences or offers, not by swapping a place name. If the service, price and proof are identical across areas, one strong page that states the area covered is better than many near copies. Where a branch has its own address, staff and reviews, its own page makes sense.",
       },
     ],
   },
@@ -373,90 +493,121 @@ export const pages: LocalServicePage[] = [
     place: "new-york",
     service: "digital-pr",
     seo: {
-      title: "Digital PR Agency in New York",
+      title: "Digital PR Services in New York",
       metaDescription:
-        "Digital PR agency work for New York companies: data stories and expert comment pitched to business, trade and neighbourhood press, earned on merit.",
-      primaryKeyword: "digital pr agency in new york",
-      secondaryKeywords: [
-        "digital pr services in new york",
-        "digital pr company in new york",
-        "digital pr agency near me",
-        "digital pr agency nyc",
-        "link building agency manhattan",
-        "online pr agency brooklyn",
+        "Digital PR for New York companies: original data, qualified expert comment and targeted pitching to earn coverage and links from relevant publications.",
+      primaryKeyword: "digital pr services in new york",
+      secondaryKeywords: ["digital pr agency in new york", "digital pr agency nyc", "earned media link building", "online pr for seo", "digital pr services near me"],
+    },
+    h1: "Digital PR Services in New York",
+    intro:
+      "SERPMOZ runs digital PR for companies in New York: finding stories in data, preparing experts to comment, pitching journalists one at a time and building pages that deserve a link. It is for businesses that know their subject and want credible publications to reference them, which strengthens search authority and recognition together. The city is widely regarded as a centre of American media and finance, and that makes editorial attention there harder to win.",
+    answer: {
+      question: "What does digital PR involve, and how does it help a business in New York?",
+      text: "Digital PR is the practice of earning online coverage, mentions and links by offering journalists original data, expert comment or a resource their readers can use. Those references are among the signals search engines and AI assistants use when judging authority. For a company here, the practical question is which publications its buyers read: national, trade or local. Editors decide what is published, so coverage cannot be bought or promised.",
+    },
+    context: {
+      heading: "Why digital PR matters for a New York business",
+      paragraphs: [
+        "Links and mentions from respected publications are difficult to obtain, which is exactly why they count. A company can improve its own website indefinitely, but an independent journalist choosing to cite it says something the company cannot say about itself. For businesses in fields with many competent rivals, that outside confirmation helps search engines tell them apart. It also places the company's name before readers who were not searching for it, which tends to raise branded search over time.",
+        "Sharing a city with major media organisations is not an advantage in itself. Reporters at national outlets are approached constantly, and physical proximity does not earn a reply. A story usually lands because it is new, relevant to that writer's readers and safe to publish. For many companies the better targets are trade publications and specialist newsletters read by their actual buyers, and local outlets covering a borough or the wider metropolitan area, where a specific, well-evidenced story faces less competition.",
+        "Businesses selling across the USA can also use geography as material. A dataset broken down by state or by city gives regional publications their own version of a national story, and each version is a separate chance of coverage. Firms in finance, law and healthcare should plan for review before any public statement: what a named expert may say is often constrained by professional or regulatory rules, and that judgement belongs to the firm's own compliance and legal advisers.",
       ],
     },
-    h1: "Digital PR Agency in New York for Coverage Earned on Merit",
-    intro:
-      "New York is home to much of the country's national media, along with trade titles for finance, law, real estate, fashion and food, and a lively neighbourhood press. Journalists are close at hand and heavily pitched. A story has to give them something they can use. SERPMOZ works with New York companies remotely to find those stories, prepare the evidence and earn coverage that also strengthens search visibility.",
-    answer: {
-      question: "What does a digital PR agency do for companies in New York?",
-      text: "A digital PR agency earns editorial coverage, mentions and links by offering journalists data, expert comment or useful resources. For New York companies SERPMOZ mines your own figures and public city datasets for stories, prepares spokespeople to comment on news in their field, and pitches the relevant business, trade and local reporters. Coverage is the journalist's decision and is never paid for, so no placement is certain.",
+    audiences: [
+      {
+        title: "Companies with proprietary data and a national audience",
+        body: "Platforms, marketplaces, fintech and property businesses whose records reveal patterns others cannot see. Anonymised, analysed and published with a clear method, that material can support stories for national, trade and regional outlets alike.",
+      },
+      {
+        title: "Advisory and professional firms with credible specialists",
+        body: "Attorneys, accountants, financial advisers and consultants able to explain complex developments simply. We build their profiles, watch for journalist requests in their field and help turn their knowledge into comment delivered on deadline.",
+      },
+      {
+        title: "Growing brands that lack independent recognition",
+        body: "Businesses with a good product and few outside references. Coverage in publications their buyers already read gives prospects something to find when they check the company, and gives search engines evidence beyond the company's own site.",
+      },
+    ],
+    challenges: [
+      {
+        title: "National reporters are pitched constantly",
+        body: "A generic announcement sent to a long list achieves nothing and can harm future approaches. We research who covers the subject, read their recent work and write to each person separately, opening with the single finding most likely to interest them.",
+      },
+      {
+        title: "Choosing trade and local outlets over prestige",
+        body: "A mention in a famous title is appealing, yet a specialist publication read by your buyers may do more for enquiries and be more attainable. Targets are chosen for relevance to the audience you sell to, not for the name alone.",
+      },
+      {
+        title: "Data that will not stand up",
+        body: "Journalists and their editors check methods, and a weak survey or a selective cut of figures damages credibility. Every study states its source, sample and method openly, and conclusions are limited to what the data supports.",
+      },
+      {
+        title: "Legal review slowing reactive comment",
+        body: "In regulated professions a quote may need clearance. We agree a fast approval route beforehand, prepare positions on predictable topics, and record what the firm will not discuss, so that an expert can respond while a story is still live.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Assess",
+        body: "We examine your current links and mentions, note which competitors are cited and for what, and identify coverage that named you without linking. Your available data, experts and internal approval steps are mapped so plans fit how the firm really operates.",
+      },
+      {
+        stage: "Ideate",
+        body: "Angles are developed from internal data, public datasets and, where warranted, a commissioned survey with a stated sample. Each is checked against recent coverage to see whether it adds something new, and weak ideas are dropped before effort is spent.",
+      },
+      {
+        stage: "Produce",
+        body: "The study, tool or guide is published on your site with charts and tables others may reuse and a full methodology. A press page presents your experts with their credentials, so a reporter can verify a source without having to ask.",
+      },
+      {
+        stage: "Outreach",
+        body: "Each story has its own media list, built from beats and recent articles. Pitches are individual and brief. While a story is live we offer further angles and regional cuts to other publications, and keep in touch with journalists between campaigns.",
+      },
+      {
+        stage: "Evaluate",
+        body: "Results are logged as relevant coverage, referring domains gained, movement in branded search and presence in AI answers, and set beside organic performance. Unlinked mentions are followed up, links to broken pages recovered, and lessons carried into the next campaign.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "Early weeks are for assessing the existing link profile, preparing spokespeople and settling the first angles. Where an expert can comment on current news, coverage may come within weeks. Researched campaigns take longer to produce and pitch, and their reception is uncertain: a sound story can be overtaken by events. Authority builds gradually, typically over six to twelve months of sustained work, and depends on the relevance of the publications reached and how often the firm has something worth saying.",
+        "Each report lists the coverage earned, where it appeared and whether it linked, together with pitches that went unanswered and what we would do differently.",
+      ],
+      notGuaranteed: [
+        "Placement in a particular outlet, or any pickup of a given story",
+        "That published coverage will carry a link to your site",
+        "Higher rankings or mentions in AI answers as a result of coverage",
+      ],
     },
-    searches: [
-      {
-        title: "Rankings stuck behind stronger sites",
-        body: "A firm in the Financial District has sound pages that sit below competitors with more press references. The search becomes 'digital PR agency NYC' or 'link building for law firms', and the real need is credible coverage.",
-      },
-      {
-        title: "Funding, launches and openings",
-        body: "Startups in Flatiron and Brooklyn look for PR help around a funding round or product launch. Restaurants and shops want notice from the city's food and neighbourhood publications before opening week.",
-      },
-      {
-        title: "Wanting to be quoted",
-        body: "Brokers, attorneys, physicians and advisers search for ways to become a source: 'get quoted in the press', 'expert commentary PR'. Reporters covering New York housing, courts and markets regularly need informed comment on short notice.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Reporters here are saturated",
-        body: "Because so many outlets are based in the city, their journalists receive pitches from everyone. Generic announcements are ignored. A pitch needs a finding, a number with a method behind it, or a qualified person available to speak today.",
-      },
-      {
-        title: "City data makes local stories",
-        body: "New York publishes a wide range of open data on housing, transport, health inspections and business activity. Analysed carefully and combined with your own expertise, it can produce borough or neighbourhood findings that local and trade reporters will cover.",
-      },
-      {
-        title: "Neighbourhood outlets have loyal readers",
-        body: "Beyond the national names, the city has borough papers, neighbourhood sites, community newsletters and non-English press. For a business serving Astoria or Harlem, a mention there reaches actual customers and is easier to earn than a national feature.",
-      },
-      {
-        title: "Regulated experts need clearance",
-        body: "Lawyers, financial advisers and clinicians who comment publicly remain bound by their professional rules. Quotes, bylines and data claims are cleared with your compliance contact before they go to a journalist, which we build into response times.",
-      },
-    ],
-    areas: [
-      { name: "Midtown", note: "Where many national newsrooms and magazine publishers keep their offices, and competition for attention is fiercest." },
-      { name: "Financial District", note: "Markets and banking reporters look for analysts and advisers who can explain events quickly." },
-      { name: "Flatiron and Union Square", note: "The city's technology cluster, covered by startup and venture reporters who value original product data." },
-      { name: "Brooklyn", note: "Its own borough media and culture press, receptive to maker, food and neighbourhood business stories." },
-      { name: "Queens and the Bronx", note: "Community and non-English outlets cover local businesses that larger titles rarely notice." },
-    ],
     sectors: [
-      { slug: "finance", note: "Wall Street and fintech coverage needs informed comment, and compliance sign-off shapes how fast a firm can respond." },
-      { slug: "real-estate", note: "Housing is a constant New York news subject, and brokerages hold market data journalists want." },
-      { slug: "hospitality", note: "Restaurants and hotels depend on the city's food and travel writers, whose coverage drives bookings and searches." },
+      { slug: "finance", note: "Financial companies often hold data with news value, and cautious customers look for independent mentions before trusting a provider." },
+      { slug: "saas", note: "Software firms can turn product usage data into studies, and trade press coverage reaches the buyers who evaluate tools." },
+      { slug: "professional-services", note: "Advisers are quoted for their expertise, and repeated credible comment builds the reputation that brings referrals and searches." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a digital PR agency in New York?",
-        a: "SERPMOZ runs digital PR for New York companies from a distance: research, story development, media lists and outreach are all done online. We are an AI-powered digital growth company with no office in New York, and we do not claim personal relationships with the city's newsrooms. What we offer journalists is material worth reporting. Interviews with your spokespeople happen by phone or video, as most press interviews now do.",
+        q: "What is the difference between digital PR and traditional PR?",
+        a: "Both seek coverage by offering journalists something of value. Traditional PR is usually judged on reputation, reach and message. Digital PR is planned with search in mind as well: stories are hosted on linkable pages, online publications are prioritised, and results are measured in relevant coverage, referring domains and branded search. The craft overlaps heavily; the aims and measures differ.",
       },
       {
-        q: "How do I find a digital PR agency near me in New York?",
-        a: "Plenty of PR firms have Manhattan addresses, and an address tells you little about whether coverage will help your search visibility. Ask for the kinds of story they would pitch for you and to which beats. Ask how they judge a publication's relevance, whether they ever pay for placements, and how they report links, mentions and branded search. Decline anyone who promises a named outlet.",
+        q: "Does SERPMOZ have an office in New York?",
+        a: "No. SERPMOZ has no premises in New York and uses a remote consulting and delivery model for businesses there. Pitching is done by email and phone to reporters who may themselves be anywhere, and a story is judged on its merits. Research, drafting and approvals run through shared documents and calls with your experts, timed to suit their schedules.",
       },
       {
-        q: "Do you also work with businesses in Brooklyn, Jersey City and Stamford?",
-        a: "Yes. Brooklyn has its own press and often its own angle on a story. Jersey City and the rest of northern New Jersey are covered by that state's business and local outlets, and Stamford by Connecticut titles, so media lists are built separately for each. The work is remote throughout. A company with offices across the three states can run one campaign with regional versions of the findings.",
+        q: "Can you guarantee placement in major publications?",
+        a: "No. Editorial decisions belong to editors, and the outlets with the widest readership are the most selective. Guaranteed placement generally means paid or sponsored content, which is a different thing and does not carry the same weight. We can promise properly researched stories, honest targeting and a clear record of every pitch made and its outcome.",
+      },
+      {
+        q: "How long does it take for digital PR to show results?",
+        a: "Timely expert comment can appear in print within weeks. A campaign built on original research commonly takes a couple of months to reach publication. Gains in authority and organic visibility come later and gradually, typically over six to twelve months, since search engines weigh an accumulating pattern of references and not any single article.",
       },
       {
         q: "What does digital PR cost in New York?",
-        a: "Cost follows the effort behind each story. Original research, data analysis, design and a prepared spokesperson take more time than reactive comment on the day's news. The number of campaigns in a period, the sectors covered and any compliance review add to it. New York's crowded media market generally means a story needs stronger evidence to land, which is where most of the work goes.",
+        a: "The fee reflects how ambitious the programme is. Drivers include the number of campaigns, whether new research or surveys are commissioned, the design and build of study pages or tools, and the amount of reactive work. Targeting national media usually demands stronger material than targeting trade titles. We propose a scope once we have seen your data and experts.",
       },
       {
-        q: "Should we aim for national outlets based in New York or for local press?",
-        a: "That depends on who your customers are. A neighbourhood business gains more from borough and community coverage, which reaches people who can walk in and is realistic to earn. A firm selling across the country benefits from national business and trade titles, which are harder to win and need stronger material. Many campaigns do both: one dataset, cut by borough for local reporters and summarised for national ones.",
+        q: "Should we aim for national coverage or for trade and local press?",
+        a: "It depends on who buys from you. A company selling to a specific industry is often better served by that industry's publications, where readers are prospects and editors want specialist material. National coverage brings broad authority and is harder to earn. Local press suits businesses whose customers are nearby. A sensible plan generally mixes them and shifts with results.",
       },
     ],
   },
@@ -464,90 +615,121 @@ export const pages: LocalServicePage[] = [
     place: "new-york",
     service: "cro",
     seo: {
-      title: "CRO Agency in New York",
+      title: "CRO Services in New York",
       metaDescription:
-        "CRO agency work for New York businesses: research into why visitors leave, booking and enquiry fixes, and tests sized to real traffic in NYC markets.",
-      primaryKeyword: "cro agency in new york",
-      secondaryKeywords: [
-        "conversion rate optimization services new york",
-        "cro company in new york",
-        "cro agency near me",
-        "cro agency nyc",
-        "conversion optimization manhattan",
-        "website conversion services brooklyn",
+        "CRO services for New York businesses: trustworthy tracking, research into why visitors leave, and prioritised fixes and tests for bookings, calls and checkout.",
+      primaryKeyword: "cro services in new york",
+      secondaryKeywords: ["cro agency in new york", "conversion rate optimization nyc", "conversion rate optimization services", "website conversion consultants", "cro services near me"],
+    },
+    h1: "CRO Services in New York",
+    intro:
+      "SERPMOZ provides conversion rate optimisation for businesses in New York: making sure tracking can be trusted, studying how visitors behave and why they leave, then fixing or testing the steps that lose them. It is for companies with steady traffic and a sense that the site should be producing more bookings, calls or orders. Where a customer can compare several providers in minutes, small frictions on a site send business elsewhere.",
+    answer: {
+      question: "What do CRO services include, and how do they help a business in New York?",
+      text: "CRO services find the reasons visitors fail to book, call or buy, and change the site to remove them. The work includes verifying tracking, analysing funnels, reviewing recordings and surveys, assessing usability on phones and desktops, ranking ideas by evidence and running experiments when volume permits. For a business facing many alternatives, it helps the visits already earned turn into customers. The size of any gain cannot be known beforehand.",
+    },
+    context: {
+      heading: "Why conversion work matters for a New York business",
+      paragraphs: [
+        "Winning a visitor is only the first cost; losing them on the site is the second. Someone who arrives from a search or an advertisement has usually seen other options on the same screen and can return to them with one tap. If the page loads slowly, hides the price guidance or makes booking awkward, that is often what happens. Conversion work examines those moments one by one, using evidence about what real visitors did, and removes the obstacles that can be removed.",
+        "Conversions take different forms across the kinds of business common in the city. A restaurant wants a reservation, a clinic an appointment, a law firm a consultation request, an online brand a completed checkout. Many of these happen by phone or through a third-party booking system, outside what standard analytics records. Unless calls and external bookings are tracked and tied back to their source, a site can look as though it converts poorly when the real problem is that half its results are invisible.",
+        "Audience and regulation add detail. A company based here may sell to the neighbourhood, to the whole of the USA or abroad, and each group arrives with different questions about delivery, service area and trust. Privacy and accessibility requirements also bear on forms, tracking and design, and they vary by state and sector. We treat accessibility barriers as conversion problems worth fixing, and suggest that questions of legal compliance are settled with your own counsel.",
       ],
     },
-    h1: "CRO Agency in New York for Sites Compared Against a Dozen Rivals",
-    intro:
-      "A customer in New York can usually find a dozen alternatives within walking distance and will compare several on a phone before choosing. Small differences in clarity, proof and ease of booking decide who gets the call. Visibility alone does not settle it. SERPMOZ works with New York businesses remotely to find where visitors hesitate or leave, and to fix those points across the whole site.",
-    answer: {
-      question: "What does a CRO agency do for businesses in New York?",
-      text: "A CRO agency studies how visitors move through a website, finds what stops them enquiring, booking or buying, and changes it. For New York businesses SERPMOZ verifies conversion tracking, reviews session recordings and enquiry calls, compares your booking or checkout journey with nearby competitors, fixes clear faults and tests bigger changes where traffic permits. Gains depend on your starting point and cannot be promised.",
+    audiences: [
+      {
+        title: "Appointment and reservation businesses with awkward booking flows",
+        body: "Clinics, salons, studios and restaurants where the path from interest to confirmed booking has too many steps or hands off clumsily to another system. Mapping and simplifying that path often recovers customers who had already decided to come.",
+      },
+      {
+        title: "Online brands selling nationally from the city",
+        body: "Retailers with enough orders to study each stage from product page to payment. Funnel data locates the losses, surveys and recordings explain them, and experiments confirm which changes deserve to stay.",
+      },
+      {
+        title: "Service firms with visits but few consultations",
+        body: "Legal, financial and business service providers whose pages are read and seldom acted on. The research looks at whether the offer is clear, whether evidence is convincing and whether the request form feels safe to complete.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Phone and third-party bookings go unmeasured",
+        body: "When reservations or appointments complete on another platform or by phone, analytics may record nothing. We set up call tracking and tagged booking links, and reconcile the counts with your own booking records before drawing any conclusions about the site.",
+      },
+      {
+        title: "Mobile visitors with little patience",
+        body: "A person on a phone between tasks will not fight a small tap target or a long form. Journeys are walked through on real devices, with attention to speed, tap areas, error handling and what can be seen without scrolling.",
+      },
+      {
+        title: "Testing without enough conversions",
+        body: "Statistical confidence requires volume that many local and specialist businesses lack. In those cases we do not pretend otherwise: research guides the changes, obvious defects are repaired first, and outcomes are tracked over comparable periods.",
+      },
+      {
+        title: "Copying what a competitor's site does",
+        body: "It is tempting to imitate a rival's layout on the assumption that it works for them. Their visitors, offer and data are unknown. Changes here start from what your own customers do and say, stated as hypotheses that can be checked.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Verify",
+        body: "We confirm that each conversion is defined and recorded: forms, calls, bookings on external systems and purchases. Counts are compared with CRM, booking or order records, consent and tag behaviour is checked, and traffic is segmented by source and device.",
+      },
+      {
+        stage: "Observe",
+        body: "Recordings and heatmaps show where people hesitate or give up. Short polls on key pages and post-purchase surveys ask what nearly stopped them. Where we can, we speak to customers and to prospects who went elsewhere, and read support and sales notes.",
+      },
+      {
+        stage: "Rank",
+        body: "Each finding is written as a hypothesis with its supporting evidence and scored on impact, confidence and effort in one shared backlog. Defects that need no debate are sent straight to a repair list, and rejected ideas are recorded with reasons.",
+      },
+      {
+        stage: "Experiment",
+        body: "For pages with sufficient volume, we set the sample size and run time in advance, name one primary metric and guardrails, and check the traffic split before reading anything. Elsewhere, changes go live in sequence and are assessed against a comparable earlier period.",
+      },
+      {
+        stage: "Apply",
+        body: "Confirmed improvements are built into the site permanently and extended to similar pages where the reasoning holds. Inconclusive and losing tests are documented as well. The backlog is then reordered and the following cycle begins from the updated evidence.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The engagement begins with tracking verification and research, which typically yields a first set of findings within weeks. Repairs to obvious defects are made straight away and can help at once. The schedule for experiments is set by your volume, since each must run long enough to cover full weekly cycles and collect an adequate sample. Businesses with heavy traffic may complete several tests a quarter; those with less will see fewer tests and more measured, sequential changes.",
+        "Every report explains what was examined, what changed and how sure we are of the result. A test that finds nothing is reported as plainly as one that wins.",
+      ],
+      notGuaranteed: [
+        "An agreed percentage improvement in bookings, calls or sales",
+        "A positive result from each experiment that is run",
+        "The number of tests that can be completed in a given period",
+      ],
     },
-    searches: [
-      {
-        title: "Traffic without bookings",
-        body: "An owner in Chelsea sees healthy visits from Maps and Instagram and too few appointments. They search 'why is my website not converting' or 'CRO agency NYC'. The fault is often a booking step that fails on mobile.",
-      },
-      {
-        title: "Comparison shopping in tabs",
-        body: "New Yorkers open three or four providers at once and close the slowest or vaguest first. Understanding this habit shapes the brief: the page must show price guidance, availability and location faster than its neighbours do.",
-      },
-      {
-        title: "Booking platform frustrations",
-        body: "Restaurants, salons, fitness studios and medical practices rely on third-party booking tools. Owners search for help when hand-offs to those tools lose customers, using terms such as 'online booking drop off' or 'reservation widget conversion'.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Availability is part of the offer",
-        body: "City customers want to know whether they can be seen today or this week. Showing real appointment slots, opening hours and response times early on the page removes a doubt that sends people back to the results.",
-      },
-      {
-        title: "Getting there has to be clear",
-        body: "Nearest subway lines, cross streets, floor number, elevator access and whether there is a doorman are practical questions in New York. Answering them beside the booking action reduces no-shows and abandoned enquiries for premises that are hard to find.",
-      },
-      {
-        title: "Low traffic per location",
-        body: "A single clinic or studio seldom has enough visitors for reliable A/B tests. For these businesses we rely on research, usability review and before-and-after measurement over sensible periods, and say plainly when a result is uncertain.",
-      },
-      {
-        title: "Several audiences on one site",
-        body: "A firm may serve Manhattan professionals, outer-borough families and Spanish- or Chinese-speaking communities. Each arrives with different questions and expectations. Analysing behaviour by neighbourhood and language shows which group the current pages and forms are failing.",
-      },
-    ],
-    areas: [
-      { name: "Chelsea and Flatiron", note: "Studios and technology firms whose visitors expect instant booking or a trial without a sales call." },
-      { name: "Upper West Side", note: "Family-oriented practices and schools, where parents look for schedules, fees guidance and reassurance." },
-      { name: "Financial District", note: "Professional buyers reading on desktop during work hours, expecting credentials and a direct contact." },
-      { name: "Williamsburg", note: "Hospitality and retail sites receiving social traffic that needs a fast path to reserve or buy." },
-      { name: "Flushing and Jackson Heights", note: "Queens audiences for whom language choice on forms and confirmations affects completion." },
-    ],
     sectors: [
-      { slug: "healthcare", note: "Patients choose between nearby practices on insurance accepted, appointment availability and ease of online booking." },
-      { slug: "professional-services", note: "Accountants and consultancies win enquiries when specialism, credentials and a named contact are evident at once." },
-      { slug: "hospitality", note: "Restaurants and hotels lose bookings at the hand-off to reservation tools, especially on mobile." },
+      { slug: "hospitality", note: "Reservations often pass through external systems, so the handover and its tracking decide how many intentions become bookings." },
+      { slug: "healthcare", note: "Patients want to see the service, the provider and an easy way to book, and many still prefer to phone." },
+      { slug: "ecommerce", note: "Product, basket and payment steps can each be measured and tested, and gains apply to every later order." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a CRO agency in New York?",
-        a: "Conversion rate optimisation for New York businesses is among the services SERPMOZ delivers, always remotely. We are an AI-powered digital growth company without an office in New York. The evidence we need lives in your analytics, recordings, booking system and call logs, which we reach through access you control. Where a visit to the premises would help, for example to check signage against the directions page, your staff send photographs.",
+        q: "What does conversion rate optimisation actually mean?",
+        a: "A conversion is whatever you want a visitor to do: book, call, request a quote or buy. The conversion rate is the share of visitors who do it. Optimisation is the disciplined process of raising that share by learning what stops people and changing it, using research and measurement instead of guesswork. It improves the yield from traffic you already have.",
       },
       {
-        q: "How do I find a CRO agency near me in New York?",
-        a: "Choose on evidence of method. A provider in your building is no more able to read your analytics than one elsewhere. Ask how they would work if your site has too little traffic for split tests, which applies to most single-location New York businesses. Ask what research they do before proposing changes, and whether they measure enquiries that become customers or stop at form submissions.",
+        q: "Does SERPMOZ have an office in New York?",
+        a: "No. SERPMOZ works with businesses in New York through a remote consulting and delivery model. The evidence for this work comes from your analytics, recordings, surveys and customer conversations, all of which are gathered and reviewed online. We need tool access, someone able to deploy changes to the site, and regular sessions to agree priorities and read results together.",
       },
       {
-        q: "Do you also work with businesses in Brooklyn, Queens and Long Island?",
-        a: "Yes, remotely. Brooklyn and Queens businesses often serve several distinct communities, so we look at behaviour by neighbourhood and language. Long Island sites, in Nassau and Suffolk, tend to serve customers who drive, which changes what the page must answer: parking, travel time and service area instead of subway lines. The research method is the same, and the findings usually differ from those for Manhattan.",
+        q: "Can you guarantee more bookings or sales?",
+        a: "No. The causes of lost conversions are not known until they are investigated, and some turn out to lie beyond the website, in pricing, availability or the offer itself. We can promise an honest diagnosis, changes grounded in evidence, careful measurement and a clear statement of what improved, what did not and what remains uncertain.",
+      },
+      {
+        q: "How long does it take for CRO to show results?",
+        a: "Initial research usually surfaces defects and quick repairs within the first few weeks, and repairing a broken step helps from the day it is fixed. Proven gains from experiments take longer and depend on how many conversions you record. High-volume sites can conclude a test in weeks. Lower-volume sites should expect a slower, steadier sequence of changes.",
       },
       {
         q: "What does CRO cost in New York?",
-        a: "Scope sets the cost: how many journeys are studied, whether tracking must be repaired first, how much design and development the fixes need, and whether third-party booking or payment tools are involved. Multi-location and multilingual sites take longer to research. A single-site business typically starts with a defined audit and fix list. Larger sites with steady traffic can support an ongoing testing programme.",
+        a: "Pricing follows scope: the number of journeys examined, how much qualitative research is done, whether experiments are run and how often, and whether we or your developers implement the changes. Tracking repair can be a project of its own where calls and external bookings are involved. We suggest a starting scope after looking at your traffic and current measurement.",
       },
       {
-        q: "Our site gets Maps and Yelp traffic but few bookings. Where do visitors drop off?",
-        a: "We would need your data to say, but three places are common in New York. The first is arrival: the page does not confirm the neighbourhood, hours or service the visitor just saw on the listing. The second is the booking hand-off, where a third-party tool loads slowly or asks for an account. The third is missing practical detail, such as floor, entrance or insurance accepted.",
+        q: "Do we have enough traffic for CRO to be worthwhile?",
+        a: "Enough for formal split testing, perhaps not; enough for conversion work, almost certainly. Testing needs a substantial number of conversions per variation. Research, usability review and repairing faults need only real visitors and real customers to learn from. For smaller sites we recommend that route and say plainly that results are measured less precisely.",
       },
     ],
   },

@@ -33,15 +33,15 @@ export const location: LocationRecord = {
   },
 
   hero: {
-    title: "Digital Marketing Agency and SEO Company in Australia",
+    title: "Digital Marketing Agency in Australia",
     description:
-      "Australia is a handful of large coastal cities separated by long distances, and each one behaves as its own market. SERPMOZ plans search, maps, advertising and websites capital by capital and suburb by suburb. Copy is written in Australian English, and claims are kept to what a business can substantiate under consumer law.",
+      "Australia is a handful of large coastal cities separated by long distances. SERPMOZ plans search, maps, advertising and websites capital by capital and suburb by suburb, treating each city as a market of its own. Copy is written in Australian English, and claims are kept to what a business can substantiate under consumer law.",
   },
 
   facts: [
     { label: "Languages we plan for", value: "Australian English, with local spelling, trade terms and seasons" },
-    { label: "Where discovery happens", value: "Google Search and Maps, trade and property marketplaces, Facebook community groups" },
-    { label: "Sectors with weight", value: "Home services and trades, property, finance, construction, retail" },
+    { label: "Platforms we assess", value: "Google Search and Maps, trade and property marketplaces, Facebook community groups" },
+    { label: "Known for", value: "Home services and trades, property, finance, construction, retail" },
     { label: "Cities covered", value: "Sydney, with Melbourne, Brisbane, Perth and Adelaide planned separately" },
   ],
 
@@ -53,41 +53,41 @@ export const location: LocationRecord = {
   overview: {
     heading: "About digital growth in Australia",
     paragraphs: [
-      "Most Australians live in a small number of coastal cities, and those cities are a long way apart. Sydney, Melbourne, Brisbane, Perth and Adelaide have separate competitors, separate media and, between east and west, a meaningful time difference. A business that ranks well in one capital can be invisible in the next, which is the first thing a digital marketing agency has to plan around. National plans therefore tend to be several city plans joined together, with shared brand work and local execution. The [Sydney page](/digital-marketing-agency-sydney/) shows how that looks at the level of one city.",
-      "Within each city, people search by suburb. Australians name the suburb when looking for a plumber, a dentist, a conveyancer or a café, and metropolitan areas contain hundreds of them. Trades and home services are a large part of the economy and of local search, and the people who run them are usually on the tools during the day. That makes [local SEO](/local-seo-services/), clear service-area pages and reliable call handling more valuable here than elaborate brand campaigns.",
-      "Advertising claims are taken seriously. Consumer law prohibits misleading or deceptive conduct, and that reaches testimonials, reviews, comparisons, pricing and environmental claims. The regulator has acted against businesses over fake or selectively edited reviews. For marketing this is a practical constraint: every claim on a page or in an ad should be something the business can substantiate. We write with that standard in mind and keep a record of the evidence behind stronger statements.",
-      "Local signals carry weight with buyers. A .com.au address can only be registered by an entity with an Australian presence, so many consumers read it as a sign that a business is established locally. Local phone numbers, a visible business number and Australian spelling have the same effect. Overseas companies entering the market are often surprised by how quickly an American tone, wrong seasons or northern hemisphere references make shoppers leave. A well-built site through our [web development](/web-development/) work gets these details right.",
+      "Most Australians live in a small number of coastal cities, and those cities are a long way apart. Sydney, Melbourne, Brisbane, Perth and Adelaide are in different states, with their own newspapers and broadcasters and, between east and west, a meaningful time difference. Map results depend on where the searcher is, so a business that ranks well in one capital can be invisible in the next, which is the first thing a digital marketing agency has to plan around. National plans therefore tend to be several city plans joined together, with shared brand work and local execution. The [Sydney page](/digital-marketing-agency-sydney/) shows how that looks at the level of one city.",
+      "Within each city, the suburb is the unit of address. Australian postal addresses name the suburb, not the metropolitan area, and a single city contains a great many of them. For a plumber, a dentist, a conveyancer or a café, that means the suburb names you serve belong in your profile and pages, and we research them individually. A trade business whose owner is on the tools during the day also needs a dependable way to catch calls. That makes [local SEO](/local-seo-services/), clear service-area pages and reliable call handling the first things we look at for such a business, ahead of elaborate brand campaigns.",
+      "Advertising claims are taken seriously. Consumer law prohibits misleading or deceptive conduct, and that reaches testimonials, reviews, comparisons, pricing and environmental claims. Fake or selectively edited reviews fall within that prohibition. For marketing this is a practical constraint: every claim on a page or in an ad should be something the business can substantiate. We write with that standard in mind and keep a record of the evidence behind stronger statements.",
+      "Local signals are worth getting right. Registering a .com.au address requires an Australian connection, so the domain itself says something verifiable about a business. A local phone number, a visible Australian Business Number and Australian spelling add to that. For overseas companies entering the market, the usual errors are an American tone, wrong seasons and northern hemisphere references, and we edit for all three. A well-built site through our [web development](/web-development/) work gets these details right.",
     ],
   },
 
   discovery: {
     heading: "How customers discover businesses in Australia",
     intro:
-      "Discovery in Australia is practical and local, led by Google and supported by a set of home-grown marketplaces that hold real authority in their categories. Recommendations from neighbours still carry a great deal of weight, and much of that conversation now happens online.",
+      "Google is the main search engine to plan around in Australia, and the country has home-grown marketplaces for trades, property, cars and jobs. The channels a business can work on are listed below, and we choose between them using your own call and enquiry records.",
     channels: [
       {
         name: "Google Search with a suburb attached",
-        body: "Google is the dominant search engine, and service queries routinely include a suburb or region name. Results differ noticeably between neighbouring areas, so a business needs relevance for the specific places it serves and not just the city as a whole.",
+        body: "Google localises results, so the same service query can return different businesses in neighbouring areas. A business therefore needs relevance for the specific suburbs and regions it serves, and we research those names one by one instead of targeting the city as a whole.",
       },
       {
         name: "Google Maps and Business Profiles",
-        body: "The map pack is where many trade and service jobs are won, often from a phone and often urgently. Review volume and recency, photos of real work and accurate opening hours are compared before anyone visits a website.",
+        body: "The map pack shows a short list of nearby businesses above the ordinary results. Review count and recency, photos of real work and accurate opening hours are all visible there before anyone visits a website, so we get those right first.",
       },
       {
         name: "Trade and task marketplaces",
-        body: "Quote-request platforms for tradespeople and odd jobs are well established, and many households post a job there instead of searching. Businesses use them for volume but pay per lead and compete on speed, which is why direct search visibility is worth building alongside.",
+        body: "Australia has quote-request platforms for tradespeople and odd jobs, on which a job is posted and several businesses respond. A business using them typically pays for leads and competes on speed, which is why direct search visibility is worth building alongside.",
       },
       {
         name: "Property and classified portals",
-        body: "Residential property research is concentrated on a small number of national portals, and similar category sites exist for cars and jobs. Agents, builders and related services need to plan how their own sites win attention beside those platforms.",
+        body: "Residential property is listed on a small number of national portals, and similar category sites exist for cars and jobs. Agents, builders and related services need to plan how their own sites win attention beside those platforms.",
       },
       {
         name: "Facebook community groups",
-        body: "Suburb and town groups on Facebook are a common place to ask for a recommended electrician, vet or accountant. A good local reputation shows up here, and so does a bad one, which makes service quality and review habits part of marketing.",
+        body: "Suburb and town groups on Facebook are run by residents, and a business cannot place itself in a recommendation there. What it can control is the service that earns the mention and the profile, reviews and site that a name search then finds.",
       },
       {
         name: "Review sites, word of mouth and AI assistants",
-        body: "Independent product and service review sites are consulted for larger purchases such as appliances, solar, insurance and builders. Personal referrals remain strong, and AI assistants are beginning to be used to compare options and summarise what reviewers say.",
+        body: "Independent product and service review sites cover larger purchases such as appliances, solar, insurance and builders. Where your category is listed, we check the entry is claimed and accurate, and we test how AI assistants summarise what reviewers have said about you.",
       },
     ],
   },
@@ -95,16 +95,16 @@ export const location: LocationRecord = {
   searchAi: {
     heading: "Search and AI discovery in Australia",
     paragraphs: [
-      "Google handles the great majority of searches in Australia, with Bing holding a modest share that skews towards desktop and workplace use. Language is Australian English, and the differences matter: tradie, ute, rego, unit and benchtop are everyday words, spelling follows British patterns, and summer falls at the end of the year. Keyword research copied from American or British tools without checking local phrasing regularly points content at terms Australians do not use. Good [SEO for Australian businesses](/seo-services/) starts with that vocabulary.",
-      "Local and national intent separate clearly. Trades, health, hospitality and property are searched by suburb, and map results dominate those pages. Finance, insurance, software, education and online retail are searched nationally, where comparison sites and large brands set a high bar. Many businesses sit in between, serving a whole metropolitan area or several regional towns, and need service-area pages that say something real about each place. Thin pages that swap one suburb name for another rarely hold their position.",
-      "AI assistants and AI summaries in search are entering the research stage for considered purchases, such as choosing a builder, comparing home loans or selecting software. They draw on business websites, reviews and independent sources, so consistent details and substantiated claims help a business be described correctly. Our [AI SEO services](/ai-seo-services/) work on that clarity. AI answers vary by tool, wording and time, and nobody can guarantee placement in them. We measure presence and report it as it is.",
+      "Google is the main search engine for businesses to plan around in Australia, with Bing relevant mainly through desktop defaults and some AI assistants. Language is Australian English, and the differences matter: tradie, ute, rego, unit and benchtop are everyday words, spelling follows British patterns, and summer falls at the end of the year. Keyword research copied from American or British tools without checking local phrasing can point content at terms Australians do not use. Good [SEO for Australian businesses](/seo-services/) starts with that vocabulary.",
+      "We separate local work from national work at the start. Trades, health, hospitality and property are delivered at a premises or in a service area, so their pages and profiles are organised by suburb. Finance, insurance, software, education and online retail can be sold across the country, and for those we look at who already holds the results, comparison sites included, before estimating effort. A business that serves a whole metropolitan area or several regional towns sits in between, and needs service-area pages that say something real about each place. Thin pages that swap one suburb name for another tend not to hold their position.",
+      "AI assistants and AI summaries in search will answer questions about considered purchases, such as choosing a builder, comparing home loans or selecting software. They draw on business websites, reviews and independent sources, so consistent details and substantiated claims help a business be described correctly. Our [AI SEO services](/ai-seo-services/) work on that clarity. AI answers vary by tool, wording and time, and nobody can guarantee placement in them. We measure presence and report it as it is.",
     ],
   },
 
   opportunities: [
     {
       title: "Suburb pages with real substance",
-      body: "Many service-area pages in Australia are near-identical templates. Pages that show local jobs, travel times, council or strata considerations and genuine reviews from that area stand out to both customers and search engines.",
+      body: "A service-area page built from a template says nothing a customer can use. Pages that show local jobs, travel times, council or strata considerations and genuine reviews from that area give both customers and search engines something specific.",
     },
     {
       title: "Less reliance on paid lead platforms",
@@ -112,7 +112,7 @@ export const location: LocationRecord = {
     },
     {
       title: "Cities beyond Sydney and Melbourne",
-      body: "Brisbane, Perth, Adelaide and large regional centres are often treated as an afterthought by national brands. Dedicated local work there usually meets fewer well-organised competitors.",
+      body: "Brisbane, Perth and Adelaide are state capitals with their own results pages, and the large regional centres have theirs. If you trade there, we assess each one separately instead of assuming that findings from Sydney or Melbourne carry over.",
     },
     {
       title: "Review habits that last",
@@ -120,7 +120,7 @@ export const location: LocationRecord = {
     },
     {
       title: "Seasonal and financial-year timing",
-      body: "Demand for air conditioning, pools, solar, tax help and business purchases follows the southern seasons and the end of the financial year in mid-year. Campaigns planned on a northern calendar miss these peaks.",
+      body: "Summer falls at the end of the calendar year and the financial year closes at the end of June. Air conditioning, pools, solar, tax help and business purchases should be planned around those dates and your own sales history, not a northern calendar.",
     },
   ],
 
@@ -129,61 +129,61 @@ export const location: LocationRecord = {
       slug: "local-seo-services",
       title: "Local SEO in Australia",
       body: "Builds visibility for each city and service area through profiles, citations, reviews and location pages.",
-      why: "Suburb-level searching means every catchment has its own results and its own competitors.",
+      why: "Results are localised by suburb, so every catchment has its own results page to earn a place on.",
     },
     {
       slug: "google-maps-seo",
       title: "Google Maps SEO in Australia",
       body: "Strengthens Business Profiles so that branches and service-area businesses appear for nearby, urgent searches.",
-      why: "Trade and home service jobs are frequently decided in the map pack from a phone.",
+      why: "An urgent trade search is the case the map pack is built for, with a call button beside each listing.",
     },
     {
       slug: "seo-services",
       title: "SEO Services in Australia",
       body: "Grows organic visibility for national categories and for content that supports considered purchases.",
-      why: "Finance, property and retail are contested by comparison sites and large brands that reward sustained work.",
+      why: "National categories such as finance, property and retail need sustained work, and we size it against the sites currently ranking.",
     },
     {
       slug: "google-ads",
       title: "Google Ads in Australia",
       body: "Captures high-intent searches with campaigns structured by city, service and time of day.",
-      why: "Time zones, differing demand between capitals and urgent trade searches make national one-size campaigns inefficient.",
+      why: "Time zones differ between the capitals, and a single national campaign cannot schedule adverts or report results city by city.",
     },
     {
       slug: "cro",
       title: "Conversion Rate Optimisation in Australia",
       body: "Improves the rate at which visitors call, book or request a quote, using evidence from real behaviour.",
-      why: "Australian buyers respond to plain proof and clear pricing signals, and claims must be supportable.",
+      why: "Plain proof and clear pricing signals help buyers decide, and claims must be supportable.",
     },
     {
       slug: "ecommerce-seo",
       title: "Ecommerce SEO in Australia",
       body: "Improves category, product and content visibility for online retailers selling nationally.",
-      why: "Local retailers compete with overseas stores and marketplaces, and win on delivery clarity, local stock and trust.",
+      why: "Delivery times, local stock and returns terms are what a domestic retailer can state and an overseas store cannot, so they belong on category and product pages.",
     },
     {
       slug: "content-marketing",
       title: "Content Marketing in Australia",
       body: "Produces guides, comparisons and local content written in Australian English for Australian conditions.",
-      why: "Imported content with foreign terms, seasons or regulations is easy to spot and quickly loses the reader.",
+      why: "Imported content carries foreign terms, seasons and regulations, and each of those is an error on an Australian page.",
     },
     {
       slug: "web-development",
       title: "Web Development in Australia",
       body: "Builds fast, mobile-first sites with clear contact routes, local trust signals and sound tracking.",
-      why: "A .com.au presence with local details is a baseline expectation, and many enquiries start on a phone on site.",
+      why: "A .com.au domain with local details shows an Australian connection, and a trade site has to work for a customer calling from a phone.",
     },
   ],
 
   industries: [
-    { slug: "home-services", note: "Plumbers, electricians, air conditioning, solar, cleaning and pest control form one of the busiest local search categories in the country." },
-    { slug: "construction", note: "Residential builders, renovators and commercial contractors are researched for months and judged on licences, past projects and reviews." },
-    { slug: "real-estate", note: "Agencies, property managers, conveyancers and mortgage brokers market suburb by suburb around a few dominant portals." },
-    { slug: "finance", note: "Lending, superannuation, insurance and advice are nationally searched and tightly regulated in how they can be promoted." },
-    { slug: "healthcare", note: "Clinics and allied health practices rely on local search, and advertising of regulated health services has its own rules on claims and testimonials." },
-    { slug: "ecommerce", note: "Online retailers serve a spread-out population where delivery times, returns and flexible payment options influence the sale." },
-    { slug: "hospitality", note: "Cafés, restaurants, pubs and accommodation depend on maps, reviews and visual social content, with strong regional tourism demand." },
-    { slug: "professional-services", note: "Accountants, lawyers and consultants see pronounced demand around the mid-year financial year end." },
+    { slug: "home-services", note: "For plumbers, electricians, air conditioning, solar, cleaning and pest control we organise profiles and pages suburb by suburb and track calls as the main result." },
+    { slug: "construction", note: "Residential builders, renovators and commercial contractors hold state or territory licences, and their sites should show licence details, past projects and reviews clearly." },
+    { slug: "real-estate", note: "For agencies, property managers, conveyancers and mortgage brokers we build suburb pages on their own sites to sit beside their portal listings." },
+    { slug: "finance", note: "Lending, superannuation, insurance and advice are regulated nationally in how they can be promoted, so copy goes through a compliance check before it is published." },
+    { slug: "healthcare", note: "Advertising of regulated health services has its own rules on claims and testimonials, and clinics and allied health practices need profiles and pages that respect them." },
+    { slug: "ecommerce", note: "Australia's population is spread across a very large country, so online retailers should state delivery times by region, returns terms and payment options plainly." },
+    { slug: "hospitality", note: "For cafés, restaurants, pubs and accommodation we work on map profiles, review replies and photography, with seasonal plans for regional tourism businesses." },
+    { slug: "professional-services", note: "The financial year ends in the middle of the calendar year, which gives accountants and advisers a fixed date to plan content and campaigns around." },
   ],
 
   considerations: [
@@ -193,7 +193,7 @@ export const location: LocationRecord = {
     },
     {
       title: "Each capital is its own market",
-      body: "Competitors, costs, media and even vocabulary vary between cities, and the west coast runs hours behind the east. Budgets, landing pages and reporting should be separated by city.",
+      body: "Each mainland capital is in a different state with its own regulators and media, and the west coast runs hours behind the east. Budgets, landing pages and reporting should be separated by city.",
     },
     {
       title: "State-based licensing",
@@ -224,7 +224,7 @@ export const location: LocationRecord = {
     },
     {
       title: "AI for the workload, experts for the choices",
-      body: "AI helps us analyse search data across hundreds of suburbs and draft at speed. Specialists decide what is worth building and check that every page reads as Australian.",
+      body: "AI helps us analyse search data across many suburbs and draft at speed. Specialists decide what is worth building and check that every page reads as Australian, working remotely.",
     },
   ],
 
@@ -235,7 +235,7 @@ export const location: LocationRecord = {
   faqs: [
     {
       q: "How do I choose a digital marketing agency in Australia?",
-      a: "Work out first whether you need one city or several, because that decides what to ask. For a single city, the agency should talk about suburbs, service areas and calls or quote requests per location. For several, it should keep research, budgets and reporting separate for each capital. Listen to the language: an agency that does not use Australian terms and seasons will aim content at phrases nobody here types. Ask how it gathers reviews, since filtered or incentivised reviews fall foul of consumer law, and how it shows the correct state licence on pages and adverts. Be wary of superlatives in its own pitch.",
+      a: "Work out first whether you need one city or several, because that decides what to ask. For a single city, the agency should talk about suburbs, service areas and calls or quote requests per location. For several, it should keep research, budgets and reporting separate for each capital. Listen to the language: an agency that does not use Australian terms and seasons will aim content at the wrong phrases. Ask how it gathers reviews, since filtered or incentivised reviews fall foul of consumer law, and how it shows the correct state licence on pages and adverts. Be wary of superlatives in its own pitch.",
     },
     {
       q: "What digital marketing services are available for Australian businesses?",
@@ -247,7 +247,7 @@ export const location: LocationRecord = {
     },
     {
       q: "How does local SEO work in Australia?",
-      a: "It is organised around suburbs and service areas. We optimise the Google Business Profile, correct listings on the directories Australians use, build a routine for genuine reviews and write pages for the areas you serve. Results are measured in calls and quote requests per location.",
+      a: "It is organised around suburbs and service areas. We optimise the Google Business Profile, correct listings on the main Australian directories, build a routine for genuine reviews and write pages for the areas you serve. Results are measured in calls and quote requests per location.",
     },
     {
       q: "Can you help a business that operates in several cities?",

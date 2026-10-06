@@ -19,11 +19,11 @@ Place slugs are unique across countries and cities. `lib/routes.ts` holds the ta
 
 ### Service in a place
 
-Each place lists its services on its record; each of those has a page written for that pairing (type `LocalServicePage`). A page has its own title, H1, answer, three search habits, four local factors, four to six areas (localities for a city, cities for a country), three sectors and five FAQs (head term, "near me" or how to choose, nearby places, cost without figures, one local question). The build fails if a listed service has no page, if a title, H1, description or keyword repeats, or if the intro does not say the work is remote. A test fails if sentences are reused between pages.
+Each place lists its services on its record; each of those has a page written for that pairing (type `LocalServicePage`, described in `SEO_CONTENT_SYSTEM.md`). A page has its own title, plain H1 ("AI SEO Services in Gurgaon"), intro, a 40 to 80 word answer, three paragraphs of context, three audiences, three or four challenges, five approach stages, what to expect and what nobody can promise, three sectors and five to eight FAQs. The build fails if a listed service has no page, if a title, H1, description or keyword repeats, or if the FAQs never say the work is remote. `npm test` fails if a sentence is reused between pages, and `npm run seo:check` fails on near-duplicate pages (the swap test in `SEO_ARCHITECTURE.md`).
 
 To add one: add the service to the place's record and write its page object in `data/locations/services/{place}.ts`. Do not generate them from a template.
 
-Internal links run from the ground up: the page links to the same service in nearby cities and in its country, to the other services in the same place, to the place page and to the general service page. Place pages link each service row to its local page. Service pages list every place they are written for.
+Internal links: the page links up to its service page and place page, across to the other services in the same place, sideways to the same service in its parent market and nearby cities, and out to sectors and articles. The service page lists every place it is written for.
 
 ### Markets (countries and regions)
 
@@ -163,3 +163,7 @@ The last five rows (40 points) are checked by machine and every current page pas
 - Location copy was drafted with AI and needs review by someone who knows each market before launch, especially statements about regulation, platforms and districts.
 - Photos come from the shared library in `data/images.ts`. There is no location-specific photography yet.
 - Case study links on location pages go to illustrative scenarios, which are marked noindex and are not in the sitemap by design.
+
+## What a place page may and may not say
+
+SERPMOZ works remotely and has no office, staff or client data in any of these places. A page therefore states only facts that are common knowledge (names, administration, language, time zone, sectors a place is known for, general regulation), how a service works, and what SERPMOZ checks or asks. It never states how people there search, choose or behave, how competitive a market is, or what most local businesses do. There are no lists of neighbourhoods for their own sake, no "near me" sections, and no cross-links to unrelated cities. See `CONTENT_STYLE_GUIDE.md`.

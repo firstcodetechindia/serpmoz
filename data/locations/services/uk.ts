@@ -7,89 +7,119 @@ export const pages: LocalServicePage[] = [
     seo: {
       title: "SEO Services in the UK",
       metaDescription:
-        "SEO services for UK businesses facing comparison sites and national brands: British keyword research, regional plans from Leeds to Glasgow, earned press links.",
+        "SEO services for UK businesses: technical fixes, content in British English and earned authority, planned around the searches worth winning nationally.",
       primaryKeyword: "seo services in the uk",
-      secondaryKeywords: [
-        "seo company in the uk",
-        "seo agency in the uk",
-        "seo services uk",
-        "seo company manchester",
-        "seo agency birmingham",
-        "seo services scotland",
+      secondaryKeywords: ["seo company in the uk", "seo agency uk", "uk seo services", "seo consultants uk", "search engine optimisation services uk"],
+    },
+    h1: "SEO Services in the UK",
+    intro:
+      "SERPMOZ provides SEO for businesses that sell in the UK: technical work on the site, pages matched to what buyers search for, and authority earned from credible sources. It is for owners and marketing heads whose customers look online before they enquire, and who need organic search to produce leads without a cost for every click. A compact country with a shared language means many firms compete nationally, so choosing where to compete matters.",
+    answer: {
+      question: "What do SEO services include, and how do they help a business in the UK?",
+      text: "SEO services cover three things: a site that search engines can crawl and understand, content that answers what buyers search for, and authority earned from other credible sites. For a British business the work also means writing in British English and vocabulary, sending clear regional signals so the right version of a page is shown, and choosing between national and local targets. Rankings cannot be guaranteed.",
+    },
+    context: {
+      heading: "Why SEO deserves a place in a UK marketing plan",
+      paragraphs: [
+        "Search is where a buyer goes once a need has formed. Someone typing a question about a product, a supplier or a problem has already chosen to look, which makes an organic visit different from an interruption. SEO is the work of being present and useful at that moment. The pages that earn a position keep doing so without a fee per visit, although they need maintenance, and the effect builds over months of consistent effort.",
+        "The country is small enough that a firm in one region can often serve a customer in another, particularly for anything sold online or delivered at a distance. It follows that a general search term may be contested by suppliers from everywhere at once, including large national brands. A smaller business usually does better by being specific: a defined service, a named kind of customer, a region it can show it serves. Deciding that focus is the first real task of the programme.",
+        "Language is a second consideration. British spelling and vocabulary differ from American usage in ways that affect search: a solicitor is not an attorney, and an estate agent is not a realtor. A site that serves several English-speaking countries needs each version marked for its audience, so that the British page is the one shown to British searchers. England, Scotland, Wales and Northern Ireland also differ in some laws and institutions, which matters for content on legal, property or public-sector subjects.",
       ],
     },
-    h1: "SEO Company in the UK for Firms Up Against National Brands",
-    intro:
-      "A business in Leeds can sell to a customer in Bristol as easily as to one down the road, so most UK search is contested nationally. Commercial results are shared between household names, comparison sites and national publishers. An SEO programme here has to choose narrower ground: a defined service, a named audience, a region. SERPMOZ plans and delivers that work for UK businesses remotely, in British English.",
-    answer: {
-      question: "What does an SEO company do for businesses in the UK?",
-      text: "An SEO company working for UK businesses fixes the technical foundations of the site, researches what British buyers type, writes or improves the pages that answer them, and earns coverage from the press those buyers already read. For branches it also manages local profiles by town and postcode district. SERPMOZ does this remotely and starts by deciding which services, sectors and regions are worth contesting.",
+    audiences: [
+      {
+        title: "Service firms that sell nationally from one base",
+        body: "Consultancies, agencies, software and specialist suppliers that can serve a client anywhere in the country. Organic search lets them be found for the specific problem they solve, without needing a presence in every town.",
+      },
+      {
+        title: "Online retailers with a catalogue to organise",
+        body: "Shops whose category and product pages compete with marketplaces and larger retailers. Technical structure, clear category pages and useful buying guidance decide whether those pages are found for the searches that end in a purchase.",
+      },
+      {
+        title: "Overseas companies selling into Britain",
+        body: "Businesses with an existing site written for another English-speaking market. The work adapts language, terms and regional signals so that British searchers reach pages written for them, with prices and delivery terms that make sense.",
+      },
+    ],
+    challenges: [
+      {
+        title: "General terms are contested nationally",
+        body: "Where delivery is not tied to a place, a broad search can be pursued by suppliers across the whole country. The opening is in narrower searches that name a sector, a use or a problem, where a specialist page can be more useful than a general one.",
+      },
+      {
+        title: "One language, several versions of a page",
+        body: "A company with American, Australian and British pages on similar wording may find the wrong one shown. Fixing it involves regional markup, consistent internal links and content that differs where the markets differ, such as terms, prices and delivery.",
+      },
+      {
+        title: "Measurement after consent choices",
+        body: "Analytics and advertising cookies generally need a visitor's consent under data protection rules, so recorded visits may understate real ones. Reporting has to allow for that gap and rely on outcomes the business records itself, such as enquiries and sales. Your own adviser should confirm what the law requires.",
+      },
+      {
+        title: "Authority takes time to earn",
+        body: "Links and mentions from credible publications cannot be produced on a schedule. They follow from having something worth citing, such as data, expertise or a useful resource, and from the patient work of putting it before the right editors.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Audit",
+        body: "We crawl the site, list its content, review the sites that link to it and connect search and analytics data. The result is a baseline: what search engines can reach, which pages earn visits, and how organic search contributes to enquiries today.",
+      },
+      {
+        stage: "Prioritise",
+        body: "Search demand is grouped by intent and scored for commercial value and effort. You receive a ranked list of what to pursue nationally, regionally or not at all, with each page mapped to the searches it should answer.",
+      },
+      {
+        stage: "Plan",
+        body: "Technical fixes, on-page changes, new content and authority work are ordered into a roadmap of roughly three months. Developers get tickets they can act on and writers get briefs, so nothing waits on interpretation.",
+      },
+      {
+        stage: "Ship",
+        body: "Work goes live in short cycles: fixes implemented, pages published or improved, coverage pursued. A specialist checks everything before release, and a change log records what was done so that later movements can be traced to a cause.",
+      },
+      {
+        stage: "Review",
+        body: "Each month visibility, enquiries and revenue from organic search are read together. Effort moves towards what is working, and anything that has not earned its place is changed or stopped, with the reasoning written down.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The first weeks are spent on the audit and the opportunity model, and little changes on the site during that time. Technical corrections tend to follow first and may show an effect within weeks. Positions for contested searches usually take several months of steady work, and longer where established national sites hold them. How quickly your developers and approvers can act affects the pace as much as anything we do.",
+        "Reports arrive monthly and tie search visibility to enquiries and revenue. They include the months when little moved, and each ends with a recommendation.",
+      ],
+      notGuaranteed: [
+        "Any specific position in Google or another search engine",
+        "A set number of visits, enquiries or sales from organic search",
+        "The date by which a search engine reflects a change to the site",
+      ],
     },
-    searches: [
-      {
-        title: "Town, county and postcode district",
-        body: "Local queries are phrased with a town, a county, a London borough or the first half of a postcode. An accountant is searched for in Harrogate or in LS1, not in Yorkshire at large, so pages and profiles follow those names.",
-      },
-      {
-        title: "British vocabulary changes the keyword",
-        body: "Solicitor, estate agent, holiday and car insurance are the terms that carry demand here. Research built on American wording targets phrases British searchers rarely use, and a page written around them is passed over for one that sounds local.",
-      },
-      {
-        title: "Searching, then checking elsewhere",
-        body: "Buyers find a firm on Google and then verify it on Trustpilot, Companies House or a trade directory. Brand searches with the word reviews attached are common, so what those sources show is part of your organic result.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "National rivals on every head term",
-        body: "Generic terms for insurance, lending, software and online retail are held by large brands and comparison sites. We size topics by what a new customer is worth, then build depth where a smaller firm can credibly be the specialist, instead of spreading effort across a long list.",
-      },
-      {
-        title: "Correct UK signals for overseas sites",
-        body: "A company serving Britain from abroad needs a .co.uk domain or a properly marked UK section, with sterling prices and UK delivery terms. Without those signals an American or Australian version of the same page often appears to British searchers in its place.",
-      },
-      {
-        title: "Regions are separate markets",
-        body: "Manchester, Birmingham, Glasgow and Cardiff each have their own business communities, local press and loyalties. Thin city pages from firms that barely serve those places are common, which leaves room for a business with real local evidence and customers who will say so.",
-      },
-      {
-        title: "Consent shapes what can be measured",
-        body: "Analytics cookies need consent before they are set, so a share of organic visits goes unrecorded. We plan reporting around that gap from the start, using Search Console data and enquiry records alongside analytics, and your own adviser should confirm how the rules apply to you.",
-      },
-    ],
-    areas: [
-      { name: "London", note: "The capital concentrates finance, law and head offices, and results there are fought by borough and postcode." },
-      { name: "Manchester", note: "A strong regional business community where firms prefer suppliers they regard as northern, not London outposts." },
-      { name: "Birmingham", note: "Centre of the Midlands, where manufacturers and professional firms search for suppliers by sector and county." },
-      { name: "Leeds", note: "Legal and financial firms cluster here, so practice-area pages compete against established Yorkshire names." },
-      { name: "Edinburgh and Glasgow", note: "Scottish law and institutions differ, so pages for Scotland need their own wording and references." },
-      { name: "Cardiff and Belfast", note: "Wales and Northern Ireland have distinct public bodies, and Welsh language expectations apply for some audiences." },
-    ],
     sectors: [
-      { slug: "finance", note: "Comparison sites hold generic product terms, so providers earn organic demand through the questions asked before comparing." },
-      { slug: "legal", note: "Solicitors compete by practice area and town, and the buyer reads the page to judge competence." },
-      { slug: "ecommerce", note: "British shoppers expect sterling pricing, clear delivery and returns, and category pages must say so plainly." },
+      { slug: "professional-services", note: "Buyers compare firms on evidence of expertise, so detailed pages on each service and sector do more than general claims." },
+      { slug: "ecommerce", note: "Category structure, product information and delivery details decide whether a shop's pages appear for searches that end in a purchase." },
+      { slug: "legal", note: "Legal questions depend on jurisdiction, and clear pages stating which nation's law applies serve both the reader and the search engine." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ an SEO company in the UK?",
-        a: "SERPMOZ is an AI-powered digital growth company that does the work UK businesses hire an SEO company for: technical fixes, keyword and content strategy, digital PR and local search. We work with businesses in the UK remotely and have no British office, so we will not claim one. Meetings are held online during agreed UK working hours, and you speak to the specialists doing the work.",
+        q: "What is the difference between SEO and paid search?",
+        a: "SEO earns positions in the unpaid results through the quality of a site, its content and its reputation. Paid search buys placement above them and charges for each click. Organic results build slowly and persist while they are maintained; adverts appear at launch and stop with the budget. Many businesses use both, with paid search covering launches and testing while organic visibility is being built.",
       },
       {
-        q: "How do I choose an SEO company in the UK?",
-        a: "Ask how the company would narrow your market before it mentions keywords, because household names and comparison sites hold the broad terms. Read its own copy for British spelling and restraint. Check that its link building relies on earned press coverage and never on bought placements. If you trade outside London, ask whether the plan is built on your region. Finally, confirm that reporting accounts for visitors who decline cookies.",
+        q: "Does SERPMOZ have a UK office?",
+        a: "No. SERPMOZ works with businesses in the UK through a remote consulting and delivery model, using calls, shared documents and access to your analytics. SEO is done on your website and in the wider web, so what it needs is your data, your subject experts and someone able to approve changes, none of which depends on sharing a building.",
       },
       {
-        q: "Which cities in the UK do you work with for SEO?",
-        a: "Any of them, because the work is delivered remotely. That includes London, Manchester, Birmingham, Leeds, Bristol, Edinburgh, Glasgow, Cardiff and Belfast, along with towns and counties in between. What changes by city is the plan: the local press we approach, the place names people search by, and the legal or institutional references that differ in Scotland, Wales and Northern Ireland. We do not have premises in any of these cities.",
+        q: "Can you guarantee first-page rankings?",
+        a: "No. Search engines decide their own results and change how they do so without notice, and any provider promising a position is promising something outside its control. What we commit to is a written plan, the work itself, a record of every change and reporting that shows plainly whether enquiries from organic search are rising.",
+      },
+      {
+        q: "How long does SEO take to show results?",
+        a: "It depends on the starting point. Technical faults that block search engines can show an effect within weeks of being fixed. New content and earned authority take longer, typically several months, and longer still for searches held by established national sites. A site with history and a clean structure generally moves sooner than a new domain.",
       },
       {
         q: "What does SEO cost in the UK?",
-        a: "Cost follows the size of the job, not a national rate. The main drivers are how contested your terms are, whether you compete nationally or in a few towns, the technical state of the site, how much expert-reviewed content is needed and whether press outreach is included. Regulated sectors add compliance review time. A growth audit scopes this before any commitment, so the proposal reflects your situation.",
+        a: "The fee follows the scope: the size and technical condition of the site, the number of topics to cover, whether your team or ours writes the content, and how much authority work the subject calls for. Those are assessed in the growth audit, and the proposal sets out what each part pays for before you commit.",
       },
       {
-        q: "Can a smaller UK firm outrank comparison sites and national brands?",
-        a: "On the broadest product terms, rarely, and we would say so. On specific ground the picture is different. A defined service, a named sector or a particular town is less defended, and a firm with real expertise can publish the page that answers the question more fully than a panel listing does. We choose those topics by commercial value. Nobody can promise a particular ranking, and we do not.",
+        q: "Should our site use a .co.uk domain?",
+        a: "Not necessarily. A country domain is one clear signal that a site is meant for British searchers, and some customers find it reassuring. A general domain with a properly marked British section can perform as well. The right choice depends on whether you sell in other countries, what the current domain has already earned and the cost of moving.",
       },
     ],
   },
@@ -99,88 +129,119 @@ export const pages: LocalServicePage[] = [
     seo: {
       title: "Content SEO Services in the UK",
       metaDescription:
-        "Content SEO for UK businesses: search content in British English, evidenced claims, and separate pages where Scots law or Welsh audiences need them.",
+        "Content SEO services for UK businesses: intent research, topic clusters, detailed briefs and expert-reviewed writing in British English, kept accurate.",
       primaryKeyword: "content seo services in the uk",
-      secondaryKeywords: [
-        "content seo agency in the uk",
-        "content seo company uk",
-        "seo content writing services uk",
-        "seo copywriting british english",
-        "content seo agency london",
-        "seo content scotland and wales",
+      secondaryKeywords: ["content seo agency uk", "seo content writing services uk", "seo copywriting agency uk", "content seo company in the uk", "seo content strategy uk"],
+    },
+    h1: "Content SEO Services in the UK",
+    intro:
+      "SERPMOZ plans, writes and maintains website content for businesses selling in the UK, so that pages match what buyers search for and deserve to be found. The service suits companies whose customers research before they enquire and whose current pages are thin, outdated or overlapping. British readers notice copy written for another country, so the work is done in British English, with the terms, institutions and examples a reader here would expect.",
+    answer: {
+      question: "What does content SEO involve, and why does it matter for a UK business?",
+      text: "Content SEO is the planning, writing and upkeep of pages so that they answer real searches. It starts with search intent, groups pages into topic clusters, defines each page in a brief and has a subject expert review the draft. For a British audience the vocabulary, spelling and references need to be right, and published pages are refreshed on a schedule so they stay accurate.",
+    },
+    context: {
+      heading: "Why content planned around search suits UK buyers",
+      paragraphs: [
+        "A page earns its place in search by answering the question behind a query more usefully than the alternatives. That requires knowing what the searcher wants at that moment: an explanation, a comparison, a price guide or a supplier. Content SEO begins there. Writing first and looking for an audience afterwards tends to produce pages nobody was searching for, which is why the brief comes before the draft and the research before the brief.",
+        "Vocabulary carries commercial weight. A British reader looks for a solicitor, a letting agent, an MOT or a holiday, and a page built around another country's words may never meet the search at all. Beyond spelling, the references need to fit: the tax year, the institutions, the units and the way prices are quoted. Copy adapted from elsewhere with only the spelling changed tends to read as foreign, and a reader who notices that has a reason to doubt the rest.",
+        "Tone is worth the same attention. Understatement, specifics and plain explanation are commonly associated with British business writing, and heavy superlatives can read as a warning sign. There is also a practical limit on claims: advertising rules generally expect a claim to be capable of being supported, and regulated fields such as finance, law and health set their own standards. Content in those areas should be reviewed by your own qualified person before it is published.",
       ],
     },
-    h1: "Content SEO Services in the UK, Written for British Readers",
-    intro:
-      "British readers judge a firm by how it writes. Understatement and specifics persuade; superlatives and urgency put people off, and American copy with the spelling changed is spotted at once. Content SEO in the UK therefore starts with tone and vocabulary as much as with keywords. SERPMOZ researches, briefs and writes search content for UK businesses remotely, with every page edited in British English before it is published.",
-    answer: {
-      question: "What does a content SEO company do for businesses in the UK?",
-      text: "It finds the questions British buyers ask before they enquire, groups them into topics, and produces pages that answer each one in plain British English. For UK firms that includes expert review, evidence for any claim, and references to the right institutions, tax year and currency. SERPMOZ does this remotely, and also refreshes or merges older pages that have stopped earning their place.",
+    audiences: [
+      {
+        title: "Professional firms whose knowledge is not yet written down",
+        body: "Accountants, solicitors, advisers and consultancies with expertise held by individuals. Interviews and expert review turn that knowledge into pages a prospective client can read before making contact, attributed to the people who hold it.",
+      },
+      {
+        title: "Software and B2B companies with long buying cycles",
+        body: "Buyers who compare options over weeks read guides, comparisons and explanations along the way. A planned cluster of pages lets one company answer the whole sequence of questions, in place of scattered articles that overlap.",
+      },
+      {
+        title: "Businesses with years of unmanaged blog posts",
+        body: "Sites carrying many old articles that compete with each other or have gone out of date. An inventory gives every page a decision: keep, improve, merge or remove, so the useful material is no longer buried.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Writing for British readers, in their terms",
+        body: "Search terms differ from American usage in everyday and professional vocabulary alike. Research has to be done on British queries, and drafts checked by someone who writes the language natively, or pages will target words that buyers here do not type.",
+      },
+      {
+        title: "Getting experts to review drafts",
+        body: "Accurate content depends on people whose time is billed elsewhere. The workflow keeps their part short: a recorded conversation at the start and a focused review at the end, with a named approver so a draft does not sit unanswered.",
+      },
+      {
+        title: "Pages that compete with each other",
+        body: "Several articles on one subject split the signals a search engine uses and leave none of them strong. Consolidating them into one maintained page often does more than publishing something new, and it usually takes less effort than writing from scratch.",
+      },
+      {
+        title: "Content that goes out of date",
+        body: "Rates, thresholds, rules and product details change, and a page that was right when published can become wrong without anyone noticing. A refresh schedule assigns each important page a review date and an owner, so accuracy does not depend on memory.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Inventory",
+        body: "Every indexable page is scored for visits, positions, overlap and age. Each one receives an action: keep, improve, merge or remove. You also get a baseline of the visits and enquiries that content produces now.",
+      },
+      {
+        stage: "Map",
+        body: "Search demand is grouped into topic clusters and ranked by commercial value. Existing pages are given roles within each cluster, and the gaps become planned pages in an editorial plan with a clear order.",
+      },
+      {
+        stage: "Brief",
+        body: "Each page is defined before it is written: the search it answers, the reader, the points to cover, the sources and the internal links. We also agree who drafts, who edits, who reviews as subject expert and who signs off.",
+      },
+      {
+        stage: "Publish",
+        body: "New pages and refreshes go out together in each cycle, written in British English and reviewed by your expert. Internal links are added as part of the same job, so a new page is connected to its cluster from the day it appears.",
+      },
+      {
+        stage: "Review",
+        body: "Performance is read cluster by cluster each month: which pages hold positions, which earn visits and which lead to enquiries. The editorial plan and the refresh list are adjusted to match what the figures show.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The inventory and topic map take the opening weeks, followed by the first briefs. Refreshes to existing pages are usually the earliest work to show movement, sometimes within weeks, because those pages already have a history. New clusters take longer to establish, commonly several months, depending on how contested the subject is and how quickly drafts are reviewed and approved on your side.",
+        "Monthly reporting is organised by cluster and shows visits, enquiries and the pages changed, with a short note on what is planned next and why.",
+      ],
+      notGuaranteed: [
+        "A ranking for any particular page or search term",
+        "A fixed volume of non-brand organic visits or leads",
+        "That a refreshed page will regain a position it once held",
+      ],
     },
-    searches: [
-      {
-        title: "Questions before the comparison site",
-        body: "For insurance, energy, broadband and credit, many people research on Google and then move to a comparison site. The explanatory searches that come first (what a policy covers, how a tariff works) are where a provider's own content can still be found.",
-      },
-      {
-        title: "Seasonal demand tied to UK dates",
-        body: "Search interest follows the British calendar: the self-assessment deadline, the tax year end, school admissions, university clearing. Content planned around those moments has to be live and indexed well beforehand, which sets the editorial schedule.",
-      },
-      {
-        title: "Checking the person behind advice",
-        body: "Readers of legal, financial and medical pages look for a named author, a qualification and a regulator's register entry. They search the individual's name as well as the firm's, so author pages and profiles are part of the content.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Tone that suits British buyers",
-        body: "Copy here works when it is dry, exact and modest about its claims. We write that way from the brief onwards, and remove pressure tactics that perform elsewhere, because a reader in Bristol or Newcastle treats exaggeration as a reason to look at the next result.",
-      },
-      {
-        title: "Claims need evidence held in advance",
-        body: "The advertising regulator's codes apply to website copy as well as paid adverts. Every comparative or factual claim in a page is matched to a source before publication, and wording we cannot support is rewritten. Your compliance team or adviser has the final say.",
-      },
-      {
-        title: "Different law in different nations",
-        body: "A guide to buying a house or making a will reads differently for Scotland than for England and Wales, and Northern Ireland differs again. We scope each legal or public-service topic by jurisdiction, and write separate pages where one would mislead.",
-      },
-      {
-        title: "Welsh and regional references",
-        body: "Audiences in Wales may expect Welsh alongside English, particularly from public-facing organisations. Elsewhere the detail is smaller but still noticed: county names, local institutions and examples drawn from the reader's own region and not from London by default.",
-      },
-    ],
-    areas: [
-      { name: "London", note: "Head offices and national publishers set a high bar for depth on finance and legal topics." },
-      { name: "Edinburgh", note: "Scottish legal and financial topics need pages written for Scots law and Scottish institutions." },
-      { name: "Cardiff", note: "Welsh language expectations and devolved public bodies change both wording and references." },
-      { name: "Manchester", note: "Regional examples and northern case material read as local where London-centred copy does not." },
-      { name: "Belfast", note: "Northern Ireland has its own legal system and agencies, so guides need separate treatment." },
-    ],
     sectors: [
-      { slug: "accounting", note: "Demand peaks around self-assessment and the tax year end, so guides must be published well ahead." },
-      { slug: "finance", note: "Explanations of regulated products need compliance review and plain wording that British readers can trust." },
-      { slug: "education", note: "Universities and schools answer domestic and overseas applicants, whose questions and vocabulary differ." },
+      { slug: "finance", note: "Readers research products and terms carefully before applying, and accuracy has to be checked by a qualified reviewer before publication." },
+      { slug: "saas", note: "Prospects read comparisons and explanations for weeks before a trial, so a connected set of pages supports the whole decision." },
+      { slug: "professional-services", note: "The service is expertise, and well-attributed explanatory pages let a prospective client judge it before the first conversation." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a content SEO company in the UK?",
-        a: "We do the work of one for UK businesses, and we do it remotely. SERPMOZ is an AI-powered digital growth company with no office in Britain. Our content SEO for UK clients covers intent research, topic planning, briefs, expert-reviewed writing and the refreshing of older pages. AI speeds up research and first drafts. Editors working in British English decide what is published and check every claim.",
+        q: "How is content SEO different from content marketing?",
+        a: "Content SEO starts from what people already search for and aims to capture that demand through pages that rank. Content marketing starts from what an audience should hear and distributes it through social, email, events and the press as well as search. The two overlap, and a good guide can serve both, but they are planned and measured differently.",
       },
       {
-        q: "How do I choose a content SEO company in the UK?",
-        a: "Start with samples and read them as a customer would. Look for British vocabulary, sterling, correct institutions and a measured tone. Ask who reviews specialist content and how claims are evidenced, since the advertising codes cover web copy. Ask how topics are chosen: by the value of an enquiry, or by search volume alone. If you serve Scotland, Wales or Northern Ireland, ask how jurisdiction differences are handled.",
+        q: "Does SERPMOZ have a UK office?",
+        a: "No. SERPMOZ works with British businesses through a remote consulting and delivery model, and content work suits it: interviews by video call, shared drafts and written review. Many in-house teams already work with their own experts that way. Writing for a British readership depends on the writer and the reviewer, and the reviewer who knows your subject is on your side of the table.",
       },
       {
-        q: "Which UK cities do you write content for?",
-        a: "We write for businesses anywhere in the UK, working remotely. The plan accounts for where the reader is: London, Manchester, Leeds and Bristol in England, Edinburgh and Glasgow under Scots law, Cardiff with Welsh language considerations, and Belfast under Northern Ireland's system. We have no writers stationed in those cities, so local detail comes from research and from your own team's knowledge, which we build into each brief.",
+        q: "Can you guarantee our content will rank?",
+        a: "No. Whether a page ranks depends on the search engine, the competing pages and the standing of your site, none of which a writer controls. What can be controlled is the quality of the research, the usefulness of the page, its accuracy and its upkeep. Those are the things we plan, deliver and report on.",
+      },
+      {
+        q: "How long does content SEO take to show results?",
+        a: "Improvements to pages that already receive visits can show within weeks. A new topic cluster typically needs several months before its effect is clear, since search engines take time to assess new pages and the links between them. The pace also depends on review: a draft that waits a month for approval delays everything behind it.",
       },
       {
         q: "What does content SEO cost in the UK?",
-        a: "The price depends on how much needs writing and how specialised it is. Pages that require review by a solicitor, accountant or clinician take longer than general guides. Regulated topics add a compliance step. Separate versions for Scotland or Wales increase the count. Refreshing existing pages is usually lighter than starting new ones. We scope the work after an audit of what you already have.",
+        a: "Cost depends on how many pages are needed, how specialised the subject is, how much expert review each page requires and whether your team or ours does the writing. A site with a large backlog to consolidate needs a different scope from one starting fresh. We set out the scope after the inventory, so the fee can be read against the work.",
       },
       {
-        q: "Can you adapt our American or Australian content for the UK?",
-        a: "We can, though adapting usually means rewriting. Changing the spelling leaves the wrong vocabulary, examples, prices and legal references in place, and British readers notice. We keep the argument and structure where they hold, then rebuild the page around UK terms such as solicitor or estate agent, sterling pricing, UK delivery terms and UK proof points. We also set regional signals so the British page is shown to British searchers.",
+        q: "Do you use AI to write the content?",
+        a: "AI tools are used for research and first drafts where they help. No page is published on that basis alone. An editor rewrites for accuracy and voice, your subject expert reviews the claims, and anything unsupported is removed. Search engines assess whether a page helps its reader, and unchecked text produced at volume rarely does.",
       },
     ],
   },
@@ -188,91 +249,121 @@ export const pages: LocalServicePage[] = [
     place: "uk",
     service: "digital-pr",
     seo: {
-      title: "Digital PR Agency in the UK",
+      title: "Digital PR Services in the UK",
       metaDescription:
-        "Digital PR for UK businesses: data stories and expert comment pitched to national, trade and regional press from London to Glasgow. Links earned, never bought.",
-      primaryKeyword: "digital pr agency in the uk",
-      secondaryKeywords: [
-        "digital pr services in the uk",
-        "digital pr company uk",
-        "digital pr agency uk",
-        "link building agency uk",
-        "digital pr agency manchester",
-        "digital pr agency london",
+        "Digital PR services for UK businesses: data-led stories and expert comment that earn coverage and links from relevant publications. No bought links.",
+      primaryKeyword: "digital pr services in the uk",
+      secondaryKeywords: ["digital pr agency uk", "digital pr company in the uk", "link building services uk", "online pr agency uk", "digital pr for seo uk"],
+    },
+    h1: "Digital PR Services in the UK",
+    intro:
+      "SERPMOZ runs digital PR for businesses selling in the UK: original data, expert comment and useful resources offered to journalists, so that coverage and links are earned by editorial choice. It is for companies with expertise or data worth reporting that compete in searches where authority decides the outcome. The country is widely known for its national, trade and regional press, which gives a well-made story several kinds of publication to suit.",
+    answer: {
+      question: "What is digital PR, and how does it help a business in the UK?",
+      text: "Digital PR earns coverage, mentions and links from online publications by giving journalists something worth reporting. Those references are among the signals search engines use to judge a site's standing, and they also shape how a company is described elsewhere. For a British business the work means stories built for national, trade or regional titles, with method and sources shown. Coverage is an editor's decision and cannot be promised.",
+    },
+    context: {
+      heading: "Why earned coverage matters for UK search visibility",
+      paragraphs: [
+        "A search engine has to decide which of many similar pages deserves to be shown, and one of the things it considers is who else refers to a site. A link or mention from a publication with real readers is a form of independent endorsement. It cannot be bought within search engine guidelines, which is the reason it carries weight, and the reason digital PR is slower and less predictable than paying for placements.",
+        "The press here has several layers, and each wants something different. National titles look for stories with broad interest and solid figures. Trade publications want detail their specialist readers can use. Regional and local outlets want a clear connection to their area. A single dataset can sometimes be cut for all three, which is where planning pays: the same research, analysed by region or sector, may produce several relevant stories from one piece of work.",
+        "Standards apply to what is said. Journalists expect a method they can check, and a claim that cannot be supported may damage the relationship as well as the story. Comment on regulated subjects such as finance, law or health should come from a named, qualified person and be approved by your own compliance adviser. Coverage that results is assessed for relevance to your buyers, since a mention in a publication they read is worth more than several in ones they do not.",
       ],
     },
-    h1: "Digital PR Agency in the UK for National, Trade and Regional Press",
-    intro:
-      "The UK has an influential national press, a deep trade press and local titles that people still read online. Coverage in those outlets shapes how buyers judge a firm, and the links and mentions that come with it carry weight in search. Digital PR here means giving journalists something they can use. SERPMOZ plans stories, supplies expert comment and handles outreach for UK businesses remotely.",
-    answer: {
-      question: "What does a digital PR agency do for businesses in the UK?",
-      text: "A digital PR agency earns press coverage and links for a business by offering journalists data, expert comment and stories worth running. In the UK that means working across national newspapers, trade titles and regional outlets from Manchester to Glasgow. SERPMOZ does this remotely: we build the story, research the right writers, pitch it, and connect the resulting coverage to the pages that matter commercially.",
+    audiences: [
+      {
+        title: "Companies that hold data nobody else has",
+        body: "Platforms, retailers, lenders and service firms whose own records show how people behave. Anonymised and analysed properly, that data can become a story journalists want, with your company named as the source of the finding.",
+      },
+      {
+        title: "Firms with experts who can comment",
+        body: "Practices and consultancies whose people can explain a news event clearly and quickly. Reactive comment places a named specialist in coverage of their subject, which builds recognition for the person and the firm as well as links.",
+      },
+      {
+        title: "Sites that rank below better-known competitors",
+        body: "Businesses with sound pages that still sit beneath rivals with stronger reputations. Where the gap is authority and not content, earned references are the part of SEO that addresses it, and no amount of rewriting will substitute.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Journalists receive more pitches than they can read",
+        body: "A story has to be relevant to the writer's beat and usable without extra work. That means a clear finding, a transparent method and a short pitch sent to a researched list, in place of one message sent to everyone.",
+      },
+      {
+        title: "National, trade and regional angles differ",
+        body: "A story that suits a national desk may be too general for a trade editor and too distant for a regional one. Campaigns are planned with separate angles for each, including regional breakdowns of the data where they hold up.",
+      },
+      {
+        title: "Coverage does not always include a link",
+        body: "A publication may mention a company without linking to it, and that is the editor's choice. Unlinked mentions still have value for reputation, and where a link would help readers we ask for one politely, once.",
+      },
+      {
+        title: "Results vary from campaign to campaign",
+        body: "One story may earn wide pickup and the next very little, for reasons that include the news agenda on the day. The programme spreads effort across planned campaigns and reactive comment so that it does not rest on a single launch.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Mine",
+        body: "We review your existing links and past coverage, interview your experts and look through the data you hold for possible stories. The output is a shortlist of ideas, each with the publications it might suit and the evidence it would need.",
+      },
+      {
+        stage: "Build",
+        body: "The strongest idea is researched and analysed, then written up with its method stated. A page on your site hosts the findings and visuals, giving journalists something to cite, and a media list is built for that story specifically.",
+      },
+      {
+        stage: "Pitch",
+        body: "Outreach goes out in waves to different beats and regions, each with its own angle. Follow-up angles are prepared in advance, and every contact is logged so that no journalist is approached twice with the same thing.",
+      },
+      {
+        stage: "React",
+        body: "Alongside planned campaigns, your named experts respond to news and to journalists' requests for comment. We draft with them, they approve the wording, and replies are sent while the story is still current.",
+      },
+      {
+        stage: "Assess",
+        body: "Coverage is judged for relevance and quality, not only counted. The monthly review records which publications ran the story, which linked, and what journalists responded to, and that shapes the next campaign.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The first weeks go on the audit and story mining, then on building the first campaign, so outreach typically begins a month or more after the start. First coverage can follow within weeks of pitching, although nothing ensures it. Any effect on search visibility builds gradually as relevant references accumulate, commonly over six months to a year, and it depends on the rest of the site being sound.",
+        "You receive an outreach log, coverage as it lands and a monthly review. A campaign that earns little is reported as plainly as one that does well.",
+      ],
+      notGuaranteed: [
+        "A number of links or pieces of coverage in any month",
+        "Placement in a named newspaper, magazine or website",
+        "That coverage will include a followed link to your site",
+      ],
     },
-    searches: [
-      {
-        title: "Journalists looking for expert comment",
-        body: "British reporters regularly need informed comment on money, property, law, employment and technology, often at short notice. Demand for a digital PR agency frequently begins when a firm sees a competitor quoted in a national paper and wonders how.",
-      },
-      {
-        title: "Buyers checking a firm's standing",
-        body: "Before an enquiry, buyers search a company name and scan what comes back. Coverage in a recognised newspaper or trade title on that results page works as independent verification, alongside Trustpilot and Companies House.",
-      },
-      {
-        title: "Regional stories, regional searches",
-        body: "People look for digital PR with a city attached, such as Manchester, Leeds or Edinburgh, because they want coverage in titles their own customers read. Local newspapers' websites and regional business publications are the targets in those cases.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Three tiers of press",
-        body: "National papers, trade publications and regional titles want different things. A national desk wants a story with scale, a trade editor wants sector detail, and a regional reporter wants a local angle. We plan one piece of research so it can be cut for each.",
-      },
-      {
-        title: "Data cut by region and nation",
-        body: "A single dataset broken down by city or region gives newsdesks in Birmingham, Newcastle, Cardiff and Belfast their own headline from the same study. The method must be sound and published with the story, because British journalists check how figures were produced.",
-      },
-      {
-        title: "Claims must stand up",
-        body: "Advertising standards apply to what a firm says in its own channels, and editors apply their own scrutiny. We keep the evidence for every claim in a release, avoid superlatives, and route financial, legal and health comment through your compliance review before it goes to a journalist.",
-      },
-      {
-        title: "Earned, never bought",
-        body: "Paid placements and link schemes exist in the UK as everywhere else, and we do not use them. Coverage is earned by the quality of the story, which also means some pitches will not land. We report what ran, what linked and what did not.",
-      },
-    ],
-    areas: [
-      { name: "London", note: "Most national newsdesks and many trade titles are based here, so competition for attention is fiercest." },
-      { name: "Manchester", note: "Salford's broadcasting centre and strong regional business titles make it a media market in itself." },
-      { name: "Glasgow and Edinburgh", note: "Scotland has its own national newspapers, and stories need Scottish figures to run there." },
-      { name: "Cardiff", note: "Welsh outlets favour stories with Welsh data and, for some audiences, material available in Welsh." },
-      { name: "Leeds and Yorkshire", note: "Regional dailies and business publications cover firms that show a real stake in the county." },
-      { name: "Belfast", note: "Northern Ireland's press covers local firms closely and expects figures specific to the province." },
-    ],
     sectors: [
-      { slug: "finance", note: "Money pages answer reader questions constantly, and a named, qualified commentator earns repeat requests from them." },
-      { slug: "real-estate", note: "Property is a staple of national and local news, and regional price or rental angles travel well." },
-      { slug: "professional-services", note: "Consultancies and recruiters win work on reputation, which trade press coverage makes visible to buyers." },
+      { slug: "finance", note: "Money stories are widely covered, and firms holding sound data can supply figures, provided a qualified person approves every claim." },
+      { slug: "ecommerce", note: "Retailers hold sales and search data that can show what people are buying, which gives consumer journalists a usable story." },
+      { slug: "travel", note: "Travel writers look for data and expert guidance on destinations and booking, which operators are well placed to provide." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a digital PR agency in the UK?",
-        a: "SERPMOZ is an AI-powered digital growth company, and digital PR for UK businesses is part of what we do. We work remotely and hold no office in Britain. In practice we develop data-led stories, prepare expert comment, research journalists across national, trade and regional titles, and pitch to them. We plan coverage together with SEO, so a story supports pages that matter to your revenue.",
+        q: "How is digital PR different from buying links?",
+        a: "A link earned through digital PR exists because a journalist chose to include it. A bought link exists because a site owner was paid. Search engines treat paid links as a breach of their policies and may ignore or penalise them. Earned coverage cannot be ordered in fixed quantities, and it also brings readers, recognition and mentions that a purchased placement does not.",
       },
       {
-        q: "How do I choose a digital PR agency in the UK?",
-        a: "Ask to see how an agency builds a story, including the method behind any data, because British journalists will ask the same. Find out whether it works with trade and regional press or only chases national headlines. Confirm that it never buys links or placements. Check how it handles compliance for regulated comment. Be wary of any agency that promises a number of links or named publications in advance.",
+        q: "Does SERPMOZ have a UK office?",
+        a: "No. SERPMOZ runs digital PR for companies in the UK through a remote consulting and delivery model. Media outreach is carried out by email and phone wherever the journalist is, and research and writing are desk work. What the campaign needs from you is access to your data, time with your experts and prompt approval of comments.",
       },
       {
-        q: "Which cities in the UK do you run digital PR for?",
-        a: "We run campaigns for businesses across the UK from a remote base, with no local office in any city. Stories can be shaped for London's national desks, for regional titles in Manchester, Birmingham, Leeds, Bristol and Newcastle, and for the Scottish, Welsh and Northern Irish press in Glasgow, Edinburgh, Cardiff and Belfast. The regional angle comes from the data and from spokespeople in your own team.",
+        q: "Can you guarantee coverage in national newspapers?",
+        a: "No. Whether a story runs is decided by the editor, and it can be displaced by other news on the day. An agency that promises a fixed number of placements is either buying them or guessing. We commit to well-researched stories, targeted outreach, a full log of who was contacted and plain reporting of what resulted.",
+      },
+      {
+        q: "How long does digital PR take to show results?",
+        a: "A first campaign usually takes several weeks to research and build before any pitch is sent. Coverage may follow soon after launch or take longer, and some stories earn little. The effect on search authority accumulates over many months. Reactive comment can produce mentions sooner, because it responds to stories journalists are already writing.",
       },
       {
         q: "What does digital PR cost in the UK?",
-        a: "Cost depends mainly on how the stories are produced. Original research, surveys or analysis of your own data take more effort than reactive expert comment. Campaigns aimed at national, trade and regional press together need more outreach than a single-sector push. Regulated firms should allow for compliance review of every quote. We set scope after the audit shows how much authority your key pages lack.",
+        a: "The main drivers are the number of campaigns in a period, how much original research or data analysis each needs, whether design or a survey is involved, and how much reactive comment is included. Campaigns built on data you already hold generally need less than ones requiring new research. The proposal separates these parts so each can be judged.",
       },
       {
-        q: "Can you promise coverage in national newspapers?",
-        a: "No, and an agency that does is either buying space or overpromising. Editors decide what runs. What we can control is the quality of the story, the soundness of the method, the fit with the journalist's beat and the speed of our response when a reporter needs comment. Trade and regional coverage is often more attainable and reaches buyers more directly. We report results as they happen.",
+        q: "What if we have no data to build a story from?",
+        a: "Many companies hold more than they realise: enquiry patterns, order records, search behaviour on their own site. Where there is none, a story can be built from public datasets analysed in a new way, from a commissioned survey, or from the expertise of your people. The story-mining stage is there to find out which of these is realistic.",
       },
     ],
   },
@@ -280,91 +371,121 @@ export const pages: LocalServicePage[] = [
     place: "uk",
     service: "google-ads",
     seo: {
-      title: "Google Ads Agency in the UK",
+      title: "Google Ads Management in the UK",
       metaDescription:
-        "Google Ads management for UK businesses: campaigns by region and postcode, adverts that meet advertising standards, and tracking built on cookie consent.",
-      primaryKeyword: "google ads agency in the uk",
-      secondaryKeywords: [
-        "google ads management services uk",
-        "google ads company in the uk",
-        "ppc agency uk",
-        "google ads agency london",
-        "google ads agency manchester",
-        "google shopping management uk",
+        "Google Ads management for UK businesses: conversion tracking, Search and Shopping campaigns, and bidding aimed at qualified leads or margin, not clicks.",
+      primaryKeyword: "google ads management in the uk",
+      secondaryKeywords: ["google ads agency uk", "ppc agency uk", "google ads management services uk", "google ads company in the uk", "ppc management uk"],
+    },
+    h1: "Google Ads Management in the UK",
+    intro:
+      "SERPMOZ plans, builds and manages Google Ads campaigns for businesses advertising in the UK, across Search, Shopping, Performance Max and YouTube. It is for companies that already spend on the platform and cannot tell which campaigns produce real customers, and for those starting out who want the account built properly. Consent rules and advertising standards affect both measurement and copy here, so they are treated as part of the setup.",
+    answer: {
+      question: "What does Google Ads management include, and how does it help a UK business?",
+      text: "Google Ads management covers conversion tracking, keyword and product feed strategy, bidding, ad copy, negative keywords and landing pages, reviewed continually. For a British advertiser it also means targeting by region or radius where the business serves an area, copy whose claims can be supported, and measurement that still works when some visitors decline cookies. The aim is qualified leads or margin at a cost the business can sustain. Costs per click are set by auction.",
+    },
+    context: {
+      heading: "How Google Ads fits a business advertising in the UK",
+      paragraphs: [
+        "Paid search puts an advert in front of someone at the moment they search, and charges when they click. That makes it the quickest way to test whether a service or product has demand, and the easiest channel to waste money on. The difference lies in what the account is told to value. A campaign that counts every form submission as a success will find more form submissions, including the worthless ones, unless it is given better information.",
+        "Measurement needs particular care. Visitors are generally asked to consent before advertising and analytics cookies are set, and some decline. An account that ignores this sees only part of what its adverts achieve, and automated bidding then learns from an incomplete picture. The platform provides consent-aware measurement and ways to import outcomes recorded in a CRM. Setting those up correctly is technical work, and what the law requires of your site is a question for your own adviser.",
+        "Geography can be used precisely. A national retailer may advertise everywhere, while a clinic, a trade or a firm with a regional client base may want its budget confined to the towns or radius it serves. Wording has to hold up as well. Advertising rules generally expect claims to be capable of substantiation, and the platform applies its own policies to categories such as financial services and healthcare. Campaigns in those fields should allow time for approval.",
       ],
     },
-    h1: "Google Ads Agency in the UK for Region and Postcode Campaigns",
-    intro:
-      "Google is where most paid search in the UK happens, and the auctions for legal, finance and insurance terms are among the costliest a British advertiser will meet. Ads are also held to substantiation standards that surprise overseas brands. Good management here is tight targeting, careful claims and tracking built on consent. SERPMOZ runs Google Ads accounts for UK businesses remotely, from set-up to reporting.",
-    answer: {
-      question: "What does a Google Ads agency do for businesses in the UK?",
-      text: "It builds and manages search, shopping and video campaigns so that budget goes to clicks likely to become customers. For UK advertisers that includes targeting by region and postcode, ad copy whose claims can be evidenced, prices shown as British consumers expect, and conversion tracking that respects cookie consent. SERPMOZ does this work remotely and reports on enquiries and sales, not clicks.",
+    audiences: [
+      {
+        title: "Lead-generation firms paying for enquiries that go nowhere",
+        body: "Businesses whose reports show plenty of conversions while the sales team sees few good leads. Connecting the account to qualified outcomes changes what the bidding pursues, and usually changes which campaigns deserve the budget.",
+      },
+      {
+        title: "Online retailers running Shopping and Performance Max",
+        body: "Shops whose results depend on a product feed and on automated campaigns with limited visibility. Feed quality, sensible exclusions and reporting by margin, not revenue alone, show where the spend earns its keep.",
+      },
+      {
+        title: "Regional businesses that serve a defined area",
+        body: "Clinics, trades and professional practices whose customers come from particular towns or counties. Location targeting and call tracking keep the budget inside the area served and show which searches lead to bookings.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Consent reduces what the account can see",
+        body: "When visitors decline cookies, some conversions go unrecorded. Bidding strategies then work from partial data. Consent mode, enhanced conversions and offline imports recover part of the picture, and reports should say clearly which figures are observed and which are modelled.",
+      },
+      {
+        title: "Brand searches flatter the results",
+        body: "People who search for a company by name would often have arrived anyway. If those clicks are mixed with the rest, the account looks more profitable than it is. Brand and non-brand performance are reported separately from the start.",
+      },
+      {
+        title: "Automation needs supervision",
+        body: "Performance Max and automated bidding can work well with reliable conversion data and can spend freely without it. Each campaign is given a defined job, exclusions and a review rhythm, so automation operates inside limits someone has chosen.",
+      },
+      {
+        title: "Claims that must stand up",
+        body: "A comparative or superlative claim in an advert may need evidence behind it, and regulated categories face additional platform checks. Copy is written to be supportable, and anything touching regulated advice goes to your reviewer before it runs.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Audit",
+        body: "We examine conversion actions, campaign structure, search terms and Performance Max reporting, and work out how much of the reported return comes from brand searches. You receive a written audit with the brand and non-brand split.",
+      },
+      {
+        stage: "Track",
+        body: "Conversion actions are redefined with your sales team so that they describe outcomes worth paying for. Enhanced conversions and consent mode are checked, and offline results from the CRM are imported so bidding can see qualified leads.",
+      },
+      {
+        stage: "Build",
+        body: "Search campaigns are restructured by intent, product feeds are cleaned, and Performance Max is given exclusions and a clear role. Changes are staged over several weeks to avoid resetting every bid strategy at the same time.",
+      },
+      {
+        stage: "Optimise",
+        body: "Search terms, adverts, assets, feeds and landing pages are reviewed on a fixed rhythm, with negative keywords added as waste appears. Bid targets are moved only when there is enough conversion data to justify the change.",
+      },
+      {
+        stage: "Reconcile",
+        body: "Each month the conversions Google reports are compared with what the CRM or order system recorded, campaign by campaign. Budget moves towards the campaigns producing qualified leads or margin, and the report explains each shift.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The audit and tracking work fill roughly the first three weeks, and rebuilt campaigns follow in stages. Clicks arrive as soon as campaigns are live. Automated bidding generally needs a period of data, often one to two months, before performance steadies, and results in that period can be uneven. Accounts with few conversions take longer to learn, which is a reason to define conversions carefully.",
+        "Reporting is monthly, by campaign, and based on qualified outcomes. It separates brand from non-brand activity and states what was changed and why.",
+      ],
+      notGuaranteed: [
+        "The cost of a click, which is set by auction",
+        "A fixed cost per lead or return on advertising spend",
+        "How long the platform takes to approve an advert or account",
+      ],
     },
-    searches: [
-      {
-        title: "Service plus town or postcode",
-        body: "British searchers add a town, a borough or a postcode district to a service: boiler repair Stockport, conveyancing solicitor Bristol, dentist in a named part of Leeds. Campaigns are structured around those place names so the advert echoes the query.",
-      },
-      {
-        title: "Comparison shopping on product terms",
-        body: "For insurance, energy, broadband and credit, comparison sites bid on the generic terms and often win them. Providers do better on specific product, brand and question searches, where the comparison panel is less present and intent is clearer.",
-      },
-      {
-        title: "Shopping results in sterling",
-        body: "Product searches bring up Shopping listings next to Amazon and eBay results. Shoppers expect sterling, VAT-inclusive prices, and delivery and returns terms for the UK. A feed that carries overseas prices or shipping details loses the click to a British retailer.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Claims held to advertising standards",
-        body: "Ad copy must be capable of substantiation, comparisons must be fair, and prices shown to consumers should include VAT. We write adverts to that standard and keep the evidence on file. For financial, health, gambling and alcohol advertisers, further approval steps apply, which your adviser should confirm.",
-      },
-      {
-        title: "Consent limits conversion data",
-        body: "Advertising cookies need consent before they are set, so some conversions are never seen by the account. We configure consent signals properly, add offline conversion imports where the sale happens by phone or in a CRM, and treat automated bidding with caution while data is thin.",
-      },
-      {
-        title: "London priced differently to the regions",
-        body: "The same keyword can cost far more when the searcher is in the capital. We separate London from campaigns for Manchester, Birmingham, Glasgow or Cardiff, so that bids, budgets and landing pages reflect each region's competition and the value of a customer there.",
-      },
-      {
-        title: "British wording in keywords and ads",
-        body: "Keyword lists built abroad miss British terms and pay for the wrong ones. We build lists around solicitor, estate agent, holiday and car insurance, add American equivalents as negatives where they attract irrelevant clicks, and write adverts with UK spelling and date formats.",
-      },
-    ],
-    areas: [
-      { name: "London", note: "The costliest auctions in the country, managed in separate campaigns with borough or postcode targeting." },
-      { name: "Manchester and the North West", note: "Dense towns close together mean radius targeting overlaps, so locations are set by postcode." },
-      { name: "Birmingham and the Midlands", note: "Manufacturers and trade suppliers advertise to buyers across several counties, needing wider location settings." },
-      { name: "Edinburgh and Glasgow", note: "Scottish campaigns need copy that reflects Scots law for legal and property services." },
-      { name: "Bristol and the South West", note: "Tourism and services are seasonal, so budgets shift across the year." },
-      { name: "Cardiff", note: "Advertisers serving Wales should consider whether Welsh-language adverts suit their audience." },
-    ],
     sectors: [
-      { slug: "legal", note: "Expensive clicks make practice-area and town targeting essential, with claims a regulator would accept." },
-      { slug: "home-services", note: "Tradespeople need calls from their own postcodes, backed by reviews the searcher can verify." },
-      { slug: "ecommerce", note: "Shopping campaigns depend on feeds with sterling, VAT-inclusive prices and accurate UK delivery information." },
+      { slug: "ecommerce", note: "Shopping results depend on the product feed, so accurate titles, prices and stock data directly affect which searches a shop appears for." },
+      { slug: "legal", note: "Enquiries vary widely in value by matter type, so campaigns need structure and conversion values that reflect the difference." },
+      { slug: "home-services", note: "Customers search when something needs fixing and call quickly, so area targeting and call tracking matter more than long copy." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a Google Ads agency in the UK?",
-        a: "We manage Google Ads for UK businesses, which is the work a Google Ads agency does. SERPMOZ itself is an AI-powered digital growth company operating remotely, without an office in the UK. Our UK account work covers conversion tracking with consent, search and Shopping campaigns, Performance Max oversight and landing pages. Calls and reviews take place online in UK working hours with the people who manage the account.",
+        q: "What is the difference between Search campaigns and Performance Max?",
+        a: "Search campaigns show text adverts for keywords you choose and report the search terms in detail. Performance Max places adverts across all of Google's inventory using automation guided by signals, with less granular reporting. Search suits lead generation at modest volumes. Performance Max suits retailers with a clean feed and reliable conversion data. Many accounts run both, each with a defined job.",
       },
       {
-        q: "How do I choose a Google Ads agency in the UK?",
-        a: "Ask who will own the account: it should be you, with the agency given access. Ask how conversions are tracked when visitors decline cookies, and whether offline sales are imported. Request examples of adverts written for a regulated sector if you are in one. Check that London and regional campaigns would be separated. Avoid anyone who reports on clicks and impressions while saying little about enquiries or revenue.",
+        q: "Does SERPMOZ have a UK office?",
+        a: "No. SERPMOZ manages accounts for advertisers in the UK through a remote consulting and delivery model. A Google Ads account is run online wherever the manager sits, and targeting is set in the platform by country, region or radius. What matters is access to your account, your CRM data and a regular conversation with whoever handles the leads.",
       },
       {
-        q: "Which cities in the UK do you manage Google Ads for?",
-        a: "Location targeting makes this simple: we can run campaigns for any UK city, town, county or postcode area without being there. Typical structures separate London from Manchester, Birmingham, Leeds, Bristol, Edinburgh, Glasgow, Cardiff and Belfast, since competition differs in each. We manage everything remotely and do not maintain premises in those cities. Local knowledge about your catchment comes from you and from the account's own search term data.",
+        q: "Can you guarantee a cost per lead?",
+        a: "No. Costs are set in an auction that changes with what other advertisers bid, and conversion depends on your offer and your site as well as the campaign. What we can do is agree a target, structure the account to pursue it, report progress against it and say plainly when the target is unrealistic for the market.",
+      },
+      {
+        q: "How long does Google Ads take to show results?",
+        a: "Adverts can appear on the day a campaign is approved, so traffic is immediate. Useful results take longer. Bidding strategies need conversion data to learn from, which commonly means one to two months before figures settle. Where sales cycles are long, the true value of leads may only be clear after the CRM has caught up.",
       },
       {
         q: "What does Google Ads management cost in the UK?",
-        a: "There are two costs: what you pay Google for clicks, and the management of the account. Click costs depend on your sector and on where the searcher is, with regulated professional services in London at the expensive end. Management effort depends on the number of campaigns, products and regions, and on how much tracking and landing page work is needed. We scope both after reviewing the account.",
+        a: "The cost has two parts: the management fee and the media budget, which goes to Google. The fee depends on the number of campaigns and product lines, whether Shopping feeds are involved, the state of the tracking and how much landing page work is needed. The media budget depends on your market's auction and your goals. Both are set out before you commit.",
       },
       {
-        q: "Do Google Ads for financial or health services need special approval in the UK?",
-        a: "Often, yes. Financial promotions fall under the financial regulator's rules, and health, gambling and alcohol advertising carry restrictions of their own, in addition to Google's advertising policies. The detail changes, so we do not rely on memory: we check current policy when building the campaign and include a sign-off step for your compliance team. Please confirm your obligations with your own legal or compliance adviser.",
+        q: "Will cookie consent stop our tracking from working?",
+        a: "It reduces what can be observed, and it does not have to leave you blind. Consent-aware measurement lets the platform model some of the conversions it cannot see, and outcomes recorded in your CRM can be imported directly. We configure these and label modelled figures in reports. Whether your consent banner meets legal requirements is for your own adviser to confirm.",
       },
     ],
   },
@@ -374,90 +495,119 @@ export const pages: LocalServicePage[] = [
     seo: {
       title: "Local SEO Services in the UK",
       metaDescription:
-        "Local SEO for UK businesses with one branch or many: Business Profiles, British directories, reviews and location pages, tracked by town and postcode district.",
+        "Local SEO services for UK businesses with premises or service areas: profiles, citations, reviews and location pages, managed branch by branch.",
       primaryKeyword: "local seo services in the uk",
-      secondaryKeywords: [
-        "local seo company in the uk",
-        "local seo agency uk",
-        "local seo services uk",
-        "google business profile management uk",
-        "local seo manchester",
-        "local seo birmingham",
-        "multi location seo uk",
+      secondaryKeywords: ["local seo agency uk", "local seo company uk", "local seo services for small business uk", "google business profile management uk", "multi-location seo uk"],
+    },
+    h1: "Local SEO Services in the UK",
+    intro:
+      "SERPMOZ manages local SEO for businesses in the UK that serve customers at premises or within a service area: business profiles, consistent listings, reviews, location pages and local structured data. It is for owners and marketing managers with one branch or many who want more calls, bookings and visits from nearby searchers. British addresses rely on postcodes, towns and counties, and getting those details identical everywhere is where the work starts.",
+    answer: {
+      question: "What do local SEO services include, and how do they help a UK business?",
+      text: "Local SEO makes a business visible to people searching in a particular area, in the map results and the listings below them. It covers business profiles, matching name, address and phone details across directories, a steady flow of real reviews, a useful page for each location and local links. For a British business with branches, each one is treated as its own catchment. Where the searcher is standing affects what they see, which no provider can alter.",
+    },
+    context: {
+      heading: "Why local search matters for businesses with premises in the UK",
+      paragraphs: [
+        "A local search is usually close to a decision. Someone looking for a dentist, a garage or a solicitor in their town intends to contact one, often the same day. The results they see are drawn from business profiles and from pages that mention the area, and are filtered by where the searcher is. A business has no control over that last factor, and a great deal of control over whether its own information is complete, consistent and convincing.",
+        "Addresses here are built on postcodes, and a business may be described by its town, its county, its postcode area or a neighbourhood name, sometimes all four. Directories and map services hold their own copies of those details. When they disagree, for example after a move or a change of phone number, search engines have conflicting information about the same business. Agreeing one standard form and correcting every listing to match is dull work with a real effect.",
+        "The four nations add considerations for some businesses. A firm with branches in England and Scotland may be working under different legal systems, and a business serving Wales may want to consider Welsh-language content where its customers expect it. Reviews deserve care as well. Consumer protection rules generally prohibit fake reviews, and incentivised ones that are not disclosed, so the only sound approach is to ask real customers consistently. Your adviser can confirm the detail.",
       ],
     },
-    h1: "Local SEO Company in the UK by Town, Borough and Postcode",
-    intro:
-      "People in the UK look for local businesses by town, county, London borough or the first half of a postcode, and they often read the whole Business Profile before visiting a website. Each branch or practice therefore competes in its own small catchment. SERPMOZ manages profiles, citations, reviews and location pages for UK businesses remotely, one catchment at a time, without claiming to be based in any of them.",
-    answer: {
-      question: "What does a local SEO company do for businesses in the UK?",
-      text: "A local SEO company makes each of your locations visible when someone nearby searches for what you do. For UK businesses that means an accurate Google Business Profile per branch, consistent details across British directories, a steady flow of real reviews, and a useful page for each town or postcode district served. SERPMOZ does this remotely and tracks every catchment separately.",
+    audiences: [
+      {
+        title: "Multi-branch practices, clinics and retailers",
+        body: "Groups with several sites that currently share one generic page or uneven profiles. Managing each branch as its own market shows which locations are under-performing and gives each what it needs to be found nearby.",
+      },
+      {
+        title: "Trades and services that travel to the customer",
+        body: "Plumbers, electricians, cleaners and similar firms with no shopfront. Service-area settings, pages for the areas truly covered and a routine for collecting reviews after each job make the business visible where it works.",
+      },
+      {
+        title: "Single-location businesses with a nearby catchment",
+        body: "An independent practice, salon, garage or restaurant whose customers live or work within a short journey. A complete profile, accurate details and recent reviews are often what separates the businesses shown from those that are not.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Inconsistent details across directories",
+        body: "Old addresses, former phone numbers and duplicate listings accumulate over the years. Each one is found and corrected against an agreed standard. Some directories take weeks to update, so this is started first and checked again later.",
+      },
+      {
+        title: "Postcodes, towns and counties",
+        body: "The same premises may be listed under a postal town, a village name or a county, and customers search using any of them. Location pages and profiles need to use the names local people use, without stuffing every variant into the text.",
+      },
+      {
+        title: "A review routine staff will follow",
+        body: "Reviews arrive when someone asks at the right moment, and stop when nobody does. The routine has to be simple enough for a busy branch: who asks, when, by what means, and who replies to what comes in.",
+      },
+      {
+        title: "Each branch competes in its own area",
+        body: "A strong branch does nothing for a weak one in another town. Visibility is measured per location from several points in its catchment, so effort goes where a branch is being missed by searchers close to it.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Audit",
+        body: "Every profile, directory listing and location page is reviewed, branch by branch. A first visibility scan is run across each catchment, and we count the calls, direction requests and bookings currently traceable to search as a baseline.",
+      },
+      {
+        stage: "Correct",
+        body: "Wrong details, duplicate listings and unclaimed profiles are fixed before anything else, against one agreed format for name, address and phone. Categories, hours, services and photos on each business profile are completed at this stage.",
+      },
+      {
+        stage: "Build",
+        body: "Location pages are written or rebuilt with content specific to each branch: what it offers, who works there, how to reach it. Local structured data is added and validated, and each profile is linked to its own page.",
+      },
+      {
+        stage: "Sustain",
+        body: "The review routine starts in each branch, with replies to reviews handled promptly. Alongside it we pursue local links and mentions from community organisations, suppliers and regional press. This slow, cumulative effort is where lasting gains tend to come from.",
+      },
+      {
+        stage: "Compare",
+        body: "A monthly comparison across locations covers visibility, profile actions and enquiries. Weaker branches get specific attention, stronger ones show what to repeat, and the priorities for the following month are set from that comparison.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The audit takes the first couple of weeks and corrections begin straight after. Fixes to profiles and listings often show within weeks, though some directories are slow to reflect them. Location pages follow in the second month. Gains in contested areas usually take three to six months or more, since they rest on reviews and local references that accumulate gradually and on what nearby competitors are doing.",
+        "Reports are monthly and organised by location: visibility, calls, direction requests and bookings, with the next month's priorities for each branch.",
+      ],
+      notGuaranteed: [
+        "A place in the map results for any search or location",
+        "A number of reviews, or the rating customers choose to give",
+        "How quickly a directory or map service applies a correction",
+      ],
     },
-    searches: [
-      {
-        title: "Postcode districts and high streets",
-        body: "Searchers name the place precisely: a town, a suburb, a high street, or a postcode district such as M20 or BS8. Results change with the searcher's position, so a branch can appear in one part of a city and be absent a short drive away.",
-      },
-      {
-        title: "Vetted directories for trades",
-        body: "For plumbers, roofers and electricians, many households check Checkatrade or a similar vetted directory, then read Google reviews before calling. A tradesperson's listing on those sites and the consistency of its details affect both trust and map visibility.",
-      },
-      {
-        title: "Neighbourhood recommendations",
-        body: "Facebook community groups for a town or estate carry a lot of local recommendation. People ask for a name there and then search it on Google Maps, so the profile that appears needs correct hours, photos and recent replies.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "British directories and data sources",
-        body: "Citations that matter in the UK are British ones: national business directories, trade bodies, vetted trader sites and local chamber listings. We audit name, address and phone details across them, correct old addresses and remove duplicates, because inconsistent records weaken a profile's standing.",
-      },
-      {
-        title: "Reviews across several platforms",
-        body: "British consumers read Google reviews, Trustpilot and sector sites side by side. We set up a routine for asking every customer, on the platform that suits the sector, and for replying to criticism calmly. Reviews are never written, bought or filtered by us.",
-      },
-      {
-        title: "Service areas for mobile businesses",
-        body: "A surveyor in Kent or a heating engineer in Lancashire travels to customers and has no shopfront. Service areas must reflect where the business will really go, and the profile must follow Google's rules on hidden addresses, which we check at set-up.",
-      },
-      {
-        title: "Separate nations, separate details",
-        body: "Branches in Scotland, Wales and Northern Ireland may need different service descriptions, since law and public institutions differ. In Wales, some businesses add Welsh to profiles and pages. We decide this location by location instead of copying one English template.",
-      },
-    ],
-    areas: [
-      { name: "London", note: "Catchments are small and map results shift within a few streets, borough by borough." },
-      { name: "Manchester", note: "Suburbs such as Didsbury and Chorlton are searched by name, separately from the city centre." },
-      { name: "Birmingham", note: "Surrounding towns like Solihull and Sutton Coldfield behave as their own local markets." },
-      { name: "Leeds and Bradford", note: "Neighbouring cities with overlapping catchments, where each branch needs a distinct profile and page." },
-      { name: "Glasgow and Edinburgh", note: "Scottish branches need Scots law wording for legal, property and financial services." },
-      { name: "Cardiff and Swansea", note: "Welsh place names and bilingual expectations affect how listings and pages are written." },
-    ],
     sectors: [
-      { slug: "home-services", note: "Tradespeople are picked from map results, vetted directories and neighbour recommendations within a few postcodes." },
-      { slug: "dental", note: "Patients choose a practice near home or work and read recent reviews before booking." },
-      { slug: "real-estate", note: "Agents win instructions from sellers and landlords searching their own town, alongside the property portals." },
+      { slug: "dental", note: "Patients choose a practice near home or work and read reviews first, so each surgery's profile and page carry the decision." },
+      { slug: "home-services", note: "Jobs are urgent and local, and a visible profile with recent reviews is often the whole of the customer's research." },
+      { slug: "automotive", note: "Garages and dealerships draw from a driving-distance catchment, where accurate hours, services and location details determine who gets the call." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a local SEO company in the UK?",
-        a: "SERPMOZ is an AI-powered digital growth company, and local SEO for UK businesses is one of its services. We are not local in the literal sense: we have no British office and work remotely. That does not limit the work, because map visibility depends on where your premises and customers are. We manage profiles, citations, reviews and location pages for each of your branches.",
+        q: "What is the difference between local SEO and Google Maps SEO?",
+        a: "Google Maps SEO concentrates on the Business Profile and the map pack. Local SEO is the wider programme: profiles on other platforms, directory listings, reviews, location pages on your own site, structured data and local links, along with tracking of calls and bookings. The map work sits inside it. A business with one site may need only part; a group with many usually needs all of it.",
       },
       {
-        q: "How do I choose a local SEO company in the UK?",
-        a: "Ask how it tracks rankings, since a single figure for a whole city hides what happens postcode by postcode. Ask which British directories it audits and how it handles duplicate or outdated listings. Ask about its review process, and walk away from anyone offering to supply reviews. If you have branches in Scotland or Wales, check that it will adapt wording there. Reporting should show calls, direction requests and enquiries per branch.",
+        q: "Does SERPMOZ have a UK office?",
+        a: "No. SERPMOZ supports businesses across the UK through a remote consulting and delivery model. For local search it is your premises that matter, not the agency's: map results are based on where your business is and where the searcher is. Profiles, listings and pages are all managed online, and your branch staff handle the part that happens in person.",
       },
       {
-        q: "Which UK cities and towns do you cover for local SEO?",
-        a: "All of them, managed remotely. A profile in Aberdeen, Norwich or Plymouth is handled through the same tools as one in London, Manchester or Birmingham, and visibility is tracked from points inside each catchment. We are not physically present in any UK town, so tasks that need someone on site, such as photographs or receiving a verification code, are done by your branch staff with our guidance.",
+        q: "Can you guarantee a place in the map pack?",
+        a: "No. Map results change with the searcher's position, the time and what competitors do, so the same search returns different businesses a few streets apart. Nobody outside the search engine controls that. What can be done is to make each profile complete and accurate, build reviews steadily, and measure visibility across the catchment to see whether it is widening.",
+      },
+      {
+        q: "How long does local SEO take to show results?",
+        a: "Corrections to wrong details can take effect within weeks. Building visibility in an area where several established businesses compete takes longer, commonly three to six months and sometimes more. A new location with no reviews starts further back than one with a long history. Progress is reported per branch, so slow areas are visible early.",
       },
       {
         q: "What does local SEO cost in the UK?",
-        a: "The number of locations is the main driver, because each branch has its own profile, citations, page and review routine. After that come the state of your existing listings, how competitive each catchment is, and whether you are a fixed-premises or service-area business. A single practice in a market town needs far less than a chain across several cities. We quote after auditing your current listings.",
+        a: "The number of locations is the main driver, followed by the state of the existing listings, how many location pages need writing and whether review handling is included. A single site with tidy data needs far less than a group with years of inconsistent listings. After the audit you receive a scope showing the work per branch.",
       },
       {
-        q: "How should a business with branches across the UK structure its location pages?",
-        a: "Give every branch its own page with its address, opening hours, staff, services offered there and reviews from local customers. Avoid a template where only the town name changes, because those pages add nothing for the reader and are easy for search engines to discount. Group pages by region or nation where that helps people find them, and connect each one to its own Business Profile.",
+        q: "We have no shopfront. Can local SEO still work for us?",
+        a: "Yes, within limits. A business that travels to customers can set a service area on its profile in place of a public address, following the platform's rules for such businesses. Visibility tends to be strongest near the registered base and weaker further out. Pages for the areas you serve and reviews that mention the work help extend it.",
       },
     ],
   },
@@ -465,90 +615,121 @@ export const pages: LocalServicePage[] = [
     place: "uk",
     service: "cro",
     seo: {
-      title: "CRO Agency in the UK",
+      title: "CRO Services in the UK",
       metaDescription:
-        "Conversion rate optimisation for UK websites: research and testing built around cookie consent, Trustpilot-style proof, sterling pricing and British tone.",
-      primaryKeyword: "cro agency in the uk",
-      secondaryKeywords: [
-        "conversion rate optimisation agency uk",
-        "cro services in the uk",
-        "cro company uk",
-        "conversion optimisation services uk",
-        "cro agency london",
-        "cro agency manchester",
+        "CRO services for UK businesses: reliable measurement, visitor research and tested changes that raise enquiries or sales from the traffic you already have.",
+      primaryKeyword: "cro services in the uk",
+      secondaryKeywords: ["cro agency uk", "conversion rate optimisation agency uk", "conversion rate optimisation services uk", "cro company in the uk", "a/b testing agency uk"],
+    },
+    h1: "CRO Services in the UK",
+    intro:
+      "SERPMOZ provides conversion rate optimisation for businesses selling in the UK: trustworthy measurement, research into why visitors leave, and changes that are fixed or tested according to the evidence. It is for companies with steady traffic and a conversion problem nobody has explained. Consent choices mean part of that traffic goes unmeasured here, which makes sound analytics the first job and raises the value of every visit that can be observed.",
+    answer: {
+      question: "What is conversion rate optimisation, and how does it help a UK business?",
+      text: "CRO increases the share of visitors who buy, book or enquire by finding out why others do not and changing the site in response. It combines reliable analytics, research into visitor behaviour, written hypotheses and controlled tests where traffic allows. For a British site it also covers the details buyers check before committing: prices shown clearly with tax, delivery and returns terms, and evidence that the company is real. No uplift can be promised.",
+    },
+    context: {
+      heading: "Why conversion work pays for a site selling to UK customers",
+      paragraphs: [
+        "Every channel that brings a visitor costs something, in media spend or in the effort behind content and search. If the page they land on loses them, that cost is wasted, and adding more traffic only scales the loss. Conversion work looks at the other side of the sum: the value of each visit already being paid for. An improvement there applies to every channel at once, which is why it is often worth doing before raising budgets.",
+        "Buyers here have well-known ways of checking a company before they commit. Independent review platforms are widely used, and Companies House lets anyone look up a registered company. A site that makes those checks easy, with a registered name and address, real reviews and clear terms, removes a reason to hesitate. Pricing is part of this: consumers generally expect the price shown to include VAT, while business buyers often expect it stated separately.",
+        "Consent affects the work directly. Analytics tools generally need a visitor's agreement before setting cookies, so the recorded data describes only those who agreed. That has two consequences. Test results rest on a smaller sample than the true traffic, so tests take longer to reach a conclusion. And the consent banner itself is part of the experience, sometimes the first thing a visitor meets. How it must behave is a legal question for your adviser.",
       ],
     },
-    h1: "CRO Agency in the UK for Sites Whose Buyers Check Before They Commit",
-    intro:
-      "Buyers in the UK verify before they buy. They read Trustpilot, look a company up on Companies House and notice when a page was written for another country. On top of that, consent banners hide a share of visits from analytics. Conversion work in the UK is about earning trust on the page and deciding well with partial data. SERPMOZ carries out that research and testing for UK businesses remotely.",
-    answer: {
-      question: "What does a CRO agency do for businesses in the UK?",
-      text: "A CRO agency finds out why visitors leave without enquiring or buying, then changes the site to remove those reasons and measures the effect. For UK sites the usual causes are missing proof, unclear pricing or delivery terms, copy that reads as imported, and forms that ask too much. SERPMOZ does this remotely, using research, analytics set up around consent, and controlled tests where traffic allows.",
+    audiences: [
+      {
+        title: "Online shops with traffic and a leaking checkout",
+        body: "Retailers whose visitors add to basket and then leave. Funnel analysis and session recordings show where, and research shows why: unexpected delivery costs, a forced account, a payment option that is missing.",
+      },
+      {
+        title: "Lead-generation sites with forms that underperform",
+        body: "Service companies paying for clicks to pages that rarely produce an enquiry. The work examines the offer, the proof, the form and what happens after submission, since lead quality matters as much as lead count.",
+      },
+      {
+        title: "Software companies with a trial or demo funnel",
+        body: "Businesses whose sign-up path has several steps and no agreed view of where prospects drop out. Mapping the funnel against CRM outcomes shows which step to work on first, and which changes reach revenue.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Smaller samples after consent",
+        body: "Only visitors who accept analytics cookies appear in the data, so tests have fewer observations to work with. Test plans are sized on consented traffic, and where that is too low we say so and use before-and-after measurement on clear fixes.",
+      },
+      {
+        title: "Not enough traffic to test everything",
+        body: "A split test needs a certain volume to separate a real effect from chance. Many pages do not have it. The plan reserves testing for pages that can support it and relies on research-led fixes elsewhere.",
+      },
+      {
+        title: "Opinions in place of evidence",
+        body: "Redesigns are often driven by the preference of whoever is most senior. Each proposed change is written as a hypothesis with the evidence behind it and a way to judge it, which gives the discussion something firmer to rest on.",
+      },
+      {
+        title: "False winners from weak tests",
+        body: "Stopping a test early or checking many metrics at once produces results that vanish later. Tests run for their planned duration against one primary measure, and an inconclusive result is recorded as inconclusive, not dressed up as a win.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Measure",
+        body: "We check what is tracked, what is missing and whether analytics agrees with your CRM or order system. Conversion definitions are agreed and faults repaired, because a test run on figures nobody trusts settles nothing.",
+      },
+      {
+        stage: "Research",
+        body: "Funnel analysis, session recordings, on-site surveys, customer interviews and a heuristic review of key pages are brought together. The output is a short report on where visitors are lost and the likeliest reasons, in order of importance.",
+      },
+      {
+        stage: "Prioritise",
+        body: "Findings become written hypotheses, each scored for likely effect, confidence and effort. We also state which pages have enough traffic for split testing and which do not, so the plan matches what the site can support.",
+      },
+      {
+        stage: "Change",
+        body: "Clear faults are fixed and measured before and after. Uncertain ideas run as controlled experiments for their planned length, each asking one question. Campaign landing pages and individual funnel steps are included where the research points to them.",
+      },
+      {
+        stage: "Learn",
+        body: "Results are read against revenue or lead quality and written into a learning log, whether the change won, lost or showed nothing. The backlog is reordered each month in the light of what was learned.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The measurement audit comes first and typically takes a couple of weeks, with research following over the next few. You should have a findings report and a prioritised plan within roughly six weeks. Obvious fixes can then go live quickly. Experiments take as long as your traffic requires, often several weeks each, and a share of well-designed tests will show no difference, which is still useful to know.",
+        "A monthly review covers what was fixed, what was tested, what each result means for revenue or lead quality, and what is next in the backlog.",
+      ],
+      notGuaranteed: [
+        "A particular increase in conversion rate, revenue or leads",
+        "That any single experiment will produce a winning variation",
+        "How long a test needs before its result can be relied on",
+      ],
     },
-    searches: [
-      {
-        title: "Traffic is fine, enquiries are not",
-        body: "The need usually shows up as a complaint: paid clicks cost more each year and the enquiry rate has not moved. UK marketing heads then search for a CRO agency, or for conversion rate optimisation with their platform name attached.",
-      },
-      {
-        title: "Checkout and basket problems",
-        body: "Online retailers look for help when baskets are abandoned at delivery or payment. Typical searches describe the symptom, such as checkout drop-off or Shopify conversion help, and the cause is often delivery cost, returns terms or VAT appearing late.",
-      },
-      {
-        title: "Lost data after a consent banner",
-        body: "Many firms begin looking after a stricter cookie banner cut their reported traffic and conversions. They search for help with analytics and consent as much as for testing, and the two jobs have to be done together.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Decisions with consent-limited data",
-        body: "Analytics and testing tools rely on cookies that need consent, so only part of the audience is measured. We set up measurement to respect that, say plainly which numbers are modelled, and use interviews, session review and form analysis where the sample is too small to test.",
-      },
-      {
-        title: "Independent proof on the page",
-        body: "A British visitor wants evidence from somewhere other than you: a Trustpilot rating, a trade body membership, a regulator's register number, named staff. We test where that proof sits and how it is worded, and we only display ratings and memberships that are real and current.",
-      },
-      {
-        title: "Prices and terms shown the UK way",
-        body: "Consumers expect sterling, VAT included, delivery cost stated early and a clear returns policy. Business buyers expect to see whether VAT is excluded. Pages that leave this to the last step lose people who assumed the worst, so we fix the order before testing anything subtle.",
-      },
-      {
-        title: "Understatement converts better",
-        body: "Countdown timers, false scarcity and shouted guarantees tend to backfire with UK audiences, and some of them breach advertising standards. We test calmer alternatives: specific benefits, plain fees, and what happens after the form is sent. Pressure tactics are removed, whatever they did elsewhere.",
-      },
-    ],
-    areas: [
-      { name: "London", note: "Clicks cost the most here, so each gain in enquiry rate is worth more." },
-      { name: "Manchester and Leeds", note: "Northern ecommerce and services firms often want regional proof and local case material shown." },
-      { name: "Edinburgh", note: "Financial firms need conversion changes cleared by compliance before any test goes live." },
-      { name: "Birmingham and the Midlands", note: "Manufacturers convert through quote forms and catalogue requests, which need different research from retail." },
-      { name: "Cardiff", note: "Organisations serving Wales may need bilingual journeys, which doubles what a test must cover." },
-    ],
     sectors: [
-      { slug: "ecommerce", note: "Delivery, returns and VAT-inclusive pricing decide whether a British shopper completes the basket." },
-      { slug: "finance", note: "Application forms are long and regulated, so clarity and reassurance at each step matter most." },
-      { slug: "saas", note: "UK buyers want sterling pricing, data location answers and a trial without a sales call." },
+      { slug: "ecommerce", note: "Purchases happen on the site itself, so basket, delivery and payment steps can be measured and improved directly." },
+      { slug: "saas", note: "Trial and demo funnels have several measurable steps, and a small improvement at one stage carries through to revenue." },
+      { slug: "finance", note: "Application forms are long and trust matters, so clarity and reassurance at each step affect completion, subject to compliance review." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a CRO agency in the UK?",
-        a: "SERPMOZ is an AI-powered digital growth company that carries out conversion rate optimisation for UK businesses. The work is the same as a CRO agency's: measurement, user research, heuristic review, prioritised hypotheses and experiments. We deliver it remotely and have no UK office. Research with your customers is run online, and results are shared in documents your team can open whenever it needs to.",
+        q: "What is the difference between CRO and A/B testing?",
+        a: "A/B testing is one method within CRO. It compares two versions of a page with live traffic to see which performs better. CRO is the wider practice: fixing measurement, researching why visitors leave, forming hypotheses and deciding what to change. Some changes are tested, and some are plain faults that only need fixing. A site with low traffic can do CRO with little testing.",
       },
       {
-        q: "How do I choose a CRO agency in the UK?",
-        a: "Ask what happens when your site has too little traffic for a valid test, because many UK sites do once consent is taken into account. A sound answer involves research and careful before-and-after comparison, not a test run anyway. Ask how consent affects their tools. Look for a written hypothesis behind each change. Be cautious of promised uplifts, and of tactics that rely on urgency British buyers distrust.",
+        q: "Does SERPMOZ have a UK office?",
+        a: "No. SERPMOZ delivers conversion work for businesses in the UK through a remote consulting and delivery model. The work is done in analytics, research tools and your site's code, and customer interviews are held by video call. It needs access to your data and a developer who can ship changes, on your side or ours, more than it needs anyone in the room.",
       },
       {
-        q: "Which UK cities do you provide CRO for?",
-        a: "Conversion work is done on the website, so location is no barrier. We can work remotely with a business in London, Manchester, Birmingham, Leeds, Bristol, Edinburgh, Glasgow, Cardiff or Belfast, and with firms based outside the cities. Where your customers are does matter: a page aimed at Scottish or Welsh buyers may need different proof or wording. We have no premises in these places.",
+        q: "Can you guarantee a higher conversion rate?",
+        a: "No. A test exists because the outcome is uncertain, and a fair proportion of sensible ideas make no measurable difference. Anyone promising a fixed uplift has decided the result before the experiment. What we commit to is sound measurement, research that explains the problem, properly run tests and an accurate record of what each one showed.",
+      },
+      {
+        q: "How long does CRO take to show results?",
+        a: "Research findings arrive within weeks and often reveal faults that can be fixed at once. Controlled tests depend on traffic: a busy page may give an answer in a fortnight, a quiet one may need two months or may not be testable at all. Gains tend to come as a series of modest improvements over several months.",
       },
       {
         q: "What does CRO cost in the UK?",
-        a: "Cost reflects how much research and testing the site needs. A simple lead generation site with one form is lighter than a retailer with a full checkout or a lender with a multi-step application. Fixing measurement and consent set-up first adds effort at the start. Sites with enough traffic for experiments need design and development time for each variant. We scope after reviewing analytics and the main journeys.",
+        a: "Cost depends on the state of your tracking, how much research is needed, how many pages or funnel steps are in scope and whether we build the variations or your developers do. Testing tools carry their own licence costs. A site with little traffic needs a lighter, research-led scope, and we would say so at the outset.",
       },
       {
-        q: "Can we run A/B tests if most visitors decline cookies?",
-        a: "Sometimes. Whether a testing tool needs consent depends on how it works and how the rules apply to you, which your adviser should confirm. If only consenting visitors can be included, the test takes longer and reflects a part of your audience. Where numbers are too low, we rely on research and staged changes with close monitoring. We tell you which approach the evidence supports before work starts.",
+        q: "Our traffic is low. Is CRO still worth doing?",
+        a: "Often, yes, in a different form. Split testing needs volume, and without it the results are noise. Research does not: recordings, surveys, interviews and an expert review can show why visitors hesitate, and clear problems can be fixed and compared before and after. We tell you at the start which approach your numbers support.",
       },
     ],
   },
@@ -556,91 +737,121 @@ export const pages: LocalServicePage[] = [
     place: "uk",
     service: "linkedin-marketing",
     seo: {
-      title: "LinkedIn Marketing Agency in the UK",
+      title: "LinkedIn Marketing Services in the UK",
       metaDescription:
-        "LinkedIn marketing for UK firms bought on reputation: partner and founder content in a British register, compliance sign-off, audiences from London to Leeds.",
-      primaryKeyword: "linkedin marketing agency in the uk",
-      secondaryKeywords: [
-        "linkedin marketing services in the uk",
-        "linkedin marketing company uk",
-        "linkedin agency uk",
-        "linkedin thought leadership agency uk",
-        "linkedin marketing agency london",
-        "linkedin marketing manchester",
+        "LinkedIn marketing for UK B2B firms: leadership profiles, company page and content programmes that build reputation with the people who commission work.",
+      primaryKeyword: "linkedin marketing services in the uk",
+      secondaryKeywords: ["linkedin marketing agency uk", "linkedin marketing company in the uk", "linkedin content agency uk", "b2b linkedin marketing uk", "linkedin thought leadership uk"],
+    },
+    h1: "LinkedIn Marketing Services in the UK",
+    intro:
+      "SERPMOZ runs organic LinkedIn programmes for business-to-business firms in the UK: positioning, leadership profiles, the company page, regular posts in each person's own voice and a simple system for staff to take part. It is for firms whose buyers look up the people before they call. Professional and financial services are a well-known part of the British economy, and in those fields reputation is attached to named individuals.",
+    answer: {
+      question: "What is LinkedIn marketing, and how does it help a B2B firm in the UK?",
+      text: "LinkedIn marketing is the organic use of the platform to build a firm's reputation with the professionals who influence its sales. It pairs a company page with the personal profiles of leaders and specialists, whose posts tend to travel further. For a British firm the work means a measured tone, specific opinions and content cleared by compliance where the sector requires it. It builds familiarity over months and should not be judged as a direct sales channel.",
+    },
+    context: {
+      heading: "Why an organic LinkedIn presence suits UK professional firms",
+      paragraphs: [
+        "Business purchases of any size involve several people, and each of them is likely to look at who they would be dealing with. A profile that explains what a person does, alongside posts that show how they think, answers that question before a meeting. Activity from individuals tends to reach further than a company page because people respond to people. The page still matters as the official record that a visitor checks to confirm the firm is what it says.",
+        "Tone decides whether this works. British professional audiences are generally understood to prefer understatement and substance, and a feed of self-congratulation or borrowed motivational phrases can do more harm than silence. What tends to earn attention is a specific view from someone who does the work: what a change in the rules means in practice, what a common mistake costs, what a recent project taught. That material exists inside every firm and is rarely written down.",
+        "Regulated professions have a further consideration. Solicitors, accountants, financial advisers and similar practitioners answer to professional bodies or regulators for what they say in public, including on social platforms. A programme for such a firm needs an approval step that is quick enough not to kill the cadence and firm enough to catch a problem. We build that into the workflow, and the rules that apply to your profession are for your own compliance lead to interpret.",
       ],
     },
-    h1: "LinkedIn Marketing Agency in the UK for Firms Bought on Reputation",
-    intro:
-      "Solicitors, accountants, advisers and consultancies make up a large part of UK business, and they are bought on reputation. Before a first call, a British buyer looks up the partner, adviser or founder on LinkedIn and reads what they have said. The firm's page matters less than its people. SERPMOZ plans and runs LinkedIn marketing for UK businesses remotely, building the profile of named experts with their approval.",
-    answer: {
-      question: "What does a LinkedIn marketing agency do for businesses in the UK?",
-      text: "It makes a firm and its named experts visible to the people who commission their work. For UK businesses that covers positioning, posts and articles in the voices of partners or founders, the company page, employee advocacy and follow-up with sales. SERPMOZ does this remotely. We draft from interviews with your experts, they approve every word, and regulated firms get a compliance check before posting.",
+    audiences: [
+      {
+        title: "Professional practices led by partners",
+        body: "Law, accountancy, consultancy and advisory firms where clients choose a person as much as a firm. Partner profiles and regular posts let prospective clients form a view of that person before the first conversation.",
+      },
+      {
+        title: "B2B technology and software companies",
+        body: "Companies selling to named roles in other businesses, with founders and specialists who have opinions worth hearing. Organic posts warm the audience that sales will later approach and that paid campaigns will later target.",
+      },
+      {
+        title: "Firms whose leaders have no time to write",
+        body: "Senior people who want a presence and cannot spare the hours. Short recorded interviews supply the material, we draft in their voice, and they approve each post before it is published.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Finding a voice that sounds like the person",
+        body: "A post that reads as written by a committee is ignored. Drafts are built from recorded conversations, in the speaker's own phrasing, and early posts are used to calibrate until the leader recognises the voice as theirs.",
+      },
+      {
+        title: "Approval without losing momentum",
+        body: "In regulated firms every post may need sign-off, and slow approval breaks the rhythm. We agree in advance who approves, within what time, and which topics are pre-cleared, so that compliance is a step in the process and never a blockage.",
+      },
+      {
+        title: "Restraint reads better than promotion",
+        body: "Audiences here tend to discount superlatives and sales language. Posts are written around a specific observation or lesson, with the commercial point left implicit, which generally earns more engagement from the people who matter.",
+      },
+      {
+        title: "Linking activity to enquiries",
+        body: "Organic LinkedIn rarely produces a form fill that can be traced. Measurement looks at who engaged, by company and role, and at the inbound conversations that mention the content, shared with sales so they can follow up.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Audit",
+        body: "We review the company page, the key personal profiles, competitors' activity and the current audience. The result shows who follows and engages now, how that compares with the buyers you want, and where the profiles undersell their owners.",
+      },
+      {
+        stage: "Position",
+        body: "A session with each chosen voice settles what that person should be known for. Profiles and the page are rewritten to match, themes and formats are set for each voice, and the approval workflow is agreed with compliance.",
+      },
+      {
+        stage: "Capture",
+        body: "Short recorded conversations with each leader supply several weeks of material at a time. We draft posts from the recordings in the speaker's own words, and the first batch is used to tune the voice before a regular cadence begins.",
+      },
+      {
+        stage: "Publish",
+        body: "Approved posts go out on a steady schedule. Authors are prompted to reply to comments and to engage with others in their field, and staff receive a pack of content they can share or adapt, which widens reach through their own networks.",
+      },
+      {
+        stage: "Review",
+        body: "Each month we look at who engaged, by company and role, which themes earned attention and what inbound interest followed. Themes for the next month are chosen from that, and engaged accounts are passed to sales.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The audit and positioning take the first fortnight or so, and profiles are rewritten in the weeks after. First interviews and posts usually follow within six weeks of starting. A steady, recognisable voice typically takes two to three months to establish, and inbound interest that can be linked to the activity tends to appear over six months to a year, depending on how consistently each author takes part.",
+        "Monthly reporting shows engagement from target companies and roles, the themes that worked and any conversations that followed. Follower counts are reported and are not the aim.",
+      ],
+      notGuaranteed: [
+        "A number of followers, impressions or reactions on any post",
+        "That organic posts will produce a set number of enquiries",
+        "How the platform's feed distributes a post on a given day",
+      ],
     },
-    searches: [
-      {
-        title: "Looking up the person first",
-        body: "A finance director in Reading or a general counsel in Leeds searches an adviser's name and opens the LinkedIn profile from the results. What they find there, a clear headline, recent posts and shared connections, often decides whether the call happens.",
-      },
-      {
-        title: "Following sector voices",
-        body: "British professionals follow a small number of people who comment sensibly on their sector: employment law changes, tax announcements, property, pensions. Being one of those voices before the buyer has a need is the purpose of the work.",
-      },
-      {
-        title: "Searching for an agency by need",
-        body: "Firms search for a LinkedIn marketing agency after a partner asks why competitors appear in their feed. Others arrive wanting thought leadership, ghostwriting for directors or employee advocacy, and use those terms with UK or a city name.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "A dry, exact tone",
-        body: "The confessional, motivational style common on LinkedIn sits badly with UK professional audiences. Posts that work here are specific and slightly understated: a point of law explained, a mistake seen often, a view on a consultation. We write in that register and cut the rest.",
-      },
-      {
-        title: "Comment tied to the UK calendar",
-        body: "Budgets and fiscal statements, the tax year end, regulatory consultations and court decisions give experts something timely to say. We keep an editorial calendar of those moments for each client's sector, with drafts ready so a partner can post while the subject is current.",
-      },
-      {
-        title: "Compliance for regulated voices",
-        body: "A post by a financial adviser or solicitor can count as a promotion under their regulator's rules. Each client's sign-off route is built into the schedule, and we avoid performance claims and client references without permission. The firm's compliance officer decides what is acceptable.",
-      },
-      {
-        title: "Regional networks matter",
-        body: "Business communities in Manchester, Birmingham, Bristol and Edinburgh are close-knit, and people notice who turns up in them. Content that refers to regional events, local deals and named local partners travels further in those networks than national material issued from a London head office.",
-      },
-    ],
-    areas: [
-      { name: "London", note: "Dense with corporate decision-makers in finance and law, where partner profiles are checked before meetings." },
-      { name: "Manchester", note: "A professional community that favours northern voices and engages with regional business news." },
-      { name: "Edinburgh", note: "Asset managers and Scots lawyers follow commentary specific to Scottish regulation and markets." },
-      { name: "Birmingham", note: "Advisers serving Midlands manufacturers gain from posts about the region's supply chains and deals." },
-      { name: "Leeds", note: "A legal and financial centre where partner-led commentary reaches Yorkshire businesses directly." },
-      { name: "Bristol", note: "Technology, aerospace and creative firms form networks where founder voices carry weight." },
-    ],
     sectors: [
-      { slug: "professional-services", note: "Consultancies, recruiters and surveyors win work on reputation, and LinkedIn is where it is seen." },
-      { slug: "legal", note: "Partners who explain developments in plain English are remembered when a matter arises." },
-      { slug: "b2b", note: "Long buying cycles involve several people, each of whom checks the supplier's experts." },
+      { slug: "professional-services", note: "Clients choose an adviser they trust, and visible, consistent expertise from named partners helps that trust form before contact." },
+      { slug: "finance", note: "Decisions are cautious and relationship-led, so measured commentary from qualified people builds credibility, once cleared by compliance." },
+      { slug: "technology", note: "Founders and engineers with clear views on their field attract the technical and commercial buyers who later evaluate the product." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a LinkedIn marketing agency in the UK?",
-        a: "SERPMOZ is an AI-powered digital growth company, and it provides LinkedIn marketing to UK businesses as a remote service. There is no SERPMOZ office in the UK. The work covers positioning, leadership content, the company page, advocacy and measurement. Interviews with your experts happen by video, drafts are approved by the named individual, and nothing is posted in someone's name without their consent.",
+        q: "How is LinkedIn marketing different from LinkedIn Ads?",
+        a: "LinkedIn marketing is organic: profiles, a company page and regular posts that reach the networks of your own people, at the cost of time and consistency. LinkedIn Ads pays to reach an audience chosen by role, company and industry from the day a campaign launches. Organic activity builds reputation that remains; advertising stops with the budget. The two work well together.",
       },
       {
-        q: "How do I choose a LinkedIn marketing agency in the UK?",
-        a: "Read the posts it has written for others and ask whether a British partner would put their name to them. Ask how it captures an expert's real views, because content invented without them is easy to spot. For regulated firms, ask where compliance approval sits. Check that success is measured by conversations with the right people and by sales follow-up, not follower counts or impressions alone.",
+        q: "Does SERPMOZ have a UK office?",
+        a: "No. SERPMOZ runs LinkedIn programmes for firms in the UK through a remote consulting and delivery model. Interviews with your leaders are recorded on video calls, drafts are shared for approval and posts are published from each person's own account. The voice and the opinions are theirs, so what matters is regular access to them, not where we sit.",
       },
       {
-        q: "Which cities in the UK do you offer LinkedIn marketing in?",
-        a: "LinkedIn work has no geographic limit, so we can support a firm in any UK city remotely. Audience planning does use geography: a practice may want to reach directors in London and the Thames Valley, owner-managed businesses around Manchester and Leeds, or Scottish clients in Edinburgh, Glasgow and Aberdeen. We define those audiences with you. We do not attend local events or keep staff in these cities.",
+        q: "Can you guarantee leads from LinkedIn?",
+        a: "No. Organic reach is decided by the platform's feed and by whether people find a post worth engaging with, and the path from a post to an enquiry is indirect. What can be delivered is a consistent, credible presence, a record of which target accounts are engaging, and a handover to sales so interest is followed up.",
+      },
+      {
+        q: "How long does LinkedIn marketing take to show results?",
+        a: "Profiles can be improved in the first month. A recognisable voice generally needs two or three months of regular posting, and the audience grows from there. Inbound conversations that mention the content tend to come later, often after six months or more. Progress is quicker where the author replies to comments and takes part personally.",
       },
       {
         q: "What does LinkedIn marketing cost in the UK?",
-        a: "It depends on how many people are being supported and how often they publish. A programme for one founder is small. A firm with several partners, a company page, an advocacy scheme and compliance review of each post needs considerably more time. Video and document formats cost more to produce than text. We agree the scope after discussing who should be visible and to whom.",
+        a: "It depends mainly on the number of voices in the programme, how often each posts, the formats used and whether employee advocacy is included. A single founder posting weekly is a small programme. Several partners, a company page and documents or video is a larger one. The proposal lists each element so you can start small.",
       },
       {
-        q: "Should our partners post themselves, or should the firm page do it?",
-        a: "Both, with the weight on individuals. UK buyers of professional services check the person who would advise them, and posts from people usually reach further than posts from company pages. The firm page then acts as a reference point: who you are, what you do, recent news. We help partners post in their own voice, drawn from interviews, and keep the page consistent with what they say.",
+        q: "Will posts written with your help still sound like our people?",
+        a: "They should, and the process is designed for it. Every post starts from a recorded conversation with the author, uses their phrasing and is approved by them before it goes out. We do not publish under anyone's name without that approval. If a draft does not sound right, it is rewritten until it does or dropped.",
       },
     ],
   },
@@ -650,88 +861,119 @@ export const pages: LocalServicePage[] = [
     seo: {
       title: "AEO Services in the UK",
       metaDescription:
-        "Answer engine optimisation for UK businesses: direct answers in British English, jurisdiction stated for England, Scotland or Wales, and consistent UK records.",
+        "AEO services for UK businesses: question research, direct answers and structured data so search features and voice assistants can quote you accurately.",
       primaryKeyword: "aeo services in the uk",
-      secondaryKeywords: [
-        "aeo agency in the uk",
-        "answer engine optimisation services uk",
-        "aeo company uk",
-        "ai search optimisation uk",
-        "aeo agency london",
-        "answer engine optimisation scotland",
+      secondaryKeywords: ["answer engine optimisation services uk", "aeo agency uk", "answer engine optimization uk", "featured snippet optimisation uk", "aeo company in the uk"],
+    },
+    h1: "AEO Services in the UK",
+    intro:
+      "SERPMOZ provides answer engine optimisation for businesses in the UK: researching the questions buyers ask, writing direct answers, adding structured data and tracking which answer features a site holds. It is for companies in fields where people ask questions before they compare suppliers. Many such questions have a specifically British answer, on tax, law, property or consumer rights, and a page that states it clearly and correctly is the one worth quoting.",
+    answer: {
+      question: "What are AEO services, and how do they help a business in the UK?",
+      text: "AEO structures content so that a search engine or voice assistant can lift a direct answer from a page and attribute it to the source. It targets question-led results such as featured snippets, People Also Ask boxes and spoken answers. For a British business it means answering in British terms, saying which nation's rules an answer covers, and having a qualified person check it. Selection for any answer feature is decided by the platform.",
+    },
+    context: {
+      heading: "Why direct answers matter for UK businesses",
+      paragraphs: [
+        "Search results often include answers shown on the results page itself: a quoted paragraph, a list of related questions, a spoken reply. The searcher may get what they need without visiting any site, and the source that is quoted is still the one whose name they see. Being that source depends on two things: ranking well enough to be considered, and presenting the answer in a form that can be lifted cleanly from the page.",
+        "Questions with a legal, financial or official dimension often have an answer that depends on the country, and within this country sometimes on the nation. Property, legal process and parts of tax and education differ between England, Wales, Scotland and Northern Ireland. An answer that fails to say which it covers may be wrong for the reader, and an American answer to a British question is plainly no use. Stating scope at the start of the answer helps both the reader and the system quoting it.",
+        "Accuracy has consequences. When a passage is quoted in a results box or read aloud, it appears without the surrounding caveats, so it has to be correct and complete in itself. In regulated subjects a wrong answer may also create a compliance problem. Every answer is reviewed by a subject specialist, and in fields such as finance, law and health by your own qualified reviewer. Trust signals around the answer, such as a named author and a review date, support its use.",
       ],
     },
-    h1: "AEO Company in the UK: Answer Engine Optimisation for British Buyers",
-    intro:
-      "Many UK searches now show an AI summary above the results, and buyers ask assistants to explain a regulated product or suggest providers before they approach anyone. Those answers lean on official guidance, established publishers and review platforms. A firm is quoted when its own pages are clear and its details agree everywhere. SERPMOZ structures answers and trust signals for UK businesses remotely, and makes no promise of placement.",
-    answer: {
-      question: "What does an AEO company do for businesses in the UK?",
-      text: "An AEO company makes your pages easy for search features and AI assistants to quote accurately. For UK businesses it researches the questions British buyers ask, writes short direct answers in British English, adds structured data, and checks that company details match across Companies House, review sites and directories. SERPMOZ does this remotely, records a baseline of how assistants describe you, and tracks changes.",
+    audiences: [
+      {
+        title: "Firms in fields full of buyer questions",
+        body: "Legal, financial, health and education providers whose prospective clients begin by asking how something works, what it costs or whether they qualify. Clear, attributed answers put the firm in front of them at that first step.",
+      },
+      {
+        title: "Sites that already rank and are not being quoted",
+        body: "Businesses with pages near the head of the results that lose the answer box to a competitor. Restructuring those pages for direct answers is usually the quickest gain, because the ranking is already earned.",
+      },
+      {
+        title: "Companies with a large support or knowledge base",
+        body: "Organisations holding hundreds of help articles written for existing customers. Reworked with clear questions, concise answers and valid markup, that material can serve prospective customers searching the same things.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Answers that differ across the four nations",
+        body: "A question about conveyancing, tenancy or court process may have one answer in England and another in Scotland. Pages state their scope at the outset and, where the difference matters to buyers, give each jurisdiction its own answer.",
+      },
+      {
+        title: "Fewer clicks from answered questions",
+        body: "When the answer is shown on the results page, some searchers go no further. The value shifts towards being seen as the source. Reporting therefore tracks features held and assisted enquiries, alongside visits, so the work is judged on the right measures.",
+      },
+      {
+        title: "Features change hands often",
+        body: "A snippet held this month may go to another site next month, or disappear when the results layout changes. Monitoring records what was gained and lost and why, and formats are revised where a competitor's version is preferred.",
+      },
+      {
+        title: "A page must rank before it is quoted",
+        body: "Answer features are generally drawn from pages already near the head of the results. For questions where your page is far down, formatting alone will not help, and supporting SEO work has to come first.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Map",
+        body: "Questions are gathered from search data, from your sales and support teams and from public forums, then grouped by topic and buying stage. We agree a priority list with you, weighted towards questions that precede a purchase.",
+      },
+      {
+        stage: "Audit",
+        body: "Each priority question is checked against your site and the live results: whether you answer it, where your page ranks, who is quoted at present and in what format. The outcome is a shortlist of questions within reach.",
+      },
+      {
+        stage: "Restructure",
+        body: "Pages that already rank are rewritten first, with the question as a heading and a concise answer directly beneath it, followed by detail. A subject specialist checks each answer, and a structured data specification is prepared for your developers.",
+      },
+      {
+        stage: "Extend",
+        body: "New pages and sections are written for questions the site does not yet cover. Markup is validated on each release, and ordinary SEO work continues on pages that are not yet ranking close enough to be considered.",
+      },
+      {
+        stage: "Track",
+        body: "Each month we record which answer features you hold, which were lost and the likely reason. Formats are revised where another site's version is being chosen, and the question list is updated as new ones appear.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The question map and gap audit take about the first month. Rewrites of pages that already rank come next, and those are where early results appear, sometimes within weeks of a page being recrawled. Questions where the site does not yet rank take months, because the ranking has to be earned before the answer can be chosen. Features also come and go, so gains are tracked as a trend.",
+        "Reporting is monthly: features held and lost, question coverage, and enquiries on pages that carry answers, with the revision list for the next cycle.",
+      ],
+      notGuaranteed: [
+        "Selection for a featured snippet, People Also Ask box or spoken answer",
+        "That an answer feature once held will be kept",
+        "That being quoted will lead to a visit to your site",
+      ],
     },
-    searches: [
-      {
-        title: "Explaining regulated products",
-        body: "People ask assistants and Google plain questions about pensions, mortgages, insurance excesses, probate and tenancy rules. They want the explanation first and a provider second. The firm whose page gave the clear answer is the one already in mind.",
-      },
-      {
-        title: "Asking for a shortlist",
-        body: "Buyers type or speak requests such as which accountants in Leeds handle contractors, or which solicitors in Bristol do commercial leases. Answers draw on directories, press coverage, reviews and clearly written firm pages, so each of those needs attention.",
-      },
-      {
-        title: "UK added to the question",
-        body: "British users often add UK, England or Scotland to a question because they have learned that answers default to American law, prices and terminology. Pages that state plainly which country and jurisdiction they cover are better matched to those queries.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Jurisdiction stated in the answer",
-        body: "An answer about inheritance, tenancies or company filings is only right for a particular part of the UK. We put the jurisdiction in the first sentence, such as England and Wales, Scotland or Northern Ireland, so an assistant quoting the passage carries the qualification with it.",
-      },
-      {
-        title: "Official sources set the baseline",
-        body: "Assistants answering British questions lean on government guidance, regulators and established publishers. A firm's page earns a place beside them by adding what official text lacks: a worked example, the practical order of steps, typical pitfalls. We never contradict official guidance, and we point readers to it.",
-      },
-      {
-        title: "Consistent details across UK records",
-        body: "Your registered name on Companies House, trading name, address, regulator register entry, Trustpilot profile and directory listings should agree. Mismatches make it harder for an assistant to treat them as one organisation. We audit those records and correct what we can, and flag what only you can change.",
-      },
-      {
-        title: "British terms and units",
-        body: "Answers written with attorney, realtor, dollars or American date formats are matched to American questions. We write answers using solicitor, estate agent, sterling and UK dates, and mark up prices and opening hours accordingly, so the page is understood as British by people and machines.",
-      },
-    ],
-    areas: [
-      { name: "London", note: "Shortlist questions about City and West End firms draw heavily on directories and press coverage." },
-      { name: "Edinburgh and Glasgow", note: "Answers on law and property must say they apply to Scotland, or they mislead." },
-      { name: "Manchester", note: "Regional shortlist queries reward firms with clear service pages and reviews from local clients." },
-      { name: "Cardiff", note: "Devolved policy means health, education and housing answers differ for readers in Wales." },
-      { name: "Belfast", note: "Northern Ireland's separate legal system and agencies need their own clearly labelled answers." },
-    ],
     sectors: [
-      { slug: "finance", note: "Buyers ask assistants to explain products first, and accurate, compliant answers build early familiarity." },
-      { slug: "legal", note: "Legal questions depend on jurisdiction, so answers labelled for England, Scotland or Northern Ireland get matched correctly." },
-      { slug: "healthcare", note: "Private clinics answer questions on treatments and referral, where accuracy and clinical review come first." },
+      { slug: "legal", note: "Legal questions turn on jurisdiction, and a firm that answers precisely for the right nation is useful to quote." },
+      { slug: "finance", note: "People ask how products and rules work before choosing a provider, and answers must be accurate and compliance-approved." },
+      { slug: "education", note: "Applicants ask about entry, fees and deadlines, and institutions that answer these directly are easier to find and to trust." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ an AEO company in the UK?",
-        a: "SERPMOZ is an AI-powered digital growth company that provides answer engine optimisation to businesses in the UK. We do so remotely and have no office there. The service covers question research, answer formatting, structured data, featured snippet and People Also Ask work, and the trust signals behind an answer. It sits alongside our SEO work, since assistants mostly quote pages that search engines already regard as reliable.",
+        q: "How is AEO different from SEO?",
+        a: "SEO aims to rank a page among the listings for all kinds of search. AEO aims to have a passage from that page quoted as the answer to a question. The unit of work is the passage, and the main levers are structure, clarity and markup. AEO depends on SEO, since a page generally has to rank well before it is quoted.",
       },
       {
-        q: "How do I choose an AEO company in the UK?",
-        a: "Be sceptical of certainty. AI answers vary by wording, user and day, so a company that promises you will be named is selling something it cannot control. Ask how it measures a baseline and what it tracks afterwards. Ask how it handles jurisdiction, British terminology and compliance in answer text. Good AEO looks like careful editing and data hygiene, and it should be explained to you in those terms.",
+        q: "Does SERPMOZ have a UK office?",
+        a: "No. SERPMOZ provides AEO to organisations in the UK through a remote consulting and delivery model. Answer work consists of research, writing and markup on your own site, reviewed by your subject specialists over shared documents. Correct British answers come from the sources used and from your reviewer's sign-off, and neither requires us to be nearby.",
       },
       {
-        q: "Which cities in the UK do you provide AEO services for?",
-        a: "Any. The work is done on your website and on your records across the web, so we deliver it remotely to firms in London, Birmingham, Manchester, Leeds, Bristol, Edinburgh, Cardiff or Belfast alike, with no office of our own in those cities. Location still shapes the content: shortlist questions name a city, and legal or public-service answers depend on which nation of the UK the reader is in.",
+        q: "Can you guarantee a featured snippet?",
+        a: "No. The search engine chooses which passage to show, changes its choice frequently and sometimes removes the feature altogether. What is within our control is whether your page gives a clear, correct, well-structured answer and whether it ranks well enough to be a candidate. We report which features you hold each month, including the ones lost.",
+      },
+      {
+        q: "How long does AEO take to show results?",
+        a: "On pages that already rank near the head of the results, a restructured answer can be picked up within weeks. Where the page ranks lower, the timescale is that of SEO, which is months. Results are also less stable than ordinary rankings, so we look at the number of features held over time and not at any single one.",
       },
       {
         q: "What does AEO cost in the UK?",
-        a: "The main factors are how many questions are worth answering, how specialised the answers are and the condition of your existing content. Topics needing review by a qualified professional or a compliance team take longer. Separate answers for Scotland, Wales or Northern Ireland add to the count. Cleaning up inconsistent business records is a further piece of work. We scope it once the baseline audit is complete.",
+        a: "The scope depends on how many questions are in the priority list, how many existing pages need restructuring, how many new ones must be written and how much expert review your subject demands. Structured data work depends on your site's platform. Where the site does not yet rank, SEO work is needed alongside and is scoped separately.",
       },
       {
-        q: "Will AI assistants name our firm if we do this work?",
-        a: "They may, and nobody can guarantee it. Assistants choose sources by their own methods, which change, and the same question can produce different answers on different days. AEO improves the odds by making your pages clear, accurate and easy to attribute, and by strengthening the independent sources that mention you. We test a fixed set of questions at intervals and report what we observe, including when nothing has changed.",
+        q: "Is AEO the same as optimising for ChatGPT and other AI assistants?",
+        a: "They overlap and are not the same. AEO concentrates on answer features in search results and voice assistants, where a passage is lifted from a page. Work aimed at generative AI systems, sometimes called GEO, also considers how a company is described across the wider web. Clear, well-structured, accurate answers help with both, and neither can be promised.",
       },
     ],
   },

@@ -7,90 +7,125 @@ export const pages: LocalServicePage[] = [
     seo: {
       title: "Google Maps SEO Services in Sydney",
       metaDescription:
-        "Google Maps SEO services in Sydney for trades, clinics and venues: Business Profile work, grid tracking by suburb and review routines from Bondi to Blacktown.",
+        "Google Maps SEO services in Sydney: Business Profile setup, categories, photos, reviews and call tracking for the suburbs your business can truly serve.",
       primaryKeyword: "google maps seo services in sydney",
       secondaryKeywords: [
-        "google maps seo agency sydney",
+        "google maps seo sydney",
         "google maps seo company in sydney",
+        "google business profile optimisation sydney",
+        "google maps marketing sydney",
         "google maps seo near me",
-        "google business profile sydney",
-        "google maps seo parramatta",
-        "google maps ranking inner west",
-        "map pack seo north shore",
       ],
     },
-    h1: "Google Maps SEO in Sydney: Be Chosen in Your Own Suburbs",
+    h1: "Google Maps SEO Services in Sydney",
     intro:
-      "In Sydney the map pack changes every few kilometres. A search for a locksmith returns one set of businesses in Newtown, another in Chatswood and a third in Liverpool, because Google leans on where the searcher is standing. Winning here means being strong in the suburbs around your base before reaching for the whole city. SERPMOZ manages Google Business Profiles for Sydney businesses remotely and tracks visibility on a suburb grid.",
+      "SERPMOZ provides Google Maps SEO for businesses in Sydney: a verified, complete Business Profile, a steady record of real reviews and tracking of the calls it produces. It is for trades, clinics, venues and shops that are chosen from the map by people nearby. The city is large and divided by water, so a profile competes in the suburbs around its base far more than across the whole metropolitan area.",
     answer: {
-      question: "What does a Google Maps SEO company do for businesses in Sydney?",
-      text: "A Google Maps SEO company works on a Sydney business's Business Profile so it appears for nearby searches and is picked over the listings beside it. That includes categories, services, service areas, photographs, review requests and removing duplicates. SERPMOZ does this remotely, scans rankings from points across your region each month, such as the Inner West or the Hills, and reports calls, direction requests and bookings.",
+      question: "How does Google Maps SEO help a Sydney business get found nearby?",
+      text: "Google Maps SEO improves the Business Profile that appears in map results: its verification, categories, services, hours, photos and reviews, and the website page behind it. For a Sydney business the practical aim is to be shown and chosen in the suburbs within reach of its premises or base. Distance from the searcher weighs heavily in map results and cannot be changed, so the work concentrates on everything else.",
     },
-    searches: [
+    context: {
+      heading: "How map results work across a city this size",
+      paragraphs: [
+        "Map results are assembled for each searcher from three broad considerations: how well a profile matches the search, how far the business is from the person, and how well known and well reviewed it appears. The second is fixed by geography. In a metropolitan area that takes a long time to cross, a business at one end will seldom be shown to someone at the other, however complete its profile.",
+        "Sydney adds a complication of its own. The harbour and the rivers divide the city, and two suburbs that look close on a map can be a slow drive apart by bridge or tunnel. A tradesperson based on one side may rarely take jobs on the other. A service area drawn as a wide circle ignores this. Drawing it around the places a business can attend on time gives a more accurate profile and fewer wasted calls.",
+        "For an urgent job the map is often the whole decision. Someone with a blocked drain or a locked door looks at the nearest few profiles, reads the latest reviews and calls. What they see has to be current: correct hours, including public holidays, a phone number that is answered, photos of real work and replies to recent reviews. None of this is complicated, and all of it needs someone to keep doing it.",
+      ],
+    },
+    audiences: [
       {
-        title: "Near me on the move",
-        body: "Commuters and residents tap near me or open now for coffee, a pharmacy, a mechanic or an emergency plumber. Google uses the phone's position, so the same words give different results at Town Hall, in Mosman and in Bankstown.",
+        title: "Mobile trades covering one part of the city",
+        body: "Plumbers, electricians, locksmiths and cleaners who travel to the customer and hide their address. The profile's categories, service list, service area and reviews carry the whole comparison against nearby rivals on a phone screen.",
       },
       {
-        title: "Suburb typed with the service",
-        body: "People planning a visit type physio Crows Nest, dentist Burwood or tyres Brookvale into Maps. Results are then measured from that suburb. A profile with an address there, or reviews and services that mention it, has the advantage.",
+        title: "Clinics and practices chosen by distance and reputation",
+        body: "Dentists, doctors, physiotherapists and vets whose patients look for somewhere close with good feedback. Booking links, accurate hours and practitioner details on the profile reduce the steps between search and appointment.",
       },
       {
-        title: "Region names as shorthand",
-        body: "Sydneysiders also search by region: Northern Beaches electrician, Eastern Suburbs vet, Shire removalist. These labels are not official boundaries, so a profile and its website need to state which suburbs within the region are covered.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Water and traffic limit reach",
-        body: "The harbour, the Parramatta and Georges rivers and peak-hour motorways mean a short distance on the map can be a long drive. Service areas should match where crews can arrive on time. Listing every region invites calls that cannot be served well.",
-      },
-      {
-        title: "Dense competition near the centre",
-        body: "Around the CBD, Surry Hills and the lower North Shore, many businesses in the same category sit within a few streets. Small details decide placement there: the primary category, review recency, complete services and photographs that are current.",
-      },
-      {
-        title: "Tradies with hidden addresses",
-        body: "A large number of Sydney trades run from a home in the suburbs and hide the address. Their visibility centres on that base. We set realistic service areas, gather reviews that name suburbs worked in, and avoid shared or virtual office addresses, which risk suspension.",
-      },
-      {
-        title: "Licence and review obligations",
-        body: "New South Wales trades and property professionals are licensed, and customers look for the number. Reviews fall under consumer law, so they cannot be bought or filtered. We place licence details where the profile allows and set up an even-handed request process.",
+        title: "Cafes, restaurants and venues relying on walk-in trade",
+        body: "Hospitality businesses compared on photos, ratings and whether they are open now. Current menus, reservation links, fresh images and prompt replies to reviews help a passer-by or visitor decide where to go.",
       },
     ],
-    areas: [
-      { name: "Sydney CBD", note: "Office workers search on foot for food, health and services, within a very tight radius." },
-      { name: "Parramatta", note: "The western centre has its own map results, largely separate from the eastern city." },
-      { name: "Chatswood", note: "A busy North Shore hub where clinics and restaurants compete closely, some serving Chinese-speaking customers." },
-      { name: "Bondi", note: "Visitors and locals both search here, and hospitality profiles depend on photos and recent reviews." },
-      { name: "Northern Beaches", note: "Cut off by water and few roads, so local trades face mostly local rivals." },
-      { name: "Penrith", note: "Outer western suburbs where complete, well-reviewed profiles are still uncommon in many trades." },
+    challenges: [
+      {
+        title: "One address cannot cover the whole city",
+        body: "Owners often want to appear everywhere from the Northern Beaches to the far west. Map visibility fades with distance from the base. We show where the profile is realistically competitive and plan pages or paid search for the areas it cannot reach.",
+      },
+      {
+        title: "Service areas drawn too generously",
+        body: "Listing every region invites calls for jobs that are unprofitable once travel and tolls are counted. We agree a service area that reflects where you attend reliably, and revise it if the pattern of jobs changes.",
+      },
+      {
+        title: "Hidden addresses and verification",
+        body: "A trade operating from home hides its address, and verification for such profiles can be demanding, sometimes requiring video evidence of tools, vehicles or signage. We prepare what the platform is likely to ask for, though its decision is its own.",
+      },
+      {
+        title: "Reviews that never mention the work",
+        body: "A row of five-star ratings with no words tells a reader little. Asking customers to describe the job, in their own words and without scripting, produces reviews that help the next person choose. Reviews are never written or filtered for you.",
+      },
     ],
+    approach: [
+      {
+        stage: "Access",
+        body: "We establish who controls the profile, regain ownership if a past supplier holds it, and confirm verification and business type. Duplicate listings and any profile at a former address are found and put through the platform's merge or removal process.",
+      },
+      {
+        stage: "Complete",
+        body: "Categories, services, attributes, hours, service area and contact links are filled in to match how customers describe the work. Descriptions state plainly what you do and where, with licence details shown where your trade requires them.",
+      },
+      {
+        stage: "Show",
+        body: "Real photographs of premises, vehicles, staff and completed jobs are uploaded on a regular schedule. Posts, offers or product listings are added where they suit the business, and the linked web page is aligned with the profile's details.",
+      },
+      {
+        stage: "Ask",
+        body: "A review request goes to every customer after the job or visit, by message or email, with a direct link. Replies are drafted for approval. Reviews that appear to breach policy are flagged to the platform through its reporting route.",
+      },
+      {
+        stage: "Count",
+        body: "Calls, messages, direction requests and website visits from the profile are tracked, using tagged links and call tracking if you agree. A monthly summary shows the actions taken, the enquiries recorded and where they came from.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "Gaining access and confirming verification come first, and the time this takes is set by the platform and by whoever holds the profile now. With access in place, the profile is usually completed within the first few weeks, and corrected categories or hours can change what it appears for soon afterwards. Reviews accumulate at the pace of your customer flow, and wider reach around your base tends to build over several months.",
+        "The monthly summary is short: what was changed, how many calls and direction requests came through, and anything the platform rejected or queried.",
+      ],
+      notGuaranteed: [
+        "A position in the map results for any suburb or phrase",
+        "That the platform will verify, reinstate or merge a profile on request",
+        "How many reviews customers choose to leave, or what they say",
+      ],
+    },
     sectors: [
-      { slug: "home-services", note: "Emergency plumbers, electricians and locksmiths are chosen from the map pack by whoever is nearest and well reviewed." },
-      { slug: "hospitality", note: "Cafes, restaurants and pubs are found on Maps by people already in the suburb and deciding now." },
-      { slug: "healthcare", note: "GP, physio and allied health clinics are compared on distance, hours and reviews, within health advertising rules." },
+      { slug: "home-services", note: "Urgent jobs go to nearby profiles with recent reviews, and the call is usually made straight from the map." },
+      { slug: "dental", note: "Patients pick a practice close to home or work, and booking links and feedback on the profile shape that choice." },
+      { slug: "hospitality", note: "Venues are compared on photos, hours and ratings by someone deciding where to go within minutes." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a Google Maps SEO company in Sydney?",
-        a: "SERPMOZ is an AI-powered digital growth company that does Google Maps SEO for Sydney businesses. We optimise and maintain Business Profiles, track rankings by suburb and help set up review routines. The work is remote: you add us as a manager on the profile and we take it from there. We have no premises in Sydney, so we are not a nearby agency, and our own listing would not show in your suburb.",
+        q: "What is a Google Business Profile, and why does it matter for map results?",
+        a: "It is the free listing a business controls on Google, showing its name, category, hours, contact details, photos and reviews. Map results are drawn from these profiles. A business without a verified profile cannot appear there at all, and one with a thin or inaccurate profile is at a disadvantage against neighbours whose listings are complete and current.",
       },
       {
-        q: "How do I find a Google Maps SEO agency near me in Sydney?",
-        a: "A search will show agencies close to you, though nearness adds little for this work, which is done inside the profile. Judge them on method. Ask for a sample grid report covering suburbs like yours, ask how they handle a suspended listing, and ask what they refuse to do. Anyone suggesting a fake address in the CBD or extra keywords in your business name is risking your listing. Check their own reviews for detail.",
+        q: "Does SERPMOZ have an office in Sydney?",
+        a: "No. SERPMOZ looks after profiles for Sydney businesses through a remote consulting and delivery model. In map work it is your premises or service base that count, since results are calculated from the distance between your business and the searcher. An agency's location plays no part. We work inside your profile with manager access, and you keep ownership of it.",
       },
       {
-        q: "Do you also work with businesses in Parramatta, Wollongong and the Central Coast?",
-        a: "Yes. Parramatta and the wider west are part of most Sydney plans, and Wollongong and the Central Coast are separate markets we also support, each with its own grid and competitors. All of it is remote. A profile in Gosford or Wollongong is ranked against local businesses there, so we research those areas on their own terms and do not treat them as outer Sydney.",
+        q: "Can you guarantee our business a place in the map pack?",
+        a: "No, and anyone who does should be treated with caution. Results differ from one street to the next and from one search to another, and the platform alone sets the order. Our commitment is to the parts that can be managed: a complete and accurate profile, an even flow of customer reviews, a matching web page and a clear count of enquiries.",
+      },
+      {
+        q: "How long does Google Maps SEO take to show results in Sydney?",
+        a: "Changes to categories, services and hours can alter what a profile appears for within weeks. If the profile needs verifying or reinstating first, that waiting time is outside our control. Growth that rests on reviews depends on how many customers you serve and ask. A profile with few established rivals nearby may see movement sooner than one surrounded by long-standing, heavily reviewed competitors.",
       },
       {
         q: "What does Google Maps SEO cost in Sydney?",
-        a: "It depends on how many profiles you have and where they sit. One clinic in a quiet suburb needs less sustained effort than a group with branches across the Eastern Suburbs, the North Shore and the west. Categories with many rivals, such as dental or emergency plumbing near the centre, take more review and content work. Clean-up of duplicates or a suspension adds time at the start. We scope after reviewing the profiles.",
+        a: "For a single profile the work is modest: setup or repair, then regular upkeep. Cost rises with the number of locations, with problems such as suspensions or duplicates, and with extras such as photography, review request tools and call tracking. A business with several branches needs each one maintained separately. We describe the scope and what drives it after the growth audit.",
       },
       {
-        q: "Why does my business show in my suburb and not the next one over?",
-        a: "Because distance carries a lot of weight in map results, and Sydney is dense with competitors. A searcher in the neighbouring suburb has other businesses closer to them. Reviews that mention the suburbs you work in, accurate services, a strong website with pages for those areas and consistent listings can extend your reach somewhat. They will not make a Marrickville profile appear in Manly, and we set targets with that in mind.",
+        q: "Should we set up virtual addresses in other suburbs to rank there?",
+        a: "No. Listing an address where the business has no staffed presence breaks the platform's rules and risks suspension of every profile you hold. It also misleads customers. The sound alternatives are an accurate service area, reviews from jobs done in those suburbs, useful pages for the areas you serve and, where demand justifies it, paid search aimed at them.",
       },
     ],
   },
@@ -98,92 +133,127 @@ export const pages: LocalServicePage[] = [
     place: "sydney",
     service: "local-seo-services",
     seo: {
-      title: "Local SEO Company in Sydney",
+      title: "Local SEO Services in Sydney",
       metaDescription:
-        "Local SEO services in Sydney: suburb pages with substance, listings and reviews for the Inner West, North Shore, the Hills, the Shire and Western Sydney.",
-      primaryKeyword: "local seo company in sydney",
+        "Local SEO services in Sydney for trades, practices and multi-site firms: profiles, listings, reviews and suburb pages built around the areas you serve.",
+      primaryKeyword: "local seo services in sydney",
       secondaryKeywords: [
-        "local seo services in sydney",
+        "local seo company in sydney",
         "local seo agency sydney",
-        "local seo near me",
-        "local seo western sydney",
-        "local seo inner west",
-        "seo company parramatta",
-        "local seo for tradies sydney",
+        "local seo sydney",
+        "local search optimisation sydney",
+        "local seo services near me",
       ],
     },
-    h1: "Local SEO Company in Sydney for Suburb-by-Suburb Visibility",
+    h1: "Local SEO Services in Sydney",
     intro:
-      "Ask a Sydney resident where they live and they will name a suburb or a region, and they search the same way. A conveyancer is wanted in Parramatta, a vet in Balmain, a pool builder in the Hills. Local SEO turns that habit into enquiries by making a business relevant to each area it serves. SERPMOZ plans and runs local SEO for Sydney businesses remotely, and reports results area by area.",
+      "SERPMOZ provides local SEO for Sydney businesses: business profiles, consistent listings, a review routine, pages for the areas served and tracking of the enquiries each area produces. It is for firms whose customers live or work within reach, and who lose work to competitors that simply appear first. A city of many suburbs produces many separate local contests, and a plan has to choose which ones are worth entering.",
     answer: {
-      question: "What does a local SEO company do for businesses in Sydney?",
-      text: "A local SEO company gets a Sydney business found in both the map pack and the ordinary results beneath it for the suburbs it serves. The work joins four things: the Business Profile, listings on Australian directories, a fair review routine and suburb or region pages with real local content. SERPMOZ does it remotely, picks target areas by demand and job value, and tracks calls and forms for each one.",
+      question: "What does a local SEO company do for a business in Sydney?",
+      text: "A local SEO programme makes a business visible to people searching in the areas it serves, in map results and in the ordinary listings below them. The work covers profiles, name, address and phone consistency across directories, reviews, location pages, local structured data and links from nearby organisations. For a Sydney firm, the planning question is which suburbs and regions to compete in, since no business can win them all.",
     },
-    searches: [
+    context: {
+      heading: "Why local SEO in Sydney starts with choosing areas",
+      paragraphs: [
+        "A search for a service can be made with a suburb name, a region name, the city name or no place at all, and each returns different results. The business that appears for one may be absent from the next. Local SEO begins by deciding which of those searches matter commercially, then making sure a suitable page and an accurate profile exist for each. Without that choice, effort is spread thinly and nothing improves much.",
+        "The metropolitan area is widely understood as a set of regions with their own names, such as the Inner West or the Northern Beaches, and a business usually draws its customers from the regions it can reach comfortably. Travel across the city takes time, which limits how far a customer will go and how far a trade will drive. Pages and reviews that reflect the region a business belongs to are more convincing than a claim to serve everywhere.",
+        "The temptation is to publish a page for every suburb. A site with a long list of near-identical pages gives readers nothing new on each and gives search engines little reason to prefer any of them. A smaller set, each describing real work in that area with photographs, access details and customer feedback, tends to serve better. New pages are added when there is something true and specific to say about the place.",
+      ],
+    },
+    audiences: [
       {
-        title: "Service and suburb together",
-        body: "The typical query is short and specific: electrician Marrickville, family lawyer Penrith, childcare Ryde. Each returns its own results. A business ranks for the suburbs where its profile, pages and reviews give Google reasons, and seldom elsewhere.",
+        title: "Trades and home services based in one region",
+        body: "Firms that take most of their jobs within a drive of their base. Local work makes them visible in those suburbs first, where travel is short and jobs are profitable, before any attempt to reach further.",
       },
       {
-        title: "Region as the place name",
-        body: "Larger jobs are searched by region, since the customer expects the provider to travel: kitchen renovations North Shore, solar installer Western Sydney, builder Sutherland Shire. Region pages serve these searches better than a stack of single-suburb pages.",
+        title: "Practices and clinics with one or several sites",
+        body: "Health, legal and accounting practices whose clients choose somewhere convenient. Each site needs a profile, a page with its own practitioners and services, and listings that agree on every detail of name, address and phone.",
       },
       {
-        title: "Other languages in some suburbs",
-        body: "In parts of the city, including around Hurstville, Cabramatta and Harris Park, customers may search or read reviews in a language other than English. Businesses serving those communities can reflect that in profiles and pages, where staff can truly support it.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Regions behave as separate cities",
-        body: "Few customers on the Northern Beaches will hire a trade from Campbelltown, and few trades want the drive. We treat each region as a market, choose the two or three a business can serve properly and build there before looking further.",
-      },
-      {
-        title: "Suburb pages need real substance",
-        body: "Sydney search results are full of templated pages with only the suburb name changed. They rarely hold a position. We write fewer pages, each with jobs done in the area, access or parking notes, strata or council points and reviews from residents.",
-      },
-      {
-        title: "Competition eases moving outward",
-        body: "Inner suburbs have many well-organised competitors. In growth areas of the west and south-west, such as around Oran Park and Marsden Park, capable businesses often have thin listings. An early, careful presence there can be earned with less effort.",
-      },
-      {
-        title: "Directories Australians still use",
-        body: "Listings on established Australian business directories, trade association registers and local chamber sites support a profile when the name, address and phone match exactly. We audit them, correct old addresses left from past moves and remove duplicates.",
+        title: "Property professionals who work a defined patch",
+        body: "Estate agents, buyers' agents, conveyancers and brokers known for particular suburbs. Area pages with current, specific knowledge show that familiarity to vendors and buyers deciding whom to call, before any meeting takes place.",
       },
     ],
-    areas: [
-      { name: "Inner West", note: "Dense terraces and apartments, with strong demand for trades familiar with older housing and strata." },
-      { name: "North Shore", note: "Households research carefully and read reviews, favouring established providers with detailed pages." },
-      { name: "Hills District", note: "Family suburbs around Castle Hill with steady demand for building, garden and health services." },
-      { name: "Sutherland Shire", note: "A self-contained region where residents prefer businesses that are clearly from the area." },
-      { name: "Western Sydney", note: "Blacktown, Penrith and Liverpool are large markets in their own right, far more than edges of the CBD." },
-      { name: "Newcastle", note: "A separate city to the north that needs its own listings, pages and reviews." },
+    challenges: [
+      {
+        title: "Suburb, region and city searches differ",
+        body: "A page aimed at the city name competes with large firms and directories, while a suburb page meets fewer rivals and smaller demand. We map each priority search to a page type and avoid having two pages chase the same phrase.",
+      },
+      {
+        title: "Template pages for hundreds of suburbs",
+        body: "Mass-produced suburb pages are cheap to make and rarely hold a position. We write fewer, with details only your business could supply, and would sooner leave a suburb without a page than publish one that says nothing.",
+      },
+      {
+        title: "Listings left behind by old addresses",
+        body: "Businesses move between suburbs as leases change, and earlier addresses linger in directories and map data. Each stale entry sends a conflicting signal. We trace them, correct what can be edited and request removal of what cannot.",
+      },
+      {
+        title: "Licence details in profiles and adverts",
+        body: "Building trades and property professionals in New South Wales work under state licensing, and customers look for the number. We ask you for the current details and show them consistently. Your adviser should confirm what must appear where.",
+      },
     ],
+    approach: [
+      {
+        stage: "Scope",
+        body: "We establish where your customers come from, using job addresses, bookings and search data, and compare that with where you want more work. Target suburbs and regions are agreed, each with the searches that matter and the page that will serve them.",
+      },
+      {
+        stage: "Clean",
+        body: "Business profiles are verified and completed, and listings across general and trade directories are corrected to one form of name, address and phone. Duplicates are merged, and the website's contact details and structured data are made to match.",
+      },
+      {
+        stage: "Write",
+        body: "Location and service pages are drafted from material you provide: recent jobs, photographs, practitioner details, parking or access notes. Each page answers what a local customer needs to know and links sensibly to related services.",
+      },
+      {
+        stage: "Earn",
+        body: "A review request is added to your job or appointment process so every customer is asked. We also look for local links worth having, such as trade bodies, suppliers, community organisations and sponsorships you already hold.",
+      },
+      {
+        stage: "Report",
+        body: "Enquiries are attributed to profiles and pages by area using call tracking and tagged links. The monthly report shows calls, bookings and forms for each target area, and recommends where to extend or pull back.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "Scoping and clean-up occupy the first weeks, and corrected profiles and listings can produce an early lift where bad data was the problem. Pages are then written in priority order, a few at a time, as material arrives from you. Their effect, together with a growing review record, tends to become clear over three to six months, and takes longer wherever established firms have years of reviews behind them.",
+        "Each month you see enquiries by area beside the work done. If an area is not responding after a fair period, we say so and suggest redirecting the effort.",
+      ],
+      notGuaranteed: [
+        "Visibility in every suburb or region you would like to serve",
+        "A fixed number of calls, quote requests or bookings each month",
+        "Acceptance of listing edits or removals by third-party directories",
+      ],
+    },
     sectors: [
-      { slug: "real-estate", note: "Agents and conveyancers win listings by showing suburb knowledge on pages vendors find alongside the portals." },
-      { slug: "home-services", note: "Renovators, electricians and plumbers need relevance in each region they cover, backed by reviews naming those suburbs." },
-      { slug: "legal", note: "Family, property and migration lawyers in Parramatta and suburban centres are searched by suburb and practice area." },
+      { slug: "home-services", note: "Travel time limits where a trade can work, so visibility in the surrounding suburbs is worth more than reach across the city." },
+      { slug: "real-estate", note: "Vendors choose agents for local knowledge, and detailed area pages with genuine client feedback demonstrate it." },
+      { slug: "legal", note: "Clients often want a solicitor nearby for property and family matters, and location pages and reviews help them choose." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a local SEO company in Sydney?",
-        a: "SERPMOZ calls itself an AI-powered digital growth company, and local SEO for Sydney businesses is part of its work: profiles, listings, reviews and suburb content, reported by area. We deliver it remotely. We are not based in Sydney and have no office there, so we rely on your knowledge of the streets and customers, and combine it with search data for each suburb you want to reach.",
+        q: "Is local SEO the same as Google Maps SEO?",
+        a: "They overlap but are not the same. Maps work concentrates on the Business Profile and the map results. Local SEO includes that and goes further, into directory listings, pages on your website for each location or area, structured data and local links, so that you also appear in the ordinary results beneath the map. A business with a website usually benefits from the wider programme.",
       },
       {
-        q: "How do I find a local SEO company near me in Sydney?",
-        a: "Searching near me will list firms in your part of the city, which is convenient for meeting but does nothing for your rankings. Compare them on substance. Ask which suburbs they would target for you and why, how many pages they propose and what would be on each. Ask to see reporting split by region. A firm that knows the difference between the Hills and the Shire will plan better than one that sells Sydney as a single market.",
+        q: "Does SERPMOZ have an office in Sydney?",
+        a: "No. SERPMOZ works with Sydney businesses through a remote consulting and delivery model, by video call and shared documents. Local search depends on where your premises and customers are, never on where a consultant is based. The suburb knowledge that makes pages worth reading comes from you and your staff: the jobs done, the streets that are hard to park in, the questions customers ask.",
       },
       {
-        q: "Do you also work with businesses in Newcastle, Wollongong and the Blue Mountains?",
-        a: "Yes, remotely, as we do in Sydney. Newcastle and Wollongong are cities with their own suburbs and competitors, and the Blue Mountains is a string of towns searched by name, such as Katoomba and Springwood. A Sydney business extending into these areas needs real coverage there, shown through pages, reviews and, where it exists, a staffed base. We plan each as a separate area.",
+        q: "Can you guarantee we will rank for our suburb?",
+        a: "No. Local results vary with the searcher's position and the exact words used, and competitors keep working too. We can remove errors that hold you back, give each target area a page worth reading, help you gather reviews from real customers and track enquiries by area. Those are the conditions under which visibility tends to improve, without any certainty.",
+      },
+      {
+        q: "How long does local SEO take to show results for a Sydney business?",
+        a: "Where listings were wrong or a profile incomplete, corrections can help within weeks. New pages and a stronger review record usually need three to six months before the pattern is clear. Areas with many long-established competitors take longer than those with few. The timetable also depends on you: how quickly photographs, job details and approvals arrive, and whether every customer is asked for feedback.",
       },
       {
         q: "What does local SEO cost in Sydney?",
-        a: "The spread of your service area is the largest factor. Covering a single region from one base is a modest programme. Covering several regions, or running branches from Bondi Junction to Blacktown, multiplies the profiles, pages and listings to maintain. Category matters: property and legal work near the centre is more contested than trades in outer suburbs. The starting condition of your listings and site also affects effort. We scope after an audit.",
+        a: "The fee depends on how many locations and target areas are included, the amount of listing clean-up required, the number of pages to be written and how much tracking needs setting up. A sole trader working one region needs much less than a firm with several sites. Following the growth audit we give a scope with the reasons behind it.",
       },
       {
-        q: "Should we target a region like the Inner West or individual suburbs?",
-        a: "Both have a place, in a sensible order. Start with a strong page for the region and for the handful of suburbs where you do most work or most want it. Add suburbs only when you have something specific to say about each, such as completed jobs and reviews. Customers search both ways, and Google treats region names loosely, so named suburbs on your pages and in reviews help make clear where you work.",
+        q: "Should we target the city name or individual suburbs?",
+        a: "Usually suburbs and regions first. Searches naming the city are contested by the largest firms and by directories, and some of those searchers will be far from your base. Suburb and region searches are smaller, closer to a decision and easier to serve well. As reviews and pages accumulate, visibility for broader terms may follow, and we revisit the question with data.",
       },
     ],
   },
@@ -191,92 +261,127 @@ export const pages: LocalServicePage[] = [
     place: "sydney",
     service: "google-ads",
     seo: {
-      title: "Google Ads Agency in Sydney",
+      title: "Google Ads Management in Sydney",
       metaDescription:
-        "Google Ads agency services in Sydney: campaigns targeted to the suburbs you can serve, call tracking and landing pages, built for costly CBD and trade clicks.",
-      primaryKeyword: "google ads agency in sydney",
+        "Google Ads management in Sydney: campaigns targeted to the suburbs you can serve, call and lead tracking, and monthly reporting on cost per qualified enquiry.",
+      primaryKeyword: "google ads management in sydney",
       secondaryKeywords: [
+        "google ads agency sydney",
+        "google ads company in sydney",
         "google ads management sydney",
-        "google ads services in sydney",
-        "google ads agency near me",
-        "google ads company sydney",
-        "google ads parramatta",
-        "ppc agency north sydney",
-        "google ads for tradies sydney",
+        "ppc agency sydney",
+        "google ads specialist near me",
       ],
     },
-    h1: "Google Ads Agency in Sydney for Suburb-Targeted Campaigns",
+    h1: "Google Ads Management in Sydney",
     intro:
-      "Clicks in Sydney are expensive in finance, legal and trade categories, and a common way to waste one is to show an ad to someone the business cannot reach. A plumber in Cronulla does not want a call from Hornsby in peak hour. SERPMOZ manages Google Ads for Sydney businesses remotely, with campaigns drawn around real service areas and judged on booked work instead of click counts.",
+      "SERPMOZ manages Google Ads for Sydney businesses: conversion tracking, search and call campaigns, Shopping where relevant, and the landing pages behind them. It is for firms that need enquiries now and want to know what each one costs. In a metropolitan area this wide, a campaign aimed at the whole city can spend much of its budget on clicks from places the business would never travel to.",
     answer: {
-      question: "What does a Google Ads agency do for businesses in Sydney?",
-      text: "A Google Ads agency builds and runs paid search campaigns so a Sydney business appears above the organic results for searches that signal intent to buy. It chooses keywords, excludes irrelevant ones, sets locations and schedules, writes ads and tunes bidding. SERPMOZ does this remotely, targets by suburb and region, records calls and forms as conversions and feeds back which enquiries became jobs.",
+      question: "How does Google Ads management help a Sydney business get more enquiries?",
+      text: "Google Ads shows a business among the paid results for chosen searches and charges for each click. Management decides which searches, which areas, what the ad says and how enquiries are counted. For a Sydney business the main gains usually come from targeting only the suburbs it can serve, running ads when calls will be answered, and judging campaigns on qualified enquiries. Click prices are set by auction.",
     },
-    searches: [
+    context: {
+      heading: "Why targeting and tracking decide the outcome",
+      paragraphs: [
+        "Paid search is an auction in which the price of a click reflects how many advertisers want it and how useful the platform judges each ad to be. Categories where one customer is worth a great deal, such as legal, financial and emergency trade services, tend to attract higher bids. A business entering those auctions cannot control the price. It can control which clicks it buys and what happens after the click.",
+        "Location is the first control. A trade based on one side of the harbour may lose money on jobs on the other once travel time and tolls are counted. Targeting by suburb, postcode or radius, restricted to searchers who are physically present in the area, keeps the budget inside the territory that pays. Bids can then be raised in the suburbs where jobs are most valuable and lowered or removed elsewhere.",
+        "Measurement is the second. Many local enquiries arrive as phone calls, which a default account setup does not record. Without call tracking, the campaigns producing the most work can look like failures and be switched off. Recording calls, their length and, where you are willing, whether they became jobs gives the bidding system and the business the same picture. Decisions about budget then rest on enquiries instead of clicks.",
+      ],
+    },
+    audiences: [
       {
-        title: "Urgent jobs, fast decisions",
-        body: "A leaking roof in Leichhardt or a locked-out tenant in Zetland leads to a search and a call within minutes. The first credible ad with a phone number often wins. These campaigns need call ads, tight areas and someone answering.",
+        title: "Emergency and same-day trades taking calls",
+        body: "Locksmiths, plumbers, electricians and glaziers whose customers need someone quickly. Call-focused ads, tight service areas and schedules matched to when the phone is staffed turn urgent searches into booked jobs.",
       },
       {
-        title: "CBD professional searches",
-        body: "Firms around Martin Place and North Sydney are sought through terms such as commercial lawyer, tax adviser or insolvency practitioner. Searchers are fewer and worth more, and they compare several firms, so ad copy and the page behind it must show specific expertise.",
+        title: "Professional firms seeking city-wide clients",
+        body: "Law, accounting, advisory and finance firms whose clients compare several providers. Campaigns are narrowed to the specific services that are profitable, and enquiries are qualified so cost is judged per suitable client.",
       },
       {
-        title: "Searches with no suburb typed",
-        body: "Many people do not type a place at all and rely on their location. Google matches them to advertisers targeting that area. Location settings therefore decide who sees the ad more than keywords containing suburb names do.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Metropolitan targeting wastes budget",
-        body: "The default target of Sydney covers an area stretching from the Hawkesbury to the Royal National Park and west to the Blue Mountains foothills. Few businesses serve all of it. We replace it with lists of suburbs or radii around each base.",
-      },
-      {
-        title: "Travel time is the boundary",
-        body: "Bridges, tunnels, tolls and school-hour congestion decide which jobs are profitable. We ask where crews will go at different times of day, then adjust bids or switch off outlying areas during the hours when reaching them makes little sense.",
-      },
-      {
-        title: "Expensive central auctions",
-        body: "Legal, finance, dental and emergency trade keywords near the centre attract many advertisers with deep pockets. We look for the narrower terms, the surrounding suburbs and the times of day where a smaller budget can still buy enquiries at a workable cost.",
-      },
-      {
-        title: "Wording for licensed, regulated work",
-        body: "Ads for New South Wales trades are generally expected to carry licence details, and finance and health advertising has national rules on claims. We write within those limits, avoid unprovable superlatives and suggest you have your adviser check sensitive copy.",
+        title: "Clinics and practices filling appointment books",
+        body: "Dental, medical and allied health practices with capacity to fill. Ads are aimed at treatments with availability, within the distance patients will travel, and bookings are tracked through to the practice system where possible.",
       },
     ],
-    areas: [
-      { name: "Sydney CBD", note: "High-value professional and finance searches with strong competition and costly clicks throughout business hours." },
-      { name: "North Sydney", note: "A second office district where business-to-business advertisers target weekday, desktop searchers." },
-      { name: "Parramatta", note: "Legal, medical and government-related services advertise here to reach the western half of the city." },
-      { name: "Eastern Suburbs", note: "Affluent households and premium trades, where ads must match the quality of service expected." },
-      { name: "Macquarie Park", note: "Technology and pharmaceutical employers make it relevant for recruitment and business software campaigns." },
-      { name: "Liverpool", note: "A south-west centre where trade and health campaigns usually meet fewer rival advertisers than nearer the harbour." },
+    challenges: [
+      {
+        title: "City-wide targeting wastes local budgets",
+        body: "The default of targeting the entire metropolitan area buys clicks a local business cannot use. We restrict campaigns to chosen suburbs and to searchers located there, and review the geographic report each month to tighten or widen the boundary.",
+      },
+      {
+        title: "Expensive clicks in contested categories",
+        body: "In categories where a client is worth a lot, broad keywords can cost more than they return. We look for narrower, more specific searches, write ads that discourage unsuitable clicks and set bids from the value of a qualified enquiry.",
+      },
+      {
+        title: "Calls that go unrecorded or unanswered",
+        body: "An ad that produces a call nobody answers has spent money for nothing. Call tracking shows when calls arrive and how many are missed. Schedules are then matched to staffing, or an answering arrangement is suggested.",
+      },
+      {
+        title: "Health and finance advertising rules",
+        body: "Regulated professions face restrictions on claims, testimonials and certain treatments in advertising, from both the platform and their regulators. We write within the platform's published policies and ask you to clear the wording with your own compliance adviser.",
+      },
     ],
+    approach: [
+      {
+        stage: "Review",
+        body: "We examine the existing account, or your goals if there is none: search terms, geographic performance, conversion setup and landing pages. The review identifies where spend is leaking and what is not being measured. A short written summary sets out the priorities.",
+      },
+      {
+        stage: "Target",
+        body: "Campaigns are built around specific services and the suburbs you choose, with presence-based location settings, exclusions for areas outside your reach and ad schedules that follow the times you answer. Budgets are weighted towards the most valuable areas.",
+      },
+      {
+        stage: "Write",
+        body: "Ads are written to match the search and state plainly what you offer, where and when. Call, location and sitelink extensions are added, and each ad group is pointed to a page that continues the same message.",
+      },
+      {
+        stage: "Refine",
+        body: "Search term reports are reviewed to add negatives and find new specific phrases. Bids, schedules and messages are adjusted on evidence, one change at a time, with automated bidding given enough stability to learn. Poorly performing areas are paused.",
+      },
+      {
+        stage: "Account",
+        body: "A monthly report shows spend, calls, forms and cost per qualified enquiry by campaign and by suburb group, together with the changes made. You hold the account, so every figure can be checked at source.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "Setup, tracking and restructuring take the first couple of weeks, and ads begin running once approved. Early numbers are noisy. Bidding typically steadies after some weeks of conversion data, sooner for accounts with many calls and later for those with few. The first clear improvements usually come from cutting waste: irrelevant search terms, areas outside your reach and times of day when nobody answers the phone.",
+        "After that, gains come from testing messages and pages. Reports are monthly, and unusual movements in cost or lead quality are raised when they happen.",
+      ],
+      notGuaranteed: [
+        "What a click will cost in your category next month",
+        "The volume or quality of enquiries from a given budget",
+        "That every ad will pass the platform's policy review first time",
+      ],
+    },
     sectors: [
-      { slug: "home-services", note: "Emergency trades pay heavily per click, so suburb targeting and answered phones decide whether campaigns profit." },
-      { slug: "legal", note: "Law firms bid on costly practice-area terms and need intake tracking to see which clicks become clients." },
-      { slug: "dental", note: "Practices compete for implants, braces and emergency appointments within a few suburbs of each surgery." },
+      { slug: "home-services", note: "Urgent jobs are booked by phone from nearby suburbs, so call tracking and tight geographic targeting determine profit." },
+      { slug: "legal", note: "A single client can be valuable and clicks costly, so narrow keywords and qualified-enquiry tracking protect the budget." },
+      { slug: "dental", note: "Practices can advertise specific treatments within the distance patients travel and measure bookings against spend." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a Google Ads agency in Sydney?",
-        a: "SERPMOZ is an AI-powered digital growth company that manages Google Ads for businesses in Sydney. We plan the account, build campaigns, write ads, set up call and form tracking and review performance with you. Everything is done remotely in an account you own. We do not have a Sydney office, and we would sooner say that plainly than suggest a Martin Place address we do not hold.",
+        q: "Should a local business use Google Ads or local SEO?",
+        a: "They do different jobs. Ads bring enquiries from the first week and stop when the budget stops. Local SEO builds unpaid visibility in map and organic results more slowly and keeps working afterwards. A new or newly relocated business often starts with ads while local visibility develops, then reduces spend in the areas where unpaid results begin to carry the load.",
       },
       {
-        q: "How do I find a Google Ads agency near me in Sydney?",
-        a: "You can search by suburb, and several will appear. Location is the least important filter, since accounts are managed online. Ask each one how it would set your geographic targeting and what it would exclude. Ask whether you will own the account and see the real spend. Ask how calls are tracked, and how it would know that a lead from Mascot became a paying job. Short answers to those questions are a warning.",
+        q: "Does SERPMOZ have an office in Sydney?",
+        a: "No. SERPMOZ manages campaigns for Sydney businesses through a remote consulting and delivery model. Campaigns are built and adjusted in the Google Ads account, which you own and can inspect at any moment. We rely on you for what the data cannot show: which suburbs are worth the drive, when the phones are staffed and which enquiries turned into paying work. Calls are scheduled for Australian Eastern time.",
       },
       {
-        q: "Do you also work with businesses in Parramatta, Penrith and Newcastle?",
-        a: "Yes. Parramatta and Penrith are usually run as their own campaigns inside a Sydney account, because prices and competitors there differ from the east. Newcastle is a separate city and gets separate targeting, budget and ads. We manage all of them remotely. If you serve more than one, we report each area on its own line so you can compare the cost of an enquiry between them.",
+        q: "Can you guarantee a certain number of leads from our budget?",
+        a: "No. The number of searches, the bids of other advertisers and the platform's own decisions all move, and none are ours to fix. We can make sure the budget is spent only on relevant searches in your service area, that every call and form is recorded, and that changes are tested properly. Forecasts are offered as estimates and revised with real data.",
+      },
+      {
+        q: "How long does Google Ads take to show results for a local business?",
+        a: "Enquiries can begin within days of launch. Whether they are arriving at a sensible cost takes longer to know, usually several weeks, because the account needs enough conversions to judge and to guide bidding. Low-budget campaigns gather that evidence slowly. We advise against large changes during this period unless something is plainly wrong.",
       },
       {
         q: "What does Google Ads management cost in Sydney?",
-        a: "Two things: the spend that goes to Google and the fee for managing it. Spend is set by auction, and Sydney auctions for legal, finance and urgent trades are among the more contested in the country, so the same number of enquiries tends to cost more here than in a smaller city. Management effort rises with the number of services, areas and landing pages involved. We recommend a starting budget only after seeing your service area and margins.",
+        a: "Google is paid for the clicks, while management is billed separately. The click budget depends on your category, how many suburbs and services you advertise and how much of the available demand you want. The management fee reflects the number of campaigns, the tracking to be set up and the landing page work needed. We recommend a starting budget after reviewing the account.",
       },
       {
-        q: "Should my ads show across all of Sydney or only near my base?",
-        a: "Start near your base and with the suburbs where jobs are most profitable. Narrow targeting concentrates a limited budget, and the data it produces is easier to read. Once those areas return enquiries at an acceptable cost, widen the area in steps and watch whether the cost holds. Businesses that deliver a service online or want clients to come to a central office can target more widely from the beginning.",
+        q: "Can we advertise only in the suburbs we want to work in?",
+        a: "Yes. Campaigns can be limited to chosen suburbs, postcodes or a radius around a point, and set to reach only searchers located there. Areas can also be excluded. Bids can differ by area, so more is spent where jobs are worth more. We review the geographic data regularly, because the suburbs that respond are not always the ones expected.",
       },
     ],
   },
@@ -284,92 +389,127 @@ export const pages: LocalServicePage[] = [
     place: "sydney",
     service: "seo-services",
     seo: {
-      title: "SEO Company in Sydney",
+      title: "SEO Services in Sydney",
       metaDescription:
-        "SEO company services in Sydney for firms competing beyond their suburb: technical fixes, content and authority for CBD, city-wide and national searches.",
-      primaryKeyword: "seo company in sydney",
+        "SEO services in Sydney for firms that sell city-wide, nationally or abroad: technical health, keyword strategy, content and authority, reported plainly.",
+      primaryKeyword: "seo services in sydney",
       secondaryKeywords: [
-        "seo services in sydney",
-        "seo agency sydney",
-        "seo company near me",
-        "seo sydney cbd",
-        "seo agency north sydney",
-        "seo company parramatta",
-        "b2b seo sydney",
+        "seo company in sydney",
+        "seo agency in sydney",
+        "seo consultant sydney",
+        "organic seo services sydney",
+        "seo services near me",
       ],
     },
-    h1: "SEO Company in Sydney for City-Wide and National Search",
+    h1: "SEO Services in Sydney",
     intro:
-      "A fund manager at Barangaroo, a software firm in Pyrmont and a law practice on Phillip Street are not looking for customers in one suburb. Their buyers search across the city or the whole country, and the competing pages belong to large firms with long-established sites. SERPMOZ works as an SEO company for Sydney businesses remotely, building the technical base, content and credibility that broader searches demand.",
+      "SERPMOZ provides SEO for Sydney companies: technical health, keyword and intent research, page and content improvement, authority building and readiness for AI search. It is for firms whose buyers compare options carefully and whose market extends beyond a single suburb. The city is widely known as a centre for finance and professional services, fields in which a considered purchase begins with research long before any enquiry.",
     answer: {
-      question: "What does an SEO company do for businesses in Sydney?",
-      text: "An SEO company helps a Sydney business appear in Google's unpaid results for the searches its buyers make, whether those are city-wide, national or by specialism. It fixes technical barriers, plans pages around search intent, improves content and earns references from credible sites. SERPMOZ does this remotely, keeps suburb-level pages distinct from city and national ones, and reports on organic enquiries as well as rankings.",
+      question: "What do SEO services include, and are they worth it for a Sydney company?",
+      text: "SEO improves how a website is crawled, understood and judged by search engines, so that it is shown for searches that lead to business. It includes technical fixes, research into what buyers look for, better pages and content, and credible mentions from other sites. It suits companies that sell considered services or products and can invest over months. It is less suited to a firm needing enquiries this week.",
     },
-    searches: [
+    context: {
+      heading: "Why organic search suits firms selling considered purchases",
+      paragraphs: [
+        "Some purchases are made in minutes and others over weeks. A company choosing an auditor, a lender, a software platform or a commercial fit-out contractor reads, compares and returns several times before speaking to anyone. Each of those visits begins with a search or, sometimes, a question to an AI assistant. A firm that appears usefully at several of those moments has an advantage that advertising alone finds expensive to buy.",
+        "Sydney is the capital of New South Wales and is commonly associated with banking, insurance, law and corporate headquarters. Firms in those fields sell to other businesses or to careful individuals, and their markets are seldom local in the narrow sense. A firm may serve the metropolitan area, the state, the country or overseas clients from the same website, and the SEO plan has to decide which of those audiences each section of the site is written for.",
+        "Regulated sectors add a constraint that shapes content. Financial services, health and legal practice each have rules about how services may be promoted, set by their own regulators and by consumer law in general. This tends to favour accurate, well-evidenced explanation over bold claims, which is also what search engines and readers reward. Pages in these fields should pass your compliance reviewer before they go live.",
+      ],
+    },
+    audiences: [
       {
-        title: "Specialism plus Sydney",
-        body: "Professional buyers search by expertise and city: construction lawyer Sydney, forensic accountant Sydney, commercial fit-out Sydney. Distance matters little to them. They want the right firm and will read several pages on each site before making contact.",
+        title: "Finance, legal and advisory firms with informed clients",
+        body: "Firms whose prospects read closely and check credentials. Depth, accuracy and clear authorship matter more than volume, and each page is reviewed for compliance before publication. The programme builds a body of explanation that shows how the firm thinks.",
       },
       {
-        title: "Searches with no place",
-        body: "Software, financial products and online services based here are searched nationally, with no city named. A Sydney address gives no advantage in those results. Depth of content and the standing of the site decide who appears.",
+        title: "Software and B2B companies selling beyond the city",
+        body: "Companies based here with customers across the country or abroad. SEO targets the problems and comparisons their buyers search for, wherever those buyers are, and keeps location out of pages where it adds nothing.",
       },
       {
-        title: "Research before a shortlist",
-        body: "Before requesting proposals, buyers search questions: how a process works, what a regulation requires, what to ask a provider. Firms whose articles answer those questions are already familiar by the time the shortlist is drawn up.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Well-funded competitors in the centre",
-        body: "CBD finance, legal and property firms have invested in their sites for years. Matching them on broad terms takes sustained work. We start with narrower practice areas and questions where a specialist can be the strongest answer, and widen from there.",
-      },
-      {
-        title: "Three levels on one site",
-        body: "A Sydney business may need suburb pages for walk-in or local work, city pages for metropolitan clients and national pages for products sold everywhere. If these overlap, they compete with each other. We map each search to one page before writing anything.",
-      },
-      {
-        title: "Compliance review slows publishing",
-        body: "Financial services and health content must pass compliance checks before it goes live, and claims are restricted. We plan for that, with briefs that flag regulated statements early and a publishing rhythm the reviewers can keep up with.",
-      },
-      {
-        title: "Local references that count",
-        body: "Mentions from Australian industry bodies, business media, universities and event organisers in the city carry more relevance than generic overseas directories. We look for references a firm has earned through its real work and help turn them into links.",
+        title: "Established businesses outgrowing referrals and advertising",
+        body: "Firms that have grown on word of mouth or paid clicks and want a steadier source of enquiries. Organic visibility takes time to build and reduces dependence on any single channel.",
       },
     ],
-    areas: [
-      { name: "Martin Place", note: "Banking and legal heartland, where firms compete for national terms from a prestigious address." },
-      { name: "Barangaroo", note: "Newer towers housing finance and advisory firms that market to corporate buyers country-wide." },
-      { name: "Surry Hills", note: "Creative agencies and start-ups here need visibility for specialist services more than suburb searches." },
-      { name: "Pyrmont", note: "Media and technology companies whose audiences are national or international from the outset." },
-      { name: "North Sydney", note: "Insurance, engineering and technology offices with business buyers who search by capability." },
-      { name: "Macquarie Park", note: "Pharmaceutical and technology employers whose technical content must satisfy expert readers and regulators." },
+    challenges: [
+      {
+        title: "Local, national and international pages colliding",
+        body: "A firm with suburb pages, city pages and national service pages can end up with several competing for one phrase. We assign each search to a single page and tidy the internal links and titles that blur the distinction.",
+      },
+      {
+        title: "Well-resourced competitors on broad terms",
+        body: "Head terms in finance, law and property are often held by large institutions, directories and publishers. We aim first at specific services, problems and comparisons where a specialist firm can offer the more useful page.",
+      },
+      {
+        title: "Expert knowledge that never reaches the site",
+        body: "Partners and senior staff hold the insight that would make pages distinctive, and have little time. We interview them briefly, draft from the conversation and return text for correction, which asks far less of them than writing.",
+      },
+      {
+        title: "Compliance review slowing publication",
+        body: "In regulated fields every page needs sign-off, and queues form. We agree the review route at the start, batch pages sensibly and write within known constraints, so fewer drafts are sent back and less time is lost.",
+      },
     ],
+    approach: [
+      {
+        stage: "Diagnose",
+        body: "We crawl the site, read Search Console and analytics data, and assess content and backlinks against the competitors you consider relevant. The diagnosis ranks problems by their effect on enquiries, not by how many warnings a tool produces.",
+      },
+      {
+        stage: "Map",
+        body: "Research identifies what your buyers search for at each stage, grouped by intent and value. Every group is mapped to a page, marked as local, city-wide, national or international, and gaps and overlaps are made explicit.",
+      },
+      {
+        stage: "Repair",
+        body: "Indexing faults, slow templates, redirect chains, duplicate pages and missing structured data are fixed in order of impact. We supply developer-ready specifications or make the changes ourselves, and verify each one on the live site after release.",
+      },
+      {
+        stage: "Develop",
+        body: "Priority pages are rewritten or created with input from your experts, then supported by digital PR that earns mentions from publications and organisations relevant to your field. Pages are also structured so AI search features can read them accurately.",
+      },
+      {
+        stage: "Review",
+        body: "Each month we report organic enquiries, visibility by topic group and work delivered, and each quarter we revisit priorities. Topics that are not responding are examined, and the plan is changed when the evidence warrants.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The diagnosis and mapping take the first few weeks. Technical repairs follow and sometimes bring a quick improvement where pages were not being indexed properly. Content and authority work is cumulative: a reliable trend typically takes six months or more to establish, and broad terms held by large organisations may take much longer or prove not worth pursuing. Timelines stretch when development or compliance sign-off is slow.",
+        "Reporting is written in plain language and tied to enquiries. Each report ends with what we recommend next and what we suggest dropping.",
+      ],
+      notGuaranteed: [
+        "First-page placement for any chosen search term",
+        "Growth in visits, enquiries or revenue by a stated date",
+        "Mentions or citations in answers generated by AI systems",
+      ],
+    },
     sectors: [
-      { slug: "finance", note: "Fund managers, brokers and fintechs compete nationally from the CBD under rules that restrict promotional claims." },
-      { slug: "professional-services", note: "Law, accounting and advisory firms are chosen on demonstrated expertise, which detailed practice pages make visible." },
-      { slug: "technology", note: "Software companies in Pyrmont and Surry Hills need category and comparison visibility well beyond Sydney." },
+      { slug: "finance", note: "Clients research providers at length and promotion is regulated, which rewards accurate, carefully reviewed pages." },
+      { slug: "legal", note: "Prospective clients search for a specific legal problem before choosing a firm, so clear practice-area pages attract suitable enquiries." },
+      { slug: "b2b", note: "Business buyers compare suppliers over weeks, and content matched to each stage keeps a firm in consideration." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ an SEO company in Sydney?",
-        a: "SERPMOZ is an AI-powered digital growth company providing SEO to Sydney businesses: audits, technical fixes, content planning and writing, and digital PR. Specialists do the work remotely, using AI to process search data faster and people to judge what is worth doing. We have no office in Sydney and no staff there. Meetings run by video on Australian Eastern time, and all plans and reports are shared online.",
+        q: "What does an SEO company actually do each month?",
+        a: "The work changes as the programme matures. Early months are weighted to audit, technical repair and research. Later months go to improving and adding pages, earning mentions from relevant sites, monitoring for new faults and reporting. A good provider can show, for any month, what was done, why it was chosen and what it was expected to affect.",
       },
       {
-        q: "How do I find an SEO company near me in Sydney?",
-        a: "A near me search will surface firms around your suburb, and there are many across the CBD, Surry Hills and North Sydney. Being close helps only if you value meeting in person. Compare what they propose. Look for an audit before a quote, keyword research in Australian terms, a view on which pages serve local, city and national searches, and reporting on enquiries. Avoid anyone promising first-page positions by a set date.",
+        q: "Does SERPMOZ have an office in Sydney?",
+        a: "No. SERPMOZ works with Sydney companies through a remote consulting and delivery model. SEO for a firm selling across a city, a country or abroad depends on its website, its content and its reputation online, and none of that requires a consultant nearby. Meetings are held by video, and we ask for time with the people in your firm who know the subject and the clients.",
       },
       {
-        q: "Do you also work with businesses in North Sydney, Parramatta and Wollongong?",
-        a: "Yes. North Sydney is an office district in its own right, and firms there chase the same city-wide terms as the CBD. Parramatta firms often compete across Western Sydney and need both local and city-wide pages. Wollongong has its own professional and industrial base. We work with all three remotely and research each separately, since competitors and phrasing change. A firm with several offices gets a page structure that keeps each one distinct.",
+        q: "Can you guarantee page-one rankings on Google?",
+        a: "No. Rankings are decided by the search engine, differ between users and change as competitors and algorithms do. A guarantee would either be empty or be met with terms nobody searches. We agree priorities and measures with you, do the work in the open and report results against your own starting point, including where they fall short.",
+      },
+      {
+        q: "How long does SEO take to show results for a Sydney firm?",
+        a: "Technical fixes may help within weeks. For content and authority, expect six months or more before the direction is dependable, and longer in fields where large institutions dominate broad searches. Firms with an established domain and existing content usually progress faster than new sites. Internal approval speed, especially compliance review, often determines the pace more than anything we do.",
       },
       {
         q: "What does SEO cost in Sydney?",
-        a: "It follows the gap between where your site stands and what you want to rank for. City-wide terms in law, finance and property are contested by large firms, so closing that gap takes more content and more credible references than a niche industrial service would. Technical condition matters: an old platform may need rebuilding before content can perform. Compliance review in regulated sectors adds time. We set out scope and priorities after an audit.",
+        a: "Cost depends on the size of the site, its technical condition, the number of services and audiences to cover, how contested those subjects are and how much content your own staff can contribute. Regulated subjects need more review time. We do not quote before understanding these, and the growth audit provides the basis for a scope you can question line by line.",
       },
       {
-        q: "Should a CBD firm target Sydney searches or national ones?",
-        a: "It depends on who can buy from you. A firm that serves clients in person, such as a litigation practice, should lead with Sydney and its specialisms. A firm whose service travels, such as tax advice for expatriates or a software product, should build national pages and treat the city as supporting detail. Many need both, on separate pages. We check the search results for each term to see which kind Google expects.",
+        q: "We are based in Sydney but sell nationally. Should our SEO focus on the city?",
+        a: "Only where location affects the buyer's choice. If clients anywhere in the country can use your service, the main service pages should target the service and the problem, without a city attached. Location pages still have a place for searches that name the city and for your business profile. We decide page by page, according to how buyers in each segment look for you.",
       },
     ],
   },
@@ -377,91 +517,127 @@ export const pages: LocalServicePage[] = [
     place: "sydney",
     service: "landing-page-optimization",
     seo: {
-      title: "Landing Page Optimisation Services in Sydney",
+      title: "Landing Page Optimisation in Sydney",
       metaDescription:
-        "Landing page optimisation services in Sydney: pages matched to each ad and suburb, built for mobile callers comparing several providers, with calls tracked.",
-      primaryKeyword: "landing page optimisation services in sydney",
+        "Landing page optimisation in Sydney: pages matched to each ad and service, built for mobile visitors, with clear proof, simple forms and call tracking.",
+      primaryKeyword: "landing page optimisation in sydney",
       secondaryKeywords: [
-        "landing page optimisation agency sydney",
         "landing page optimization sydney",
         "landing page design sydney",
-        "landing page agency near me",
-        "landing pages for tradies sydney",
-        "landing page optimisation parramatta",
-        "google ads landing pages sydney",
+        "landing page agency sydney",
+        "landing page optimisation services sydney",
+        "landing page optimisation near me",
       ],
     },
-    h1: "Landing Page Optimisation in Sydney for Paid and Local Traffic",
+    h1: "Landing Page Optimisation in Sydney",
     intro:
-      "A Sydney searcher who taps an ad for blocked drains has usually opened two or three other tabs as well. The page that loads fastest, names their suburb, shows a licence and offers a phone number tends to get the call. With clicks priced as they are here, a weak page is an expensive leak. SERPMOZ builds and improves landing pages for Sydney businesses remotely, one campaign at a time.",
+      "SERPMOZ designs, builds and improves landing pages for Sydney businesses: pages that continue the promise of an ad or search result and make the next step easy. It is for firms paying for clicks, or earning local visits, that too rarely become calls or bookings. A visitor comparing several nearby providers on a phone decides quickly, and the page has a short time to answer what they came for.",
     answer: {
-      question: "What does a landing page optimisation company do for businesses in Sydney?",
-      text: "A landing page optimisation company builds and refines the single page a visitor reaches after clicking an ad or a map listing, so more of them call, book or request a quote. For Sydney that means fast mobile pages that repeat the searched service and area, show real proof and make contact effortless. SERPMOZ works remotely, matches pages to ad groups and tracks each lead to its outcome.",
+      question: "What is landing page optimisation, and how does it help a Sydney business?",
+      text: "Landing page optimisation improves the page a visitor arrives on after clicking an ad or a search result, so that more of them call, book or enquire. It works on message match, structure, proof, forms, speed and tracking. For a Sydney business paying for local clicks, a page that names the service, the area covered and how to get in touch tends to convert better than a general home page.",
     },
-    searches: [
+    context: {
+      heading: "Why the page after the click deserves attention",
+      paragraphs: [
+        "An ad makes a specific promise, and the visitor arrives expecting to see it kept. If the ad offered a same-day repair in their area and the page opens with a company history, the thread is broken and many leave. Message match means the headline, the opening lines and the first image confirm what was searched for. It is among the least expensive improvements available to an advertiser and frequently one of the most effective.",
+        "Where a business advertises to particular parts of a large city, the page should say plainly that it works there. A visitor in the west wants to know the firm will come to them, and one in the eastern suburbs wants the same. That does not require a page for every suburb. A small number of pages by region or service, each stating the area covered and showing work or feedback from it, is usually enough.",
+        "Many of these visits are likely to happen on a phone, often in the middle of something else. The page must load fast on a mobile connection, put the phone number where a thumb can reach it, and ask for no more information than is needed to respond. Proof should be quick to take in: licence details for a trade, qualifications for a practice, and a few reviews that read as real. Claims should be ones you can substantiate.",
+      ],
+    },
+    audiences: [
       {
-        title: "After the ads disappoint",
-        body: "The need usually appears as a complaint: plenty of clicks from Google Ads, few enquiries. Owners search for landing page help once they suspect the homepage is the problem. Often the ad promised air conditioning repair in Ryde and the page talked about everything.",
+        title: "Trades and services running call-focused paid campaigns",
+        body: "Firms paying for urgent local clicks. A fast page with the service, the area, the licence and a prominent call button converts more of that expensive traffic than a general website can.",
       },
       {
-        title: "Comparing on a phone",
-        body: "Most local visitors arrive on mobile, mid-task, and judge the page in a glance. They look for the service, their area, a price signal, reviews and a call button. Whatever is missing sends them back to the results.",
+        title: "Clinics and practices promoting a specific treatment",
+        body: "Practices advertising one service, such as implants or physiotherapy for a sports injury. A dedicated page explains that treatment, the practitioner and the booking process, without sending the visitor to hunt through the main site.",
       },
       {
-        title: "Campaign and offer pages",
-        body: "Sydney firms also need one-off pages for a seasonal offer, a new clinic in Rhodes, an open day or a property project. These are searched by name after outdoor or social advertising, and need a page built for that single purpose.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Costly clicks raise the stakes",
-        body: "In competitive Sydney categories, each visitor has been paid for at a high price. A modest improvement in the share who enquire changes the economics of the whole campaign. That is why page work usually comes before raising budgets.",
-      },
-      {
-        title: "Area match builds confidence",
-        body: "A visitor from Dee Why wants to see that the business works on the Northern Beaches. Pages built per region, with local jobs, reviews from nearby customers and realistic arrival times, tend to convert better than one city-wide page with a suburb list.",
-      },
-      {
-        title: "Calls outweigh forms",
-        body: "For urgent services the phone is the main route. Pages need a tap-to-call button that stays visible, hours stated plainly and call tracking that ties each ring to the ad behind it. Forms remain for those who are planning ahead.",
-      },
-      {
-        title: "Proof that passes scrutiny",
-        body: "Licence numbers, insurance, association memberships and unedited reviews reassure cautious buyers. Under consumer law, testimonials must be real and claims such as fastest or cheapest need evidence. We use proof you can document and leave out lines you cannot support.",
+        title: "Professional firms qualifying enquiries before the call",
+        body: "Advisers, lawyers and brokers who want fewer, better leads. Page copy and form questions are set to attract suitable clients and gently turn away those the firm cannot help, saving time on both sides.",
       },
     ],
-    areas: [
-      { name: "Northern Beaches", note: "Residents favour clearly local providers, so regional pages with nearby reviews earn more calls." },
-      { name: "Inner West", note: "Older homes and strata buildings raise specific questions that a page should answer upfront." },
-      { name: "Parramatta", note: "Professional and medical campaigns here need pages that mention parking, transport and exact location." },
-      { name: "Sydney CBD", note: "Business visitors on desktop want credentials, case detail and a short enquiry form." },
-      { name: "Blacktown", note: "Large family suburbs where mobile speed and clear pricing signals matter on trade pages." },
+    challenges: [
+      {
+        title: "Sending every click to the home page",
+        body: "A home page must serve everyone, so it serves a specific searcher poorly. We build focused pages for the main services and areas advertised, each with one purpose, and connect each ad group to the page that matches.",
+      },
+      {
+        title: "Too few visits to test reliably",
+        body: "A local campaign may not send enough traffic for a split test to conclude in reasonable time. We apply established principles first, compare before and after with care, and run formal tests only where volume supports them.",
+      },
+      {
+        title: "Forms that ask for too much",
+        body: "Every extra field costs enquiries, yet some questions save wasted calls. We decide with you which details are needed to respond, remove the others, and make sure the form works with one thumb and autofill.",
+      },
+      {
+        title: "Proof that looks manufactured",
+        body: "Stock photographs and anonymous praise persuade nobody. We use real images of your staff and work, reviews quoted accurately with their source, and credentials that can be checked. Nothing is invented or embellished, including scarcity and deadlines.",
+      },
     ],
+    approach: [
+      {
+        stage: "Match",
+        body: "We list your campaigns, ad groups and main local search entries, and note what each promises. Each is paired with an existing page or marked as needing a new one, and mismatches between promise and page are recorded.",
+      },
+      {
+        stage: "Draft",
+        body: "Copy and structure are drafted for each page: a headline that echoes the search, the offer, the area served, proof, answers to common objections and one clear action. You review wording and supply photographs and credentials.",
+      },
+      {
+        stage: "Build",
+        body: "Pages are built on your site or platform as lightweight, mobile-first templates with tap-to-call, short forms and fast loading. Each is checked on real phones and common browsers before any traffic is sent to it.",
+      },
+      {
+        stage: "Track",
+        body: "Calls, form submissions and bookings are recorded for every page, with the source campaign attached. Tracking is tested end to end, so that a lead in your inbox can be traced back to the click that produced it.",
+      },
+      {
+        stage: "Improve",
+        body: "With data arriving, we revise headlines, proof, form length and layout, testing formally where traffic allows. Findings are shared so that lessons from one page are applied to the others and to the ads themselves.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "Pairing ads with pages and drafting the first versions takes a couple of weeks, and the first pages can usually go live within the first month, depending on how quickly copy and photographs are approved. Because a better-matched page changes behaviour immediately, early effects on enquiry rate can be visible soon after launch. Confirming them takes longer, and the pace of further testing depends on how many clicks the campaigns deliver.",
+        "You receive a monthly note on each page: visits, calls and forms, changes made and the next thing to try. Results with thin data are labelled as such.",
+      ],
+      notGuaranteed: [
+        "A specific conversion rate or cost per enquiry from any page",
+        "That a new version will outperform the page it replaces",
+        "The quality of leads, which also depends on targeting and follow-up",
+      ],
+    },
     sectors: [
-      { slug: "home-services", note: "Trades paying for urgent clicks need pages that load instantly, show the licence and prompt a call." },
-      { slug: "real-estate", note: "Agencies and developers run project and appraisal campaigns that need a dedicated page for each offer." },
-      { slug: "healthcare", note: "Clinics need booking-focused pages that respect limits on testimonials and claims in health advertising." },
+      { slug: "home-services", note: "Urgent searchers decide in moments, so a fast page with area, licence and a call button captures them." },
+      { slug: "healthcare", note: "Patients want to understand a treatment and book easily, and a focused page does both without distraction." },
+      { slug: "professional-services", note: "Clear scope and qualifying questions on the page bring fewer unsuitable enquiries and more useful conversations." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a landing page optimisation company in Sydney?",
-        a: "SERPMOZ is an AI-powered digital growth company that designs, builds and tests landing pages for Sydney businesses, usually alongside their paid search or local campaigns. We work remotely with access to your ad account, analytics and site or page builder. We do not have a Sydney office. What we bring is a method: match the page to the click, remove friction, add real proof and measure which leads turn into work.",
+        q: "What is the difference between a landing page and a normal web page?",
+        a: "A normal page is part of a site's structure and serves visitors with many aims. A landing page is built for one audience arriving from one source with one intention, and it offers a single next step. It has fewer distractions, a message matched to the ad or search, and tracking that shows precisely how well it performs.",
       },
       {
-        q: "How do I find a landing page agency near me in Sydney?",
-        a: "Local web studios and ad agencies across the city offer this, and a search by suburb will list them. Since the work is done online, compare on evidence before address. Ask how they decide what goes on the first screen, how they track phone calls, whether pages are built per campaign and region, and how they judge lead quality. Ask who owns the pages afterwards. Pretty design without measurement is decoration.",
+        q: "Does SERPMOZ have an office in Sydney?",
+        a: "No. SERPMOZ produces landing pages for Sydney businesses through a remote consulting and delivery model. Landing pages are drafted, built and tested online, and you review them on a staging link before launch. Photographs, credentials and the details of how you work come from you, since those are what make a page convincing. Review calls are booked at times that fit around your jobs or appointments.",
       },
       {
-        q: "Do you also work with businesses in North Sydney, Penrith and the Central Coast?",
-        a: "Yes, all remotely. Pages for North Sydney firms are usually aimed at business buyers on desktop. Penrith and the outer west need mobile-first trade and health pages. The Central Coast is its own market, and visitors there respond to pages that name Gosford, Erina or Wyong ahead of Sydney. We build variations for each area you advertise in, so the page a visitor lands on always reflects where they are.",
+        q: "Can you guarantee the new pages will convert better?",
+        a: "No. A well-matched page usually improves on a general one, but the size of any change depends on the offer, the traffic and what competitors show. Some revisions make no difference. We set a baseline, change things for stated reasons, measure calls and forms accurately and keep what works. Where the evidence is thin, we say so.",
+      },
+      {
+        q: "How long does landing page optimisation take to show results?",
+        a: "A first set of pages is commonly live within a month. If the previous destination was a poor match, the difference in enquiry rate can show within weeks. Reaching firm conclusions takes longer for campaigns with few clicks. Continued improvement is gradual, as each round of changes needs enough visits behind it to be judged fairly.",
       },
       {
         q: "What does landing page optimisation cost in Sydney?",
-        a: "The number of distinct pages needed is the main factor. A trade advertising one service in one region needs a single strong page. A firm running many services across several regions needs a template and a set of variations, plus copy and proof for each. Whether pages are built in your existing site or a separate builder, and whether call tracking exists yet, also change the effort. We estimate after seeing the campaigns.",
+        a: "It depends on how many pages are needed, whether they are built on your existing site or a separate tool, how much copywriting and photography is required, and how much tracking has to be installed. Ongoing testing is optional and priced by effort. A business advertising two services needs far less than one advertising many across several regions.",
       },
       {
-        q: "Do we need a separate landing page for every Sydney suburb we advertise in?",
-        a: "Usually not for every suburb. A page per region, such as the Eastern Suburbs or the Hills, with the suburbs named and local proof shown, covers most paid campaigns well. Individual suburb pages earn their place where spend is concentrated or the offer differs. Paid landing pages can be kept out of search indexes, so near-duplicate variations do not create the problems they would as organic pages.",
+        q: "Do we need a separate landing page for every suburb we advertise in?",
+        a: "Rarely. Dozens of pages differing only in the suburb name are a burden to maintain and add little for the visitor. Pages by service and by broad region are usually sufficient, with the areas covered stated clearly. A dedicated suburb page is justified where demand is high and you have specific work, feedback or details to show for that place.",
       },
     ],
   },
@@ -469,92 +645,127 @@ export const pages: LocalServicePage[] = [
     place: "sydney",
     service: "web-development",
     seo: {
-      title: "Web Development Company in Sydney",
+      title: "Web Development Services in Sydney",
       metaDescription:
-        "Web development company services in Sydney: fast mobile sites with clear service, suburb and contact structure for trades, clinics, venues and CBD firms.",
-      primaryKeyword: "web development company in sydney",
+        "Web development services in Sydney: fast, mobile-first websites with clear service and area structure, careful migration and enquiry tracking built in.",
+      primaryKeyword: "web development services in sydney",
       secondaryKeywords: [
-        "web development services in sydney",
+        "web development company in sydney",
         "web development agency sydney",
-        "web developers near me",
-        "website design sydney",
-        "web development parramatta",
-        "web developer surry hills",
-        "website developer north shore",
+        "website development sydney",
+        "web developers sydney",
+        "web development company near me",
       ],
     },
-    h1: "Web Development Company in Sydney for Sites That Win Enquiries",
+    h1: "Web Development Services in Sydney",
     intro:
-      "Plenty of well-regarded Sydney businesses, from a smash repairer in Brookvale to a family law practice in Parramatta, still run on a site built a decade ago that crawls on a phone. Their reputation is sound and their website turns people away. SERPMOZ designs and builds websites for Sydney businesses remotely: quick on mobile, organised by service and area, and wired so every call and form can be traced.",
+      "SERPMOZ builds and rebuilds websites for Sydney businesses: requirements, platform choice, design, engineering, migration and support after launch. It is for firms held back by a site that is slow, awkward to edit or unclear about what they do and where. An established local business can have a strong reputation in person and a website that does not reflect it, which costs enquiries from anyone who has never met the owner.",
     answer: {
-      question: "What does a web development company do for businesses in Sydney?",
-      text: "A web development company plans, designs and builds a Sydney business's website and keeps it running. Good work covers page structure for services and suburbs, mobile speed, contact routes, hosting, security and tracking, and carries existing rankings across safely. SERPMOZ does this remotely, on the platform that suits how you operate, and hands over a site your team can update without calling a developer for each change.",
+      question: "What does a web development company do for a Sydney business?",
+      text: "A web development company plans, designs and builds a website, connects it to the systems the business uses, moves the old content across without losing search visibility, and maintains it afterwards. For a Sydney business the build should make services and areas covered obvious, load quickly on phones, and record every call, form and booking. Choice of platform depends on who will update the site once it is live.",
     },
-    searches: [
+    context: {
+      heading: "What a local business should ask of a new website",
+      paragraphs: [
+        "The usual reason for a rebuild is that the site looks dated. The better reasons are measurable: pages load slowly on phones, staff cannot change text without a developer, enquiries cannot be traced to their source, or the structure no longer matches what the business sells. A project that starts from those problems produces a site that works harder. One that starts from appearance alone often reproduces the old faults in new colours.",
+        "Structure matters a great deal for a business serving a spread-out city. Services, and the areas in which they are offered, need a clear arrangement of pages so that a visitor from any part of the metropolitan area can confirm quickly that the firm does what they need and comes to them. The same structure helps search engines understand which page answers which search. It should be planned before design, because it determines the templates required.",
+        "A rebuild also puts existing visibility at risk. An older business may have pages that have earned links and search positions over many years, and a launch that changes addresses without redirects can discard them. Migration planning, which means listing every current URL, deciding its destination and testing the redirects, is unglamorous work that protects the value already built. Licence details and other required notices should be carried across accurately as well.",
+      ],
+    },
+    audiences: [
       {
-        title: "Developer plus a suburb",
-        body: "Owners often look for someone close: web designer Surry Hills, web developer Parramatta, website company Northern Beaches. The instinct is to meet face to face. What decides the outcome is the brief, the structure and the testing, wherever the builder sits.",
+        title: "Trades and service firms replacing an ageing site",
+        body: "Businesses whose site predates smartphones or was built by someone no longer available. A modern, fast build with clear service and area pages and working enquiry tracking aims to recover calls that were being lost.",
       },
       {
-        title: "Fixing a slow or broken site",
-        body: "A common trigger is a warning: the site fails on mobile, a form has silently stopped sending, or a plugin update broke the layout. The search is for a repair, and the sensible answer is sometimes a rebuild on firmer ground.",
+        title: "Practices and clinics adding online booking",
+        body: "Health and professional practices that want patients or clients to book without phoning. The build integrates the booking system, presents practitioners and services clearly and keeps personal data handling in line with privacy expectations.",
       },
       {
-        title: "A site for a new venture",
-        body: "New clinics, cafes, studios and consultancies opening in places such as Green Square or Rouse Hill search for a website alongside signage and fit-out. They need to launch quickly with a booking link and a profile ready.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Phones on patchy connections",
-        body: "Sydney visitors browse on trains through the tunnels, on building sites and in car parks. Heavy pages stall. We build light templates, compress images, limit third-party scripts and test on mid-range phones over mobile data instead of a fast office connection.",
-      },
-      {
-        title: "Service and area architecture",
-        body: "Local search here runs on suburbs and regions, so the site needs a clear tree: services, regions, then selected suburbs, each with a distinct purpose. We design that structure first, because it shapes menus, internal links and what can rank.",
-      },
-      {
-        title: "Booking and trade software",
-        body: "Clinics use health booking platforms, venues use reservation apps and trades use job-management systems. A site should hand visitors to those tools cleanly and record the handover. We integrate what you already run and test that enquiries arrive.",
-      },
-      {
-        title: "Licence and credential display",
-        body: "New South Wales builders, electricians, plumbers and agents are licensed, and CBD advisers carry their own registrations. Customers look for these before calling. We give them a consistent place in the template so they appear on every page and stay current.",
+        title: "Growing companies whose site no longer fits",
+        body: "Firms that have added services, locations or a store since the site was built. A restructure and a component-based design let the site grow further without another rebuild in a short time.",
       },
     ],
-    areas: [
-      { name: "Surry Hills", note: "Crowded with studios and agencies, so client businesses here expect polished, modern design." },
-      { name: "Alexandria", note: "Showrooms and trade suppliers need catalogue pages, directions and parking details that work on mobile." },
-      { name: "Chatswood", note: "Clinics and retailers may want pages in more than one language for local customers." },
-      { name: "Parramatta", note: "Professional firms serving the west need sites that show credentials and easy routes to contact." },
-      { name: "Manly", note: "Hospitality and tourism operators need fast pages with menus, bookings and directions from the ferry." },
-      { name: "Wollongong", note: "South of the city, businesses often want a site covering both the Illawarra and southern Sydney." },
+    challenges: [
+      {
+        title: "Structuring services and areas without duplication",
+        body: "Multiplying every service by every suburb creates a mass of thin pages. We design a structure with strong service pages and a limited set of area pages, linked so that each supports the other and none repeats.",
+      },
+      {
+        title: "Protecting visibility through the migration",
+        body: "Years of search history sit on the old URLs. We crawl the existing site, map each address to its new home, carry over titles and content that perform, and monitor search data after launch to catch anything missed.",
+      },
+      {
+        title: "Speed on mobile connections",
+        body: "Large images, heavy page builders and third-party scripts slow a site on phones. We set a performance budget at the start, choose hosting near your visitors, optimise media and question every script that is added.",
+      },
+      {
+        title: "Keeping the site editable after handover",
+        body: "A site only its builder can change goes stale. We choose a platform your staff can use, build reusable components with clear guidance and provide training, so routine updates to text and images need no developer.",
+      },
     ],
+    approach: [
+      {
+        stage: "Brief",
+        body: "We meet the owners and managers of the business and those who will maintain the site, and review analytics and current enquiries. The brief records goals, audiences, required integrations, content owners and how success will be measured.",
+      },
+      {
+        stage: "Plan",
+        body: "A sitemap of services, areas and supporting pages is agreed, with the URL scheme and redirect map. The platform is selected, such as WordPress, Webflow, Shopify or Next.js, along with hosting suited to where visitors are.",
+      },
+      {
+        stage: "Design",
+        body: "Templates are designed mobile first from a set of shared components, using your real copy, photographs and credentials. Contrast, type size and keyboard use are checked for accessibility, and you approve the designs before building starts.",
+      },
+      {
+        stage: "Engineer",
+        body: "Components, forms, booking or payment integrations and the editing interface are built and shown on a staging site. Structured data, analytics, call tracking and consent controls are installed and tested with real examples before sign-off.",
+      },
+      {
+        stage: "Release",
+        body: "Launch follows a written checklist: device and browser tests, redirects, forms, tracking and backups. We watch errors, speed and search data closely afterwards, resolve issues, and hand over training and written documentation to your staff.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The brief and plan are settled in the first weeks. Design and engineering follow, with regular reviews on staging, and a typical marketing site reaches launch in a few months. Projects run longer when integrations are complex, when many pages must be migrated, or when copy and photographs are delayed. We agree a content timetable early, because that is where schedules most often slip.",
+        "After launch we stay close for an agreed period, then offer optional ongoing care. All accounts, code and content belong to you from the start.",
+      ],
+      notGuaranteed: [
+        "A fixed completion date if content or approvals arrive late",
+        "That search visibility will be unchanged immediately after a migration",
+        "An increase in enquiries from the new site alone",
+      ],
+    },
     sectors: [
-      { slug: "home-services", note: "Established trades with dated sites lose mobile callers to newer rivals whose pages load and dial faster." },
-      { slug: "hospitality", note: "Restaurants and bars need menus, hours and reservations within one tap, readable outdoors on a small screen." },
-      { slug: "professional-services", note: "Suburban and CBD practices need credible sites with clear practice areas, people pages and secure enquiry forms." },
+      { slug: "home-services", note: "Customers check services, areas and licences on a phone before calling, which defines what the site must show first." },
+      { slug: "healthcare", note: "Booking integration, practitioner information and careful handling of personal data are central to a practice website." },
+      { slug: "real-estate", note: "Agencies need area pages, listing feeds and appraisal forms that work smoothly on mobile devices." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a web development company in Sydney?",
-        a: "SERPMOZ is an AI-powered digital growth company that builds websites for Sydney businesses on WordPress, Shopify, Webflow and Next.js. Design, development, testing and training are all delivered remotely, with staging links for review at each step. We have no studio in Sydney and will not claim one. You own the domain, hosting account and code at the end, and the site is built to be found and to convert.",
+        q: "Should we rebuild our website or improve the one we have?",
+        a: "It depends on what is wrong. If the platform is sound and the problems are content, speed or structure, improvement is cheaper and safer. If the site cannot be edited, is insecure, or cannot support what the business now needs, a rebuild is justified. We assess the existing site first and tell you which applies, with the reasoning.",
       },
       {
-        q: "How do I find a web development company near me in Sydney?",
-        a: "Searching your suburb will bring up nearby studios, and Surry Hills, Pyrmont and North Sydney have many. Decide first whether meeting in person matters to you. Then compare on substance: who writes the content, how mobile speed is tested, how old pages are redirected, where the site is hosted and what support costs after launch. Ask to see a site they built for a business like yours and open it on your phone.",
+        q: "Does SERPMOZ have an office in Sydney?",
+        a: "No. SERPMOZ delivers websites for Sydney businesses through a remote consulting and delivery model. Briefing, design reviews and testing take place on video calls and a staging site you can open from any device. The site is hosted where it serves your visitors quickly, wherever its developers are. Domain, hosting and platform accounts are registered in your name, so control stays with you.",
       },
       {
-        q: "Do you also work with businesses in Parramatta, Newcastle and the Central Coast?",
-        a: "Yes, remotely in each case. Parramatta businesses often need sites that address both Western Sydney and the wider city. Newcastle firms have their own suburbs and region to reflect, from Merewether to Lake Macquarie. Central Coast businesses frequently serve commuters and holidaymakers, which changes what the home page should say. We learn the area from you and from search data before designing anything.",
+        q: "Can you guarantee more enquiries from a new website?",
+        a: "No. A faster, clearer site with working tracking removes obstacles, and enquiries may rise as a result, but the outcome also depends on how many visitors arrive and on your offer. We commit to agreed performance, accessibility and tracking standards, a complete redirect map and support after launch. Enquiry numbers are measured and reported, never promised.",
+      },
+      {
+        q: "How long does a new website take to build and show results?",
+        a: "A marketing site generally takes a few months from brief to launch, and more with online booking, a store or a large migration. Improvements in speed and usability are felt by visitors immediately. Changes in enquiry numbers can be assessed after several weeks of data, and any search effects of a migration need a longer period before conclusions are drawn.",
       },
       {
         q: "What does web development cost in Sydney?",
-        a: "Complexity decides it. A clear brochure site for a suburban practice is a small project. Costs rise with online booking or shop functions, multiple regions with their own pages, integrations with practice or job software, and custom design. Migrating a large old site carefully adds work that is easy to overlook. Content and photography are the other variable. Sydney studio rates vary widely, so compare what is included before comparing headline quotes.",
+        a: "The main influences are the number of distinct templates, the platform, integrations such as booking or payments, the volume of content to write or move, and the degree of bespoke design. Hosting, licences and ongoing care are additional. A compact service site and a multi-location site with a store are very different projects. A written scope follows the briefing stage.",
       },
       {
-        q: "Does a Sydney business need separate pages for each suburb it serves?",
-        a: "It needs pages for the areas it can say something real about. For most, that means a page for each main service, a page for each region covered, and suburb pages only where there are completed jobs, reviews or details worth showing. We build the template so pages can be added over time without clutter. Dozens of copied suburb pages at launch slow the project and seldom rank.",
+        q: "Will we be able to update the site ourselves after launch?",
+        a: "Yes, that is a requirement we design for. The platform is chosen partly on how comfortable your staff are with it, pages are assembled from components that are hard to break, and training is included. Routine changes such as text, photographs, staff profiles and new service pages should not need a developer. Structural changes are different, and we remain available for those.",
       },
     ],
   },

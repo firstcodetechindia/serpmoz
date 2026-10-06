@@ -304,10 +304,15 @@ export type IndustryServiceRecord = {
 };
 
 /**
- * One service in one place, e.g. "Local SEO in Delhi". Lives at
- * /{service}-{place}/ (for example /local-seo-services-delhi/). Written by
- * hand for that pairing: everything here must be specific to this service in
- * this place. Plain text only, no links: the page adds its links itself.
+ * One service in one place, e.g. "AI SEO Services in Gurgaon", at
+ * /{service}-{place}/. Written by hand for that pairing.
+ *
+ * What the service is, what it includes and what the client receives come
+ * from the service record and are shown on every page for that service. The
+ * fields here are the part only this page can say: why the service matters in
+ * this market, who it is for, what is hard, how the work is run, and what to
+ * expect. Plain text only, no links: the page adds its links itself.
+ * See docs/SEO_CONTENT_SYSTEM.md before writing one.
  */
 export type LocalServicePage = {
   /** Location slug: a market ("india") or a city ("delhi") */
@@ -315,20 +320,24 @@ export type LocalServicePage = {
   /** Slug in data/services */
   service: string;
   seo: { title: string; metaDescription: string; primaryKeyword: string; secondaryKeywords: string[] };
-  /** The H1 */
+  /** The H1: the service and the place, said plainly */
   h1: string;
-  /** Opening paragraph under the H1 */
+  /** Hero copy: what is provided, for whom, what problem it solves, why the place matters */
   intro: string;
-  /** A question as people ask it, and a direct answer */
+  /** The page's main question and a direct answer of 40 to 80 words */
   answer: { question: string; text: string };
-  /** How people in this place search for this service: three */
-  searches: { title: string; body: string }[];
-  /** What is different about doing this service here: four */
-  localFactors: { title: string; body: string }[];
-  /** For a city: localities and nearby places. For a market: cities and regions. Four to six. */
-  areas: { name: string; note: string }[];
+  /** Why this service matters for businesses in this market: reasoning, not asserted local facts */
+  context: { heading: string; paragraphs: string[] };
+  /** Who it is for: three kinds of business, each with the reason */
+  audiences: { title: string; body: string }[];
+  /** The challenges or openings that shape the work in this market: three or four */
+  challenges: { title: string; body: string }[];
+  /** How SERPMOZ runs this service for a business in this market, stage by stage: five */
+  approach: { stage: string; body: string }[];
+  /** What a client should expect, and what nobody can promise */
+  expectations: { paragraphs: string[]; notGuaranteed: string[] };
   /** Sectors this service matters most for here: three. Slugs in data/industries. */
   sectors: { slug: string; note: string }[];
-  /** Five questions */
+  /** Six questions a buyer would ask */
   faqs: { q: string; a: string }[];
 };

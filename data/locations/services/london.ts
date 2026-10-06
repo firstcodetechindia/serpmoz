@@ -5,92 +5,121 @@ export const pages: LocalServicePage[] = [
     place: "london",
     service: "seo-services",
     seo: {
-      title: "SEO Company in London",
+      title: "SEO Services in London",
       metaDescription:
-        "SEO for London firms competing with national brands: a plan by postcode, city or country, depth on your specialism, and coverage from the City to Shoreditch.",
-      primaryKeyword: "seo company in london",
-      secondaryKeywords: [
-        "seo agency in london",
-        "seo services in london",
-        "seo company near me",
-        "seo agency city of london",
-        "seo company shoreditch",
-        "seo company croydon",
-        "seo consultant london",
+        "SEO services for London businesses: technical fixes, content built around buyer questions and earned authority, planned by commercial value, reported plainly.",
+      primaryKeyword: "seo services in london",
+      secondaryKeywords: ["seo agency london", "seo company in london", "seo consultants uk", "organic search agency", "seo services near me"],
+    },
+    h1: "SEO Services in London",
+    intro:
+      "SERPMOZ provides SEO for companies based in London: the technical health of the website, the pages that answer what buyers search for, and the authority the site earns from other publications. It suits firms that already have demand people search for and are not being found for it. The capital is widely known for finance, law, professional services and technology, fields where a buyer reads carefully before making contact.",
+    answer: {
+      question: "What do SEO services include, and how do they help a business in London?",
+      text: "SEO services cover three kinds of work: making a website easy for search engines to crawl and understand, publishing pages that answer what buyers search for, and earning references from credible sites. For a firm in the capital, the plan also has to settle which searches matter: those tied to an area of the city, those made across the UK, or those made abroad. Positions in search results cannot be promised.",
+    },
+    context: {
+      heading: "Why SEO matters for a London business",
+      paragraphs: [
+        "A firm in a large city rarely competes for one set of results. A search that includes a borough, a postcode district or a station name tends to return businesses near that place, while the same search without a place term may return national names and publishers. Deciding which of these the firm can realistically win, and which are worth the effort, is the first job of an SEO programme. Without that decision, effort is spread across terms the site was never likely to rank for.",
+        "Many of the fields the capital is known for sell considered purchases: legal advice, financial products, consultancy, software. A buyer of that kind compares several firms and reads what each has published before sending an enquiry. Search engines also say they hold pages about money, law and health to a higher standard of evidence. For these firms, thin service pages are a commercial problem as well as a ranking one, and named authors, sources and clear explanations do real work.",
+        "Location matters in another way. A company headquartered here often sells to the whole of the UK, and sometimes to Europe, the Gulf or North America. Each of those audiences searches differently and may need its own pages, spelling and proof. An SEO plan should begin from where the customers are, which is not always where the office is. For firms in regulated professions, any claim made in content should also be checked by the firm's own compliance adviser before it is published.",
       ],
     },
-    h1: "SEO Company in London for Firms Competing Beyond Their Postcode",
-    intro:
-      "A barristers' chambers in Holborn, a software company at King's Cross and a physiotherapy clinic in Balham all want to rank in London, yet they appear in different results against different rivals. Almost every national brand is present in the capital, with long-established domains and in-house teams. SEO here is a matter of choosing ground. SERPMOZ plans and delivers that work for London firms remotely.",
-    answer: {
-      question: "What does an SEO company do for businesses in London?",
-      text: "For a London business, an SEO company decides which level of search to compete on: a postcode district, the whole city, or the country. It then fixes the site's technical problems, builds substantive pages for the chosen practice areas or sectors, and earns coverage that gives the domain authority. SERPMOZ does this remotely, sizing each topic by what a new client is worth.",
+    audiences: [
+      {
+        title: "Professional and financial firms selling considered services",
+        body: "Law firms, advisers, consultancies and financial businesses whose clients research before they call. The work builds service pages and guides that stand up to a careful reader, with authorship and sources shown, so the firm is found and believed.",
+      },
+      {
+        title: "Technology and software companies with national or overseas buyers",
+        body: "Companies whose customers are not defined by a postcode. The programme concentrates on product, comparison and problem-led pages, on technical soundness as the site grows, and on targeting each country the company sells into correctly.",
+      },
+      {
+        title: "Established businesses with a site that has stopped growing",
+        body: "A website built up over years, perhaps through a redesign or two, where organic enquiries have levelled off. An audit shows whether the cause is technical, a content gap or weak authority, and what order to fix things in.",
+      },
+    ],
+    challenges: [
+      {
+        title: "One city, several search markets",
+        body: "A practice serving one borough, a firm serving the whole capital and a company selling nationwide need different keyword plans. Treating them alike wastes effort. We map each service to the area it is sold in and the searches made there before any page is written.",
+      },
+      {
+        title: "Well-resourced sites in the same results",
+        body: "National brands, directories and publishers often appear for the broad terms a smaller firm would like to rank for. The realistic route is usually narrower: specific services, specific problems and specific places, where a focused page can be the most useful result on offer.",
+      },
+      {
+        title: "Content that must survive expert scrutiny",
+        body: "In law, finance and health an inaccurate paragraph can mislead a reader and embarrass the firm. Drafts are reviewed by a specialist, facts are checked against sources, and anything touching regulated advice goes to your own reviewer before it goes live.",
+      },
+      {
+        title: "Redesigns and migrations that lose visibility",
+        body: "A new website can drop pages, change addresses and remove links without anyone intending it. Where a rebuild is planned, redirects, page mapping and checks are prepared before launch, because recovering lost visibility afterwards is slower than protecting it.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Audit",
+        body: "We crawl the site, connect search and analytics data and review the backlink profile. The audit lists technical faults, pages competing with each other, gaps against what buyers search for, and how the firm compares with the sites that currently appear for its services.",
+      },
+      {
+        stage: "Prioritise",
+        body: "Opportunities are sized by what an enquiry is worth, not by search volume alone. You receive an ordered plan showing which fixes come first, which pages to create or improve, which terms to leave alone, and the reasoning behind each choice.",
+      },
+      {
+        stage: "Fix",
+        body: "Technical work is specified for your developers or carried out with them: crawling and indexing problems, internal linking, page speed, structured data and canonical tags. Each change is tested after release, since a fix that was never deployed properly helps nobody.",
+      },
+      {
+        stage: "Publish",
+        body: "Service, comparison and guide pages are written or rewritten against the agreed map of searches to pages. Titles and headings are set, older pages are refreshed or merged, and authority work begins: expert comment, data-led stories and recovery of unlinked mentions.",
+      },
+      {
+        stage: "Measure",
+        body: "Reporting follows qualified enquiries and revenue from organic search, with visibility for the priority terms as supporting evidence. Each month the report says what changed, what did not, and what we recommend doing or stopping next.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "Work starts with access and the audit, which usually takes the first few weeks. Technical faults and neglected pages tend to be addressed first because they are within your control and remove obstacles. New content and authority work follow in priority order. Early movement can appear within weeks of a fix, while the wider effect typically builds over six to twelve months, depending on how contested the subject is and how quickly changes can be approved and released.",
+        "Reports are written in plain language and tied to enquiries, not only to positions. Quiet months are reported as quiet months, with an explanation of what is in progress.",
+      ],
+      notGuaranteed: [
+        "A position in search results for any particular term",
+        "A set number of visits, enquiries or sales from organic search",
+        "How quickly a search engine reflects a change made to the site",
+      ],
     },
-    searches: [
-      {
-        title: "Three levels of London intent",
-        body: "A query naming a borough, postcode or station returns map results. A service with London added pulls in every firm in the capital. A query with no place at all is national. Each needs different pages, so the choice comes first.",
-      },
-      {
-        title: "Practice area plus district",
-        body: "Professional buyers search narrowly: employment solicitor Holborn, fintech accountant Shoreditch, private wealth adviser Mayfair. These specific queries, naming a specialism and a part of London, are where an independent firm can still appear among the directories and adverts.",
-      },
-      {
-        title: "SEO company near me",
-        body: "Owners search for an SEO company near me or SEO agency London expecting someone local. Proximity matters for workshops, but it does nothing for rankings, which depend on the client's own premises, pages and reputation.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "National brands in the same results",
-        body: "A London firm targeting a professional-services term meets companies with national budgets and old, trusted domains. Matching their breadth is unrealistic. We pick a practice area, a sector or a type of client, and publish enough depth there that a smaller firm becomes the obvious specialist result.",
-      },
-      {
-        title: "Address signals positioning",
-        body: "Buyers read a location as a statement: the City and Canary Wharf for banking and large law firms, Mayfair and St James's for private capital, Harley Street for specialists. Pages should make the address work for the firm, with accurate details that match every listing.",
-      },
-      {
-        title: "Overseas clients alongside local ones",
-        body: "Many firms in finance, law and technology sell abroad from a London base. Site structure and country targeting have to serve those audiences without weakening the signals that mark the firm as a UK business. We plan both together from the outset.",
-      },
-      {
-        title: "Authority from the press nearby",
-        body: "The national and trade journalists who cover finance, law and technology are concentrated in London, which makes earned coverage more achievable and more competitive. We tie each story to a page worth ranking, and we never buy links or placements.",
-      },
-    ],
-    areas: [
-      { name: "The City and Canary Wharf", note: "Banking, insurance and large law firms compete here on national and international terms." },
-      { name: "Holborn and Chancery Lane", note: "Barristers and litigation practices need depth on narrow practice areas to be found." },
-      { name: "Shoreditch and Old Street", note: "Technology firms sell nationally, so pages target sectors and problems instead of the neighbourhood." },
-      { name: "Mayfair and St James's", note: "Wealth managers and private equity firms are found through reputation and very specific queries." },
-      { name: "Clapham and Islington", note: "Clinics, gyms and practices compete in map results within a single postcode district." },
-      { name: "Croydon", note: "South London's main office centre, where firms rank for their own borough before the capital." },
-    ],
     sectors: [
-      { slug: "legal", note: "From international firms to high-street solicitors, ranking depends on specialism and proven reputation." },
-      { slug: "finance", note: "City and Mayfair firms need authoritative pages written within strict rules on financial promotions." },
-      { slug: "technology", note: "Start-ups around King's Cross and Old Street need organic demand from buyers across the country." },
+      { slug: "legal", note: "Clients look for a specific kind of advice and compare firms closely, so detailed, attributed practice pages are worth the effort." },
+      { slug: "finance", note: "Search engines apply a higher standard to pages about money, which rewards accurate, sourced content reviewed by qualified people." },
+      { slug: "saas", note: "Buyers search by problem and by comparison long before a demo, so pages for each stage of that research matter." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ an SEO company in London?",
-        a: "In what it does, yes; in where it sits, no. SERPMOZ is an AI-powered digital growth company that carries out SEO for London firms remotely and does not have an office in the city. That work includes technical fixes, intent and keyword strategy, substantive content, digital PR and local visibility. Meetings are held by video in UK working hours, and plans and reports are shared in documents you can open at any time.",
+        q: "What is the difference between SEO and paid search?",
+        a: "Paid search buys a place on the results page and stops when the budget stops. SEO earns unpaid placement by improving the site, its content and its reputation, which takes longer and tends to last longer. The two work well together: paid search shows quickly which terms bring real enquiries, and SEO then builds lasting visibility for the ones that proved their value.",
       },
       {
-        q: "How do I find an SEO company near me in London?",
-        a: "Searching near me will show agencies close to your office, which helps only if you want to meet in person. Rankings depend on your site and premises, wherever the agency sits. Judge candidates on other things: whether they ask which level you compete at, from an N1 or SW11 postcode up to national; how they earn links; and where compliance review fits if you work in finance, law or healthcare.",
+        q: "Does SERPMOZ have an office in London?",
+        a: "No. We serve businesses in London through a remote consulting and delivery model, with no premises there. SEO is done in your website, your analytics and shared documents, so what it needs is access, a named contact and timely approvals. Calls are held at agreed times, and your developers and subject experts are involved directly where the work touches them.",
       },
       {
-        q: "Do you also work with businesses in Croydon, Watford and Reading?",
-        a: "Yes. We work remotely, so a firm in Croydon, Watford or Reading is served in the same way as one in central London. The plan differs, though. Croydon is a London borough with its own local results, Watford sits just outside the boundary in Hertfordshire, and Reading is a separate Thames Valley market with a strong technology base. We have no office in any of them.",
+        q: "Can you guarantee first-page rankings?",
+        a: "No. Search engines decide their own results and change how they do so without notice, so anyone offering a fixed position is promising something outside their control. What we can commit to is the work: a sound site, pages that answer the search better than what is there now, and a credible plan for earning authority, all reported against enquiries.",
+      },
+      {
+        q: "How long does SEO take to show results?",
+        a: "It depends on the starting point. A site with clear technical faults can see improvement within weeks of fixing them. Building visibility for contested commercial terms typically takes six to twelve months, and longer where the competing sites are long established. Progress is also tied to how quickly content can be approved and how fast developers can release changes.",
       },
       {
         q: "What does SEO cost in London?",
-        a: "London SEO tends to need more work than the same project elsewhere, because the competition is national brands with established domains. Cost is driven by the level you compete at, the number of practice areas or sectors covered, the technical condition of the site, the depth of expert content required and whether digital PR is included. We scope it through a growth audit before proposing anything.",
+        a: "The fee follows the scope of work, and the city does not change that. The main drivers are the size and condition of the site, how many services and audiences need their own pages, how much specialist review the subject demands, and whether your team or ours writes and develops. We set out the scope and reasoning after the growth audit, before anything is agreed.",
       },
       {
-        q: "Should a London firm target London keywords or national ones?",
-        a: "It depends on where your clients are and what they are worth. A practice whose clients walk in needs postcode and borough visibility. A firm that advises companies across the country may gain little from London terms and more from sector or problem-based queries with no place attached. Many firms need a deliberate mix. We set that balance in the audit by valuing each group of searches.",
+        q: "We sell across the UK from a single office. Should our SEO target the city or the country?",
+        a: "Usually the country, with local work kept in proportion. If clients do not need to visit you, pages built around a city name limit you to a fraction of the demand. The exception is a service people want delivered nearby, where place-based pages and a well-kept business profile earn their keep. The audit separates the two, service by service.",
       },
     ],
   },
@@ -98,92 +127,121 @@ export const pages: LocalServicePage[] = [
     place: "london",
     service: "local-seo-services",
     seo: {
-      title: "Local SEO Company in London",
+      title: "Local SEO Services in London",
       metaDescription:
-        "Local SEO for London businesses, planned by postcode district and station: Business Profiles, Google and Apple Maps listings, neighbourhood pages and reviews.",
-      primaryKeyword: "local seo company in london",
-      secondaryKeywords: [
-        "local seo agency in london",
-        "local seo services in london",
-        "local seo company near me",
-        "local seo clapham",
-        "local seo islington",
-        "local seo croydon",
-        "google maps seo london",
+        "Local SEO services in London: business profiles, consistent listings, review routines and location pages, so nearby customers find the right branch.",
+      primaryKeyword: "local seo services in london",
+      secondaryKeywords: ["local seo agency london", "local seo company in london", "local seo for multiple locations", "local search optimisation uk", "local seo services near me"],
+    },
+    h1: "Local SEO Services in London",
+    intro:
+      "SERPMOZ provides local SEO for businesses that serve customers in a defined part of London: business profiles on Google, Bing and Apple, consistent listings, a steady review routine and a proper page for each location. It is for practices, shops, venues, trades and multi-branch firms that depend on being found by people nearby. In a city this large, most local businesses serve a few districts, not all of it.",
+    answer: {
+      question: "What do local SEO services include, and how do they help a business in London?",
+      text: "Local SEO is the work of appearing when someone nearby searches for what you offer. It covers business profiles, the accuracy of your name, address and phone number across directories, reviews, location pages and local structured data. For a business in the capital, the aim is to be visible in the districts you actually serve, and to turn that visibility into calls, bookings and visits. Map positions cannot be promised.",
+    },
+    context: {
+      heading: "Why local SEO matters for a London business",
+      paragraphs: [
+        "Search engines treat a search for a nearby service differently from a general one. They weigh how relevant a business is to the request, how far it is from the searcher or the place named, and how well known it appears to be. In a city spread across many boroughs, distance does a great deal of the sorting. A clinic or studio is therefore competing mainly in its own surroundings, and the work should be planned for that area and not for the whole map.",
+        "People describe where they are in more than one way. The same customer might search with a borough, a postcode district, a neighbourhood name or the nearest station, and all four can point to one street. A location page that states the address clearly, describes how to reach the premises and mentions the area in the terms customers use gives a search engine and a reader the same useful information. That is different from repeating place names to attract searches, which helps nobody.",
+        "Addresses are a practical complication. Businesses here often move, share buildings, operate from serviced offices or keep an old number on a directory nobody remembers creating. Each mismatch gives search engines conflicting information about the same business. Profile guidelines also expect a listing to represent premises where customers are actually served, or a declared service area, so an address used only for mail may not qualify. Checking what is eligible, then correcting every listing to one agreed form, is where local work usually starts.",
       ],
     },
-    h1: "Local SEO Company in London, Planned by Postcode and Station",
-    intro:
-      "Londoners choose a dentist, a gym or a conveyancing solicitor by journey time, and few will cross the river for one. Map results reflect that: they shift within a few streets, and a business visible around its own station can vanish two stops down the line. SERPMOZ manages local SEO for London businesses remotely, planning each site by postcode district and neighbourhood, never for the capital as a whole.",
-    answer: {
-      question: "What does a local SEO company do for businesses in London?",
-      text: "It makes each of your sites visible in Google Maps and local results for the streets it can realistically serve. In London that means a verified Business Profile per location, consistent listings on Google and Apple Maps, a page written for the neighbourhood, and a routine for collecting real reviews. SERPMOZ does this remotely and checks visibility from several points across every catchment.",
+    audiences: [
+      {
+        title: "Clinics, practices and studios with one address",
+        body: "Dentists, physiotherapists, salons, solicitors and similar businesses whose customers travel a short distance. Their growth depends on being among the options shown nearby and on reviews that give a stranger a reason to choose them.",
+      },
+      {
+        title: "Groups with several branches across the city",
+        body: "Restaurants, retailers, gyms and estate agents with a number of sites. Each branch needs its own accurate profile and page, and head office needs reporting that shows which locations are performing and which need attention.",
+      },
+      {
+        title: "Trades and services that travel to the customer",
+        body: "Plumbers, electricians, cleaners and removal firms with no shopfront. They need a correctly declared service area, pages describing the work they do, and a review routine built into the end of each job.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Distance limits how far a profile reaches",
+        body: "A business is most visible close to its own address, and no amount of optimisation moves the premises. We measure visibility across a grid of points around each location, so you can see where you appear today and where improvement is realistic.",
+      },
+      {
+        title: "Shared buildings, serviced offices and old addresses",
+        body: "Several businesses at one address, a suite number written three ways or a former office still listed all cause confusion. We audit profiles and directories, remove or merge duplicates through the proper channels, and confirm that each listing meets the profile guidelines.",
+      },
+      {
+        title: "Reviews that arrive unevenly",
+        body: "Many businesses ask for reviews in bursts, or only from customers they expect to be pleased. We set up a routine in which every customer is asked at a sensible moment, with no filtering by satisfaction, and agree how complaints are answered.",
+      },
+      {
+        title: "Branch pages that say nothing specific",
+        body: "A page that differs from the next branch only by its name gives a visitor no reason to trust it. Each location page should carry that branch's services, staff, access details, photographs and opening hours, written from real information you supply.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Audit",
+        body: "We list every profile and directory entry for each location, check ownership and access, and record the name, address and phone number each one shows. Duplicates, closed branches and wrong categories are flagged, and current visibility is measured around each address.",
+      },
+      {
+        stage: "Correct",
+        body: "One format for the business details is agreed and applied everywhere that matters in the UK: the main profiles, general directories, sector directories and professional registers. Access is brought under a single account so nothing depends on a former employee's login.",
+      },
+      {
+        stage: "Build",
+        body: "Profiles are completed with accurate categories, services, hours and photographs. Each location gets a page with real detail, local business markup and a link from its profile, and service pages link through to the branches that offer them.",
+      },
+      {
+        stage: "Reviews",
+        body: "A request process is fitted into your customer journey, by message, card or email after a visit or completed job. We write response guidelines, set an escalation route for complaints, and report recurring themes back to the people who run operations.",
+      },
+      {
+        stage: "Report",
+        body: "Reporting is by location: calls, direction requests, website visits from profiles, review activity and visibility by area. Tagged links, together with call tracking that preserves your listed number, show which enquiries came from local search.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The opening weeks go on the audit and on corrections to profiles and listings, which are within your control and often show an effect within weeks. Location pages and the review routine come next. Visibility in closely contested areas typically takes three to six months or more to shift, and depends on the category, the distance from where people search and how established neighbouring businesses are. Verification and edits are processed by the platforms on their own timetable.",
+        "You receive a monthly report per location, with a short list of what was done and what is recommended. Where a branch cannot realistically appear in an area, we say so.",
+      ],
+      notGuaranteed: [
+        "A place in the map results for any search or area",
+        "A number of reviews, or the rating customers choose to give",
+        "How long a platform takes to verify a profile or accept an edit",
+      ],
     },
-    searches: [
-      {
-        title: "Borough, postcode or station",
-        body: "The same place is searched in several ways: physio Clapham, physio SW4, physio near Clapham Common station, or physio Lambeth. Location pages and profiles need the names residents use, which are not always the council's or the estate agent's.",
-      },
-      {
-        title: "Searching on the move",
-        body: "People look for services near a station, an office or home while travelling, on Google Maps or Apple Maps. Entrances, floors, step-free access and opening hours have to be right on both, because the decision is made on the pavement.",
-      },
-      {
-        title: "Near me from a specific street",
-        body: "A near me search in Islington returns different businesses from the same search in Hackney, a short bus ride away. Being close to the searcher counts heavily, so the realistic target is the catchment around the premises, not London.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Shared buildings and serviced offices",
-        body: "Many London businesses operate from serviced offices, shared floors or virtual addresses, which cause verification problems and duplicate listings. We check what Google currently permits for your situation, clean up duplicates, and set suite and floor details so the profile is distinct from its neighbours.",
-      },
-      {
-        title: "Tracking from several points",
-        body: "A single ranking figure for London means nothing. We check map visibility from a grid of points across each postcode district, so you can see that a Battersea site is strong towards Clapham Junction and weak towards Nine Elms, and act on it.",
-      },
-      {
-        title: "Every site is its own market",
-        body: "Clapham and Islington do not share customers. A business with several branches needs a separate profile, page and review routine for each, written with local detail, and one generic London page will not do the job for any of them.",
-      },
-      {
-        title: "Service areas, traffic and road charges",
-        body: "Trades and mobile services have to set service areas they can reach on time, allowing for travel, parking and road charging zones. A locksmith in Ealing who claims all of London attracts calls it cannot serve, and reviews that say so.",
-      },
-    ],
-    areas: [
-      { name: "Clapham and Battersea", note: "Dense residential demand for clinics, gyms and trades, searched by SW postcodes and stations." },
-      { name: "Islington and Hackney", note: "Adjacent boroughs with different customers, where independent venues rely on maps and reviews." },
-      { name: "Canary Wharf", note: "Office workers search at lunchtime and after work for services close to their building." },
-      { name: "Kensington and Chelsea", note: "Private clinics and high-end services compete on reviews and precise, well-kept profiles." },
-      { name: "Croydon", note: "A large outer borough where local firms compete with each other more than with central London." },
-      { name: "Kingston upon Thames and Richmond", note: "South-west boroughs with town-centre high streets, searched by town name instead of London." },
-    ],
     sectors: [
-      { slug: "dental", note: "Patients choose a practice by neighbourhood and read recent reviews, so each site needs upkeep." },
-      { slug: "hospitality", note: "Restaurants and bars are found on maps by visitors and residents who search in different ways." },
-      { slug: "home-services", note: "Plumbers and electricians are judged on vetted directories and reviews from nearby postcodes." },
+      { slug: "dental", note: "Patients choose a practice near home or work and read reviews first, so profile quality and review routines matter." },
+      { slug: "hospitality", note: "Diners and guests decide on a phone, close to the moment, using hours, photographs, menus and recent reviews." },
+      { slug: "home-services", note: "The customer has an urgent job and calls one of the first credible firms shown for their area." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a local SEO company in London?",
-        a: "SERPMOZ does local SEO for London businesses, but it is not a London company with a London address. It is an AI-powered digital growth company working remotely. For local search that is rarely a handicap, because results depend on your premises and your customers' location. We manage Business Profiles, listings on both map apps, neighbourhood pages and review routines, and your staff handle anything that needs a person on site.",
+        q: "How is local SEO different from ordinary SEO?",
+        a: "Ordinary SEO works on how a website ranks for searches made anywhere. Local SEO works on searches where the person wants something nearby, and those results draw heavily on business profiles, reviews, listings and distance, not only on the website. A firm with customers who visit or are visited usually needs both, with the balance set by how local its trade is.",
       },
       {
-        q: "How do I find a local SEO company near me in London?",
-        a: "A near me search will list agencies around your own postcode. Before choosing on distance, ask each one how it measures map visibility: from one point, or from many across your catchment. Ask how it deals with serviced offices and duplicate listings, a common London problem. Ask whether it checks Apple Maps as well as Google. An agency in another borough, or working remotely, can do all of this equally well.",
+        q: "Does SERPMOZ have an office in London?",
+        a: "No. Clients in London are served through a remote consulting and delivery model. For local search, the premises that count are yours, not an agency's: your address, your profile and your customers' reviews. We need profile access, accurate details for each location and a contact who can supply photographs and approve changes.",
       },
       {
-        q: "Do you also work with businesses in Croydon, Bromley and Kingston?",
-        a: "Yes, remotely, as with everywhere we work. Outer boroughs such as Croydon, Bromley and Kingston upon Thames behave more like separate towns than like parts of central London. People search by the town name, catchments are wider because more customers drive, and competitors are local firms. We plan each on its own terms. We have no premises in these boroughs and do not pretend otherwise.",
+        q: "Can you guarantee a place in the local map results?",
+        a: "No. The map results depend on the searcher's position, the category and what neighbouring businesses are doing, and the platform changes its methods as it sees fit. We can make sure your profile is complete and eligible, your details agree everywhere, your pages are specific and your review routine is working, then measure visibility area by area.",
+      },
+      {
+        q: "How long does local SEO take to show results?",
+        a: "Corrections to a profile or to inconsistent listings can have a visible effect within weeks. Gaining ground in an area where several established businesses already appear typically takes three to six months or longer. Reviews accumulate at the pace of your customer numbers, so a busy branch will build its profile sooner than a quiet one.",
       },
       {
         q: "What does local SEO cost in London?",
-        a: "The count of locations matters most, since each needs its own profile, page, listings and review routine. Beyond that, cost reflects how crowded the category is in your part of London, how much clean-up your existing listings need, and whether address or verification problems have to be resolved first. A single clinic in Wandsworth is a much smaller job than a group with sites across the capital.",
+        a: "Cost is driven mainly by the number of locations, the state of the existing profiles and listings, how many location pages need writing, and whether a review routine has to be designed and fitted into your systems. A single practice is a smaller job than a group with many branches. The scope is set out after the growth audit.",
       },
       {
-        q: "Can we rank across all of London from a single address?",
-        a: "In map results, no, and anyone suggesting otherwise should be doubted. Google favours businesses near the searcher, so one address will be visible around its own district and fade with distance. You can still reach wider London through ordinary organic results with strong service pages, and through paid search. If you truly serve several areas, the durable route is real premises or a properly defined service area.",
+        q: "Can we rank across the whole city from one address?",
+        a: "Rarely for searches where people want something close by, because distance is part of how those results are chosen. A single address can still be found more widely for specialist services people are willing to travel for, and through ordinary search results and paid campaigns. We show where you are visible now and plan around what is achievable.",
       },
     ],
   },
@@ -191,91 +249,121 @@ export const pages: LocalServicePage[] = [
     place: "london",
     service: "google-ads",
     seo: {
-      title: "Google Ads Agency in London",
+      title: "Google Ads Management in London",
       metaDescription:
-        "Google Ads management for London firms in costly legal, finance and healthcare auctions: postcode and borough targeting, strict exclusions, enquiry tracking.",
-      primaryKeyword: "google ads agency in london",
-      secondaryKeywords: [
-        "google ads management services in london",
-        "ppc agency in london",
-        "google ads agency near me",
-        "ppc management london",
-        "google ads agency canary wharf",
-        "google ads agency watford",
+        "Google Ads management for London businesses: sound conversion tracking, search campaigns built by intent, controlled budgets, reporting on qualified enquiries.",
+      primaryKeyword: "google ads management in london",
+      secondaryKeywords: ["google ads agency london", "ppc agency in london", "google ads specialists uk", "paid search management", "google ads management near me"],
+    },
+    h1: "Google Ads Management in London",
+    intro:
+      "SERPMOZ manages Google Ads accounts for businesses in London: conversion tracking, Search, Shopping, Performance Max and video campaigns, and the landing pages they send people to. It is for firms that want enquiries or sales from people already searching, and want to know what each one cost. In professional and financial services, where a single client can be worth a great deal, clicks tend to be expensive and waste shows quickly.",
+    answer: {
+      question: "What does Google Ads management include, and how does it help a business in London?",
+      text: "Google Ads management covers setting up accurate conversion tracking, structuring campaigns around what people intend when they search, writing ads, controlling where and when they show, and reviewing search terms and budgets on a schedule. For a firm in the capital it means paying for the right searches in the right area, and judging the account by qualified enquiries. Costs per click and volumes cannot be promised.",
+    },
+    context: {
+      heading: "Why careful Google Ads management matters in London",
+      paragraphs: [
+        "An advertiser pays for a click whether or not it becomes a client. Where the service is valuable, such as legal work, financial advice, private healthcare or property, several firms are usually willing to bid for the same searches, and the price of a click reflects that. In those conditions the difference between a well-run account and a loose one is large. Tight control of search terms, clear exclusions and honest conversion data decide whether the spend returns enquiries or simply disappears.",
+        "Where the ads show is a decision, not a default. A campaign can be limited to a radius, to parts of the city or to the whole country, and can include or exclude people who are merely interested in a place without being there. A large city also has many people who work in one area and live in another, sometimes outside it altogether. Whether to reach them at their desk or at home depends on what is being sold, and it should be chosen deliberately.",
+        "Measurement has its own constraints. Privacy law in the UK means a visitor's consent choices affect what analytics and advertising tags are allowed to record, so reported conversions are usually an incomplete count. Some categories, including financial services, healthcare and gambling, face additional platform checks and advertising rules. We set up tracking to work within consent, explain what the figures do and do not show, and suggest you confirm regulated claims with your own compliance adviser.",
       ],
     },
-    h1: "Google Ads Agency in London for Costly, High-Intent Auctions",
-    intro:
-      "Paid clicks for legal, finance and insurance terms in London are among the most expensive in the UK, and the advertisers bidding on them include national brands with large budgets. Loose targeting becomes unaffordable quickly. What works is narrow structure, careful exclusions and landing pages that convert. SERPMOZ builds and manages Google Ads accounts for London firms remotely, and reports on qualified enquiries, not click volume.",
-    answer: {
-      question: "What does a Google Ads agency do for businesses in London?",
-      text: "A Google Ads agency in London's market structures campaigns so that a firm pays only for searches it can win and serve. That means targeting by borough, postcode or radius, keyword lists limited to real buying intent, adverts with compliant claims, and tracking that ties spend to enquiries. SERPMOZ does this remotely and cuts what does not produce qualified leads before adding budget.",
+    audiences: [
+      {
+        title: "Firms that sell high-value services through enquiries",
+        body: "Solicitors, advisers, clinics, consultancies and property businesses where one client justifies many clicks, but only if the enquiry is the right kind. The account is built to report on qualified leads, with stages imported from your CRM where possible.",
+      },
+      {
+        title: "Online retailers selling to the UK from the capital",
+        body: "Shops whose customers are nationwide. For them the work is mostly in the product feed, Shopping and Performance Max structure, and bidding to margin and stock instead of to revenue alone.",
+      },
+      {
+        title: "Businesses with an account that spends without explanation",
+        body: "An account inherited from a previous agency or built in-house, where the monthly cost is known and the return is not. An audit shows where money goes, which conversions are real and what to change first.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Expensive clicks leave little room for waste",
+        body: "When each click is costly, a few irrelevant search terms can absorb a meaningful share of the budget. Negative keyword lists, a clear policy on match types and scheduled search term reviews keep spend on the searches that produce real enquiries.",
+      },
+      {
+        title: "Choosing who counts as in the area",
+        body: "The capital draws commuters, visitors and people researching from elsewhere. Location settings decide which of them see your ads. We set targeting by where your customers are when they need you, and review the location reports to confirm it.",
+      },
+      {
+        title: "Automated bidding trained on the wrong signal",
+        body: "Bidding systems optimise for whatever they are told is a conversion. If every form fill counts equally, they find cheap form fills. Feeding back lead quality and values from the CRM teaches the system which enquiries are worth paying for.",
+      },
+      {
+        title: "Policy checks in regulated categories",
+        body: "Ads for financial, medical and legal services may need verification or face limits on wording and targeting. Approval is the platform's decision and can take time, so we plan for it at the start and keep claims within what your adviser approves.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Audit",
+        body: "We review the account, tracking and landing pages: which conversion actions exist, whether they fire correctly, where budget has gone by search term and location, and how campaigns are structured. The outcome is a short list of faults ranked by cost.",
+      },
+      {
+        stage: "Structure",
+        body: "Conversion actions are defined as primary or secondary and given values. Campaigns are grouped by intent and theme, match types and negative lists are set, and location, schedule and device settings are chosen to fit how your customers buy.",
+      },
+      {
+        stage: "Launch",
+        body: "Ads and assets are written to match each group of searches and the page behind them. Budgets start at a level that produces enough data to judge, and Performance Max, where used, runs with brand exclusions and clear asset groups.",
+      },
+      {
+        stage: "Refine",
+        body: "Search terms are reviewed on a schedule, wasteful ones excluded and promising ones given their own ads. Bids, budgets and landing pages are adjusted from evidence, one change at a time where possible, so the cause of any shift is known.",
+      },
+      {
+        stage: "Report",
+        body: "Reports show spend, enquiries and cost per qualified lead by campaign, with offline outcomes from the CRM where they are available. Each one states what was changed, what was learned and what we propose for the following month.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The first step is the audit and the tracking set-up, since nothing else can be judged without reliable conversion data. Campaigns are then restructured or built, and clicks arrive from the day they go live. Automated bidding typically needs four to eight weeks of data before it steadies, and results in that period can swing. How soon the account becomes efficient depends on budget, on how many conversions it records and on how quickly landing pages can be improved.",
+        "You keep ownership of the account and its data. Reporting is monthly, in plain terms, with spend and outcomes shown together.",
+      ],
+      notGuaranteed: [
+        "A cost per click, cost per lead or return on advertising spend",
+        "A number of enquiries or sales in any period",
+        "Ad approval, or how long a platform review takes",
+      ],
     },
-    searches: [
-      {
-        title: "Urgent, specific service searches",
-        body: "High-intent London queries are short on patience: emergency dentist Soho, same-day locksmith Camden, employment solicitor City of London. The searcher is ready to act, the advert must name the service and the place, and the phone has to be answered.",
-      },
-      {
-        title: "Searches made from the office",
-        body: "Corporate buyers research suppliers at their desks in the City, Canary Wharf or Victoria during working hours. For business services, schedules and bids are weighted towards those hours and districts, and away from evenings when the same terms attract jobseekers and students.",
-      },
-      {
-        title: "PPC agency near me",
-        body: "Firms looking for help type Google Ads agency London, PPC management London or PPC agency near me. Many arrive after seeing spend rise without a matching rise in enquiries, which usually points to tracking or structure, not to budget.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Radius targeting fits badly",
-        body: "A circle drawn around a London address takes in areas nobody would travel from, and can cross the river. We target by postcode district or borough, based on where existing customers come from, and exclude places that look near on a map and are slow to reach.",
-      },
-      {
-        title: "Negative keywords carry the budget",
-        body: "In an auction this costly, irrelevant clicks are the largest avoidable expense. We review search terms frequently, exclude job, course, free and DIY queries, and remove matches for other cities called London or for boroughs the firm does not serve.",
-      },
-      {
-        title: "Regulated sectors dominate costly terms",
-        body: "The priciest London auctions belong to finance, law, insurance and private healthcare, all of which face rules on what an advert may claim. We write copy that can be substantiated and build in sign-off by your compliance team, who should confirm the current requirements.",
-      },
-      {
-        title: "Landing pages decide the return",
-        body: "When each visit is expensive, the page it lands on matters more than the bid. We send every ad group to a page for that service and area, with proof, fees or process explained and an easy way to make contact, then improve it using real enquiry data.",
-      },
-    ],
-    areas: [
-      { name: "The City", note: "Corporate legal and financial searches peak in office hours and attract national advertisers." },
-      { name: "Canary Wharf", note: "A dense working population that searches for services reachable within a lunch break." },
-      { name: "Westminster and Victoria", note: "Public sector and corporate buyers research suppliers here, suiting weekday business-hours schedules." },
-      { name: "Camden and Islington", note: "Residential and small business demand for trades, clinics and solicitors, targeted by postcode." },
-      { name: "Wandsworth and Lambeth", note: "South of the river, where campaigns must exclude north London to avoid unserviceable clicks." },
-      { name: "Watford and Slough", note: "Towns outside the boundary with lower competition, worth separate campaigns if you serve them." },
-    ],
     sectors: [
-      { slug: "legal", note: "Solicitors face some of London's dearest clicks, so practice-area focus and exclusions protect the budget." },
-      { slug: "healthcare", note: "Private clinics around Harley Street and across the boroughs advertise treatments under strict claim rules." },
-      { slug: "home-services", note: "Emergency trades need calls from postcodes they can reach quickly, at hours they are working." },
+      { slug: "legal", note: "People search for a specific legal problem when they need help, and the value of a matter justifies careful bidding." },
+      { slug: "real-estate", note: "Buyers, sellers, landlords and tenants search by area and property type, which suits tightly themed campaigns and pages." },
+      { slug: "ecommerce", note: "Shopping campaigns depend on feed quality and margin data, where disciplined management changes the return on spend." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a Google Ads agency in London?",
-        a: "We manage Google Ads for London firms, so we do what a Google Ads agency does. We are not based in London. SERPMOZ is an AI-powered digital growth company that works remotely, with account reviews by video during UK hours. The account stays in your ownership. Our work covers conversion tracking, search campaigns, Performance Max governance, exclusions and landing pages, judged by qualified enquiries.",
+        q: "What is the difference between Google Ads and SEO?",
+        a: "Google Ads places paid listings on the results page and charges for each click. SEO improves unpaid visibility over time. Ads can produce enquiries from the first day and stop when the budget stops, which makes them useful for testing demand and for services needed urgently. Many firms run both, using paid search data to decide where organic effort should go.",
       },
       {
-        q: "How do I find a Google Ads agency near me in London?",
-        a: "A near me search returns agencies by distance, which says nothing about skill in London auctions. Shortlist on evidence instead. Ask how they would target your catchment: by postcode, borough or radius, and why. Ask how often search terms are reviewed. Ask to see how enquiries, not clicks, are reported. If you are in law, finance or healthcare, ask how advert claims are checked. Meeting in person is optional.",
+        q: "Does SERPMOZ have an office in London?",
+        a: "No. SERPMOZ supports B2B firms in London through a remote model of consulting and delivery. A Google Ads account is managed online wherever the manager sits. What the work needs is access to the account, analytics and CRM, a clear picture of which enquiries turn into clients, and regular calls to review results and agree changes.",
       },
       {
-        q: "Do you also work with businesses in Watford, Slough and Guildford?",
-        a: "Yes. All our account management is remote, so firms in Watford, Slough and Guildford get the same service as those in central London, with no local office involved. Auctions in those towns are generally less crowded than in the capital, but they overlap with London targeting. We set boundaries carefully so a Guildford campaign does not pay for searches from Southwark, and the reverse.",
+        q: "Can you guarantee a number of leads from Google Ads?",
+        a: "No. The number of leads depends on how many people search, what competitors bid, how the landing page performs and how your team handles enquiries, none of which an agency controls fully. We can commit to accurate tracking, disciplined control of spend, regular testing and reporting that shows clearly whether the account is paying its way.",
+      },
+      {
+        q: "How long does Google Ads take to show results?",
+        a: "Clicks and first enquiries can arrive within days of launch. A reliable picture takes longer: bidding systems typically need four to eight weeks of conversion data to settle, and accounts with few conversions take more time. Expect the opening period to be about learning which searches and messages work, with efficiency improving as that evidence accumulates.",
       },
       {
         q: "What does Google Ads management cost in London?",
-        a: "Expect the media spend itself to be the larger part, since London clicks in professional services are costly. What you need to spend depends on your sector, the districts targeted and how narrowly keywords are chosen. Management cost follows the number of services, locations and landing pages involved and the tracking work required. We review the account or the market first, then propose a scope.",
+        a: "Two payments are involved: a media budget that goes to Google and a fee for managing the account. The budget depends on click prices in your category and how many enquiries you want. The fee depends on the number of campaigns and campaign types, the tracking work required and whether landing pages are included. We recommend both after reviewing the account and your margins.",
       },
       {
-        q: "Is it worth advertising on Google in London on a modest budget?",
-        a: "It can be, if the campaign is narrow. A modest budget spread across broad London terms disappears into a handful of expensive clicks. Concentrated on a specific service, a few postcode districts and the hours you can answer the phone, the same money can produce steady enquiries. If the numbers cannot work for your sector, we will tell you and suggest local SEO or another route.",
+        q: "Should we bid on our own brand name?",
+        a: "Often yes, in a measured way. If competitors advertise on your name, a brand campaign keeps your own listing in first position at modest cost. If nobody does, the same clicks may arrive free through the organic result. We check what appears for your name, keep brand and non-brand spend separate in reports, and test whether pausing brand ads loses anything.",
       },
     ],
   },
@@ -283,90 +371,121 @@ export const pages: LocalServicePage[] = [
     place: "london",
     service: "linkedin-ads",
     seo: {
-      title: "LinkedIn Ads Agency in London",
+      title: "LinkedIn Ads Management in London",
       metaDescription:
-        "LinkedIn Ads for London B2B firms: audiences by role and named account across the City, Canary Wharf and Mayfair, with offers for each buyer and CRM reporting.",
-      primaryKeyword: "linkedin ads agency in london",
-      secondaryKeywords: [
-        "linkedin advertising agency in london",
-        "linkedin ads services in london",
-        "linkedin ads agency near me",
-        "b2b lead generation london",
-        "linkedin ads agency city of london",
-        "linkedin advertising reading",
+        "LinkedIn Ads management for London B2B firms: audiences built from target accounts and job roles, offers matched to buying stage, reporting tied to pipeline.",
+      primaryKeyword: "linkedin ads management in london",
+      secondaryKeywords: ["linkedin ads agency london", "linkedin advertising agency in london", "b2b linkedin ads uk", "linkedin lead generation agency", "linkedin ads agency near me"],
+    },
+    h1: "LinkedIn Ads Management in London",
+    intro:
+      "SERPMOZ plans and runs LinkedIn advertising for business-to-business companies in London: audiences built from named accounts and job roles, offers written for each role, and measurement tied to the CRM. It is for firms selling to other organisations, where several people share a decision that can take months. The capital is widely known for corporate headquarters, finance and professional services, which is the kind of audience the platform is built to reach.",
+    answer: {
+      question: "What does LinkedIn Ads management include, and how does it help a B2B firm in London?",
+      text: "LinkedIn Ads management covers audience design by company, job function and seniority, the offers and creative shown to each role, lead forms or landing pages, bidding and budgets, and reporting connected to your CRM. For a firm in the capital it is a way to reach named organisations and the specific people inside them. Clicks usually cost more than on other platforms, so the targeting has to be precise.",
+    },
+    context: {
+      heading: "Why LinkedIn advertising suits many London B2B firms",
+      paragraphs: [
+        "Search advertising reaches people who are already looking. Much business buying does not start that way: a finance director or head of operations may not search until a shortlist already exists. LinkedIn lets a seller reach people by the organisation they work for and the role they hold, before that point. For consultancies, software companies and service providers that sell to large organisations, this is often the only paid channel where the audience can be defined by who the buyer is.",
+        "Where the buyer sits is less simple than it looks. The platform places members by the location on their own profile, which is a broad area and not a postcode, and a company headquartered in the capital may have its decision-makers spread across the UK or overseas. Targeting by a list of companies, then by function and seniority, is usually more accurate than targeting by city. Geography works well as a filter on that list, set by where your sales team can actually serve.",
+        "The cost of the channel shapes how it should be used. Because clicks tend to be expensive, a campaign aimed at a broad professional audience with a generic message spends quickly and teaches little. A narrower audience, useful content offered without a form for first contact, and a direct offer kept for people who have already engaged tends to be a sounder pattern. Firms in regulated fields should have their own compliance adviser approve promotional claims before they run.",
       ],
     },
-    h1: "LinkedIn Ads Agency in London for Reaching Named Roles and Sectors",
-    intro:
-      "London holds an unusual concentration of financial, legal and corporate decision-makers, which makes it practical to advertise to people by job role and sector. The purchases involved are large and slow, with several people on the buying side. LinkedIn campaigns here are built around those committees. SERPMOZ plans and runs LinkedIn Ads for London firms remotely, and measures them against pipeline recorded in the CRM.",
-    answer: {
-      question: "What does a LinkedIn Ads agency do for businesses in London?",
-      text: "It defines the companies and job roles a firm wants to reach, builds audiences on LinkedIn to match, and runs adverts and offers suited to each role. For London firms the audiences are often in financial services, law, technology and corporate head offices. SERPMOZ does this remotely, with messages for each member of the buying group and reporting that follows leads into your sales records.",
+    audiences: [
+      {
+        title: "Consultancies and professional firms selling to large organisations",
+        body: "Firms whose clients are named companies and whose sale depends on trust in particular experts. Campaigns put those experts' thinking in front of the right roles at target accounts, then follow up with a specific reason to talk.",
+      },
+      {
+        title: "Software and technology companies with a defined buyer",
+        body: "Vendors who know which job titles evaluate, approve and use their product. Messages are written for each role in the buying group, so the technical evaluator and the budget holder each see what matters to them.",
+      },
+      {
+        title: "Financial and business service providers with long sales cycles",
+        body: "Lenders, insurers, recruiters and outsourcing firms where a deal takes months. Reporting follows accounts through CRM stages, because judging the channel on first-touch form fills would undervalue or overvalue it.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Location targeting is broader than a postcode",
+        body: "Members are placed by a self-declared area, and people who work in the capital may list a home town elsewhere. We build audiences from company lists and roles first, then apply geography, and check the audience size and make-up before anything launches.",
+      },
+      {
+        title: "Costly clicks punish loose audiences",
+        body: "Automatic audience expansion and network placements can widen reach beyond the people you chose. These settings are reviewed and usually switched off, customers, competitors and staff are excluded, and budgets are sized from the account list instead of a round figure.",
+      },
+      {
+        title: "Lead forms that fill with the wrong people",
+        body: "A form that asks little collects many names of little use to sales. Fields are limited to what sales needs, qualifying questions are added where they help, and leads are synced to the CRM so quality can be judged by what happens next.",
+      },
+      {
+        title: "Results that arrive after the reporting period",
+        body: "A sales cycle of several months means the first quarter rarely shows closed revenue. We report engagement by target account and movement through pipeline stages in the meantime, and are clear about which measures are early indicators.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Define",
+        body: "With your sales team we agree the target account list, the roles in a typical buying group and the stages of your pipeline. Existing customers, competitors and employees are listed for exclusion, and the CRM fields needed for measurement are confirmed.",
+      },
+      {
+        stage: "Build",
+        body: "Company lists are uploaded as matched audiences and layered with job function and seniority. The Insight Tag and conversion tracking are installed, CRM sync is tested with a real lead, and audience sizes are checked against the platform's practical minimums.",
+      },
+      {
+        stage: "Create",
+        body: "Offers are matched to buying stage: ungated guides and expert posts for first contact, direct offers for engaged accounts. Formats may include single image, video, document and Thought Leader Ads, with messages reviewed by sales before launch.",
+      },
+      {
+        stage: "Run",
+        body: "Campaigns launch with a bid strategy chosen per objective. Frequency is watched by segment, creative is rotated before it tires, and budget is moved towards the audiences and offers producing engagement from the accounts on your list.",
+      },
+      {
+        stage: "Report",
+        body: "Reporting shows which target accounts engaged, which leads sales accepted and what pipeline those accounts hold. Lists of engaged accounts are passed to sales for follow-up, and each report ends with what to keep, change or stop.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The first weeks are spent agreeing the account list, building audiences and connecting tracking to the CRM. Once campaigns are live, engagement data such as clicks, video views and form opens typically appears within weeks and shows which roles and messages respond. Pipeline takes longer and should be judged over at least one full sales cycle. The pace depends on audience size, budget, the strength of the offer and how promptly sales follows up the leads it receives.",
+        "Reports arrive monthly and separate early indicators from commercial outcomes. If the audience is too small or the offer too weak to justify the spend, we will say so.",
+      ],
+      notGuaranteed: [
+        "A cost per click or cost per lead on the platform",
+        "A number of leads, meetings or opportunities from target accounts",
+        "That any named company or individual will see or respond to an ad",
+      ],
     },
-    searches: [
-      {
-        title: "Account lists before keywords",
-        body: "London B2B firms usually know which companies they want: banks in Canary Wharf, insurers in the City, funds in Mayfair. The need for LinkedIn Ads arises when search cannot reach those accounts, because the buyer is not yet searching for anything.",
-      },
-      {
-        title: "Role-based demand",
-        body: "Marketing heads look for a LinkedIn Ads agency when they must reach a chief risk officer, a head of procurement or a general counsel. Their searches name the goal, such as B2B lead generation London or account-based marketing agency.",
-      },
-      {
-        title: "LinkedIn advertising agency near me",
-        body: "Some search for a LinkedIn advertising agency near me, wanting a partner who understands London's corporate world. Understanding of the sectors matters more than a nearby desk, since campaigns are planned from data and conversations with your sales team.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Tight geography, large audiences",
-        body: "Targeting London and its commuter belt by role still yields sizeable audiences in finance, law and consulting. That allows narrower definitions than elsewhere: seniority, function and named companies together. We keep audiences large enough to deliver and small enough to stay relevant.",
-      },
-      {
-        title: "Costly impressions need strong offers",
-        body: "LinkedIn inventory aimed at senior London roles is expensive, and a generic brochure advert wastes it. We build offers a director would give time to: a benchmark, a briefing on a regulatory change, an invitation from a named partner. The cheapest campaign is rarely the one that pays.",
-      },
-      {
-        title: "Financial promotions and approvals",
-        body: "Adverts from banks, asset managers, insurers and fintechs may count as financial promotions and need approval under the regulator's rules. We schedule that sign-off into production, keep disclaimers accurate, and leave the judgement on what is permitted to your compliance team.",
-      },
-      {
-        title: "Several people decide",
-        body: "A purchase by a City institution involves users, budget holders, legal, procurement and security. We write separate messages for each and sequence them, so the finance lead sees cost evidence while the technical lead sees integration detail. One advert for everyone persuades nobody in particular.",
-      },
-    ],
-    areas: [
-      { name: "The City", note: "Banks, insurers and law firms give the densest role-based audiences for financial and legal services." },
-      { name: "Canary Wharf", note: "Large banks and professional firms are concentrated here, suiting campaigns built on named-account lists." },
-      { name: "Mayfair and St James's", note: "Private equity and wealth managers are few in number, so audiences are small and precise." },
-      { name: "Shoreditch and King's Cross", note: "Technology companies and scale-ups, reached as buyers of software and as employers." },
-      { name: "Reading and the Thames Valley", note: "Corporate technology offices west of London, often added to the same account lists." },
-    ],
     sectors: [
-      { slug: "finance", note: "Institutions in the City and Canary Wharf are reachable by role, within promotion rules." },
-      { slug: "saas", note: "Software firms selling to London enterprises need every member of the buying committee reached." },
-      { slug: "professional-services", note: "Consultancies and advisers target corporate functions, where a named partner's message opens conversations." },
+      { slug: "professional-services", note: "Clients buy the judgement of named experts, and the platform lets those experts reach specific roles at chosen organisations." },
+      { slug: "saas", note: "Software is bought by a group of roles, each needing a different message, which role-based targeting supports directly." },
+      { slug: "finance", note: "Business finance products are sold to identifiable job titles over long cycles, where account-level measurement fits better than clicks." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a LinkedIn Ads agency in London?",
-        a: "SERPMOZ runs LinkedIn Ads for London firms as part of its work as an AI-powered digital growth company. It is a remote service, and we have no London office or local staff. We handle audience design, offers and messaging by role, ad formats, Lead Gen Forms, bidding and CRM measurement. Planning sessions with your marketing and sales people take place by video, at times that suit London working hours.",
+        q: "How do LinkedIn Ads differ from Google Ads for B2B?",
+        a: "Because Google Ads reaches people through their searches, it captures demand that is already there. LinkedIn reaches people by employer, function and seniority, so it can address buyers who are not yet searching. LinkedIn clicks generally cost more, which suits high-value sales with a known audience. Many B2B firms use search for active demand and LinkedIn to reach target accounts.",
       },
       {
-        q: "How do I find a LinkedIn Ads agency near me in London?",
-        a: "Search results for near me will favour agencies around your postcode, but distance is a weak test. Ask each candidate how it would build your audience: from job titles alone, or from account lists agreed with sales. Ask what it would offer a senior buyer in the City. Ask how leads are followed into your CRM and judged on pipeline. For financial firms, ask how promotions are approved.",
+        q: "Does SERPMOZ have an office in London?",
+        a: "No. Our work for companies in London is carried out through a remote consulting and delivery model. LinkedIn campaigns are built and managed inside the advertising platform and your CRM, so the work depends on access and on regular conversations with your marketing and sales people. Planning sessions, creative reviews and monthly reporting all take place by video call.",
       },
       {
-        q: "Do you also work with businesses in Reading, Cambridge and Croydon?",
-        a: "Yes, remotely. Reading and the Thames Valley have a concentration of technology firms, Cambridge has science and software companies, and Croydon is a major south London office centre. Firms there often target the same London decision-makers, or each other. LinkedIn targeting can be set to any of these places, alone or together with the capital. We do not have offices in Reading, Cambridge or Croydon.",
+        q: "Can you guarantee leads from our target accounts?",
+        a: "No. Whether a person at a given company responds depends on timing, need and internal priorities that no advertiser controls. What we can do is make sure the right roles at those accounts see relevant messages often enough to register, track which accounts engage, and give sales a current list of the ones showing interest.",
       },
       {
-        q: "What does LinkedIn advertising cost in London?",
-        a: "LinkedIn is a costly channel, and senior London audiences in finance and law sit at the dearer end. Media spend depends on audience size, seniority, format and how long campaigns run. Management cost depends on the number of audiences and offers, creative production, and the CRM work needed to measure pipeline. It suits firms whose client value is high enough to justify it, which we assess first.",
+        q: "How long does LinkedIn advertising take to show results?",
+        a: "Engagement is visible within weeks: which audiences click, watch and open forms. Qualified opportunities usually follow more slowly, and revenue should be assessed over a full sales cycle, which for many B2B firms is several months. Judging the channel after a few weeks on cost per lead alone tends to produce the wrong decision in either direction.",
       },
       {
-        q: "Is LinkedIn Ads worth it for a small London consultancy?",
-        a: "Only when a new client is worth a great deal and the audience can be defined precisely. A boutique advising insurers in the City may have a small, nameable set of people to reach, which LinkedIn handles well. A consultancy with a broad offer and low fees will usually find the channel too expensive. In that case, organic posts by the partners are often the better starting point.",
+        q: "What does LinkedIn Ads management cost in London?",
+        a: "The media budget and the management fee are separate. Budget is driven by the size of the audience you need to reach and how often, and the platform's click prices are comparatively high. The fee reflects the number of audiences and campaigns, the creative needed and the CRM integration work. We propose both once the account list and goals are agreed.",
+      },
+      {
+        q: "Our buyers are spread across the UK and abroad. Can campaigns reach beyond the city?",
+        a: "Yes, and for many firms they should. Audiences are defined by company and role first, with countries or regions added to match where you can sell and deliver. A campaign can cover the UK, selected European countries or other markets, each with its own budget and messages, so results can be compared and spend moved accordingly.",
       },
     ],
   },
@@ -374,91 +493,121 @@ export const pages: LocalServicePage[] = [
     place: "london",
     service: "digital-pr",
     seo: {
-      title: "Digital PR Agency in London",
+      title: "Digital PR Services in London",
       metaDescription:
-        "Digital PR for London firms that need authority: research and expert comment pitched to national, trade and sector press covering the City, law and technology.",
-      primaryKeyword: "digital pr agency in london",
-      secondaryKeywords: [
-        "digital pr services in london",
-        "digital pr company in london",
-        "digital pr agency near me",
-        "link building agency london",
-        "digital pr agency shoreditch",
-        "digital pr agency brighton",
+        "Digital PR for London businesses: data-led stories, expert comment and individual outreach that earn coverage and links on editorial merit, never by payment.",
+      primaryKeyword: "digital pr services in london",
+      secondaryKeywords: ["digital pr agency london", "digital pr company in london", "link building through pr uk", "online pr agency", "digital pr agency near me"],
+    },
+    h1: "Digital PR Services in London",
+    intro:
+      "SERPMOZ provides digital PR for companies in London: stories built from data, expert comment for journalists, individually written pitches and pages on your site worth linking to. It is for firms with real expertise or information to share that want to be referenced by credible publications. Coverage is earned on editorial merit and never paid for. Much of the UK's national and trade press is based in the capital, which shapes how stories are pitched.",
+    answer: {
+      question: "What does digital PR involve, and how does it help a business in London?",
+      text: "Digital PR earns coverage, mentions and links from online publications by giving journalists something worth reporting: original data, a qualified expert to quote or a useful resource. Search engines and AI assistants read those references as evidence of credibility. For a firm in the capital it means competing for attention with many other sources, so the story must be specific. Coverage and links are an editor's decision and cannot be promised.",
+    },
+    context: {
+      heading: "Why digital PR is worth considering for a London business",
+      paragraphs: [
+        "Authority is the part of search that a company cannot build alone. A site can be technically sound and well written and still lack the independent references that signal trust. In fields such as finance, law and professional services, where several capable firms publish similar pages, those references are often what separates them. Earned coverage also reaches readers directly, and it informs how AI systems describe a company, though nobody outside those systems controls the result.",
+        "Being in the capital does not make a company newsworthy. National and trade journalists hear from a great many organisations, and a pitch that offers nothing new is ignored whoever sends it. What tends to work is a finding from data the firm holds or can analyse, or a qualified person able to explain a development clearly and quickly. Stories with regional breakdowns can also interest local and regional titles across the UK, which widens the range of publications that might cover them.",
+        "Speed and sign-off need planning. Reporters working on a breaking story may need a comment within hours, while a regulated firm may need compliance approval before a named person says anything in public. Those two facts collide unless an approval route is agreed in advance, along with the topics the firm will not comment on. Where statements touch regulated advice or market-sensitive matters, the decision on what may be said belongs with the firm's own compliance and legal advisers.",
       ],
     },
-    h1: "Digital PR Agency in London for Firms That Need Earned Authority",
-    intro:
-      "Authority is what separates firms in London's crowded search results, and much of the press that confers it is based in the capital. National newspapers, trade titles and sector newsletters covering finance, law and technology are all within reach, and every competitor knows it. Stories have to be useful to a journalist to stand out. SERPMOZ plans and pitches digital PR for London firms remotely.",
-    answer: {
-      question: "What does a digital PR agency do for businesses in London?",
-      text: "For London firms, a digital PR agency earns coverage and links from national, trade and sector publications by supplying research and expert comment. The aim is authority: for the firm's domain in search, and for its name when buyers and AI assistants look it up. SERPMOZ does this remotely, building each story around a page or specialism the firm wants to be known for.",
+    audiences: [
+      {
+        title: "Firms holding data that others would find interesting",
+        body: "Marketplaces, lenders, property businesses, recruiters and software companies whose own records show something about prices, behaviour or trends. Anonymised and analysed with a published method, that data can become a story journalists credit to its source.",
+      },
+      {
+        title: "Professional firms with experts worth quoting",
+        body: "Solicitors, accountants, advisers and consultants who can explain a change in law, tax or markets in plain terms. We prepare spokesperson profiles, monitor journalist requests and help draft comment the expert approves.",
+      },
+      {
+        title: "Companies whose site has good content and little authority",
+        body: "Businesses that have invested in pages and guides and still sit behind better-known names. Earned references from relevant publications are usually the missing element, and the existing content gives coverage somewhere useful to point.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Crowded inboxes at national and trade titles",
+        body: "Journalists at widely read publications receive more pitches than they can open. We build a media list for each story, check each writer's beat and recent work, and send a short individual pitch with the finding in the first line.",
+      },
+      {
+        title: "Approvals that are slower than the news",
+        body: "A comment that arrives after the article is filed is wasted. For regulated firms especially, we agree in advance who signs off, how quickly, and which subjects are off limits, so reactive comment can be supplied in time.",
+      },
+      {
+        title: "Coverage that does not include a link",
+        body: "Whether to link is the publication's choice, and some titles rarely do. Hosting the full data and method on a page worth citing makes a link more natural. Unlinked mentions still build recognition, and we follow them up politely.",
+      },
+      {
+        title: "Pressure to buy links instead",
+        body: "Paid links that pass ranking credit breach search engine spam policies and put existing visibility at risk. We do not buy them. Before new outreach begins we review the current link profile for past activity that may carry risk.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Review",
+        body: "We audit the existing backlink profile and past coverage, look at what competitors have been referenced for, and find mentions without links and links to dead pages. We also establish which experts are available and how approvals work inside your firm.",
+      },
+      {
+        stage: "Develop",
+        body: "Story ideas are drawn from your anonymised data, public datasets or commissioned research, and tested against what the press is covering now. Each idea is assessed for whether a journalist could publish it safely and whether the method can be shown.",
+      },
+      {
+        stage: "Build",
+        body: "The asset is produced on your site: a study page with charts free to reuse, a tool, or a reference guide, with methodology stated. Spokesperson profiles and a press page are prepared so a reporter can confirm credentials quickly.",
+      },
+      {
+        stage: "Pitch",
+        body: "Outreach goes to a list built for that story, one written pitch per journalist, with no mass mailing. Follow-up is limited and courteous. Reactive comment is offered when news in your field breaks and an approved expert has something useful to add.",
+      },
+      {
+        stage: "Measure",
+        body: "We record coverage by relevance of publication, new referring domains, branded search demand and how AI answers describe the company, then relate these to organic performance. Campaigns that did not land are reported too, with what was learned.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The first weeks cover the link profile review, expert preparation and the first story ideas. Reactive comment can produce coverage within weeks if news allows. A data-led campaign takes longer to research, build and pitch, and some campaigns earn little however well they are made, because the news agenda moves. The effect on authority and search visibility typically builds over six to twelve months of consistent activity and is never certain.",
+        "Reporting lists every piece of coverage with its publication and whether it linked. We do not report volume for its own sake; relevance is what we judge by.",
+      ],
+      notGuaranteed: [
+        "Coverage in any named publication, or any coverage from a given campaign",
+        "A number of links, or that a piece of coverage will include one",
+        "A change in rankings or in how AI assistants describe the company",
+      ],
     },
-    searches: [
-      {
-        title: "Seeing a rival quoted",
-        body: "The trigger is often a competitor's partner quoted in the business pages or a trade title. A London marketing director then searches for a digital PR agency, link building agency London or thought leadership PR, wanting the same visibility.",
-      },
-      {
-        title: "Buyers reading the name search",
-        body: "Corporate clients search a firm's name before a meeting and read the first page. Coverage in a respected title beside the firm's own site reassures them, and assistants asked for a shortlist of London firms draw on the same articles.",
-      },
-      {
-        title: "Sector newsletters and trade titles",
-        body: "People in finance, law and technology in London read specialist newsletters and trade publications daily. Those outlets are searched less than they are subscribed to, and appearing in them puts a firm in front of buyers who never typed a query.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Close to the press, and to rivals",
-        body: "London firms sit near the journalists who cover their sectors, which helps with briefings and quick comment. Every other firm in the City or Shoreditch has the same access. What gets used is original data, a clear opinion and a spokesperson who answers within the hour.",
-      },
-      {
-        title: "Specialist expertise as the story",
-        body: "A boutique cannot match a large firm's name, but it can know more about one subject. We build PR around that specialism: a recurring index, an annual analysis, a partner who explains a narrow area well. Journalists return to sources who are reliably useful.",
-      },
-      {
-        title: "Compliance before comment",
-        body: "Comment from regulated London firms on markets, cases or treatments has to pass internal review, which is slow when a reporter's deadline is short. We agree pre-approved positions on likely topics in advance, so a spokesperson can respond quickly without stepping outside what compliance allows.",
-      },
-      {
-        title: "International and local angles together",
-        body: "Many London firms want coverage abroad as well as at home. A single study can be cut for UK nationals, for trade titles and for overseas outlets, provided the data supports each angle. We plan those versions at the start, with a London figure for the capital's own titles.",
-      },
-    ],
-    areas: [
-      { name: "The City", note: "Financial firms compete for space in business pages and specialist finance publications." },
-      { name: "Holborn and the Inns of Court", note: "Legal commentary from chambers and litigators feeds the legal trade press." },
-      { name: "Shoreditch and Old Street", note: "Start-ups seek technology press coverage for launches, funding news and founder opinion." },
-      { name: "Soho", note: "Media and production companies have trade titles of their own, and stories with creative angles." },
-      { name: "Harley Street", note: "Medical specialists offer expert comment to health desks, subject to careful clinical review." },
-      { name: "Canary Wharf", note: "Banks and professional firms based here supply data stories on markets and employment." },
-    ],
     sectors: [
-      { slug: "finance", note: "Fund managers and fintechs earn authority through data and commentary that financial journalists can cite." },
-      { slug: "legal", note: "Partners who explain rulings clearly are quoted repeatedly, building the firm's standing in its specialism." },
-      { slug: "technology", note: "Scale-ups need credible third-party coverage before enterprise buyers and investors take them seriously." },
+      { slug: "finance", note: "Financial firms hold data and expertise journalists want, and independent references carry weight where readers are cautious." },
+      { slug: "real-estate", note: "Property data by area makes natural regional stories, giving many publications a version relevant to their own readers." },
+      { slug: "legal", note: "Changes in law create regular demand for qualified comment, which suits firms able to respond clearly and promptly." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a digital PR agency in London?",
-        a: "SERPMOZ delivers digital PR for London firms, and it is fair to add that we do so remotely, with no office in the city. We are an AI-powered digital growth company. Our PR work includes data-led stories, reactive expert comment, journalist research and outreach, linkable assets on your site and reclaiming unlinked mentions. Being remote does not change how pitching works, which is by email and phone.",
+        q: "How is digital PR different from link building?",
+        a: "Link building is any effort to gain links, and some of it involves payment or exchange, which search engines penalise. Digital PR earns references by giving a journalist a reason to write: a finding, an expert or a resource. The link is the publication's own decision. It takes longer and is harder to predict, yet the references it earns tend to endure.",
       },
       {
-        q: "How do I find a digital PR agency near me in London?",
-        a: "London has many PR agencies, and a near me search will surface the closest. Choose on method. Ask to see a story from idea to coverage, including the data source. Ask which publications they would approach for your sector and why. Confirm they earn links and never pay for them. Ask how they work with compliance in regulated fields. Decline anyone who commits to a set number of placements.",
+        q: "Does SERPMOZ have an office in London?",
+        a: "No. SERPMOZ has no premises in London and uses a remote consulting and delivery model for businesses there. Journalists are pitched by email and work to deadlines, not to meetings, so the quality of the story and the speed of your approvals matter far more than an agency's address. We work with your experts by call and shared documents.",
       },
       {
-        q: "Do you also work with businesses in Brighton, Oxford and Cambridge?",
-        a: "Yes. Our digital PR is run remotely, so firms in Brighton, Oxford and Cambridge are as easy to work with as firms in London. Each has its own regional titles and sector strengths, such as university research and science companies around Oxford and Cambridge. Stories from those cities can also be pitched to the national press. We keep no office or staff there.",
+        q: "Can you guarantee coverage or a number of links?",
+        a: "No. An editor decides what runs and whether it links, and a strong story can still be displaced by the day's news. Anyone promising a fixed number of links is probably buying them. We commit to the inputs: sound research, a story tested against the current agenda, careful targeting and persistent, courteous outreach.",
+      },
+      {
+        q: "How long does digital PR take to show results?",
+        a: "Expert comment can be published within weeks when a relevant story arises. A researched campaign usually needs a couple of months from idea to first coverage. The effect on search authority accumulates more slowly, typically across six to twelve months of regular activity, and varies with how relevant the publications are and how contested your field is.",
       },
       {
         q: "What does digital PR cost in London?",
-        a: "Cost depends on how ambitious the stories are and how often you want to be in the press. Commissioned research or analysis of your own data takes more work than reactive comment. Targeting national, trade and overseas titles together needs wider outreach. Regulated firms should add time for approvals. London's competition for coverage means thin stories fail, so we would sooner run fewer, stronger ones.",
+        a: "Cost follows the work involved: how many campaigns run in a year, whether stories use your existing data or need commissioned research, how much design and development the assets require, and whether reactive comment is included alongside planned campaigns. A programme built on expert comment is lighter than one built on original studies. We scope it after the audit.",
       },
       {
-        q: "Will digital PR help a London firm rank against national brands?",
-        a: "It helps with the part that content alone cannot supply. National brands hold broad terms partly because respected sites link to them. Coverage earned for your specialism builds that authority for the pages you care about, and makes specific rankings more attainable. It works slowly and alongside good pages and sound technical SEO. Typical campaigns show their effect over months, and no outcome is certain.",
+        q: "We already have a traditional PR agency. Do we need digital PR as well?",
+        a: "Possibly not as a separate programme. Traditional PR usually aims at reputation and awareness, and is not measured on links or search authority. If your agency already secures online coverage, the gap may be small: hosting linkable assets, following up unlinked mentions and tracking referring domains. We can work alongside an existing agency on those parts.",
       },
     ],
   },
@@ -466,90 +615,121 @@ export const pages: LocalServicePage[] = [
     place: "london",
     service: "cro",
     seo: {
-      title: "CRO Agency in London",
+      title: "CRO Services in London",
       metaDescription:
-        "Conversion rate optimisation for London firms paying for costly traffic: research, proof and booking journeys that turn City and borough visits into leads.",
-      primaryKeyword: "cro agency in london",
-      secondaryKeywords: [
-        "conversion rate optimisation agency in london",
-        "cro services in london",
-        "cro agency near me",
-        "landing page optimisation london",
-        "cro agency shoreditch",
-        "cro company croydon",
+        "CRO services for London businesses: reliable measurement, user research and prioritised fixes or tests that turn more of your existing visitors into enquiries.",
+      primaryKeyword: "cro services in london",
+      secondaryKeywords: ["cro agency london", "conversion rate optimisation agency in london", "conversion optimisation consultants uk", "website conversion audit", "cro agency near me"],
+    },
+    h1: "CRO Services in London",
+    intro:
+      "SERPMOZ provides conversion rate optimisation for businesses in London: checking that measurement can be relied on, researching why visitors leave, and fixing or testing the pages and forms that matter. It is for firms that already attract visitors and suspect too few of them enquire or buy. Where traffic is costly to win, as it often is for professional and financial services, improving what happens after the click is usually the cheaper gain.",
+    answer: {
+      question: "What do CRO services include, and how do they help a business in London?",
+      text: "Conversion rate optimisation is the practice of finding out why visitors do not enquire or buy, and changing the site on evidence. It includes measurement checks, session and survey research, usability review, a prioritised list of hypotheses, and controlled tests where traffic allows. For a firm in the capital paying heavily for visitors, it raises the return on that spend. No particular uplift can be promised in advance.",
+    },
+    context: {
+      heading: "Why conversion work matters for a London business",
+      paragraphs: [
+        "Every visitor has a cost, whether paid for directly through advertising or indirectly through content and search work. In categories where several firms bid for the same customers, that cost tends to be high. A site that turns a slightly larger share of its visitors into enquiries gets more from the same spend, and the gain applies to every channel at once. That arithmetic is why conversion work is often the sensible next step once traffic is established.",
+        "Many firms the capital is known for sell something a visitor will not buy on the first visit: legal advice, wealth management, enterprise software, a place at a private clinic. Conversion there means a credible enquiry, not a checkout. The questions are whether the page explains the service clearly, shows evidence a cautious reader accepts, and makes the next step feel proportionate. Such sites also tend to have modest traffic, which limits formal testing and makes research-led changes more important.",
+        "Measurement deserves caution. Under UK privacy law a visitor can decline analytics, so recorded behaviour describes only those who consented, and the gap varies by audience and device. Conclusions drawn from that data should be checked against something firmer, such as enquiries logged in the CRM or orders in the shop system. Companies selling abroad from here may also find that overseas visitors behave differently, with their own expectations about currency, delivery and proof, and these groups should be analysed separately.",
       ],
     },
-    h1: "CRO Agency in London: More Enquiries from Expensive Traffic",
-    intro:
-      "Winning a visitor in London is expensive, whether through paid search in legal and finance auctions or through the effort organic visibility demands. A small improvement in the share of visitors who enquire is therefore worth more here than extra traffic. SERPMOZ carries out conversion research and testing for London firms remotely, starting with the pages that receive the costliest clicks and the journeys that lose the most people.",
-    answer: {
-      question: "What does a CRO agency do for businesses in London?",
-      text: "A CRO agency raises the proportion of visitors who enquire, book or buy. For London firms it studies how prospective clients read service pages, what proof they look for and where forms or booking steps lose them, then tests improvements. SERPMOZ does this remotely. Because traffic here is expensive, we prioritise pages fed by paid campaigns and measure qualified enquiries, not form fills alone.",
+    audiences: [
+      {
+        title: "Professional firms whose enquiry forms underperform",
+        body: "Practices and advisers that receive visits to service pages and few enquiries. Research usually finds a mix of unclear explanation, missing reassurance and forms that ask too much too early, each of which can be addressed.",
+      },
+      {
+        title: "Online retailers with a leaking basket or checkout",
+        body: "Shops with enough orders to measure each step. Funnel tracking shows where buyers drop out, session review shows why, and with sufficient volume changes can be tested properly before they are made permanent.",
+      },
+      {
+        title: "Software companies seeking more demo or trial requests",
+        body: "Vendors whose pricing, plan and demo pages carry the commercial weight. Interviews with customers and lost prospects reveal what was unclear at the point of decision, and those pages are revised and measured.",
+      },
+    ],
+    challenges: [
+      {
+        title: "Too little traffic for reliable testing",
+        body: "A split test needs enough conversions to separate a real effect from chance, and many service firms do not have them. For those sites we rely on research, fix evident faults and compare before and after with care instead of running underpowered tests.",
+      },
+      {
+        title: "Analytics that undercount by design",
+        body: "Consent choices under UK rules mean part of the audience is invisible to analytics. We reconcile recorded conversions with CRM or order data, check how tags behave when consent is refused, and state the limits of the figures in each report.",
+      },
+      {
+        title: "Enquiries counted without regard to quality",
+        body: "A change that doubles form fills by attracting unsuitable enquiries has made things worse. Where the CRM allows, results are judged on enquiries that sales accepts, with the raw conversion rate treated as a guardrail and not the goal.",
+      },
+      {
+        title: "Opinions outranking evidence in redesign decisions",
+        body: "Senior preference often decides what a page looks like. A shared backlog, with each idea stated as a hypothesis and scored by impact, confidence and effort, gives the team a neutral way to choose and a record of ideas deliberately parked.",
+      },
+    ],
+    approach: [
+      {
+        stage: "Measure",
+        body: "Conversion events and funnel steps are defined and checked, then reconciled with CRM or order records. We test tag behaviour under different consent choices and set up segments by source, device and new or returning visitor, so later findings rest on sound data.",
+      },
+      {
+        stage: "Research",
+        body: "We review session recordings, heatmaps and scroll depth, run short on-site polls, and where possible interview customers and people who chose not to buy. Sales calls and support tickets are read for the questions the site fails to answer.",
+      },
+      {
+        stage: "Prioritise",
+        body: "Findings become hypotheses, each with its evidence, and are scored for likely impact, confidence and effort. Plain faults such as broken forms, confusing error messages and accessibility barriers go on a fix-now list without waiting for a test.",
+      },
+      {
+        stage: "Test",
+        body: "Where volume allows, experiments are planned with a sample size and duration set beforehand, one primary metric and guardrail metrics. They run for full weekly cycles before being read. Otherwise changes are released and measured against the earlier period.",
+      },
+      {
+        stage: "Learn",
+        body: "Each result, including tests that showed no effect, is written up with what it implies for other pages. Winning changes are made permanent, the backlog is re-scored, and the next round is planned from what the evidence now suggests.",
+      },
+    ],
+    expectations: {
+      paragraphs: [
+        "The first weeks go on measurement checks and research, and usually produce findings you can act on before any test is run. Evident faults are fixed early. Whether formal experiments follow, and how long each takes, depends on your traffic and number of conversions: a busy shop may read a test in a few weeks, while a specialist firm may not have the volume to test at all. Some tests will show no difference, which is a normal and useful outcome.",
+        "Reports state what was tested or changed, what the data showed and how confident we are. Segment-level findings are presented as leads to investigate, not as proof.",
+      ],
+      notGuaranteed: [
+        "A particular rise in conversion rate, enquiries or revenue",
+        "That any individual test will produce a winning variation",
+        "How long a test must run before its result can be trusted",
+      ],
     },
-    searches: [
-      {
-        title: "Rising cost per enquiry",
-        body: "London firms come to conversion work when the cost of each enquiry from Google Ads climbs and bids cannot go higher. They search for a CRO agency London or landing page optimisation, looking for return from visitors they already pay for.",
-      },
-      {
-        title: "Booking on a phone",
-        body: "Patients, diners and gym members in London book from a phone, often on the Tube platform or the bus. Clinics in Marylebone and restaurants in Soho search for help when mobile visitors look but do not complete the booking.",
-      },
-      {
-        title: "Enquiries of the wrong kind",
-        body: "Professional firms often have enough form submissions and too few suitable clients. Their search is for better lead quality, and the answer usually lies in page wording, fee signals and qualifying questions that deter poor fits politely.",
-      },
-    ],
-    localFactors: [
-      {
-        title: "Qualified enquiries, not volume",
-        body: "A Mayfair wealth manager or a City law firm wants a handful of suitable clients, not hundreds of forms. We define what qualified means with your team, record it against each enquiry, and judge changes by that measure, even where it reduces the raw count.",
-      },
-      {
-        title: "Low traffic on valuable pages",
-        body: "Specialist service pages in London may receive few visits, each one valuable. Classic A/B tests need more traffic than that. We use interviews, session recordings with consent, and structured before-and-after comparisons, and we are plain about how much confidence each method gives.",
-      },
-      {
-        title: "Proof that London buyers expect",
-        body: "Clients here cross-check: legal and financial directories, review platforms, press mentions, partner profiles on LinkedIn. We bring that evidence onto the page near the point of decision, with named people and accreditations, using only material that is real, current and permitted by your regulator.",
-      },
-      {
-        title: "Location detail as a conversion factor",
-        body: "Journey time decides whether a Londoner books. Pages for a clinic or studio convert better when they state the nearest station, the walk from it, step-free access and opening hours around the working day. We test how early that information appears.",
-      },
-    ],
-    areas: [
-      { name: "The City and Canary Wharf", note: "Corporate buyers involve several people, so pages must serve researchers and decision-makers alike." },
-      { name: "Mayfair", note: "Discretion matters to private clients, so forms ask little and promise a personal reply." },
-      { name: "Harley Street and Marylebone", note: "Private patients compare specialists closely, looking for credentials, fees and booking availability." },
-      { name: "Shoreditch", note: "Technology firms need demo and trial journeys that work for buyers outside London too." },
-      { name: "Clapham and Wandsworth", note: "Local practices and studios depend on mobile booking flows that work first time." },
-    ],
     sectors: [
-      { slug: "legal", note: "Enquiry forms must attract the right matters and set fee expectations without deterring good clients." },
-      { slug: "healthcare", note: "Private clinics convert on clinician credentials, clear fees and a short route to booking." },
-      { slug: "hospitality", note: "Restaurants and hotels lose bookings to slow mobile journeys and hand-offs to outside platforms." },
+      { slug: "professional-services", note: "The conversion is a trusted enquiry, so clarity, evidence and a proportionate form matter more than persuasion tricks." },
+      { slug: "ecommerce", note: "Baskets and checkouts have measurable steps and enough volume to test, so small usability gains repeat on every order." },
+      { slug: "saas", note: "Pricing and demo pages decide whether an evaluator proceeds, and customer interviews show what was unclear to them." },
     ],
     faqs: [
       {
-        q: "Is SERPMOZ a CRO agency in London?",
-        a: "SERPMOZ provides conversion rate optimisation to London firms, working remotely as an AI-powered digital growth company. We have no office in London and no staff stationed there. The work itself needs none: measurement, user research, heuristic review, hypotheses and experiments are carried out on your site and with your customers online. Findings are shared in documents and video calls during UK working hours.",
+        q: "Is CRO the same as A/B testing?",
+        a: "No. A/B testing is one method within conversion rate optimisation, and it only works with enough traffic. CRO also includes checking measurement, watching how people use the site, asking customers what nearly stopped them, and fixing clear faults. Plenty of useful conversion work involves no split test at all, particularly on lower-traffic sites selling considered services.",
       },
       {
-        q: "How do I find a CRO agency near me in London?",
-        a: "Near me results will show agencies close to your office. Look past distance and ask how each would work on a page that gets valuable but limited traffic, which is common for London specialists. Ask how they define a qualified enquiry. Ask what research they do before proposing a test. For regulated firms, ask how testimonials and claims are cleared. Uplift guarantees are a warning sign.",
+        q: "Does SERPMOZ have an office in London?",
+        a: "No. SERPMOZ works with businesses in London through a remote consulting and delivery model. Conversion work happens in your analytics, your testing tools and your website, and the research draws on recordings, surveys and calls with customers. It needs access, a developer or platform contact to release changes, and someone with authority to approve them.",
       },
       {
-        q: "Do you also work with businesses in Croydon, St Albans and Guildford?",
-        a: "Yes. Conversion work is done on the website, so a firm in Croydon, St Albans or Guildford is served remotely on equal terms with one in central London. Customers in those places behave a little differently: more arrive by car, parking and directions matter, and catchments are wider. We reflect that in what the pages say. We do not have a presence in these towns.",
+        q: "Can you guarantee an increase in our conversion rate?",
+        a: "No. Until the research is done nobody knows what is holding visitors back, and even well-founded changes sometimes make no measurable difference. What we can promise is method: decisions based on evidence, tests designed properly, results reported as they are, and no change declared a success on thin data.",
+      },
+      {
+        q: "How long does CRO take to show results?",
+        a: "Research findings and fixes to clear faults typically arrive within the first weeks, and those fixes can improve results immediately. Tested improvements depend on volume. A site with many daily conversions can complete an experiment in a few weeks; one with few may need months per test or should use before-and-after comparison instead.",
       },
       {
         q: "What does CRO cost in London?",
-        a: "Cost depends on the number of journeys to be studied and how complex they are. A professional firm with a few service pages and an enquiry form is a contained project. A multi-site clinic group with online booking, or a retailer with a full checkout, needs more research and development time. Repairing measurement first adds to the early work. We scope after reviewing analytics and current enquiry quality.",
+        a: "Cost depends on how much of the site is in scope, the depth of research, whether experiments are run and on how many pages, and who designs and builds the changes. A research-led audit with a prioritised fix list is a smaller commitment than a continuing testing programme. We recommend a scope after reviewing your traffic and tracking.",
       },
       {
-        q: "Should we fix conversion before spending more on London traffic?",
-        a: "Usually, yes. If a page turns few visitors into enquiries, buying more visitors multiplies the waste, and London traffic is costly to buy. Clearer service pages, visible proof and simpler contact routes often pay back faster than higher bids. The exception is a site with too little traffic to learn from, where some paid activity is needed first. We look at both together before recommending an order.",
+        q: "Should we fix conversion before spending more on advertising?",
+        a: "Usually it makes sense to look at conversion first, or at least alongside. If the site loses visitors through a confusing page or a faulty form, extra advertising buys more of the same loss. A short review will show whether there are evident faults to correct. Where the site already converts reasonably, more traffic may be the better investment.",
       },
     ],
   },

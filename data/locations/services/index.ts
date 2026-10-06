@@ -56,11 +56,18 @@ export const localServicePath = (p: Pick<LocalServicePage, "service" | "place">)
     }
     if (p.seo.title.length > 46) fail(`seo.title is ${p.seo.title.length} characters (46 at most)`);
     if (p.seo.metaDescription.length < 120 || p.seo.metaDescription.length > 160) fail(`metaDescription is ${p.seo.metaDescription.length} characters (120 to 160)`);
-    if (p.h1 === p.seo.title) fail("h1 repeats the title");
-    if (p.searches.length !== 3 || p.localFactors.length !== 4 || p.sectors.length !== 3) fail("needs 3 searches, 4 local factors and 3 sectors");
-    if (p.areas.length < 4) fail("needs at least four areas");
-    if (p.faqs.length < 5) fail("needs at least five FAQs");
-    if (!/remote/i.test(p.intro)) fail("intro must say the work is delivered remotely");
+    if (p.context.paragraphs.length !== 3) fail("context needs three paragraphs");
+    if (p.audiences.length !== 3 || p.sectors.length !== 3) fail("needs three audiences and three sectors");
+    if (p.challenges.length < 3 || p.challenges.length > 4) fail("needs three or four challenges");
+    if (p.approach.length !== 5) fail("approach needs five stages");
+    if (p.expectations.paragraphs.length !== 2 || p.expectations.notGuaranteed.length !== 3) fail("expectations need two paragraphs and three limits");
+    if (p.faqs.length < 5 || p.faqs.length > 8) fail("needs five to eight FAQs");
+    // Honesty: the remote model is stated, and nothing claims a presence or a certainty.
+    // Questions are in the buyer's voice ("our head office"), so only our own words are checked.
+    const text = JSON.stringify({ ...p, faqs: p.faqs.map((f) => f.a) });
+    if (!/remote/i.test(p.faqs.map((f) => f.a).join(" "))) fail("an FAQ must state the remote delivery model");
+    const claim = text.match(/\bour [a-z ]{0,24}(office|team in)\b|\blocal team\b|we guarantee|increasingly|rapidly growing|highly competitive|most (companies|businesses) (here|in)/i);
+    if (claim) fail(`unsupported or misleading wording: "${claim[0]}"`);
   }
   if (problems.length) throw new Error(`Local service pages failed validation:\n- ${problems.join("\n- ")}`);
 }

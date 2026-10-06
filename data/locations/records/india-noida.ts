@@ -37,9 +37,9 @@ export const location: LocationRecord = {
   },
 
   hero: {
-    title: "Digital Marketing Agency and SEO Company in Noida",
+    title: "Digital Marketing Agency in Noida",
     description:
-      "Noida was laid out on a grid, and people search it that way: by sector number, by expressway and by society name. IT campuses, electronics factories, universities and newly occupied housing all sit within that grid, each with different buyers. SERPMOZ plans search, maps, paid media and follow-up around the sectors you serve, and treats Greater Noida as the separate market it is.",
+      "Noida is a planned city laid out in numbered sectors, and its addresses are written that way: by sector number, by expressway and by society name. IT campuses, electronics factories, universities and housing societies all sit within that grid, each with different buyers. SERPMOZ plans search, maps, paid media and follow-up around the sectors you serve, and treats Greater Noida as the separate market it is.",
   },
 
   facts: [
@@ -51,42 +51,42 @@ export const location: LocationRecord = {
 
   answer: {
     question: "What does a digital marketing agency do for businesses in Noida?",
-    text: "A digital marketing agency working for a Noida business handles SEO, local SEO, Google Ads, lead generation and enquiry follow-up, and here most of it is organised by sector. People search for a service with a sector number, a housing society or a metro station, and Google shows businesses close to that point. SERPMOZ, working remotely, sets up an accurate Business Profile and page for each location, builds a routine for genuine reviews and tracks calls and messages. Greater Noida and Greater Noida West are planned as separate catchments.",
+    text: "A digital marketing agency working for a Noida business handles SEO, local SEO, Google Ads, lead generation and enquiry follow-up, and here much of it is organised by sector. Addresses here are written with a sector number, and Google favours businesses close to the place a search names or is made from. SERPMOZ, working remotely, sets up an accurate Business Profile and page for each location, builds a routine for genuine reviews and tracks calls and messages. Greater Noida and Greater Noida West are planned as separate catchments.",
   },
 
   overview: {
     heading: "About digital growth in Noida",
     paragraphs: [
-      "Noida is a planned city, and its numbered sectors each have a recognisable role, which any SEO company working here has to learn first. Sector 18 is the established retail and restaurant centre. Sector 62 and the stretch along the Noida Expressway hold IT parks, corporate offices and institutes. Sector 63 and the older industrial phases house small and mid-sized manufacturing units. Residential sectors fill the space between. Knowing which sector a customer lives or works in tells you a good deal about what they will search for.",
-      "The city's economy has several distinct layers. IT and IT services firms sell to clients elsewhere in India and abroad. Electronics and component manufacturers, along with their suppliers, sell to other businesses through long relationships and formal enquiries. Universities and private colleges recruit students from across north India. These need different programmes: [lead generation](/lead-generation/) for the first two, and admissions-cycle campaigns for [education](/industries/education/).",
-      "The newest layer is residential. Large housing societies in central Noida and Greater Noida West have filled quickly, and each newly occupied tower creates demand for schools, clinics, interiors, fitness, groceries and repairs. Residents arrive without established habits and choose providers through search, maps and society groups. For local businesses this is an unusual chance to become the default option before competitors settle in.",
+      "Noida is a planned city, and its numbered sectors tend to have a recognisable role, which any SEO company working here has to learn first. Sector 18 is the well-known retail and restaurant centre. Other sectors are known for IT parks and corporate offices, for industrial units, or for housing. The sector a business sits in is part of its address and its identity online, so sector, block and complex name have to be exactly right on every listing.",
+      "The city is known for several distinct kinds of business. IT and IT services firms can sell to clients anywhere in India or abroad. Electronics and component manufacturers and their suppliers sell to other businesses, where an order starts with a formal enquiry. Universities and private colleges work to an admissions calendar. These need different programmes: [lead generation](/lead-generation/) for the first two, and admissions-cycle campaigns for [education](/industries/education/).",
+      "Another layer is residential. Noida and Greater Noida West are known for large housing societies. If your business serves households in a society near you, the profile and page should name that society and its sector as residents write them, and say plainly whether you offer home visits or delivery there. Where a society is newly occupied, a complete profile and a first set of honest reviews are worth setting up from the first week of trading.",
     ],
   },
 
   discovery: {
     heading: "How customers discover businesses in Noida",
     intro:
-      "Noida's residents are relatively young, many are recent arrivals, and they rely on their phones to find services in an area they are still learning. Business buyers follow a slower, enquiry-led path through search, marketplaces and trade contacts.",
+      "For a Noida business we assess the channels below against two kinds of customer: households in the sectors around you, and business or institutional buyers who may be anywhere. Your enquiry records tell us which of the two matters more.",
     channels: [
       {
         name: "Google Search and Maps by sector",
-        body: "Queries pair a service with a sector number or society name, or use near me from inside a residential tower. Because sectors look alike and addresses repeat block letters, people depend on the map pin and photographs to find the place. An incorrect pin is a common reason for lost visits.",
+        body: "Google returns nearby businesses for a search that names a sector or society, or for a near me search made from inside one. Block letters repeat from sector to sector, so the map pin and photographs of the entrance do much of the job of getting a visitor to the door. We check each pin by hand, because an incorrect one can cost a business visits.",
       },
       {
         name: "Housing society and resident WhatsApp groups",
-        body: "Large societies run active groups where residents ask for a paediatrician, a carpenter or a tutor and get answers within minutes. A name recommended there is then checked on Google before a call. Businesses cannot buy their way into these groups, but good service and visible reviews feed them.",
+        body: "Resident groups are private, and a business cannot and should not try to buy its way into them. What marketing can do is make sure that a name passed on by a neighbour checks out: a profile with the right sector and society, recent reviews with replies, and a phone number that is answered. We also advise against bulk messages to resident lists, since WhatsApp outreach needs opt-in.",
       },
       {
         name: "Property portals and developer search",
-        body: "Buyers and tenants search by sector, society and builder, and compare listings on property portals. Brokers specialise in particular societies and corridors. Interest in the expressway and Greater Noida corridors is strongly influenced by news about infrastructure and project delivery.",
+        body: "Property portals and search results are organised by sector, society and builder. A broker who works particular societies or corridors should have a page for each one actually covered, with current listings. For projects along the expressways and in Greater Noida, pages should carry accurate registration and delivery information, updated as it changes.",
       },
       {
         name: "B2B marketplaces, trade search and exhibitions",
-        body: "Manufacturers and industrial suppliers are found through B2B marketplaces, specification-led Google searches and trade exhibitions held in the region. Buyers send formal enquiries with drawings or quantities and expect a prompt, technical reply. A clear product catalogue online often decides who is asked to quote.",
+        body: "A manufacturer or industrial supplier can be listed on B2B marketplaces, found through searches for a specification, and met at trade exhibitions, which Greater Noida is known for hosting. We build catalogue pages around part names, specifications and certifications, and set up enquiry forms that accept drawings and quantities, so a quotation request reaches the right person with what they need to answer it.",
       },
       {
         name: "Instagram, YouTube and admissions research",
-        body: "Students and parents research colleges through video, campus content, review sites and admissions portals, then search the institute by name. Restaurants, salons and fitness studios around Sector 18 and the residential sectors use Instagram and local creators to reach nearby residents.",
+        body: "A college is described on review sites and admissions portals as well as on its own channels, so we check that course, fee and campus details agree across all of them and that a search for the institute by name leads to the right page. Restaurants, salons and fitness studios around Sector 18 and the residential sectors can use Instagram and local creators to reach nearby residents.",
       },
     ],
   },
@@ -94,42 +94,42 @@ export const location: LocationRecord = {
   searchAi: {
     heading: "Search and AI discovery in Noida",
     paragraphs: [
-      "Google is the main search engine, with English and Hindi used side by side and many queries typed in Hindi with Latin letters. Local intent is precise: a search that names one sector returns different businesses from a search naming the next. Company and institutional searches are wider, covering Delhi NCR or all of India. Our [SEO services](/seo-services/) separate these so that sector-level pages serve residents and category pages serve national buyers.",
-      "AI assistants are being used by students comparing colleges, families comparing societies and schools, and buyers looking for suppliers. Answers lean on review sites, portals, news and the organisation's own published details. They change with the wording of the question and the tool used, and nobody can guarantee placement. Consistent facts, clear pages and independent coverage are the things within a business's control.",
+      "Google is the main search engine to plan for, and a query may be typed in English, in Hindi or in Hindi with Latin letters. Local results are precise: a search that names one sector can return different businesses from a search naming the next. Company and institutional searches are wider, covering Delhi NCR or all of India. Our [SEO services](/seo-services/) separate these so that sector-level pages serve residents and category pages serve national buyers.",
+      "AI assistants will answer when asked to compare colleges, societies, schools or suppliers. Answers tend to lean on review sites, portals, news and the organisation's own published details. They change with the wording of the question and the tool used, and nobody can guarantee placement. Consistent facts, clear pages and independent coverage are the things within a business's control.",
     ],
   },
 
   local: {
     heading: "Why local search matters in Noida",
     paragraphs: [
-      "The grid makes Noida easy to plan and oddly hard to navigate. Sectors are not numbered in a simple sequence, internal roads look similar and many businesses operate from upper floors of commercial complexes. Customers follow the map, so an accurate profile is a practical necessity. [Google Maps SEO](/google-maps-seo/) here starts with pin placement, entrance photographs and landmark details before anything else.",
-      "Catchments are also well defined. A resident of Greater Noida West will not usually travel to Sector 18 for a routine service, and central Greater Noida is a further journey again. Businesses that want all three need a presence or a defined service area in each, supported by [local SEO](/local-seo-services/). The pattern differs from [Gurgaon](/digital-marketing-agency-gurgaon/), where roads and developments, not numbers, carry most of the naming.",
+      "The grid makes Noida easy to plan and, for a newcomer, hard to find a way around. Sectors are not numbered in a simple sequence, internal roads can look similar and a business may operate from an upper floor of a commercial complex. A first-time visitor depends on the map to arrive, so an accurate profile is a practical necessity. [Google Maps SEO](/google-maps-seo/) here starts with pin placement, entrance photographs and landmark details before anything else.",
+      "Catchments are also well defined. Sector 18, Greater Noida West and central Greater Noida are a considerable distance apart, and map results are ranked partly by distance, so a profile in one is seldom shown for searches in the others. Businesses that want all three need a presence or a defined service area in each, supported by [local SEO](/local-seo-services/). The pattern differs from [Gurgaon](/digital-marketing-agency-gurgaon/), where roads and developments, not numbers, carry more of the naming.",
     ],
     points: [
-      "Sector numbers are the core of local search, often with a block letter or a society name added.",
-      "Greater Noida uses its own naming, including Alpha, Beta and Gamma sectors, Knowledge Park and Pari Chowk. Greater Noida West is also widely called Noida Extension.",
-      "Metro stations on the Blue Line and Aqua Line are used as reference points in searches and directions.",
-      "Reviews from residents of a named society carry weight with neighbours, and people look for mention of home visits, punctuality and pricing.",
-      "Businesses serving Noida, Greater Noida and East Delhi from one address should define service areas honestly instead of listing every sector.",
+      "Write the sector number into every address, with the block letter and the society or complex name where there is one, in the same order on the site, the profile and every directory.",
+      "Greater Noida uses its own naming, including Alpha, Beta and Gamma sectors and Knowledge Park. Greater Noida West is also widely known as Noida Extension.",
+      "If a branch is near a Blue Line or Aqua Line metro station, name that station in the directions on the branch page.",
+      "State on the profile and the page whether you offer home visits, which societies you cover and your hours, so that a review mentioning them agrees with what you publish.",
+      "Businesses serving Noida, Greater Noida and East Delhi from one address should define their real service areas instead of listing every sector.",
     ],
   },
 
   opportunities: [
     {
       title: "First to be known in newly occupied sectors",
-      body: "As societies fill, thousands of households choose a doctor, school, gym and tradesperson for the first time. A business with an accurate profile, early reviews and a relevant page for those sectors can establish itself before the area is crowded.",
+      body: "If you open beside a newly occupied society, the first months are the time to get the basics right. An accurate profile, a page that names the sectors you cover and a routine for asking early customers for honest reviews give the branch a base that later marketing can build on.",
     },
     {
       title: "Manufacturers with a findable catalogue",
-      body: "Many industrial units rely on existing relationships and have websites that list little. Detailed product, capability and certification pages bring specification-led enquiries from buyers who would otherwise never learn the firm exists.",
+      body: "If your work comes mainly through existing relationships and the website lists little, detailed product, capability and certification pages give search engines something to match against a specification, and give a new buyer enough to ask for a quote.",
     },
     {
       title: "Admissions marketing with honest qualification",
-      body: "Institutes commonly buy large volumes of low-intent leads from aggregators. Owning search visibility for course and campus queries, and following up quickly on WhatsApp, produces fewer enquiries with a better chance of enrolling.",
+      body: "An institute that buys most of its leads from aggregators has little control over their intent. Owning search visibility for course and campus queries, and following up quickly on WhatsApp, can produce fewer enquiries with a better chance of enrolling.",
     },
     {
       title: "IT services firms seen beyond referrals",
-      body: "Mid-sized technology firms often grow through founder networks alone. Focused service pages, case-based content and a consistent LinkedIn presence open a second source of enquiries that does not depend on who the founders know.",
+      body: "If a technology firm's enquiries come only through its founders' networks, growth depends on who the founders know. Focused service pages, case-based content and a consistent LinkedIn presence can open a second source of enquiries alongside those introductions.",
     },
   ],
 
@@ -138,45 +138,45 @@ export const location: LocationRecord = {
       slug: "local-seo-services",
       title: "Local SEO in Noida",
       body: "Makes each location visible to residents and workers in the sectors it can serve.",
-      why: "Search is organised by sector number, and proximity decides which businesses appear.",
+      why: "Addresses are organised by sector number, and Google's weighting of proximity shapes which businesses appear.",
     },
     {
       slug: "seo-services",
       title: "SEO Services in Noida",
       body: "Earns organic visibility for service, course, product and project queries with commercial value.",
-      why: "IT, education and manufacturing firms here sell far beyond the city and need category rankings as well as local ones.",
+      why: "An IT, education or manufacturing firm that sells beyond the city needs category rankings as well as local ones.",
     },
     {
       slug: "google-ads",
       title: "Google Ads in Noida",
       body: "Reaches active searchers in chosen sectors and corridors with location targeting and tracked calls.",
-      why: "Real estate and education advertisers compete heavily, so targeting has to be tight to protect budget.",
+      why: "Location targeting can be drawn around chosen sectors and corridors, which keeps spend out of areas you do not serve.",
     },
     {
       slug: "lead-generation",
       title: "Lead Generation in Noida",
       body: "Builds a steady flow of qualified enquiries for B2B, admissions and property teams, with agreed scoring.",
-      why: "Manufacturers and IT services firms depend on a small number of serious enquiries, not on volume.",
+      why: "For a manufacturer or an IT services firm, one serious enquiry is worth more than many casual ones, so scoring comes before volume.",
     },
     {
       slug: "whatsapp-automation",
       title: "WhatsApp Automation in Noida",
       body: "Responds to enquiries immediately, shares brochures or site details and passes qualified contacts to staff.",
-      why: "Home buyers, parents and students expect a quick reply and usually contact several providers at once.",
+      why: "A brochure, fee sheet or site location sent at once keeps a property or admissions enquiry moving until staff can call back.",
     },
     {
       slug: "linkedin-marketing",
       title: "LinkedIn Marketing in Noida",
       body: "Builds a credible company and leadership presence that supports B2B sales conversations.",
-      why: "IT services and industrial firms sell to buyers who check the company and its people before replying.",
+      why: "A company page and leadership profiles are public, and for an IT services or industrial firm they should match what the sales team says.",
     },
   ],
 
   industries: [
-    { slug: "technology", note: "IT and IT services companies occupy the Sector 62 area and the expressway campuses, selling mainly to clients outside the city." },
+    { slug: "technology", note: "IT and IT services companies work from the city's IT parks and expressway campuses, and can sell to clients anywhere." },
     { slug: "manufacturing", note: "Electronics, components and light engineering units operate from Noida's industrial sectors and Greater Noida's industrial areas." },
-    { slug: "education", note: "Private universities, colleges and schools along the expressway and in Knowledge Park recruit across north India." },
-    { slug: "real-estate", note: "Group housing, commercial projects and resale are searched by sector, society and builder, with close attention to delivery record." },
+    { slug: "education", note: "Private universities, colleges and schools along the expressway and in Greater Noida run admissions campaigns every year." },
+    { slug: "real-estate", note: "Group housing, commercial projects and resale are listed by sector, society and builder, and advertising must be accurate about registration and delivery dates." },
     { slug: "b2b", note: "Suppliers, logistics providers and business service firms support the industrial and IT base and sell through formal enquiries." },
   ],
 
@@ -191,11 +191,11 @@ export const location: LocationRecord = {
     },
     {
       title: "Trust in property marketing",
-      body: "Buyers in this region pay close attention to project registration and delivery history. Real estate advertising should carry accurate details under the state real estate regulator's rules and avoid any claim about timelines that cannot be supported.",
+      body: "Publish project registration details and delivery history where a reader can find them. Real estate advertising should carry accurate details under the state real estate regulator's rules and avoid any claim about timelines that cannot be supported.",
     },
     {
       title: "Daily movement across the NCR",
-      body: "Many people who work in Noida live in Delhi or Ghaziabad, and the reverse. Decide whether campaigns should target where people live or where they work, since the answer changes location settings, timing and messaging.",
+      body: "Noida, Delhi and Ghaziabad adjoin one another and are linked by metro and expressway, so a person's home and workplace may be in different cities. Decide whether campaigns should target where people live or where they work, since the answer changes location settings, timing and messaging.",
     },
   ],
 
@@ -206,7 +206,7 @@ export const location: LocationRecord = {
     },
     {
       title: "Consumer and B2B under one plan",
-      body: "The same team handles local visibility for resident-facing businesses and enquiry programmes for manufacturers and IT firms, with separate measures for each.",
+      body: "The same remote team handles local visibility for resident-facing businesses and enquiry programmes for manufacturers and IT firms, with separate measures for each.",
     },
     {
       title: "AI does the checking, experts set priorities",
@@ -229,7 +229,7 @@ export const location: LocationRecord = {
     },
     {
       q: "Which digital marketing services are available for businesses in Noida?",
-      a: "Local SEO, organic SEO, Google Ads, lead generation, WhatsApp automation, LinkedIn marketing, Google Maps SEO and landing pages. Resident-facing businesses usually start with maps and paid search by sector. Manufacturers, IT firms and institutes usually start with organic search, content and a properly qualified enquiry process.",
+      a: "Local SEO, organic SEO, Google Ads, lead generation, WhatsApp automation, LinkedIn marketing, Google Maps SEO and landing pages. For a resident-facing business we would start with maps and paid search by sector. For a manufacturer, IT firm or institute we would start with organic search, content and a properly qualified enquiry process.",
     },
     {
       q: "Does SERPMOZ have an office in Noida?",
@@ -245,7 +245,7 @@ export const location: LocationRecord = {
     },
     {
       q: "Can you help a Noida manufacturer or IT company reach buyers outside the city?",
-      a: "Yes. Most such firms sell nationally or abroad. We build product, capability and service pages around how buyers search, support them with content and LinkedIn activity, and set up enquiry tracking so you can see which sources produce requests worth quoting for.",
+      a: "Yes, whether those buyers are elsewhere in India or abroad. We build product, capability and service pages around how buyers search, support them with content and LinkedIn activity, and set up enquiry tracking so you can see which sources produce requests worth quoting for.",
     },
     {
       q: "How does the growth audit work?",
@@ -253,7 +253,7 @@ export const location: LocationRecord = {
     },
     {
       q: "How do I find a good digital marketing agency near me in Noida?",
-      a: "Three questions sort the field quickly. First, what would they do about sector pages: a sound answer is a page only where you have a branch, a society you serve or a different offer, never one per sector. Second, whether they budget Noida, Greater Noida and Noida Extension as separate catchments. Third, whether they ask if your customers should be targeted where they live or where they work, since many commute across the NCR. Physical nearness matters for premises photographs and little else, and your own team can supply those. Map results depend on your address, not your agency's.",
+      a: "Three questions sort the field quickly. First, what would they do about sector pages: a sound answer is a page only where you have a branch, a society you serve or a different offer, never one per sector. Second, whether they budget Noida, Greater Noida and Noida Extension as separate catchments. Third, whether they ask if your customers should be targeted where they live or where they work, since home and workplace can be in different NCR cities. Physical nearness matters for premises photographs and little else, and your own team can supply those. Map results depend on your address, not your agency's.",
     },
   ],
 

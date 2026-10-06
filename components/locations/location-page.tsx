@@ -198,7 +198,7 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
           <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:radial-gradient(60%_70%_at_80%_10%,black,transparent)]" />
           <div className="shell relative">
             <p className="label-mono text-cyan">Opportunities</p>
-            <h2 id="opportunities-title" className="mt-4 max-w-3xl text-h2 font-semibold">Where growth is available in {l.inSentence}.</h2>
+            <h2 id="opportunities-title" className="mt-4 max-w-3xl text-h2 font-semibold">Where the work can start in {l.inSentence}.</h2>
             <ol className="mt-10 grid grid-cols-1 gap-x-10 md:grid-cols-2 lg:mt-12">
               {l.opportunities.map((o, i) => (
                 <li key={o.title} className="grid grid-cols-[3rem_1fr] gap-x-4 border-t border-white/12 py-6">
@@ -250,7 +250,7 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
         <div className={cn(inset, "scroll-mt-20 bg-blue-tint")}>
           <div className="shell">
             <p className={eyebrow}>Industries</p>
-            <h2 id="industries-title" className={h2}>Sectors we work with in {l.inSentence}.</h2>
+            <h2 id="industries-title" className={h2}>Sectors we plan for in {l.inSentence}.</h2>
             <ul className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:mt-12 lg:grid-cols-4">
               {industries.map((i, n) => (
                 <li key={i.slug} className={cn(n === 0 && "sm:col-span-2")}>
@@ -316,7 +316,7 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
           <div className="shell grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-6">
               <p className={eyebrow}>Why SERPMOZ</p>
-              <h2 id="why-title" className={h2}>Why businesses in {l.inSentence} work with us.</h2>
+              <h2 id="why-title" className={h2}>How SERPMOZ works with businesses in {l.inSentence}.</h2>
               <ul className="mt-8 grid gap-4 sm:grid-cols-2">
                 {l.whyUs.map((w) => (
                   <li key={w.title} className="rounded-2xl bg-surface p-5 shadow-soft">
@@ -392,7 +392,7 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
         <section aria-labelledby="related-title" className={cn(band, "bg-surface")}>
           <div className="shell">
             <p className={eyebrow}>Related locations</p>
-            <h2 id="related-title" className="mt-4 text-[clamp(1.5rem,1.2rem+1.2vw,2.125rem)] leading-[1.2] font-semibold tracking-[-0.03em] text-navy">Other markets we work in.</h2>
+            <h2 id="related-title" className="mt-4 text-[clamp(1.5rem,1.2rem+1.2vw,2.125rem)] leading-[1.2] font-semibold tracking-[-0.03em] text-navy">Other markets we serve remotely.</h2>
             <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {related.map((r) => (
                 <li key={r.slug}>
