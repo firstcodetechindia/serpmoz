@@ -84,23 +84,23 @@ export const master: ServiceMaster = {
   ],
 
   comparison: {
-    heading: "Local SEO or Local Services Ads: which brings better local leads?",
-    intro: "Local Services Ads are a Google ad format for certain trades and professions in certain countries, shown above other results and charged per lead. Where they are available to you, they compete with local SEO for the same budget.",
-    columns: ["Local SEO", "Local Services Ads"],
+    heading: "Local SEO or Google Ads: which brings better local customers?",
+    intro: "Both put you in front of people searching nearby, in every market we work in. One is earned and builds slowly; the other is bought and starts at once. Most local businesses end up using both, and the useful question is how to split the budget.",
+    columns: ["Local SEO", "Google Ads for local searches"],
     rows: [
-      { label: "Cost model", a: "Ongoing work, no cost per lead", b: "Pay for each lead" },
-      { label: "Speed", a: "Builds over months", b: "Leads soon after approval" },
-      { label: "Availability", a: "Any local business, any country", b: "Selected categories and countries only" },
-      { label: "Position", a: "Map pack and organic listings", b: "Above the other results" },
-      { label: "Entry requirements", a: "A verified, accurate profile", b: "Provider verification and screening checks" },
-      { label: "When you stop", a: "Visibility fades gradually", b: "Leads stop at once" },
+      { label: "Cost model", a: "Ongoing work, no cost per click", b: "Pay for each click or call" },
+      { label: "Speed", a: "Builds over months", b: "Enquiries once campaigns are live" },
+      { label: "Where you appear", a: "Map pack and organic listings", b: "Ad slots above and within results" },
+      { label: "Trust", a: "Reviews and profile do the persuading", b: "Marked as sponsored" },
+      { label: "Control", a: "Earned position, not fixed", b: "Choose areas, hours and budget" },
+      { label: "When you stop", a: "Visibility fades gradually", b: "Enquiries stop at once" },
     ],
-    verdict: "Where Local Services Ads cover your category, they are a quick way to buy leads while local SEO builds, and the reviews you earn help both. Local SEO is the part you keep, so it is rarely sensible to run the ads in place of it.",
+    verdict: "Use Google Ads to bring in enquiries while local SEO builds, and to cover areas where your profile is not yet strong. Local SEO is the part you keep, and the reviews it earns make the ads convert better too.",
     link: { label: "See our Google Ads service", href: "/google-ads/" },
   },
 
   industries: ["local-business", "healthcare", "dental", "home-services", "legal", "automotive"],
-  markets: ["usa", "uk", "canada", "australia"],
+  markets: ["india", "uae", "uk", "usa"],
   scenario: "multi-location-dental-group",
 
   faqs: [
