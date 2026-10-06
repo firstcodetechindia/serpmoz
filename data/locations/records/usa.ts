@@ -14,24 +14,25 @@ export const location: LocationRecord = {
   photo: "saas",
 
   seo: {
-    title: "Digital Growth in the USA",
+    title: "Digital Marketing Agency in the USA",
     metaDescription:
-      "SEO, paid search, AI search visibility and conversion work for businesses selling in the USA, planned by state, metro and sector so the economics hold.",
-    primaryKeyword: "digital marketing services USA",
+      "Digital marketing agency and SEO company work for businesses selling in the USA: search, paid media and conversion, planned by state, metro and sector.",
+    primaryKeyword: "digital marketing agency in the USA",
     secondaryKeywords: [
-      "SEO services USA",
+      "SEO company in the USA",
+      "SEO agency in the USA",
+      "digital marketing company in the USA",
+      "SEO services in the USA",
       "Google Ads management USA",
       "AI search optimisation USA",
       "local SEO for US businesses",
-      "SaaS marketing agency USA",
-      "ecommerce SEO USA",
     ],
     searchIntent:
-      "Founders and marketing leads selling in the USA, or planning to enter it, who want a partner able to handle an expensive, state-by-state market across search, paid media and conversion.",
+      "Founders and marketing leads selling in the USA, or planning to enter it, who are ready to hire a digital marketing agency or SEO company and are comparing providers able to handle an expensive, state-by-state market.",
   },
 
   hero: {
-    title: "Digital Growth in the USA",
+    title: "Digital Marketing Agency and SEO Company in the USA",
     description:
       "Marketing in the USA means paying mature-market prices for attention. Paid search is contested in almost every profitable category, buyers compare several providers and read reviews before they make contact, and the rules on personal data change from state to state. SERPMOZ plans SEO, paid media, AI search visibility and conversion work around the states, metros and sectors where your numbers hold up.",
   },
@@ -44,14 +45,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "What digital marketing services does SERPMOZ provide in the USA?",
-    text: "SERPMOZ provides SEO, AI search optimisation, Google Ads and Microsoft Ads management, LinkedIn advertising, conversion rate optimisation, ecommerce SEO and local SEO for businesses selling in the USA. We work remotely and plan by state, metro and sector, because national coverage is rarely affordable at the start. Each engagement begins with a growth audit that sizes search demand by value, reviews tracking against state privacy requirements and sets out which work should come first.",
+    question: "What does a digital marketing agency do for businesses in the USA?",
+    text: "A digital marketing agency in the USA plans and runs the channels that bring customers in: SEO, paid search, AI search visibility and the conversion work that turns visits into revenue. SERPMOZ does this work remotely for businesses selling in the USA, covering SEO, Google Ads and Microsoft Ads, LinkedIn advertising, ecommerce SEO and local SEO. We plan by state, metro and sector, because national coverage is rarely affordable at the start. Each engagement begins with a growth audit that sizes search demand by value and sets out which work should come first.",
   },
 
   overview: {
     heading: "About digital growth in the USA",
     paragraphs: [
-      "The USA is a mature digital market in the plainest sense. Almost every commercial category already has well-funded advertisers, established publishers and websites that have been earning links for many years. Automated bidding is standard, so competitors bid with similar tools, and the difference comes from what campaigns are told to optimise for and what happens after the click. A business entering or expanding here should expect paid search to be expensive in legal, finance, insurance, software and home services, and should plan [conversion rate optimisation](/cro/) alongside media from the first month.",
+      "The USA is a mature digital market in the plainest sense. Almost every commercial category already has well-funded advertisers, established publishers and websites that have been earning links for many years. Automated bidding is standard, so every advertiser and digital marketing agency bids with similar tools, and the difference comes from what campaigns are told to optimise for and what happens after the click. A business entering or expanding here should expect paid search to be expensive in legal, finance, insurance, software and home services, and should plan [conversion rate optimisation](/cro/) alongside media from the first month.",
       "Geography decides the economics. A national campaign competes with every advertiser in the country, while a plan built around a handful of states or metros competes with far fewer and can be measured more honestly. Search behaviour also differs by place. People search by city, suburb, county and neighbourhood, and a 'near me' query resolves differently in a dense city such as [New York](/locations/usa/new-york/) than in a spread-out metro where customers drive. We usually recommend proving the model in a small number of markets, then widening coverage once the cost of winning a customer is clear.",
       "Two sectors set the pace for everyone else. Software companies sell to buyers who read comparison pages, peer review sites and community threads long before they book a demo, which makes [marketing for SaaS companies](/industries/saas/) a patient exercise in category and comparison content. Online retailers work in the shadow of Amazon, where a great many product searches begin, and need product feeds, shopping campaigns and [ecommerce SEO](/ecommerce-seo/) that protect margin instead of chasing revenue. Local service firms face a different contest, fought in the map pack and in Local Services Ads.",
       "Regulation is lighter at federal level than in Europe, but it is not absent. A growing number of states have their own consumer privacy laws, health information is protected by federal rules, and commercial email and text messaging carry consent and opt-out requirements. Websites are also expected to be usable by people with disabilities, and businesses do receive legal complaints about inaccessible sites. None of this prevents effective marketing. It does mean tracking, forms, remarketing audiences and page templates should be designed with these constraints in view, not patched afterwards.",
@@ -234,6 +235,10 @@ export const location: LocationRecord = {
   ],
 
   faqs: [
+    {
+      q: "How do I choose a digital marketing agency in the USA?",
+      a: "Begin with scope. An agency that proposes national targeting on day one is putting you in the most expensive version of every auction, so look for one that will name the states or metros it would start with and why. Check that it manages Microsoft Ads and Apple Maps listings as well as Google, since both deserve attention with American audiences. Ask how it designs consent and tracking for state privacy laws, and whether it builds websites to recognised accessibility guidelines. In legal, finance, insurance or software, ask how it measures lead quality, because cost per click alone tells you little in those auctions.",
+    },
     {
       q: "What services does SERPMOZ offer for businesses in the USA?",
       a: "We offer SEO, AI search optimisation, Google Ads and Microsoft Ads, LinkedIn and Meta advertising, conversion rate optimisation, local SEO, ecommerce SEO, content and web development. Most American clients start with two or three of these, chosen after an audit, and add others once the first channels are paying for themselves.",

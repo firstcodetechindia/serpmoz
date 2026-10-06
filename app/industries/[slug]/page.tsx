@@ -1,3 +1,4 @@
+import { industryServicePath, industryServicesIn } from "@/data/industries/services";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -44,6 +45,7 @@ export default async function IndustryPage({ params }: Props) {
   const meta = metaFor(ind.name, ind.line, ind.slug);
   const sector = inSentence(ind.name);
   const services = ind.services.map(getService).filter((s) => s !== undefined);
+  const written = industryServicesIn(ind.slug);
   const neighbours = ind.related.map(getIndustry).filter((i) => i !== undefined);
 
   return (
@@ -131,8 +133,16 @@ export default async function IndustryPage({ params }: Props) {
         </div>
       </section>
 
-      {/* 07 Services */}
+      {/* 07 Services: pages written for this sector first, then the general ones */}
       <Block label="Relevant services" title="Typically involved." className="bg-surface">
+        {written.length ? (
+          <div className="mb-10">
+            <p className="label-mono text-orange-ink">Written for {ind.name}</p>
+            <div className="mt-3">
+              <LinkList links={written.map((r) => ({ label: r.name, href: industryServicePath(r), note: r.seo.metaDescription }))} />
+            </div>
+          </div>
+        ) : null}
         <LinkList links={services.map((s) => ({ label: s.name, href: `/${s.slug}/`, note: s.summary }))} />
       </Block>
 

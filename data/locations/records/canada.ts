@@ -14,23 +14,25 @@ export const location: LocationRecord = {
   photo: "skyline",
 
   seo: {
-    title: "Digital Growth in Canada",
+    title: "Digital Marketing Agency in Canada",
     metaDescription:
-      "SEO, bilingual content, local search, Google Ads and consent-based email for businesses in Canada, planned metro by metro and distinct from the US market.",
-    primaryKeyword: "digital marketing services Canada",
+      "Digital marketing agency work for businesses in Canada: bilingual SEO, local search, Google Ads and consent-based email, planned one metro at a time.",
+    primaryKeyword: "digital marketing agency in Canada",
     secondaryKeywords: [
-      "SEO services Canada",
+      "SEO company in Canada",
+      "SEO agency in Canada",
+      "digital marketing company in Canada",
+      "SEO services in Canada",
       "bilingual SEO English French",
       "local SEO Canada",
       "Google Ads management Canada",
-      "email marketing consent Canada",
     ],
     searchIntent:
-      "Canadian business owners and marketers, and foreign companies expanding into Canada, who need a partner that handles English and French, consent rules and competition from American websites.",
+      "Canadian business owners and marketers, and foreign companies expanding into Canada, who want to hire a digital marketing agency or SEO company that handles English and French, consent rules and competition from American websites.",
   },
 
   hero: {
-    title: "Digital Growth in Canada",
+    title: "Digital Marketing Agency and SEO Company in Canada",
     description:
       "Canada is often planned as an extension of the United States, and that is usually the first mistake. Customers here search in two official languages, live in a few large metros separated by long distances, and want to know that a business prices in Canadian dollars and ships from within the country. SERPMOZ builds search, paid and email programmes for Canada on those terms.",
   },
@@ -43,14 +45,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "What digital marketing services does SERPMOZ provide in Canada?",
-    text: "SERPMOZ provides SEO, international and technical SEO for bilingual sites, local SEO, Google Maps optimisation, Google Ads, content marketing and consent-based email marketing for businesses in Canada. We work remotely and plan each metro separately, in English, French or both. Work begins with a growth audit that checks how your site signals Canada to search engines, how consent is recorded and where demand is worth pursuing before any budget is committed.",
+    question: "What does a digital marketing agency do for businesses in Canada?",
+    text: "In Canada, a digital marketing agency plans SEO, local search, advertising and email for each metro, in English, French or both. SERPMOZ does that work remotely for Canadian businesses: SEO, international and technical SEO for bilingual sites, local SEO, Google Maps optimisation, Google Ads, content marketing and consent-based email marketing. Work begins with a growth audit that checks how your site signals Canada to search engines, how consent is recorded and where demand is worth pursuing before any budget is committed.",
   },
 
   overview: {
     heading: "About digital growth in Canada",
     paragraphs: [
-      "Canada has a small population spread across a very large country, and most of it lives in a few metropolitan areas. Toronto, Montreal, Vancouver, Calgary, Edmonton and Ottawa are separated by hours of flying, different time zones and, in Montreal's case, a different working language. Each behaves as its own market with its own competitors, media and costs. A national plan in Canada is therefore usually a set of metro plans with shared foundations. Our [Toronto page](/locations/canada/toronto/) shows how that looks for one city, and [local SEO](/local-seo-services/) carries much of the load elsewhere.",
+      "Canada has a small population spread across a very large country, and most of it lives in a few metropolitan areas. Toronto, Montreal, Vancouver, Calgary, Edmonton and Ottawa are separated by hours of flying, different time zones and, in Montreal's case, a different working language. Each behaves as its own market with its own competitors, media and costs. A national plan from any digital marketing agency in Canada is therefore usually a set of metro plans with shared foundations. Our [Toronto page](/locations/canada/toronto/) shows how that looks for one city, and [local SEO](/local-seo-services/) carries much of the load elsewhere.",
       "Language is a legal matter as well as a commercial one. English and French are both official languages, and Quebec has its own requirements that commerce, including websites and advertising aimed at customers in the province, be available in French. Meeting that properly means writing in Canadian French, which differs from the French of France in vocabulary and idiom, and structuring the site so each language version is indexed and shown to the right audience. Translation alone, particularly machine translation left unreviewed, tends to read as an afterthought to francophone customers.",
       "The proximity of the United States shapes everything. Canadians see American advertising, shop on American sites and are served American pages in search results when no clear Canadian alternative exists. Yet the differences are practical and important: currency, duties and shipping, provincial sales taxes, spelling, banking and insurance products, and public healthcare. Businesses that make their Canadian identity obvious, with a .ca domain, Canadian dollar pricing and a Canadian address, convert buyers who are wary of surprise costs at the border. Getting the technical signals right is a job for [international SEO](/international-seo/).",
       "Canadian rules on consent are stricter than many newcomers expect. The national anti-spam law requires consent before commercial email or text messages are sent, along with sender identification and an unsubscribe mechanism, and privacy law operates at federal level with separate, in some cases more demanding, provincial regimes. This rules out purchased lists and casual lead sharing. It also rewards businesses that build permission properly, because a consented list in a market of this size becomes one of the more dependable channels a company owns. We plan [email marketing](/email-marketing/) on that basis.",
@@ -233,6 +235,10 @@ export const location: LocationRecord = {
   ],
 
   faqs: [
+    {
+      q: "How do I choose a digital marketing agency in Canada?",
+      a: "The quickest test is how an agency treats the border. One that reuses American keywords, spelling and landing pages will leave your Canadian pages outranked by American ones. Look for a plan split by metro, since Toronto, Vancouver, Calgary and Montreal do not share customers or time zones. If Quebec is in scope, French should be written by a native Canadian French writer with its own keyword research. Ask how sign-up forms record consent under the anti-spam law, and expect a refusal to use purchased lists. Finally, check that privacy and tracking are designed for the most demanding province you serve.",
+    },
     {
       q: "What services does SERPMOZ offer for businesses in Canada?",
       a: "We offer SEO, international and technical SEO for bilingual sites, local SEO, Google Maps optimisation, Google Ads, content marketing, email marketing, conversion work and web development. The mix depends on your cities, languages and sector, and is set after an audit of your current position.",

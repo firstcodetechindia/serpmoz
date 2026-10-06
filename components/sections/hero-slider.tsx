@@ -64,7 +64,9 @@ export function HeroSlider({ slides, children }: { slides: HeroSlide[]; children
         <div className="order-1 grid lg:col-span-6">
           {slides.map((s, i) => {
             const on = i === active;
-            const Title = i === 0 ? "h1" : "h2";
+            // The page has one H1: the first slide's label, which says what SERPMOZ is in the words people search.
+            // Slide headlines are display text, not headings, so the outline stays clean.
+            const Label = i === 0 ? "h1" : "p";
             return (
               <div
                 key={s.key}
@@ -75,15 +77,15 @@ export function HeroSlider({ slides, children }: { slides: HeroSlide[]; children
                 inert={!on}
                 className={cn("col-start-1 row-start-1 transition-[opacity,visibility] duration-500", on ? "visible opacity-100" : "invisible opacity-0")}
               >
-                <p className={cn("inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.06] py-1.5 pr-4 pl-2.5 text-[0.8125rem] font-medium text-white/85 transition-all duration-700 ease-out-quint", on ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0")}>
+                <Label id={i === 0 ? "hero-title" : undefined} className={cn("inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.06] py-1.5 pr-4 pl-2.5 text-[0.8125rem] font-medium text-white/85 transition-all duration-700 ease-out-quint", on ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0")}>
                   <span className="relative flex size-2" aria-hidden>
                     <span className="absolute inset-0 rounded-full bg-orange motion-safe:animate-ping-soft" />
                     <span className="relative size-2 rounded-full bg-orange" />
                   </span>
                   {s.eyebrow}
-                </p>
+                </Label>
 
-                <Title id={i === 0 ? "hero-title" : undefined} className="mt-7 text-[clamp(2.375rem,1.2rem+3.6vw,4rem)] leading-[1.08] font-semibold tracking-[-0.035em]">
+                <p className="mt-7 text-[clamp(2.375rem,1.2rem+3.6vw,4rem)] leading-[1.08] font-semibold tracking-[-0.035em]">
                   {s.title.map((line, l) => (
                     <span key={line} className="block overflow-hidden pb-2">
                       <span
@@ -98,7 +100,7 @@ export function HeroSlider({ slides, children }: { slides: HeroSlide[]; children
                       </span>
                     </span>
                   ))}
-                </Title>
+                </p>
 
                 <p className={cn("mt-4 max-w-xl text-lead text-white/75 transition-all duration-700 ease-out-quint", on ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0")} style={{ transitionDelay: on ? "320ms" : "0ms" }}>
                   {s.body}

@@ -14,24 +14,26 @@ export const location: LocationRecord = {
   photo: "skyline",
 
   seo: {
-    title: "Digital Growth in the UAE",
+    title: "Digital Marketing Agency in the UAE",
     metaDescription:
-      "SEO, paid media, WhatsApp enquiry handling and bilingual websites for businesses in the UAE, planned around English and Arabic search and expatriate buyers.",
-    primaryKeyword: "digital marketing services UAE",
+      "Digital marketing agency services in the UAE: English and Arabic SEO, paid media, WhatsApp enquiry handling and bilingual websites for expatriate buyers.",
+    primaryKeyword: "digital marketing agency in the UAE",
     secondaryKeywords: [
-      "SEO services UAE",
+      "SEO company in the UAE",
+      "SEO agency in the UAE",
+      "digital marketing company in the UAE",
+      "SEO services in the UAE",
       "Arabic SEO UAE",
       "lead generation UAE",
       "Google Ads management UAE",
       "WhatsApp marketing UAE",
-      "bilingual website development UAE",
     ],
     searchIntent:
-      "Owners and marketing managers of UAE businesses, or companies entering the Emirates, looking for a partner that understands bilingual search, expatriate audiences and enquiry-led selling.",
+      "Owners and marketing managers of UAE businesses, or companies entering the Emirates, looking to hire a digital marketing agency or SEO company that understands bilingual search, expatriate audiences and enquiry-led selling.",
   },
 
   hero: {
-    title: "Digital Growth in the UAE",
+    title: "Digital Marketing Agency and SEO Company in the UAE",
     description:
       "Marketing in the UAE means addressing residents from many countries, in English and Arabic, who often prefer to open a WhatsApp chat than fill in a form. SERPMOZ plans search, paid media, websites and enquiry handling around that reality. Real estate, hospitality, tourism, finance and professional services each get an approach that respects how those sectors are licensed and advertised here.",
   },
@@ -44,14 +46,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "What digital marketing services does SERPMOZ provide in the UAE?",
-    text: "SERPMOZ provides SEO in English and Arabic, local and Google Maps optimisation, Google and Meta advertising, Instagram marketing, WhatsApp enquiry automation, lead generation and website development for businesses in the UAE. The work is planned around a largely expatriate audience, two languages with different layouts, and sectors such as real estate, hospitality and finance where advertising is subject to licensing rules. We work with UAE businesses remotely and begin with a growth audit of current visibility and enquiries.",
+    question: "What does a digital marketing agency do for businesses in the UAE?",
+    text: "A digital marketing agency in the UAE runs SEO, advertising and enquiry handling for an audience that searches in two languages. SERPMOZ does this work remotely for UAE businesses: SEO in English and Arabic, local and Google Maps optimisation, Google and Meta advertising, Instagram marketing, WhatsApp enquiry automation, lead generation and website development. Plans account for a largely expatriate audience and for sectors such as real estate, hospitality and finance where advertising is subject to licensing rules. We begin with a growth audit of current visibility and enquiries.",
   },
 
   overview: {
     heading: "About digital growth in the UAE",
     paragraphs: [
-      "The UAE is unusual among national markets because most of the people a business sells to grew up somewhere else. Residents arrive from South Asia, the wider Arab world, Europe, the Philippines and elsewhere, and they bring search habits, brand references and expectations formed at home. A single category can be searched in English by one group, in Arabic by another, and with different vocabulary by a third. Planning starts with deciding which audiences a business truly serves, then building [SEO in the UAE](/seo-services/) around the words those people use.",
+      "The UAE is unusual among national markets because most of the people a business sells to grew up somewhere else. Residents arrive from South Asia, the wider Arab world, Europe, the Philippines and elsewhere, and they bring search habits, brand references and expectations formed at home. A single category can be searched in English by one group, in Arabic by another, and with different vocabulary by a third. For a digital marketing agency, planning starts with deciding which audiences a business truly serves, then building [SEO in the UAE](/seo-services/) around the words those people use.",
       "Much of the commercial activity is enquiry-led. Property, clinics, schools, legal and corporate services, events and hospitality bookings tend to begin with a question, and that question is very often sent on WhatsApp. A website here is judged less by how it looks than by how quickly it turns interest into a conversation and how well that conversation is handled afterwards. This is why [WhatsApp automation](/whatsapp-automation/) and structured lead qualification sit close to the centre of most plans we write for the Emirates.",
       "Company structure also shapes marketing. Businesses operate either on the mainland or from one of many free zones, and the licence they hold affects which activities they can advertise and to whom they can sell. Firms that help others set up companies are themselves a large and competitive search category. We do not give legal advice on licensing, but we do ask about it early, because claims on a landing page should match what the licence permits.",
       "The emirates are not interchangeable. Dubai concentrates property, tourism, retail and free zone services, and has its own page for [digital growth in Dubai](/locations/uae/dubai/). Abu Dhabi leans towards government-linked work, energy, finance and larger institutional buyers. Sharjah and the northern emirates have more price-conscious consumer demand and a strong industrial and logistics base. Campaigns that treat the country as one audience tend to overspend in Dubai and miss everyone else.",
@@ -231,6 +233,10 @@ export const location: LocationRecord = {
   resources: ["sizing-search-opportunities-by-value", "what-automated-bidding-should-optimise-for", "measuring-ai-search-visibility"],
 
   faqs: [
+    {
+      q: "How do I choose a digital marketing agency in the UAE?",
+      a: "Four checks are specific to the Emirates. Ask who writes the Arabic: a native writer working from separate keyword research, or someone translating the English page. Ask how English research accounts for residents from different countries using different words for the same service. Ask whether enquiry handling on WhatsApp is part of the service, since a slow reply wastes the spend that produced it. And ask how approvals for real estate, healthcare, finance or education advertising fit into campaign timelines. An agency should also want to see your licence scope, mainland or free zone, before writing copy, and should tell you to confirm requirements with your own advisers.",
+    },
     {
       q: "What digital marketing services are available for businesses in the UAE?",
       a: "We offer SEO in English and Arabic, Google Maps optimisation, Google and Meta advertising, Instagram marketing, WhatsApp automation, lead generation, conversion work and website development. Most plans combine a few of these, chosen after an audit of where enquiries currently come from and where they are being lost.",

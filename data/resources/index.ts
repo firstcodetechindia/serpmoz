@@ -78,7 +78,7 @@ export const resourceCategories: ResourceCategory[] = [
   },
 ];
 
-export { articles, getArticle, readingTime, type Article } from "./articles";
+export { articles, clusters, getArticle, readingTime, seriesOf, type Article } from "./articles";
 
 export const resourceFormats = [
   {

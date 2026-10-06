@@ -14,23 +14,25 @@ export const location: LocationRecord = {
   photo: "professional-services",
 
   seo: {
-    title: "Digital Growth in the UK",
+    title: "Digital Marketing Agency in the UK",
     metaDescription:
-      "SEO, digital PR, paid search and conversion work for UK businesses, written in British English and built around UK GDPR, cookie consent and advertising rules.",
-    primaryKeyword: "digital marketing services UK",
+      "SEO company and digital marketing agency services for UK businesses: search, digital PR and paid media in British English, built around UK consent rules.",
+    primaryKeyword: "digital marketing agency in the UK",
     secondaryKeywords: [
-      "SEO services UK",
+      "SEO company in the UK",
+      "SEO agency in the UK",
+      "digital marketing company in the UK",
+      "SEO services in the UK",
       "digital PR UK",
       "Google Ads management UK",
       "local SEO UK",
-      "AI search optimisation UK",
     ],
     searchIntent:
-      "UK business owners and marketing managers, and overseas companies entering Britain, looking for a growth partner who understands British buyers, consent rules and advertising standards.",
+      "UK business owners and marketing managers, and overseas companies entering Britain, who want to hire a digital marketing agency or SEO company that understands British buyers, consent rules and advertising standards.",
   },
 
   hero: {
-    title: "Digital Growth in the UK",
+    title: "Digital Marketing Agency and SEO Company in the UK",
     description:
       "British buyers check before they commit. They read Trustpilot, look a firm up on Companies House, run the quote through a comparison site and notice at once when copy was written for another country. SERPMOZ plans search, digital PR, paid media and conversion work for the UK around that scepticism, with consent and advertising rules treated as part of the design.",
   },
@@ -43,14 +45,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "What digital marketing services does SERPMOZ provide in the UK?",
-    text: "SERPMOZ provides SEO, content, digital PR, Google Ads, local SEO, conversion rate optimisation, LinkedIn marketing and answer engine optimisation for businesses in the UK. Everything is written in British English and checked against UK GDPR, cookie consent requirements and advertising standards before it goes live. We work remotely, and start with a growth audit that shows where search demand is worth pursuing in London, in the regions or nationally, and what should be done first.",
+    question: "What does a digital marketing agency do for businesses in the UK?",
+    text: "For businesses in the UK, a digital marketing agency handles SEO, content, digital PR, paid search and the conversion work behind them. SERPMOZ does that work remotely: SEO, local SEO, Google Ads, LinkedIn marketing and answer engine optimisation, written in British English and checked against UK GDPR, cookie consent requirements and advertising standards before it goes live. We start with a growth audit that shows where search demand is worth pursuing in London, in the regions or nationally, and what should be done first.",
   },
 
   overview: {
     heading: "About digital growth in the UK",
     paragraphs: [
-      "The UK is a compact, well-connected market where a business in Leeds can serve a customer in Bristol without difficulty. That makes national competition the norm for anything sold online or delivered remotely, and the first page for commercial queries is often shared between household names, comparison sites and national publishers. Smaller firms rarely win by matching that scale. They win by being more specific: a defined service, a named audience and evidence that stands up to scrutiny. Our [SEO services](/seo-services/) for UK clients start from that narrowing, not from a long keyword list.",
+      "The UK is a compact, well-connected market where a business in Leeds can serve a customer in Bristol without difficulty. That makes national competition the norm for anything sold online or delivered remotely, and the first page for commercial queries is often shared between household names, comparison sites and national publishers. Smaller firms rarely win by matching that scale, whichever SEO company they hire. They win by being more specific: a defined service, a named audience and evidence that stands up to scrutiny. Our [SEO services](/seo-services/) for UK clients start from that narrowing, not from a long keyword list.",
       "London and the rest of the country behave like different markets. The capital concentrates finance, law, technology and international head offices, and competition there is fought at borough and postcode level, which we cover on our [London page](/locations/uk/london/). Manchester, Birmingham, Leeds, Bristol, Edinburgh, Glasgow, Cardiff and Belfast each have their own business communities, local press and loyalties. A plan that treats the regions as an afterthought to London misses buyers who prefer a firm they regard as local, and Scotland, Wales and Northern Ireland also differ in law and public institutions.",
       "Professional and financial services carry a great deal of weight. Solicitors, accountants, advisers, insurers, lenders and consultancies all market heavily, and many are answerable to a regulator for what their advertising says. Buyers in these sectors look for accreditation, named individuals and plain explanations of fees and process. For [accountancy firms](/industries/accounting/) and similar practices, expert-led content tends to outperform sales copy, because the reader is assessing competence. Insurance, energy, broadband and credit are different again: price comparison sites sit between the provider and a large share of customers.",
       "Tone matters more than most overseas businesses expect. British readers respond to understatement, specifics and a little dryness, and are put off by superlatives and urgency. Spelling, date formats, pounds sterling, VAT treatment and references to UK institutions all need to be right, because American copy with the spelling changed is recognised immediately. The same restraint is required by the rules: advertising claims must be capable of substantiation, and cookies used for analytics and advertising need consent before they are set. Good UK marketing is persuasive within those limits.",
@@ -234,6 +236,10 @@ export const location: LocationRecord = {
   ],
 
   faqs: [
+    {
+      q: "How do I choose a digital marketing agency in the UK?",
+      a: "Read the agency's own copy first. If it is full of superlatives and pressure, it will write the same way for you, and understated, specific copy persuades better with British buyers. Then ask how it would narrow your market: a defined service and a named audience do more than a long keyword list against household names and comparison sites. Confirm that tracking is built on recorded consent, that claims are evidenced in advance for advertising standards, and that regulated sectors get a compliance step. If you trade outside London, ask whether its plan and costs are based on your region or on the capital.",
+    },
     {
       q: "What services does SERPMOZ offer for UK businesses?",
       a: "We offer SEO, content, digital PR, Google Ads, local SEO, conversion rate optimisation, LinkedIn marketing, answer engine optimisation, email marketing and web development. Most UK clients begin with search and conversion work, then add PR or paid channels once the audit shows where the return is likely to be.",

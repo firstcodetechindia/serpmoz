@@ -18,23 +18,26 @@ export const location: LocationRecord = {
   photo: "local-business",
 
   seo: {
-    title: "Digital Growth & SEO Services in Delhi",
+    title: "Digital Marketing Agency in Delhi",
     metaDescription:
-      "SEO, local search, paid media and WhatsApp follow-up for Delhi businesses, planned locality by locality for clinics, institutes, traders and service firms.",
-    primaryKeyword: "digital marketing services in Delhi",
+      "Digital marketing agency and SEO company services for Delhi businesses: local SEO, Google Maps, paid media and WhatsApp follow-up, planned by locality.",
+    primaryKeyword: "digital marketing agency in Delhi",
     secondaryKeywords: [
+      "SEO company in Delhi",
+      "SEO agency in Delhi",
+      "digital marketing company in Delhi",
       "SEO services in Delhi",
+      "SEO company near me",
+      "digital marketing agency in New Delhi",
       "local SEO Delhi",
       "Google Maps SEO Delhi",
-      "Google Ads management Delhi",
-      "digital marketing company in New Delhi",
     ],
     searchIntent:
-      "Owners and marketing heads of Delhi clinics, institutes, traders and service firms looking for a partner who can win enquiries in specific localities, not across the whole city at once.",
+      "Owners and marketing heads of Delhi clinics, institutes, traders and service firms who want to hire a digital marketing agency or SEO company that can win enquiries in specific localities, not across the whole city at once.",
   },
 
   hero: {
-    title: "Digital Growth & SEO Services in Delhi",
+    title: "Digital Marketing Agency and SEO Company in Delhi",
     description:
       "Delhi is not one market. A coaching institute in Mukherjee Nagar, a diagnostic centre in Dwarka and a wholesaler in Sadar Bazaar each compete inside their own few kilometres, against rivals who have been there for years. SERPMOZ plans search, maps, paid media and follow-up around the localities where your customers actually are, and measures the enquiries each one produces.",
   },
@@ -47,14 +50,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "What digital marketing services does SERPMOZ provide in Delhi?",
-    text: "SERPMOZ works remotely with Delhi businesses on local SEO, Google Maps visibility, organic search, Google Ads, Meta Ads and WhatsApp follow-up. The work is planned by locality, because a customer in Rohini rarely chooses a provider in Saket. We start by mapping which colonies, markets and metro catchments are worth competing in, then build profiles, pages, campaigns and enquiry handling for those areas, and report on calls, messages and bookings from each one.",
+    question: "What does a digital marketing agency do for businesses in Delhi?",
+    text: "A digital marketing agency helps a Delhi business get found and chosen in its own part of the city, through local SEO, Google Maps visibility, organic search, Google Ads, Meta Ads and WhatsApp follow-up. SERPMOZ does this work remotely. It is planned by locality, because a customer in Rohini rarely chooses a provider in Saket. We map which colonies, markets and metro catchments are worth competing in, then build profiles, pages, campaigns and enquiry handling for those areas, and report on calls, messages and bookings from each one.",
   },
 
   overview: {
     heading: "About digital growth in Delhi",
     paragraphs: [
-      "Delhi rewards businesses that think in neighbourhoods. The city is a patchwork of colonies, markets and institutional areas, and each has its own set of established competitors. Lajpat Nagar, Karol Bagh, Pitampura and Laxmi Nagar behave like separate high streets with separate customers. A plan that targets the whole city spreads budget across people who will never travel to you, which is why [local SEO](/local-seo-services/) and catchment-level planning carry so much weight here.",
+      "Delhi rewards businesses that think in neighbourhoods, and the same goes for any SEO company that works for them. The city is a patchwork of colonies, markets and institutional areas, and each has its own set of established competitors. Lajpat Nagar, Karol Bagh, Pitampura and Laxmi Nagar behave like separate high streets with separate customers. A plan that targets the whole city spreads budget across people who will never travel to you, which is why [local SEO](/local-seo-services/) and catchment-level planning carry so much weight here.",
       "Several of the city's strongest sectors are clustered by tradition. Civil service coaching concentrates around Mukherjee Nagar and Old Rajinder Nagar, accountancy coaching around Laxmi Nagar, computer hardware around Nehru Place, and wholesale trade in the old city markets around Chandni Chowk and Sadar Bazaar. Clustering means a customer standing in the market can compare ten providers in ten minutes, online and on foot. Price is discussed early, and proof of results matters more than polish.",
       "Delhi is also the seat of government, with ministries, public sector bodies, embassies, universities and major hospitals shaping demand for suppliers, consultants and specialist services. These buyers research formally and slowly. Consumer categories move quickly and are crowded with advertisers, particularly in [education](/industries/education/) and [healthcare](/industries/healthcare/). Most businesses we speak to need both speeds handled: fast response for walk-in and call-driven demand, and patient credibility building for institutional work.",
     ],
@@ -222,6 +225,10 @@ export const location: LocationRecord = {
 
   faqs: [
     {
+      q: "Is SERPMOZ a digital marketing agency in Delhi?",
+      a: "For the work, yes. For the address, no. SERPMOZ is an AI-powered digital growth company that does what Delhi businesses hire a digital marketing agency or SEO company to do, and it works remotely, with no office in the city. For Delhi that means local SEO and Google Maps work for each branch, paid search and Meta campaigns limited to chosen colonies and markets, creative in Hindi and English, and WhatsApp follow-up so enquiries are answered quickly. We rely on your team for photos and on-the-ground detail.",
+    },
+    {
       q: "Which digital marketing services are available for businesses in Delhi?",
       a: "Local SEO, Google Maps SEO, organic SEO, Google Ads, Meta Ads, WhatsApp automation, landing pages and conversion work. Most Delhi engagements combine map visibility and paid search in selected localities with a faster enquiry response process, because those three things together decide most local sales.",
     },
@@ -244,6 +251,10 @@ export const location: LocationRecord = {
     {
       q: "How does the growth audit work for a Delhi business?",
       a: "We review your profiles, website, campaigns, tracking and enquiry handling, then size demand by locality and category. You receive a prioritised plan showing which areas and channels are worth pursuing, what is being wasted and what to fix first. It makes no promises about rankings or lead numbers.",
+    },
+    {
+      q: "How do I choose an SEO company near me in Delhi?",
+      a: "Delhi is won one catchment at a time, so look for a company that thinks that way. It should ask which colonies and metro catchments each branch can really serve before it quotes. It should check map pins and informal addresses by hand, and give every branch its own profile, page and call tracking. It should be able to write in Hindi and in Hindi typed in Latin letters as well as English. Nearness helps when someone must visit a branch for photographs, which your own staff can also do. It does not affect rankings: Google weighs how close your business is to the searcher, not how close your agency is to you.",
     },
   ],
 

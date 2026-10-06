@@ -15,22 +15,25 @@ export const location: LocationRecord = {
   nearby: ["delhi"],
   photo: "hospitality",
   seo: {
-    title: "Digital Marketing & SEO Services in Jaipur",
+    title: "Digital Marketing Agency in Jaipur",
     metaDescription:
-      "Local SEO, maps, ecommerce and social marketing for Jaipur hotels, jewellers, textile and handicraft exporters, with Hindi-first search and seasonal demand.",
-    primaryKeyword: "digital marketing services in Jaipur",
+      "Digital marketing agency work for Jaipur hotels, jewellers and craft exporters: local SEO, maps, ecommerce and social, Hindi-first and season-aware.",
+    primaryKeyword: "digital marketing agency in Jaipur",
     secondaryKeywords: [
+      "SEO company in Jaipur",
+      "SEO agency in Jaipur",
+      "digital marketing company in Jaipur",
       "SEO services in Jaipur",
+      "SEO company near me",
       "local SEO Jaipur",
-      "ecommerce SEO for jewellery brands",
       "hotel marketing Jaipur",
       "Instagram marketing Jaipur",
     ],
     searchIntent:
-      "Hoteliers, jewellers, textile and handicraft sellers, and local business owners in Jaipur who want more direct bookings, online orders or nearby customers, and need a provider that understands seasonal and export demand.",
+      "Hoteliers, jewellers, textile and handicraft sellers, and local business owners in Jaipur who want to hire a digital marketing agency or SEO company for more direct bookings, online orders or nearby customers, with seasonal and export demand understood.",
   },
   hero: {
-    title: "Digital Marketing & SEO Services in Jaipur",
+    title: "Digital Marketing Agency and SEO Company in Jaipur",
     description:
       "A Jaipur business may be selling to three audiences at once: residents who search in Hindi, visitors planning a trip from another city or country, and overseas buyers of jewellery, textiles and craft. SERPMOZ plans local search, maps, ecommerce and social programmes that keep those audiences separate and account for the tourist season. We work with Jaipur businesses remotely.",
   },
@@ -41,13 +44,13 @@ export const location: LocationRecord = {
     { label: "Local search shaped by", value: "Hindi-first queries, bazaar and landmark names, and the tourist season" },
   ],
   answer: {
-    question: "How does local SEO work in Jaipur?",
-    text: "Local SEO in Jaipur has to serve two kinds of searcher. Residents look for services in Hindi and English by neighbourhood, such as Vaishali Nagar or Malviya Nagar. Visitors search in English and other languages by landmark, bazaar or type of experience, often before they arrive. The work covers accurate business profiles, photographs, reviews in several languages, location pages and Hindi content. SERPMOZ plans this remotely for Jaipur businesses and adjusts activity to the tourist season.",
+    question: "What does a digital marketing agency do for businesses in Jaipur?",
+    text: "A digital marketing agency in Jaipur has to serve two kinds of searcher, and local SEO is where that shows most. Residents look for services in Hindi and English by neighbourhood, such as Vaishali Nagar or Malviya Nagar. Visitors search in English and other languages by landmark, bazaar or type of experience, often before they arrive. The work covers accurate business profiles, photographs, reviews in several languages, location pages and Hindi content. SERPMOZ plans this remotely for Jaipur businesses and adjusts activity to the tourist season.",
   },
   overview: {
     heading: "About digital growth in Jaipur",
     paragraphs: [
-      "Tourism sets the rhythm of much of Jaipur's trade. Hotels, heritage properties, restaurants, guides, wedding venues and shops are busiest in the cooler months and during the wedding season, and quiet in the summer heat. Visitors decide where to stay and what to see before they travel, using maps, travel platforms and reviews. A [hospitality business](/industries/hospitality/) therefore competes online for a guest who has never seen the property and may be choosing from another continent.",
+      "Tourism sets the rhythm of much of Jaipur's trade, and of the work a digital marketing agency does here. Hotels, heritage properties, restaurants, guides, wedding venues and shops are busiest in the cooler months and during the wedding season, and quiet in the summer heat. Visitors decide where to stay and what to see before they travel, using maps, travel platforms and reviews. A [hospitality business](/industries/hospitality/) therefore competes online for a guest who has never seen the property and may be choosing from another continent.",
       "The city is equally a place where things are made. Gemstone cutting and jewellery, block-printed textiles from Sanganer and Bagru, quilts, blue pottery and other handicrafts are produced in workshops across the city and its industrial areas, and sold through the old bazaars and to buyers abroad. Many of these firms now sell directly online, which makes [ecommerce SEO](/ecommerce-seo/) and [international SEO](/international-seo/) as relevant as a showroom in Johari Bazaar.",
       "Alongside these long-established trades, a newer group of startups, software firms and consumer brands has taken root, and residential areas have spread well beyond the walled city. Everyday local commerce, from clinics and coaching classes to furniture and vehicle dealers, is conducted largely in Hindi. Businesses serving residents need a different voice, different keywords and often different channels from those serving visitors.",
     ],
@@ -204,6 +207,10 @@ export const location: LocationRecord = {
   resources: ["conversion-work-without-ab-testing-traffic", "what-automated-bidding-should-optimise-for", "measuring-ai-search-visibility"],
   faqs: [
     {
+      q: "Is SERPMOZ a digital marketing agency in Jaipur?",
+      a: "SERPMOZ is an AI-powered digital growth company working with Jaipur businesses remotely, so there is no local office or staff to visit. What we do is the work a hotelier, jeweller or shop owner would expect from a digital marketing agency or SEO company. That means map visibility and reviews for hospitality and retail, store structure and product content for jewellery, textile and craft sellers, country targeting for those selling abroad, and Instagram and Meta campaigns. Hindi content is written for residents, and spending follows the tourist season.",
+    },
+    {
       q: "What digital marketing services are available for Jaipur businesses?",
       a: "SERPMOZ provides local SEO, Google Maps optimisation, ecommerce and international SEO, Instagram marketing and Meta advertising, with web development, content and conversion work where needed. For Jaipur the usual starting points are map visibility for hospitality and retail, and store performance for jewellery, textile and craft sellers.",
     },
@@ -226,6 +233,10 @@ export const location: LocationRecord = {
     {
       q: "How does the growth audit work?",
       a: "You give us access to your site analytics, business profiles, store data and ad accounts. We review visibility, listings, product pages and how enquiries or orders are handled, then provide a written assessment with priorities. It identifies opportunities and problems, and does not guarantee specific results.",
+    },
+    {
+      q: "How do I choose an SEO company near me in Jaipur?",
+      a: "Jaipur has its own tests. See whether the company plans the year around the tourist season, with foundations laid in the quieter months and spending moved to the busy period. See whether Hindi is written by a fluent writer, for searches in Devanagari and in English letters. If you sell jewellery or gems, see whether it is careful with purity, hallmarking and certification wording. If you export, see whether it raises duties, shipping and returns. A nearby firm is handy for photographing a heritage property or showroom. Your guests and buyers are often in another city or country, though, so being close to you matters less than understanding them.",
     },
   ],
   cta: {

@@ -10,7 +10,7 @@ Every location page also links to the locations index (breadcrumb), the growth a
 
 ### India `/locations/india/`
 
-Primary keyword: digital marketing services in India
+Primary keyword: digital marketing agency in India
 
 **Services** (service rows, each with a reason specific to this place)
 - [SEO](/seo-services/) as "SEO Services in India"
@@ -67,7 +67,7 @@ Primary keyword: digital marketing services in India
 
 ### Delhi `/locations/india/delhi/`
 
-Primary keyword: digital marketing services in Delhi
+Primary keyword: digital marketing agency in Delhi
 
 **Services** (service rows, each with a reason specific to this place)
 - [Local SEO](/local-seo-services/) as "Local SEO in Delhi"
@@ -114,7 +114,7 @@ Primary keyword: digital marketing services in Delhi
 
 ### Gurgaon `/locations/india/gurgaon/`
 
-Primary keyword: digital marketing services in Gurgaon
+Primary keyword: digital marketing agency in Gurgaon
 
 **Services** (service rows, each with a reason specific to this place)
 - [SEO](/seo-services/) as "SEO Services in Gurgaon"
@@ -164,7 +164,7 @@ Primary keyword: digital marketing services in Gurgaon
 
 ### Noida `/locations/india/noida/`
 
-Primary keyword: digital marketing services in Noida
+Primary keyword: digital marketing agency in Noida
 
 **Services** (service rows, each with a reason specific to this place)
 - [Local SEO](/local-seo-services/) as "Local SEO in Noida"
@@ -210,7 +210,7 @@ Primary keyword: digital marketing services in Noida
 
 ### Mumbai `/locations/india/mumbai/`
 
-Primary keyword: digital marketing services in Mumbai
+Primary keyword: digital marketing agency in Mumbai
 
 **Services** (service rows, each with a reason specific to this place)
 - [SEO](/seo-services/) as "SEO Services in Mumbai"
@@ -257,7 +257,7 @@ Primary keyword: digital marketing services in Mumbai
 
 ### Bangalore `/locations/india/bangalore/`
 
-Primary keyword: digital marketing services in Bangalore
+Primary keyword: digital marketing agency in Bangalore
 
 **Services** (service rows, each with a reason specific to this place)
 - [SEO](/seo-services/) as "SEO Services in Bangalore"
@@ -304,7 +304,7 @@ Primary keyword: digital marketing services in Bangalore
 
 ### Hyderabad `/locations/india/hyderabad/`
 
-Primary keyword: digital marketing services in Hyderabad
+Primary keyword: digital marketing agency in Hyderabad
 
 **Services** (service rows, each with a reason specific to this place)
 - [SEO](/seo-services/) as "SEO Services in Hyderabad"
@@ -351,7 +351,7 @@ Primary keyword: digital marketing services in Hyderabad
 
 ### Pune `/locations/india/pune/`
 
-Primary keyword: digital marketing services in Pune
+Primary keyword: digital marketing agency in Pune
 
 **Services** (service rows, each with a reason specific to this place)
 - [SEO](/seo-services/) as "SEO Services in Pune"
@@ -397,7 +397,7 @@ Primary keyword: digital marketing services in Pune
 
 ### Jaipur `/locations/india/jaipur/`
 
-Primary keyword: digital marketing services in Jaipur
+Primary keyword: digital marketing agency in Jaipur
 
 **Services** (service rows, each with a reason specific to this place)
 - [Local SEO](/local-seo-services/) as "Local SEO in Jaipur"
@@ -444,7 +444,7 @@ Primary keyword: digital marketing services in Jaipur
 
 ### USA `/locations/usa/`
 
-Primary keyword: digital marketing services USA
+Primary keyword: digital marketing agency in the USA
 
 **Services** (service rows, each with a reason specific to this place)
 - [SEO](/seo-services/) as "SEO Services in the USA"
@@ -493,7 +493,7 @@ Primary keyword: digital marketing services USA
 
 ### New York `/locations/usa/new-york/`
 
-Primary keyword: digital marketing services in New York
+Primary keyword: digital marketing agency in New York
 
 **Services** (service rows, each with a reason specific to this place)
 - [Local SEO](/local-seo-services/) as "Local SEO in New York"
@@ -539,7 +539,7 @@ Primary keyword: digital marketing services in New York
 
 ### UK `/locations/uk/`
 
-Primary keyword: digital marketing services UK
+Primary keyword: digital marketing agency in the UK
 
 **Services** (service rows, each with a reason specific to this place)
 - [SEO](/seo-services/) as "SEO Services in the UK"
@@ -588,7 +588,7 @@ Primary keyword: digital marketing services UK
 
 ### London `/locations/uk/london/`
 
-Primary keyword: digital marketing services in London
+Primary keyword: digital marketing agency in London
 
 **Services** (service rows, each with a reason specific to this place)
 - [SEO](/seo-services/) as "SEO Services in London"
@@ -634,7 +634,7 @@ Primary keyword: digital marketing services in London
 
 ### UAE `/locations/uae/`
 
-Primary keyword: digital marketing services UAE
+Primary keyword: digital marketing agency in the UAE
 
 **Services** (service rows, each with a reason specific to this place)
 - [SEO](/seo-services/) as "SEO Services in the UAE"
@@ -682,7 +682,7 @@ Primary keyword: digital marketing services UAE
 
 ### Dubai `/locations/uae/dubai/`
 
-Primary keyword: digital marketing services in Dubai
+Primary keyword: digital marketing agency in Dubai
 
 **Services** (service rows, each with a reason specific to this place)
 - [Local SEO](/local-seo-services/) as "Local SEO in Dubai"
@@ -728,7 +728,7 @@ Primary keyword: digital marketing services in Dubai
 
 ### Canada `/locations/canada/`
 
-Primary keyword: digital marketing services Canada
+Primary keyword: digital marketing agency in Canada
 
 **Services** (service rows, each with a reason specific to this place)
 - [SEO](/seo-services/) as "SEO Services in Canada"
@@ -775,7 +775,7 @@ Primary keyword: digital marketing services Canada
 
 ### Toronto `/locations/canada/toronto/`
 
-Primary keyword: digital marketing services in Toronto
+Primary keyword: digital marketing agency in Toronto
 
 **Services** (service rows, each with a reason specific to this place)
 - [Local SEO](/local-seo-services/) as "Local SEO in Toronto"
@@ -822,7 +822,7 @@ Primary keyword: digital marketing services in Toronto
 
 ### Australia `/locations/australia/`
 
-Primary keyword: digital marketing services Australia
+Primary keyword: digital marketing agency in Australia
 
 **Services** (service rows, each with a reason specific to this place)
 - [Local SEO](/local-seo-services/) as "Local SEO in Australia"
@@ -870,7 +870,7 @@ Primary keyword: digital marketing services Australia
 
 ### Sydney `/locations/australia/sydney/`
 
-Primary keyword: digital marketing services in Sydney
+Primary keyword: digital marketing agency in Sydney
 
 **Services** (service rows, each with a reason specific to this place)
 - [Google Maps SEO](/google-maps-seo/) as "Google Maps SEO in Sydney"
@@ -915,7 +915,7 @@ Primary keyword: digital marketing services in Sydney
 
 ### Singapore `/locations/singapore/`
 
-Primary keyword: digital marketing services Singapore
+Primary keyword: digital marketing agency in Singapore
 
 **Services** (service rows, each with a reason specific to this place)
 - [SEO](/seo-services/) as "SEO Services in Singapore"
@@ -964,7 +964,7 @@ Primary keyword: digital marketing services Singapore
 
 ### Europe `/locations/europe/`
 
-Primary keyword: international SEO Europe
+Primary keyword: digital marketing agency in Europe
 
 **Services** (service rows, each with a reason specific to this place)
 - [International SEO](/international-seo/) as "International SEO in Europe"

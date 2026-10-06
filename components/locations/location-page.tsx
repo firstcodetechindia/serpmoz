@@ -218,7 +218,7 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:items-end lg:gap-8">
             <div className="lg:col-span-7">
               <p className={eyebrow}>Services</p>
-              <h2 id="services-title" className={h2}>SERPMOZ services in {l.inSentence}.</h2>
+              <h2 id="services-title" className={h2}>Digital marketing and SEO services in {l.inSentence}.</h2>
             </div>
             <p className="text-lead text-muted lg:col-span-5">Chosen for how demand works here. The right mix for your business is set after the growth audit.</p>
           </div>

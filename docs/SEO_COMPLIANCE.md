@@ -188,7 +188,22 @@ Needs the owner (cannot be built without real facts):
 6. Listings on Clutch, GoodFirms, DesignRush, Sortlist, LinkedIn company page.
 7. A decision on the brand name and the Moz trademark.
 
-Can be built now:
+Done on 6 October 2026:
+- Home, country and city pages retitled around "digital marketing agency in [place]" with "SEO company" in the H1, description and FAQs. Each page still states that work is delivered remotely.
+- Homepage outline: one H1 ("AI-Powered Digital Marketing Agency and SEO Company"); hero slide headlines and footer column titles are no longer headings.
+- "Reviewed by" line and its schema removed from all service pages.
+- City pages: a head-term FAQ and a "near me" FAQ each; country pages: a "how to choose" FAQ. Eight FAQs per location.
+- Article series: AI search, local SEO, and pricing and choosing an agency. Five pieces each, linked to each other and to a pillar page (`clusters` in `data/resources/articles.ts`).
+- Service-for-industry pages at `/industries/{industry}/{service}/`: nine written (`data/industries/services/`). To add one, write a record file there and add it to the list in `index.ts`.
+
+Still open from this list:
+- Articles and sector pages are AI drafts by "SERPMOZ Research". They need a named author and a read by someone who knows each sector, especially the regulation notes.
+- "Digital marketing agency in [city]" titles sit on pages for cities where there is no office. The copy says so; a Google Business Profile for the real location is still what makes local rankings possible.
+- Decide which cities are real targets.
+- Run PageSpeed on mobile for home, a service page, a city page and a sector page.
+
+Originally listed as buildable:
+
 1. Retitle home, country and city pages around "digital marketing agency" and "SEO company" patterns, keeping the growth-company line as positioning.
 2. Fix the homepage heading outline: section headings only.
 3. Remove or replace the "Reviewed by" line until a named reviewer exists.

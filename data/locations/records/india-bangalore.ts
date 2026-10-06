@@ -16,23 +16,25 @@ export const location: LocationRecord = {
   nearby: ["hyderabad"],
   photo: "saas",
   seo: {
-    title: "Digital Growth & SEO Services in Bangalore",
+    title: "Digital Marketing Agency in Bangalore",
     metaDescription:
-      "SEO, AI search, content and paid growth for Bangalore companies: SaaS, startups, capability centres and local businesses competing locality by locality.",
-    primaryKeyword: "digital marketing services in Bangalore",
+      "Digital marketing agency and SEO company work for Bangalore (Bengaluru) SaaS firms, startups and local businesses: SEO, AI search, content and paid.",
+    primaryKeyword: "digital marketing agency in Bangalore",
     secondaryKeywords: [
+      "SEO company in Bangalore",
+      "SEO agency in Bangalore",
+      "digital marketing company in Bangalore",
       "SEO services in Bangalore",
-      "SEO company Bengaluru",
+      "digital marketing agency near me",
+      "SEO company in Bengaluru",
+      "digital marketing agency in Bengaluru",
       "B2B SaaS marketing Bangalore",
-      "AI SEO services Bangalore",
-      "local SEO Bangalore",
-      "LinkedIn ads for SaaS in Bengaluru",
     ],
     searchIntent:
-      "Founders, marketing heads and business owners in Bangalore comparing providers for SEO, AI search visibility and B2B demand generation, and checking whether the provider understands a technical buyer.",
+      "Founders, marketing heads and business owners in Bangalore who are shortlisting a digital marketing agency or SEO company for SEO, AI search visibility and B2B demand generation, and checking whether it understands a technical buyer.",
   },
   hero: {
-    title: "Digital Growth & SEO Services in Bangalore",
+    title: "Digital Marketing Agency and SEO Company in Bangalore",
     description:
       "Bangalore buyers read the documentation before they read the sales page. SERPMOZ plans search, AI visibility, content and paid programmes for software companies, startups and capability centres whose audience checks every claim, and for local businesses that compete one neighbourhood at a time. We work with Bangalore companies remotely, under both names the city is searched by.",
   },
@@ -43,13 +45,13 @@ export const location: LocationRecord = {
     { label: "Local search shaped by", value: "Tech corridors, layout and block names, and travel time across the city" },
   ],
   answer: {
-    question: "What digital marketing services does SERPMOZ provide in Bangalore?",
-    text: "SERPMOZ provides SEO, AI search visibility, content, technical SEO, LinkedIn and Google advertising, conversion work and local SEO for businesses in Bangalore. Most B2B plans here start with category and comparison searches, because technical buyers research in depth before they talk to sales. Local plans are built around named localities such as Koramangala, Whitefield or Jayanagar, and cover both the Bangalore and Bengaluru spellings. We work remotely with companies in the city and do not claim a local office.",
+    question: "What does a digital marketing agency do for businesses in Bangalore?",
+    text: "A digital marketing agency in Bangalore mostly helps companies get shortlisted by technical buyers who research in depth before they talk to sales. SERPMOZ does that work remotely: SEO, AI search visibility, content, technical SEO, LinkedIn and Google advertising, conversion work and local SEO. Most B2B plans here start with category and comparison searches. Local plans are built around named localities such as Koramangala, Whitefield or Jayanagar, and cover both the Bangalore and Bengaluru spellings. We do not claim a local office.",
   },
   overview: {
     heading: "About digital growth in Bangalore",
     paragraphs: [
-      "Bangalore sells technology to the world and to itself. Software product companies, funded startups and the capability centres of multinational firms line the Outer Ring Road, Whitefield, Electronic City and the business parks around Hebbal, while founders and early teams gather in Koramangala, HSR Layout and Indiranagar. A large share of the people buying here build or buy software for a living, so a vendor's website is read by an audience that knows exactly how websites, funnels and tracking are put together.",
+      "Bangalore sells technology to the world and to itself. Software product companies, funded startups and the capability centres of multinational firms line the Outer Ring Road, Whitefield, Electronic City and the business parks around Hebbal, while founders and early teams gather in Koramangala, HSR Layout and Indiranagar. A large share of the people buying here build or buy software for a living, so a vendor's website, and the work of any SEO company behind it, is read by an audience that knows exactly how websites, funnels and tracking are put together.",
       "That audience changes what marketing has to do. Buyers read documentation, compare pricing pages, check software review platforms and ask peers in founder and engineering circles before they accept a demo. Claims without evidence are discounted fast. For B2B companies this makes [SEO built around commercial intent](/seo-services/) and [content written with real product knowledge](/content-seo/) more useful than volume publishing, and it is why [SaaS companies](/industries/saas/) in the city tend to compete on the depth of their explanations.",
       "Bangalore is also a very large consumer city whose residents are comfortable choosing and paying through apps. Clinics, schools, coaching centres, restaurants, interior designers and home service firms compete locality by locality, in neighbourhoods separated as much by traffic as by distance. Many companies therefore run two programmes at once: a neighbourhood-level presence for customers who walk in, and a national or international one for B2B demand, partnerships and hiring.",
     ],
@@ -207,6 +209,10 @@ export const location: LocationRecord = {
   resources: ["measuring-ai-search-visibility", "sizing-search-opportunities-by-value", "ai-moved-the-bottleneck"],
   faqs: [
     {
+      q: "Is SERPMOZ an SEO company in Bangalore?",
+      a: "SERPMOZ is an AI-powered digital growth company, and SEO is a large part of what it does for Bangalore businesses. The work is the kind a company would hire an SEO company or digital marketing agency for, delivered remotely: we have no office or team in the city. For software firms, startups and capability centres it covers category and comparison searches, technical SEO, content that stands up to a technical reader, AI search visibility and LinkedIn advertising. For businesses with premises it covers local SEO by locality, under both Bangalore and Bengaluru.",
+    },
+    {
       q: "What services does SERPMOZ offer to businesses in Bangalore?",
       a: "We plan and run SEO, AI search visibility, content, technical SEO, Google and LinkedIn advertising, conversion optimisation and local SEO. For most Bangalore companies the mix leans towards B2B search and content, with local work added where the business serves customers at premises in specific localities.",
     },
@@ -229,6 +235,10 @@ export const location: LocationRecord = {
     {
       q: "How does the growth audit work?",
       a: "You share access to analytics, search data and ad accounts, and we review the site, the competitive set and how enquiries are currently generated. The result is a written assessment of where growth is being lost and what to do first. It is diagnostic, and it carries no promise of specific results.",
+    },
+    {
+      q: "How do I pick a digital marketing agency near me in Bangalore?",
+      a: "Bangalore buyers inspect page speed, tracking and pricing logic, so hold an agency to the same standard. Read its own site the way your customers will read yours. Ask who writes for a technical audience and how claims are checked. Ask which leads it would count as pipeline in a crowded B2B auction. For a local business, ask how it handles blocks, stages and both city spellings in profiles. Proximity is worth something if you want working sessions in person. Given travel time across the city, an agency in Whitefield is hardly near a company in Jayanagar, and most technology teams already work over calls and shared documents.",
     },
   ],
   cta: {

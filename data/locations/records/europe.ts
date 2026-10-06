@@ -13,24 +13,26 @@ export const location: LocationRecord = {
   photo: "strategyWhiteboard",
 
   seo: {
-    title: "Digital Growth in Europe",
+    title: "Digital Marketing Agency for Europe",
     metaDescription:
-      "International SEO, localisation, consent-aware analytics and paid media for companies growing across Europe, planned one country and one language at a time.",
-    primaryKeyword: "international SEO Europe",
+      "Digital marketing agency and SEO company for Europe: international SEO, localisation, paid media and consent-aware analytics, one country at a time.",
+    primaryKeyword: "digital marketing agency in Europe",
     secondaryKeywords: [
-      "digital marketing services Europe",
-      "European market expansion SEO",
-      "hreflang implementation",
-      "website localisation Europe",
+      "SEO company in Europe",
+      "SEO agency in Europe",
+      "digital marketing company in Europe",
+      "SEO services in Europe",
+      "international SEO Europe",
       "multilingual SEO services",
-      "GDPR compliant marketing analytics",
+      "website localisation Europe",
+      "hreflang implementation",
     ],
     searchIntent:
-      "Marketing and growth leaders at companies entering or expanding across European countries, looking for help with market selection, multilingual site structure, localisation and compliant measurement.",
+      "Marketing and growth leaders at companies entering or expanding across European countries, looking to hire a digital marketing agency or SEO company for market selection, multilingual site structure, localisation and compliant measurement.",
   },
 
   hero: {
-    title: "Digital Growth in Europe",
+    title: "Digital Marketing Agency and SEO Company for Europe",
     description:
       "Europe is not one market. It is a collection of countries with their own languages, search results, competitors, payment habits and regulators, joined by a shared approach to privacy. SERPMOZ helps companies choose which countries to enter, structure a multilingual site correctly and localise for each audience instead of translating one message many times.",
   },
@@ -43,14 +45,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "How does SERPMOZ help businesses grow across Europe?",
-    text: "SERPMOZ treats Europe as many separate search markets. We help companies choose and sequence countries, decide on domain and URL structure, implement hreflang, and carry out native keyword research and localisation for each language. Around that sit technical SEO, content, digital PR, paid search and analytics configured for GDPR consent requirements. International SEO is the central service. We work with businesses across Europe remotely, and the United Kingdom is covered on its own page.",
+    question: "What does a digital marketing agency do for businesses expanding in Europe?",
+    text: "A digital marketing agency working across Europe decides which countries to enter, in what order, and how each one finds the right version of your site. SERPMOZ does this work remotely, with international SEO at the centre: domain and URL structure, hreflang, and native keyword research and localisation for each language. Around that sit technical SEO, content, digital PR, paid search and analytics configured for GDPR consent requirements. We treat Europe as many separate search markets, and the United Kingdom is covered on its own page.",
   },
 
   overview: {
     heading: "About digital growth in Europe",
     paragraphs: [
-      "A company that performs well in one European country has proved very little about the next. Germany, France, Spain, Italy, the Netherlands, Poland and the Nordic countries each have their own language, their own established competitors and their own search results. Even where a language crosses a border, as German does into Austria and Switzerland or French into Belgium, vocabulary, pricing and expectations shift. The central discipline here is [international SEO](/international-seo/): deciding where to compete, and making sure each country sees the version meant for it.",
+      "A company that performs well in one European country has proved very little about the next. Germany, France, Spain, Italy, the Netherlands, Poland and the Nordic countries each have their own language, their own established competitors and their own search results. Even where a language crosses a border, as German does into Austria and Switzerland or French into Belgium, vocabulary, pricing and expectations shift. The central discipline for a digital marketing agency here is [international SEO](/international-seo/): deciding where to compete, and making sure each country sees the version meant for it.",
       "Market selection deserves more attention than it usually gets. The instinct is to translate the site into five languages and launch everywhere. The result is usually five thin presences that none of the local competitors need to worry about. We prefer to size demand country by country, look at who already holds the results, weigh the cost of proper localisation and support, and then enter in sequence. One market done properly teaches more than several done lightly.",
       "Localisation is a different task from translation. A translated page carries the original keywords, examples, units, proof and tone into a language where people may search with other words and trust other signals. German buyers often expect thorough detail and a formal legal notice. Dutch and Nordic audiences are comfortable in English for some software purchases but not for consumer goods. We combine native research with [content marketing](/content-marketing/) written for each market by people who live in the language.",
       "Privacy rules are a shared feature of the region. GDPR and the related cookie consent requirements apply across the European Union, and national regulators interpret them with differing strictness. For marketers this affects what analytics can see and how advertising platforms optimise. The United Kingdom now sits outside the EU with its own closely related regime and a distinct search market, so it has a separate page on [digital growth in the UK](/locations/uk/).",
@@ -229,6 +231,10 @@ export const location: LocationRecord = {
   resources: ["sizing-search-opportunities-by-value", "attribution-questions-worth-answering", "measuring-ai-search-visibility"],
 
   faqs: [
+    {
+      q: "How do I choose a digital marketing agency for Europe?",
+      a: "Be cautious of any agency that offers Europe as one market. The useful ones ask which countries, in what order, and on what evidence of demand. They research keywords natively for each language instead of translating an English list. They can explain the trade-off between country domains and language folders for your situation, and they implement hreflang consistently across every version. They configure analytics for GDPR consent and tell you plainly that the figures will undercount. They also raise payments, delivery and returns for each country, because those affect conversion as much as rankings do. Ask who will write the German, the French and the Polish.",
+    },
     {
       q: "What services does SERPMOZ offer for businesses expanding in Europe?",
       a: "International SEO is the core, supported by technical SEO, localised content, digital PR, ecommerce SEO, paid search, conversion optimisation and AI search visibility work. We also advise on which countries to enter first and how to structure the site for several languages.",

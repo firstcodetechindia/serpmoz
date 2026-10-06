@@ -19,24 +19,25 @@ export const location: LocationRecord = {
   photo: "skyline",
 
   seo: {
-    title: "Digital Growth in India",
+    title: "Digital Marketing Agency in India",
     metaDescription:
-      "Digital growth for businesses in India: SEO, local search, paid media, WhatsApp automation and AI search work planned by city, language and buyer.",
-    primaryKeyword: "digital marketing services in India",
+      "Digital marketing agency in India for SEO, local search, Google Ads and WhatsApp follow-up, planned by city, language and buyer and delivered remotely.",
+    primaryKeyword: "digital marketing agency in India",
     secondaryKeywords: [
+      "SEO company in India",
+      "SEO agency in India",
+      "digital marketing company in India",
       "SEO services in India",
       "local SEO India",
       "Google Ads management India",
-      "WhatsApp automation for business India",
       "AI SEO services India",
-      "digital growth company India",
     ],
     searchIntent:
-      "Founders and marketing heads of Indian businesses, and overseas companies entering India, comparing providers who understand how Indian customers search, enquire and decide.",
+      "Founders and marketing heads of Indian businesses, and overseas companies entering India, who are ready to hire a digital marketing agency or SEO company and are comparing providers on how well they understand Indian search, languages and enquiry habits.",
   },
 
   hero: {
-    title: "Digital Growth in India",
+    title: "Digital Marketing Agency and SEO Company in India",
     description:
       "India is not one market. A buyer in Gurgaon, a patient in Jaipur and a shopper in a smaller town search in different languages, on different budgets, and trust different proof. Almost all of them do it on a phone, and many would sooner message a business on WhatsApp than fill in a form. SERPMOZ plans search, paid media, automation and web work around those differences, city by city.",
   },
@@ -49,14 +50,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "What digital marketing services does SERPMOZ provide in India?",
-    text: "SERPMOZ provides SEO, local SEO and Google Maps optimisation, Google Ads and Meta Ads management, WhatsApp automation on the official Business Platform, YouTube and content marketing, ecommerce SEO, AI search optimisation, conversion work and web development for businesses in India. Each plan is built around the cities you serve, the languages your customers search in and the way they prefer to enquire. We work with Indian businesses remotely, and every engagement starts with a growth audit of your current position.",
+    question: "What does a digital marketing agency do for businesses in India?",
+    text: "A digital marketing agency in India plans and runs the work that brings a business customers online: SEO, local SEO and Google Maps optimisation, Google Ads and Meta Ads, WhatsApp automation, content, conversion work and web development. SERPMOZ, an AI-powered digital growth company, does this work for businesses in India remotely. Each plan is built around the cities you serve, the languages your customers search in and the way they prefer to enquire, and every engagement starts with a growth audit of your current position.",
   },
 
   overview: {
     heading: "About digital growth in India",
     paragraphs: [
-      "Most Indian customers meet a business for the first time on a phone screen, often a modest Android handset on mobile data. That single fact shapes almost everything else. Pages have to load quickly on an ordinary connection, the phone number and the WhatsApp button have to be reachable with a thumb, and forms have to be short enough to finish on a commute. A site designed on a large monitor and approved in a boardroom frequently fails the one test that counts here: whether a hurried person on a mid-range phone can understand the offer and get in touch within a few seconds.",
+      "Most Indian customers meet a business for the first time on a phone screen, often a modest Android handset on mobile data. That single fact shapes almost everything else, including what a digital marketing agency should do first. Pages have to load quickly on an ordinary connection, the phone number and the WhatsApp button have to be reachable with a thumb, and forms have to be short enough to finish on a commute. A site designed on a large monitor and approved in a boardroom frequently fails the one test that counts here: whether a hurried person on a mid-range phone can understand the offer and get in touch within a few seconds.",
       "The country behaves as a set of city markets with their own competitors and habits. [Delhi](/locations/india/delhi/) is searched locality by locality and argues about price. [Mumbai](/locations/india/mumbai/) is organised by suburb and carries heavy finance and property advertising. [Bangalore](/locations/india/bangalore/) has a technical audience that checks claims before it believes them, and [Gurgaon](/locations/india/gurgaon/) concentrates corporate and B2B buyers in a small area. Hyderabad, Pune, Noida and Jaipur each differ again. Outside the metros, competition for search terms is often lighter, regional languages matter more, and buyers lean harder on a phone call or a recommendation before they commit.",
       "Indian buyers compare carefully, and price is rarely absent from the comparison. They look for fees, EMI options, offers and delivery terms early, and they are wary of businesses that hide them. Trust is built with visible, checkable signals: recent Google reviews, photographs of real premises and staff, registration and accreditation details, a working landline or mobile number, and a prompt reply. That is why [local SEO](/local-seo-services/) and reputation work sit so close to revenue here, and why a quick, helpful answer on [WhatsApp](/whatsapp-automation/) frequently wins an enquiry that a slower competitor with a better website loses.",
       "For an overseas company, India rewards patience and local detail more than a translated global campaign. For an Indian company, the pressure is usually the opposite: paid costs in the metros keep rising, the same advertisers appear on every commercial search, and enquiry quality varies wildly by source. In both cases the work that pays is unglamorous. Decide which cities and languages are worth serving, measure enquiries through to sales instead of counting form fills, respond to leads faster than competitors do, and build organic and map visibility so that growth does not depend entirely on next month's advertising budget.",
@@ -267,6 +268,10 @@ export const location: LocationRecord = {
     {
       q: "How does the growth audit work for an Indian business?",
       a: "We review your search visibility, map presence, paid accounts, tracking, website performance on mobile and the path from enquiry to sale, including WhatsApp. You receive a prioritised list of findings with the reasoning behind each, sized by likely commercial value. It tells you what we would do first and why, with no obligation to proceed.",
+    },
+    {
+      q: "How do I choose a digital marketing agency in India?",
+      a: "Start with how the agency plans for difference. Ask whether metros and smaller cities get separate budgets, landing pages and reporting, and how it decides between English, Hindi, Hinglish and regional languages: the answer should come from search and customer data, with fluent writers. Check that pages are tested on an ordinary Android phone on mobile data. Ask how WhatsApp is handled: it should be the official Business Platform with opt-in, never bulk-sending tools. Then look at what is reported, which should be enquiries and sales traced to their source, city by city. Be wary of anyone promising rankings. Where the agency sits matters less than these answers, since most of this work is delivered remotely.",
     },
   ],
 

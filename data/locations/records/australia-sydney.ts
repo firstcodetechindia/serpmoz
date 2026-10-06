@@ -15,23 +15,26 @@ export const location: LocationRecord = {
   photo: "local-business",
 
   seo: {
-    title: "Digital Growth & Local SEO in Sydney",
+    title: "Digital Marketing Agency in Sydney",
     metaDescription:
-      "Local SEO, Google Maps, paid search and conversion work for Sydney businesses, planned suburb by suburb from the CBD to the Northern Beaches and the west.",
-    primaryKeyword: "digital marketing services in Sydney",
+      "Digital marketing agency and SEO company services in Sydney: suburb-level local SEO, Google Maps, paid search and landing pages from the CBD to the west.",
+    primaryKeyword: "digital marketing agency in Sydney",
     secondaryKeywords: [
-      "SEO services Sydney",
+      "SEO company in Sydney",
+      "SEO agency in Sydney",
+      "digital marketing company in Sydney",
+      "SEO services in Sydney",
+      "SEO company near me",
       "local SEO Sydney",
       "Google Maps SEO Sydney",
-      "Google Ads management Sydney",
       "digital marketing for tradies Sydney",
     ],
     searchIntent:
-      "Sydney business owners and marketing managers, from trades and practices to professional firms, looking for a provider who understands suburb-level search and CBD competition.",
+      "Sydney business owners and marketing managers, from trades and practices to professional firms, looking to hire a digital marketing agency or SEO company that understands suburb-level search and CBD competition.",
   },
 
   hero: {
-    title: "Digital Growth & Local SEO in Sydney",
+    title: "Digital Marketing Agency and SEO Company in Sydney",
     description:
       "Sydneysiders search by suburb. A plumber in Bondi, a conveyancer in Parramatta and a physio in Chatswood are found through searches that name those places, and rarely through searches for Sydney alone. Competition is fiercest in the CBD and inner suburbs and eases further out. We plan local search, paid media and conversion work around that pattern, working with Sydney businesses remotely.",
   },
@@ -44,14 +47,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "How does local SEO work in Sydney?",
-    text: "Local SEO in Sydney is organised by suburb. Customers search for a service plus a suburb or region name, and Google shows map results based on where they are. A business needs an accurate Business Profile, consistent listings, genuine recent reviews and pages that reflect the suburbs it really serves. SERPMOZ plans and runs this work remotely, alongside paid search and conversion improvements, and tracks results by area so that effort goes to the suburbs worth winning.",
+    question: "What does a digital marketing agency do for businesses in Sydney?",
+    text: "A digital marketing agency for businesses in Sydney makes them visible in the suburbs they serve, through local SEO, Google Maps, paid search and better landing pages. Local SEO in Sydney is organised by suburb: customers search for a service plus a suburb or region name, and Google shows map results based on where they are. SERPMOZ plans and runs this work remotely, alongside paid search and conversion improvements, and tracks results by area so that effort goes to the suburbs worth winning.",
   },
 
   overview: {
     heading: "About digital growth in Sydney",
     paragraphs: [
-      "Sydney's commercial centres are spread out. Banks, fund managers, insurers and the large law and accounting firms are in the CBD, around Martin Place and Barangaroo, with further offices in North Sydney. Parramatta serves as a second centre for the west, and Macquarie Park hosts technology and pharmaceutical companies. Agencies and start-ups favour Surry Hills and Pyrmont. Around them lie hundreds of suburbs where trades, clinics, agents and cafes compete for nearby households.",
+      "Sydney's commercial centres are spread out. Banks, fund managers, insurers and the large law and accounting firms are in the CBD, around Martin Place and Barangaroo, with further offices in North Sydney. Parramatta serves as a second centre for the west, and Macquarie Park hosts technology and pharmaceutical companies. Agencies and start-ups favour Surry Hills and Pyrmont. Around them lie hundreds of suburbs where trades, clinics, agents and cafes compete for nearby households, and where an SEO company does most of its local work.",
       "That suburban layer is where most Sydney businesses win or lose. The harbour, the rivers and the traffic divide the city into regions that residents treat as separate: the Eastern Suburbs, the Inner West, the North Shore, the Northern Beaches, the Hills, the Shire and Western Sydney. A tradesperson based in one seldom works in another. Unlike the picture across [Australia](/locations/australia/), where metros are far apart, Sydney's markets are close together and still distinct.",
       "Competition follows a gradient. CBD and inner-suburb terms in finance, legal, property and hospitality are contested by well-funded firms, and paid clicks are priced accordingly. Further out, many capable businesses have incomplete profiles and thin websites. For those willing to do [local SEO](/local-seo-services/) properly, the middle and outer suburbs often offer better returns than fighting for the centre, at least to begin with.",
     ],
@@ -219,6 +222,10 @@ export const location: LocationRecord = {
 
   faqs: [
     {
+      q: "Is SERPMOZ a digital marketing agency in Sydney?",
+      a: "SERPMOZ calls itself an AI-powered digital growth company. The work is what Sydney businesses expect from a digital marketing agency or SEO company, delivered remotely and without a Sydney office. For trades, clinics and agents that is Google Maps and local SEO for the suburbs around your base, review routines that meet consumer law, Google Ads and landing pages that turn calls into booked jobs. For CBD firms in finance and professional services it is city-wide and national organic search, with compliance checks on claims. We also build and repair websites. Calls are arranged to suit Australian Eastern hours.",
+    },
+    {
       q: "What digital marketing services are available for Sydney businesses?",
       a: "We offer local and Google Maps SEO, organic search, Google Ads, landing page and conversion work, content and website development. For most Sydney businesses the starting point is local visibility and paid efficiency in the suburbs they serve, confirmed through an audit before any work is scoped.",
     },
@@ -237,6 +244,10 @@ export const location: LocationRecord = {
     {
       q: "Do you work with businesses outside Sydney or outside Australia?",
       a: "Yes. We work remotely with businesses elsewhere in Australia and in other countries, and plan each city as its own market. For Sydney firms selling interstate or overseas, we structure the site and campaigns so that local, national and international audiences are each served correctly.",
+    },
+    {
+      q: "How do I choose an SEO company near me in Sydney?",
+      a: "Ask each company what it would do about suburb pages. A sound answer is fewer, distinct pages for the areas you truly serve, and a poor one is a page for every suburb. Then check how it handles a service-area business with a hidden address, whether its review process asks every customer fairly, and whether licence details appear correctly in your profiles and adverts. Reporting should be by suburb or region, such as the Inner West or Northern Beaches. A company in your own suburb is handy for a coffee and a site visit. It gives no advantage in map results, which depend on where you and the customer are.",
     },
     {
       q: "How does the growth audit work?",

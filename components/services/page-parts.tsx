@@ -1,3 +1,4 @@
+import { RichText } from "@/components/ui/rich-text";
 import Link from "next/link";
 import { ArrowUpRight, Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -57,7 +58,7 @@ export function Faqs({ faqs }: { faqs: { q: string; a: string }[] }) {
             {f.q}
             <Plus aria-hidden className="size-5 shrink-0 text-muted transition-transform duration-300 ease-out-quint group-open:rotate-45" />
           </summary>
-          <p className="max-w-2xl pb-7 text-[1.0625rem] leading-relaxed text-muted">{f.a}</p>
+          <p className="max-w-2xl pb-7 text-[1.0625rem] leading-relaxed text-muted"><RichText text={f.a} /></p>
         </details>
       ))}
     </div>

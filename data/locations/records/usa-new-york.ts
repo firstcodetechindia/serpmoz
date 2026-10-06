@@ -16,24 +16,26 @@ export const location: LocationRecord = {
   photo: "skyline",
 
   seo: {
-    title: "Digital Growth & SEO Services in New York",
+    title: "Digital Marketing Agency in New York",
     metaDescription:
-      "SEO, local search, paid media and conversion work for New York businesses competing block by block, where reviews decide choices and clicks cost more.",
-    primaryKeyword: "digital marketing services in New York",
+      "Digital marketing agency and SEO company work in New York: neighbourhood-level local search, review routines, Google Ads and landing pages for NYC firms.",
+    primaryKeyword: "digital marketing agency in New York",
     secondaryKeywords: [
-      "SEO services New York",
-      "local SEO NYC",
-      "Google Ads management New York",
+      "SEO company in New York",
+      "SEO agency in New York",
+      "digital marketing company in New York",
+      "SEO services in New York",
+      "SEO company near me",
       "NYC digital marketing agency",
-      "landing page optimization New York",
-      "digital PR New York",
+      "SEO company NYC",
+      "local SEO NYC",
     ],
     searchIntent:
-      "Owners, partners and marketing heads at New York City businesses looking for a provider that can handle neighbourhood-level competition, review-driven choice and expensive paid search.",
+      "Owners, partners and marketing heads at New York City businesses looking to hire a digital marketing agency or SEO company that can handle neighbourhood-level competition, review-driven choice and expensive paid search.",
   },
 
   hero: {
-    title: "Digital Growth & SEO Services in New York",
+    title: "Digital Marketing Agency and SEO Company in New York",
     description:
       "In New York a customer can usually find a dozen alternatives within walking distance, and they compare them on a phone before choosing one. Reviews, proximity and a clear reason to pick you matter more than reach. We plan local search, paid media and conversion work for the boroughs and neighbourhoods you serve, working with New York businesses remotely.",
   },
@@ -46,14 +48,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "What digital marketing services does SERPMOZ provide for businesses in New York?",
-    text: "SERPMOZ works remotely with New York businesses on local SEO, organic search, Google Ads, landing pages, conversion optimisation and digital PR. The emphasis is on neighbourhood-level visibility, a credible review profile and paid campaigns built to hold up against costly clicks. For firms in finance, law, real estate and healthcare we also account for the advertising rules that apply to those professions. Each engagement begins with an audit that identifies where enquiries are being lost and what is worth fixing first.",
+    question: "What does a digital marketing agency do for businesses in New York?",
+    text: "A digital marketing agency for businesses in New York handles local SEO, organic search, Google Ads, landing pages and digital PR, block by block. SERPMOZ does that work remotely, with the emphasis on neighbourhood-level visibility, a credible review profile and paid campaigns built to hold up against costly clicks. For firms in finance, law, real estate and healthcare we also account for the advertising rules that apply to those professions. Each engagement begins with an audit that identifies where enquiries are being lost and what is worth fixing first.",
   },
 
   overview: {
     heading: "About digital growth in New York",
     paragraphs: [
-      "New York's sectors have addresses. Banks and funds sit in Midtown and the Financial District, media and advertising along the Midtown avenues and in Hudson Yards, technology firms through Flatiron and Chelsea and across the river in Brooklyn's waterfront districts. Medical practices line the Upper East Side, and real estate firms work building by building in every borough. A plan written for the [USA as a whole](/locations/usa/) says little about how any of these compete on their own blocks.",
+      "New York's sectors have addresses. Banks and funds sit in Midtown and the Financial District, media and advertising along the Midtown avenues and in Hudson Yards, technology firms through Flatiron and Chelsea and across the river in Brooklyn's waterfront districts. Medical practices line the Upper East Side, and real estate firms work building by building in every borough. A digital marketing agency plan written for the [USA as a whole](/locations/usa/) says little about how any of these compete on their own blocks.",
       "Density is what makes the city different. A dentist in a suburban town competes with a handful of practices; one in Midtown competes with dozens inside a few blocks, each with a full review profile. Being nearby is not an advantage when everyone is nearby. Customers decide on rating, recent reviews, photos, availability and whether the first page they see answers their question, so [conversion optimisation](/cro/) matters as much as visibility.",
       "Paid search reflects the same pressure. Clicks for legal, financial, medical and real estate terms in New York are among the most expensive anywhere, and the outer boroughs, New Jersey and Long Island behave as separate auctions with different economics. Budgets hold up only when campaigns are split by geography and intent, and when landing pages are specific enough to justify the cost of each visit.",
     ],
@@ -221,6 +223,10 @@ export const location: LocationRecord = {
 
   faqs: [
     {
+      q: "Is SERPMOZ a digital marketing agency in New York?",
+      a: "SERPMOZ does the work New York businesses hire a digital marketing agency or SEO company for, and it does so remotely, with no office in the city. We describe ourselves as an AI-powered digital growth company. In NYC the work is local and Google Maps SEO tracked on a grid across neighbourhoods, review routines that ask every customer without filtering, Google Ads built to cope with costly clicks, landing pages, conversion work and digital PR. For attorneys, financial firms, healthcare and real estate, copy is reviewed against the advertising rules for the profession. Calls are scheduled within Eastern business hours.",
+    },
+    {
       q: "What digital marketing services are available for New York businesses?",
       a: "We provide local and Google Maps SEO, organic search, Google Ads, landing page and conversion work, digital PR, content and website development. Most New York engagements centre on local visibility, review operations and paid efficiency, with the exact mix decided after an audit of your current position.",
     },
@@ -239,6 +245,10 @@ export const location: LocationRecord = {
     {
       q: "Do you work with businesses that also serve New Jersey, Long Island or Connecticut?",
       a: "Yes. We plan each area as its own market, with separate campaigns, location pages and profiles where the business has a real presence or service area. We also take account of licensing and regulatory differences between states when writing copy and setting targeting.",
+    },
+    {
+      q: "How do I choose an SEO company near me in NYC?",
+      a: "Three questions sort most providers in New York. Do they measure visibility by neighbourhood, such as Tribeca, Williamsburg or Astoria, or report one ranking for the whole city? Do they have a plan for reviews on both Google and Yelp, including owner replies? Can they show how they would split campaigns between Manhattan, the outer boroughs and any New Jersey or Connecticut service area? A fourth applies to regulated professions: who checks copy against advertising rules. A provider down the block is useful for meetings in person and little else. Map results depend on your address and your customer's location, so a remote team can do the same work.",
     },
     {
       q: "How does the growth audit work?",

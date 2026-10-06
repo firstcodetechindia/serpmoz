@@ -16,9 +16,9 @@ export const site = {
   category: "AI-Powered Digital Growth Company",
   tagline: "AI-Powered. Expert-Led. Revenue-Focused.",
   philosophy: "AI Can Do the Work. Experts Know What Work Matters.",
-  title: "SERPMOZ | AI-Powered Digital Growth Company",
+  title: "Digital Marketing Agency & SEO Company | SERPMOZ",
   description:
-    "SERPMOZ helps businesses grow through SEO, AI Search, performance marketing, content, CRO and AI-powered growth intelligence.",
+    "SERPMOZ is an AI-powered digital marketing agency and SEO company: SEO, AI search, paid media, content, CRO and web, led by specialists.",
   locale: "en",
   /** Add profile URLs once the accounts exist; empty entries are not rendered or put in schema. */
   social: {

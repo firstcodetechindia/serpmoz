@@ -1,6 +1,7 @@
+import { industryServicePath, industryServicesFor } from "@/data/industries/services";
 import { HeadingAside } from "@/components/layout/heading-aside";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Bot, CalendarCheck, Check, ChevronRight, Quote, UserRoundCheck } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Bot, Check, ChevronRight, Quote, UserRoundCheck } from "lucide-react";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -19,7 +20,7 @@ import { articles } from "@/data/resources";
 import { getService } from "@/data/services";
 import { serviceCategories } from "@/data/services/catalog";
 import { cta } from "@/lib/config/site";
-import { categoryName, formatDate } from "@/lib/resources";
+import { categoryName } from "@/lib/resources";
 import { faqSchema, serviceSchema, webPageSchema } from "@/lib/seo/schema";
 import { cn } from "@/lib/utils";
 import type { Service, ServiceCategoryId, ServiceMaster } from "@/types";
@@ -60,6 +61,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
   const scenario = master.scenario ? getCaseStudy(master.scenario) : undefined;
   const reading = articles.filter((a) => a.relatedServices.includes(service.slug)).slice(0, 3);
   const siblings = category.items.filter((i) => i.href !== path);
+  const bySector = industryServicesFor(service.slug);
 
   return (
     <article className="overflow-x-clip">
@@ -77,10 +79,6 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
               <CtaLink href={cta.audit.href} variant="primary" size="lg" data-cta="service-hero-audit">{action}</CtaLink>
               <CtaLink href="#process" variant="onDark" size="lg" arrow={false} data-cta="service-hero-process">See how it works</CtaLink>
             </div>
-            <p className="mt-6 flex items-center gap-2 text-xs text-white/55">
-              <CalendarCheck aria-hidden className="size-4 text-cyan" />
-              Reviewed by the SERPMOZ {look.team} on <time dateTime={master.reviewed}>{formatDate(master.reviewed)}</time>
-            </p>
           </div>
           <div className="lg:col-span-6">{visual}</div>
         </div>
@@ -463,6 +461,14 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
               </li>
             ))}
           </ul>
+          {bySector.length ? (
+            <p className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-2 text-sm text-muted">
+              <span>{service.name} by sector:</span>
+              {bySector.map((r) => (
+                <Link key={industryServicePath(r)} href={industryServicePath(r)} className="rounded-full border border-orange/40 bg-orange-wash px-3 py-1 font-medium text-navy transition-colors hover:border-navy hover:bg-navy hover:text-white">{r.name}</Link>
+              ))}
+            </p>
+          ) : null}
           <p className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-2 text-sm text-muted">
             <span>More in {category.label}:</span>
             {siblings.map((s) => (
@@ -495,7 +501,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
 
       <JsonLd
         data={[
-          webPageSchema({ path, title: service.metaTitle, description: service.metaDescription, reviewed: master.reviewed, speakable: ["#answer"] }),
+          webPageSchema({ path, title: service.metaTitle, description: service.metaDescription, speakable: ["#answer"] }),
           serviceSchema({
             name: `${service.name} services`,
             summary: service.metaDescription,

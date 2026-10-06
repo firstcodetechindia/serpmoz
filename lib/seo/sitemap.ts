@@ -1,5 +1,6 @@
 import { publishedCaseStudies } from "@/data/case-studies";
 import { industries } from "@/data/industries";
+import { industryServicePath, industryServices } from "@/data/industries/services";
 import { legalDocs } from "@/data/legal";
 import { locationPath, locations, locationServices } from "@/data/locations";
 import { articles } from "@/data/resources";
@@ -36,6 +37,8 @@ export const sitemapGroups: Record<string, () => SitemapEntry[]> = {
   industries: () => [
     { path: "/industries/", priority: 0.7 },
     ...industries.map((i) => ({ path: `/industries/${i.slug}/`, priority: 0.7 })),
+    // Services written for one sector are included automatically.
+    ...industryServices.map((r) => ({ path: industryServicePath(r), priority: 0.8 })),
   ],
   // Every record in data/locations is included automatically.
   locations: () => [

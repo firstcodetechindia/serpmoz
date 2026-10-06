@@ -82,10 +82,10 @@ export function Footer() {
           <nav aria-label="Footer" className="group/nav hidden grid-cols-3 gap-x-6 gap-y-9 md:grid lg:col-span-8 lg:grid-cols-5">
             {footerNav.map((col) => (
               <div key={col.title} className="group/col transition-opacity duration-300 lg:group-hover/nav:opacity-45 lg:hover:!opacity-100">
-                <h2 className="label-mono flex items-center gap-2 text-white/50 transition-colors group-hover/col:text-cyan">
+                <p className="label-mono flex items-center gap-2 text-white/50 transition-colors group-hover/col:text-cyan">
                   <span aria-hidden className="size-1.5 rounded-full bg-current transition-colors group-hover/col:bg-orange" />
                   {col.title}
-                </h2>
+                </p>
                 <ul className="mt-4">
                   {col.links.map((l) => (
                     <li key={l.href + l.label}>

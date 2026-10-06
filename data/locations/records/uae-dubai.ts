@@ -15,24 +15,26 @@ export const location: LocationRecord = {
   photo: "real-estate",
 
   seo: {
-    title: "Digital Growth & SEO Services in Dubai",
+    title: "Digital Marketing Agency in Dubai",
     metaDescription:
-      "SEO, local search, paid media and WhatsApp enquiry handling for Dubai businesses, planned around community names, two languages and overseas buyers.",
-    primaryKeyword: "digital marketing services in Dubai",
+      "Digital marketing agency and SEO company services in Dubai: English and Arabic search, community-level maps, paid media and WhatsApp enquiry handling.",
+    primaryKeyword: "digital marketing agency in Dubai",
     secondaryKeywords: [
-      "SEO services Dubai",
+      "SEO company in Dubai",
+      "SEO agency in Dubai",
+      "digital marketing company in Dubai",
+      "SEO services in Dubai",
+      "SEO company near me",
       "local SEO Dubai",
-      "Google Ads management Dubai",
-      "real estate digital marketing Dubai",
       "Arabic SEO Dubai",
-      "WhatsApp lead handling Dubai",
+      "Google Ads management Dubai",
     ],
     searchIntent:
-      "Owners and marketing leads at Dubai businesses, and overseas firms entering the emirate, comparing providers who understand community-level search, bilingual audiences and enquiry-led sales.",
+      "Owners and marketing leads at Dubai businesses, and overseas firms entering the emirate, ready to hire a digital marketing agency or SEO company that understands community-level search, bilingual audiences and enquiry-led sales.",
   },
 
   hero: {
-    title: "Digital Growth & SEO Services in Dubai",
+    title: "Digital Marketing Agency and SEO Company in Dubai",
     description:
       "Dubai sells to three audiences at once: residents choosing between communities, investors researching from abroad, and visitors deciding within days. Each searches differently, in more than one language, and most expect an answer on WhatsApp within minutes. We plan search, paid media and enquiry handling around that reality, working with Dubai businesses remotely.",
   },
@@ -45,14 +47,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "What digital marketing services does SERPMOZ provide for businesses in Dubai?",
-    text: "SERPMOZ plans and runs search, paid media and enquiry handling for Dubai businesses, working remotely. That covers SEO in English and Arabic, local and Google Maps visibility by community and district, Google and Meta campaigns, landing pages, and WhatsApp follow-up so that enquiries are answered while the buyer is still interested. For developers, brokers and firms selling to overseas buyers, we add international search targeting. Every engagement starts with an audit of where demand and lost enquiries actually sit.",
+    question: "What does a digital marketing agency do for businesses in Dubai?",
+    text: "A digital marketing agency for businesses in Dubai plans and runs SEO, paid media and enquiry handling so that buyers find the business and get a quick reply. SERPMOZ does this work remotely: SEO in English and Arabic, local and Google Maps visibility by community and district, Google and Meta campaigns, landing pages, and WhatsApp follow-up while the buyer is still interested. For developers, brokers and firms selling to overseas buyers, we add international search targeting. Every engagement starts with an audit of where demand and lost enquiries sit.",
   },
 
   overview: {
     heading: "About digital growth in Dubai",
     paragraphs: [
-      "Dubai is organised around districts with distinct commercial identities. Financial and legal firms cluster in DIFC, trading companies and consultancies in Business Bay and JLT, technology and media firms in their dedicated free zones, wholesalers and older family businesses in Deira and Bur Dubai, and showrooms and workshops in Al Quoz. A firm's district says something about who it serves, and buyers read it that way. Search behaviour follows the same map, which is why the wider [UAE picture](/locations/uae/) is only a starting point for a Dubai plan.",
+      "Dubai is organised around districts with distinct commercial identities. Financial and legal firms cluster in DIFC, trading companies and consultancies in Business Bay and JLT, technology and media firms in their dedicated free zones, wholesalers and older family businesses in Deira and Bur Dubai, and showrooms and workshops in Al Quoz. A firm's district says something about who it serves, and buyers read it that way. Search behaviour follows the same map, which is why a digital marketing agency treats the wider [UAE picture](/locations/uae/) as only a starting point for a Dubai plan.",
       "Competition here is unusually paid-heavy. In property, clinics, schools and hospitality, the first screen of results is mostly advertising, portals and aggregators, and many businesses rely on bought enquiries alone. That makes cost per enquiry volatile and leaves organic and map visibility under-invested. A measured mix of [SEO services](/seo-services/) and tightly controlled paid campaigns usually does more for margin than raising budgets, provided the enquiries are followed up properly.",
       "The audience is the other distinguishing factor. A single campaign may reach a long-term resident comparing communities, a newly arrived professional who searches the way they did at home, and an investor who has never visited. Each uses different words for the same thing and trusts different proof. Pages, adverts and replies need to be written for those specific readers and not for a generic Gulf customer.",
     ],
@@ -220,6 +222,10 @@ export const location: LocationRecord = {
 
   faqs: [
     {
+      q: "Is SERPMOZ a digital marketing agency in Dubai?",
+      a: "SERPMOZ is an AI-powered digital growth company, and it does the work Dubai businesses hire a digital marketing agency or SEO company for. We deliver it remotely and have no office in the emirate. For Dubai that work is SEO in English and Arabic, Business Profiles pinned to the right community, tower or mall unit, Google and Meta campaigns structured by community and language, landing pages, and WhatsApp routing so enquiries get a reply while the buyer is still interested. If you need someone to visit your premises each week, a locally based firm will suit you better. If you need the work done and measured, location matters less.",
+    },
+    {
       q: "What digital marketing services are available for businesses in Dubai?",
       a: "We provide SEO in English and Arabic, local and Google Maps optimisation, Google and Meta advertising, landing page work, WhatsApp enquiry automation, international search targeting and website development. Most Dubai engagements combine two or three of these, chosen after an audit shows where enquiries are being lost.",
     },
@@ -238,6 +244,10 @@ export const location: LocationRecord = {
     {
       q: "Can you help a Dubai business reach buyers outside the UAE?",
       a: "Yes. Developers, brokers, hotels and advisory firms often need visibility in the countries their buyers research from. We plan language and country targeting, site structure and campaigns for those markets, and connect enquiries from abroad to a follow-up process that accounts for time zones.",
+    },
+    {
+      q: "How do I choose an SEO company near me in Dubai?",
+      a: "Judge the candidates on four things. First, whether they plan by community and development name, such as JVC or Dubai Hills Estate, since that is how residents search. Second, whether Arabic pages get their own keyword research and a native writer. Third, whether they look at WhatsApp response times as well as rankings, because a late reply wastes the click. Fourth, whether they allow time for permits and approvals in property and healthcare campaigns. Being physically near matters if you want meetings in person or photography on site. It does not matter for the search work itself, which happens in your accounts, listings and pages.",
     },
     {
       q: "How does the growth audit work for a Dubai business?",

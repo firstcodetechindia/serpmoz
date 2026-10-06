@@ -15,23 +15,26 @@ export const location: LocationRecord = {
   photo: "finance",
 
   seo: {
-    title: "SEO & Digital Growth Services in London",
+    title: "Digital Marketing Agency in London",
     metaDescription:
-      "SEO, local search, paid media and digital PR for London firms, planned around borough and postcode intent, costly auctions and national competitors.",
-    primaryKeyword: "digital marketing services in London",
+      "SEO company and digital marketing agency services in London: borough and postcode search, digital PR and paid media for firms in costly auctions.",
+    primaryKeyword: "digital marketing agency in London",
     secondaryKeywords: [
-      "SEO services London",
+      "SEO company in London",
+      "SEO agency in London",
+      "digital marketing company in London",
+      "SEO services in London",
+      "SEO company near me",
       "local SEO London",
       "PPC management London",
       "digital PR London",
-      "B2B lead generation London",
     ],
     searchIntent:
-      "Marketing directors, partners and founders at London firms comparing providers who can compete in expensive professional-services search and at borough level.",
+      "Marketing directors, partners and founders at London firms looking to hire a digital marketing agency or SEO company that can compete in expensive professional-services search and at borough level.",
   },
 
   hero: {
-    title: "SEO & Digital Growth Services in London",
+    title: "Digital Marketing Agency and SEO Company in London",
     description:
       "London is several markets sharing one name. A law firm near Chancery Lane, a fintech in Shoreditch and a dental practice in Clapham compete in different results, against different rivals, for people who search by borough, postcode or Tube station. We plan search, paid media and authority building for the part of London you actually sell to, working with firms here remotely.",
   },
@@ -44,14 +47,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "What digital marketing services does SERPMOZ provide for businesses in London?",
-    text: "SERPMOZ works remotely with London businesses on SEO, local search, paid media, digital PR and conversion work. For professional and financial firms that means competing for expensive, high-intent searches with strong pages, earned coverage and disciplined campaigns. For practices, venues and trades it means visibility by borough and postcode in map results. Where buyers are overseas, we add international targeting. Work begins with an audit that sizes each opportunity by commercial value before anything is built.",
+    question: "What does a digital marketing agency do for businesses in London?",
+    text: "In London, a digital marketing agency does SEO, local search, paid media, digital PR and conversion work for the part of the capital a firm sells to. SERPMOZ does this remotely. For professional and financial firms that means competing for expensive, high-intent searches with strong pages, earned coverage and disciplined campaigns. For practices, venues and trades it means visibility by borough and postcode in map results. Where buyers are overseas, we add international targeting. Work begins with an audit that sizes each opportunity by commercial value.",
   },
 
   overview: {
     heading: "About digital growth in London",
     paragraphs: [
-      "London's commercial geography is specific. Banking, insurance and the large law firms sit in the City and Canary Wharf, with barristers and litigation practices around Holborn and the Inns of Court. Private equity and wealth managers favour Mayfair and St James's. Technology companies gather around Old Street, Shoreditch and King's Cross, private medicine around Harley Street, and media and production in Soho. Buyers know this map, and an address signals positioning before any copy is read.",
+      "London's commercial geography is specific. Banking, insurance and the large law firms sit in the City and Canary Wharf, with barristers and litigation practices around Holborn and the Inns of Court. Private equity and wealth managers favour Mayfair and St James's. Technology companies gather around Old Street, Shoreditch and King's Cross, private medicine around Harley Street, and media and production in Soho. Buyers know this map, and so should any SEO company working here: an address signals positioning before any copy is read.",
       "The difficulty is that almost every national brand is headquartered or heavily present here. A London firm bidding on a professional-services term is competing with companies that have national budgets, long-established domains and in-house teams. Paid clicks in legal, finance and insurance are among the most expensive in the [UK market](/locations/uk/), so winning usually means choosing narrower ground: a practice area, a sector, a borough, a type of client.",
       "That choice is where most of the value lies. We size topics by what a new client is worth and not by search volume, then build depth in the few areas a firm can credibly own. Organic authority comes from substantive pages and from coverage earned through [digital PR](/digital-pr/), which London's concentration of national and trade journalists makes more achievable than elsewhere, though also more competitive.",
     ],
@@ -219,6 +222,10 @@ export const location: LocationRecord = {
 
   faqs: [
     {
+      q: "Is SERPMOZ a digital marketing agency in London?",
+      a: "By the work it does, yes. By address, no. SERPMOZ is an AI-powered digital growth company that works remotely, and it does what London firms hire a digital marketing agency or SEO company to do. Here that means SEO aimed at the level you compete on (postcode, city-wide or national), local profiles and pages for each site, Google and LinkedIn advertising in expensive professional-services auctions, digital PR for earned coverage, and conversion work. Regulated firms in finance, law and healthcare get a compliance review step in the workflow. Meetings are held by video during UK working hours.",
+    },
+    {
       q: "What digital marketing services are available for London businesses?",
       a: "We offer SEO, local and Google Maps optimisation, Google and LinkedIn advertising, digital PR, conversion optimisation, content and website development. London engagements usually focus on a small number of these, chosen after an audit identifies where competition is beatable and where budget is currently being wasted.",
     },
@@ -237,6 +244,10 @@ export const location: LocationRecord = {
     {
       q: "Do you work with London firms that serve clients outside the UK?",
       a: "Yes. Many firms in finance, law and technology sell internationally from London. We plan site structure, country and language targeting and campaigns for those markets, while keeping the signals that establish the firm as a UK business clear and consistent.",
+    },
+    {
+      q: "How do I choose an SEO company near me in London?",
+      a: "Start with the level of search you need to win. A firm chasing national clients needs a company strong in content and digital PR, while a practice in Clapham or Islington needs one that tracks map results from several points in a postcode district. Ask how they handle shared buildings and serviced offices, which cause verification problems here. For finance, legal or healthcare, ask where compliance review sits in their process. Proximity helps if you want workshops face to face, and some partners do. It adds nothing to visibility, because map results depend on where your premises and customers are.",
     },
     {
       q: "How does the growth audit work?",

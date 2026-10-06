@@ -3,6 +3,10 @@
  * House rules: no invented statistics, no client references without approval,
  * method shown wherever a recommendation is made. Add new pieces to the top.
  */
+import { articles as aiSearchSeries } from "./cluster-ai-search";
+import { articles as buyingSeries } from "./cluster-buying";
+import { articles as localSeoSeries } from "./cluster-local-seo";
+
 export type ArticleSection = { heading: string; paragraphs: string[]; points?: string[] };
 
 export type Article = {
@@ -18,12 +22,14 @@ export type Article = {
   takeaways: string[];
   /** Slugs in data/services, most relevant first */
   relatedServices: string[];
+  /** Series this piece belongs to. Pieces in a series link to each other and to the pillar. */
+  cluster?: "ai-search" | "local-seo" | "buying-an-agency";
   sections: ArticleSection[];
 };
 
 const author = { author: "SERPMOZ Research", authorRole: "Editorial team" };
 
-export const articles: Article[] = [
+const foundation: Article[] = [
   {
     slug: "measuring-ai-search-visibility",
     title: "How to measure AI search visibility when the answer changes every time",
@@ -359,6 +365,19 @@ export const articles: Article[] = [
     ],
   },
 ];
+
+/** Every published piece: the series first (newest), then the foundation pieces. */
+export const articles: Article[] = [...aiSearchSeries, ...localSeoSeries, ...buyingSeries, ...foundation];
+
+/** Series: a pillar service page and the pieces that belong to it. */
+export const clusters = {
+  "ai-search": { name: "AI search", pillar: "/ai-seo-services/", pillarLabel: "AI SEO services" },
+  "local-seo": { name: "Local SEO", pillar: "/local-seo-services/", pillarLabel: "Local SEO services" },
+  "buying-an-agency": { name: "Pricing and choosing an agency", pillar: "/engagement-models/", pillarLabel: "Engagement models" },
+} as const;
+
+/** The other pieces in the same series, in order. */
+export const seriesOf = (a: Article) => (a.cluster ? articles.filter((x) => x.cluster === a.cluster && x.slug !== a.slug) : []);
 
 export function getArticle(slug: string) {
   return articles.find((a) => a.slug === slug);

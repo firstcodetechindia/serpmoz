@@ -250,3 +250,53 @@ export type ResourceCategory = {
 };
 
 export type Crumb = { name: string; href: string };
+
+/**
+ * A service written for one industry, e.g. "SEO for real estate developers".
+ * Lives at /industries/{industry}/{slug}/. Written by hand: it must say things
+ * that are only true of this service in this sector.
+ * Body text may contain links written as [label](/path/).
+ */
+export type IndustryServiceRecord = {
+  /** Slug in data/industries */
+  industry: string;
+  /** Slug in data/services */
+  service: string;
+  /** URL segment, normally the service slug */
+  slug: string;
+  /** Short name for menus and cards, e.g. "SEO for Real Estate" */
+  name: string;
+  /** The buyers, as written mid-sentence, e.g. "real estate developers and brokers" */
+  audience: string;
+  seo: { title: string; metaDescription: string; primaryKeyword: string; secondaryKeywords: string[]; searchIntent: string };
+  /** hero.title is the H1 */
+  hero: { title: string; description: string };
+  /** Exactly four short facts under the hero */
+  facts: { label: string; value: string }[];
+  /** A question and a direct answer of 60 to 90 words */
+  answer: { question: string; text: string };
+  /** How buyers in this sector search and decide, for this service */
+  buyers: { heading: string; paragraphs: string[] };
+  /** What usually goes wrong: four or five */
+  problems: { title: string; body: string }[];
+  /** What the work includes: five or six parts */
+  approach: { title: string; body: string }[];
+  /** The kinds of searches worth winning. Examples are query patterns, not data. */
+  searches: { heading: string; intro: string; groups: { name: string; examples: string[]; note: string }[] };
+  /** Advertising, claims or data rules the work has to respect. General terms only. */
+  rules: { title: string; body: string }[];
+  /** How success is measured: four or five */
+  measures: string[];
+  /** Three or four phases with typical timing */
+  timeline: { phase: string; when: string; body: string }[];
+  faqs: { q: string; a: string }[];
+  related: {
+    /** Other service slugs */
+    services: string[];
+    /** Location paths, e.g. "/locations/india/gurgaon/" */
+    locations: string[];
+    /** Article slugs */
+    articles: string[];
+  };
+  cta: { title: string; body: string };
+};

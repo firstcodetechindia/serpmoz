@@ -160,7 +160,8 @@ export function faqSchema(faqs: { q: string; a: string }[]): Json {
     mainEntity: faqs.map((f) => ({
       "@type": "Question",
       name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
+      // Answers may carry [label](/path/) links for the page; schema gets the plain words.
+      acceptedAnswer: { "@type": "Answer", text: f.a.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") },
     })),
   };
 }

@@ -18,7 +18,7 @@ const slides: HeroSlide[] = [
   {
     key: "who",
     label: "Who we are",
-    eyebrow: "AI-Powered Digital Growth Company",
+    eyebrow: "AI-Powered Digital Marketing Agency and SEO Company",
     title: ["AI Can Do the Work.", "Experts Know What Work Matters."],
     body: "SERPMOZ combines AI-powered execution, human expertise and growth strategy to turn digital visibility into qualified demand, customers and measurable revenue.",
     cta: { label: cta.audit.label, href: cta.audit.href },

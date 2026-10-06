@@ -18,23 +18,26 @@ export const location: LocationRecord = {
   photo: "b2b",
 
   seo: {
-    title: "Digital Growth & SEO Services in Gurgaon",
+    title: "Digital Marketing Agency in Gurgaon",
     metaDescription:
-      "SEO, AI search, LinkedIn and lead generation for Gurgaon companies: built for B2B, SaaS, real estate and premium healthcare buyers who research carefully.",
-    primaryKeyword: "digital marketing services in Gurgaon",
+      "Digital marketing agency work for Gurgaon and Gurugram firms: SEO, AI search, LinkedIn and lead generation for B2B, SaaS, real estate and healthcare.",
+    primaryKeyword: "digital marketing agency in Gurgaon",
     secondaryKeywords: [
+      "SEO company in Gurgaon",
+      "SEO agency in Gurgaon",
+      "digital marketing company in Gurgaon",
       "SEO services in Gurgaon",
+      "digital marketing agency near me",
       "SEO company in Gurugram",
+      "digital marketing agency in Gurugram",
       "B2B lead generation Gurgaon",
-      "AI SEO Gurgaon",
-      "real estate digital marketing Gurgaon",
     ],
     searchIntent:
-      "Founders, marketing leaders and business heads at Gurgaon companies, developers and healthcare providers looking for a growth partner who can reach senior buyers and produce qualified pipeline.",
+      "Founders, marketing leaders and business heads at Gurgaon companies, developers and healthcare providers who are ready to hire a digital marketing agency or SEO company and want one that can reach senior buyers and produce qualified pipeline.",
   },
 
   hero: {
-    title: "Digital Growth & SEO Services in Gurgaon",
+    title: "Digital Marketing Agency and SEO Company in Gurgaon",
     description:
       "Gurgaon packs corporate headquarters, technology firms, developers and large hospitals into a handful of office districts between Cyber City and Golf Course Extension Road. The people who buy here are senior, compare vendors properly and notice weak claims. SERPMOZ builds search, AI visibility, paid and lead generation programmes aimed at a small number of valuable decisions, under both names the city is searched by.",
   },
@@ -47,14 +50,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "What digital marketing services does SERPMOZ provide in Gurgaon?",
-    text: "SERPMOZ works remotely with Gurgaon businesses on SEO, AI search visibility, Google Ads, LinkedIn Ads, lead generation and landing page optimisation. The city's demand is weighted towards company-to-company sales, property and premium healthcare, so programmes are designed around a limited set of high-value queries and accounts. We cover both the Gurgaon and Gurugram names, account for overlap with Delhi and Noida, and report on qualified enquiries and pipeline, not traffic alone.",
+    question: "What does a digital marketing agency do for businesses in Gurgaon?",
+    text: "For a Gurgaon business, a digital marketing agency plans and runs SEO, AI search visibility, Google Ads, LinkedIn Ads, lead generation and landing page optimisation. SERPMOZ does this work remotely. The city's demand is weighted towards company-to-company sales, property and premium healthcare, so programmes are designed around a limited set of high-value queries and accounts. We cover both the Gurgaon and Gurugram names, account for overlap with Delhi and Noida, and report on qualified enquiries and pipeline, not traffic alone.",
   },
 
   overview: {
     heading: "About digital growth in Gurgaon",
     paragraphs: [
-      "Gurgaon grew around private office development, and its business geography still follows the developers' map. Cyber City and Udyog Vihar hold multinationals, shared service centres and technology firms. Golf Course Road and its extension carry corporate offices, premium housing and clinics. Sohna Road and the Dwarka Expressway corridor are newer and led by residential and commercial projects. A company's address signals who it serves, and buyers read it that way.",
+      "Gurgaon grew around private office development, and its business geography still follows the developers' map. Cyber City and Udyog Vihar hold multinationals, shared service centres and technology firms. Golf Course Road and its extension carry corporate offices, premium housing and clinics. Sohna Road and the Dwarka Expressway corridor are newer and led by residential and commercial projects. A company's address signals who it serves, and buyers read it that way, which is the first thing a digital marketing agency working here has to understand.",
       "The defining feature is buyer seniority. A large share of commercial demand comes from founders, functional heads and procurement teams choosing software, consultants, agencies, recruiters and facilities providers. They read past the headline, ask peers and check claims. Marketing that works here is specific about method and evidence, which is why [B2B](/industries/b2b/) and [SaaS](/industries/saas/) programmes lean on depth of content and precise [lead generation](/lead-generation/) more than reach.",
       "Two consumer-facing sectors run alongside this. Real estate is intensely contested, with developers, channel partners and brokers all bidding on the same project names. Premium healthcare draws patients from across north India and from abroad, who research specialists and procedures in detail before travelling. In both, the cost of a poor enquiry is high, so qualification matters as much as visibility.",
     ],
@@ -222,6 +225,10 @@ export const location: LocationRecord = {
 
   faqs: [
     {
+      q: "Is SERPMOZ a digital marketing agency in Gurgaon?",
+      a: "SERPMOZ is an AI-powered digital growth company. It does the work Gurgaon businesses hire a digital marketing agency or SEO company for, and delivers it remotely, with no office in the city. Here that work means SEO and AI search visibility for B2B and SaaS firms selling to head offices, LinkedIn Ads and lead generation aimed at named roles, and Google Ads with qualified landing pages for developers and premium healthcare providers. Both the Gurgaon and Gurugram names are covered, and reporting is on qualified enquiries and pipeline.",
+    },
+    {
       q: "Which digital marketing services are available for businesses in Gurgaon?",
       a: "SEO, AI search optimisation, Google Ads, LinkedIn Ads, lead generation, landing page optimisation, content and local SEO. The mix depends on who you sell to: B2B and SaaS firms usually begin with search, content and LinkedIn, while developers and healthcare providers begin with paid search, landing pages and enquiry qualification.",
     },
@@ -244,6 +251,10 @@ export const location: LocationRecord = {
     {
       q: "How does the growth audit work?",
       a: "We examine your site, search visibility, paid accounts, tracking and lead handling, then size the opportunity by segment. The output is a prioritised plan that states what to do first, what to stop and what each step depends on. It contains estimates and assumptions, not guarantees of rankings or revenue.",
+    },
+    {
+      q: "How do I choose an SEO company near me in Gurgaon?",
+      a: "Judge on fit with how Gurgaon buys, then on distance. Ask whether the company has a plan for both Gurgaon and Gurugram searches without duplicate pages. Ask how it defines a qualified lead for a long B2B sale involving finance and procurement, and whether reporting reaches your CRM. If you are in property, ask how it handles project-name terms that brokers and channel partners also bid on. Being near matters if you want in-person workshops or someone to photograph your premises. For search, paid and content work it does not, because that work is done in accounts, documents and calls.",
     },
   ],
 

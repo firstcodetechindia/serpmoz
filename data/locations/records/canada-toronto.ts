@@ -16,23 +16,26 @@ export const location: LocationRecord = {
   photo: "technology",
 
   seo: {
-    title: "SEO & Digital Growth Services in Toronto",
+    title: "Digital Marketing Agency in Toronto",
     metaDescription:
-      "SEO, local search, paid media and conversion work for Toronto and GTA businesses, planned suburb by suburb for a multilingual, multicultural audience.",
-    primaryKeyword: "digital marketing services in Toronto",
+      "SEO company and digital marketing agency services in Toronto and the GTA: local search by district and suburb, Google Ads and in-language content.",
+    primaryKeyword: "digital marketing agency in Toronto",
     secondaryKeywords: [
-      "SEO services Toronto",
+      "SEO company in Toronto",
+      "SEO agency in Toronto",
+      "digital marketing company in Toronto",
+      "SEO services in Toronto",
+      "SEO company near me",
+      "SEO company GTA",
       "local SEO Toronto",
-      "GTA digital marketing",
       "Google Ads management Toronto",
-      "B2B lead generation Toronto",
     ],
     searchIntent:
-      "Business owners and marketing managers in Toronto and the surrounding GTA comparing providers who can plan for suburb-level markets and a multilingual customer base.",
+      "Business owners and marketing managers in Toronto and the surrounding GTA looking to hire a digital marketing agency or SEO company that can plan for suburb-level markets and a multilingual customer base.",
   },
 
   hero: {
-    title: "SEO & Digital Growth Services in Toronto",
+    title: "Digital Marketing Agency and SEO Company in Toronto",
     description:
       "Toronto is searched as a city and as a region. Downtown, North York, Scarborough and Etobicoke behave differently from each other, and Mississauga, Brampton, Markham and Vaughan are markets in their own right. Add an audience that speaks many languages at home, and a single Toronto campaign rarely fits. We plan search and paid media area by area, working with businesses here remotely.",
   },
@@ -45,14 +48,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "What digital marketing services does SERPMOZ provide for businesses in Toronto?",
-    text: "SERPMOZ works remotely with Toronto and GTA businesses on SEO, local search, Google and LinkedIn advertising, conversion optimisation and content. Plans treat downtown, the inner districts and the suburban cities as separate markets, each with its own pages, profiles and budgets. Where a business serves particular language communities, we plan content and campaigns for them properly. We also help Canadian firms hold their ground against American sites in search. Work starts with an audit that sets priorities by commercial value.",
+    question: "What does a digital marketing agency do for businesses in Toronto?",
+    text: "For businesses in Toronto and the GTA, a digital marketing agency runs SEO, local search, advertising and content across a region that behaves as several markets. SERPMOZ does this work remotely: SEO, local search, Google and LinkedIn advertising, conversion optimisation and content, with downtown, the inner districts and the suburban cities each given their own pages, profiles and budgets. Where a business serves particular language communities, we plan for them properly, and we help Canadian firms hold their ground against American sites. Work starts with an audit.",
   },
 
   overview: {
     heading: "About digital growth in Toronto",
     paragraphs: [
-      "Toronto's business districts are well defined. The banks, insurers and large law and accounting firms occupy the Financial District around Bay Street. Technology companies and agencies spread through King West, Liberty Village and the waterfront, with research-led firms near the hospital and university district. Luxury retail sits in Yorkville. Beyond the core, corporate offices and logistics operations fill Mississauga, Markham and Vaughan. Each area has its own buyers, commuting patterns and search habits.",
+      "Toronto's business districts are well defined. The banks, insurers and large law and accounting firms occupy the Financial District around Bay Street. Technology companies and agencies spread through King West, Liberty Village and the waterfront, with research-led firms near the hospital and university district. Luxury retail sits in Yorkville. Beyond the core, corporate offices and logistics operations fill Mississauga, Markham and Vaughan. Each area has its own buyers, commuting patterns and search habits, and a digital marketing agency has to plan for them separately.",
       "The feature that most shapes marketing here is the region. Customers think in terms of the city and the suburbs beyond it, and a business in Oakville or Richmond Hill does not want to pay for clicks from Scarborough. Unlike the wider [Canadian market](/locations/canada/), where distance separates metros, the GTA's markets touch each other, so targeting has to be drawn deliberately. That is the work of a sound [local SEO programme](/local-seo-services/).",
       "The audience is the second feature. Toronto is a very multicultural city, shaped by generations of immigration, and many households search, read reviews and ask for recommendations in languages other than English. For property, immigration, financial and healthcare services in particular, a business that communicates well with a specific community can earn loyalty that generic English campaigns do not reach.",
     ],
@@ -220,6 +223,10 @@ export const location: LocationRecord = {
 
   faqs: [
     {
+      q: "Is SERPMOZ a digital marketing agency in Toronto?",
+      a: "For the work, yes. For the address, no. SERPMOZ is an AI-powered digital growth company with no Toronto office, and it does remotely what GTA businesses hire a digital marketing agency or SEO company for. That covers SEO with clear Canadian signals so American sites do not take your place, local profiles and pages for each district or suburban city you serve, Google and LinkedIn advertising, content, conversion optimisation and in-language pages where a real audience exists. Follow-up sequences are designed around recorded consent. Meetings take place by video within Eastern business hours.",
+    },
+    {
       q: "What digital marketing services are available for Toronto businesses?",
       a: "We provide SEO, local and Google Maps optimisation, Google and LinkedIn advertising, content, conversion optimisation, email marketing and website development. For Toronto and GTA businesses the mix usually centres on area-by-area local visibility and well-structured paid campaigns, decided after an audit.",
     },
@@ -238,6 +245,10 @@ export const location: LocationRecord = {
     {
       q: "How do you help Canadian sites compete with American ones?",
       a: "We make Canadian relevance unmistakable: Canadian spelling and pricing, Ontario-specific regulation and examples, local addresses, appropriate structured data and correct country targeting. Content that answers the Canadian version of a question gives search engines a clear reason to show it to Canadian searchers.",
+    },
+    {
+      q: "How do I choose an SEO company near me in Toronto?",
+      a: "Look for evidence that a company understands the GTA as separate markets. It should know that Scarborough, North York and Etobicoke are searched like towns, and that Mississauga, Brampton, Markham and Vaughan need their own pages and, where you have premises, their own profiles. It should write for Canadian searchers, with Canadian spelling and pricing. If you serve language communities, ask who writes and reviews that content and whether your team can reply in it. Nearness counts when you want someone in the room for planning sessions. For map visibility it is irrelevant, because results follow your location and the searcher's.",
     },
     {
       q: "How does the growth audit work?",

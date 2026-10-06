@@ -15,23 +15,25 @@ export const location: LocationRecord = {
   nearby: ["mumbai"],
   photo: "education",
   seo: {
-    title: "Digital Marketing & SEO Services in Pune",
+    title: "Digital Marketing Agency in Pune",
     metaDescription:
-      "SEO, local search, paid campaigns and B2B lead generation for Pune: education providers, automotive and engineering suppliers, IT firms and local businesses.",
-    primaryKeyword: "digital marketing services in Pune",
+      "SEO company and digital marketing agency work for Pune institutes, manufacturers, IT firms and local businesses, timed to admissions and order cycles.",
+    primaryKeyword: "digital marketing agency in Pune",
     secondaryKeywords: [
+      "SEO company in Pune",
+      "SEO agency in Pune",
+      "digital marketing company in Pune",
       "SEO services in Pune",
+      "digital marketing agency near me",
+      "digital marketing agency in Pimpri-Chinchwad",
       "local SEO Pune",
       "lead generation for manufacturers in Pune",
-      "education marketing Pune",
-      "Google Ads management Pune",
-      "B2B marketing Pimpri-Chinchwad",
     ],
     searchIntent:
-      "Institutes, manufacturers, IT services firms and local business owners in Pune and Pimpri-Chinchwad looking for a provider to bring in admissions enquiries, industrial leads or neighbourhood customers.",
+      "Institutes, manufacturers, IT services firms and local business owners in Pune and Pimpri-Chinchwad who are looking to hire a digital marketing agency or SEO company to bring in admissions enquiries, industrial leads or neighbourhood customers.",
   },
   hero: {
-    title: "Digital Marketing & SEO Services in Pune",
+    title: "Digital Marketing Agency and SEO Company in Pune",
     description:
       "Pune runs on two calendars: the admission year that brings in new students, and the long order cycles of its automotive and engineering plants. SERPMOZ plans search, local, paid and lead generation programmes for institutes, manufacturers, IT services firms and the neighbourhood businesses that serve a young population. We work with Pune businesses remotely.",
   },
@@ -42,13 +44,13 @@ export const location: LocationRecord = {
     { label: "Local search shaped by", value: "College catchments, IT park localities and Marathi alongside English" },
   ],
   answer: {
-    question: "What digital marketing services does SERPMOZ provide in Pune?",
-    text: "SERPMOZ provides SEO, local SEO, Google Ads, Meta advertising, lead generation and LinkedIn marketing for businesses in Pune. Education providers use them to reach applicants during admission periods. Automotive and engineering suppliers use them to be found by purchasing teams. Local businesses use them to reach students and young professionals in areas such as Kothrud, Viman Nagar and Hinjewadi. Plans account for Marathi and English search, and we work with Pune companies remotely, with no local office claimed.",
+    question: "What does a digital marketing agency do for businesses in Pune?",
+    text: "A digital marketing agency brings a Pune business enquiries through SEO, local SEO, Google Ads, Meta advertising, lead generation and LinkedIn marketing. SERPMOZ provides these remotely, with no local office claimed. Education providers use them to reach applicants during admission periods. Automotive and engineering suppliers use them to be found by purchasing teams. Local businesses use them to reach students and young professionals in areas such as Kothrud, Viman Nagar and Hinjewadi. Plans account for Marathi and English search.",
   },
   overview: {
     heading: "About digital growth in Pune",
     paragraphs: [
-      "Education gives Pune a customer base that renews itself. Universities, engineering and management colleges, and coaching institutes bring in students from across Maharashtra and other states every year, and many stay on for their first jobs. Each intake needs somewhere to live, eat, study and travel, which means new searches for hostels, paying-guest rooms, classes, gyms and two-wheelers. For [education providers](/industries/education/) and the businesses around them, last year's reputation has to be earned again with every new cohort.",
+      "Education gives Pune a customer base that renews itself, and gives any SEO company working here a moving target. Universities, engineering and management colleges, and coaching institutes bring in students from across Maharashtra and other states every year, and many stay on for their first jobs. Each intake needs somewhere to live, eat, study and travel, which means new searches for hostels, paying-guest rooms, classes, gyms and two-wheelers. For [education providers](/industries/education/) and the businesses around them, last year's reputation has to be earned again with every new cohort.",
       "Industry is the city's other foundation. Vehicle makers and their suppliers fill Pimpri-Chinchwad, Chakan, Talegaon and Ranjangaon, with tooling, components, automation and logistics firms alongside. IT services and software companies occupy Hinjewadi, Kharadi, Magarpatta and Baner. These businesses sell to purchasing and engineering teams over long cycles, often after samples and plant audits, and benefit from [B2B lead generation](/lead-generation/) that brings in fewer, better-matched enquiries.",
       "Pune also lives beside [Mumbai](/locations/india/mumbai/). The expressway makes it practical for firms in either city to serve the other, so Pune vendors are compared with Mumbai competitors, and Mumbai companies list Pune as a service area. Local character still counts: Marathi is the language of the older city and of much everyday trade, and businesses that respect that tend to be trusted faster.",
     ],
@@ -206,6 +208,10 @@ export const location: LocationRecord = {
   resources: ["sizing-search-opportunities-by-value", "conversion-work-without-ab-testing-traffic", "attribution-questions-worth-answering"],
   faqs: [
     {
+      q: "Is SERPMOZ an SEO company in Pune?",
+      a: "For Pune businesses SERPMOZ does the work an SEO company or digital marketing agency is hired for, though we describe ourselves as an AI-powered digital growth company and work remotely, without an office or team in the city. The work follows Pune's two calendars. For institutes it is search and paid campaigns timed to results and admission deadlines. For automotive and engineering suppliers it is capability pages, search and LinkedIn aimed at purchasing teams. For neighbourhood businesses it is local SEO and a steady review routine, in Marathi and English as the audience requires.",
+    },
+    {
       q: "What services does SERPMOZ offer in Pune?",
       a: "We offer SEO, local SEO and maps optimisation, Google Ads, Meta advertising, lead generation and LinkedIn marketing, supported by content, conversion and web development. In Pune these are usually shaped around admissions for education providers, supplier enquiries for manufacturers and neighbourhood visibility for local businesses.",
     },
@@ -228,6 +234,10 @@ export const location: LocationRecord = {
     {
       q: "How does the growth audit work?",
       a: "With access to your analytics, search data, profiles and ad accounts, we assess how customers currently find you and where enquiries are lost. You get a written summary of findings and a prioritised list of actions. It is an assessment, and it makes no promise about rankings or lead numbers.",
+    },
+    {
+      q: "How do I choose a digital marketing agency near me in Pune?",
+      a: "Match the agency to your side of Pune's economy. An institute should ask how budgets move with the admission calendar. A manufacturer should ask how online enquiries will be tied to the sales record when orders take months and close offline. A local business should ask how reviews will be kept fresh as the student population turns over, and who writes the Marathi. Everyone should check that Pune, Pimpri-Chinchwad and belts such as Chakan are named correctly. Nearness matters if you want an agency to visit a campus or plant for photographs. It has no bearing on search or paid results, and reviews can run by video call.",
     },
   ],
   cta: {

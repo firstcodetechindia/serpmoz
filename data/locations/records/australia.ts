@@ -14,23 +14,26 @@ export const location: LocationRecord = {
   photo: "local-business",
 
   seo: {
-    title: "Digital Growth in Australia",
+    title: "Digital Marketing Agency in Australia",
     metaDescription:
-      "SEO, local search, Google Ads and conversion work for Australian businesses, planned city by city and written with consumer law on advertising claims in mind.",
-    primaryKeyword: "digital marketing services Australia",
+      "SEO company and digital marketing agency services in Australia: local search, Google Ads and conversion work, planned city by city in Australian English.",
+    primaryKeyword: "digital marketing agency in Australia",
     secondaryKeywords: [
-      "SEO services Australia",
+      "SEO company in Australia",
+      "SEO agency in Australia",
+      "digital marketing company in Australia",
+      "SEO services in Australia",
       "local SEO Australia",
       "Google Ads management Australia",
       "marketing for tradies",
       "ecommerce SEO Australia",
     ],
     searchIntent:
-      "Australian business owners and marketing managers, often in trades, property, finance or retail, comparing providers who can improve local visibility and enquiries across one or more cities.",
+      "Australian business owners and marketing managers, often in trades, property, finance or retail, looking to hire a digital marketing agency or SEO company that can improve local visibility and enquiries across one or more cities.",
   },
 
   hero: {
-    title: "Digital Growth in Australia",
+    title: "Digital Marketing Agency and SEO Company in Australia",
     description:
       "Australia is a handful of large coastal cities separated by long distances, and each one behaves as its own market. SERPMOZ plans search, maps, advertising and websites capital by capital and suburb by suburb. Copy is written in Australian English, and claims are kept to what a business can substantiate under consumer law.",
   },
@@ -43,14 +46,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "What digital marketing services does SERPMOZ provide in Australia?",
-    text: "SERPMOZ provides SEO, local SEO, Google Maps optimisation, Google Ads, conversion rate optimisation, ecommerce SEO, content and website development for businesses in Australia. Plans treat each capital city as a separate market and work at suburb level for trades and home services. Copy uses Australian English, and testimonials and performance claims are written to stand up under consumer law. We work with Australian businesses remotely, starting with a growth audit of visibility, enquiries and tracking.",
+    question: "What does a digital marketing agency do for businesses in Australia?",
+    text: "A digital marketing agency for businesses in Australia gets them found and chosen in the cities and suburbs they serve, through SEO, local search and paid advertising. SERPMOZ does this work remotely: SEO, local SEO, Google Maps optimisation, Google Ads, conversion rate optimisation, ecommerce SEO, content and website development. Plans treat each capital city as a separate market and work at suburb level for trades and home services. Copy uses Australian English, and claims are written to stand up under consumer law. We start with a growth audit of visibility, enquiries and tracking.",
   },
 
   overview: {
     heading: "About digital growth in Australia",
     paragraphs: [
-      "Most Australians live in a small number of coastal cities, and those cities are a long way apart. Sydney, Melbourne, Brisbane, Perth and Adelaide have separate competitors, separate media and, between east and west, a meaningful time difference. A business that ranks well in one capital can be invisible in the next. National plans therefore tend to be several city plans joined together, with shared brand work and local execution. The [Sydney page](/locations/australia/sydney/) shows how that looks at the level of one city.",
+      "Most Australians live in a small number of coastal cities, and those cities are a long way apart. Sydney, Melbourne, Brisbane, Perth and Adelaide have separate competitors, separate media and, between east and west, a meaningful time difference. A business that ranks well in one capital can be invisible in the next, which is the first thing a digital marketing agency has to plan around. National plans therefore tend to be several city plans joined together, with shared brand work and local execution. The [Sydney page](/locations/australia/sydney/) shows how that looks at the level of one city.",
       "Within each city, people search by suburb. Australians name the suburb when looking for a plumber, a dentist, a conveyancer or a café, and metropolitan areas contain hundreds of them. Trades and home services are a large part of the economy and of local search, and the people who run them are usually on the tools during the day. That makes [local SEO](/local-seo-services/), clear service-area pages and reliable call handling more valuable here than elaborate brand campaigns.",
       "Advertising claims are taken seriously. Consumer law prohibits misleading or deceptive conduct, and that reaches testimonials, reviews, comparisons, pricing and environmental claims. The regulator has acted against businesses over fake or selectively edited reviews. For marketing this is a practical constraint: every claim on a page or in an ad should be something the business can substantiate. We write with that standard in mind and keep a record of the evidence behind stronger statements.",
       "Local signals carry weight with buyers. A .com.au address can only be registered by an entity with an Australian presence, so many consumers read it as a sign that a business is established locally. Local phone numbers, a visible business number and Australian spelling have the same effect. Overseas companies entering the market are often surprised by how quickly an American tone, wrong seasons or northern hemisphere references make shoppers leave. A well-built site through our [web development](/web-development/) work gets these details right.",
@@ -230,6 +233,10 @@ export const location: LocationRecord = {
   resources: ["sizing-search-opportunities-by-value", "conversion-work-without-ab-testing-traffic", "attribution-questions-worth-answering"],
 
   faqs: [
+    {
+      q: "How do I choose a digital marketing agency in Australia?",
+      a: "Work out first whether you need one city or several, because that decides what to ask. For a single city, the agency should talk about suburbs, service areas and calls or quote requests per location. For several, it should keep research, budgets and reporting separate for each capital. Listen to the language: an agency that does not use Australian terms and seasons will aim content at phrases nobody here types. Ask how it gathers reviews, since filtered or incentivised reviews fall foul of consumer law, and how it shows the correct state licence on pages and adverts. Be wary of superlatives in its own pitch.",
+    },
     {
       q: "What digital marketing services are available for Australian businesses?",
       a: "We provide SEO, local SEO, Google Maps optimisation, Google Ads, conversion rate optimisation, ecommerce SEO, content marketing and website development. The combination depends on whether you sell locally, across several cities or nationally, which we establish in the growth audit.",

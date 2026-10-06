@@ -18,23 +18,26 @@ export const location: LocationRecord = {
   photo: "technology",
 
   seo: {
-    title: "Digital Growth & SEO Services in Noida",
+    title: "Digital Marketing Agency in Noida",
     metaDescription:
-      "SEO, local search, Google Ads and lead generation for Noida and Greater Noida businesses, planned around sector-based search and a fast-growing population.",
-    primaryKeyword: "digital marketing services in Noida",
+      "SEO company and digital marketing agency services for Noida and Greater Noida: sector-level local SEO, Google Ads and lead generation, done remotely.",
+    primaryKeyword: "digital marketing agency in Noida",
     secondaryKeywords: [
+      "SEO company in Noida",
+      "SEO agency in Noida",
+      "digital marketing company in Noida",
       "SEO services in Noida",
+      "digital marketing agency near me",
+      "digital marketing agency in Greater Noida",
+      "SEO company in Greater Noida",
       "local SEO Noida",
-      "digital marketing company in Greater Noida",
-      "Google Ads management Noida",
-      "lead generation Noida",
     ],
     searchIntent:
-      "Owners and marketing managers at Noida IT firms, manufacturers, institutes, developers and local service businesses looking for help winning enquiries in specific sectors and across the wider region.",
+      "Owners and marketing managers at Noida IT firms, manufacturers, institutes, developers and local service businesses who are ready to hire a digital marketing agency or SEO company to win enquiries in specific sectors and across the wider region.",
   },
 
   hero: {
-    title: "Digital Growth & SEO Services in Noida",
+    title: "Digital Marketing Agency and SEO Company in Noida",
     description:
       "Noida was laid out on a grid, and people search it that way: by sector number, by expressway and by society name. IT campuses, electronics factories, universities and newly occupied housing all sit within that grid, each with different buyers. SERPMOZ plans search, maps, paid media and follow-up around the sectors you serve, and treats Greater Noida as the separate market it is.",
   },
@@ -47,14 +50,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "How does local SEO work in Noida?",
-    text: "Local SEO in Noida is organised by sector. People search for a service with a sector number, a housing society or a metro station, and Google shows businesses close to that point. SERPMOZ, working remotely, sets up an accurate Business Profile and page for each location, aligns them with the sectors it can serve, builds a routine for genuine reviews and tracks calls and messages. Greater Noida and Greater Noida West are planned as separate catchments.",
+    question: "What does a digital marketing agency do for businesses in Noida?",
+    text: "A digital marketing agency working for a Noida business handles SEO, local SEO, Google Ads, lead generation and enquiry follow-up, and here most of it is organised by sector. People search for a service with a sector number, a housing society or a metro station, and Google shows businesses close to that point. SERPMOZ, working remotely, sets up an accurate Business Profile and page for each location, builds a routine for genuine reviews and tracks calls and messages. Greater Noida and Greater Noida West are planned as separate catchments.",
   },
 
   overview: {
     heading: "About digital growth in Noida",
     paragraphs: [
-      "Noida is a planned city, and its numbered sectors each have a recognisable role. Sector 18 is the established retail and restaurant centre. Sector 62 and the stretch along the Noida Expressway hold IT parks, corporate offices and institutes. Sector 63 and the older industrial phases house small and mid-sized manufacturing units. Residential sectors fill the space between. Knowing which sector a customer lives or works in tells you a good deal about what they will search for.",
+      "Noida is a planned city, and its numbered sectors each have a recognisable role, which any SEO company working here has to learn first. Sector 18 is the established retail and restaurant centre. Sector 62 and the stretch along the Noida Expressway hold IT parks, corporate offices and institutes. Sector 63 and the older industrial phases house small and mid-sized manufacturing units. Residential sectors fill the space between. Knowing which sector a customer lives or works in tells you a good deal about what they will search for.",
       "The city's economy has several distinct layers. IT and IT services firms sell to clients elsewhere in India and abroad. Electronics and component manufacturers, along with their suppliers, sell to other businesses through long relationships and formal enquiries. Universities and private colleges recruit students from across north India. These need different programmes: [lead generation](/lead-generation/) for the first two, and admissions-cycle campaigns for [education](/industries/education/).",
       "The newest layer is residential. Large housing societies in central Noida and Greater Noida West have filled quickly, and each newly occupied tower creates demand for schools, clinics, interiors, fitness, groceries and repairs. Residents arrive without established habits and choose providers through search, maps and society groups. For local businesses this is an unusual chance to become the default option before competitors settle in.",
     ],
@@ -221,6 +224,10 @@ export const location: LocationRecord = {
 
   faqs: [
     {
+      q: "Is SERPMOZ an SEO company in Noida?",
+      a: "SERPMOZ describes itself as an AI-powered digital growth company, and the work is what a Noida business would hire an SEO company or digital marketing agency for. It is delivered remotely, since we have no office in Noida or Greater Noida. For resident-facing businesses that means Business Profiles, sector-level pages, reviews and Google Ads by sector. For IT firms, manufacturers and institutes it means organic search, capability and service pages, LinkedIn activity and a qualified enquiry process. Greater Noida and Greater Noida West are planned as their own catchments.",
+    },
+    {
       q: "Which digital marketing services are available for businesses in Noida?",
       a: "Local SEO, organic SEO, Google Ads, lead generation, WhatsApp automation, LinkedIn marketing, Google Maps SEO and landing pages. Resident-facing businesses usually start with maps and paid search by sector. Manufacturers, IT firms and institutes usually start with organic search, content and a properly qualified enquiry process.",
     },
@@ -243,6 +250,10 @@ export const location: LocationRecord = {
     {
       q: "How does the growth audit work?",
       a: "We review your website, profiles, campaigns, tracking and enquiry handling, and size demand by sector and category. You receive a prioritised plan covering what to fix, where to invest and what to stop. The audit sets out assumptions openly and does not promise rankings or lead volumes.",
+    },
+    {
+      q: "How do I find a good digital marketing agency near me in Noida?",
+      a: "Three questions sort the field quickly. First, what would they do about sector pages: a sound answer is a page only where you have a branch, a society you serve or a different offer, never one per sector. Second, whether they budget Noida, Greater Noida and Noida Extension as separate catchments. Third, whether they ask if your customers should be targeted where they live or where they work, since many commute across the NCR. Physical nearness matters for premises photographs and little else, and your own team can supply those. Map results depend on your address, not your agency's.",
     },
   ],
 

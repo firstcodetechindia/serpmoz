@@ -8,7 +8,8 @@ import { ArticleMeta } from "@/components/resources/article-list";
 import { FinalCta } from "@/components/sections/final-cta";
 import { JsonLd } from "@/components/seo/json-ld";
 import { LinkList } from "@/components/services/page-parts";
-import { articles, getArticle, readingTime } from "@/data/resources";
+import { RichText } from "@/components/ui/rich-text";
+import { articles, clusters, getArticle, readingTime, seriesOf } from "@/data/resources";
 import { getService } from "@/data/services";
 import { categoryName, formatDate } from "@/lib/resources";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -35,8 +36,12 @@ export default async function ArticlePage({ params }: Props) {
   if (!a) notFound();
   const path = `/resources/${a.slug}/`;
   const others = articles.filter((x) => x.slug !== a.slug);
-  // Same category first, then the rest in publication order.
-  const more = [...others.filter((x) => x.category === a.category), ...others.filter((x) => x.category !== a.category)].slice(0, 3);
+  // The rest of the series, if this piece belongs to one.
+  const series = seriesOf(a);
+  const cluster = a.cluster ? clusters[a.cluster] : undefined;
+  // Then other reading: same category first, never repeating the series.
+  const rest = others.filter((x) => !series.includes(x));
+  const more = [...rest.filter((x) => x.category === a.category), ...rest.filter((x) => x.category !== a.category)].slice(0, 3);
   const relatedServices = a.relatedServices.map(getService).filter((s) => s !== undefined);
 
   return (
@@ -91,14 +96,14 @@ export default async function ArticlePage({ params }: Props) {
               <section key={s.heading} id={anchor(s.heading)} className="scroll-mt-28 border-t border-line py-9 first:border-t-0 first:pt-0">
                 <h2 className="text-h3 font-semibold text-navy">{s.heading}</h2>
                 {s.paragraphs.map((p) => (
-                  <p key={p} className="mt-4 text-[1.0625rem] leading-[1.7] text-ink/85">{p}</p>
+                  <p key={p} className="mt-4 text-[1.0625rem] leading-[1.7] text-ink/85"><RichText text={p} /></p>
                 ))}
                 {s.points ? (
                   <ul className="mt-5 space-y-2.5">
                     {s.points.map((pt) => (
                       <li key={pt} className="flex gap-3 text-[1.0625rem] leading-relaxed text-ink">
                         <span aria-hidden className="mt-[0.7em] size-1.5 shrink-0 rounded-full bg-blue" />
-                        {pt}
+                        <RichText text={pt} />
                       </li>
                     ))}
                   </ul>
@@ -108,6 +113,30 @@ export default async function ArticlePage({ params }: Props) {
           </div>
         </div>
       </article>
+
+      {cluster && series.length ? (
+        <section aria-labelledby="series-title" className="border-t border-line bg-canvas py-14 md:py-20">
+          <div className="shell grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-8">
+            <div className="min-w-0 lg:col-span-4">
+              <h2 id="series-title" className="label-mono text-muted">In this series</h2>
+              <p className="mt-4 max-w-sm text-h3 font-semibold text-navy">{cluster.name}</p>
+              <Link href={cluster.pillar} className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-navy underline decoration-navy/25 decoration-1 underline-offset-[5px] hover:decoration-orange hover:decoration-2">
+                {cluster.pillarLabel} →
+              </Link>
+            </div>
+            <ol className="min-w-0 border-b border-line lg:col-span-8">
+              {series.map((x) => (
+                <li key={x.slug} className="border-t border-line">
+                  <Link href={`/resources/${x.slug}/`} className="group flex items-baseline justify-between gap-6 py-4">
+                    <span className="text-lg leading-snug font-semibold tracking-[-0.02em] text-navy transition-colors group-hover:text-blue-ink">{x.title}</span>
+                    <span className="label-mono shrink-0 text-[0.6875rem] text-muted">{readingTime(x)} min</span>
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+      ) : null}
 
       {relatedServices.length ? (
         <section className="border-t border-line py-14 md:py-20">

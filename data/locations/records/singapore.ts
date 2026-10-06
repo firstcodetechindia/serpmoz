@@ -14,23 +14,25 @@ export const location: LocationRecord = {
   photo: "finance",
 
   seo: {
-    title: "Digital Growth in Singapore",
+    title: "Digital Marketing Agency in Singapore",
     metaDescription:
-      "SEO, LinkedIn and Google advertising, AI search visibility and quality websites for Singapore businesses and regional headquarters serving South-East Asia.",
-    primaryKeyword: "digital marketing services Singapore",
+      "Digital marketing agency services in Singapore for B2B, finance and technology firms: SEO, LinkedIn and Google ads, and websites built for regional reach.",
+    primaryKeyword: "digital marketing agency in Singapore",
     secondaryKeywords: [
-      "SEO services Singapore",
+      "SEO company in Singapore",
+      "SEO agency in Singapore",
+      "digital marketing company in Singapore",
+      "SEO services in Singapore",
       "B2B marketing Singapore",
       "LinkedIn advertising Singapore",
       "international SEO South-East Asia",
-      "web development Singapore",
     ],
     searchIntent:
-      "Marketing leaders at Singapore companies and regional headquarters, mostly in B2B, finance and technology, seeking a partner for search, paid media and website quality across Singapore and nearby markets.",
+      "Marketing leaders at Singapore companies and regional headquarters, mostly in B2B, finance and technology, who want to hire a digital marketing agency or SEO company for search, paid media and website quality in Singapore and nearby markets.",
   },
 
   hero: {
-    title: "Digital Growth in Singapore",
+    title: "Digital Marketing Agency and SEO Company in Singapore",
     description:
       "Singapore is a city-state where a domestic market and a regional headquarters often share one website. Buyers are well informed, business is conducted in English, and a slow or careless site is noticed immediately. SERPMOZ plans search, paid media and web builds for companies selling in Singapore, from Singapore to South-East Asia, or both.",
   },
@@ -43,14 +45,14 @@ export const location: LocationRecord = {
   ],
 
   answer: {
-    question: "What digital marketing services does SERPMOZ provide in Singapore?",
-    text: "SERPMOZ provides SEO, international SEO for South-East Asia, AI search visibility work, LinkedIn and Google advertising, lead generation, conversion optimisation and website development for businesses in Singapore. The emphasis is on B2B, finance and technology companies, where buyers research carefully and expect a polished, fast site. Lead capture and messaging are planned around personal data protection requirements. We work with Singapore businesses remotely and begin with a growth audit covering visibility, tracking and enquiry quality.",
+    question: "What does a digital marketing agency do for businesses in Singapore?",
+    text: "A digital marketing agency in Singapore builds search visibility, runs advertising and improves the website for a small, crowded market that often sells into the region. SERPMOZ does that work remotely: SEO, international SEO for South-East Asia, AI search visibility, LinkedIn and Google advertising, lead generation, conversion optimisation and website development. The emphasis is on B2B, finance and technology companies, where buyers research carefully. Lead capture is planned around personal data protection requirements. We begin with a growth audit covering visibility, tracking and enquiry quality.",
   },
 
   overview: {
     heading: "About digital growth in Singapore",
     paragraphs: [
-      "Singapore is small in area and dense in competition. A single city contains global banks, regional technology headquarters, trading houses, professional firms and a consumer market with high expectations. Because there is no hinterland, a business cannot grow by simply opening in the next city. Growth comes from taking share in a crowded home market or from selling outward into the region. Most of the plans we write here begin by settling which of those two a company is really pursuing, since the work differs sharply.",
+      "Singapore is small in area and dense in competition. A single city contains global banks, regional technology headquarters, trading houses, professional firms and a consumer market with high expectations. Because there is no hinterland, a business cannot grow by simply opening in the next city. Growth comes from taking share in a crowded home market or from selling outward into the region. The first job for a digital marketing agency here is settling which of those two a company is really pursuing, since the work differs sharply.",
       "Many companies use Singapore as a base for South-East Asia, running Indonesia, Malaysia, Thailand, Vietnam and the Philippines from one office. Those countries have different languages, platforms, payment habits and competitors, and a Singapore-centred site in English reaches only part of each. Deciding how to structure languages and country sections is a core [international SEO](/international-seo/) question, and it is far cheaper to answer before a site is built than after regional pages have multiplied without a plan.",
       "English is the language of business and administration, which makes the market accessible to overseas firms and also means competing with global content. A page about treasury software or corporate law is measured against the international publishers that already rank for the topic, not only against local rivals. That raises the standard for depth and accuracy. For companies selling to other businesses, considered [SEO work](/seo-services/) and focused [LinkedIn advertising](/linkedin-ads/) usually do more than broad consumer-style campaigns.",
       "Expectations of website quality are high. Buyers here are used to well-run digital services, from banking to government transactions, and they judge a company by the same standard. Slow pages, vague copy, missing company details or a clumsy enquiry form cost credibility quickly, particularly in finance and technology. We treat the website as part of the sales argument, and often recommend improving it through [UI and UX design](/ui-ux-design/) before spending more on traffic.",
@@ -230,6 +232,10 @@ export const location: LocationRecord = {
   resources: ["measuring-ai-search-visibility", "attribution-questions-worth-answering", "ai-moved-the-bottleneck"],
 
   faqs: [
+    {
+      q: "How do I choose a digital marketing agency in Singapore?",
+      a: "Decide whether you are buying for Singapore or for the region, then choose accordingly. A domestic plan needs an agency that understands a small audience: frequency control, creative rotation and exclusion lists matter because the same buyers see you repeatedly. A regional plan needs international SEO, country targeting and native-language writers for each market, entered in sequence. Either way, look at the agency's own site, as buyers here expect speed and polish. Ask how lead forms state purpose and consent under personal data protection rules, and who checks lists against do-not-call obligations. B2B firms should ask about LinkedIn and the depth of English content before local SEO.",
+    },
     {
       q: "What digital marketing services are available for businesses in Singapore?",
       a: "We offer SEO, international SEO, AI search visibility work, technical SEO, LinkedIn and Google advertising, lead generation, conversion optimisation and website design and development. The mix is set after a growth audit and depends on whether your priority is Singapore, the wider region or both.",
