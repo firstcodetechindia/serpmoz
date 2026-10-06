@@ -173,7 +173,7 @@ export function Header() {
       data-scrolled={scrolled ? "" : undefined}
       className={cn(
         "site-header fixed inset-x-0 top-0 z-50 border-b transition-[background-color,border-color,box-shadow] duration-300",
-        scrolled ? "border-line bg-white shadow-[0_10px_30px_-18px_rgb(11_31_58/0.35)]" : "border-[var(--hd-line)] bg-transparent",
+        scrolled ? "border-line bg-white shadow-[0_10px_30px_-18px_rgb(11_31_58/0.35)]" : "border-transparent bg-transparent",
       )}
     >
       <a
