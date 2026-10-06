@@ -1,6 +1,6 @@
 import type { NavGroup, NavLink } from "@/types";
 import { industries } from "@/data/industries";
-import { countries } from "@/data/locations";
+import { countries, markets } from "@/data/locations";
 import { serviceCategories } from "@/data/services/catalog";
 
 const trim = (v?: string) => (v ?? "").trim().replace(/\/+$/, "");
@@ -59,12 +59,23 @@ const menuServices: Record<string, string[]> = {
   "web-digital": ["/web-development/", "/nextjs-development/", "/wordpress-development/", "/shopify-development/", "/webflow-development/", "/ui-ux-design/"],
 };
 
+/** One short line per discipline for menus. The full statement lives in the service catalog. */
+const disciplineLines: Record<string, string> = {
+  "search-ai": "Be found in search, maps and AI answers",
+  performance: "Paid demand measured on revenue",
+  "content-social": "Attention and authority that compound",
+  "conversion-automation": "Turn visits into enquiries, then follow up",
+  "web-digital": "Sites built for speed and conversion",
+};
+
 const solutionColumns = serviceCategories.map((c) => ({
+  id: c.id,
   title: c.label,
+  description: disciplineLines[c.id],
   href: c.href,
   links: menuServices[c.id].map((href) => {
     const item = c.items.find((i) => i.href === href)!;
-    return { label: item.name, href };
+    return { label: item.name, href, description: item.summary };
   }),
 }));
 
@@ -84,7 +95,7 @@ export const navigation: NavGroup[] = [
     all: "All industries",
     links: navIndustries.map((slug) => {
       const i = industries.find((x) => x.slug === slug)!;
-      return { label: i.name, href: `/industries/${i.slug}/` };
+      return { label: i.name, href: `/industries/${i.slug}/`, description: i.line };
     }),
   },
   {
@@ -92,9 +103,9 @@ export const navigation: NavGroup[] = [
     href: "/locations/",
     summary: "Local expertise. Global ambition.",
     all: "All locations",
-    links: countries.map((c) => ({ label: c.name, href: `/locations/${c.slug}/`, description: c.cities.length ? c.cities.slice(0, 4).map((x) => x.name).join(", ") : "Market overview" })),
+    links: countries.map((c) => ({ label: c.name, href: `/locations/${c.slug}/`, description: c.cities.length ? c.cities.slice(0, 4).map((x) => x.name).join(", ") : "Market overview", badge: markets.find((m) => m.slug === c.slug)?.code })),
   },
-  { label: "Case Studies", href: "/case-studies/" },
+  { label: "Case Studies", href: "/case-studies/", summary: "How the work is planned and measured." },
   {
     label: "Resources",
     href: "/resources/",

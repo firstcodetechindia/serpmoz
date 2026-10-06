@@ -2,6 +2,8 @@ export type NavLink = {
   label: string;
   href: string;
   description?: string;
+  /** Short code shown in place of an icon, e.g. a country code */
+  badge?: string;
 };
 
 export type NavGroup = {
@@ -11,7 +13,7 @@ export type NavGroup = {
   summary?: string;
   links?: NavLink[];
   /** Titled columns, for menus too large for one list */
-  columns?: { title: string; href: string; links: NavLink[] }[];
+  columns?: { id: string; title: string; href: string; description: string; links: NavLink[] }[];
   /** Label for the link back to the section index */
   all?: string;
 };

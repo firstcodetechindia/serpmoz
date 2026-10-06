@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { NavigationMenu } from "radix-ui";
-import { ArrowUpRight, ChevronDown } from "lucide-react";
+import { NavigationMenu, Tabs } from "radix-ui";
+import { ArrowRight, ChevronDown, ChevronRight } from "lucide-react";
+import { NavTile, navIcon } from "@/components/navigation/nav-icons";
 import { Logo } from "@/components/navigation/logo";
 import { MobileNav } from "@/components/navigation/mobile-nav";
 import { CtaLink } from "@/components/ui/cta-link";
@@ -11,47 +13,60 @@ import { useScrolled } from "@/hooks/use-scrolled";
 import { cta, navigation } from "@/lib/config/site";
 import { activeGroup, isCurrent } from "@/lib/nav-active";
 import { cn } from "@/lib/utils";
-import type { NavGroup } from "@/types";
+import type { NavGroup, NavLink } from "@/types";
 
 const triggerClass =
-  "group relative flex h-10 items-center gap-1 rounded-control px-3 text-[0.9375rem] font-medium text-[var(--hd-soft)] transition-colors hover:text-[var(--hd-fg)] data-[state=open]:text-[var(--hd-fg)] after:absolute after:inset-x-3 after:bottom-1 after:h-0.5 after:origin-left after:scale-x-0 after:rounded-full after:bg-orange after:transition-transform after:duration-300 hover:after:scale-x-100 data-[state=open]:after:scale-x-100 data-[current]:font-semibold data-[current]:text-[var(--hd-fg)] data-[current]:after:scale-x-100";
+  "group relative flex h-9 items-center gap-1.5 rounded-full px-3.5 text-[0.9375rem] font-medium text-[var(--hd-soft)] transition-colors duration-200 hover:bg-[var(--hd-line)] hover:text-[var(--hd-fg)] data-[state=open]:bg-[var(--hd-line)] data-[state=open]:text-[var(--hd-fg)] data-[current]:font-semibold data-[current]:text-[var(--hd-fg)]";
 
-const itemClass = "group/item block rounded-control px-3 py-2 transition-colors hover:bg-canvas aria-[current=page]:bg-blue-tint";
+/** The dot that marks the section the visitor is in. */
+const CurrentDot = () => <span aria-hidden className="size-1.5 rounded-full bg-orange" />;
 
 /** Marks the link for the page being viewed. */
 const current = (pathname: string, href: string) => (isCurrent(pathname, href) ? ("page" as const) : undefined);
 
-function Columns({ group, pathname }: { group: NavGroup; pathname: string }) {
+const rowClass =
+  "group/item flex items-center gap-3.5 rounded-2xl p-2.5 transition-colors duration-200 hover:bg-canvas aria-[current=page]:bg-blue-tint";
+
+/** One destination: tile, name, one line of description. */
+function Row({ link, pathname }: { link: NavLink; pathname: string }) {
   return (
-    <div className="p-7">
-      <div className="grid grid-cols-5 gap-6">
-        {group.columns!.map((col) => (
-          <div key={col.title}>
-            <NavigationMenu.Link asChild>
-              <Link href={col.href} aria-current={current(pathname, col.href)} className="label-mono block border-b border-line px-3 pb-3 text-navy hover:text-blue-ink aria-[current=page]:border-orange aria-[current=page]:text-blue-ink">
-                {col.title}
-              </Link>
-            </NavigationMenu.Link>
-            <ul className="mt-2">
-              {col.links.map((l) => (
-                <li key={l.href}>
-                  <NavigationMenu.Link asChild>
-                    <Link href={l.href} aria-current={current(pathname, l.href)} className={cn(itemClass, "text-[0.9375rem] text-ink/85 hover:text-navy aria-[current=page]:font-semibold aria-[current=page]:text-blue-ink")}>
-                      {l.label}
-                    </Link>
-                  </NavigationMenu.Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-      <div className="mt-5 flex items-center justify-between border-t border-line px-3 pt-5">
-        <p className="text-sm text-muted">{group.summary}</p>
+    <NavigationMenu.Link asChild>
+      <Link href={link.href} aria-current={current(pathname, link.href)} className={rowClass}>
+        <NavTile link={link} className="group-hover/item:border-navy group-hover/item:bg-navy group-hover/item:text-white group-aria-[current=page]/item:border-blue group-aria-[current=page]/item:bg-blue group-aria-[current=page]/item:text-white" />
+        <span className="min-w-0 flex-1">
+          <span className="flex items-center gap-1.5 text-[0.9375rem] font-semibold text-navy">
+            {link.label}
+            <ArrowRight aria-hidden className="size-3.5 -translate-x-1 text-blue-ink opacity-0 transition-all duration-200 group-hover/item:translate-x-0 group-hover/item:opacity-100" />
+          </span>
+          {link.description ? <span className="mt-0.5 line-clamp-1 text-[0.8125rem] text-muted">{link.description}</span> : null}
+        </span>
+      </Link>
+    </NavigationMenu.Link>
+  );
+}
+
+/** The dark card at the end of every panel: what the section is, and the next step. */
+function Feature({ eyebrow, title, link, label }: { eyebrow: string; title: string; link: string; label: string }) {
+  return (
+    <div className="relative flex h-full flex-col justify-between overflow-hidden rounded-2xl bg-navy p-6 text-white">
+      <div aria-hidden className="glow absolute -top-16 -right-16 size-56 bg-blue/50" />
+      <div aria-hidden className="glow absolute -bottom-20 -left-10 size-48 bg-cyan/25" />
+      <div className="relative">
+        <p className="label-mono text-[0.6875rem] text-cyan">{eyebrow}</p>
+        <p className="mt-3 text-xl leading-snug font-semibold tracking-[-0.02em]">{title}</p>
         <NavigationMenu.Link asChild>
-          <Link href={group.href} className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-ink hover:underline hover:underline-offset-4">
-            {group.all}
-            <ArrowUpRight aria-hidden className="size-4" />
+          <Link href={link} className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-orange">
+            {label}
+            <ArrowRight aria-hidden className="size-4" />
+          </Link>
+        </NavigationMenu.Link>
+      </div>
+      <div className="relative mt-8 border-t border-white/15 pt-5">
+        <p className="text-[0.8125rem] leading-relaxed text-white/70">Not sure where to start? The growth audit finds the work that matters first.</p>
+        <NavigationMenu.Link asChild>
+          <Link href={cta.audit.href} className="mt-3 inline-flex h-10 items-center gap-2 rounded-control bg-orange px-4 text-sm font-semibold text-navy-deep transition-colors hover:bg-orange/90">
+            {cta.audit.label}
+            <ArrowRight aria-hidden className="size-4" />
           </Link>
         </NavigationMenu.Link>
       </div>
@@ -59,39 +74,91 @@ function Columns({ group, pathname }: { group: NavGroup; pathname: string }) {
   );
 }
 
-function Panel({ group, pathname }: { group: NavGroup; pathname: string }) {
-  if (group.columns) return <Columns group={group} pathname={pathname} />;
-  const links = group.links ?? [];
-  const dense = links.length > 9;
+/** Solutions: disciplines down the side, their services beside them. */
+function Disciplines({ group, pathname }: { group: NavGroup; pathname: string }) {
+  const columns = group.columns!;
+  const here = columns.find((c) => c.links.some((l) => isCurrent(pathname, l.href)));
+  const [open, setOpen] = useState((here ?? columns[0]).id);
+
   return (
-    <div className="grid grid-cols-12 gap-8 p-7">
-      <div className="col-span-4 flex flex-col justify-between border-r border-line pr-8">
-        <div>
-          <p className="label-mono text-muted">{group.label}</p>
-          <p className="mt-3 text-[1.375rem] leading-tight font-semibold tracking-[-0.02em] text-navy">{group.summary}</p>
-        </div>
-        <NavigationMenu.Link asChild>
-          <Link href={group.href} className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-blue-ink hover:underline hover:underline-offset-4">
-            {group.all ?? group.label}
-            <ArrowUpRight aria-hidden className="size-4" />
-          </Link>
-        </NavigationMenu.Link>
-      </div>
-      <ul className={cn("col-span-8 grid content-start gap-x-6", dense ? "grid-cols-3 gap-y-0.5" : "grid-cols-2 gap-y-1")}>
-        {links.map((l) => (
-          <li key={l.href + l.label}>
-            <NavigationMenu.Link asChild>
-              <Link href={l.href} aria-current={current(pathname, l.href)} className={itemClass}>
-                <span className="flex items-center justify-between text-[0.9375rem] font-medium text-ink group-aria-[current=page]/item:font-semibold group-aria-[current=page]/item:text-blue-ink">
-                  {l.label}
-                  <ArrowUpRight aria-hidden className="size-3.5 -translate-x-1 text-muted opacity-0 transition-all duration-200 group-hover/item:translate-x-0 group-hover/item:opacity-100" />
+    <Tabs.Root value={open} onValueChange={setOpen} orientation="vertical" className="grid grid-cols-12">
+      <Tabs.List aria-label="Disciplines" className="col-span-3 flex flex-col gap-1 border-r border-line bg-canvas p-3">
+        {columns.map((col) => {
+          const Icon = navIcon(col.id);
+          return (
+            <Tabs.Trigger
+              key={col.id}
+              value={col.id}
+              onMouseEnter={() => setOpen(col.id)}
+              className="group/tab flex cursor-pointer items-center gap-3 rounded-2xl p-2.5 text-left transition-colors duration-200 hover:bg-white data-[state=active]:bg-white data-[state=active]:shadow-[0_8px_24px_-16px_rgb(11_31_58/0.5)]"
+            >
+              <span aria-hidden className="flex size-10 shrink-0 items-center justify-center rounded-xl border border-line bg-white text-navy transition-colors group-data-[state=active]/tab:border-navy group-data-[state=active]/tab:bg-navy group-data-[state=active]/tab:text-white">
+                <Icon className="size-[1.125rem]" strokeWidth={1.75} />
+              </span>
+              <span className="min-w-0 flex-1">
+                <span className="flex items-center gap-2 text-[0.9375rem] font-semibold text-navy">
+                  {col.title}
+                  {col.id === here?.id ? <CurrentDot /> : null}
                 </span>
-                {l.description ? <span className="mt-0.5 block text-[0.8125rem] leading-snug text-muted">{l.description}</span> : null}
-              </Link>
-            </NavigationMenu.Link>
-          </li>
+                <span className="mt-0.5 line-clamp-2 text-[0.8125rem] leading-snug text-muted">{col.description}</span>
+              </span>
+              <ChevronRight aria-hidden className="size-4 text-muted opacity-0 transition-opacity group-data-[state=active]/tab:opacity-100" />
+            </Tabs.Trigger>
+          );
+        })}
+      </Tabs.List>
+
+      <div className="col-span-6 p-6">
+        {columns.map((col) => (
+          <Tabs.Content key={col.id} value={col.id} className="motion-safe:animate-fade-in">
+            <div className="flex items-center justify-between px-2.5">
+              <p className="label-mono text-muted">{col.title}</p>
+              <NavigationMenu.Link asChild>
+                <Link href="/services/" className="inline-flex items-center gap-1 text-[0.8125rem] font-medium text-blue-ink hover:underline hover:underline-offset-4">
+                  {group.all}
+                  <ArrowRight aria-hidden className="size-3.5" />
+                </Link>
+              </NavigationMenu.Link>
+            </div>
+            <ul className="mt-3 grid grid-cols-2 gap-x-2 gap-y-0.5">
+              {col.links.map((l) => (
+                <li key={l.href}>
+                  <NavigationMenu.Link asChild>
+                    <Link href={l.href} aria-current={current(pathname, l.href)} className="group/item block rounded-xl px-2.5 py-2.5 transition-colors duration-200 hover:bg-canvas aria-[current=page]:bg-blue-tint">
+                      <span className="flex items-center gap-1.5 text-[0.9375rem] font-semibold text-navy group-aria-[current=page]/item:text-blue-ink">
+                        {l.label}
+                        <ArrowRight aria-hidden className="size-3.5 -translate-x-1 text-blue-ink opacity-0 transition-all duration-200 group-hover/item:translate-x-0 group-hover/item:opacity-100" />
+                      </span>
+                      {l.description ? <span className="mt-0.5 line-clamp-2 text-[0.8125rem] leading-snug text-muted">{l.description}</span> : null}
+                    </Link>
+                  </NavigationMenu.Link>
+                </li>
+              ))}
+            </ul>
+          </Tabs.Content>
+        ))}
+      </div>
+
+      <div className="col-span-3 p-3 pl-0">
+        <Feature eyebrow={group.label} title={group.summary ?? ""} link={group.href} label={group.all ?? group.label} />
+      </div>
+    </Tabs.Root>
+  );
+}
+
+function Panel({ group, pathname }: { group: NavGroup; pathname: string }) {
+  if (group.columns) return <Disciplines group={group} pathname={pathname} />;
+  const links = group.links ?? [];
+  return (
+    <div className="grid grid-cols-12">
+      <ul className={cn("col-span-9 grid content-start gap-x-2 gap-y-1 p-5", links.length > 8 ? "grid-cols-3" : "grid-cols-2")}>
+        {links.map((l) => (
+          <li key={l.href + l.label}><Row link={l} pathname={pathname} /></li>
         ))}
       </ul>
+      <div className="col-span-3 p-3 pl-0">
+        <Feature eyebrow={group.label} title={group.summary ?? ""} link={group.href} label={group.all ?? group.label} />
+      </div>
     </div>
   );
 }
@@ -123,11 +190,12 @@ export function Header() {
           <Logo className="text-[var(--hd-fg)] transition-colors duration-300" />
         </Link>
 
-        <NavigationMenu.List className="hidden items-center xl:flex">
+        <NavigationMenu.List className="hidden items-center gap-0.5 xl:flex">
           {navigation.map((group) =>
             group.links ? (
               <NavigationMenu.Item key={group.label}>
                 <NavigationMenu.Trigger className={triggerClass} data-current={active === group.label ? "" : undefined}>
+                  {active === group.label ? <CurrentDot /> : null}
                   {group.label}
                   {active === group.label ? <span className="sr-only"> (current section)</span> : null}
                   <ChevronDown aria-hidden className="size-3.5 opacity-60 transition-transform duration-200 group-data-[state=open]:rotate-180" />
@@ -140,6 +208,7 @@ export function Header() {
               <NavigationMenu.Item key={group.label}>
                 <NavigationMenu.Link asChild>
                   <Link href={group.href} className={triggerClass} data-current={active === group.label ? "" : undefined} aria-current={isCurrent(pathname, group.href) ? "page" : undefined}>
+                    {active === group.label ? <CurrentDot /> : null}
                     {group.label}
                   </Link>
                 </NavigationMenu.Link>
@@ -159,7 +228,7 @@ export function Header() {
         </div>
 
         <div className="absolute top-full right-5 left-5 flex justify-center pt-2 perspective-[2000px] md:right-10 md:left-10">
-          <NavigationMenu.Viewport className="relative h-[var(--radix-navigation-menu-viewport-height)] w-full origin-top overflow-hidden rounded-2xl border border-line bg-surface shadow-float transition-[height] duration-300 ease-out-quint motion-safe:data-[state=open]:animate-menu-in" />
+          <NavigationMenu.Viewport className="relative h-[var(--radix-navigation-menu-viewport-height)] w-full origin-top overflow-hidden rounded-[1.75rem] border border-line bg-surface shadow-[0_40px_80px_-30px_rgb(11_31_58/0.45)] transition-[height] duration-300 ease-out-quint motion-safe:data-[state=open]:animate-menu-in" />
         </div>
       </NavigationMenu.Root>
     </header>
