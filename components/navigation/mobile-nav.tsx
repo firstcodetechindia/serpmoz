@@ -8,7 +8,7 @@ import { ArrowLeft, ArrowRight, ArrowUpRight, ChevronRight, Menu, X } from "luci
 import { Logo } from "@/components/navigation/logo";
 import { NavIcon, NavTile } from "@/components/navigation/nav-icons";
 import { CtaLink } from "@/components/ui/cta-link";
-import { cta, navigation, site } from "@/lib/config/site";
+import { cta, headerNavigation as navigation, site } from "@/lib/config/site";
 import { activeGroup, isCurrent } from "@/lib/nav-active";
 import { cn } from "@/lib/utils";
 
@@ -216,16 +216,16 @@ export function MobileNav() {
       }}
     >
       <Dialog.Trigger
-        className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full text-[var(--hd-fg)] transition-colors hover:bg-[var(--hd-line)] xl:hidden"
+        className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full text-[var(--hd-fg)] transition-colors hover:bg-[var(--hd-line)] lg:hidden"
         aria-label="Open menu"
       >
         <Menu aria-hidden className="size-5" />
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 z-[69] bg-navy-deep/60 motion-safe:data-[state=closed]:animate-[fade-out_260ms_ease-in_both] motion-safe:data-[state=open]:animate-[fade-in_260ms_ease-out_both] xl:hidden" />
+        <Dialog.Overlay className="fixed inset-0 z-[69] bg-navy-deep/60 motion-safe:data-[state=closed]:animate-[fade-out_260ms_ease-in_both] motion-safe:data-[state=open]:animate-[fade-in_260ms_ease-out_both] lg:hidden" />
         <Dialog.Content
           aria-describedby={undefined}
-          className="fixed inset-y-0 right-0 z-[70] flex w-full flex-col overflow-hidden bg-navy-deep shadow-[-30px_0_80px_-20px_rgb(0_0_0/0.6)] will-change-transform motion-safe:data-[state=closed]:animate-[drawer-out_280ms_cubic-bezier(0.4,0,1,1)_both] motion-safe:data-[state=open]:animate-[drawer-in_380ms_var(--ease-out-quint)_both] sm:max-w-[26rem] xl:hidden"
+          className="fixed inset-y-0 right-0 z-[70] flex w-full flex-col overflow-hidden bg-navy-deep shadow-[-30px_0_80px_-20px_rgb(0_0_0/0.6)] will-change-transform motion-safe:data-[state=closed]:animate-[drawer-out_280ms_cubic-bezier(0.4,0,1,1)_both] motion-safe:data-[state=open]:animate-[drawer-in_380ms_var(--ease-out-quint)_both] sm:max-w-[26rem] lg:hidden"
         >
           <Dialog.Title className="sr-only">Menu</Dialog.Title>
           <div aria-hidden className="glow pointer-events-none absolute -top-24 -right-20 size-72 bg-blue/45" />
@@ -240,7 +240,7 @@ export function MobileNav() {
               </button>
             ) : (
               <Link href="/" aria-label="SERPMOZ home" onClick={close} className="pl-1">
-                <Logo tone="dark" />
+                <Logo tone="dark" tagline />
               </Link>
             )}
             <Dialog.Close className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full bg-white/10 active:bg-white/20" aria-label="Close menu">

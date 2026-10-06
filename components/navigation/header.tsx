@@ -10,13 +10,13 @@ import { Logo } from "@/components/navigation/logo";
 import { MobileNav } from "@/components/navigation/mobile-nav";
 import { CtaLink } from "@/components/ui/cta-link";
 import { useScrolled } from "@/hooks/use-scrolled";
-import { cta, navigation } from "@/lib/config/site";
+import { cta, headerNavigation as navigation } from "@/lib/config/site";
 import { activeGroup, isCurrent } from "@/lib/nav-active";
 import { cn } from "@/lib/utils";
 import type { NavGroup, NavLink } from "@/types";
 
 const triggerClass =
-  "group relative flex h-9 items-center gap-1.5 rounded-full px-3.5 text-[0.9375rem] font-medium text-[var(--hd-soft)] transition-colors duration-200 hover:bg-[var(--hd-line)] hover:text-[var(--hd-fg)] data-[state=open]:bg-[var(--hd-line)] data-[state=open]:text-[var(--hd-fg)] data-[current]:font-semibold data-[current]:text-[var(--hd-fg)]";
+  "group relative flex h-9 items-center gap-1.5 rounded-full px-3.5 text-[0.9375rem] whitespace-nowrap font-medium text-[var(--hd-soft)] transition-colors duration-200 hover:bg-[var(--hd-line)] hover:text-[var(--hd-fg)] data-[state=open]:bg-[var(--hd-line)] data-[state=open]:text-[var(--hd-fg)] data-[current]:font-semibold data-[current]:text-[var(--hd-fg)]";
 
 /** The dot that marks the section the visitor is in. */
 const CurrentDot = () => <span aria-hidden className="size-1.5 rounded-full bg-orange" />;
@@ -184,13 +184,14 @@ export function Header() {
       <NavigationMenu.Root
         delayDuration={80}
         aria-label="Primary"
-        className={cn("shell relative flex items-center justify-between transition-[height] duration-300 ease-out-quint", scrolled ? "h-16" : "h-20")}
+        className={cn("shell relative flex items-center justify-between gap-4 transition-[height] duration-300 ease-out-quint lg:grid lg:grid-cols-[1fr_auto_1fr] lg:gap-6", scrolled ? "h-[4.5rem]" : "h-[5.25rem]")}
       >
-        <Link href="/" aria-label="SERPMOZ home" className="rounded-md">
-          <Logo className="text-[var(--hd-fg)] transition-colors duration-300" />
+        {/* Logo on the left with room around it, the menu centred in the bar, the actions on the right */}
+        <Link href="/" aria-label="SERPMOZ home" className="justify-self-start rounded-md py-1">
+          <Logo tagline className="text-[var(--hd-fg)] transition-colors duration-300" />
         </Link>
 
-        <NavigationMenu.List className="hidden items-center gap-0.5 xl:flex">
+        <NavigationMenu.List className="hidden items-center gap-1 lg:flex">
           {navigation.map((group) =>
             group.links ? (
               <NavigationMenu.Item key={group.label}>
@@ -217,8 +218,8 @@ export function Header() {
           )}
         </NavigationMenu.List>
 
-        <div className="flex items-center gap-1.5">
-          <CtaLink href={cta.strategist.href} variant="ghost" size="sm" arrow={false} className="hidden h-10 text-[var(--hd-fg)] hover:bg-[var(--hd-line)] min-[1400px]:inline-flex">
+        <div className="flex items-center gap-1.5 justify-self-end">
+          <CtaLink href={cta.strategist.href} variant="ghost" size="sm" arrow={false} className="hidden h-10 text-[var(--hd-fg)] hover:bg-[var(--hd-line)] xl:inline-flex">
             Talk to a Strategist
           </CtaLink>
           <CtaLink href={cta.audit.href} variant="primary" size="sm" className="hidden h-10 px-4 sm:inline-flex">

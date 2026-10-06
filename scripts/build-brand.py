@@ -83,6 +83,14 @@ TAG_TRACK = (WORD_W - tag_w) / (len(TAG) - 1)    # the tagline is set to the exa
 tag, tag_w = outline(SEMI, TAG, TAG_SIZE, TAG_TRACK)
 
 
+# Header tagline: the same words set larger and closer, still exactly as wide as the name,
+# so it stays readable at navigation size.
+_, unit_w = outline(SEMI, TAG, 1.0, 0)
+HEAD_TRACK = 0.55
+HEAD_SIZE = (WORD_W - HEAD_TRACK * (len(TAG) - 1)) / unit_w
+head_tag, _ = outline(SEMI, TAG, HEAD_SIZE, HEAD_TRACK)
+
+
 def word(x, baseline, a=NAVY, b=BLUE):
     return f'<path transform="translate({x:.2f} {baseline:.2f})" fill="{a}" d="{serp}"/>\n  <path transform="translate({x + serp_w + TRACK:.2f} {baseline:.2f})" fill="{b}" d="{moz}"/>'
 
@@ -144,6 +152,9 @@ export const wordmark = {{
   /** Where "MOZ" starts */
   mozX: {serp_w + TRACK:.2f},
   moz: "{moz}",
+  /** "AI-POWERED DIGITAL GROWTH", set to the width of the name for use at header size */
+  tagline: "{head_tag}",
+  taglineCap: {HEAD_SIZE * CAP:.2f},
 }};
 ''')
 print("wrote", len(files), "SVG files; wordmark width", round(WORD_W, 1), "tagline tracking", round(TAG_TRACK, 2))

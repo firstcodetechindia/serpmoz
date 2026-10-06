@@ -37,21 +37,26 @@ export function LogoMark({ className, accent = true }: { className?: string; acc
 }
 
 /**
- * The compact logo for the header, footer and menus: symbol and name, never
- * the tagline. "SERP" follows the surrounding text colour; "MOZ" is brand blue.
- * The name is drawn from outlines, so it looks the same before fonts load.
+ * The logo for the header, footer and menus: symbol and name, with the tagline
+ * under the name when `tagline` is set. "SERP" follows the surrounding text
+ * colour; "MOZ" is brand blue. Name and tagline are drawn from outlines, so
+ * they look the same before fonts load, and the tagline is exactly as wide as
+ * the name.
  */
-export function Logo({ className, tone = "light" }: { className?: string; tone?: "light" | "dark" }) {
+export function Logo({ className, tone = "light", tagline = false }: { className?: string; tone?: "light" | "dark"; tagline?: boolean }) {
+  const gap = 7.5;
+  const height = tagline ? wordmark.capHeight + gap + wordmark.taglineCap : wordmark.capHeight;
   return (
-    <span className={cn("inline-flex items-center gap-2", tone === "dark" ? "text-white" : "text-navy", className)}>
-      <LogoMark />
-      <svg viewBox={`0 0 ${wordmark.width} ${wordmark.capHeight}`} aria-hidden className="h-[0.9375rem] w-auto md:h-4">
+    <span className={cn("inline-flex items-center gap-2.5", tone === "dark" ? "text-white" : "text-navy", className)}>
+      <LogoMark className={tagline ? "size-9 md:size-10" : undefined} />
+      <svg viewBox={`0 0 ${wordmark.width} ${height}`} aria-hidden className={cn("w-auto", tagline ? "h-[1.75rem] md:h-[2.125rem]" : "h-[0.9375rem] md:h-4")}>
         <g transform={`translate(0 ${wordmark.capHeight})`}>
           <path d={wordmark.serp} fill="currentColor" />
           <path d={wordmark.moz} transform={`translate(${wordmark.mozX} 0)`} fill="var(--color-blue)" />
         </g>
+        {tagline ? <path d={wordmark.tagline} transform={`translate(0 ${height})`} fill="currentColor" fillOpacity="0.7" /> : null}
       </svg>
-      <span className="sr-only">SERPMOZ</span>
+      <span className="sr-only">SERPMOZ{tagline ? ", AI-powered digital growth" : ""}</span>
     </span>
   );
 }

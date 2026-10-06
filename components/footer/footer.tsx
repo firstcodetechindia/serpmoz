@@ -39,7 +39,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-5 pb-5 md:gap-10 md:py-10 lg:grid-cols-12 lg:gap-8">
           {/* Who we are */}
           <div className="lg:col-span-4">
-            <Link href="/" aria-label="SERPMOZ home" className="inline-block rounded-md"><Logo tone="dark" /></Link>
+            <Link href="/" aria-label="SERPMOZ home" className="inline-block rounded-md"><Logo tone="dark" tagline /></Link>
             <p className="mt-4 max-w-xs text-lg leading-snug font-semibold tracking-[-0.02em] md:mt-5 md:text-xl">
               AI can do the work. <span className="text-white/50">Experts know what work matters.</span>
             </p>

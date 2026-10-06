@@ -16,6 +16,8 @@ export type NavGroup = {
   columns?: { id: string; title: string; href: string; description: string; links: NavLink[] }[];
   /** Label for the link back to the section index */
   all?: string;
+  /** False keeps the group out of the header and mobile menu; it still feeds the footer */
+  header?: boolean;
 };
 
 export type Service = {

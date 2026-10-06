@@ -100,6 +100,7 @@ export const navigation: NavGroup[] = [
   },
   {
     label: "Locations",
+    header: false,
     href: "/locations/",
     summary: "Local expertise. Global ambition.",
     all: "All locations",
@@ -108,6 +109,7 @@ export const navigation: NavGroup[] = [
   { label: "Case Studies", href: "/case-studies/", summary: "How the work is planned and measured." },
   {
     label: "Resources",
+    header: false,
     href: "/resources/",
     summary: "Research and practice from the people doing the work.",
     all: "All resources",
@@ -133,6 +135,9 @@ export const navigation: NavGroup[] = [
     ],
   },
 ];
+
+/** The groups shown in the header and the mobile menu. Locations and Resources live in the footer only. */
+export const headerNavigation = navigation.filter((g) => g.header !== false);
 
 const group = (label: string) => navigation.find((g) => g.label === label)!;
 

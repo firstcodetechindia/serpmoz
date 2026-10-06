@@ -85,9 +85,11 @@ Wired in the site as:
 
 ## Website header
 
-The header, footer and mobile menu use the compact logo (symbol and name, no tagline) through the `Logo` component in `components/navigation/logo.tsx`. It is drawn inline so the ring and "SERP" follow the header's colour: navy on the white header, white over a dark hero. The symbol is 32 px tall; the name's capitals are 15 to 16 px.
+The header, footer and mobile menu use the `Logo` component in `components/navigation/logo.tsx` with the tagline under the name (`<Logo tagline />`). For this size the tagline is set larger and closer than in the print lockups, still exactly as wide as the name, so it stays readable: the name's capitals are about 22 px and the tagline's about 6.5 px on desktop. It is drawn inline so the ring, "SERP" and the tagline follow the header's colour: navy on the white header, white over a dark hero.
 
-`LogoMark` is the symbol on its own, for places inside diagrams.
+In the header the logo sits on the left with clear space around it, the menu is centred in the bar and the actions are on the right. The header menu holds Solutions, Industries, Case Studies and Company; Locations and Resources are in the footer.
+
+`<Logo />` without the tagline is the compact form for tight spaces, and `LogoMark` is the symbol on its own.
 
 ## Do not
 
@@ -97,7 +99,7 @@ The header, footer and mobile menu use the compact logo (symbol and name, no tag
 - Rebuild the name in another typeface, or in light weights.
 - Put the full name inside a favicon or app icon.
 - Place the colour logo on a mid-tone or clashing ground.
-- Add the tagline at small sizes or in navigation.
+- Use the print tagline lockup below 40 px tall; use the header form of the tagline instead.
 - Combine the symbol with other icons (robots, brains, rockets, magnifying glasses).
 
 ## Regenerating the files
