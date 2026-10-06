@@ -25,7 +25,7 @@ export function Footer() {
 
       <div className="shell relative pt-7 md:pt-14">
         {/* Call to action */}
-        <div className="glass-dark hidden flex-col gap-5 rounded-[1.5rem] p-6 md:flex md:flex-row md:items-center md:justify-between md:p-7">
+        <div className="footer-cta glass-dark flex-col gap-5 rounded-[1.5rem] p-6 md:flex-row md:items-center md:justify-between md:p-7">
           <div>
             <p className="label-mono text-cyan">Start here</p>
             <p className="mt-2 text-[clamp(1.25rem,1.05rem+0.9vw,1.75rem)] leading-snug font-semibold tracking-[-0.025em]">Find the highest-impact opportunities in your growth.</p>
@@ -36,15 +36,15 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 pb-5 md:gap-10 md:py-10 lg:grid-cols-12 lg:gap-8">
+        <div className="grid grid-cols-1 gap-5 pb-5 md:gap-8 md:py-8 lg:grid-cols-12 lg:gap-8">
           {/* Who we are */}
           <div className="lg:col-span-4">
             <Link href="/" aria-label="SERPMOZ home" className="inline-block rounded-md"><Logo tone="dark" tagline /></Link>
             <p className="mt-4 max-w-xs text-lg leading-snug font-semibold tracking-[-0.02em] md:mt-5 md:text-xl">
               AI can do the work. <span className="text-white/50">Experts know what work matters.</span>
             </p>
-            <p className="mt-3 hidden text-sm text-white/55 md:block">{site.category}</p>
-            <ol className="label-mono mt-6 hidden flex-wrap items-center md:flex gap-x-2 gap-y-1.5 text-[0.625rem] text-white/50" aria-label="The SERPMOZ promise">
+            <p className="footer-extra mt-3 text-sm text-white/55">{site.category}</p>
+            <ol className="footer-extra label-mono mt-6 flex-wrap items-center gap-x-2 gap-y-1.5 text-[0.625rem] text-white/50" aria-label="The SERPMOZ promise">
               {promise.map((p, i) => (
                 <li key={p} className="flex items-center gap-2">
                   <span className={i === promise.length - 1 ? "rounded-full bg-orange px-2 py-0.5 text-navy" : "rounded-full border border-white/15 px-2 py-0.5"}>{p}</span>
@@ -62,7 +62,7 @@ export function Footer() {
           </div>
 
           {/* Phones: each column is a row that opens, so the whole footer fits one screen */}
-          <nav aria-label="Footer" className="border-t border-white/12 md:hidden">
+          <nav aria-label="Footer" className="border-t border-white/12 lg:hidden">
             {footerNav.map((col) => (
               <details key={col.title} className="group/d border-b border-white/12">
                 <summary className="flex cursor-pointer list-none items-center justify-between py-3 text-[0.9375rem] font-medium text-white/85 [&::-webkit-details-marker]:hidden">
@@ -79,7 +79,7 @@ export function Footer() {
           </nav>
 
           {/* Link columns: the column you are in stays bright, the rest step back */}
-          <nav aria-label="Footer" className="group/nav hidden grid-cols-3 gap-x-6 gap-y-9 md:grid lg:col-span-8 lg:grid-cols-5">
+          <nav aria-label="Footer" className="group/nav hidden grid-cols-5 gap-x-6 gap-y-9 lg:col-span-8 lg:grid">
             {footerNav.map((col) => (
               <div key={col.title} className="group/col transition-opacity duration-300 lg:group-hover/nav:opacity-45 lg:hover:!opacity-100">
                 <p className="label-mono flex items-center gap-2 text-white/50 transition-colors group-hover/col:text-cyan">
