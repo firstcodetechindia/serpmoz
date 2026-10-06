@@ -55,7 +55,7 @@ export const location: LocationRecord = {
       "A company that performs well in one European country has proved very little about the next. Germany, France, Spain, Italy, the Netherlands, Poland and the Nordic countries each have their own language, their own established competitors and their own search results. Even where a language crosses a border, as German does into Austria and Switzerland or French into Belgium, vocabulary, pricing and expectations shift. The central discipline for a digital marketing agency here is [international SEO](/international-seo/): deciding where to compete, and making sure each country sees the version meant for it.",
       "Market selection deserves more attention than it usually gets. The instinct is to translate the site into five languages and launch everywhere. The result is usually five thin presences that none of the local competitors need to worry about. We prefer to size demand country by country, look at who already holds the results, weigh the cost of proper localisation and support, and then enter in sequence. One market done properly teaches more than several done lightly.",
       "Localisation is a different task from translation. A translated page carries the original keywords, examples, units, proof and tone into a language where people may search with other words and trust other signals. German buyers often expect thorough detail and a formal legal notice. Dutch and Nordic audiences are comfortable in English for some software purchases but not for consumer goods. We combine native research with [content marketing](/content-marketing/) written for each market by people who live in the language.",
-      "Privacy rules are a shared feature of the region. GDPR and the related cookie consent requirements apply across the European Union, and national regulators interpret them with differing strictness. For marketers this affects what analytics can see and how advertising platforms optimise. The United Kingdom now sits outside the EU with its own closely related regime and a distinct search market, so it has a separate page on [digital growth in the UK](/locations/uk/).",
+      "Privacy rules are a shared feature of the region. GDPR and the related cookie consent requirements apply across the European Union, and national regulators interpret them with differing strictness. For marketers this affects what analytics can see and how advertising platforms optimise. The United Kingdom now sits outside the EU with its own closely related regime and a distinct search market, so it has a separate page on [digital growth in the UK](/digital-marketing-agency-uk/).",
     ],
   },
 
@@ -226,7 +226,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/uk/", "/locations/usa/", "/locations/uae/"],
+  related: ["/digital-marketing-agency-uk/", "/digital-marketing-agency-usa/", "/digital-marketing-agency-uae/"],
   caseStudies: ["b2b-saas-pipeline-quality", "d2c-ecommerce-margin"],
   resources: ["sizing-search-opportunities-by-value", "attribution-questions-worth-answering", "measuring-ai-search-visibility"],
 

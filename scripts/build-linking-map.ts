@@ -3,7 +3,8 @@
 import { writeFileSync } from "node:fs";
 import { getCaseStudy } from "../data/case-studies.ts";
 import { getIndustry } from "../data/industries/index.ts";
-import { citiesOf, locationPath, locations, locationServicesIn, markets } from "../data/locations/index.ts";
+import { citiesOf, getLocation, locationPath, locations, markets } from "../data/locations/index.ts";
+import { localServicePath, localServicesIn } from "../data/locations/services/index.ts";
 import { getArticle } from "../data/resources/index.ts";
 import { getService } from "../data/services/index.ts";
 import type { LocationRecord } from "../types/index.ts";
@@ -16,17 +17,17 @@ const note = (to: string, from: string) => inbound.set(to, (inbound.get(to) ?? n
 for (const l of locations) {
   const from = locationPath(l);
   for (const r of l.related) note(r, from);
-  for (const p of inline(l).filter((p) => p.startsWith("/locations/"))) note(p, from);
+  for (const p of inline(l).filter((p) => p.startsWith("/digital-marketing-agency-"))) note(p, from);
   if (l.kind === "city") {
-    note(`/locations/${l.parent}/`, from);
-    for (const n of l.nearby ?? []) note(`/locations/${l.parent}/${n}/`, from);
+    note(locationPath(getLocation(l.parent!)!), from);
+    for (const n of l.nearby ?? []) note(`/digital-marketing-agency-${n}/`, from);
   } else for (const c of citiesOf(l.slug)) note(locationPath(c), from);
 }
 
 function section(l: LocationRecord) {
   const path = locationPath(l);
   const cities = l.kind === "city" ? [] : citiesOf(l.slug);
-  const local = l.kind === "city" ? locationServicesIn(l.parent!, l.slug) : [];
+  const local = localServicesIn(l.slug);
   return `### ${l.name} \`${path}\`
 
 Primary keyword: ${l.seo.primaryKeyword}
@@ -39,11 +40,11 @@ ${list(l.industries.map((i) => `[${getIndustry(i.slug)!.name}](/industries/${i.s
 
 **Locations linked from this page**
 ${list([
-  ...(l.kind === "city" ? [`Parent: /locations/${l.parent}/`] : []),
+  ...(l.kind === "city" ? [`Parent: /digital-marketing-agency-${l.parent}/`] : []),
   ...cities.map((c) => `City: ${locationPath(c)}`),
-  ...(l.nearby ?? []).map((n) => `Nearby: /locations/${l.parent}/${n}/`),
+  ...(l.nearby ?? []).map((n) => `Nearby: /digital-marketing-agency-${n}/`),
   ...l.related.map((r) => `Related: ${r}`),
-  ...local.map((s) => `Service in this city: /locations/${s.country}/${s.city}/${s.slug}/`),
+  ...local.map((p) => `Service here: ${localServicePath(p)}`),
 ])}
 
 **Links inside the copy**

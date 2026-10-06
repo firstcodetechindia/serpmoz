@@ -214,7 +214,7 @@ export const record: IndustryServiceRecord = {
 
   related: {
     services: ["local-seo-services", "google-ads", "content-seo", "lead-generation"],
-    locations: ["/locations/india/gurgaon/", "/locations/india/mumbai/", "/locations/uae/dubai/"],
+    locations: ["/digital-marketing-agency-gurgaon/", "/digital-marketing-agency-mumbai/", "/digital-marketing-agency-dubai/"],
     articles: ["sizing-search-opportunities-by-value", "attribution-questions-worth-answering"],
   },
 

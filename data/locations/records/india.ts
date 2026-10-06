@@ -1,7 +1,7 @@
 import type { LocationRecord } from "@/types";
 
 /**
- * /locations/india/ : the country page. City detail (districts, locality
+ * /digital-marketing-agency-india/ : the country page. City detail (districts, locality
  * naming, local competition) belongs to the city records, not here.
  * Rules: no statistics, no client names, no guarantees, no local office claims.
  */
@@ -58,7 +58,7 @@ export const location: LocationRecord = {
     heading: "About digital growth in India",
     paragraphs: [
       "Most Indian customers meet a business for the first time on a phone screen, often a modest Android handset on mobile data. That single fact shapes almost everything else, including what a digital marketing agency should do first. Pages have to load quickly on an ordinary connection, the phone number and the WhatsApp button have to be reachable with a thumb, and forms have to be short enough to finish on a commute. A site designed on a large monitor and approved in a boardroom frequently fails the one test that counts here: whether a hurried person on a mid-range phone can understand the offer and get in touch within a few seconds.",
-      "The country behaves as a set of city markets with their own competitors and habits. [Delhi](/locations/india/delhi/) is searched locality by locality and argues about price. [Mumbai](/locations/india/mumbai/) is organised by suburb and carries heavy finance and property advertising. [Bangalore](/locations/india/bangalore/) has a technical audience that checks claims before it believes them, and [Gurgaon](/locations/india/gurgaon/) concentrates corporate and B2B buyers in a small area. Hyderabad, Pune, Noida and Jaipur each differ again. Outside the metros, competition for search terms is often lighter, regional languages matter more, and buyers lean harder on a phone call or a recommendation before they commit.",
+      "The country behaves as a set of city markets with their own competitors and habits. [Delhi](/digital-marketing-agency-delhi/) is searched locality by locality and argues about price. [Mumbai](/digital-marketing-agency-mumbai/) is organised by suburb and carries heavy finance and property advertising. [Bangalore](/digital-marketing-agency-bangalore/) has a technical audience that checks claims before it believes them, and [Gurgaon](/digital-marketing-agency-gurgaon/) concentrates corporate and B2B buyers in a small area. Hyderabad, Pune, Noida and Jaipur each differ again. Outside the metros, competition for search terms is often lighter, regional languages matter more, and buyers lean harder on a phone call or a recommendation before they commit.",
       "Indian buyers compare carefully, and price is rarely absent from the comparison. They look for fees, EMI options, offers and delivery terms early, and they are wary of businesses that hide them. Trust is built with visible, checkable signals: recent Google reviews, photographs of real premises and staff, registration and accreditation details, a working landline or mobile number, and a prompt reply. That is why [local SEO](/local-seo-services/) and reputation work sit so close to revenue here, and why a quick, helpful answer on [WhatsApp](/whatsapp-automation/) frequently wins an enquiry that a slower competitor with a better website loses.",
       "For an overseas company, India rewards patience and local detail more than a translated global campaign. For an Indian company, the pressure is usually the opposite: paid costs in the metros keep rising, the same advertisers appear on every commercial search, and enquiry quality varies wildly by source. In both cases the work that pays is unglamorous. Decide which cities and languages are worth serving, measure enquiries through to sales instead of counting form fills, respond to leads faster than competitors do, and build organic and map visibility so that growth does not depend entirely on next month's advertising budget.",
     ],
@@ -232,7 +232,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/uae/", "/locations/usa/", "/locations/uk/"],
+  related: ["/digital-marketing-agency-uae/", "/digital-marketing-agency-usa/", "/digital-marketing-agency-uk/"],
   caseStudies: ["d2c-ecommerce-margin", "b2b-saas-pipeline-quality"],
   resources: [
     "sizing-search-opportunities-by-value",

@@ -4,16 +4,26 @@ How the location pages of serpmoz.com are built, and how to add one. The system 
 
 ## Page types and URLs
 
+Every page is one level below the domain and named for the search it answers. The country-then-city hierarchy is carried by breadcrumbs and links, not by the path.
+
 | Type | URL | Source | Status |
 | --- | --- | --- | --- |
 | Index | `/locations/` | all records | live |
-| Country | `/locations/{country}/` | record with `kind: "country"` | live |
-| Region | `/locations/{region}/` | record with `kind: "region"` (several countries) | live (Europe) |
-| City | `/locations/{country}/{city}/` | record with `kind: "city"` | live |
-| Service in a city | `/locations/{country}/{city}/{service}/` | `locationServices` in `data/locations/index.ts` | live, two pages |
-| Industry in a place | `/locations/{country}/{city}/industries/{industry}/` | not built | planned |
+| Place (country, region or city) | `/digital-marketing-agency-{place}/` | `data/locations/records/` | live, 21 |
+| Service in a place | `/{service}-{place}/` | `data/locations/services/{place}.ts` | live, 142 |
+| Service for a sector | `/{service}-for-{industry}/` | `data/industries/services/` | live, 9 |
 
-All URLs end with a slash. Slugs are lowercase with hyphens.
+Examples: `/digital-marketing-agency-delhi/`, `/local-seo-services-delhi/`, `/seo-services-india/`, `/google-ads-dubai/`, `/seo-services-for-real-estate/`.
+
+Place slugs are unique across countries and cities. `lib/routes.ts` holds the table of flat URLs and refuses duplicates. The earlier `/locations/{country}/{city}/` URLs redirect permanently (`next.config.ts`).
+
+### Service in a place
+
+Each place lists its services on its record; each of those has a page written for that pairing (type `LocalServicePage`). A page has its own title, H1, answer, three search habits, four local factors, four to six areas (localities for a city, cities for a country), three sectors and five FAQs (head term, "near me" or how to choose, nearby places, cost without figures, one local question). The build fails if a listed service has no page, if a title, H1, description or keyword repeats, or if the intro does not say the work is remote. A test fails if sentences are reused between pages.
+
+To add one: add the service to the place's record and write its page object in `data/locations/services/{place}.ts`. Do not generate them from a template.
+
+Internal links run from the ground up: the page links to the same service in nearby cities and in its country, to the other services in the same place, to the place page and to the general service page. Place pages link each service row to its local page. Service pages list every place they are written for.
 
 ### Markets (countries and regions)
 

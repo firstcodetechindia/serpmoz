@@ -103,7 +103,7 @@ export const location: LocationRecord = {
     heading: "Why local search matters in Gurgaon",
     paragraphs: [
       "Even in a B2B city, local search carries weight. Residents choose doctors, schools and services from within their own stretch of the city, because crossing from New Gurgaon to DLF Phase areas at peak hours is a real cost. Property search is local by definition: buyers filter by sector, road and development. For these categories, [local SEO](/local-seo-services/) and accurate profiles are the first requirement.",
-      "For companies selling to other companies, local signals play a quieter role. A complete profile, consistent address details and reviews help a buyer confirm that the firm is real and established before a meeting. They also help search engines and AI systems describe the business correctly. See how this plays out differently in [Delhi](/locations/india/delhi/), where neighbourhood retail dominates.",
+      "For companies selling to other companies, local signals play a quieter role. A complete profile, consistent address details and reviews help a buyer confirm that the firm is real and established before a meeting. They also help search engines and AI systems describe the business correctly. See how this plays out differently in [Delhi](/digital-marketing-agency-delhi/), where neighbourhood retail dominates.",
     ],
     points: [
       "Two names for one city: Gurgaon and Gurugram both appear in queries, profiles and addresses, and tracking should cover both.",
@@ -219,7 +219,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/india/", "/locations/india/delhi/", "/locations/india/noida/", "/locations/india/bangalore/"],
+  related: ["/digital-marketing-agency-india/", "/digital-marketing-agency-delhi/", "/digital-marketing-agency-noida/", "/digital-marketing-agency-bangalore/"],
   caseStudies: ["b2b-saas-pipeline-quality"],
   resources: ["measuring-ai-search-visibility", "sizing-search-opportunities-by-value", "attribution-questions-worth-answering"],
 

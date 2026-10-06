@@ -52,7 +52,7 @@ export const location: LocationRecord = {
     paragraphs: [
       "Education gives Pune a customer base that renews itself, and gives any SEO company working here a moving target. Universities, engineering and management colleges, and coaching institutes bring in students from across Maharashtra and other states every year, and many stay on for their first jobs. Each intake needs somewhere to live, eat, study and travel, which means new searches for hostels, paying-guest rooms, classes, gyms and two-wheelers. For [education providers](/industries/education/) and the businesses around them, last year's reputation has to be earned again with every new cohort.",
       "Industry is the city's other foundation. Vehicle makers and their suppliers fill Pimpri-Chinchwad, Chakan, Talegaon and Ranjangaon, with tooling, components, automation and logistics firms alongside. IT services and software companies occupy Hinjewadi, Kharadi, Magarpatta and Baner. These businesses sell to purchasing and engineering teams over long cycles, often after samples and plant audits, and benefit from [B2B lead generation](/lead-generation/) that brings in fewer, better-matched enquiries.",
-      "Pune also lives beside [Mumbai](/locations/india/mumbai/). The expressway makes it practical for firms in either city to serve the other, so Pune vendors are compared with Mumbai competitors, and Mumbai companies list Pune as a service area. Local character still counts: Marathi is the language of the older city and of much everyday trade, and businesses that respect that tend to be trusted faster.",
+      "Pune also lives beside [Mumbai](/digital-marketing-agency-mumbai/). The expressway makes it practical for firms in either city to serve the other, so Pune vendors are compared with Mumbai competitors, and Mumbai companies list Pune as a service area. Local character still counts: Marathi is the language of the older city and of much everyday trade, and businesses that respect that tend to be trusted faster.",
     ],
   },
   discovery: {
@@ -203,7 +203,7 @@ export const location: LocationRecord = {
       body: "AI handles research and repetitive analysis quickly. Specialists choose the priorities and check the output before it reaches you.",
     },
   ],
-  related: ["/locations/india/", "/locations/india/mumbai/", "/locations/india/bangalore/", "/locations/india/hyderabad/"],
+  related: ["/digital-marketing-agency-india/", "/digital-marketing-agency-mumbai/", "/digital-marketing-agency-bangalore/", "/digital-marketing-agency-hyderabad/"],
   caseStudies: ["b2b-saas-pipeline-quality"],
   resources: ["sizing-search-opportunities-by-value", "conversion-work-without-ab-testing-traffic", "attribution-questions-worth-answering"],
   faqs: [

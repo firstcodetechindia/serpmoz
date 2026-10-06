@@ -55,7 +55,7 @@ export const location: LocationRecord = {
     heading: "About digital growth in Sydney",
     paragraphs: [
       "Sydney's commercial centres are spread out. Banks, fund managers, insurers and the large law and accounting firms are in the CBD, around Martin Place and Barangaroo, with further offices in North Sydney. Parramatta serves as a second centre for the west, and Macquarie Park hosts technology and pharmaceutical companies. Agencies and start-ups favour Surry Hills and Pyrmont. Around them lie hundreds of suburbs where trades, clinics, agents and cafes compete for nearby households, and where an SEO company does most of its local work.",
-      "That suburban layer is where most Sydney businesses win or lose. The harbour, the rivers and the traffic divide the city into regions that residents treat as separate: the Eastern Suburbs, the Inner West, the North Shore, the Northern Beaches, the Hills, the Shire and Western Sydney. A tradesperson based in one seldom works in another. Unlike the picture across [Australia](/locations/australia/), where metros are far apart, Sydney's markets are close together and still distinct.",
+      "That suburban layer is where most Sydney businesses win or lose. The harbour, the rivers and the traffic divide the city into regions that residents treat as separate: the Eastern Suburbs, the Inner West, the North Shore, the Northern Beaches, the Hills, the Shire and Western Sydney. A tradesperson based in one seldom works in another. Unlike the picture across [Australia](/digital-marketing-agency-australia/), where metros are far apart, Sydney's markets are close together and still distinct.",
       "Competition follows a gradient. CBD and inner-suburb terms in finance, legal, property and hospitality are contested by well-funded firms, and paid clicks are priced accordingly. Further out, many capable businesses have incomplete profiles and thin websites. For those willing to do [local SEO](/local-seo-services/) properly, the middle and outer suburbs often offer better returns than fighting for the centre, at least to begin with.",
     ],
   },
@@ -216,7 +216,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/australia/", "/locations/uk/london/", "/locations/canada/toronto/"],
+  related: ["/digital-marketing-agency-australia/", "/digital-marketing-agency-london/", "/digital-marketing-agency-toronto/"],
   caseStudies: ["multi-location-dental-group"],
   resources: ["sizing-search-opportunities-by-value", "what-automated-bidding-should-optimise-for", "conversion-work-without-ab-testing-traffic"],
 

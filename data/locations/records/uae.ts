@@ -56,7 +56,7 @@ export const location: LocationRecord = {
       "The UAE is unusual among national markets because most of the people a business sells to grew up somewhere else. Residents arrive from South Asia, the wider Arab world, Europe, the Philippines and elsewhere, and they bring search habits, brand references and expectations formed at home. A single category can be searched in English by one group, in Arabic by another, and with different vocabulary by a third. For a digital marketing agency, planning starts with deciding which audiences a business truly serves, then building [SEO in the UAE](/seo-services/) around the words those people use.",
       "Much of the commercial activity is enquiry-led. Property, clinics, schools, legal and corporate services, events and hospitality bookings tend to begin with a question, and that question is very often sent on WhatsApp. A website here is judged less by how it looks than by how quickly it turns interest into a conversation and how well that conversation is handled afterwards. This is why [WhatsApp automation](/whatsapp-automation/) and structured lead qualification sit close to the centre of most plans we write for the Emirates.",
       "Company structure also shapes marketing. Businesses operate either on the mainland or from one of many free zones, and the licence they hold affects which activities they can advertise and to whom they can sell. Firms that help others set up companies are themselves a large and competitive search category. We do not give legal advice on licensing, but we do ask about it early, because claims on a landing page should match what the licence permits.",
-      "The emirates are not interchangeable. Dubai concentrates property, tourism, retail and free zone services, and has its own page for [digital growth in Dubai](/locations/uae/dubai/). Abu Dhabi leans towards government-linked work, energy, finance and larger institutional buyers. Sharjah and the northern emirates have more price-conscious consumer demand and a strong industrial and logistics base. Campaigns that treat the country as one audience tend to overspend in Dubai and miss everyone else.",
+      "The emirates are not interchangeable. Dubai concentrates property, tourism, retail and free zone services, and has its own page for [digital growth in Dubai](/digital-marketing-agency-dubai/). Abu Dhabi leans towards government-linked work, energy, finance and larger institutional buyers. Sharjah and the northern emirates have more price-conscious consumer demand and a strong industrial and logistics base. Campaigns that treat the country as one audience tend to overspend in Dubai and miss everyone else.",
     ],
   },
 
@@ -228,7 +228,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/india/", "/locations/uk/", "/locations/singapore/"],
+  related: ["/digital-marketing-agency-india/", "/digital-marketing-agency-uk/", "/digital-marketing-agency-singapore/"],
   caseStudies: [],
   resources: ["sizing-search-opportunities-by-value", "what-automated-bidding-should-optimise-for", "measuring-ai-search-visibility"],
 

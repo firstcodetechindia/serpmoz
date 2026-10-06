@@ -103,7 +103,7 @@ export const location: LocationRecord = {
     heading: "Why local search matters in Mumbai",
     paragraphs: [
       "The city's shape makes local search unusually strict. It is long and narrow, and the suburban railway divides most suburbs into East and West halves that function as separate catchments. A clinic in Borivali West competes with others in Borivali West, not with Borivali East and certainly not with Chembur. [Local SEO](/local-seo-services/) therefore has to be planned branch by branch, with realistic expectations about how far each profile will reach.",
-      "Chains face the opposite problem. Restaurants, clinics, salons and retailers with outlets from Colaba to Thane often run them from one website and a single phone line, which hides differences in performance. Giving each outlet its own profile, page and tracking shows which ones need help. The same discipline applies when extending into [Pune](/locations/india/pune/), which behaves as a different market despite the short distance.",
+      "Chains face the opposite problem. Restaurants, clinics, salons and retailers with outlets from Colaba to Thane often run them from one website and a single phone line, which hides differences in performance. Giving each outlet its own profile, page and tracking shows which ones need help. The same discipline applies when extending into [Pune](/digital-marketing-agency-pune/), which behaves as a different market despite the short distance.",
     ],
     points: [
       "Suburb plus East or West is the standard way to state a location, and the two sides are searched separately.",
@@ -219,7 +219,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/india/", "/locations/india/pune/", "/locations/india/delhi/", "/locations/india/bangalore/"],
+  related: ["/digital-marketing-agency-india/", "/digital-marketing-agency-pune/", "/digital-marketing-agency-delhi/", "/digital-marketing-agency-bangalore/"],
   caseStudies: ["d2c-ecommerce-margin", "multi-location-dental-group"],
   resources: ["conversion-work-without-ab-testing-traffic", "what-automated-bidding-should-optimise-for", "attribution-questions-worth-answering"],
 

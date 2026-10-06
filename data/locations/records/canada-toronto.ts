@@ -56,7 +56,7 @@ export const location: LocationRecord = {
     heading: "About digital growth in Toronto",
     paragraphs: [
       "Toronto's business districts are well defined. The banks, insurers and large law and accounting firms occupy the Financial District around Bay Street. Technology companies and agencies spread through King West, Liberty Village and the waterfront, with research-led firms near the hospital and university district. Luxury retail sits in Yorkville. Beyond the core, corporate offices and logistics operations fill Mississauga, Markham and Vaughan. Each area has its own buyers, commuting patterns and search habits, and a digital marketing agency has to plan for them separately.",
-      "The feature that most shapes marketing here is the region. Customers think in terms of the city and the suburbs beyond it, and a business in Oakville or Richmond Hill does not want to pay for clicks from Scarborough. Unlike the wider [Canadian market](/locations/canada/), where distance separates metros, the GTA's markets touch each other, so targeting has to be drawn deliberately. That is the work of a sound [local SEO programme](/local-seo-services/).",
+      "The feature that most shapes marketing here is the region. Customers think in terms of the city and the suburbs beyond it, and a business in Oakville or Richmond Hill does not want to pay for clicks from Scarborough. Unlike the wider [Canadian market](/digital-marketing-agency-canada/), where distance separates metros, the GTA's markets touch each other, so targeting has to be drawn deliberately. That is the work of a sound [local SEO programme](/local-seo-services/).",
       "The audience is the second feature. Toronto is a very multicultural city, shaped by generations of immigration, and many households search, read reviews and ask for recommendations in languages other than English. For property, immigration, financial and healthcare services in particular, a business that communicates well with a specific community can earn loyalty that generic English campaigns do not reach.",
     ],
   },
@@ -217,7 +217,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/canada/", "/locations/usa/new-york/", "/locations/australia/sydney/"],
+  related: ["/digital-marketing-agency-canada/", "/digital-marketing-agency-new-york/", "/digital-marketing-agency-sydney/"],
   caseStudies: ["b2b-saas-pipeline-quality", "multi-location-dental-group"],
   resources: ["sizing-search-opportunities-by-value", "attribution-questions-worth-answering", "measuring-ai-search-visibility"],
 

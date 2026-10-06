@@ -94,7 +94,7 @@ export const location: LocationRecord = {
     heading: "Why local search matters in Bangalore",
     paragraphs: [
       "Bangalore addresses are built from layouts, blocks, stages and phases. A customer looks for a dentist in Jayanagar 4th Block, a gym in HSR Layout Sector 2 or a preschool off Sarjapur Road, and expects the listing to say the same thing. Tech corridors act as place names too: people search near Manyata, near the Outer Ring Road or in Electronic City Phase 1. A [local SEO programme](/local-seo-services/) here starts by matching the business to the names its customers actually type.",
-      "Travel time shapes every catchment. Two branches a short distance apart can serve entirely separate customers because of the road between them, so each needs its own profile, page and reviews. Reviews are read closely and written in detail, often with specific complaints about waiting, billing or parking. The same locality logic applies in [Hyderabad](/locations/india/hyderabad/), though the names and corridors differ.",
+      "Travel time shapes every catchment. Two branches a short distance apart can serve entirely separate customers because of the road between them, so each needs its own profile, page and reviews. Reviews are read closely and written in detail, often with specific complaints about waiting, billing or parking. The same locality logic applies in [Hyderabad](/digital-marketing-agency-hyderabad/), though the names and corridors differ.",
     ],
     points: [
       "Locality names carry numbers and suffixes: blocks, stages, phases, sectors, main roads and cross roads all appear in searches and addresses.",
@@ -204,7 +204,7 @@ export const location: LocationRecord = {
       body: "Measurement follows enquiries through to qualified opportunities where your systems allow it, instead of stopping at traffic and form fills.",
     },
   ],
-  related: ["/locations/india/", "/locations/india/hyderabad/", "/locations/india/pune/", "/locations/india/gurgaon/"],
+  related: ["/digital-marketing-agency-india/", "/digital-marketing-agency-hyderabad/", "/digital-marketing-agency-pune/", "/digital-marketing-agency-gurgaon/"],
   caseStudies: ["b2b-saas-pipeline-quality"],
   resources: ["measuring-ai-search-visibility", "sizing-search-opportunities-by-value", "ai-moved-the-bottleneck"],
   faqs: [

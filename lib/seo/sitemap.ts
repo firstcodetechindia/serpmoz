@@ -2,7 +2,8 @@ import { publishedCaseStudies } from "@/data/case-studies";
 import { industries } from "@/data/industries";
 import { industryServicePath, industryServices } from "@/data/industries/services";
 import { legalDocs } from "@/data/legal";
-import { locationPath, locations, locationServices } from "@/data/locations";
+import { locationPath, locations } from "@/data/locations";
+import { localServicePath, localServices } from "@/data/locations/services";
 import { articles } from "@/data/resources";
 import { services } from "@/data/services";
 import { absoluteUrl } from "@/lib/seo/metadata";
@@ -44,7 +45,8 @@ export const sitemapGroups: Record<string, () => SitemapEntry[]> = {
   locations: () => [
     { path: "/locations/", priority: 0.7 },
     ...locations.map((l) => ({ path: locationPath(l), priority: l.kind === "city" ? 0.6 : 0.7 })),
-    ...locationServices.map((l) => ({ path: `/locations/${l.country}/${l.city}/${l.slug}/`, priority: 0.6 })),
+    // A service in a place: one entry per page written (data/locations/services).
+    ...localServices.map((p) => ({ path: localServicePath(p), priority: 0.8 })),
   ],
 };
 

@@ -93,7 +93,7 @@ export const location: LocationRecord = {
     heading: "Why local search matters in Jaipur",
     paragraphs: [
       "The old city's bazaars are organised by trade, and visitors search for them by name: Johari Bazaar for jewellery, Bapu Bazaar for textiles and footwear. Many shops in the same lane sell similar goods, so the profile, photographs and reviews are what distinguish one from the next. Good [Google Maps optimisation](/google-maps-seo/) helps a shop to be found by someone standing a short walk away.",
-      "Residents search differently. They look in newer areas such as Vaishali Nagar, Mansarovar, Malviya Nagar and Jagatpura, usually in Hindi, for everyday services. A [local SEO programme](/local-seo-services/) for these customers focuses on neighbourhood pages, Hindi content and regular reviews. Jaipur also draws weekend and wedding traffic from [Delhi](/locations/india/delhi/), so some businesses need to be visible to searches made there.",
+      "Residents search differently. They look in newer areas such as Vaishali Nagar, Mansarovar, Malviya Nagar and Jagatpura, usually in Hindi, for everyday services. A [local SEO programme](/local-seo-services/) for these customers focuses on neighbourhood pages, Hindi content and regular reviews. Jaipur also draws weekend and wedding traffic from [Delhi](/digital-marketing-agency-delhi/), so some businesses need to be visible to searches made there.",
     ],
     points: [
       "Visitors search by landmark and bazaar, such as near Hawa Mahal or in Johari Bazaar, while residents search by residential colony.",
@@ -202,7 +202,7 @@ export const location: LocationRecord = {
       body: "AI helps with research, product content drafts and analysis. Experienced specialists decide what matters and review everything before release.",
     },
   ],
-  related: ["/locations/india/", "/locations/india/delhi/", "/locations/india/gurgaon/", "/locations/india/mumbai/"],
+  related: ["/digital-marketing-agency-india/", "/digital-marketing-agency-delhi/", "/digital-marketing-agency-gurgaon/", "/digital-marketing-agency-mumbai/"],
   caseStudies: ["d2c-ecommerce-margin"],
   resources: ["conversion-work-without-ab-testing-traffic", "what-automated-bidding-should-optimise-for", "measuring-ai-search-visibility"],
   faqs: [

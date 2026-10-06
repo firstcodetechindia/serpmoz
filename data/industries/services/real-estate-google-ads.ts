@@ -214,7 +214,7 @@ export const record: IndustryServiceRecord = {
 
   related: {
     services: ["meta-ads", "landing-page-optimization", "whatsapp-automation", "lead-generation"],
-    locations: ["/locations/india/gurgaon/", "/locations/india/noida/", "/locations/uae/dubai/"],
+    locations: ["/digital-marketing-agency-gurgaon/", "/digital-marketing-agency-noida/", "/digital-marketing-agency-dubai/"],
     articles: ["what-automated-bidding-should-optimise-for", "attribution-questions-worth-answering"],
   },
 

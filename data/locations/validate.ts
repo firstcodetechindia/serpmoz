@@ -11,7 +11,7 @@ import { marketShapes } from "./geo.generated";
  */
 export function validateLocations(all: LocationRecord[]) {
   const problems: string[] = [];
-  const pathOf = (l: LocationRecord) => (l.kind === "city" ? `/locations/${l.parent}/${l.slug}/` : `/locations/${l.slug}/`);
+  const pathOf = (l: LocationRecord) => `/digital-marketing-agency-${l.slug}/`;
   const paths = new Set(all.map(pathOf));
   const seen = { title: new Map<string, string>(), description: new Map<string, string>(), h1: new Map<string, string>() };
 
@@ -23,6 +23,8 @@ export function validateLocations(all: LocationRecord[]) {
       if (other) fail(`${kind} duplicates ${other}`);
       seen[kind].set(value, at);
     };
+
+    if (all.filter((x) => x.slug === l.slug).length > 1) fail("slug is not unique; every place needs its own");
 
     // Geography and map
     if (!(l.latitude >= -90 && l.latitude <= 90 && l.longitude >= -180 && l.longitude <= 180)) fail("coordinates missing or out of range");

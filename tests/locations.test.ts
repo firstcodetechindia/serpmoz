@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { getLocationByPath, locationPath, locations, locationServices, markets, citiesOf } from "../data/locations/index.ts";
+import { getLocationByPath, locationPath, locations, markets, citiesOf } from "../data/locations/index.ts";
+import { localServicePath, localServices, localServicesIn } from "../data/locations/services/index.ts";
 import { marketShapes, projectWorld } from "../data/locations/geo.generated.ts";
 import { validateLocations } from "../data/locations/validate.ts";
 import { sitemapGroups } from "../lib/seo/sitemap.ts";
@@ -38,7 +39,7 @@ test("every location has a map outline and its marker falls inside the market's 
 
 test("every location page, and every service and location page, is in the sitemap", () => {
   for (const l of locations) assert.ok(sitemap.has(locationPath(l)), locationPath(l));
-  for (const s of locationServices) assert.ok(sitemap.has(`/locations/${s.country}/${s.city}/${s.slug}/`), s.slug);
+  for (const p of localServices) assert.ok(sitemap.has(localServicePath(p)), localServicePath(p));
 });
 
 test("paths resolve back to their record", () => {
@@ -71,4 +72,28 @@ test("no location copy claims an office or uses a guarantee", () => {
     assert.doesNotMatch(text, /\bour [A-Za-z ]{0,20}office\b/i, `${l.slug}: office claim`);
     assert.doesNotMatch(text, /\b(we guarantee|guaranteed (rankings|results)|#1 agency|best agency|leading agency)\b/i, `${l.slug}: claim`);
   }
+});
+
+test("every service listed on a place has its own page for that place", () => {
+  for (const l of locations) {
+    const written = new Set(localServicesIn(l.slug).map((p) => p.service));
+    for (const s of l.services) assert.ok(written.has(s.slug), `${l.slug}: no page for ${s.slug}`);
+  }
+});
+
+test("local service pages are flat, unique and say something of their own", () => {
+  const sentences = new Map<string, string>();
+  let repeats = 0;
+  for (const p of localServices) {
+    const at = localServicePath(p);
+    assert.match(at, /^\/[a-z0-9-]+\/$/, at);
+    assert.doesNotMatch(JSON.stringify(p), /\]\(\/|https?:|[\u2013\u2014]/, `${at}: links or dashes in plain text`);
+    assert.doesNotMatch(p.faqs[3].a, /[₹$£€%]/, `${at}: figures in the cost answer`);
+    for (const s of [p.intro, p.answer.text, ...p.localFactors.map((f) => f.body), ...p.searches.map((x) => x.body)].flatMap((t) => t.split(". "))) {
+      if (s.split(" ").length < 10) continue;
+      if (sentences.has(s) && sentences.get(s) !== at) repeats++;
+      sentences.set(s, at);
+    }
+  }
+  assert.equal(repeats, 0, "sentences repeated between local service pages");
 });

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="SERPMOZ">
+  <title>SERPMOZ</title>
+  <rect width="64" height="64" rx="14" fill="#0B1F3A"/>
+  <g transform="translate(10 10) scale(0.6875)"><defs>
+    <mask id="sm" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="#fff"/>
+      <path d="M29.0 35.0 L64 0" stroke="#000" stroke-width="13.0" stroke-linecap="round"/>
+    </mask>
+    <linearGradient id="sg" x1="8" y1="30" x2="40" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1677FF"/><stop offset="1" stop-color="#00B8D9"/>
+    </linearGradient>
+    <mask id="sc" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="#fff"/>
+      <circle cx="31.2" cy="32.8" r="18.6" fill="#000"/>
+      <path d="M29.0 35.0 L64 0" stroke="#000" stroke-width="13.0" stroke-linecap="round"/>
+    </mask>
+  </defs>
+  <circle cx="27.0" cy="37.0" r="16.0" fill="none" stroke="#FFFFFF" stroke-width="10.0" mask="url(#sm)"/>
+  <circle cx="27.0" cy="37.0" r="16.0" fill="none" stroke="url(#sg)" stroke-width="10.0" mask="url(#sc)"/>
+  <path d="M29.0 35.0 L50.5 13.5" stroke="#FF7A00" stroke-width="7.5" stroke-linecap="round"/>
+  <path d="M38.5 5.5 H58.5 V25.5 Z" fill="#FF7A00"/></g>
+</svg>

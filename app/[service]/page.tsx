@@ -4,6 +4,9 @@ import { Check, UserRoundCheck } from "lucide-react";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCta } from "@/components/sections/final-cta";
 import { JsonLd } from "@/components/seo/json-ld";
+import { IndustryServicePage } from "@/components/industries/industry-service-page";
+import { LocalServicePage } from "@/components/locations/local-service-page";
+import { LocationPage } from "@/components/locations/location-page";
 import { MasterServicePage } from "@/components/services/master-page";
 import { AiExpertSplit, Faqs, LinkList, RuledRows } from "@/components/services/page-parts";
 import { CtaLink } from "@/components/ui/cta-link";
@@ -13,7 +16,8 @@ import { SeoHeroVisual } from "@/components/visuals/seo-visuals";
 import { ServiceHeroVisual } from "@/components/visuals/service-hero";
 import { heroVisuals } from "@/data/services/hero-visuals";
 import { photos } from "@/data/images";
-import { getService, services } from "@/data/services";
+import { getService } from "@/data/services";
+import { flatSlugs, resolveFlat } from "@/lib/routes";
 import { serviceCategories } from "@/data/services/catalog";
 import { cta } from "@/lib/config/site";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -23,17 +27,29 @@ import type { Service, ServiceCategoryId } from "@/types";
 
 type Props = { params: Promise<{ service: string }> };
 
-// Only the services defined in data/services exist; everything else is a 404.
+// One flat level holds services, services in a place, services for a sector and places
+// (see lib/routes.ts). Anything not in that table is a 404.
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return services.map((s) => ({ service: s.slug }));
+  return flatSlugs.map((service) => ({ service }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const service = getService((await params).service);
-  if (!service) return {};
-  return buildMetadata({ title: service.metaTitle, description: service.metaDescription, path: `/${service.slug}/` });
+  const slug = (await params).service;
+  const page = resolveFlat(slug);
+  if (!page) return {};
+  const path = `/${slug}/`;
+  switch (page.kind) {
+    case "service":
+      return buildMetadata({ title: page.service.metaTitle, description: page.service.metaDescription, path });
+    case "local-service":
+      return buildMetadata({ title: page.page.seo.title, description: page.page.seo.metaDescription, path });
+    case "industry-service":
+      return buildMetadata({ title: page.record.seo.title, description: page.record.seo.metaDescription, path });
+    case "location":
+      return buildMetadata({ title: page.location.seo.title, description: page.location.seo.metaDescription, path });
+  }
 }
 
 type Part = "problem" | "why" | "approach" | "process" | "deliverables" | "outcomes" | "audience";
@@ -235,8 +251,12 @@ function heroFor(slug: string, fallback: React.ReactNode) {
 }
 
 export default async function ServicePage({ params }: Props) {
-  const service = getService((await params).service);
-  if (!service) notFound();
+  const page = resolveFlat((await params).service);
+  if (!page) notFound();
+  if (page.kind === "local-service") return <LocalServicePage page={page.page} />;
+  if (page.kind === "industry-service") return <IndustryServicePage record={page.record} />;
+  if (page.kind === "location") return <LocationPage location={page.location} />;
+  const service = page.service;
 
   if (service.master) {
     return <MasterServicePage service={service} master={service.master} visual={heroFor(service.slug, <CapabilityVisual category={service.category} />)} />;

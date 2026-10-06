@@ -93,7 +93,7 @@ export const location: LocationRecord = {
     heading: "Why local search matters in Hyderabad",
     paragraphs: [
       "Hyderabad's localities behave like separate towns. Someone living in Miyapur will seldom travel to LB Nagar for a dentist, and a family in the Old City chooses differently from one in Kondapur. Secunderabad keeps its own name in searches and addresses, and the western districts are searched as HITEC City, Hitech City or Cyberabad. Clear [Google Maps optimisation](/google-maps-seo/) for each branch is what lets a business appear in the area it actually serves.",
-      "Healthcare makes local search especially consequential. Patients often look for a named doctor or a specialty near them, read reviews that mention individual clinicians, and call directly from the profile. Hospital groups and diagnostic chains with branches in both older and newer parts of the city need each location managed separately, a pattern we also see among [healthcare providers](/industries/healthcare/) in [Bangalore](/locations/india/bangalore/).",
+      "Healthcare makes local search especially consequential. Patients often look for a named doctor or a specialty near them, read reviews that mention individual clinicians, and call directly from the profile. Hospital groups and diagnostic chains with branches in both older and newer parts of the city need each location managed separately, a pattern we also see among [healthcare providers](/industries/healthcare/) in [Bangalore](/digital-marketing-agency-bangalore/).",
     ],
     points: [
       "Spelling varies for the same place: HITEC City, Hitech City and Hi-Tech City all appear in searches, alongside Cyberabad for the wider district.",
@@ -203,7 +203,7 @@ export const location: LocationRecord = {
       body: "Automation handles research and analysis at scale. Experienced people decide priorities and approve what goes live.",
     },
   ],
-  related: ["/locations/india/", "/locations/india/bangalore/", "/locations/india/pune/", "/locations/india/mumbai/"],
+  related: ["/digital-marketing-agency-india/", "/digital-marketing-agency-bangalore/", "/digital-marketing-agency-pune/", "/digital-marketing-agency-mumbai/"],
   caseStudies: ["multi-location-dental-group"],
   resources: ["attribution-questions-worth-answering", "what-automated-bidding-should-optimise-for", "measuring-ai-search-visibility"],
   faqs: [

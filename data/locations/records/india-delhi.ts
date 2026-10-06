@@ -219,7 +219,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/india/", "/locations/india/gurgaon/", "/locations/india/noida/", "/locations/india/mumbai/"],
+  related: ["/digital-marketing-agency-india/", "/digital-marketing-agency-gurgaon/", "/digital-marketing-agency-noida/", "/digital-marketing-agency-mumbai/"],
   caseStudies: ["multi-location-dental-group"],
   resources: ["sizing-search-opportunities-by-value", "what-automated-bidding-should-optimise-for", "measuring-ai-search-visibility"],
 

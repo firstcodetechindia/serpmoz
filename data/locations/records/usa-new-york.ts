@@ -55,7 +55,7 @@ export const location: LocationRecord = {
   overview: {
     heading: "About digital growth in New York",
     paragraphs: [
-      "New York's sectors have addresses. Banks and funds sit in Midtown and the Financial District, media and advertising along the Midtown avenues and in Hudson Yards, technology firms through Flatiron and Chelsea and across the river in Brooklyn's waterfront districts. Medical practices line the Upper East Side, and real estate firms work building by building in every borough. A digital marketing agency plan written for the [USA as a whole](/locations/usa/) says little about how any of these compete on their own blocks.",
+      "New York's sectors have addresses. Banks and funds sit in Midtown and the Financial District, media and advertising along the Midtown avenues and in Hudson Yards, technology firms through Flatiron and Chelsea and across the river in Brooklyn's waterfront districts. Medical practices line the Upper East Side, and real estate firms work building by building in every borough. A digital marketing agency plan written for the [USA as a whole](/digital-marketing-agency-usa/) says little about how any of these compete on their own blocks.",
       "Density is what makes the city different. A dentist in a suburban town competes with a handful of practices; one in Midtown competes with dozens inside a few blocks, each with a full review profile. Being nearby is not an advantage when everyone is nearby. Customers decide on rating, recent reviews, photos, availability and whether the first page they see answers their question, so [conversion optimisation](/cro/) matters as much as visibility.",
       "Paid search reflects the same pressure. Clicks for legal, financial, medical and real estate terms in New York are among the most expensive anywhere, and the outer boroughs, New Jersey and Long Island behave as separate auctions with different economics. Budgets hold up only when campaigns are split by geography and intent, and when landing pages are specific enough to justify the cost of each visit.",
     ],
@@ -217,7 +217,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/usa/", "/locations/uk/london/", "/locations/canada/toronto/"],
+  related: ["/digital-marketing-agency-usa/", "/digital-marketing-agency-london/", "/digital-marketing-agency-toronto/"],
   caseStudies: ["multi-location-dental-group"],
   resources: ["what-automated-bidding-should-optimise-for", "conversion-work-without-ab-testing-traffic", "sizing-search-opportunities-by-value"],
 

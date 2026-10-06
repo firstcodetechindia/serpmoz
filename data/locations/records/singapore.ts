@@ -227,7 +227,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/india/", "/locations/australia/", "/locations/uae/"],
+  related: ["/digital-marketing-agency-india/", "/digital-marketing-agency-australia/", "/digital-marketing-agency-uae/"],
   caseStudies: ["b2b-saas-pipeline-quality"],
   resources: ["measuring-ai-search-visibility", "attribution-questions-worth-answering", "ai-moved-the-bottleneck"],
 

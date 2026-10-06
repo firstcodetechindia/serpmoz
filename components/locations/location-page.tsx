@@ -17,7 +17,8 @@ import { getCaseStudy } from "@/data/case-studies";
 import { methodology } from "@/data/growth";
 import { photos, type PhotoKey } from "@/data/images";
 import { getIndustry } from "@/data/industries";
-import { citiesOf, getLocationByPath, getMarket, locationPath, locationServicesIn } from "@/data/locations";
+import { citiesOf, getLocationByPath, getMarket, locationPath } from "@/data/locations";
+import { getLocalService, localServicePath } from "@/data/locations/services";
 import { getArticle } from "@/data/resources";
 import { getService } from "@/data/services";
 import { cta } from "@/lib/config/site";
@@ -62,7 +63,9 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
   const related = l.related.map(getLocationByPath).filter((x) => x !== undefined);
   const services = l.services.flatMap((s) => {
     const service = getService(s.slug);
-    return service ? [{ ...s, service }] : [];
+    // Where a page has been written for this service in this place, link to it; otherwise to the service itself.
+    const local = getLocalService(s.slug, l.slug);
+    return service ? [{ ...s, service, href: local ? localServicePath(local) : `/${s.slug}/` }] : [];
   });
   const industries = l.industries.flatMap((i) => {
     const industry = getIndustry(i.slug);
@@ -70,7 +73,6 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
   });
   const scenarios = l.caseStudies.map(getCaseStudy).filter((c) => c !== undefined);
   const reading = l.resources.map(getArticle).filter((a) => a !== undefined);
-  const localServices = isCity ? locationServicesIn(market.slug, l.slug) : [];
   const crumbs = [{ name: "Locations", href: "/locations/" }, ...(isCity ? [{ name: market.name, href: locationPath(market) }] : []), { name: l.name, href: path }];
 
   return (
@@ -225,7 +227,7 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
           <ul className="mt-10 border-b border-line lg:mt-12">
             {services.map((s, i) => (
               <li key={s.slug} className="border-t border-line">
-                <Link href={`/${s.slug}/`} className="group grid grid-cols-1 gap-x-8 gap-y-3 py-7 transition-colors lg:grid-cols-12 lg:items-start">
+                <Link href={s.href} className="group grid grid-cols-1 gap-x-8 gap-y-3 py-7 transition-colors lg:grid-cols-12 lg:items-start">
                   <span className="flex items-baseline gap-4 lg:col-span-4">
                     <span className="tabular text-sm font-semibold text-blue-ink">{String(i + 1).padStart(2, "0")}</span>
                     <span className="text-[clamp(1.25rem,1.1rem+0.6vw,1.5rem)] leading-snug font-semibold tracking-[-0.02em] text-navy transition-colors group-hover:text-blue-ink">{s.title}</span>
@@ -239,14 +241,6 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
               </li>
             ))}
           </ul>
-          {localServices.length ? (
-            <p className="mt-6 flex flex-wrap items-center gap-2 text-sm text-muted">
-              <span>Written specifically for {l.name}:</span>
-              {localServices.map((s) => (
-                <Link key={s.slug} href={`${path}${s.slug}/`} className="rounded-full border border-line px-3 py-1 font-medium text-ink transition-colors hover:border-navy hover:bg-navy hover:text-white">{s.title}</Link>
-              ))}
-            </p>
-          ) : null}
           <Link href="/services/" className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-navy underline decoration-navy/25 decoration-1 underline-offset-[5px] hover:decoration-orange hover:decoration-2">See every SERPMOZ service <ArrowRight aria-hidden className="size-4" /></Link>
         </div>
       </section>
@@ -425,7 +419,7 @@ export function LocationPage({ location: l }: { location: LocationRecord }) {
       <JsonLd
         data={[
           webPageSchema({ path, title: `${l.seo.title} | SERPMOZ`, description: l.seo.metaDescription, speakable: ["#answer"] }),
-          locationServiceSchema({ location: l, market, path, services: services.map((s) => ({ name: s.title, path: `/${s.slug}/` })) }),
+          locationServiceSchema({ location: l, market, path, services: services.map((s) => ({ name: s.title, path: s.href })) }),
           faqSchema(l.faqs),
         ]}
       />

@@ -224,7 +224,7 @@ export const articles: Article[] = [
         heading: "Be plain about how you serve the place",
         paragraphs: [
           "A location page should never imply premises that do not exist. If there is a branch, give its address, hours and directions. If the business travels to customers, say where it travels from and how far. If the work is done remotely, say that.",
-          "Our own city pages take the remote case. The page for [Gurgaon](/locations/india/gurgaon/) describes the city's business areas and the kinds of company found there, and states that we work with businesses there remotely, with no claim of an office. It is offered here as an example of the approach, and the swap test applies to it as much as to anyone else's page.",
+          "Our own city pages take the remote case. The page for [Gurgaon](/digital-marketing-agency-gurgaon/) describes the city's business areas and the kinds of company found there, and states that we work with businesses there remotely, with no claim of an office. It is offered here as an example of the approach, and the swap test applies to it as much as to anyone else's page.",
           "Being clear costs less than it seems. Customers who need someone on site were never going to be won by a vague page, and customers who do not mind are reassured by the candour.",
           "The same rule applies to structured data and business profiles. Mark up an address, or create a profile for a place, only where the business really operates from it.",
         ],

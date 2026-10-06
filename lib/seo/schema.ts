@@ -17,7 +17,7 @@ export function organizationSchema(): Json {
     url: `${site.url}/`,
     description: site.description,
     slogan: site.tagline,
-    logo: absoluteUrl("/icon.svg"),
+    logo: absoluteUrl("/brand/logo-icon.png"),
     ...(site.contactEmail ? { email: site.contactEmail } : {}),
     ...(sameAs.length ? { sameAs } : {}),
   };
@@ -133,21 +133,29 @@ function placeSchema(l: LocationRecord, market: LocationRecord): Json {
  * NOT a LocalBusiness: we work in these markets remotely and must not imply
  * an office, address or opening hours there.
  */
-export function locationServiceSchema(p: { location: LocationRecord; market: LocationRecord; path: string; services: { name: string; path: string }[] }): Json {
+export function locationServiceSchema(p: {
+  location: LocationRecord;
+  market: LocationRecord;
+  path: string;
+  /** For one service in a place; a location hub leaves these out */
+  serviceName?: string;
+  description?: string;
+  services: { name: string; path?: string }[];
+}): Json {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
     "@id": `${absoluteUrl(p.path)}#service`,
-    name: p.location.hero.title,
-    serviceType: "Digital marketing",
-    description: p.location.seo.metaDescription,
+    name: p.serviceName ?? p.location.hero.title,
+    serviceType: p.serviceName ?? "Digital marketing",
+    description: p.description ?? p.location.seo.metaDescription,
     url: absoluteUrl(p.path),
     provider: { "@id": ORG_ID },
     areaServed: placeSchema(p.location, p.market),
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: `SERPMOZ services in ${p.location.inSentence}`,
-      itemListElement: p.services.map((s) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: s.name, url: absoluteUrl(s.path) } })),
+      itemListElement: p.services.map((s) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: s.name, ...(s.path ? { url: absoluteUrl(s.path) } : {}) } })),
     },
   };
 }

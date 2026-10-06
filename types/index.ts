@@ -300,3 +300,33 @@ export type IndustryServiceRecord = {
   };
   cta: { title: string; body: string };
 };
+
+/**
+ * One service in one place, e.g. "Local SEO in Delhi". Lives at
+ * /{service}-{place}/ (for example /local-seo-services-delhi/). Written by
+ * hand for that pairing: everything here must be specific to this service in
+ * this place. Plain text only, no links: the page adds its links itself.
+ */
+export type LocalServicePage = {
+  /** Location slug: a market ("india") or a city ("delhi") */
+  place: string;
+  /** Slug in data/services */
+  service: string;
+  seo: { title: string; metaDescription: string; primaryKeyword: string; secondaryKeywords: string[] };
+  /** The H1 */
+  h1: string;
+  /** Opening paragraph under the H1 */
+  intro: string;
+  /** A question as people ask it, and a direct answer */
+  answer: { question: string; text: string };
+  /** How people in this place search for this service: three */
+  searches: { title: string; body: string }[];
+  /** What is different about doing this service here: four */
+  localFactors: { title: string; body: string }[];
+  /** For a city: localities and nearby places. For a market: cities and regions. Four to six. */
+  areas: { name: string; note: string }[];
+  /** Sectors this service matters most for here: three. Slugs in data/industries. */
+  sectors: { slug: string; note: string }[];
+  /** Five questions */
+  faqs: { q: string; a: string }[];
+};

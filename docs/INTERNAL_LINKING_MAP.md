@@ -8,7 +8,7 @@ Every location page also links to the locations index (breadcrumb), the growth a
 
 ## India
 
-### India `/locations/india/`
+### India `/digital-marketing-agency-india/`
 
 Primary keyword: digital marketing agency in India
 
@@ -33,25 +33,33 @@ Primary keyword: digital marketing agency in India
 - [Hospitality](/industries/hospitality/)
 
 **Locations linked from this page**
-- City: /locations/india/delhi/
-- City: /locations/india/gurgaon/
-- City: /locations/india/noida/
-- City: /locations/india/mumbai/
-- City: /locations/india/bangalore/
-- City: /locations/india/hyderabad/
-- City: /locations/india/pune/
-- City: /locations/india/jaipur/
-- Related: /locations/uae/
-- Related: /locations/usa/
-- Related: /locations/uk/
+- City: /digital-marketing-agency-delhi/
+- City: /digital-marketing-agency-gurgaon/
+- City: /digital-marketing-agency-noida/
+- City: /digital-marketing-agency-mumbai/
+- City: /digital-marketing-agency-bangalore/
+- City: /digital-marketing-agency-hyderabad/
+- City: /digital-marketing-agency-pune/
+- City: /digital-marketing-agency-jaipur/
+- Related: /digital-marketing-agency-uae/
+- Related: /digital-marketing-agency-usa/
+- Related: /digital-marketing-agency-uk/
+- Service here: /seo-services-india/
+- Service here: /local-seo-services-india/
+- Service here: /google-ads-india/
+- Service here: /meta-ads-india/
+- Service here: /whatsapp-automation-india/
+- Service here: /youtube-marketing-india/
+- Service here: /ecommerce-seo-india/
+- Service here: /ai-seo-services-india/
 
 **Links inside the copy**
 - /ai-seo-services/
+- /digital-marketing-agency-bangalore/
+- /digital-marketing-agency-delhi/
+- /digital-marketing-agency-gurgaon/
+- /digital-marketing-agency-mumbai/
 - /local-seo-services/
-- /locations/india/bangalore/
-- /locations/india/delhi/
-- /locations/india/gurgaon/
-- /locations/india/mumbai/
 - /whatsapp-automation/
 
 **Case studies and scenarios**
@@ -63,9 +71,9 @@ Primary keyword: digital marketing agency in India
 - [How to measure AI search visibility when the answer changes every time](/resources/measuring-ai-search-visibility/)
 - [What to let automated bidding optimise for](/resources/what-automated-bidding-should-optimise-for/)
 
-**Linked from** /locations/india/bangalore/, /locations/india/delhi/, /locations/india/gurgaon/, /locations/india/hyderabad/, /locations/india/jaipur/, /locations/india/mumbai/, /locations/india/noida/, /locations/india/pune/, /locations/singapore/, /locations/uae/
+**Linked from** /digital-marketing-agency-bangalore/, /digital-marketing-agency-delhi/, /digital-marketing-agency-gurgaon/, /digital-marketing-agency-hyderabad/, /digital-marketing-agency-jaipur/, /digital-marketing-agency-mumbai/, /digital-marketing-agency-noida/, /digital-marketing-agency-pune/, /digital-marketing-agency-singapore/, /digital-marketing-agency-uae/
 
-### Delhi `/locations/india/delhi/`
+### Delhi `/digital-marketing-agency-delhi/`
 
 Primary keyword: digital marketing agency in Delhi
 
@@ -86,13 +94,19 @@ Primary keyword: digital marketing agency in Delhi
 - [Professional Services](/industries/professional-services/)
 
 **Locations linked from this page**
-- Parent: /locations/india/
-- Nearby: /locations/india/gurgaon/
-- Nearby: /locations/india/noida/
-- Related: /locations/india/
-- Related: /locations/india/gurgaon/
-- Related: /locations/india/noida/
-- Related: /locations/india/mumbai/
+- Parent: /digital-marketing-agency-india/
+- Nearby: /digital-marketing-agency-gurgaon/
+- Nearby: /digital-marketing-agency-noida/
+- Related: /digital-marketing-agency-india/
+- Related: /digital-marketing-agency-gurgaon/
+- Related: /digital-marketing-agency-noida/
+- Related: /digital-marketing-agency-mumbai/
+- Service here: /local-seo-services-delhi/
+- Service here: /google-maps-seo-delhi/
+- Service here: /google-ads-delhi/
+- Service here: /meta-ads-delhi/
+- Service here: /whatsapp-automation-delhi/
+- Service here: /seo-services-delhi/
 
 **Links inside the copy**
 - /google-maps-seo/
@@ -110,9 +124,9 @@ Primary keyword: digital marketing agency in Delhi
 - [What to let automated bidding optimise for](/resources/what-automated-bidding-should-optimise-for/)
 - [How to measure AI search visibility when the answer changes every time](/resources/measuring-ai-search-visibility/)
 
-**Linked from** /locations/india/, /locations/india/gurgaon/, /locations/india/jaipur/, /locations/india/mumbai/, /locations/india/noida/
+**Linked from** /digital-marketing-agency-gurgaon/, /digital-marketing-agency-india/, /digital-marketing-agency-jaipur/, /digital-marketing-agency-mumbai/, /digital-marketing-agency-noida/
 
-### Gurgaon `/locations/india/gurgaon/`
+### Gurgaon `/digital-marketing-agency-gurgaon/`
 
 Primary keyword: digital marketing agency in Gurgaon
 
@@ -133,23 +147,27 @@ Primary keyword: digital marketing agency in Gurgaon
 - [Technology](/industries/technology/)
 
 **Locations linked from this page**
-- Parent: /locations/india/
-- Nearby: /locations/india/delhi/
-- Nearby: /locations/india/noida/
-- Related: /locations/india/
-- Related: /locations/india/delhi/
-- Related: /locations/india/noida/
-- Related: /locations/india/bangalore/
-- Service in this city: /locations/india/gurgaon/seo-services/
-- Service in this city: /locations/india/gurgaon/ai-seo/
+- Parent: /digital-marketing-agency-india/
+- Nearby: /digital-marketing-agency-delhi/
+- Nearby: /digital-marketing-agency-noida/
+- Related: /digital-marketing-agency-india/
+- Related: /digital-marketing-agency-delhi/
+- Related: /digital-marketing-agency-noida/
+- Related: /digital-marketing-agency-bangalore/
+- Service here: /seo-services-gurgaon/
+- Service here: /ai-seo-services-gurgaon/
+- Service here: /linkedin-ads-gurgaon/
+- Service here: /lead-generation-gurgaon/
+- Service here: /google-ads-gurgaon/
+- Service here: /landing-page-optimization-gurgaon/
 
 **Links inside the copy**
 - /ai-seo-services/
+- /digital-marketing-agency-delhi/
 - /industries/b2b/
 - /industries/saas/
 - /lead-generation/
 - /local-seo-services/
-- /locations/india/delhi/
 - /seo-services/
 
 **Case studies and scenarios**
@@ -160,9 +178,9 @@ Primary keyword: digital marketing agency in Gurgaon
 - [Sizing a search opportunity by commercial value, not volume](/resources/sizing-search-opportunities-by-value/)
 - [The attribution questions worth answering, and the ones that are not](/resources/attribution-questions-worth-answering/)
 
-**Linked from** /locations/india/, /locations/india/bangalore/, /locations/india/delhi/, /locations/india/jaipur/, /locations/india/noida/
+**Linked from** /digital-marketing-agency-bangalore/, /digital-marketing-agency-delhi/, /digital-marketing-agency-india/, /digital-marketing-agency-jaipur/, /digital-marketing-agency-noida/
 
-### Noida `/locations/india/noida/`
+### Noida `/digital-marketing-agency-noida/`
 
 Primary keyword: digital marketing agency in Noida
 
@@ -182,20 +200,26 @@ Primary keyword: digital marketing agency in Noida
 - [B2B](/industries/b2b/)
 
 **Locations linked from this page**
-- Parent: /locations/india/
-- Nearby: /locations/india/delhi/
-- Nearby: /locations/india/gurgaon/
-- Related: /locations/india/
-- Related: /locations/india/delhi/
-- Related: /locations/india/gurgaon/
-- Related: /locations/india/pune/
+- Parent: /digital-marketing-agency-india/
+- Nearby: /digital-marketing-agency-delhi/
+- Nearby: /digital-marketing-agency-gurgaon/
+- Related: /digital-marketing-agency-india/
+- Related: /digital-marketing-agency-delhi/
+- Related: /digital-marketing-agency-gurgaon/
+- Related: /digital-marketing-agency-pune/
+- Service here: /local-seo-services-noida/
+- Service here: /seo-services-noida/
+- Service here: /google-ads-noida/
+- Service here: /lead-generation-noida/
+- Service here: /whatsapp-automation-noida/
+- Service here: /linkedin-marketing-noida/
 
 **Links inside the copy**
+- /digital-marketing-agency-gurgaon/
 - /google-maps-seo/
 - /industries/education/
 - /lead-generation/
 - /local-seo-services/
-- /locations/india/gurgaon/
 - /seo-services/
 
 **Case studies and scenarios**
@@ -206,9 +230,9 @@ Primary keyword: digital marketing agency in Noida
 - [What to let automated bidding optimise for](/resources/what-automated-bidding-should-optimise-for/)
 - [Conversion work for sites without the traffic to A/B test](/resources/conversion-work-without-ab-testing-traffic/)
 
-**Linked from** /locations/india/, /locations/india/delhi/, /locations/india/gurgaon/
+**Linked from** /digital-marketing-agency-delhi/, /digital-marketing-agency-gurgaon/, /digital-marketing-agency-india/
 
-### Mumbai `/locations/india/mumbai/`
+### Mumbai `/digital-marketing-agency-mumbai/`
 
 Primary keyword: digital marketing agency in Mumbai
 
@@ -229,19 +253,25 @@ Primary keyword: digital marketing agency in Mumbai
 - [Healthcare](/industries/healthcare/)
 
 **Locations linked from this page**
-- Parent: /locations/india/
-- Nearby: /locations/india/pune/
-- Related: /locations/india/
-- Related: /locations/india/pune/
-- Related: /locations/india/delhi/
-- Related: /locations/india/bangalore/
+- Parent: /digital-marketing-agency-india/
+- Nearby: /digital-marketing-agency-pune/
+- Related: /digital-marketing-agency-india/
+- Related: /digital-marketing-agency-pune/
+- Related: /digital-marketing-agency-delhi/
+- Related: /digital-marketing-agency-bangalore/
+- Service here: /seo-services-mumbai/
+- Service here: /google-ads-mumbai/
+- Service here: /meta-ads-mumbai/
+- Service here: /digital-pr-mumbai/
+- Service here: /local-seo-services-mumbai/
+- Service here: /cro-mumbai/
 
 **Links inside the copy**
 - /ai-seo-services/
+- /digital-marketing-agency-pune/
 - /digital-pr/
 - /industries/finance/
 - /local-seo-services/
-- /locations/india/pune/
 - /seo-services/
 
 **Case studies and scenarios**
@@ -253,9 +283,9 @@ Primary keyword: digital marketing agency in Mumbai
 - [What to let automated bidding optimise for](/resources/what-automated-bidding-should-optimise-for/)
 - [The attribution questions worth answering, and the ones that are not](/resources/attribution-questions-worth-answering/)
 
-**Linked from** /locations/india/, /locations/india/delhi/, /locations/india/hyderabad/, /locations/india/jaipur/, /locations/india/pune/, /locations/uae/dubai/
+**Linked from** /digital-marketing-agency-delhi/, /digital-marketing-agency-dubai/, /digital-marketing-agency-hyderabad/, /digital-marketing-agency-india/, /digital-marketing-agency-jaipur/, /digital-marketing-agency-pune/
 
-### Bangalore `/locations/india/bangalore/`
+### Bangalore `/digital-marketing-agency-bangalore/`
 
 Primary keyword: digital marketing agency in Bangalore
 
@@ -276,19 +306,25 @@ Primary keyword: digital marketing agency in Bangalore
 - [Real Estate](/industries/real-estate/)
 
 **Locations linked from this page**
-- Parent: /locations/india/
-- Nearby: /locations/india/hyderabad/
-- Related: /locations/india/
-- Related: /locations/india/hyderabad/
-- Related: /locations/india/pune/
-- Related: /locations/india/gurgaon/
+- Parent: /digital-marketing-agency-india/
+- Nearby: /digital-marketing-agency-hyderabad/
+- Related: /digital-marketing-agency-india/
+- Related: /digital-marketing-agency-hyderabad/
+- Related: /digital-marketing-agency-pune/
+- Related: /digital-marketing-agency-gurgaon/
+- Service here: /seo-services-bangalore/
+- Service here: /ai-seo-services-bangalore/
+- Service here: /content-seo-bangalore/
+- Service here: /technical-seo-bangalore/
+- Service here: /linkedin-ads-bangalore/
+- Service here: /local-seo-services-bangalore/
 
 **Links inside the copy**
 - /ai-seo-services/
 - /content-seo/
+- /digital-marketing-agency-hyderabad/
 - /industries/saas/
 - /local-seo-services/
-- /locations/india/hyderabad/
 - /seo-services/
 - /technical-seo/
 
@@ -300,9 +336,9 @@ Primary keyword: digital marketing agency in Bangalore
 - [Sizing a search opportunity by commercial value, not volume](/resources/sizing-search-opportunities-by-value/)
 - [AI made execution cheap. That moved the bottleneck, it did not remove it.](/resources/ai-moved-the-bottleneck/)
 
-**Linked from** /locations/india/, /locations/india/gurgaon/, /locations/india/hyderabad/, /locations/india/mumbai/, /locations/india/pune/
+**Linked from** /digital-marketing-agency-gurgaon/, /digital-marketing-agency-hyderabad/, /digital-marketing-agency-india/, /digital-marketing-agency-mumbai/, /digital-marketing-agency-pune/
 
-### Hyderabad `/locations/india/hyderabad/`
+### Hyderabad `/digital-marketing-agency-hyderabad/`
 
 Primary keyword: digital marketing agency in Hyderabad
 
@@ -323,20 +359,26 @@ Primary keyword: digital marketing agency in Hyderabad
 - [B2B](/industries/b2b/)
 
 **Locations linked from this page**
-- Parent: /locations/india/
-- Nearby: /locations/india/bangalore/
-- Related: /locations/india/
-- Related: /locations/india/bangalore/
-- Related: /locations/india/pune/
-- Related: /locations/india/mumbai/
+- Parent: /digital-marketing-agency-india/
+- Nearby: /digital-marketing-agency-bangalore/
+- Related: /digital-marketing-agency-india/
+- Related: /digital-marketing-agency-bangalore/
+- Related: /digital-marketing-agency-pune/
+- Related: /digital-marketing-agency-mumbai/
+- Service here: /seo-services-hyderabad/
+- Service here: /local-seo-services-hyderabad/
+- Service here: /google-ads-hyderabad/
+- Service here: /lead-generation-hyderabad/
+- Service here: /linkedin-marketing-hyderabad/
+- Service here: /youtube-marketing-hyderabad/
 
 **Links inside the copy**
+- /digital-marketing-agency-bangalore/
 - /google-maps-seo/
 - /industries/healthcare/
 - /industries/real-estate/
 - /lead-generation/
 - /local-seo-services/
-- /locations/india/bangalore/
 - /seo-services/
 
 **Case studies and scenarios**
@@ -347,9 +389,9 @@ Primary keyword: digital marketing agency in Hyderabad
 - [What to let automated bidding optimise for](/resources/what-automated-bidding-should-optimise-for/)
 - [How to measure AI search visibility when the answer changes every time](/resources/measuring-ai-search-visibility/)
 
-**Linked from** /locations/india/, /locations/india/bangalore/, /locations/india/pune/
+**Linked from** /digital-marketing-agency-bangalore/, /digital-marketing-agency-india/, /digital-marketing-agency-pune/
 
-### Pune `/locations/india/pune/`
+### Pune `/digital-marketing-agency-pune/`
 
 Primary keyword: digital marketing agency in Pune
 
@@ -370,19 +412,25 @@ Primary keyword: digital marketing agency in Pune
 - [Local Businesses](/industries/local-business/)
 
 **Locations linked from this page**
-- Parent: /locations/india/
-- Nearby: /locations/india/mumbai/
-- Related: /locations/india/
-- Related: /locations/india/mumbai/
-- Related: /locations/india/bangalore/
-- Related: /locations/india/hyderabad/
+- Parent: /digital-marketing-agency-india/
+- Nearby: /digital-marketing-agency-mumbai/
+- Related: /digital-marketing-agency-india/
+- Related: /digital-marketing-agency-mumbai/
+- Related: /digital-marketing-agency-bangalore/
+- Related: /digital-marketing-agency-hyderabad/
+- Service here: /seo-services-pune/
+- Service here: /local-seo-services-pune/
+- Service here: /google-ads-pune/
+- Service here: /lead-generation-pune/
+- Service here: /linkedin-marketing-pune/
+- Service here: /meta-ads-pune/
 
 **Links inside the copy**
+- /digital-marketing-agency-mumbai/
 - /google-maps-seo/
 - /industries/education/
 - /lead-generation/
 - /local-seo-services/
-- /locations/india/mumbai/
 - /seo-services/
 
 **Case studies and scenarios**
@@ -393,9 +441,9 @@ Primary keyword: digital marketing agency in Pune
 - [Conversion work for sites without the traffic to A/B test](/resources/conversion-work-without-ab-testing-traffic/)
 - [The attribution questions worth answering, and the ones that are not](/resources/attribution-questions-worth-answering/)
 
-**Linked from** /locations/india/, /locations/india/bangalore/, /locations/india/hyderabad/, /locations/india/mumbai/, /locations/india/noida/
+**Linked from** /digital-marketing-agency-bangalore/, /digital-marketing-agency-hyderabad/, /digital-marketing-agency-india/, /digital-marketing-agency-mumbai/, /digital-marketing-agency-noida/
 
-### Jaipur `/locations/india/jaipur/`
+### Jaipur `/digital-marketing-agency-jaipur/`
 
 Primary keyword: digital marketing agency in Jaipur
 
@@ -415,20 +463,26 @@ Primary keyword: digital marketing agency in Jaipur
 - [Local Businesses](/industries/local-business/)
 
 **Locations linked from this page**
-- Parent: /locations/india/
-- Nearby: /locations/india/delhi/
-- Related: /locations/india/
-- Related: /locations/india/delhi/
-- Related: /locations/india/gurgaon/
-- Related: /locations/india/mumbai/
+- Parent: /digital-marketing-agency-india/
+- Nearby: /digital-marketing-agency-delhi/
+- Related: /digital-marketing-agency-india/
+- Related: /digital-marketing-agency-delhi/
+- Related: /digital-marketing-agency-gurgaon/
+- Related: /digital-marketing-agency-mumbai/
+- Service here: /local-seo-services-jaipur/
+- Service here: /google-maps-seo-jaipur/
+- Service here: /ecommerce-seo-jaipur/
+- Service here: /international-seo-jaipur/
+- Service here: /instagram-marketing-jaipur/
+- Service here: /meta-ads-jaipur/
 
 **Links inside the copy**
+- /digital-marketing-agency-delhi/
 - /ecommerce-seo/
 - /google-maps-seo/
 - /industries/hospitality/
 - /international-seo/
 - /local-seo-services/
-- /locations/india/delhi/
 
 **Case studies and scenarios**
 - /case-studies/d2c-ecommerce-margin/ (illustrative scenario, noindex)
@@ -438,11 +492,11 @@ Primary keyword: digital marketing agency in Jaipur
 - [What to let automated bidding optimise for](/resources/what-automated-bidding-should-optimise-for/)
 - [How to measure AI search visibility when the answer changes every time](/resources/measuring-ai-search-visibility/)
 
-**Linked from** /locations/india/
+**Linked from** /digital-marketing-agency-india/
 
 ## USA
 
-### USA `/locations/usa/`
+### USA `/digital-marketing-agency-usa/`
 
 Primary keyword: digital marketing agency in the USA
 
@@ -466,19 +520,27 @@ Primary keyword: digital marketing agency in the USA
 - [Real Estate](/industries/real-estate/)
 
 **Locations linked from this page**
-- City: /locations/usa/new-york/
-- Related: /locations/canada/
-- Related: /locations/uk/
-- Related: /locations/australia/
+- City: /digital-marketing-agency-new-york/
+- Related: /digital-marketing-agency-canada/
+- Related: /digital-marketing-agency-uk/
+- Related: /digital-marketing-agency-australia/
+- Service here: /seo-services-usa/
+- Service here: /ai-seo-services-usa/
+- Service here: /google-ads-usa/
+- Service here: /microsoft-ads-usa/
+- Service here: /cro-usa/
+- Service here: /local-seo-services-usa/
+- Service here: /ecommerce-seo-usa/
+- Service here: /linkedin-ads-usa/
 
 **Links inside the copy**
 - /ai-seo-services/
 - /cro/
+- /digital-marketing-agency-new-york/
 - /ecommerce-seo/
 - /growth-audit/
 - /industries/saas/
 - /local-seo-services/
-- /locations/usa/new-york/
 
 **Case studies and scenarios**
 - /case-studies/b2b-saas-pipeline-quality/ (illustrative scenario, noindex)
@@ -489,9 +551,9 @@ Primary keyword: digital marketing agency in the USA
 - [Sizing a search opportunity by commercial value, not volume](/resources/sizing-search-opportunities-by-value/)
 - [How to measure AI search visibility when the answer changes every time](/resources/measuring-ai-search-visibility/)
 
-**Linked from** /locations/canada/, /locations/europe/, /locations/india/, /locations/uk/, /locations/usa/new-york/
+**Linked from** /digital-marketing-agency-canada/, /digital-marketing-agency-europe/, /digital-marketing-agency-india/, /digital-marketing-agency-new-york/, /digital-marketing-agency-uk/
 
-### New York `/locations/usa/new-york/`
+### New York `/digital-marketing-agency-new-york/`
 
 Primary keyword: digital marketing agency in New York
 
@@ -512,17 +574,23 @@ Primary keyword: digital marketing agency in New York
 - [Professional Services](/industries/professional-services/)
 
 **Locations linked from this page**
-- Parent: /locations/usa/
-- Related: /locations/usa/
-- Related: /locations/uk/london/
-- Related: /locations/canada/toronto/
+- Parent: /digital-marketing-agency-usa/
+- Related: /digital-marketing-agency-usa/
+- Related: /digital-marketing-agency-london/
+- Related: /digital-marketing-agency-toronto/
+- Service here: /local-seo-services-new-york/
+- Service here: /google-maps-seo-new-york/
+- Service here: /google-ads-new-york/
+- Service here: /landing-page-optimization-new-york/
+- Service here: /digital-pr-new-york/
+- Service here: /cro-new-york/
 
 **Links inside the copy**
 - /ai-seo-services/
 - /cro/
+- /digital-marketing-agency-usa/
 - /google-maps-seo/
 - /local-seo-services/
-- /locations/usa/
 - /seo-services/
 
 **Case studies and scenarios**
@@ -533,11 +601,11 @@ Primary keyword: digital marketing agency in New York
 - [Conversion work for sites without the traffic to A/B test](/resources/conversion-work-without-ab-testing-traffic/)
 - [Sizing a search opportunity by commercial value, not volume](/resources/sizing-search-opportunities-by-value/)
 
-**Linked from** /locations/canada/toronto/, /locations/uk/london/, /locations/usa/
+**Linked from** /digital-marketing-agency-london/, /digital-marketing-agency-toronto/, /digital-marketing-agency-usa/
 
 ## UK
 
-### UK `/locations/uk/`
+### UK `/digital-marketing-agency-uk/`
 
 Primary keyword: digital marketing agency in the UK
 
@@ -562,17 +630,25 @@ Primary keyword: digital marketing agency in the UK
 - [Education](/industries/education/)
 
 **Locations linked from this page**
-- City: /locations/uk/london/
-- Related: /locations/europe/
-- Related: /locations/usa/
-- Related: /locations/australia/
+- City: /digital-marketing-agency-london/
+- Related: /digital-marketing-agency-europe/
+- Related: /digital-marketing-agency-usa/
+- Related: /digital-marketing-agency-australia/
+- Service here: /seo-services-uk/
+- Service here: /content-seo-uk/
+- Service here: /digital-pr-uk/
+- Service here: /google-ads-uk/
+- Service here: /local-seo-services-uk/
+- Service here: /cro-uk/
+- Service here: /linkedin-marketing-uk/
+- Service here: /aeo-services-uk/
 
 **Links inside the copy**
 - /aeo-services/
+- /digital-marketing-agency-london/
 - /digital-pr/
 - /growth-audit/
 - /industries/accounting/
-- /locations/uk/london/
 - /seo-services/
 
 **Case studies and scenarios**
@@ -584,9 +660,9 @@ Primary keyword: digital marketing agency in the UK
 - [Conversion work for sites without the traffic to A/B test](/resources/conversion-work-without-ab-testing-traffic/)
 - [How to measure AI search visibility when the answer changes every time](/resources/measuring-ai-search-visibility/)
 
-**Linked from** /locations/australia/, /locations/canada/, /locations/europe/, /locations/india/, /locations/uae/, /locations/uk/london/, /locations/usa/
+**Linked from** /digital-marketing-agency-australia/, /digital-marketing-agency-canada/, /digital-marketing-agency-europe/, /digital-marketing-agency-india/, /digital-marketing-agency-london/, /digital-marketing-agency-uae/, /digital-marketing-agency-usa/
 
-### London `/locations/uk/london/`
+### London `/digital-marketing-agency-london/`
 
 Primary keyword: digital marketing agency in London
 
@@ -607,16 +683,22 @@ Primary keyword: digital marketing agency in London
 - [Healthcare](/industries/healthcare/)
 
 **Locations linked from this page**
-- Parent: /locations/uk/
-- Related: /locations/uk/
-- Related: /locations/usa/new-york/
-- Related: /locations/uae/dubai/
+- Parent: /digital-marketing-agency-uk/
+- Related: /digital-marketing-agency-uk/
+- Related: /digital-marketing-agency-new-york/
+- Related: /digital-marketing-agency-dubai/
+- Service here: /seo-services-london/
+- Service here: /local-seo-services-london/
+- Service here: /google-ads-london/
+- Service here: /linkedin-ads-london/
+- Service here: /digital-pr-london/
+- Service here: /cro-london/
 
 **Links inside the copy**
+- /digital-marketing-agency-uk/
 - /digital-pr/
 - /international-seo/
 - /local-seo-services/
-- /locations/uk/
 - /seo-services/
 
 **Case studies and scenarios**
@@ -628,11 +710,11 @@ Primary keyword: digital marketing agency in London
 - [How to measure AI search visibility when the answer changes every time](/resources/measuring-ai-search-visibility/)
 - [The attribution questions worth answering, and the ones that are not](/resources/attribution-questions-worth-answering/)
 
-**Linked from** /locations/australia/sydney/, /locations/uae/dubai/, /locations/uk/, /locations/usa/new-york/
+**Linked from** /digital-marketing-agency-dubai/, /digital-marketing-agency-new-york/, /digital-marketing-agency-sydney/, /digital-marketing-agency-uk/
 
 ## UAE
 
-### UAE `/locations/uae/`
+### UAE `/digital-marketing-agency-uae/`
 
 Primary keyword: digital marketing agency in the UAE
 
@@ -657,16 +739,24 @@ Primary keyword: digital marketing agency in the UAE
 - [Logistics](/industries/logistics/)
 
 **Locations linked from this page**
-- City: /locations/uae/dubai/
-- Related: /locations/india/
-- Related: /locations/uk/
-- Related: /locations/singapore/
+- City: /digital-marketing-agency-dubai/
+- Related: /digital-marketing-agency-india/
+- Related: /digital-marketing-agency-uk/
+- Related: /digital-marketing-agency-singapore/
+- Service here: /seo-services-uae/
+- Service here: /international-seo-uae/
+- Service here: /google-maps-seo-uae/
+- Service here: /google-ads-uae/
+- Service here: /meta-ads-uae/
+- Service here: /instagram-marketing-uae/
+- Service here: /whatsapp-automation-uae/
+- Service here: /lead-generation-uae/
 
 **Links inside the copy**
 - /ai-seo-services/
+- /digital-marketing-agency-dubai/
 - /google-maps-seo/
 - /international-seo/
-- /locations/uae/dubai/
 - /seo-services/
 - /whatsapp-automation/
 
@@ -678,9 +768,9 @@ Primary keyword: digital marketing agency in the UAE
 - [What to let automated bidding optimise for](/resources/what-automated-bidding-should-optimise-for/)
 - [How to measure AI search visibility when the answer changes every time](/resources/measuring-ai-search-visibility/)
 
-**Linked from** /locations/europe/, /locations/india/, /locations/singapore/, /locations/uae/dubai/
+**Linked from** /digital-marketing-agency-dubai/, /digital-marketing-agency-europe/, /digital-marketing-agency-india/, /digital-marketing-agency-singapore/
 
-### Dubai `/locations/uae/dubai/`
+### Dubai `/digital-marketing-agency-dubai/`
 
 Primary keyword: digital marketing agency in Dubai
 
@@ -701,17 +791,23 @@ Primary keyword: digital marketing agency in Dubai
 - [Ecommerce](/industries/ecommerce/)
 
 **Locations linked from this page**
-- Parent: /locations/uae/
-- Related: /locations/uae/
-- Related: /locations/uk/london/
-- Related: /locations/india/mumbai/
+- Parent: /digital-marketing-agency-uae/
+- Related: /digital-marketing-agency-uae/
+- Related: /digital-marketing-agency-london/
+- Related: /digital-marketing-agency-mumbai/
+- Service here: /local-seo-services-dubai/
+- Service here: /google-ads-dubai/
+- Service here: /meta-ads-dubai/
+- Service here: /whatsapp-automation-dubai/
+- Service here: /international-seo-dubai/
+- Service here: /landing-page-optimization-dubai/
 
 **Links inside the copy**
 - /ai-seo-services/
+- /digital-marketing-agency-uae/
 - /google-maps-seo/
 - /international-seo/
 - /local-seo-services/
-- /locations/uae/
 - /seo-services/
 
 **Case studies and scenarios**
@@ -722,11 +818,11 @@ Primary keyword: digital marketing agency in Dubai
 - [Sizing a search opportunity by commercial value, not volume](/resources/sizing-search-opportunities-by-value/)
 - [How to measure AI search visibility when the answer changes every time](/resources/measuring-ai-search-visibility/)
 
-**Linked from** /locations/uae/, /locations/uk/london/
+**Linked from** /digital-marketing-agency-london/, /digital-marketing-agency-uae/
 
 ## Canada
 
-### Canada `/locations/canada/`
+### Canada `/digital-marketing-agency-canada/`
 
 Primary keyword: digital marketing agency in Canada
 
@@ -750,17 +846,25 @@ Primary keyword: digital marketing agency in Canada
 - [Education](/industries/education/)
 
 **Locations linked from this page**
-- City: /locations/canada/toronto/
-- Related: /locations/usa/
-- Related: /locations/uk/
-- Related: /locations/australia/
+- City: /digital-marketing-agency-toronto/
+- Related: /digital-marketing-agency-usa/
+- Related: /digital-marketing-agency-uk/
+- Related: /digital-marketing-agency-australia/
+- Service here: /seo-services-canada/
+- Service here: /international-seo-canada/
+- Service here: /technical-seo-canada/
+- Service here: /local-seo-services-canada/
+- Service here: /google-maps-seo-canada/
+- Service here: /google-ads-canada/
+- Service here: /email-marketing-canada/
+- Service here: /content-marketing-canada/
 
 **Links inside the copy**
+- /digital-marketing-agency-toronto/
 - /email-marketing/
 - /growth-audit/
 - /international-seo/
 - /local-seo-services/
-- /locations/canada/toronto/
 
 **Case studies and scenarios**
 - /case-studies/multi-location-dental-group/ (illustrative scenario, noindex)
@@ -771,9 +875,9 @@ Primary keyword: digital marketing agency in Canada
 - [The attribution questions worth answering, and the ones that are not](/resources/attribution-questions-worth-answering/)
 - [AI made execution cheap. That moved the bottleneck, it did not remove it.](/resources/ai-moved-the-bottleneck/)
 
-**Linked from** /locations/australia/, /locations/canada/toronto/, /locations/usa/
+**Linked from** /digital-marketing-agency-australia/, /digital-marketing-agency-toronto/, /digital-marketing-agency-usa/
 
-### Toronto `/locations/canada/toronto/`
+### Toronto `/digital-marketing-agency-toronto/`
 
 Primary keyword: digital marketing agency in Toronto
 
@@ -794,17 +898,23 @@ Primary keyword: digital marketing agency in Toronto
 - [Home Services](/industries/home-services/)
 
 **Locations linked from this page**
-- Parent: /locations/canada/
-- Related: /locations/canada/
-- Related: /locations/usa/new-york/
-- Related: /locations/australia/sydney/
+- Parent: /digital-marketing-agency-canada/
+- Related: /digital-marketing-agency-canada/
+- Related: /digital-marketing-agency-new-york/
+- Related: /digital-marketing-agency-sydney/
+- Service here: /local-seo-services-toronto/
+- Service here: /seo-services-toronto/
+- Service here: /google-ads-toronto/
+- Service here: /linkedin-ads-toronto/
+- Service here: /content-seo-toronto/
+- Service here: /cro-toronto/
 
 **Links inside the copy**
 - /ai-seo-services/
 - /cro/
+- /digital-marketing-agency-canada/
 - /google-maps-seo/
 - /local-seo-services/
-- /locations/canada/
 - /seo-services/
 
 **Case studies and scenarios**
@@ -816,11 +926,11 @@ Primary keyword: digital marketing agency in Toronto
 - [The attribution questions worth answering, and the ones that are not](/resources/attribution-questions-worth-answering/)
 - [How to measure AI search visibility when the answer changes every time](/resources/measuring-ai-search-visibility/)
 
-**Linked from** /locations/australia/sydney/, /locations/canada/, /locations/usa/new-york/
+**Linked from** /digital-marketing-agency-canada/, /digital-marketing-agency-new-york/, /digital-marketing-agency-sydney/
 
 ## Australia
 
-### Australia `/locations/australia/`
+### Australia `/digital-marketing-agency-australia/`
 
 Primary keyword: digital marketing agency in Australia
 
@@ -845,15 +955,23 @@ Primary keyword: digital marketing agency in Australia
 - [Professional Services](/industries/professional-services/)
 
 **Locations linked from this page**
-- City: /locations/australia/sydney/
-- Related: /locations/singapore/
-- Related: /locations/uk/
-- Related: /locations/canada/
+- City: /digital-marketing-agency-sydney/
+- Related: /digital-marketing-agency-singapore/
+- Related: /digital-marketing-agency-uk/
+- Related: /digital-marketing-agency-canada/
+- Service here: /local-seo-services-australia/
+- Service here: /google-maps-seo-australia/
+- Service here: /seo-services-australia/
+- Service here: /google-ads-australia/
+- Service here: /cro-australia/
+- Service here: /ecommerce-seo-australia/
+- Service here: /content-marketing-australia/
+- Service here: /web-development-australia/
 
 **Links inside the copy**
 - /ai-seo-services/
+- /digital-marketing-agency-sydney/
 - /local-seo-services/
-- /locations/australia/sydney/
 - /seo-services/
 - /web-development/
 
@@ -866,9 +984,9 @@ Primary keyword: digital marketing agency in Australia
 - [Conversion work for sites without the traffic to A/B test](/resources/conversion-work-without-ab-testing-traffic/)
 - [The attribution questions worth answering, and the ones that are not](/resources/attribution-questions-worth-answering/)
 
-**Linked from** /locations/australia/sydney/, /locations/canada/, /locations/singapore/, /locations/uk/, /locations/usa/
+**Linked from** /digital-marketing-agency-canada/, /digital-marketing-agency-singapore/, /digital-marketing-agency-sydney/, /digital-marketing-agency-uk/, /digital-marketing-agency-usa/
 
-### Sydney `/locations/australia/sydney/`
+### Sydney `/digital-marketing-agency-sydney/`
 
 Primary keyword: digital marketing agency in Sydney
 
@@ -889,16 +1007,22 @@ Primary keyword: digital marketing agency in Sydney
 - [Hospitality](/industries/hospitality/)
 
 **Locations linked from this page**
-- Parent: /locations/australia/
-- Related: /locations/australia/
-- Related: /locations/uk/london/
-- Related: /locations/canada/toronto/
+- Parent: /digital-marketing-agency-australia/
+- Related: /digital-marketing-agency-australia/
+- Related: /digital-marketing-agency-london/
+- Related: /digital-marketing-agency-toronto/
+- Service here: /google-maps-seo-sydney/
+- Service here: /local-seo-services-sydney/
+- Service here: /google-ads-sydney/
+- Service here: /seo-services-sydney/
+- Service here: /landing-page-optimization-sydney/
+- Service here: /web-development-sydney/
 
 **Links inside the copy**
+- /digital-marketing-agency-australia/
 - /google-maps-seo/
 - /landing-page-optimization/
 - /local-seo-services/
-- /locations/australia/
 - /seo-services/
 
 **Case studies and scenarios**
@@ -909,11 +1033,11 @@ Primary keyword: digital marketing agency in Sydney
 - [What to let automated bidding optimise for](/resources/what-automated-bidding-should-optimise-for/)
 - [Conversion work for sites without the traffic to A/B test](/resources/conversion-work-without-ab-testing-traffic/)
 
-**Linked from** /locations/australia/, /locations/canada/toronto/
+**Linked from** /digital-marketing-agency-australia/, /digital-marketing-agency-toronto/
 
 ## Singapore
 
-### Singapore `/locations/singapore/`
+### Singapore `/digital-marketing-agency-singapore/`
 
 Primary keyword: digital marketing agency in Singapore
 
@@ -938,9 +1062,17 @@ Primary keyword: digital marketing agency in Singapore
 - [Professional Services](/industries/professional-services/)
 
 **Locations linked from this page**
-- Related: /locations/india/
-- Related: /locations/australia/
-- Related: /locations/uae/
+- Related: /digital-marketing-agency-india/
+- Related: /digital-marketing-agency-australia/
+- Related: /digital-marketing-agency-uae/
+- Service here: /seo-services-singapore/
+- Service here: /international-seo-singapore/
+- Service here: /ai-seo-services-singapore/
+- Service here: /technical-seo-singapore/
+- Service here: /linkedin-ads-singapore/
+- Service here: /google-ads-singapore/
+- Service here: /cro-singapore/
+- Service here: /nextjs-development-singapore/
 
 **Links inside the copy**
 - /ai-seo-services/
@@ -958,11 +1090,11 @@ Primary keyword: digital marketing agency in Singapore
 - [The attribution questions worth answering, and the ones that are not](/resources/attribution-questions-worth-answering/)
 - [AI made execution cheap. That moved the bottleneck, it did not remove it.](/resources/ai-moved-the-bottleneck/)
 
-**Linked from** /locations/australia/, /locations/uae/
+**Linked from** /digital-marketing-agency-australia/, /digital-marketing-agency-uae/
 
 ## Europe
 
-### Europe `/locations/europe/`
+### Europe `/digital-marketing-agency-europe/`
 
 Primary keyword: digital marketing agency in Europe
 
@@ -986,15 +1118,23 @@ Primary keyword: digital marketing agency in Europe
 - [Finance](/industries/finance/)
 
 **Locations linked from this page**
-- Related: /locations/uk/
-- Related: /locations/usa/
-- Related: /locations/uae/
+- Related: /digital-marketing-agency-uk/
+- Related: /digital-marketing-agency-usa/
+- Related: /digital-marketing-agency-uae/
+- Service here: /international-seo-europe/
+- Service here: /technical-seo-europe/
+- Service here: /content-seo-europe/
+- Service here: /digital-pr-europe/
+- Service here: /ecommerce-seo-europe/
+- Service here: /google-ads-europe/
+- Service here: /cro-europe/
+- Service here: /ai-seo-services-europe/
 
 **Links inside the copy**
 - /content-marketing/
+- /digital-marketing-agency-uk/
 - /digital-pr/
 - /international-seo/
-- /locations/uk/
 - /seo-services/
 - /technical-seo/
 
@@ -1007,4 +1147,4 @@ Primary keyword: digital marketing agency in Europe
 - [The attribution questions worth answering, and the ones that are not](/resources/attribution-questions-worth-answering/)
 - [How to measure AI search visibility when the answer changes every time](/resources/measuring-ai-search-visibility/)
 
-**Linked from** /locations/uk/
+**Linked from** /digital-marketing-agency-uk/

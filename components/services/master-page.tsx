@@ -1,3 +1,5 @@
+import { getLocation } from "@/data/locations";
+import { localServicePath, localServicesFor } from "@/data/locations/services";
 import { industryServicePath, industryServicesFor } from "@/data/industries/services";
 import { HeadingAside } from "@/components/layout/heading-aside";
 import Link from "next/link";
@@ -62,6 +64,14 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
   const reading = articles.filter((a) => a.relatedServices.includes(service.slug)).slice(0, 3);
   const siblings = category.items.filter((i) => i.href !== path);
   const bySector = industryServicesFor(service.slug);
+  // This service written for particular places: markets first, then cities.
+  const byPlace = localServicesFor(service.slug);
+  const placeName = (slug: string) => getLocation(slug)?.name ?? slug;
+  /** A market chip goes to this service in that market when the page exists, otherwise to the market. */
+  const marketHref = (slug: string) => {
+    const local = byPlace.find((p) => p.place === slug);
+    return local ? localServicePath(local) : `/digital-marketing-agency-${slug}/`;
+  };
 
   return (
     <article className="overflow-x-clip">
@@ -414,7 +424,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
             <ul className="mt-4 flex flex-wrap gap-2">
               {markets.map((m) => (
                 <li key={m.slug}>
-                  <Link href={`/locations/${m.slug}/`} className="inline-flex items-center gap-2 rounded-full border border-line bg-canvas px-4 py-2 text-sm font-medium text-ink transition-colors hover:border-navy hover:bg-navy hover:text-white">
+                  <Link href={marketHref(m.slug)} className="inline-flex items-center gap-2 rounded-full border border-line bg-canvas px-4 py-2 text-sm font-medium text-ink transition-colors hover:border-navy hover:bg-navy hover:text-white">
                     <span className="label-mono text-[0.625rem] text-orange-ink">{m.short}</span>
                     {m.name}
                   </Link>
@@ -461,6 +471,14 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
               </li>
             ))}
           </ul>
+          {byPlace.length ? (
+            <p className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-2 text-sm text-muted">
+              <span>{service.name} by place:</span>
+              {byPlace.map((p) => (
+                <Link key={p.place} href={localServicePath(p)} className="rounded-full border border-blue/30 bg-blue-wash px-3 py-1 font-medium text-navy transition-colors hover:border-navy hover:bg-navy hover:text-white">{placeName(p.place)}</Link>
+              ))}
+            </p>
+          ) : null}
           {bySector.length ? (
             <p className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-2 text-sm text-muted">
               <span>{service.name} by sector:</span>

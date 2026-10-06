@@ -141,15 +141,21 @@ Every new page and every change to an existing page must pass these. They sit al
 - [ ] Head terms use the words buyers use: "agency", "company", "services".
 - [ ] Record the mapping in the page's data (`seo.primaryKeyword`, `secondaryKeywords`, `searchIntent`).
 
-| Page type | Primary keyword pattern |
-| --- | --- |
-| Home | digital marketing agency (+ brand line) |
-| Service | [service] services / [service] agency / [service] company |
-| Industry | [service or digital marketing] for [industry] |
-| Country | digital marketing agency in [country] |
-| City | digital marketing agency in [city] |
-| Service in a city | [service] company in [city] |
-| Article | a question or comparison, never a head term a service page owns |
+| Page type | URL | Primary keyword pattern |
+| --- | --- | --- |
+| Home | `/` | digital marketing agency (+ brand line) |
+| Service | `/{service}/` | [service] services / agency / company |
+| Service in a place | `/{service}-{place}/` e.g. `/local-seo-services-delhi/`, `/seo-services-india/` | [service] company in [place] |
+| Place | `/digital-marketing-agency-{place}/` | digital marketing agency in [place] |
+| Service for a sector | `/{service}-for-{industry}/` | [service] for [industry] |
+| Industry | `/industries/{industry}/` | digital marketing for [industry] |
+| Article | `/resources/{slug}/` | a question or comparison, never a head term a service page owns |
+
+URL rules:
+- Commercial pages live one level below the domain and are named for the search, service first. No `/locations/country/city/` nesting; hierarchy is shown by breadcrumbs and links.
+- `lib/routes.ts` is the single table of flat URLs. Two pages may never claim the same one; the build stops if they do.
+- When a URL changes, add a permanent redirect in `next.config.ts`.
+- Link from the ground up: a service-in-a-city page links to the same service in nearby cities and in its country, to the other services in that city, to the city page and to the general service page.
 
 ### Service pages
 - [ ] Follows the master service page structure (answer, problems, pillars, process, timeline, outcomes, comparison, fit, FAQs).
@@ -189,6 +195,8 @@ Needs the owner (cannot be built without real facts):
 7. A decision on the brand name and the Moz trademark.
 
 Done on 6 October 2026:
+- Flat URLs: `/{service}-{place}/` (142 pages written, one per service listed on each place), `/digital-marketing-agency-{place}/`, `/{service}-for-{industry}/`. Old nested URLs redirect permanently.
+- Logo system in `public/brand/`, documented in `docs/BRAND_IDENTITY.md`.
 - Home, country and city pages retitled around "digital marketing agency in [place]" with "SEO company" in the H1, description and FAQs. Each page still states that work is delivered remotely.
 - Homepage outline: one H1 ("AI-Powered Digital Marketing Agency and SEO Company"); hero slide headlines and footer column titles are no longer headings.
 - "Reviewed by" line and its schema removed from all service pages.

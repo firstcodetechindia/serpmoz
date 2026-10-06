@@ -103,7 +103,7 @@ export const navigation: NavGroup[] = [
     href: "/locations/",
     summary: "Local expertise. Global ambition.",
     all: "All locations",
-    links: countries.map((c) => ({ label: c.name, href: `/locations/${c.slug}/`, description: c.cities.length ? c.cities.slice(0, 4).map((x) => x.name).join(", ") : "Market overview", badge: markets.find((m) => m.slug === c.slug)?.code })),
+    links: countries.map((c) => ({ label: c.name, href: `/digital-marketing-agency-${c.slug}/`, description: c.cities.length ? c.cities.slice(0, 4).map((x) => x.name).join(", ") : "Market overview", badge: markets.find((m) => m.slug === c.slug)?.code })),
   },
   { label: "Case Studies", href: "/case-studies/", summary: "How the work is planned and measured." },
   {
@@ -139,7 +139,7 @@ const group = (label: string) => navigation.find((g) => g.label === label)!;
 export const footerNav: { title: string; links: NavLink[] }[] = [
   { title: "Solutions", links: [...serviceCategories.map((c) => ({ label: c.label, href: c.href })), { label: "All services", href: "/services/" }] },
   { title: "Industries", links: [...group("Industries").links!.slice(0, 5), { label: "All industries", href: "/industries/" }] },
-  { title: "Locations", links: [...countries.slice(0, 5).map((c) => ({ label: c.name, href: `/locations/${c.slug}/` })), { label: "All locations", href: "/locations/" }] },
+  { title: "Locations", links: [...countries.slice(0, 5).map((c) => ({ label: c.name, href: `/digital-marketing-agency-${c.slug}/` })), { label: "All locations", href: "/locations/" }] },
   { title: "Resources", links: [{ label: "Case Studies", href: "/case-studies/" }, ...group("Resources").links!.map(({ label, href }) => ({ label, href }))] },
   {
     title: "Company",

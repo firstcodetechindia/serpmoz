@@ -213,7 +213,7 @@ export const record: IndustryServiceRecord = {
 
   related: {
     services: ["content-seo", "technical-seo", "google-ads", "youtube-marketing"],
-    locations: ["/locations/india/", "/locations/uk/", "/locations/canada/"],
+    locations: ["/digital-marketing-agency-india/", "/digital-marketing-agency-uk/", "/digital-marketing-agency-canada/"],
     articles: ["sizing-search-opportunities-by-value", "measuring-ai-search-visibility"],
   },
 

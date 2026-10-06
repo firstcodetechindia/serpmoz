@@ -54,7 +54,7 @@ export const location: LocationRecord = {
   overview: {
     heading: "About digital growth in Dubai",
     paragraphs: [
-      "Dubai is organised around districts with distinct commercial identities. Financial and legal firms cluster in DIFC, trading companies and consultancies in Business Bay and JLT, technology and media firms in their dedicated free zones, wholesalers and older family businesses in Deira and Bur Dubai, and showrooms and workshops in Al Quoz. A firm's district says something about who it serves, and buyers read it that way. Search behaviour follows the same map, which is why a digital marketing agency treats the wider [UAE picture](/locations/uae/) as only a starting point for a Dubai plan.",
+      "Dubai is organised around districts with distinct commercial identities. Financial and legal firms cluster in DIFC, trading companies and consultancies in Business Bay and JLT, technology and media firms in their dedicated free zones, wholesalers and older family businesses in Deira and Bur Dubai, and showrooms and workshops in Al Quoz. A firm's district says something about who it serves, and buyers read it that way. Search behaviour follows the same map, which is why a digital marketing agency treats the wider [UAE picture](/digital-marketing-agency-uae/) as only a starting point for a Dubai plan.",
       "Competition here is unusually paid-heavy. In property, clinics, schools and hospitality, the first screen of results is mostly advertising, portals and aggregators, and many businesses rely on bought enquiries alone. That makes cost per enquiry volatile and leaves organic and map visibility under-invested. A measured mix of [SEO services](/seo-services/) and tightly controlled paid campaigns usually does more for margin than raising budgets, provided the enquiries are followed up properly.",
       "The audience is the other distinguishing factor. A single campaign may reach a long-term resident comparing communities, a newly arrived professional who searches the way they did at home, and an investor who has never visited. Each uses different words for the same thing and trusts different proof. Pages, adverts and replies need to be written for those specific readers and not for a generic Gulf customer.",
     ],
@@ -216,7 +216,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/uae/", "/locations/uk/london/", "/locations/india/mumbai/"],
+  related: ["/digital-marketing-agency-uae/", "/digital-marketing-agency-london/", "/digital-marketing-agency-mumbai/"],
   caseStudies: ["multi-location-dental-group"],
   resources: ["what-automated-bidding-should-optimise-for", "sizing-search-opportunities-by-value", "measuring-ai-search-visibility"],
 

@@ -103,7 +103,7 @@ export const location: LocationRecord = {
     heading: "Why local search matters in Noida",
     paragraphs: [
       "The grid makes Noida easy to plan and oddly hard to navigate. Sectors are not numbered in a simple sequence, internal roads look similar and many businesses operate from upper floors of commercial complexes. Customers follow the map, so an accurate profile is a practical necessity. [Google Maps SEO](/google-maps-seo/) here starts with pin placement, entrance photographs and landmark details before anything else.",
-      "Catchments are also well defined. A resident of Greater Noida West will not usually travel to Sector 18 for a routine service, and central Greater Noida is a further journey again. Businesses that want all three need a presence or a defined service area in each, supported by [local SEO](/local-seo-services/). The pattern differs from [Gurgaon](/locations/india/gurgaon/), where roads and developments, not numbers, carry most of the naming.",
+      "Catchments are also well defined. A resident of Greater Noida West will not usually travel to Sector 18 for a routine service, and central Greater Noida is a further journey again. Businesses that want all three need a presence or a defined service area in each, supported by [local SEO](/local-seo-services/). The pattern differs from [Gurgaon](/digital-marketing-agency-gurgaon/), where roads and developments, not numbers, carry most of the naming.",
     ],
     points: [
       "Sector numbers are the core of local search, often with a block letter or a society name added.",
@@ -218,7 +218,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/india/", "/locations/india/delhi/", "/locations/india/gurgaon/", "/locations/india/pune/"],
+  related: ["/digital-marketing-agency-india/", "/digital-marketing-agency-delhi/", "/digital-marketing-agency-gurgaon/", "/digital-marketing-agency-pune/"],
   caseStudies: ["b2b-saas-pipeline-quality"],
   resources: ["sizing-search-opportunities-by-value", "what-automated-bidding-should-optimise-for", "conversion-work-without-ab-testing-traffic"],
 

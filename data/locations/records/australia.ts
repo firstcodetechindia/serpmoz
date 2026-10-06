@@ -53,7 +53,7 @@ export const location: LocationRecord = {
   overview: {
     heading: "About digital growth in Australia",
     paragraphs: [
-      "Most Australians live in a small number of coastal cities, and those cities are a long way apart. Sydney, Melbourne, Brisbane, Perth and Adelaide have separate competitors, separate media and, between east and west, a meaningful time difference. A business that ranks well in one capital can be invisible in the next, which is the first thing a digital marketing agency has to plan around. National plans therefore tend to be several city plans joined together, with shared brand work and local execution. The [Sydney page](/locations/australia/sydney/) shows how that looks at the level of one city.",
+      "Most Australians live in a small number of coastal cities, and those cities are a long way apart. Sydney, Melbourne, Brisbane, Perth and Adelaide have separate competitors, separate media and, between east and west, a meaningful time difference. A business that ranks well in one capital can be invisible in the next, which is the first thing a digital marketing agency has to plan around. National plans therefore tend to be several city plans joined together, with shared brand work and local execution. The [Sydney page](/digital-marketing-agency-sydney/) shows how that looks at the level of one city.",
       "Within each city, people search by suburb. Australians name the suburb when looking for a plumber, a dentist, a conveyancer or a café, and metropolitan areas contain hundreds of them. Trades and home services are a large part of the economy and of local search, and the people who run them are usually on the tools during the day. That makes [local SEO](/local-seo-services/), clear service-area pages and reliable call handling more valuable here than elaborate brand campaigns.",
       "Advertising claims are taken seriously. Consumer law prohibits misleading or deceptive conduct, and that reaches testimonials, reviews, comparisons, pricing and environmental claims. The regulator has acted against businesses over fake or selectively edited reviews. For marketing this is a practical constraint: every claim on a page or in an ad should be something the business can substantiate. We write with that standard in mind and keep a record of the evidence behind stronger statements.",
       "Local signals carry weight with buyers. A .com.au address can only be registered by an entity with an Australian presence, so many consumers read it as a sign that a business is established locally. Local phone numbers, a visible business number and Australian spelling have the same effect. Overseas companies entering the market are often surprised by how quickly an American tone, wrong seasons or northern hemisphere references make shoppers leave. A well-built site through our [web development](/web-development/) work gets these details right.",
@@ -228,7 +228,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/singapore/", "/locations/uk/", "/locations/canada/"],
+  related: ["/digital-marketing-agency-singapore/", "/digital-marketing-agency-uk/", "/digital-marketing-agency-canada/"],
   caseStudies: ["multi-location-dental-group", "d2c-ecommerce-margin"],
   resources: ["sizing-search-opportunities-by-value", "conversion-work-without-ab-testing-traffic", "attribution-questions-worth-answering"],
 

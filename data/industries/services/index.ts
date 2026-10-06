@@ -29,7 +29,9 @@ export const industryServices: IndustryServiceRecord[] = [
   manufacturingLeads,
 ];
 
-export const industryServicePath = (r: Pick<IndustryServiceRecord, "industry" | "slug">) => `/industries/${r.industry}/${r.slug}/`;
+/** The flat URL: service, then sector, e.g. /seo-services-for-real-estate/. */
+export const industryServiceSlug = (r: Pick<IndustryServiceRecord, "industry" | "service">) => `${r.service}-for-${r.industry}`;
+export const industryServicePath = (r: Pick<IndustryServiceRecord, "industry" | "service">) => `/${industryServiceSlug(r)}/`;
 
 // A record that points at a missing industry or service, or repeats a title, stops the build.
 {

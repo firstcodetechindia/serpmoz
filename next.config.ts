@@ -35,7 +35,15 @@ const nextConfig: NextConfig = {
     remotePatterns: [{ protocol: "https", hostname: "images.unsplash.com" }],
   },
   async redirects() {
-    return [{ source: "/industries/local-businesses/", destination: "/industries/local-business/", permanent: true }];
+    return [
+      { source: "/industries/local-businesses/", destination: "/industries/local-business/", permanent: true },
+      // Earlier nested URLs. Every page now lives one level below the domain (see lib/routes.ts).
+      { source: "/locations/india/gurgaon/ai-seo/", destination: "/ai-seo-services-gurgaon/", permanent: true },
+      { source: "/locations/:country/:city/:service/", destination: "/:service-:city/", permanent: true },
+      { source: "/locations/:country/:city/", destination: "/digital-marketing-agency-:city/", permanent: true },
+      { source: "/locations/:place/", destination: "/digital-marketing-agency-:place/", permanent: true },
+      { source: "/industries/:industry/:service/", destination: "/:service-for-:industry/", permanent: true },
+    ];
   },
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];

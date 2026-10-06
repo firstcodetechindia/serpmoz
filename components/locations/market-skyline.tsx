@@ -212,7 +212,7 @@ export function MarketSkyline({ markets }: { markets: Market[] }) {
           <p className="label-mono text-orange-ink">{m.short} · {landmarkLabel(m.slug)}</p>
           <h3 className="mt-3 text-[clamp(2rem,1.5rem+2vw,3rem)] leading-[1.1] font-semibold tracking-[-0.035em] text-navy">{m.name}</h3>
           <p className="mt-4 text-[1.0625rem] leading-relaxed text-muted">{m.context}</p>
-          <Link href={`/locations/${m.slug}/`} className="mt-6 inline-flex h-11 items-center gap-2 rounded-full bg-navy px-5 text-sm font-medium text-white transition-colors hover:bg-blue-ink">
+          <Link href={`/digital-marketing-agency-${m.slug}/`} className="mt-6 inline-flex h-11 items-center gap-2 rounded-full bg-navy px-5 text-sm font-medium text-white transition-colors hover:bg-blue-ink">
             Growth in {m.name} <ArrowRight aria-hidden className="size-4" />
           </Link>
         </div>
@@ -231,7 +231,7 @@ export function MarketSkyline({ markets }: { markets: Market[] }) {
             <ul className="mt-5 flex flex-wrap gap-2" aria-label={`Cities in ${m.name}`}>
               {m.cities.map((c) => (
                 <li key={c.slug}>
-                  <Link href={`/locations/${m.slug}/${c.slug}/`} className="inline-flex items-center gap-1.5 rounded-full border border-line bg-canvas px-3 py-1.5 text-sm text-ink transition-colors hover:border-navy hover:bg-navy hover:text-white">
+                  <Link href={`/digital-marketing-agency-${c.slug}/`} className="inline-flex items-center gap-1.5 rounded-full border border-line bg-canvas px-3 py-1.5 text-sm text-ink transition-colors hover:border-navy hover:bg-navy hover:text-white">
                     <MapPin aria-hidden className="size-3.5 text-orange" />
                     {c.name}
                   </Link>

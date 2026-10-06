@@ -55,7 +55,7 @@ export const location: LocationRecord = {
     heading: "About digital growth in London",
     paragraphs: [
       "London's commercial geography is specific. Banking, insurance and the large law firms sit in the City and Canary Wharf, with barristers and litigation practices around Holborn and the Inns of Court. Private equity and wealth managers favour Mayfair and St James's. Technology companies gather around Old Street, Shoreditch and King's Cross, private medicine around Harley Street, and media and production in Soho. Buyers know this map, and so should any SEO company working here: an address signals positioning before any copy is read.",
-      "The difficulty is that almost every national brand is headquartered or heavily present here. A London firm bidding on a professional-services term is competing with companies that have national budgets, long-established domains and in-house teams. Paid clicks in legal, finance and insurance are among the most expensive in the [UK market](/locations/uk/), so winning usually means choosing narrower ground: a practice area, a sector, a borough, a type of client.",
+      "The difficulty is that almost every national brand is headquartered or heavily present here. A London firm bidding on a professional-services term is competing with companies that have national budgets, long-established domains and in-house teams. Paid clicks in legal, finance and insurance are among the most expensive in the [UK market](/digital-marketing-agency-uk/), so winning usually means choosing narrower ground: a practice area, a sector, a borough, a type of client.",
       "That choice is where most of the value lies. We size topics by what a new client is worth and not by search volume, then build depth in the few areas a firm can credibly own. Organic authority comes from substantive pages and from coverage earned through [digital PR](/digital-pr/), which London's concentration of national and trade journalists makes more achievable than elsewhere, though also more competitive.",
     ],
   },
@@ -216,7 +216,7 @@ export const location: LocationRecord = {
     },
   ],
 
-  related: ["/locations/uk/", "/locations/usa/new-york/", "/locations/uae/dubai/"],
+  related: ["/digital-marketing-agency-uk/", "/digital-marketing-agency-new-york/", "/digital-marketing-agency-dubai/"],
   caseStudies: ["b2b-saas-pipeline-quality", "multi-location-dental-group"],
   resources: ["sizing-search-opportunities-by-value", "measuring-ai-search-visibility", "attribution-questions-worth-answering"],
 

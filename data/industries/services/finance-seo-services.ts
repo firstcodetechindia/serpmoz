@@ -215,7 +215,7 @@ export const record: IndustryServiceRecord = {
 
   related: {
     services: ["content-seo", "digital-pr", "aeo-services", "cro"],
-    locations: ["/locations/india/mumbai/", "/locations/uk/london/", "/locations/singapore/"],
+    locations: ["/digital-marketing-agency-mumbai/", "/digital-marketing-agency-london/", "/digital-marketing-agency-singapore/"],
     articles: ["measuring-ai-search-visibility", "sizing-search-opportunities-by-value"],
   },
 
