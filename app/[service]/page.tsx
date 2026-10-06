@@ -10,6 +10,8 @@ import { CtaLink } from "@/components/ui/cta-link";
 import { Photo } from "@/components/ui/photo";
 import { CapabilityVisual } from "@/components/visuals/capability-visual";
 import { SeoHeroVisual } from "@/components/visuals/seo-visuals";
+import { ServiceHeroVisual } from "@/components/visuals/service-hero";
+import { heroVisuals } from "@/data/services/hero-visuals";
 import { photos } from "@/data/images";
 import { getService, services } from "@/data/services";
 import { serviceCategories } from "@/data/services/catalog";
@@ -225,17 +227,19 @@ function Audience({ s, tone }: { s: Service; tone: "surface" | "canvas" }) {
   );
 }
 
-/** Each master page has its own hero picture; the visual language is not shared between services. */
-const masterVisuals: Record<string, React.ReactNode> = {
-  "seo-services": <SeoHeroVisual />,
-};
+/** Each page has its own hero picture; SEO's is bespoke, the rest fill a suitable format with their own words. */
+function heroFor(slug: string, fallback: React.ReactNode) {
+  if (slug === "seo-services") return <SeoHeroVisual />;
+  const config = heroVisuals[slug];
+  return config ? <ServiceHeroVisual config={config} /> : fallback;
+}
 
 export default async function ServicePage({ params }: Props) {
   const service = getService((await params).service);
   if (!service) notFound();
 
   if (service.master) {
-    return <MasterServicePage service={service} master={service.master} visual={masterVisuals[service.slug] ?? <CapabilityVisual category={service.category} />} />;
+    return <MasterServicePage service={service} master={service.master} visual={heroFor(service.slug, <CapabilityVisual category={service.category} />)} />;
   }
 
   const path = `/${service.slug}/`;

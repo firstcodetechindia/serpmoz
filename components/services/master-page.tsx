@@ -5,7 +5,6 @@ import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
 import { ArticleCover } from "@/components/resources/article-cover";
 import { Faqs } from "@/components/services/page-parts";
-import { SectionNav } from "@/components/services/section-nav";
 import { StickyCta } from "@/components/services/sticky-cta";
 import { Badge } from "@/components/ui/badge";
 import { CtaLink } from "@/components/ui/cta-link";
@@ -22,23 +21,27 @@ import { cta } from "@/lib/config/site";
 import { categoryName, formatDate } from "@/lib/resources";
 import { faqSchema, serviceSchema, webPageSchema } from "@/lib/seo/schema";
 import { cn } from "@/lib/utils";
-import type { Service, ServiceMaster } from "@/types";
+import type { Service, ServiceCategoryId, ServiceMaster } from "@/types";
 
 const eyebrow = "label-mono text-muted";
-const h2 = "mt-4 text-h2 font-semibold text-navy";
-const band = "scroll-mt-32 py-12 md:py-16 lg:py-20";
 
-const sections = [
-  { id: "overview", label: "Overview" },
-  { id: "included", label: "What is included" },
-  { id: "how-it-works", label: "How it works" },
-  { id: "process", label: "Process" },
-  { id: "deliverables", label: "Deliverables" },
-  { id: "results", label: "Results" },
-  { id: "compare", label: "Compare" },
-  { id: "fit", label: "Who it is for" },
-  { id: "faqs", label: "FAQs" },
-];
+/* Photographs and the reviewing team differ by discipline, so pages in different groups do not share pictures. */
+const byCategory: Record<ServiceCategoryId, { team: string; why: PhotoKey; work: PhotoKey }> = {
+  "search-ai": { team: "search team", why: "strategyWhiteboard", work: "analystDesk" },
+  performance: { team: "paid media team", why: "analystScreens", work: "teamMeeting" },
+  "content-social": { team: "content team", why: "teamWorkshop", work: "teamOffice" },
+  "conversion-automation": { team: "conversion team", why: "teamOffice", work: "analystScreens" },
+  "web-digital": { team: "web team", why: "teamMeeting", work: "strategyWhiteboard" },
+};
+const h2 = "mt-4 text-h2 font-semibold text-navy";
+const band = "scroll-mt-20 py-12 md:py-16 lg:py-20";
+
+
+/** Link text that names the page it leads to. */
+function linkLabel(href: string) {
+  const target = getService(href.replaceAll("/", ""));
+  return target ? `${target.name} services` : "Read more";
+}
 
 /**
  * The master service page. One architecture; every word, picture, question
@@ -49,6 +52,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
   const path = `/${service.slug}/`;
   const category = serviceCategories.find((c) => c.id === service.category)!;
   const action = service.cta ?? cta.audit.label;
+  const look = byCategory[service.category];
   const related = service.related.map(getService).filter((s) => s !== undefined);
   const industries = master.industries.map(getIndustry).filter((i) => i !== undefined);
   const markets = master.markets.map(getCountry).filter((c) => c !== undefined);
@@ -57,7 +61,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
   const siblings = category.items.filter((i) => i.href !== path);
 
   return (
-    <article>
+    <article className="overflow-x-clip">
       {/* ---------- Hero ---------- */}
       <header data-hero="dark" className="stage relative overflow-hidden pt-28 pb-12 text-white md:pt-36 md:pb-16">
         <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent_80%)]" />
@@ -74,7 +78,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
             </div>
             <p className="mt-6 flex items-center gap-2 text-xs text-white/55">
               <CalendarCheck aria-hidden className="size-4 text-cyan" />
-              Reviewed by the SERPMOZ search team on <time dateTime={master.reviewed}>{formatDate(master.reviewed)}</time>
+              Reviewed by the SERPMOZ {look.team} on <time dateTime={master.reviewed}>{formatDate(master.reviewed)}</time>
             </p>
           </div>
           <div className="lg:col-span-6">{visual}</div>
@@ -90,7 +94,6 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
         </dl>
       </header>
 
-      <SectionNav items={sections} action={<CtaLink href={cta.audit.href} variant="primary" size="sm" data-cta="service-nav-audit">{action}</CtaLink>} />
 
       {/* ---------- The answer, then the problem ---------- */}
       <section id="overview" aria-labelledby="overview-title" className={cn(band, "bg-surface")}>
@@ -116,7 +119,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
         <div className="shell mt-14 grid grid-cols-1 gap-10 lg:mt-20 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-4">
             <p className={eyebrow}>The problem</p>
-            <h2 className="mt-4 text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)] leading-[1.15] font-semibold tracking-[-0.03em] text-navy">Signs your {service.name} needs a rethink.</h2>
+            <h2 className="mt-4 text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)] leading-[1.15] font-semibold tracking-[-0.03em] text-navy">Signs it is time to rethink {service.name}.</h2>
           </div>
           <ul className="grid gap-3 sm:grid-cols-2 lg:col-span-8">
             {service.problems.map((p, i) => (
@@ -132,7 +135,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
       {/* ---------- Why it matters ---------- */}
       <section aria-label={`Why ${service.name} matters`} className="bg-surface px-3 py-1.5 md:px-5 md:py-2">
         <div className="relative grid grid-cols-1 overflow-hidden rounded-[1.75rem] bg-navy text-white md:rounded-[2.25rem] lg:grid-cols-12">
-          <Photo photo={photos.strategyWhiteboard} sizes="(min-width: 1024px) 40vw, 100vw" className="h-56 lg:col-span-5 lg:h-auto" />
+          <Photo photo={photos[look.why]} sizes="(min-width: 1024px) 40vw, 100vw" className="h-56 lg:col-span-5 lg:h-auto" />
           <div className="p-7 md:p-12 lg:col-span-7">
             <Quote aria-hidden className="size-8 text-orange" />
             <h2 className="sr-only">Why {service.name} matters</h2>
@@ -168,7 +171,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
                 </ul>
                 {p.href ? (
                   <Link href={p.href} className={cn("mt-auto inline-flex items-center gap-1.5 pt-6 text-sm font-semibold underline decoration-1 underline-offset-[5px] transition-colors hover:decoration-orange hover:decoration-2", i === 0 ? "text-white decoration-white/30" : "text-navy decoration-navy/25")}>
-                    More on {p.title.toLowerCase().startsWith("ai") ? p.title : p.title.charAt(0).toLowerCase() + p.title.slice(1)}
+                    {linkLabel(p.href)}
                     <ArrowUpRight aria-hidden className="size-4" />
                   </Link>
                 ) : null}
@@ -180,7 +183,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
 
       {/* ---------- How the channel works ---------- */}
       <section id="how-it-works" aria-labelledby="how-title" className="bg-surface px-3 py-1.5 md:px-5 md:py-2">
-        <div className="scroll-mt-32 rounded-[1.75rem] bg-mist py-12 md:rounded-[2.25rem] md:py-16 lg:py-20">
+        <div className="scroll-mt-20 rounded-[1.75rem] bg-mist py-12 md:rounded-[2.25rem] md:py-16 lg:py-20">
           <div className="shell">
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-8">
               <div className="lg:col-span-6">
@@ -255,7 +258,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
 
       {/* ---------- Deliverables and tools ---------- */}
       <section id="deliverables" aria-labelledby="deliverables-title" className="bg-surface px-3 py-1.5 md:px-5 md:py-2">
-        <div className="stage relative scroll-mt-32 overflow-hidden rounded-[1.75rem] text-white md:rounded-[2.25rem]">
+        <div className="stage relative scroll-mt-20 overflow-hidden rounded-[1.75rem] text-white md:rounded-[2.25rem]">
           <div aria-hidden className="grid-lines-dark absolute inset-0 [mask-image:radial-gradient(60%_70%_at_20%_10%,black,transparent)]" />
           <div className="shell relative grid grid-cols-1 gap-10 py-12 md:py-16 lg:grid-cols-12 lg:gap-8 lg:py-20">
             <div className="lg:col-span-7">
@@ -271,7 +274,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
               </ul>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
-              <Photo photo={photos.analystDesk} sizes="(min-width: 1024px) 380px, 100vw" className="aspect-[4/3] rounded-panel" />
+              <Photo photo={photos[look.work]} sizes="(min-width: 1024px) 380px, 100vw" className="aspect-[4/3] rounded-panel" />
               <h3 className="label-mono mt-6 text-white/60">Technology and tools</h3>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {service.tools.map((t) => (
@@ -340,7 +343,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
 
       {/* ---------- Comparison ---------- */}
       <section id="compare" aria-labelledby="compare-title" className="bg-surface px-3 py-1.5 md:px-5 md:py-2">
-        <div className="scroll-mt-32 rounded-[1.75rem] bg-blue-tint py-12 md:rounded-[2.25rem] md:py-16 lg:py-20">
+        <div className="scroll-mt-20 rounded-[1.75rem] bg-blue-tint py-12 md:rounded-[2.25rem] md:py-16 lg:py-20">
           <div className="shell grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-4">
               <p className={eyebrow}>Compare</p>
@@ -428,7 +431,7 @@ export function MasterServicePage({ service, master, visual }: { service: Servic
 
       {/* ---------- FAQs ---------- */}
       <section id="faqs" aria-labelledby="faqs-title" className="bg-surface px-3 py-1.5 md:px-5 md:py-2">
-        <div className="scroll-mt-32 rounded-[1.75rem] bg-canvas py-12 md:rounded-[2.25rem] md:py-16 lg:py-20">
+        <div className="scroll-mt-20 rounded-[1.75rem] bg-canvas py-12 md:rounded-[2.25rem] md:py-16 lg:py-20">
           <div className="shell grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-4">
               <p className={eyebrow}>Questions</p>
