@@ -689,12 +689,13 @@ html:has(main [data-hero="dark"]) .site-header:not([data-scrolled]) {
   [data-photo-col] {
     position: relative;
     isolation: isolate;
-    overflow: hidden;
+    overflow: clip;
     align-self: stretch;
     border-radius: 1.5rem;
     padding: 2.25rem;
   }
   [data-head-art] { position: relative; isolation: isolate; }
+  [data-photo-host] { position: relative; }
   .col-photo {
     display: block;
     position: absolute;
@@ -721,6 +722,8 @@ html:has(main [data-hero="dark"]) .site-header:not([data-scrolled]) {
   .col-photo[data-kind="col"]::after { background: linear-gradient(to bottom, rgb(11 31 58 / 0.9), rgb(11 31 58 / 0.62) 45%, rgb(11 31 58 / 0.4)); }
   .col-photo[data-kind="head"] { top: -1.25rem; left: calc(-1 * min(1.25rem, max(0px, (100vw - 100%) / 2))); right: calc(-1 * min(1.25rem, max(0px, (100vw - 100%) / 2))); }
   .col-photo[data-kind="head"]::after { background: linear-gradient(to right, rgb(11 31 58 / 0.92), rgb(11 31 58 / 0.7) 50%, rgb(11 31 58 / 0.35)); }
+  .col-photo[data-kind="cell"] { z-index: 0; }
+  .col-photo[data-kind="cell"]::after { background: linear-gradient(135deg, rgb(11 31 58 / 0.55), rgb(22 119 255 / 0.18)); }
   /* Text over a photo is white. */
   [data-on-photo], [data-on-photo] :where(*) { color: #fff !important; }
   [data-on-photo] :where(p, li, span, a) { color: rgb(255 255 255 / 0.88) !important; }

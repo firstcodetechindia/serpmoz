@@ -35,6 +35,14 @@ export function ColumnBalance() {
       const alpha = m && m.length > 3 ? Number(m[3]) : m ? 1 : 0;
       return alpha > 0.05 || c.backgroundImage !== "none" || c.boxShadow !== "none" || parseFloat(c.borderTopWidth) > 0;
     };
+    /** Does anything inside already carry its own fill or shadow? Then the column is a wrapper around a card, not bare text. */
+    const holdsCard = (k: HTMLElement) =>
+      [...k.querySelectorAll<HTMLElement>("*")].some((d) => {
+        const c = getComputedStyle(d);
+        const m = c.backgroundColor.match(/[\d.]+/g);
+        const alpha = m && m.length > 3 ? Number(m[3]) : m ? 1 : 0;
+        return alpha > 0.05 || c.backgroundImage !== "none" || c.boxShadow !== "none";
+      });
     // Which photo belongs to which kind of section. Each photo is used once per page.
     const topics: [RegExp, PhotoKey][] = [
       [/challenge|hard|problem|why|strateg|approach|roadmap|method|mistake|risk/i, "strategyWhiteboard"],
@@ -68,7 +76,7 @@ export function ColumnBalance() {
       return photos[best];
     };
     /** A full-bleed photo behind the host. Text sits on top and turns white. */
-    const addPhoto = (host: HTMLElement, kind: "col" | "head", height: number) => {
+    const addPhoto = (host: HTMLElement, kind: "col" | "head" | "cell", height: number) => {
       const ph = pick(host);
       const box = document.createElement("div");
       box.className = "col-photo";
@@ -126,7 +134,7 @@ export function ColumnBalance() {
     const run = () => {
       frame = 0;
       document.querySelectorAll("[data-photo]").forEach((e) => e.remove());
-      for (const attr of ["data-pin", "data-photo-col", "data-head-art", "data-on-photo"]) document.querySelectorAll(`[${attr}]`).forEach((e) => e.removeAttribute(attr));
+      for (const attr of ["data-pin", "data-photo-col", "data-head-art", "data-on-photo", "data-photo-host"]) document.querySelectorAll(`[${attr}]`).forEach((e) => e.removeAttribute(attr));
       used.clear();
       if (!wide.matches) return;
       const room = window.innerHeight - 150;
@@ -141,21 +149,40 @@ export function ColumnBalance() {
           rows.set(top, [...(rows.get(top) ?? []), k]);
         }
         for (const row of rows.values()) {
-          if (row.length < 2) continue;
+          if (row.length === 1) {
+            // A lone card in the first column leaves the rest of its row empty: a photo fills that slot.
+            const [only] = row;
+            const g = grid.getBoundingClientRect();
+            const r = only.getBoundingClientRect();
+            const free = g.right - r.right;
+            if (r.left - g.left < 24 && r.width < g.width * 0.62 && free >= 300 && r.height >= 120 && r.height <= 700 && !grid.hasAttribute("data-photo-host")) {
+              const gap = parseFloat(getComputedStyle(grid).columnGap) || 24;
+              grid.setAttribute("data-photo-host", "");
+              addPhoto(grid, "cell", r.height);
+              const cell = grid.querySelector<HTMLElement>(":scope > [data-kind='cell']");
+              if (cell) {
+                cell.style.left = `${Math.round(r.right - g.left + gap)}px`;
+                cell.style.top = `${Math.round(r.top - g.top)}px`;
+                cell.style.width = `${Math.round(free - gap)}px`;
+                cell.style.height = `${Math.round(r.height)}px`;
+              }
+            }
+            continue;
+          }
           const tall = Math.max(...row.map((k) => k.getBoundingClientRect().height));
           for (const k of row) {
             const h = contentHeight(k);
             const pinned = getComputedStyle(k).position === "sticky" || [...k.querySelectorAll<HTMLElement>("*")].some((d) => getComputedStyle(d).position === "sticky");
             const text = (k.textContent ?? "").trim().length;
-            const real = k.getAttribute("aria-hidden") !== "true" && text > 15 && h >= 90;
-            if (pinned || !real || isCard(k) || h > tall * 0.8 || tall - h < 140) continue;
+            const real = k.getAttribute("aria-hidden") !== "true" && text > 15 && h >= 50;
+            if (!real || isCard(k) || h > tall * 0.8 || tall - h < 140) continue;
             // A short text column becomes a photo card the full height of its row, with its text on the photo.
-            const plain = text < 500 && !k.querySelector("img, picture, video, form, input, textarea, select, table");
+            const plain = text < 500 && !k.querySelector("img, picture, video, form, input, textarea, select, table") && !holdsCard(k);
             if (plain) {
               k.setAttribute("data-photo-col", "");
               k.setAttribute("data-on-photo", "");
               addPhoto(k, "col", tall);
-            } else if (h <= room) {
+            } else if (!pinned && h >= 90 && h <= room) {
               k.setAttribute("data-pin", "");
             }
           }
