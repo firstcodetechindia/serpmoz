@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { photos, type PhotoKey } from "@/data/images";
 
 /**
  * Two-column sections often have one long column and one short one, which
@@ -39,7 +40,43 @@ export function ColumnBalance() {
       return "light";
     };
     let seed = 0;
-    /** A heading block that fills only the left of a full-width row gets a drawing on the right, so the row is not half empty. */
+    const pool: PhotoKey[] = ["strategyWhiteboard", "analystScreens", "teamWorkshop", "analystDesk", "teamMeeting", "technology"];
+    const topics: [RegExp, PhotoKey][] = [
+      [/measur|report|data|result|number|track|analytic/i, "analystScreens"],
+      [/process|how|step|work|plan|roadmap/i, "teamWorkshop"],
+      [/search|ai|answer|technical|build|system/i, "technology"],
+      [/market|city|local|place|region|where/i, "skyline"],
+      [/challenge|problem|hard|why|risk|mistake/i, "strategyWhiteboard"],
+      [/who|team|fit|suits|model|engage/i, "teamMeeting"],
+    ];
+    /** A photo that belongs to the page: the sector for an industry page, otherwise the section's own topic. */
+    const pick = (el: HTMLElement): { id: string; alt: string; focus?: string } => {
+      const slug = location.pathname.match(/\/industries\/([^/]+)|-for-([a-z-]+?)\/?$/);
+      const sector = (slug?.[1] ?? slug?.[2]) as PhotoKey | undefined;
+      if (sector && photos[sector]) return photos[sector];
+      const head = el.closest("section")?.querySelector("h2")?.textContent ?? el.textContent ?? "";
+      const hit = topics.find(([re]) => re.test(head));
+      return photos[hit ? hit[1] : pool[seed++ % pool.length]];
+    };
+    const addPhoto = (host: HTMLElement, kind: "col" | "head", height: number, tone: string) => {
+      const ph = pick(host);
+      const box = document.createElement("div");
+      box.className = "col-photo";
+      box.setAttribute("data-photo", "");
+      box.setAttribute("data-kind", kind);
+      box.setAttribute("data-tone", tone);
+      box.setAttribute("aria-hidden", "true");
+      box.style.height = `${Math.round(height)}px`;
+      const img = document.createElement("img");
+      img.alt = "";
+      img.loading = "lazy";
+      img.decoding = "async";
+      img.src = `https://images.unsplash.com/${ph.id}?auto=format&fit=crop&w=900&q=65`;
+      if (ph.focus) img.style.objectPosition = ph.focus;
+      box.appendChild(img);
+      host.appendChild(box);
+    };
+    /** A heading block that fills only the left of a full-width row gets a photo on the right, so the row is not half empty. */
     const headings = () => {
       for (const h of document.querySelectorAll<HTMLElement>("main section h2")) {
         if (h.closest("[data-hero], header, [aria-labelledby='growth-system-title'], [aria-labelledby='final-cta-title']")) continue;
@@ -47,7 +84,7 @@ export function ColumnBalance() {
         if (!shell) continue;
         let block: HTMLElement = h;
         while (block.parentElement && block.parentElement !== shell) block = block.parentElement;
-        // A heading placed straight in the shell has no wrapper of its own: the shell hosts the drawing and only the heading area counts.
+        // A heading placed straight in the shell has no wrapper of its own: the shell hosts the photo and only the heading area counts.
         const direct = block === h;
         const host = direct ? shell : block;
         if (host.hasAttribute("data-head-art") || host.hasAttribute("data-pin") || host.closest("[data-pin]")) continue;
@@ -69,27 +106,19 @@ export function ColumnBalance() {
           }
         }
         const height = direct ? bottom - hostBox.top : hostBox.height;
-        if (height < 90 || hostBox.width < sr.width * 0.9 || sr.right - right < 340) continue;
+        if (height < 100 || hostBox.width < sr.width * 0.9 || sr.right - right < 340) continue;
         if (!direct && block.querySelector("img, picture, svg, video, form, input, button, a, ul, ol, table")) continue;
         block = host;
-        block.style.setProperty("--head-h", `${Math.round(height)}px`);
-        block.setAttribute("data-head-art", String(seed++ % 4));
-        block.setAttribute("data-tone", toneOf(block));
+        block.setAttribute("data-head-art", "");
+        addPhoto(block, "head", height, toneOf(block));
       }
     };
     const run = () => {
       seed = 0;
       frame = 0;
-      document.querySelectorAll<HTMLElement>("[data-pin]").forEach((e) => {
-        e.removeAttribute("data-pin");
-        e.removeAttribute("data-art");
-        e.removeAttribute("data-tone");
-      });
-      document.querySelectorAll<HTMLElement>("[data-head-art]").forEach((e) => {
-        e.removeAttribute("data-head-art");
-        e.removeAttribute("data-tone");
-        e.style.removeProperty("--head-h");
-      });
+      document.querySelectorAll("[data-photo]").forEach((e) => e.remove());
+      document.querySelectorAll<HTMLElement>("[data-pin]").forEach((e) => e.removeAttribute("data-pin"));
+      document.querySelectorAll<HTMLElement>("[data-head-art]").forEach((e) => e.removeAttribute("data-head-art"));
       if (!wide.matches) return;
       const room = window.innerHeight - 150;
       headings();
@@ -111,15 +140,13 @@ export function ColumnBalance() {
             const text = (k.textContent ?? "").trim().length;
             const real = k.getAttribute("aria-hidden") !== "true" && text > 15 && h >= 90;
             if (pinned || !real || h > tall * 0.8 || tall - h < 200) continue;
-            // A short text column also gets a drawing under it, so the space is used and not just kept.
+            // A short text column also gets a photo under it, so the space is used and not just kept.
             const plain = text < 500 && !k.querySelector("img, picture, video, form, input, textarea, select, table");
-            const art = plain && tall - h >= 300 && h + 340 <= room;
+            const fill = Math.min(tall - h - 40, room - h - 40, 560);
+            const art = plain && tall - h >= 300 && fill >= 220;
             if (!art && h > room) continue;
             k.setAttribute("data-pin", "");
-            if (art) {
-              k.setAttribute("data-art", String(seed++ % 4));
-              k.setAttribute("data-tone", toneOf(k));
-            }
+            if (art) addPhoto(k, "col", fill, toneOf(k));
           }
         }
       }
