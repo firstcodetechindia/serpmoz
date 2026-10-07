@@ -28,53 +28,62 @@ export function ColumnBalance() {
       }
       return bottom - top;
     };
-    /** Light or dark: the first solid background behind the column. */
-    const toneOf = (el: HTMLElement) => {
-      for (let n: HTMLElement | null = el; n; n = n.parentElement) {
-        const m = getComputedStyle(n).backgroundColor.match(/[\d.]+/g);
-        if (m && (m.length < 4 || Number(m[3]) > 0.6)) {
-          const [r, g, b] = m.map(Number);
-          return (0.299 * r + 0.587 * g + 0.114 * b) / 255 < 0.45 ? "dark" : "light";
-        }
-      }
-      return "light";
+    /** A card with its own fill, border or shadow already holds its content. It does not get a photo. */
+    const isCard = (el: HTMLElement) => {
+      const c = getComputedStyle(el);
+      const m = c.backgroundColor.match(/[\d.]+/g);
+      const alpha = m && m.length > 3 ? Number(m[3]) : m ? 1 : 0;
+      return alpha > 0.05 || c.backgroundImage !== "none" || c.boxShadow !== "none" || parseFloat(c.borderTopWidth) > 0;
     };
-    let seed = 0;
-    const pool: PhotoKey[] = ["strategyWhiteboard", "analystScreens", "teamWorkshop", "analystDesk", "teamMeeting", "technology"];
+    // Which photo belongs to which kind of section. Each photo is used once per page.
     const topics: [RegExp, PhotoKey][] = [
-      [/measur|report|data|result|number|track|analytic/i, "analystScreens"],
-      [/process|how|step|work|plan|roadmap/i, "teamWorkshop"],
-      [/search|ai|answer|technical|build|system/i, "technology"],
-      [/market|city|local|place|region|where/i, "skyline"],
-      [/challenge|problem|hard|why|risk|mistake/i, "strategyWhiteboard"],
-      [/who|team|fit|suits|model|engage/i, "teamMeeting"],
+      [/challenge|hard|problem|why|strateg|approach|roadmap|method|mistake|risk/i, "strategyWhiteboard"],
+      [/measur|report|data|dashboard|attribut|analytic|track|number|revenue/i, "analystScreens"],
+      [/conversion|funnel|lost|rate|performance|audit|diagnos|baseline|enquir/i, "analystDesk"],
+      [/process|how we|step|content|creative|build|workshop|programme|delivery/i, "teamWorkshop"],
+      [/who|team|fit|suits|model|partner|collaborat|engage|work together/i, "teamMeeting"],
+      [/search|ai\b|answer|technical|schema|crawl|speed|system|platform|website/i, "technology"],
+      [/market|city|region|where|country|national|global|discover/i, "skyline"],
+      [/local|map|profile|listing|nearby|store|shop|small/i, "local-business"],
+      [/b2b|enterprise|buyer|sales|pipeline|lead|account/i, "b2b"],
+      [/advice|trust|expert|credib|review|reputation|consult/i, "professional-services"],
     ];
-    /** A photo that belongs to the page: the sector for an industry page, otherwise the section's own topic. */
-    const pick = (el: HTMLElement): { id: string; alt: string; focus?: string } => {
+    const general: PhotoKey[] = ["teamOffice", "strategyWhiteboard", "analystScreens", "teamWorkshop", "teamMeeting", "analystDesk", "technology", "skyline", "b2b", "local-business", "professional-services"];
+    const used = new Set<string>();
+    /** The sector photo first on an industry page, then the photo that fits the section's own words, never one twice on a page. */
+    const pick = (el: HTMLElement) => {
       const slug = location.pathname.match(/\/industries\/([^/]+)|-for-([a-z-]+?)\/?$/);
       const sector = (slug?.[1] ?? slug?.[2]) as PhotoKey | undefined;
-      if (sector && photos[sector]) return photos[sector];
-      const head = el.closest("section")?.querySelector("h2")?.textContent ?? el.textContent ?? "";
-      const hit = topics.find(([re]) => re.test(head));
-      return photos[hit ? hit[1] : pool[seed++ % pool.length]];
+      if (sector && photos[sector] && !used.has(sector)) { used.add(sector); return photos[sector]; }
+      const words = `${el.closest("section")?.querySelector("h2")?.textContent ?? ""} ${el.textContent ?? ""}`;
+      let best: PhotoKey | undefined;
+      let score = 0;
+      for (const [re, key] of topics) {
+        if (used.has(key)) continue;
+        const n = (words.match(new RegExp(re.source, "gi")) ?? []).length;
+        if (n > score) { score = n; best = key; }
+      }
+      best ??= general.find((k) => !used.has(k)) ?? general[used.size % general.length];
+      used.add(best);
+      return photos[best];
     };
-    const addPhoto = (host: HTMLElement, kind: "col" | "head", height: number, tone: string) => {
+    /** A full-bleed photo behind the host. Text sits on top and turns white. */
+    const addPhoto = (host: HTMLElement, kind: "col" | "head", height: number) => {
       const ph = pick(host);
       const box = document.createElement("div");
       box.className = "col-photo";
       box.setAttribute("data-photo", "");
       box.setAttribute("data-kind", kind);
-      box.setAttribute("data-tone", tone);
       box.setAttribute("aria-hidden", "true");
-      box.style.height = `${Math.round(height)}px`;
+      if (kind === "head") box.style.height = `${Math.round(height) + 40}px`;
       const img = document.createElement("img");
       img.alt = "";
       img.loading = "lazy";
       img.decoding = "async";
-      img.src = `https://images.unsplash.com/${ph.id}?auto=format&fit=crop&w=900&q=65`;
+      img.src = `https://images.unsplash.com/${ph.id}?auto=format&fit=crop&w=1400&q=65`;
       if (ph.focus) img.style.objectPosition = ph.focus;
       box.appendChild(img);
-      host.appendChild(box);
+      host.insertBefore(box, host.firstChild);
     };
     /** A heading block that fills only the left of a full-width row gets a photo on the right, so the row is not half empty. */
     const headings = () => {
@@ -87,7 +96,7 @@ export function ColumnBalance() {
         // A heading placed straight in the shell has no wrapper of its own: the shell hosts the photo and only the heading area counts.
         const direct = block === h;
         const host = direct ? shell : block;
-        if (host.hasAttribute("data-head-art") || host.hasAttribute("data-pin") || host.closest("[data-pin]")) continue;
+        if (isCard(host) || host.hasAttribute("data-head-art") || host.closest("[data-photo-col]")) continue;
         const sr = shell.getBoundingClientRect();
         const sib = getComputedStyle(shell);
         if (sib.display === "grid" && sib.gridTemplateColumns.split(" ").length > 1) continue;
@@ -110,15 +119,15 @@ export function ColumnBalance() {
         if (!direct && block.querySelector("img, picture, svg, video, form, input, button, a, ul, ol, table")) continue;
         block = host;
         block.setAttribute("data-head-art", "");
-        addPhoto(block, "head", height, toneOf(block));
+        for (const el of direct ? parts : [block]) el.setAttribute("data-on-photo", "");
+        addPhoto(block, "head", height);
       }
     };
     const run = () => {
-      seed = 0;
       frame = 0;
       document.querySelectorAll("[data-photo]").forEach((e) => e.remove());
-      document.querySelectorAll<HTMLElement>("[data-pin]").forEach((e) => e.removeAttribute("data-pin"));
-      document.querySelectorAll<HTMLElement>("[data-head-art]").forEach((e) => e.removeAttribute("data-head-art"));
+      for (const attr of ["data-pin", "data-photo-col", "data-head-art", "data-on-photo"]) document.querySelectorAll(`[${attr}]`).forEach((e) => e.removeAttribute(attr));
+      used.clear();
       if (!wide.matches) return;
       const room = window.innerHeight - 150;
       headings();
@@ -139,14 +148,16 @@ export function ColumnBalance() {
             const pinned = getComputedStyle(k).position === "sticky" || [...k.querySelectorAll<HTMLElement>("*")].some((d) => getComputedStyle(d).position === "sticky");
             const text = (k.textContent ?? "").trim().length;
             const real = k.getAttribute("aria-hidden") !== "true" && text > 15 && h >= 90;
-            if (pinned || !real || h > tall * 0.8 || tall - h < 200) continue;
-            // A short text column also gets a photo under it, so the space is used and not just kept.
+            if (pinned || !real || isCard(k) || h > tall * 0.8 || tall - h < 140) continue;
+            // A short text column becomes a photo card the full height of its row, with its text on the photo.
             const plain = text < 500 && !k.querySelector("img, picture, video, form, input, textarea, select, table");
-            const fill = Math.min(tall - h - 40, room - h - 40, 560);
-            const art = plain && tall - h >= 300 && fill >= 220;
-            if (!art && h > room) continue;
-            k.setAttribute("data-pin", "");
-            if (art) addPhoto(k, "col", fill, toneOf(k));
+            if (plain) {
+              k.setAttribute("data-photo-col", "");
+              k.setAttribute("data-on-photo", "");
+              addPhoto(k, "col", tall);
+            } else if (h <= room) {
+              k.setAttribute("data-pin", "");
+            }
           }
         }
       }
